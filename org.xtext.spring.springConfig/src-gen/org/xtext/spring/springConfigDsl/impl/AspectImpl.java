@@ -31,205 +31,201 @@ import org.xtext.spring.springConfigDsl.sBoolean;
 public class AspectImpl extends MinimalEObjectImpl.Container implements Aspect
 {
   /**
-   * The default value of the '{@link #getExposeProxy() <em>Expose Proxy</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getExposeProxy() <em>Expose Proxy</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getExposeProxy()
-   * @generated
-   * @ordered
-   */
+	 * @see #getExposeProxy()
+	 * @generated
+	 * @ordered
+	 */
   protected static final sBoolean EXPOSE_PROXY_EDEFAULT = sBoolean.FALSE;
 
   /**
-   * The cached value of the '{@link #getExposeProxy() <em>Expose Proxy</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getExposeProxy() <em>Expose Proxy</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getExposeProxy()
-   * @generated
-   * @ordered
-   */
+	 * @see #getExposeProxy()
+	 * @generated
+	 * @ordered
+	 */
   protected sBoolean exposeProxy = EXPOSE_PROXY_EDEFAULT;
 
   /**
-   * The default value of the '{@link #getProxyTrajetClass() <em>Proxy Trajet Class</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getProxyTrajetClass() <em>Proxy Trajet Class</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getProxyTrajetClass()
-   * @generated
-   * @ordered
-   */
+	 * @see #getProxyTrajetClass()
+	 * @generated
+	 * @ordered
+	 */
   protected static final sBoolean PROXY_TRAJET_CLASS_EDEFAULT = sBoolean.FALSE;
 
   /**
-   * The cached value of the '{@link #getProxyTrajetClass() <em>Proxy Trajet Class</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getProxyTrajetClass() <em>Proxy Trajet Class</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getProxyTrajetClass()
-   * @generated
-   * @ordered
-   */
+	 * @see #getProxyTrajetClass()
+	 * @generated
+	 * @ordered
+	 */
   protected sBoolean proxyTrajetClass = PROXY_TRAJET_CLASS_EDEFAULT;
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   protected AspectImpl()
   {
-    super();
-  }
+		super();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   protected EClass eStaticClass()
   {
-    return SpringConfigDslPackage.Literals.ASPECT;
-  }
+		return SpringConfigDslPackage.Literals.ASPECT;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public sBoolean getExposeProxy()
   {
-    return exposeProxy;
-  }
+		return exposeProxy;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public void setExposeProxy(sBoolean newExposeProxy)
   {
-    sBoolean oldExposeProxy = exposeProxy;
-    exposeProxy = newExposeProxy == null ? EXPOSE_PROXY_EDEFAULT : newExposeProxy;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.ASPECT__EXPOSE_PROXY, oldExposeProxy, exposeProxy));
-  }
+		sBoolean oldExposeProxy = exposeProxy;
+		exposeProxy = newExposeProxy == null ? EXPOSE_PROXY_EDEFAULT : newExposeProxy;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.ASPECT__EXPOSE_PROXY, oldExposeProxy, exposeProxy));
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public sBoolean getProxyTrajetClass()
   {
-    return proxyTrajetClass;
-  }
+		return proxyTrajetClass;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public void setProxyTrajetClass(sBoolean newProxyTrajetClass)
   {
-    sBoolean oldProxyTrajetClass = proxyTrajetClass;
-    proxyTrajetClass = newProxyTrajetClass == null ? PROXY_TRAJET_CLASS_EDEFAULT : newProxyTrajetClass;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.ASPECT__PROXY_TRAJET_CLASS, oldProxyTrajetClass, proxyTrajetClass));
-  }
+		sBoolean oldProxyTrajetClass = proxyTrajetClass;
+		proxyTrajetClass = newProxyTrajetClass == null ? PROXY_TRAJET_CLASS_EDEFAULT : newProxyTrajetClass;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.ASPECT__PROXY_TRAJET_CLASS, oldProxyTrajetClass, proxyTrajetClass));
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.ASPECT__EXPOSE_PROXY:
-        return getExposeProxy();
-      case SpringConfigDslPackage.ASPECT__PROXY_TRAJET_CLASS:
-        return getProxyTrajetClass();
-    }
-    return super.eGet(featureID, resolve, coreType);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.ASPECT__EXPOSE_PROXY:
+				return getExposeProxy();
+			case SpringConfigDslPackage.ASPECT__PROXY_TRAJET_CLASS:
+				return getProxyTrajetClass();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public void eSet(int featureID, Object newValue)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.ASPECT__EXPOSE_PROXY:
-        setExposeProxy((sBoolean)newValue);
-        return;
-      case SpringConfigDslPackage.ASPECT__PROXY_TRAJET_CLASS:
-        setProxyTrajetClass((sBoolean)newValue);
-        return;
-    }
-    super.eSet(featureID, newValue);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.ASPECT__EXPOSE_PROXY:
+				setExposeProxy((sBoolean)newValue);
+				return;
+			case SpringConfigDslPackage.ASPECT__PROXY_TRAJET_CLASS:
+				setProxyTrajetClass((sBoolean)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public void eUnset(int featureID)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.ASPECT__EXPOSE_PROXY:
-        setExposeProxy(EXPOSE_PROXY_EDEFAULT);
-        return;
-      case SpringConfigDslPackage.ASPECT__PROXY_TRAJET_CLASS:
-        setProxyTrajetClass(PROXY_TRAJET_CLASS_EDEFAULT);
-        return;
-    }
-    super.eUnset(featureID);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.ASPECT__EXPOSE_PROXY:
+				setExposeProxy(EXPOSE_PROXY_EDEFAULT);
+				return;
+			case SpringConfigDslPackage.ASPECT__PROXY_TRAJET_CLASS:
+				setProxyTrajetClass(PROXY_TRAJET_CLASS_EDEFAULT);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public boolean eIsSet(int featureID)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.ASPECT__EXPOSE_PROXY:
-        return exposeProxy != EXPOSE_PROXY_EDEFAULT;
-      case SpringConfigDslPackage.ASPECT__PROXY_TRAJET_CLASS:
-        return proxyTrajetClass != PROXY_TRAJET_CLASS_EDEFAULT;
-    }
-    return super.eIsSet(featureID);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.ASPECT__EXPOSE_PROXY:
+				return exposeProxy != EXPOSE_PROXY_EDEFAULT;
+			case SpringConfigDslPackage.ASPECT__PROXY_TRAJET_CLASS:
+				return proxyTrajetClass != PROXY_TRAJET_CLASS_EDEFAULT;
+		}
+		return super.eIsSet(featureID);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public String toString()
   {
-    if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-    StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (exposeProxy: ");
-    result.append(exposeProxy);
-    result.append(", proxyTrajetClass: ");
-    result.append(proxyTrajetClass);
-    result.append(')');
-    return result.toString();
-  }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (exposeProxy: ");
+		result.append(exposeProxy);
+		result.append(", proxyTrajetClass: ");
+		result.append(proxyTrajetClass);
+		result.append(')');
+		return result.toString();
+	}
 
 } //AspectImpl

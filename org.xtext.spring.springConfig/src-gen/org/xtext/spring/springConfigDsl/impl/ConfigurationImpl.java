@@ -74,1101 +74,1081 @@ import org.xtext.spring.springConfigDsl.UtilSet;
 public class ConfigurationImpl extends MinimalEObjectImpl.Container implements Configuration
 {
   /**
-   * The default value of the '{@link #getDefaultAutowire() <em>Default Autowire</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getDefaultAutowire() <em>Default Autowire</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getDefaultAutowire()
-   * @generated
-   * @ordered
-   */
+	 * @see #getDefaultAutowire()
+	 * @generated
+	 * @ordered
+	 */
   protected static final AutoWiredType DEFAULT_AUTOWIRE_EDEFAULT = AutoWiredType.DEFAULT;
 
   /**
-   * The cached value of the '{@link #getDefaultAutowire() <em>Default Autowire</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getDefaultAutowire() <em>Default Autowire</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getDefaultAutowire()
-   * @generated
-   * @ordered
-   */
+	 * @see #getDefaultAutowire()
+	 * @generated
+	 * @ordered
+	 */
   protected AutoWiredType defaultAutowire = DEFAULT_AUTOWIRE_EDEFAULT;
 
   /**
-   * The default value of the '{@link #getDefaultInitMethod() <em>Default Init Method</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getDefaultInitMethod() <em>Default Init Method</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getDefaultInitMethod()
-   * @generated
-   * @ordered
-   */
+	 * @see #getDefaultInitMethod()
+	 * @generated
+	 * @ordered
+	 */
   protected static final String DEFAULT_INIT_METHOD_EDEFAULT = null;
 
   /**
-   * The cached value of the '{@link #getDefaultInitMethod() <em>Default Init Method</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getDefaultInitMethod() <em>Default Init Method</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getDefaultInitMethod()
-   * @generated
-   * @ordered
-   */
+	 * @see #getDefaultInitMethod()
+	 * @generated
+	 * @ordered
+	 */
   protected String defaultInitMethod = DEFAULT_INIT_METHOD_EDEFAULT;
 
   /**
-   * The default value of the '{@link #getDefaultAutowireCandidates() <em>Default Autowire Candidates</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getDefaultAutowireCandidates() <em>Default Autowire Candidates</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getDefaultAutowireCandidates()
-   * @generated
-   * @ordered
-   */
+	 * @see #getDefaultAutowireCandidates()
+	 * @generated
+	 * @ordered
+	 */
   protected static final String DEFAULT_AUTOWIRE_CANDIDATES_EDEFAULT = null;
 
   /**
-   * The cached value of the '{@link #getDefaultAutowireCandidates() <em>Default Autowire Candidates</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getDefaultAutowireCandidates() <em>Default Autowire Candidates</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getDefaultAutowireCandidates()
-   * @generated
-   * @ordered
-   */
+	 * @see #getDefaultAutowireCandidates()
+	 * @generated
+	 * @ordered
+	 */
   protected String defaultAutowireCandidates = DEFAULT_AUTOWIRE_CANDIDATES_EDEFAULT;
 
   /**
-   * The default value of the '{@link #getDefaultDestroyMethod() <em>Default Destroy Method</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getDefaultDestroyMethod() <em>Default Destroy Method</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getDefaultDestroyMethod()
-   * @generated
-   * @ordered
-   */
+	 * @see #getDefaultDestroyMethod()
+	 * @generated
+	 * @ordered
+	 */
   protected static final String DEFAULT_DESTROY_METHOD_EDEFAULT = null;
 
   /**
-   * The cached value of the '{@link #getDefaultDestroyMethod() <em>Default Destroy Method</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getDefaultDestroyMethod() <em>Default Destroy Method</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getDefaultDestroyMethod()
-   * @generated
-   * @ordered
-   */
+	 * @see #getDefaultDestroyMethod()
+	 * @generated
+	 * @ordered
+	 */
   protected String defaultDestroyMethod = DEFAULT_DESTROY_METHOD_EDEFAULT;
 
   /**
-   * The default value of the '{@link #getDefaultLazyInit() <em>Default Lazy Init</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getDefaultLazyInit() <em>Default Lazy Init</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getDefaultLazyInit()
-   * @generated
-   * @ordered
-   */
+	 * @see #getDefaultLazyInit()
+	 * @generated
+	 * @ordered
+	 */
   protected static final DefaultableBoolean DEFAULT_LAZY_INIT_EDEFAULT = DefaultableBoolean.DEFAULT;
 
   /**
-   * The cached value of the '{@link #getDefaultLazyInit() <em>Default Lazy Init</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getDefaultLazyInit() <em>Default Lazy Init</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getDefaultLazyInit()
-   * @generated
-   * @ordered
-   */
+	 * @see #getDefaultLazyInit()
+	 * @generated
+	 * @ordered
+	 */
   protected DefaultableBoolean defaultLazyInit = DEFAULT_LAZY_INIT_EDEFAULT;
 
   /**
-   * The default value of the '{@link #getDefaultMerge() <em>Default Merge</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getDefaultMerge() <em>Default Merge</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getDefaultMerge()
-   * @generated
-   * @ordered
-   */
+	 * @see #getDefaultMerge()
+	 * @generated
+	 * @ordered
+	 */
   protected static final DefaultableBoolean DEFAULT_MERGE_EDEFAULT = DefaultableBoolean.DEFAULT;
 
   /**
-   * The cached value of the '{@link #getDefaultMerge() <em>Default Merge</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getDefaultMerge() <em>Default Merge</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getDefaultMerge()
-   * @generated
-   * @ordered
-   */
+	 * @see #getDefaultMerge()
+	 * @generated
+	 * @ordered
+	 */
   protected DefaultableBoolean defaultMerge = DEFAULT_MERGE_EDEFAULT;
 
   /**
-   * The default value of the '{@link #getProfile() <em>Profile</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getProfile() <em>Profile</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getProfile()
-   * @generated
-   * @ordered
-   */
+	 * @see #getProfile()
+	 * @generated
+	 * @ordered
+	 */
   protected static final String PROFILE_EDEFAULT = null;
 
   /**
-   * The cached value of the '{@link #getProfile() <em>Profile</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getProfile() <em>Profile</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getProfile()
-   * @generated
-   * @ordered
-   */
+	 * @see #getProfile()
+	 * @generated
+	 * @ordered
+	 */
   protected String profile = PROFILE_EDEFAULT;
 
   /**
-   * The default value of the '{@link #getDescription() <em>Description</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getDescription() <em>Description</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getDescription()
-   * @generated
-   * @ordered
-   */
+	 * @see #getDescription()
+	 * @generated
+	 * @ordered
+	 */
   protected static final String DESCRIPTION_EDEFAULT = null;
 
   /**
-   * The cached value of the '{@link #getDescription() <em>Description</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getDescription() <em>Description</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getDescription()
-   * @generated
-   * @ordered
-   */
+	 * @see #getDescription()
+	 * @generated
+	 * @ordered
+	 */
   protected String description = DESCRIPTION_EDEFAULT;
 
   /**
-   * The cached value of the '{@link #getComponents() <em>Components</em>}' containment reference list.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getComponents() <em>Components</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getComponents()
-   * @generated
-   * @ordered
-   */
+	 * @see #getComponents()
+	 * @generated
+	 * @ordered
+	 */
   protected EList<Component> components;
 
   /**
-   * The cached value of the '{@link #getAlias() <em>Alias</em>}' containment reference list.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getAlias() <em>Alias</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getAlias()
-   * @generated
-   * @ordered
-   */
+	 * @see #getAlias()
+	 * @generated
+	 * @ordered
+	 */
   protected EList<Alias> alias;
 
   /**
-   * The cached value of the '{@link #getImports() <em>Imports</em>}' containment reference list.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getImports() <em>Imports</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getImports()
-   * @generated
-   * @ordered
-   */
+	 * @see #getImports()
+	 * @generated
+	 * @ordered
+	 */
   protected EList<Import> imports;
 
   /**
-   * The cached value of the '{@link #getContexts() <em>Contexts</em>}' containment reference list.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getContexts() <em>Contexts</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getContexts()
-   * @generated
-   * @ordered
-   */
+	 * @see #getContexts()
+	 * @generated
+	 * @ordered
+	 */
   protected EList<Context> contexts;
 
   /**
-   * The cached value of the '{@link #getAspects() <em>Aspects</em>}' containment reference list.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getAspects() <em>Aspects</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getAspects()
-   * @generated
-   * @ordered
-   */
+	 * @see #getAspects()
+	 * @generated
+	 * @ordered
+	 */
   protected EList<Aspect> aspects;
 
   /**
-   * The cached value of the '{@link #getUtilConstants() <em>Util Constants</em>}' containment reference list.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getUtilConstants() <em>Util Constants</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getUtilConstants()
-   * @generated
-   * @ordered
-   */
+	 * @see #getUtilConstants()
+	 * @generated
+	 * @ordered
+	 */
   protected EList<UtilConstant> utilConstants;
 
   /**
-   * The cached value of the '{@link #getUtilLists() <em>Util Lists</em>}' containment reference list.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getUtilLists() <em>Util Lists</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getUtilLists()
-   * @generated
-   * @ordered
-   */
+	 * @see #getUtilLists()
+	 * @generated
+	 * @ordered
+	 */
   protected EList<UtilList> utilLists;
 
   /**
-   * The cached value of the '{@link #getUtilMaps() <em>Util Maps</em>}' containment reference list.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getUtilMaps() <em>Util Maps</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getUtilMaps()
-   * @generated
-   * @ordered
-   */
+	 * @see #getUtilMaps()
+	 * @generated
+	 * @ordered
+	 */
   protected EList<UtilMap> utilMaps;
 
   /**
-   * The cached value of the '{@link #getUtilProperties() <em>Util Properties</em>}' containment reference list.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getUtilProperties() <em>Util Properties</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getUtilProperties()
-   * @generated
-   * @ordered
-   */
+	 * @see #getUtilProperties()
+	 * @generated
+	 * @ordered
+	 */
   protected EList<UtilProperties> utilProperties;
 
   /**
-   * The cached value of the '{@link #getUtilSets() <em>Util Sets</em>}' containment reference list.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getUtilSets() <em>Util Sets</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getUtilSets()
-   * @generated
-   * @ordered
-   */
+	 * @see #getUtilSets()
+	 * @generated
+	 * @ordered
+	 */
   protected EList<UtilSet> utilSets;
 
   /**
-   * The cached value of the '{@link #getUtilPropertiesPath() <em>Util Properties Path</em>}' containment reference list.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getUtilPropertiesPath() <em>Util Properties Path</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getUtilPropertiesPath()
-   * @generated
-   * @ordered
-   */
+	 * @see #getUtilPropertiesPath()
+	 * @generated
+	 * @ordered
+	 */
   protected EList<UtilPropertyPath> utilPropertiesPath;
 
   /**
-   * The cached value of the '{@link #getTxAdvices() <em>Tx Advices</em>}' containment reference list.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getTxAdvices() <em>Tx Advices</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getTxAdvices()
-   * @generated
-   * @ordered
-   */
+	 * @see #getTxAdvices()
+	 * @generated
+	 * @ordered
+	 */
   protected EList<TxAdvise> txAdvices;
 
   /**
-   * The cached value of the '{@link #getTxJtaTransactionManager() <em>Tx Jta Transaction Manager</em>}' containment reference.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getTxJtaTransactionManager() <em>Tx Jta Transaction Manager</em>}' containment reference.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getTxJtaTransactionManager()
-   * @generated
-   * @ordered
-   */
+	 * @see #getTxJtaTransactionManager()
+	 * @generated
+	 * @ordered
+	 */
   protected TxJtaTransactionManager txJtaTransactionManager;
 
   /**
-   * The cached value of the '{@link #getConfigurationComposite() <em>Configuration Composite</em>}' containment reference list.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getConfigurationComposite() <em>Configuration Composite</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getConfigurationComposite()
-   * @generated
-   * @ordered
-   */
+	 * @see #getConfigurationComposite()
+	 * @generated
+	 * @ordered
+	 */
   protected EList<Configuration> configurationComposite;
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   protected ConfigurationImpl()
   {
-    super();
-  }
+		super();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   protected EClass eStaticClass()
   {
-    return SpringConfigDslPackage.Literals.CONFIGURATION;
-  }
+		return SpringConfigDslPackage.Literals.CONFIGURATION;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public AutoWiredType getDefaultAutowire()
   {
-    return defaultAutowire;
-  }
+		return defaultAutowire;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public void setDefaultAutowire(AutoWiredType newDefaultAutowire)
   {
-    AutoWiredType oldDefaultAutowire = defaultAutowire;
-    defaultAutowire = newDefaultAutowire == null ? DEFAULT_AUTOWIRE_EDEFAULT : newDefaultAutowire;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.CONFIGURATION__DEFAULT_AUTOWIRE, oldDefaultAutowire, defaultAutowire));
-  }
+		AutoWiredType oldDefaultAutowire = defaultAutowire;
+		defaultAutowire = newDefaultAutowire == null ? DEFAULT_AUTOWIRE_EDEFAULT : newDefaultAutowire;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.CONFIGURATION__DEFAULT_AUTOWIRE, oldDefaultAutowire, defaultAutowire));
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public String getDefaultInitMethod()
   {
-    return defaultInitMethod;
-  }
+		return defaultInitMethod;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public void setDefaultInitMethod(String newDefaultInitMethod)
   {
-    String oldDefaultInitMethod = defaultInitMethod;
-    defaultInitMethod = newDefaultInitMethod;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.CONFIGURATION__DEFAULT_INIT_METHOD, oldDefaultInitMethod, defaultInitMethod));
-  }
+		String oldDefaultInitMethod = defaultInitMethod;
+		defaultInitMethod = newDefaultInitMethod;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.CONFIGURATION__DEFAULT_INIT_METHOD, oldDefaultInitMethod, defaultInitMethod));
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public String getDefaultAutowireCandidates()
   {
-    return defaultAutowireCandidates;
-  }
+		return defaultAutowireCandidates;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public void setDefaultAutowireCandidates(String newDefaultAutowireCandidates)
   {
-    String oldDefaultAutowireCandidates = defaultAutowireCandidates;
-    defaultAutowireCandidates = newDefaultAutowireCandidates;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.CONFIGURATION__DEFAULT_AUTOWIRE_CANDIDATES, oldDefaultAutowireCandidates, defaultAutowireCandidates));
-  }
+		String oldDefaultAutowireCandidates = defaultAutowireCandidates;
+		defaultAutowireCandidates = newDefaultAutowireCandidates;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.CONFIGURATION__DEFAULT_AUTOWIRE_CANDIDATES, oldDefaultAutowireCandidates, defaultAutowireCandidates));
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public String getDefaultDestroyMethod()
   {
-    return defaultDestroyMethod;
-  }
+		return defaultDestroyMethod;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public void setDefaultDestroyMethod(String newDefaultDestroyMethod)
   {
-    String oldDefaultDestroyMethod = defaultDestroyMethod;
-    defaultDestroyMethod = newDefaultDestroyMethod;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.CONFIGURATION__DEFAULT_DESTROY_METHOD, oldDefaultDestroyMethod, defaultDestroyMethod));
-  }
+		String oldDefaultDestroyMethod = defaultDestroyMethod;
+		defaultDestroyMethod = newDefaultDestroyMethod;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.CONFIGURATION__DEFAULT_DESTROY_METHOD, oldDefaultDestroyMethod, defaultDestroyMethod));
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public DefaultableBoolean getDefaultLazyInit()
   {
-    return defaultLazyInit;
-  }
+		return defaultLazyInit;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public void setDefaultLazyInit(DefaultableBoolean newDefaultLazyInit)
   {
-    DefaultableBoolean oldDefaultLazyInit = defaultLazyInit;
-    defaultLazyInit = newDefaultLazyInit == null ? DEFAULT_LAZY_INIT_EDEFAULT : newDefaultLazyInit;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.CONFIGURATION__DEFAULT_LAZY_INIT, oldDefaultLazyInit, defaultLazyInit));
-  }
+		DefaultableBoolean oldDefaultLazyInit = defaultLazyInit;
+		defaultLazyInit = newDefaultLazyInit == null ? DEFAULT_LAZY_INIT_EDEFAULT : newDefaultLazyInit;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.CONFIGURATION__DEFAULT_LAZY_INIT, oldDefaultLazyInit, defaultLazyInit));
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public DefaultableBoolean getDefaultMerge()
   {
-    return defaultMerge;
-  }
+		return defaultMerge;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public void setDefaultMerge(DefaultableBoolean newDefaultMerge)
   {
-    DefaultableBoolean oldDefaultMerge = defaultMerge;
-    defaultMerge = newDefaultMerge == null ? DEFAULT_MERGE_EDEFAULT : newDefaultMerge;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.CONFIGURATION__DEFAULT_MERGE, oldDefaultMerge, defaultMerge));
-  }
+		DefaultableBoolean oldDefaultMerge = defaultMerge;
+		defaultMerge = newDefaultMerge == null ? DEFAULT_MERGE_EDEFAULT : newDefaultMerge;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.CONFIGURATION__DEFAULT_MERGE, oldDefaultMerge, defaultMerge));
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public String getProfile()
   {
-    return profile;
-  }
+		return profile;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public void setProfile(String newProfile)
   {
-    String oldProfile = profile;
-    profile = newProfile;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.CONFIGURATION__PROFILE, oldProfile, profile));
-  }
+		String oldProfile = profile;
+		profile = newProfile;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.CONFIGURATION__PROFILE, oldProfile, profile));
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public String getDescription()
   {
-    return description;
-  }
+		return description;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public void setDescription(String newDescription)
   {
-    String oldDescription = description;
-    description = newDescription;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.CONFIGURATION__DESCRIPTION, oldDescription, description));
-  }
+		String oldDescription = description;
+		description = newDescription;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.CONFIGURATION__DESCRIPTION, oldDescription, description));
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public EList<Component> getComponents()
   {
-    if (components == null)
-    {
-      components = new EObjectContainmentEList<Component>(Component.class, this, SpringConfigDslPackage.CONFIGURATION__COMPONENTS);
-    }
-    return components;
-  }
+		if (components == null) {
+			components = new EObjectContainmentEList<Component>(Component.class, this, SpringConfigDslPackage.CONFIGURATION__COMPONENTS);
+		}
+		return components;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public EList<Alias> getAlias()
   {
-    if (alias == null)
-    {
-      alias = new EObjectContainmentEList<Alias>(Alias.class, this, SpringConfigDslPackage.CONFIGURATION__ALIAS);
-    }
-    return alias;
-  }
+		if (alias == null) {
+			alias = new EObjectContainmentEList<Alias>(Alias.class, this, SpringConfigDslPackage.CONFIGURATION__ALIAS);
+		}
+		return alias;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public EList<Import> getImports()
   {
-    if (imports == null)
-    {
-      imports = new EObjectContainmentEList<Import>(Import.class, this, SpringConfigDslPackage.CONFIGURATION__IMPORTS);
-    }
-    return imports;
-  }
+		if (imports == null) {
+			imports = new EObjectContainmentEList<Import>(Import.class, this, SpringConfigDslPackage.CONFIGURATION__IMPORTS);
+		}
+		return imports;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public EList<Context> getContexts()
   {
-    if (contexts == null)
-    {
-      contexts = new EObjectContainmentEList<Context>(Context.class, this, SpringConfigDslPackage.CONFIGURATION__CONTEXTS);
-    }
-    return contexts;
-  }
+		if (contexts == null) {
+			contexts = new EObjectContainmentEList<Context>(Context.class, this, SpringConfigDslPackage.CONFIGURATION__CONTEXTS);
+		}
+		return contexts;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public EList<Aspect> getAspects()
   {
-    if (aspects == null)
-    {
-      aspects = new EObjectContainmentEList<Aspect>(Aspect.class, this, SpringConfigDslPackage.CONFIGURATION__ASPECTS);
-    }
-    return aspects;
-  }
+		if (aspects == null) {
+			aspects = new EObjectContainmentEList<Aspect>(Aspect.class, this, SpringConfigDslPackage.CONFIGURATION__ASPECTS);
+		}
+		return aspects;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public EList<UtilConstant> getUtilConstants()
   {
-    if (utilConstants == null)
-    {
-      utilConstants = new EObjectContainmentEList<UtilConstant>(UtilConstant.class, this, SpringConfigDslPackage.CONFIGURATION__UTIL_CONSTANTS);
-    }
-    return utilConstants;
-  }
+		if (utilConstants == null) {
+			utilConstants = new EObjectContainmentEList<UtilConstant>(UtilConstant.class, this, SpringConfigDslPackage.CONFIGURATION__UTIL_CONSTANTS);
+		}
+		return utilConstants;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public EList<UtilList> getUtilLists()
   {
-    if (utilLists == null)
-    {
-      utilLists = new EObjectContainmentEList<UtilList>(UtilList.class, this, SpringConfigDslPackage.CONFIGURATION__UTIL_LISTS);
-    }
-    return utilLists;
-  }
+		if (utilLists == null) {
+			utilLists = new EObjectContainmentEList<UtilList>(UtilList.class, this, SpringConfigDslPackage.CONFIGURATION__UTIL_LISTS);
+		}
+		return utilLists;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public EList<UtilMap> getUtilMaps()
   {
-    if (utilMaps == null)
-    {
-      utilMaps = new EObjectContainmentEList<UtilMap>(UtilMap.class, this, SpringConfigDslPackage.CONFIGURATION__UTIL_MAPS);
-    }
-    return utilMaps;
-  }
+		if (utilMaps == null) {
+			utilMaps = new EObjectContainmentEList<UtilMap>(UtilMap.class, this, SpringConfigDslPackage.CONFIGURATION__UTIL_MAPS);
+		}
+		return utilMaps;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public EList<UtilProperties> getUtilProperties()
   {
-    if (utilProperties == null)
-    {
-      utilProperties = new EObjectContainmentEList<UtilProperties>(UtilProperties.class, this, SpringConfigDslPackage.CONFIGURATION__UTIL_PROPERTIES);
-    }
-    return utilProperties;
-  }
+		if (utilProperties == null) {
+			utilProperties = new EObjectContainmentEList<UtilProperties>(UtilProperties.class, this, SpringConfigDslPackage.CONFIGURATION__UTIL_PROPERTIES);
+		}
+		return utilProperties;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public EList<UtilSet> getUtilSets()
   {
-    if (utilSets == null)
-    {
-      utilSets = new EObjectContainmentEList<UtilSet>(UtilSet.class, this, SpringConfigDslPackage.CONFIGURATION__UTIL_SETS);
-    }
-    return utilSets;
-  }
+		if (utilSets == null) {
+			utilSets = new EObjectContainmentEList<UtilSet>(UtilSet.class, this, SpringConfigDslPackage.CONFIGURATION__UTIL_SETS);
+		}
+		return utilSets;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public EList<UtilPropertyPath> getUtilPropertiesPath()
   {
-    if (utilPropertiesPath == null)
-    {
-      utilPropertiesPath = new EObjectContainmentEList<UtilPropertyPath>(UtilPropertyPath.class, this, SpringConfigDslPackage.CONFIGURATION__UTIL_PROPERTIES_PATH);
-    }
-    return utilPropertiesPath;
-  }
+		if (utilPropertiesPath == null) {
+			utilPropertiesPath = new EObjectContainmentEList<UtilPropertyPath>(UtilPropertyPath.class, this, SpringConfigDslPackage.CONFIGURATION__UTIL_PROPERTIES_PATH);
+		}
+		return utilPropertiesPath;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public EList<TxAdvise> getTxAdvices()
   {
-    if (txAdvices == null)
-    {
-      txAdvices = new EObjectContainmentEList<TxAdvise>(TxAdvise.class, this, SpringConfigDslPackage.CONFIGURATION__TX_ADVICES);
-    }
-    return txAdvices;
-  }
+		if (txAdvices == null) {
+			txAdvices = new EObjectContainmentEList<TxAdvise>(TxAdvise.class, this, SpringConfigDslPackage.CONFIGURATION__TX_ADVICES);
+		}
+		return txAdvices;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public TxJtaTransactionManager getTxJtaTransactionManager()
   {
-    return txJtaTransactionManager;
-  }
+		return txJtaTransactionManager;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public NotificationChain basicSetTxJtaTransactionManager(TxJtaTransactionManager newTxJtaTransactionManager, NotificationChain msgs)
   {
-    TxJtaTransactionManager oldTxJtaTransactionManager = txJtaTransactionManager;
-    txJtaTransactionManager = newTxJtaTransactionManager;
-    if (eNotificationRequired())
-    {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.CONFIGURATION__TX_JTA_TRANSACTION_MANAGER, oldTxJtaTransactionManager, newTxJtaTransactionManager);
-      if (msgs == null) msgs = notification; else msgs.add(notification);
-    }
-    return msgs;
-  }
+		TxJtaTransactionManager oldTxJtaTransactionManager = txJtaTransactionManager;
+		txJtaTransactionManager = newTxJtaTransactionManager;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.CONFIGURATION__TX_JTA_TRANSACTION_MANAGER, oldTxJtaTransactionManager, newTxJtaTransactionManager);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public void setTxJtaTransactionManager(TxJtaTransactionManager newTxJtaTransactionManager)
   {
-    if (newTxJtaTransactionManager != txJtaTransactionManager)
-    {
-      NotificationChain msgs = null;
-      if (txJtaTransactionManager != null)
-        msgs = ((InternalEObject)txJtaTransactionManager).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - SpringConfigDslPackage.CONFIGURATION__TX_JTA_TRANSACTION_MANAGER, null, msgs);
-      if (newTxJtaTransactionManager != null)
-        msgs = ((InternalEObject)newTxJtaTransactionManager).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - SpringConfigDslPackage.CONFIGURATION__TX_JTA_TRANSACTION_MANAGER, null, msgs);
-      msgs = basicSetTxJtaTransactionManager(newTxJtaTransactionManager, msgs);
-      if (msgs != null) msgs.dispatch();
-    }
-    else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.CONFIGURATION__TX_JTA_TRANSACTION_MANAGER, newTxJtaTransactionManager, newTxJtaTransactionManager));
-  }
+		if (newTxJtaTransactionManager != txJtaTransactionManager) {
+			NotificationChain msgs = null;
+			if (txJtaTransactionManager != null)
+				msgs = ((InternalEObject)txJtaTransactionManager).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - SpringConfigDslPackage.CONFIGURATION__TX_JTA_TRANSACTION_MANAGER, null, msgs);
+			if (newTxJtaTransactionManager != null)
+				msgs = ((InternalEObject)newTxJtaTransactionManager).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - SpringConfigDslPackage.CONFIGURATION__TX_JTA_TRANSACTION_MANAGER, null, msgs);
+			msgs = basicSetTxJtaTransactionManager(newTxJtaTransactionManager, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.CONFIGURATION__TX_JTA_TRANSACTION_MANAGER, newTxJtaTransactionManager, newTxJtaTransactionManager));
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public EList<Configuration> getConfigurationComposite()
   {
-    if (configurationComposite == null)
-    {
-      configurationComposite = new EObjectContainmentEList<Configuration>(Configuration.class, this, SpringConfigDslPackage.CONFIGURATION__CONFIGURATION_COMPOSITE);
-    }
-    return configurationComposite;
-  }
+		if (configurationComposite == null) {
+			configurationComposite = new EObjectContainmentEList<Configuration>(Configuration.class, this, SpringConfigDslPackage.CONFIGURATION__CONFIGURATION_COMPOSITE);
+		}
+		return configurationComposite;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.CONFIGURATION__COMPONENTS:
-        return ((InternalEList<?>)getComponents()).basicRemove(otherEnd, msgs);
-      case SpringConfigDslPackage.CONFIGURATION__ALIAS:
-        return ((InternalEList<?>)getAlias()).basicRemove(otherEnd, msgs);
-      case SpringConfigDslPackage.CONFIGURATION__IMPORTS:
-        return ((InternalEList<?>)getImports()).basicRemove(otherEnd, msgs);
-      case SpringConfigDslPackage.CONFIGURATION__CONTEXTS:
-        return ((InternalEList<?>)getContexts()).basicRemove(otherEnd, msgs);
-      case SpringConfigDslPackage.CONFIGURATION__ASPECTS:
-        return ((InternalEList<?>)getAspects()).basicRemove(otherEnd, msgs);
-      case SpringConfigDslPackage.CONFIGURATION__UTIL_CONSTANTS:
-        return ((InternalEList<?>)getUtilConstants()).basicRemove(otherEnd, msgs);
-      case SpringConfigDslPackage.CONFIGURATION__UTIL_LISTS:
-        return ((InternalEList<?>)getUtilLists()).basicRemove(otherEnd, msgs);
-      case SpringConfigDslPackage.CONFIGURATION__UTIL_MAPS:
-        return ((InternalEList<?>)getUtilMaps()).basicRemove(otherEnd, msgs);
-      case SpringConfigDslPackage.CONFIGURATION__UTIL_PROPERTIES:
-        return ((InternalEList<?>)getUtilProperties()).basicRemove(otherEnd, msgs);
-      case SpringConfigDslPackage.CONFIGURATION__UTIL_SETS:
-        return ((InternalEList<?>)getUtilSets()).basicRemove(otherEnd, msgs);
-      case SpringConfigDslPackage.CONFIGURATION__UTIL_PROPERTIES_PATH:
-        return ((InternalEList<?>)getUtilPropertiesPath()).basicRemove(otherEnd, msgs);
-      case SpringConfigDslPackage.CONFIGURATION__TX_ADVICES:
-        return ((InternalEList<?>)getTxAdvices()).basicRemove(otherEnd, msgs);
-      case SpringConfigDslPackage.CONFIGURATION__TX_JTA_TRANSACTION_MANAGER:
-        return basicSetTxJtaTransactionManager(null, msgs);
-      case SpringConfigDslPackage.CONFIGURATION__CONFIGURATION_COMPOSITE:
-        return ((InternalEList<?>)getConfigurationComposite()).basicRemove(otherEnd, msgs);
-    }
-    return super.eInverseRemove(otherEnd, featureID, msgs);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.CONFIGURATION__COMPONENTS:
+				return ((InternalEList<?>)getComponents()).basicRemove(otherEnd, msgs);
+			case SpringConfigDslPackage.CONFIGURATION__ALIAS:
+				return ((InternalEList<?>)getAlias()).basicRemove(otherEnd, msgs);
+			case SpringConfigDslPackage.CONFIGURATION__IMPORTS:
+				return ((InternalEList<?>)getImports()).basicRemove(otherEnd, msgs);
+			case SpringConfigDslPackage.CONFIGURATION__CONTEXTS:
+				return ((InternalEList<?>)getContexts()).basicRemove(otherEnd, msgs);
+			case SpringConfigDslPackage.CONFIGURATION__ASPECTS:
+				return ((InternalEList<?>)getAspects()).basicRemove(otherEnd, msgs);
+			case SpringConfigDslPackage.CONFIGURATION__UTIL_CONSTANTS:
+				return ((InternalEList<?>)getUtilConstants()).basicRemove(otherEnd, msgs);
+			case SpringConfigDslPackage.CONFIGURATION__UTIL_LISTS:
+				return ((InternalEList<?>)getUtilLists()).basicRemove(otherEnd, msgs);
+			case SpringConfigDslPackage.CONFIGURATION__UTIL_MAPS:
+				return ((InternalEList<?>)getUtilMaps()).basicRemove(otherEnd, msgs);
+			case SpringConfigDslPackage.CONFIGURATION__UTIL_PROPERTIES:
+				return ((InternalEList<?>)getUtilProperties()).basicRemove(otherEnd, msgs);
+			case SpringConfigDslPackage.CONFIGURATION__UTIL_SETS:
+				return ((InternalEList<?>)getUtilSets()).basicRemove(otherEnd, msgs);
+			case SpringConfigDslPackage.CONFIGURATION__UTIL_PROPERTIES_PATH:
+				return ((InternalEList<?>)getUtilPropertiesPath()).basicRemove(otherEnd, msgs);
+			case SpringConfigDslPackage.CONFIGURATION__TX_ADVICES:
+				return ((InternalEList<?>)getTxAdvices()).basicRemove(otherEnd, msgs);
+			case SpringConfigDslPackage.CONFIGURATION__TX_JTA_TRANSACTION_MANAGER:
+				return basicSetTxJtaTransactionManager(null, msgs);
+			case SpringConfigDslPackage.CONFIGURATION__CONFIGURATION_COMPOSITE:
+				return ((InternalEList<?>)getConfigurationComposite()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.CONFIGURATION__DEFAULT_AUTOWIRE:
-        return getDefaultAutowire();
-      case SpringConfigDslPackage.CONFIGURATION__DEFAULT_INIT_METHOD:
-        return getDefaultInitMethod();
-      case SpringConfigDslPackage.CONFIGURATION__DEFAULT_AUTOWIRE_CANDIDATES:
-        return getDefaultAutowireCandidates();
-      case SpringConfigDslPackage.CONFIGURATION__DEFAULT_DESTROY_METHOD:
-        return getDefaultDestroyMethod();
-      case SpringConfigDslPackage.CONFIGURATION__DEFAULT_LAZY_INIT:
-        return getDefaultLazyInit();
-      case SpringConfigDslPackage.CONFIGURATION__DEFAULT_MERGE:
-        return getDefaultMerge();
-      case SpringConfigDslPackage.CONFIGURATION__PROFILE:
-        return getProfile();
-      case SpringConfigDslPackage.CONFIGURATION__DESCRIPTION:
-        return getDescription();
-      case SpringConfigDslPackage.CONFIGURATION__COMPONENTS:
-        return getComponents();
-      case SpringConfigDslPackage.CONFIGURATION__ALIAS:
-        return getAlias();
-      case SpringConfigDslPackage.CONFIGURATION__IMPORTS:
-        return getImports();
-      case SpringConfigDslPackage.CONFIGURATION__CONTEXTS:
-        return getContexts();
-      case SpringConfigDslPackage.CONFIGURATION__ASPECTS:
-        return getAspects();
-      case SpringConfigDslPackage.CONFIGURATION__UTIL_CONSTANTS:
-        return getUtilConstants();
-      case SpringConfigDslPackage.CONFIGURATION__UTIL_LISTS:
-        return getUtilLists();
-      case SpringConfigDslPackage.CONFIGURATION__UTIL_MAPS:
-        return getUtilMaps();
-      case SpringConfigDslPackage.CONFIGURATION__UTIL_PROPERTIES:
-        return getUtilProperties();
-      case SpringConfigDslPackage.CONFIGURATION__UTIL_SETS:
-        return getUtilSets();
-      case SpringConfigDslPackage.CONFIGURATION__UTIL_PROPERTIES_PATH:
-        return getUtilPropertiesPath();
-      case SpringConfigDslPackage.CONFIGURATION__TX_ADVICES:
-        return getTxAdvices();
-      case SpringConfigDslPackage.CONFIGURATION__TX_JTA_TRANSACTION_MANAGER:
-        return getTxJtaTransactionManager();
-      case SpringConfigDslPackage.CONFIGURATION__CONFIGURATION_COMPOSITE:
-        return getConfigurationComposite();
-    }
-    return super.eGet(featureID, resolve, coreType);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.CONFIGURATION__DEFAULT_AUTOWIRE:
+				return getDefaultAutowire();
+			case SpringConfigDslPackage.CONFIGURATION__DEFAULT_INIT_METHOD:
+				return getDefaultInitMethod();
+			case SpringConfigDslPackage.CONFIGURATION__DEFAULT_AUTOWIRE_CANDIDATES:
+				return getDefaultAutowireCandidates();
+			case SpringConfigDslPackage.CONFIGURATION__DEFAULT_DESTROY_METHOD:
+				return getDefaultDestroyMethod();
+			case SpringConfigDslPackage.CONFIGURATION__DEFAULT_LAZY_INIT:
+				return getDefaultLazyInit();
+			case SpringConfigDslPackage.CONFIGURATION__DEFAULT_MERGE:
+				return getDefaultMerge();
+			case SpringConfigDslPackage.CONFIGURATION__PROFILE:
+				return getProfile();
+			case SpringConfigDslPackage.CONFIGURATION__DESCRIPTION:
+				return getDescription();
+			case SpringConfigDslPackage.CONFIGURATION__COMPONENTS:
+				return getComponents();
+			case SpringConfigDslPackage.CONFIGURATION__ALIAS:
+				return getAlias();
+			case SpringConfigDslPackage.CONFIGURATION__IMPORTS:
+				return getImports();
+			case SpringConfigDslPackage.CONFIGURATION__CONTEXTS:
+				return getContexts();
+			case SpringConfigDslPackage.CONFIGURATION__ASPECTS:
+				return getAspects();
+			case SpringConfigDslPackage.CONFIGURATION__UTIL_CONSTANTS:
+				return getUtilConstants();
+			case SpringConfigDslPackage.CONFIGURATION__UTIL_LISTS:
+				return getUtilLists();
+			case SpringConfigDslPackage.CONFIGURATION__UTIL_MAPS:
+				return getUtilMaps();
+			case SpringConfigDslPackage.CONFIGURATION__UTIL_PROPERTIES:
+				return getUtilProperties();
+			case SpringConfigDslPackage.CONFIGURATION__UTIL_SETS:
+				return getUtilSets();
+			case SpringConfigDslPackage.CONFIGURATION__UTIL_PROPERTIES_PATH:
+				return getUtilPropertiesPath();
+			case SpringConfigDslPackage.CONFIGURATION__TX_ADVICES:
+				return getTxAdvices();
+			case SpringConfigDslPackage.CONFIGURATION__TX_JTA_TRANSACTION_MANAGER:
+				return getTxJtaTransactionManager();
+			case SpringConfigDslPackage.CONFIGURATION__CONFIGURATION_COMPOSITE:
+				return getConfigurationComposite();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @SuppressWarnings("unchecked")
   @Override
   public void eSet(int featureID, Object newValue)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.CONFIGURATION__DEFAULT_AUTOWIRE:
-        setDefaultAutowire((AutoWiredType)newValue);
-        return;
-      case SpringConfigDslPackage.CONFIGURATION__DEFAULT_INIT_METHOD:
-        setDefaultInitMethod((String)newValue);
-        return;
-      case SpringConfigDslPackage.CONFIGURATION__DEFAULT_AUTOWIRE_CANDIDATES:
-        setDefaultAutowireCandidates((String)newValue);
-        return;
-      case SpringConfigDslPackage.CONFIGURATION__DEFAULT_DESTROY_METHOD:
-        setDefaultDestroyMethod((String)newValue);
-        return;
-      case SpringConfigDslPackage.CONFIGURATION__DEFAULT_LAZY_INIT:
-        setDefaultLazyInit((DefaultableBoolean)newValue);
-        return;
-      case SpringConfigDslPackage.CONFIGURATION__DEFAULT_MERGE:
-        setDefaultMerge((DefaultableBoolean)newValue);
-        return;
-      case SpringConfigDslPackage.CONFIGURATION__PROFILE:
-        setProfile((String)newValue);
-        return;
-      case SpringConfigDslPackage.CONFIGURATION__DESCRIPTION:
-        setDescription((String)newValue);
-        return;
-      case SpringConfigDslPackage.CONFIGURATION__COMPONENTS:
-        getComponents().clear();
-        getComponents().addAll((Collection<? extends Component>)newValue);
-        return;
-      case SpringConfigDslPackage.CONFIGURATION__ALIAS:
-        getAlias().clear();
-        getAlias().addAll((Collection<? extends Alias>)newValue);
-        return;
-      case SpringConfigDslPackage.CONFIGURATION__IMPORTS:
-        getImports().clear();
-        getImports().addAll((Collection<? extends Import>)newValue);
-        return;
-      case SpringConfigDslPackage.CONFIGURATION__CONTEXTS:
-        getContexts().clear();
-        getContexts().addAll((Collection<? extends Context>)newValue);
-        return;
-      case SpringConfigDslPackage.CONFIGURATION__ASPECTS:
-        getAspects().clear();
-        getAspects().addAll((Collection<? extends Aspect>)newValue);
-        return;
-      case SpringConfigDslPackage.CONFIGURATION__UTIL_CONSTANTS:
-        getUtilConstants().clear();
-        getUtilConstants().addAll((Collection<? extends UtilConstant>)newValue);
-        return;
-      case SpringConfigDslPackage.CONFIGURATION__UTIL_LISTS:
-        getUtilLists().clear();
-        getUtilLists().addAll((Collection<? extends UtilList>)newValue);
-        return;
-      case SpringConfigDslPackage.CONFIGURATION__UTIL_MAPS:
-        getUtilMaps().clear();
-        getUtilMaps().addAll((Collection<? extends UtilMap>)newValue);
-        return;
-      case SpringConfigDslPackage.CONFIGURATION__UTIL_PROPERTIES:
-        getUtilProperties().clear();
-        getUtilProperties().addAll((Collection<? extends UtilProperties>)newValue);
-        return;
-      case SpringConfigDslPackage.CONFIGURATION__UTIL_SETS:
-        getUtilSets().clear();
-        getUtilSets().addAll((Collection<? extends UtilSet>)newValue);
-        return;
-      case SpringConfigDslPackage.CONFIGURATION__UTIL_PROPERTIES_PATH:
-        getUtilPropertiesPath().clear();
-        getUtilPropertiesPath().addAll((Collection<? extends UtilPropertyPath>)newValue);
-        return;
-      case SpringConfigDslPackage.CONFIGURATION__TX_ADVICES:
-        getTxAdvices().clear();
-        getTxAdvices().addAll((Collection<? extends TxAdvise>)newValue);
-        return;
-      case SpringConfigDslPackage.CONFIGURATION__TX_JTA_TRANSACTION_MANAGER:
-        setTxJtaTransactionManager((TxJtaTransactionManager)newValue);
-        return;
-      case SpringConfigDslPackage.CONFIGURATION__CONFIGURATION_COMPOSITE:
-        getConfigurationComposite().clear();
-        getConfigurationComposite().addAll((Collection<? extends Configuration>)newValue);
-        return;
-    }
-    super.eSet(featureID, newValue);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.CONFIGURATION__DEFAULT_AUTOWIRE:
+				setDefaultAutowire((AutoWiredType)newValue);
+				return;
+			case SpringConfigDslPackage.CONFIGURATION__DEFAULT_INIT_METHOD:
+				setDefaultInitMethod((String)newValue);
+				return;
+			case SpringConfigDslPackage.CONFIGURATION__DEFAULT_AUTOWIRE_CANDIDATES:
+				setDefaultAutowireCandidates((String)newValue);
+				return;
+			case SpringConfigDslPackage.CONFIGURATION__DEFAULT_DESTROY_METHOD:
+				setDefaultDestroyMethod((String)newValue);
+				return;
+			case SpringConfigDslPackage.CONFIGURATION__DEFAULT_LAZY_INIT:
+				setDefaultLazyInit((DefaultableBoolean)newValue);
+				return;
+			case SpringConfigDslPackage.CONFIGURATION__DEFAULT_MERGE:
+				setDefaultMerge((DefaultableBoolean)newValue);
+				return;
+			case SpringConfigDslPackage.CONFIGURATION__PROFILE:
+				setProfile((String)newValue);
+				return;
+			case SpringConfigDslPackage.CONFIGURATION__DESCRIPTION:
+				setDescription((String)newValue);
+				return;
+			case SpringConfigDslPackage.CONFIGURATION__COMPONENTS:
+				getComponents().clear();
+				getComponents().addAll((Collection<? extends Component>)newValue);
+				return;
+			case SpringConfigDslPackage.CONFIGURATION__ALIAS:
+				getAlias().clear();
+				getAlias().addAll((Collection<? extends Alias>)newValue);
+				return;
+			case SpringConfigDslPackage.CONFIGURATION__IMPORTS:
+				getImports().clear();
+				getImports().addAll((Collection<? extends Import>)newValue);
+				return;
+			case SpringConfigDslPackage.CONFIGURATION__CONTEXTS:
+				getContexts().clear();
+				getContexts().addAll((Collection<? extends Context>)newValue);
+				return;
+			case SpringConfigDslPackage.CONFIGURATION__ASPECTS:
+				getAspects().clear();
+				getAspects().addAll((Collection<? extends Aspect>)newValue);
+				return;
+			case SpringConfigDslPackage.CONFIGURATION__UTIL_CONSTANTS:
+				getUtilConstants().clear();
+				getUtilConstants().addAll((Collection<? extends UtilConstant>)newValue);
+				return;
+			case SpringConfigDslPackage.CONFIGURATION__UTIL_LISTS:
+				getUtilLists().clear();
+				getUtilLists().addAll((Collection<? extends UtilList>)newValue);
+				return;
+			case SpringConfigDslPackage.CONFIGURATION__UTIL_MAPS:
+				getUtilMaps().clear();
+				getUtilMaps().addAll((Collection<? extends UtilMap>)newValue);
+				return;
+			case SpringConfigDslPackage.CONFIGURATION__UTIL_PROPERTIES:
+				getUtilProperties().clear();
+				getUtilProperties().addAll((Collection<? extends UtilProperties>)newValue);
+				return;
+			case SpringConfigDslPackage.CONFIGURATION__UTIL_SETS:
+				getUtilSets().clear();
+				getUtilSets().addAll((Collection<? extends UtilSet>)newValue);
+				return;
+			case SpringConfigDslPackage.CONFIGURATION__UTIL_PROPERTIES_PATH:
+				getUtilPropertiesPath().clear();
+				getUtilPropertiesPath().addAll((Collection<? extends UtilPropertyPath>)newValue);
+				return;
+			case SpringConfigDslPackage.CONFIGURATION__TX_ADVICES:
+				getTxAdvices().clear();
+				getTxAdvices().addAll((Collection<? extends TxAdvise>)newValue);
+				return;
+			case SpringConfigDslPackage.CONFIGURATION__TX_JTA_TRANSACTION_MANAGER:
+				setTxJtaTransactionManager((TxJtaTransactionManager)newValue);
+				return;
+			case SpringConfigDslPackage.CONFIGURATION__CONFIGURATION_COMPOSITE:
+				getConfigurationComposite().clear();
+				getConfigurationComposite().addAll((Collection<? extends Configuration>)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public void eUnset(int featureID)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.CONFIGURATION__DEFAULT_AUTOWIRE:
-        setDefaultAutowire(DEFAULT_AUTOWIRE_EDEFAULT);
-        return;
-      case SpringConfigDslPackage.CONFIGURATION__DEFAULT_INIT_METHOD:
-        setDefaultInitMethod(DEFAULT_INIT_METHOD_EDEFAULT);
-        return;
-      case SpringConfigDslPackage.CONFIGURATION__DEFAULT_AUTOWIRE_CANDIDATES:
-        setDefaultAutowireCandidates(DEFAULT_AUTOWIRE_CANDIDATES_EDEFAULT);
-        return;
-      case SpringConfigDslPackage.CONFIGURATION__DEFAULT_DESTROY_METHOD:
-        setDefaultDestroyMethod(DEFAULT_DESTROY_METHOD_EDEFAULT);
-        return;
-      case SpringConfigDslPackage.CONFIGURATION__DEFAULT_LAZY_INIT:
-        setDefaultLazyInit(DEFAULT_LAZY_INIT_EDEFAULT);
-        return;
-      case SpringConfigDslPackage.CONFIGURATION__DEFAULT_MERGE:
-        setDefaultMerge(DEFAULT_MERGE_EDEFAULT);
-        return;
-      case SpringConfigDslPackage.CONFIGURATION__PROFILE:
-        setProfile(PROFILE_EDEFAULT);
-        return;
-      case SpringConfigDslPackage.CONFIGURATION__DESCRIPTION:
-        setDescription(DESCRIPTION_EDEFAULT);
-        return;
-      case SpringConfigDslPackage.CONFIGURATION__COMPONENTS:
-        getComponents().clear();
-        return;
-      case SpringConfigDslPackage.CONFIGURATION__ALIAS:
-        getAlias().clear();
-        return;
-      case SpringConfigDslPackage.CONFIGURATION__IMPORTS:
-        getImports().clear();
-        return;
-      case SpringConfigDslPackage.CONFIGURATION__CONTEXTS:
-        getContexts().clear();
-        return;
-      case SpringConfigDslPackage.CONFIGURATION__ASPECTS:
-        getAspects().clear();
-        return;
-      case SpringConfigDslPackage.CONFIGURATION__UTIL_CONSTANTS:
-        getUtilConstants().clear();
-        return;
-      case SpringConfigDslPackage.CONFIGURATION__UTIL_LISTS:
-        getUtilLists().clear();
-        return;
-      case SpringConfigDslPackage.CONFIGURATION__UTIL_MAPS:
-        getUtilMaps().clear();
-        return;
-      case SpringConfigDslPackage.CONFIGURATION__UTIL_PROPERTIES:
-        getUtilProperties().clear();
-        return;
-      case SpringConfigDslPackage.CONFIGURATION__UTIL_SETS:
-        getUtilSets().clear();
-        return;
-      case SpringConfigDslPackage.CONFIGURATION__UTIL_PROPERTIES_PATH:
-        getUtilPropertiesPath().clear();
-        return;
-      case SpringConfigDslPackage.CONFIGURATION__TX_ADVICES:
-        getTxAdvices().clear();
-        return;
-      case SpringConfigDslPackage.CONFIGURATION__TX_JTA_TRANSACTION_MANAGER:
-        setTxJtaTransactionManager((TxJtaTransactionManager)null);
-        return;
-      case SpringConfigDslPackage.CONFIGURATION__CONFIGURATION_COMPOSITE:
-        getConfigurationComposite().clear();
-        return;
-    }
-    super.eUnset(featureID);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.CONFIGURATION__DEFAULT_AUTOWIRE:
+				setDefaultAutowire(DEFAULT_AUTOWIRE_EDEFAULT);
+				return;
+			case SpringConfigDslPackage.CONFIGURATION__DEFAULT_INIT_METHOD:
+				setDefaultInitMethod(DEFAULT_INIT_METHOD_EDEFAULT);
+				return;
+			case SpringConfigDslPackage.CONFIGURATION__DEFAULT_AUTOWIRE_CANDIDATES:
+				setDefaultAutowireCandidates(DEFAULT_AUTOWIRE_CANDIDATES_EDEFAULT);
+				return;
+			case SpringConfigDslPackage.CONFIGURATION__DEFAULT_DESTROY_METHOD:
+				setDefaultDestroyMethod(DEFAULT_DESTROY_METHOD_EDEFAULT);
+				return;
+			case SpringConfigDslPackage.CONFIGURATION__DEFAULT_LAZY_INIT:
+				setDefaultLazyInit(DEFAULT_LAZY_INIT_EDEFAULT);
+				return;
+			case SpringConfigDslPackage.CONFIGURATION__DEFAULT_MERGE:
+				setDefaultMerge(DEFAULT_MERGE_EDEFAULT);
+				return;
+			case SpringConfigDslPackage.CONFIGURATION__PROFILE:
+				setProfile(PROFILE_EDEFAULT);
+				return;
+			case SpringConfigDslPackage.CONFIGURATION__DESCRIPTION:
+				setDescription(DESCRIPTION_EDEFAULT);
+				return;
+			case SpringConfigDslPackage.CONFIGURATION__COMPONENTS:
+				getComponents().clear();
+				return;
+			case SpringConfigDslPackage.CONFIGURATION__ALIAS:
+				getAlias().clear();
+				return;
+			case SpringConfigDslPackage.CONFIGURATION__IMPORTS:
+				getImports().clear();
+				return;
+			case SpringConfigDslPackage.CONFIGURATION__CONTEXTS:
+				getContexts().clear();
+				return;
+			case SpringConfigDslPackage.CONFIGURATION__ASPECTS:
+				getAspects().clear();
+				return;
+			case SpringConfigDslPackage.CONFIGURATION__UTIL_CONSTANTS:
+				getUtilConstants().clear();
+				return;
+			case SpringConfigDslPackage.CONFIGURATION__UTIL_LISTS:
+				getUtilLists().clear();
+				return;
+			case SpringConfigDslPackage.CONFIGURATION__UTIL_MAPS:
+				getUtilMaps().clear();
+				return;
+			case SpringConfigDslPackage.CONFIGURATION__UTIL_PROPERTIES:
+				getUtilProperties().clear();
+				return;
+			case SpringConfigDslPackage.CONFIGURATION__UTIL_SETS:
+				getUtilSets().clear();
+				return;
+			case SpringConfigDslPackage.CONFIGURATION__UTIL_PROPERTIES_PATH:
+				getUtilPropertiesPath().clear();
+				return;
+			case SpringConfigDslPackage.CONFIGURATION__TX_ADVICES:
+				getTxAdvices().clear();
+				return;
+			case SpringConfigDslPackage.CONFIGURATION__TX_JTA_TRANSACTION_MANAGER:
+				setTxJtaTransactionManager((TxJtaTransactionManager)null);
+				return;
+			case SpringConfigDslPackage.CONFIGURATION__CONFIGURATION_COMPOSITE:
+				getConfigurationComposite().clear();
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public boolean eIsSet(int featureID)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.CONFIGURATION__DEFAULT_AUTOWIRE:
-        return defaultAutowire != DEFAULT_AUTOWIRE_EDEFAULT;
-      case SpringConfigDslPackage.CONFIGURATION__DEFAULT_INIT_METHOD:
-        return DEFAULT_INIT_METHOD_EDEFAULT == null ? defaultInitMethod != null : !DEFAULT_INIT_METHOD_EDEFAULT.equals(defaultInitMethod);
-      case SpringConfigDslPackage.CONFIGURATION__DEFAULT_AUTOWIRE_CANDIDATES:
-        return DEFAULT_AUTOWIRE_CANDIDATES_EDEFAULT == null ? defaultAutowireCandidates != null : !DEFAULT_AUTOWIRE_CANDIDATES_EDEFAULT.equals(defaultAutowireCandidates);
-      case SpringConfigDslPackage.CONFIGURATION__DEFAULT_DESTROY_METHOD:
-        return DEFAULT_DESTROY_METHOD_EDEFAULT == null ? defaultDestroyMethod != null : !DEFAULT_DESTROY_METHOD_EDEFAULT.equals(defaultDestroyMethod);
-      case SpringConfigDslPackage.CONFIGURATION__DEFAULT_LAZY_INIT:
-        return defaultLazyInit != DEFAULT_LAZY_INIT_EDEFAULT;
-      case SpringConfigDslPackage.CONFIGURATION__DEFAULT_MERGE:
-        return defaultMerge != DEFAULT_MERGE_EDEFAULT;
-      case SpringConfigDslPackage.CONFIGURATION__PROFILE:
-        return PROFILE_EDEFAULT == null ? profile != null : !PROFILE_EDEFAULT.equals(profile);
-      case SpringConfigDslPackage.CONFIGURATION__DESCRIPTION:
-        return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
-      case SpringConfigDslPackage.CONFIGURATION__COMPONENTS:
-        return components != null && !components.isEmpty();
-      case SpringConfigDslPackage.CONFIGURATION__ALIAS:
-        return alias != null && !alias.isEmpty();
-      case SpringConfigDslPackage.CONFIGURATION__IMPORTS:
-        return imports != null && !imports.isEmpty();
-      case SpringConfigDslPackage.CONFIGURATION__CONTEXTS:
-        return contexts != null && !contexts.isEmpty();
-      case SpringConfigDslPackage.CONFIGURATION__ASPECTS:
-        return aspects != null && !aspects.isEmpty();
-      case SpringConfigDslPackage.CONFIGURATION__UTIL_CONSTANTS:
-        return utilConstants != null && !utilConstants.isEmpty();
-      case SpringConfigDslPackage.CONFIGURATION__UTIL_LISTS:
-        return utilLists != null && !utilLists.isEmpty();
-      case SpringConfigDslPackage.CONFIGURATION__UTIL_MAPS:
-        return utilMaps != null && !utilMaps.isEmpty();
-      case SpringConfigDslPackage.CONFIGURATION__UTIL_PROPERTIES:
-        return utilProperties != null && !utilProperties.isEmpty();
-      case SpringConfigDslPackage.CONFIGURATION__UTIL_SETS:
-        return utilSets != null && !utilSets.isEmpty();
-      case SpringConfigDslPackage.CONFIGURATION__UTIL_PROPERTIES_PATH:
-        return utilPropertiesPath != null && !utilPropertiesPath.isEmpty();
-      case SpringConfigDslPackage.CONFIGURATION__TX_ADVICES:
-        return txAdvices != null && !txAdvices.isEmpty();
-      case SpringConfigDslPackage.CONFIGURATION__TX_JTA_TRANSACTION_MANAGER:
-        return txJtaTransactionManager != null;
-      case SpringConfigDslPackage.CONFIGURATION__CONFIGURATION_COMPOSITE:
-        return configurationComposite != null && !configurationComposite.isEmpty();
-    }
-    return super.eIsSet(featureID);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.CONFIGURATION__DEFAULT_AUTOWIRE:
+				return defaultAutowire != DEFAULT_AUTOWIRE_EDEFAULT;
+			case SpringConfigDslPackage.CONFIGURATION__DEFAULT_INIT_METHOD:
+				return DEFAULT_INIT_METHOD_EDEFAULT == null ? defaultInitMethod != null : !DEFAULT_INIT_METHOD_EDEFAULT.equals(defaultInitMethod);
+			case SpringConfigDslPackage.CONFIGURATION__DEFAULT_AUTOWIRE_CANDIDATES:
+				return DEFAULT_AUTOWIRE_CANDIDATES_EDEFAULT == null ? defaultAutowireCandidates != null : !DEFAULT_AUTOWIRE_CANDIDATES_EDEFAULT.equals(defaultAutowireCandidates);
+			case SpringConfigDslPackage.CONFIGURATION__DEFAULT_DESTROY_METHOD:
+				return DEFAULT_DESTROY_METHOD_EDEFAULT == null ? defaultDestroyMethod != null : !DEFAULT_DESTROY_METHOD_EDEFAULT.equals(defaultDestroyMethod);
+			case SpringConfigDslPackage.CONFIGURATION__DEFAULT_LAZY_INIT:
+				return defaultLazyInit != DEFAULT_LAZY_INIT_EDEFAULT;
+			case SpringConfigDslPackage.CONFIGURATION__DEFAULT_MERGE:
+				return defaultMerge != DEFAULT_MERGE_EDEFAULT;
+			case SpringConfigDslPackage.CONFIGURATION__PROFILE:
+				return PROFILE_EDEFAULT == null ? profile != null : !PROFILE_EDEFAULT.equals(profile);
+			case SpringConfigDslPackage.CONFIGURATION__DESCRIPTION:
+				return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
+			case SpringConfigDslPackage.CONFIGURATION__COMPONENTS:
+				return components != null && !components.isEmpty();
+			case SpringConfigDslPackage.CONFIGURATION__ALIAS:
+				return alias != null && !alias.isEmpty();
+			case SpringConfigDslPackage.CONFIGURATION__IMPORTS:
+				return imports != null && !imports.isEmpty();
+			case SpringConfigDslPackage.CONFIGURATION__CONTEXTS:
+				return contexts != null && !contexts.isEmpty();
+			case SpringConfigDslPackage.CONFIGURATION__ASPECTS:
+				return aspects != null && !aspects.isEmpty();
+			case SpringConfigDslPackage.CONFIGURATION__UTIL_CONSTANTS:
+				return utilConstants != null && !utilConstants.isEmpty();
+			case SpringConfigDslPackage.CONFIGURATION__UTIL_LISTS:
+				return utilLists != null && !utilLists.isEmpty();
+			case SpringConfigDslPackage.CONFIGURATION__UTIL_MAPS:
+				return utilMaps != null && !utilMaps.isEmpty();
+			case SpringConfigDslPackage.CONFIGURATION__UTIL_PROPERTIES:
+				return utilProperties != null && !utilProperties.isEmpty();
+			case SpringConfigDslPackage.CONFIGURATION__UTIL_SETS:
+				return utilSets != null && !utilSets.isEmpty();
+			case SpringConfigDslPackage.CONFIGURATION__UTIL_PROPERTIES_PATH:
+				return utilPropertiesPath != null && !utilPropertiesPath.isEmpty();
+			case SpringConfigDslPackage.CONFIGURATION__TX_ADVICES:
+				return txAdvices != null && !txAdvices.isEmpty();
+			case SpringConfigDslPackage.CONFIGURATION__TX_JTA_TRANSACTION_MANAGER:
+				return txJtaTransactionManager != null;
+			case SpringConfigDslPackage.CONFIGURATION__CONFIGURATION_COMPOSITE:
+				return configurationComposite != null && !configurationComposite.isEmpty();
+		}
+		return super.eIsSet(featureID);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public String toString()
   {
-    if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-    StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (defaultAutowire: ");
-    result.append(defaultAutowire);
-    result.append(", defaultInitMethod: ");
-    result.append(defaultInitMethod);
-    result.append(", defaultAutowireCandidates: ");
-    result.append(defaultAutowireCandidates);
-    result.append(", defaultDestroyMethod: ");
-    result.append(defaultDestroyMethod);
-    result.append(", defaultLazyInit: ");
-    result.append(defaultLazyInit);
-    result.append(", defaultMerge: ");
-    result.append(defaultMerge);
-    result.append(", profile: ");
-    result.append(profile);
-    result.append(", description: ");
-    result.append(description);
-    result.append(')');
-    return result.toString();
-  }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (defaultAutowire: ");
+		result.append(defaultAutowire);
+		result.append(", defaultInitMethod: ");
+		result.append(defaultInitMethod);
+		result.append(", defaultAutowireCandidates: ");
+		result.append(defaultAutowireCandidates);
+		result.append(", defaultDestroyMethod: ");
+		result.append(defaultDestroyMethod);
+		result.append(", defaultLazyInit: ");
+		result.append(defaultLazyInit);
+		result.append(", defaultMerge: ");
+		result.append(defaultMerge);
+		result.append(", profile: ");
+		result.append(profile);
+		result.append(", description: ");
+		result.append(description);
+		result.append(')');
+		return result.toString();
+	}
 
 } //ConfigurationImpl

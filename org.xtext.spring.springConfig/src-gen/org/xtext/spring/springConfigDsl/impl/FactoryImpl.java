@@ -30,144 +30,138 @@ import org.xtext.spring.springConfigDsl.SpringConfigDslPackage;
 public class FactoryImpl extends ClassOrFactoryImpl implements Factory
 {
   /**
-   * The cached value of the '{@link #getFactoryBean() <em>Factory Bean</em>}' reference.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getFactoryBean() <em>Factory Bean</em>}' reference.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getFactoryBean()
-   * @generated
-   * @ordered
-   */
+	 * @see #getFactoryBean()
+	 * @generated
+	 * @ordered
+	 */
   protected Component factoryBean;
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   protected FactoryImpl()
   {
-    super();
-  }
+		super();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   protected EClass eStaticClass()
   {
-    return SpringConfigDslPackage.Literals.FACTORY;
-  }
+		return SpringConfigDslPackage.Literals.FACTORY;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public Component getFactoryBean()
   {
-    if (factoryBean != null && factoryBean.eIsProxy())
-    {
-      InternalEObject oldFactoryBean = (InternalEObject)factoryBean;
-      factoryBean = (Component)eResolveProxy(oldFactoryBean);
-      if (factoryBean != oldFactoryBean)
-      {
-        if (eNotificationRequired())
-          eNotify(new ENotificationImpl(this, Notification.RESOLVE, SpringConfigDslPackage.FACTORY__FACTORY_BEAN, oldFactoryBean, factoryBean));
-      }
-    }
-    return factoryBean;
-  }
+		if (factoryBean != null && factoryBean.eIsProxy()) {
+			InternalEObject oldFactoryBean = (InternalEObject)factoryBean;
+			factoryBean = (Component)eResolveProxy(oldFactoryBean);
+			if (factoryBean != oldFactoryBean) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, SpringConfigDslPackage.FACTORY__FACTORY_BEAN, oldFactoryBean, factoryBean));
+			}
+		}
+		return factoryBean;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public Component basicGetFactoryBean()
   {
-    return factoryBean;
-  }
+		return factoryBean;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public void setFactoryBean(Component newFactoryBean)
   {
-    Component oldFactoryBean = factoryBean;
-    factoryBean = newFactoryBean;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.FACTORY__FACTORY_BEAN, oldFactoryBean, factoryBean));
-  }
+		Component oldFactoryBean = factoryBean;
+		factoryBean = newFactoryBean;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.FACTORY__FACTORY_BEAN, oldFactoryBean, factoryBean));
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.FACTORY__FACTORY_BEAN:
-        if (resolve) return getFactoryBean();
-        return basicGetFactoryBean();
-    }
-    return super.eGet(featureID, resolve, coreType);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.FACTORY__FACTORY_BEAN:
+				if (resolve) return getFactoryBean();
+				return basicGetFactoryBean();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public void eSet(int featureID, Object newValue)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.FACTORY__FACTORY_BEAN:
-        setFactoryBean((Component)newValue);
-        return;
-    }
-    super.eSet(featureID, newValue);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.FACTORY__FACTORY_BEAN:
+				setFactoryBean((Component)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public void eUnset(int featureID)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.FACTORY__FACTORY_BEAN:
-        setFactoryBean((Component)null);
-        return;
-    }
-    super.eUnset(featureID);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.FACTORY__FACTORY_BEAN:
+				setFactoryBean((Component)null);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public boolean eIsSet(int featureID)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.FACTORY__FACTORY_BEAN:
-        return factoryBean != null;
-    }
-    return super.eIsSet(featureID);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.FACTORY__FACTORY_BEAN:
+				return factoryBean != null;
+		}
+		return super.eIsSet(featureID);
+	}
 
 } //FactoryImpl

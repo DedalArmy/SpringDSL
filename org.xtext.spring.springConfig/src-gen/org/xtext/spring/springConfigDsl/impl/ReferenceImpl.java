@@ -30,144 +30,138 @@ import org.xtext.spring.springConfigDsl.SpringConfigDslPackage;
 public class ReferenceImpl extends AbstractArtefactImpl implements Reference
 {
   /**
-   * The cached value of the '{@link #getRef() <em>Ref</em>}' reference.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getRef() <em>Ref</em>}' reference.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getRef()
-   * @generated
-   * @ordered
-   */
+	 * @see #getRef()
+	 * @generated
+	 * @ordered
+	 */
   protected Component ref;
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   protected ReferenceImpl()
   {
-    super();
-  }
+		super();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   protected EClass eStaticClass()
   {
-    return SpringConfigDslPackage.Literals.REFERENCE;
-  }
+		return SpringConfigDslPackage.Literals.REFERENCE;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public Component getRef()
   {
-    if (ref != null && ref.eIsProxy())
-    {
-      InternalEObject oldRef = (InternalEObject)ref;
-      ref = (Component)eResolveProxy(oldRef);
-      if (ref != oldRef)
-      {
-        if (eNotificationRequired())
-          eNotify(new ENotificationImpl(this, Notification.RESOLVE, SpringConfigDslPackage.REFERENCE__REF, oldRef, ref));
-      }
-    }
-    return ref;
-  }
+		if (ref != null && ref.eIsProxy()) {
+			InternalEObject oldRef = (InternalEObject)ref;
+			ref = (Component)eResolveProxy(oldRef);
+			if (ref != oldRef) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, SpringConfigDslPackage.REFERENCE__REF, oldRef, ref));
+			}
+		}
+		return ref;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public Component basicGetRef()
   {
-    return ref;
-  }
+		return ref;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public void setRef(Component newRef)
   {
-    Component oldRef = ref;
-    ref = newRef;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.REFERENCE__REF, oldRef, ref));
-  }
+		Component oldRef = ref;
+		ref = newRef;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.REFERENCE__REF, oldRef, ref));
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.REFERENCE__REF:
-        if (resolve) return getRef();
-        return basicGetRef();
-    }
-    return super.eGet(featureID, resolve, coreType);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.REFERENCE__REF:
+				if (resolve) return getRef();
+				return basicGetRef();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public void eSet(int featureID, Object newValue)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.REFERENCE__REF:
-        setRef((Component)newValue);
-        return;
-    }
-    super.eSet(featureID, newValue);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.REFERENCE__REF:
+				setRef((Component)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public void eUnset(int featureID)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.REFERENCE__REF:
-        setRef((Component)null);
-        return;
-    }
-    super.eUnset(featureID);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.REFERENCE__REF:
+				setRef((Component)null);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public boolean eIsSet(int featureID)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.REFERENCE__REF:
-        return ref != null;
-    }
-    return super.eIsSet(featureID);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.REFERENCE__REF:
+				return ref != null;
+		}
+		return super.eIsSet(featureID);
+	}
 
 } //ReferenceImpl

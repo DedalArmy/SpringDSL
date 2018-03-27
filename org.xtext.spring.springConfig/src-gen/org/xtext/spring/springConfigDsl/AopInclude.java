@@ -24,29 +24,29 @@ import org.eclipse.emf.ecore.EObject;
 public interface AopInclude extends EObject
 {
   /**
-   * Returns the value of the '<em><b>Aop Include</b></em>' reference.
-   * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Aop Include</b></em>' reference.
+	 * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Aop Include</em>' reference isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Aop Include</em>' reference.
-   * @see #setAopInclude(Component)
-   * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getAopInclude_AopInclude()
-   * @model
-   * @generated
-   */
+	 * @return the value of the '<em>Aop Include</em>' reference.
+	 * @see #setAopInclude(Component)
+	 * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getAopInclude_AopInclude()
+	 * @model
+	 * @generated
+	 */
   Component getAopInclude();
 
   /**
-   * Sets the value of the '{@link org.xtext.spring.springConfigDsl.AopInclude#getAopInclude <em>Aop Include</em>}' reference.
-   * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.xtext.spring.springConfigDsl.AopInclude#getAopInclude <em>Aop Include</em>}' reference.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Aop Include</em>' reference.
-   * @see #getAopInclude()
-   * @generated
-   */
+	 * @param value the new value of the '<em>Aop Include</em>' reference.
+	 * @see #getAopInclude()
+	 * @generated
+	 */
   void setAopInclude(Component value);
 
 } // AopInclude

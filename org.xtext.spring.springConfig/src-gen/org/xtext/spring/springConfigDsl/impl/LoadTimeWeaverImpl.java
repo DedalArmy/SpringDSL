@@ -29,205 +29,201 @@ import org.xtext.spring.springConfigDsl.SpringConfigDslPackage;
 public class LoadTimeWeaverImpl extends ContextImpl implements LoadTimeWeaver
 {
   /**
-   * The default value of the '{@link #getAspectjWeaving() <em>Aspectj Weaving</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getAspectjWeaving() <em>Aspectj Weaving</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getAspectjWeaving()
-   * @generated
-   * @ordered
-   */
+	 * @see #getAspectjWeaving()
+	 * @generated
+	 * @ordered
+	 */
   protected static final String ASPECTJ_WEAVING_EDEFAULT = null;
 
   /**
-   * The cached value of the '{@link #getAspectjWeaving() <em>Aspectj Weaving</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getAspectjWeaving() <em>Aspectj Weaving</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getAspectjWeaving()
-   * @generated
-   * @ordered
-   */
+	 * @see #getAspectjWeaving()
+	 * @generated
+	 * @ordered
+	 */
   protected String aspectjWeaving = ASPECTJ_WEAVING_EDEFAULT;
 
   /**
-   * The default value of the '{@link #getWeaverClass() <em>Weaver Class</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getWeaverClass() <em>Weaver Class</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getWeaverClass()
-   * @generated
-   * @ordered
-   */
+	 * @see #getWeaverClass()
+	 * @generated
+	 * @ordered
+	 */
   protected static final String WEAVER_CLASS_EDEFAULT = null;
 
   /**
-   * The cached value of the '{@link #getWeaverClass() <em>Weaver Class</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getWeaverClass() <em>Weaver Class</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getWeaverClass()
-   * @generated
-   * @ordered
-   */
+	 * @see #getWeaverClass()
+	 * @generated
+	 * @ordered
+	 */
   protected String weaverClass = WEAVER_CLASS_EDEFAULT;
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   protected LoadTimeWeaverImpl()
   {
-    super();
-  }
+		super();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   protected EClass eStaticClass()
   {
-    return SpringConfigDslPackage.Literals.LOAD_TIME_WEAVER;
-  }
+		return SpringConfigDslPackage.Literals.LOAD_TIME_WEAVER;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public String getAspectjWeaving()
   {
-    return aspectjWeaving;
-  }
+		return aspectjWeaving;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public void setAspectjWeaving(String newAspectjWeaving)
   {
-    String oldAspectjWeaving = aspectjWeaving;
-    aspectjWeaving = newAspectjWeaving;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.LOAD_TIME_WEAVER__ASPECTJ_WEAVING, oldAspectjWeaving, aspectjWeaving));
-  }
+		String oldAspectjWeaving = aspectjWeaving;
+		aspectjWeaving = newAspectjWeaving;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.LOAD_TIME_WEAVER__ASPECTJ_WEAVING, oldAspectjWeaving, aspectjWeaving));
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public String getWeaverClass()
   {
-    return weaverClass;
-  }
+		return weaverClass;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public void setWeaverClass(String newWeaverClass)
   {
-    String oldWeaverClass = weaverClass;
-    weaverClass = newWeaverClass;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.LOAD_TIME_WEAVER__WEAVER_CLASS, oldWeaverClass, weaverClass));
-  }
+		String oldWeaverClass = weaverClass;
+		weaverClass = newWeaverClass;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.LOAD_TIME_WEAVER__WEAVER_CLASS, oldWeaverClass, weaverClass));
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.LOAD_TIME_WEAVER__ASPECTJ_WEAVING:
-        return getAspectjWeaving();
-      case SpringConfigDslPackage.LOAD_TIME_WEAVER__WEAVER_CLASS:
-        return getWeaverClass();
-    }
-    return super.eGet(featureID, resolve, coreType);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.LOAD_TIME_WEAVER__ASPECTJ_WEAVING:
+				return getAspectjWeaving();
+			case SpringConfigDslPackage.LOAD_TIME_WEAVER__WEAVER_CLASS:
+				return getWeaverClass();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public void eSet(int featureID, Object newValue)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.LOAD_TIME_WEAVER__ASPECTJ_WEAVING:
-        setAspectjWeaving((String)newValue);
-        return;
-      case SpringConfigDslPackage.LOAD_TIME_WEAVER__WEAVER_CLASS:
-        setWeaverClass((String)newValue);
-        return;
-    }
-    super.eSet(featureID, newValue);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.LOAD_TIME_WEAVER__ASPECTJ_WEAVING:
+				setAspectjWeaving((String)newValue);
+				return;
+			case SpringConfigDslPackage.LOAD_TIME_WEAVER__WEAVER_CLASS:
+				setWeaverClass((String)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public void eUnset(int featureID)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.LOAD_TIME_WEAVER__ASPECTJ_WEAVING:
-        setAspectjWeaving(ASPECTJ_WEAVING_EDEFAULT);
-        return;
-      case SpringConfigDslPackage.LOAD_TIME_WEAVER__WEAVER_CLASS:
-        setWeaverClass(WEAVER_CLASS_EDEFAULT);
-        return;
-    }
-    super.eUnset(featureID);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.LOAD_TIME_WEAVER__ASPECTJ_WEAVING:
+				setAspectjWeaving(ASPECTJ_WEAVING_EDEFAULT);
+				return;
+			case SpringConfigDslPackage.LOAD_TIME_WEAVER__WEAVER_CLASS:
+				setWeaverClass(WEAVER_CLASS_EDEFAULT);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public boolean eIsSet(int featureID)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.LOAD_TIME_WEAVER__ASPECTJ_WEAVING:
-        return ASPECTJ_WEAVING_EDEFAULT == null ? aspectjWeaving != null : !ASPECTJ_WEAVING_EDEFAULT.equals(aspectjWeaving);
-      case SpringConfigDslPackage.LOAD_TIME_WEAVER__WEAVER_CLASS:
-        return WEAVER_CLASS_EDEFAULT == null ? weaverClass != null : !WEAVER_CLASS_EDEFAULT.equals(weaverClass);
-    }
-    return super.eIsSet(featureID);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.LOAD_TIME_WEAVER__ASPECTJ_WEAVING:
+				return ASPECTJ_WEAVING_EDEFAULT == null ? aspectjWeaving != null : !ASPECTJ_WEAVING_EDEFAULT.equals(aspectjWeaving);
+			case SpringConfigDslPackage.LOAD_TIME_WEAVER__WEAVER_CLASS:
+				return WEAVER_CLASS_EDEFAULT == null ? weaverClass != null : !WEAVER_CLASS_EDEFAULT.equals(weaverClass);
+		}
+		return super.eIsSet(featureID);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public String toString()
   {
-    if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-    StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (aspectjWeaving: ");
-    result.append(aspectjWeaving);
-    result.append(", weaverClass: ");
-    result.append(weaverClass);
-    result.append(')');
-    return result.toString();
-  }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (aspectjWeaving: ");
+		result.append(aspectjWeaving);
+		result.append(", weaverClass: ");
+		result.append(weaverClass);
+		result.append(')');
+		return result.toString();
+	}
 
 } //LoadTimeWeaverImpl

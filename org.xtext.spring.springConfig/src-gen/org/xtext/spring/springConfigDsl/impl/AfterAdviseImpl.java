@@ -18,24 +18,24 @@ import org.xtext.spring.springConfigDsl.SpringConfigDslPackage;
 public class AfterAdviseImpl extends AdviseImpl implements AfterAdvise
 {
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   protected AfterAdviseImpl()
   {
-    super();
-  }
+		super();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   protected EClass eStaticClass()
   {
-    return SpringConfigDslPackage.Literals.AFTER_ADVISE;
-  }
+		return SpringConfigDslPackage.Literals.AFTER_ADVISE;
+	}
 
 } //AfterAdviseImpl

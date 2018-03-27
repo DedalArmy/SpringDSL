@@ -18,24 +18,24 @@ import org.xtext.spring.springConfigDsl.SpringConfigDslPackage;
 public class AbstractArtefactImpl extends AbstractKeyValueImpl implements AbstractArtefact
 {
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   protected AbstractArtefactImpl()
   {
-    super();
-  }
+		super();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   protected EClass eStaticClass()
   {
-    return SpringConfigDslPackage.Literals.ABSTRACT_ARTEFACT;
-  }
+		return SpringConfigDslPackage.Literals.ABSTRACT_ARTEFACT;
+	}
 
 } //AbstractArtefactImpl

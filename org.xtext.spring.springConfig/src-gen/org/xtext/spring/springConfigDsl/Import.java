@@ -24,29 +24,29 @@ import org.eclipse.emf.ecore.EObject;
 public interface Import extends EObject
 {
   /**
-   * Returns the value of the '<em><b>Resource</b></em>' attribute.
-   * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Resource</em>' attribute isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Resource</em>' attribute.
-   * @see #setResource(String)
-   * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getImport_Resource()
-   * @model
-   * @generated
-   */
+	 * @return the value of the '<em>Resource</em>' attribute.
+	 * @see #setResource(String)
+	 * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getImport_Resource()
+	 * @model
+	 * @generated
+	 */
   String getResource();
 
   /**
-   * Sets the value of the '{@link org.xtext.spring.springConfigDsl.Import#getResource <em>Resource</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.xtext.spring.springConfigDsl.Import#getResource <em>Resource</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Resource</em>' attribute.
-   * @see #getResource()
-   * @generated
-   */
+	 * @param value the new value of the '<em>Resource</em>' attribute.
+	 * @see #getResource()
+	 * @generated
+	 */
   void setResource(String value);
 
 } // Import

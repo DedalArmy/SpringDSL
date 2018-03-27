@@ -25,81 +25,81 @@ package org.xtext.spring.springConfigDsl;
 public interface UtilSet extends sSet
 {
   /**
-   * Returns the value of the '<em><b>Name</b></em>' attribute.
-   * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Name</em>' attribute isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Name</em>' attribute.
-   * @see #setName(String)
-   * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getUtilSet_Name()
-   * @model
-   * @generated
-   */
+	 * @return the value of the '<em>Name</em>' attribute.
+	 * @see #setName(String)
+	 * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getUtilSet_Name()
+	 * @model
+	 * @generated
+	 */
   String getName();
 
   /**
-   * Sets the value of the '{@link org.xtext.spring.springConfigDsl.UtilSet#getName <em>Name</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.xtext.spring.springConfigDsl.UtilSet#getName <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Name</em>' attribute.
-   * @see #getName()
-   * @generated
-   */
+	 * @param value the new value of the '<em>Name</em>' attribute.
+	 * @see #getName()
+	 * @generated
+	 */
   void setName(String value);
 
   /**
-   * Returns the value of the '<em><b>Set Class</b></em>' attribute.
-   * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Set Class</b></em>' attribute.
+	 * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Set Class</em>' attribute isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Set Class</em>' attribute.
-   * @see #setSetClass(String)
-   * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getUtilSet_SetClass()
-   * @model
-   * @generated
-   */
+	 * @return the value of the '<em>Set Class</em>' attribute.
+	 * @see #setSetClass(String)
+	 * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getUtilSet_SetClass()
+	 * @model
+	 * @generated
+	 */
   String getSetClass();
 
   /**
-   * Sets the value of the '{@link org.xtext.spring.springConfigDsl.UtilSet#getSetClass <em>Set Class</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.xtext.spring.springConfigDsl.UtilSet#getSetClass <em>Set Class</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Set Class</em>' attribute.
-   * @see #getSetClass()
-   * @generated
-   */
+	 * @param value the new value of the '<em>Set Class</em>' attribute.
+	 * @see #getSetClass()
+	 * @generated
+	 */
   void setSetClass(String value);
 
   /**
-   * Returns the value of the '<em><b>Scope</b></em>' attribute.
-   * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Scope</b></em>' attribute.
+	 * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Scope</em>' attribute isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Scope</em>' attribute.
-   * @see #setScope(String)
-   * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getUtilSet_Scope()
-   * @model
-   * @generated
-   */
+	 * @return the value of the '<em>Scope</em>' attribute.
+	 * @see #setScope(String)
+	 * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getUtilSet_Scope()
+	 * @model
+	 * @generated
+	 */
   String getScope();
 
   /**
-   * Sets the value of the '{@link org.xtext.spring.springConfigDsl.UtilSet#getScope <em>Scope</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.xtext.spring.springConfigDsl.UtilSet#getScope <em>Scope</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Scope</em>' attribute.
-   * @see #getScope()
-   * @generated
-   */
+	 * @param value the new value of the '<em>Scope</em>' attribute.
+	 * @see #getScope()
+	 * @generated
+	 */
   void setScope(String value);
 
 } // UtilSet

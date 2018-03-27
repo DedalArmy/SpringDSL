@@ -35,132 +35,126 @@ import org.xtext.spring.springConfigDsl.sSet;
 public class sSetImpl extends CollectionImpl implements sSet
 {
   /**
-   * The cached value of the '{@link #getArtefacts() <em>Artefacts</em>}' containment reference list.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getArtefacts() <em>Artefacts</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getArtefacts()
-   * @generated
-   * @ordered
-   */
+	 * @see #getArtefacts()
+	 * @generated
+	 * @ordered
+	 */
   protected EList<AbstractArtefact> artefacts;
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   protected sSetImpl()
   {
-    super();
-  }
+		super();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   protected EClass eStaticClass()
   {
-    return SpringConfigDslPackage.Literals.SSET;
-  }
+		return SpringConfigDslPackage.Literals.SSET;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public EList<AbstractArtefact> getArtefacts()
   {
-    if (artefacts == null)
-    {
-      artefacts = new EObjectContainmentEList<AbstractArtefact>(AbstractArtefact.class, this, SpringConfigDslPackage.SSET__ARTEFACTS);
-    }
-    return artefacts;
-  }
+		if (artefacts == null) {
+			artefacts = new EObjectContainmentEList<AbstractArtefact>(AbstractArtefact.class, this, SpringConfigDslPackage.SSET__ARTEFACTS);
+		}
+		return artefacts;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.SSET__ARTEFACTS:
-        return ((InternalEList<?>)getArtefacts()).basicRemove(otherEnd, msgs);
-    }
-    return super.eInverseRemove(otherEnd, featureID, msgs);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.SSET__ARTEFACTS:
+				return ((InternalEList<?>)getArtefacts()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.SSET__ARTEFACTS:
-        return getArtefacts();
-    }
-    return super.eGet(featureID, resolve, coreType);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.SSET__ARTEFACTS:
+				return getArtefacts();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @SuppressWarnings("unchecked")
   @Override
   public void eSet(int featureID, Object newValue)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.SSET__ARTEFACTS:
-        getArtefacts().clear();
-        getArtefacts().addAll((Collection<? extends AbstractArtefact>)newValue);
-        return;
-    }
-    super.eSet(featureID, newValue);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.SSET__ARTEFACTS:
+				getArtefacts().clear();
+				getArtefacts().addAll((Collection<? extends AbstractArtefact>)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public void eUnset(int featureID)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.SSET__ARTEFACTS:
-        getArtefacts().clear();
-        return;
-    }
-    super.eUnset(featureID);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.SSET__ARTEFACTS:
+				getArtefacts().clear();
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public boolean eIsSet(int featureID)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.SSET__ARTEFACTS:
-        return artefacts != null && !artefacts.isEmpty();
-    }
-    return super.eIsSet(featureID);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.SSET__ARTEFACTS:
+				return artefacts != null && !artefacts.isEmpty();
+		}
+		return super.eIsSet(featureID);
+	}
 
 } //sSetImpl

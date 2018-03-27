@@ -32,214 +32,208 @@ import org.xtext.spring.springConfigDsl.SpringConfigDslPackage;
 public class AliasImpl extends MinimalEObjectImpl.Container implements Alias
 {
   /**
-   * The cached value of the '{@link #getOrigin() <em>Origin</em>}' reference.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getOrigin() <em>Origin</em>}' reference.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getOrigin()
-   * @generated
-   * @ordered
-   */
+	 * @see #getOrigin()
+	 * @generated
+	 * @ordered
+	 */
   protected Component origin;
 
   /**
-   * The default value of the '{@link #getAlias() <em>Alias</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getAlias() <em>Alias</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getAlias()
-   * @generated
-   * @ordered
-   */
+	 * @see #getAlias()
+	 * @generated
+	 * @ordered
+	 */
   protected static final String ALIAS_EDEFAULT = null;
 
   /**
-   * The cached value of the '{@link #getAlias() <em>Alias</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getAlias() <em>Alias</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getAlias()
-   * @generated
-   * @ordered
-   */
+	 * @see #getAlias()
+	 * @generated
+	 * @ordered
+	 */
   protected String alias = ALIAS_EDEFAULT;
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   protected AliasImpl()
   {
-    super();
-  }
+		super();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   protected EClass eStaticClass()
   {
-    return SpringConfigDslPackage.Literals.ALIAS;
-  }
+		return SpringConfigDslPackage.Literals.ALIAS;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public Component getOrigin()
   {
-    if (origin != null && origin.eIsProxy())
-    {
-      InternalEObject oldOrigin = (InternalEObject)origin;
-      origin = (Component)eResolveProxy(oldOrigin);
-      if (origin != oldOrigin)
-      {
-        if (eNotificationRequired())
-          eNotify(new ENotificationImpl(this, Notification.RESOLVE, SpringConfigDslPackage.ALIAS__ORIGIN, oldOrigin, origin));
-      }
-    }
-    return origin;
-  }
+		if (origin != null && origin.eIsProxy()) {
+			InternalEObject oldOrigin = (InternalEObject)origin;
+			origin = (Component)eResolveProxy(oldOrigin);
+			if (origin != oldOrigin) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, SpringConfigDslPackage.ALIAS__ORIGIN, oldOrigin, origin));
+			}
+		}
+		return origin;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public Component basicGetOrigin()
   {
-    return origin;
-  }
+		return origin;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public void setOrigin(Component newOrigin)
   {
-    Component oldOrigin = origin;
-    origin = newOrigin;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.ALIAS__ORIGIN, oldOrigin, origin));
-  }
+		Component oldOrigin = origin;
+		origin = newOrigin;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.ALIAS__ORIGIN, oldOrigin, origin));
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public String getAlias()
   {
-    return alias;
-  }
+		return alias;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public void setAlias(String newAlias)
   {
-    String oldAlias = alias;
-    alias = newAlias;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.ALIAS__ALIAS, oldAlias, alias));
-  }
+		String oldAlias = alias;
+		alias = newAlias;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.ALIAS__ALIAS, oldAlias, alias));
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.ALIAS__ORIGIN:
-        if (resolve) return getOrigin();
-        return basicGetOrigin();
-      case SpringConfigDslPackage.ALIAS__ALIAS:
-        return getAlias();
-    }
-    return super.eGet(featureID, resolve, coreType);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.ALIAS__ORIGIN:
+				if (resolve) return getOrigin();
+				return basicGetOrigin();
+			case SpringConfigDslPackage.ALIAS__ALIAS:
+				return getAlias();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public void eSet(int featureID, Object newValue)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.ALIAS__ORIGIN:
-        setOrigin((Component)newValue);
-        return;
-      case SpringConfigDslPackage.ALIAS__ALIAS:
-        setAlias((String)newValue);
-        return;
-    }
-    super.eSet(featureID, newValue);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.ALIAS__ORIGIN:
+				setOrigin((Component)newValue);
+				return;
+			case SpringConfigDslPackage.ALIAS__ALIAS:
+				setAlias((String)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public void eUnset(int featureID)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.ALIAS__ORIGIN:
-        setOrigin((Component)null);
-        return;
-      case SpringConfigDslPackage.ALIAS__ALIAS:
-        setAlias(ALIAS_EDEFAULT);
-        return;
-    }
-    super.eUnset(featureID);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.ALIAS__ORIGIN:
+				setOrigin((Component)null);
+				return;
+			case SpringConfigDslPackage.ALIAS__ALIAS:
+				setAlias(ALIAS_EDEFAULT);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public boolean eIsSet(int featureID)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.ALIAS__ORIGIN:
-        return origin != null;
-      case SpringConfigDslPackage.ALIAS__ALIAS:
-        return ALIAS_EDEFAULT == null ? alias != null : !ALIAS_EDEFAULT.equals(alias);
-    }
-    return super.eIsSet(featureID);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.ALIAS__ORIGIN:
+				return origin != null;
+			case SpringConfigDslPackage.ALIAS__ALIAS:
+				return ALIAS_EDEFAULT == null ? alias != null : !ALIAS_EDEFAULT.equals(alias);
+		}
+		return super.eIsSet(featureID);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public String toString()
   {
-    if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-    StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (alias: ");
-    result.append(alias);
-    result.append(')');
-    return result.toString();
-  }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (alias: ");
+		result.append(alias);
+		result.append(')');
+		return result.toString();
+	}
 
 } //AliasImpl

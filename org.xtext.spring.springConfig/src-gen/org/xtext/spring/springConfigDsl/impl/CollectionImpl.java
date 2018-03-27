@@ -31,260 +31,256 @@ import org.xtext.spring.springConfigDsl.SpringConfigDslPackage;
 public class CollectionImpl extends AbstractArtefactImpl implements Collection
 {
   /**
-   * The default value of the '{@link #getValueType() <em>Value Type</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getValueType() <em>Value Type</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getValueType()
-   * @generated
-   * @ordered
-   */
+	 * @see #getValueType()
+	 * @generated
+	 * @ordered
+	 */
   protected static final String VALUE_TYPE_EDEFAULT = null;
 
   /**
-   * The cached value of the '{@link #getValueType() <em>Value Type</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getValueType() <em>Value Type</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getValueType()
-   * @generated
-   * @ordered
-   */
+	 * @see #getValueType()
+	 * @generated
+	 * @ordered
+	 */
   protected String valueType = VALUE_TYPE_EDEFAULT;
 
   /**
-   * The default value of the '{@link #getMerge() <em>Merge</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getMerge() <em>Merge</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getMerge()
-   * @generated
-   * @ordered
-   */
+	 * @see #getMerge()
+	 * @generated
+	 * @ordered
+	 */
   protected static final DefaultableBoolean MERGE_EDEFAULT = DefaultableBoolean.DEFAULT;
 
   /**
-   * The cached value of the '{@link #getMerge() <em>Merge</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getMerge() <em>Merge</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getMerge()
-   * @generated
-   * @ordered
-   */
+	 * @see #getMerge()
+	 * @generated
+	 * @ordered
+	 */
   protected DefaultableBoolean merge = MERGE_EDEFAULT;
 
   /**
-   * The default value of the '{@link #getDescription() <em>Description</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getDescription() <em>Description</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getDescription()
-   * @generated
-   * @ordered
-   */
+	 * @see #getDescription()
+	 * @generated
+	 * @ordered
+	 */
   protected static final String DESCRIPTION_EDEFAULT = null;
 
   /**
-   * The cached value of the '{@link #getDescription() <em>Description</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getDescription() <em>Description</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getDescription()
-   * @generated
-   * @ordered
-   */
+	 * @see #getDescription()
+	 * @generated
+	 * @ordered
+	 */
   protected String description = DESCRIPTION_EDEFAULT;
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   protected CollectionImpl()
   {
-    super();
-  }
+		super();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   protected EClass eStaticClass()
   {
-    return SpringConfigDslPackage.Literals.COLLECTION;
-  }
+		return SpringConfigDslPackage.Literals.COLLECTION;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public String getValueType()
   {
-    return valueType;
-  }
+		return valueType;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public void setValueType(String newValueType)
   {
-    String oldValueType = valueType;
-    valueType = newValueType;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.COLLECTION__VALUE_TYPE, oldValueType, valueType));
-  }
+		String oldValueType = valueType;
+		valueType = newValueType;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.COLLECTION__VALUE_TYPE, oldValueType, valueType));
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public DefaultableBoolean getMerge()
   {
-    return merge;
-  }
+		return merge;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public void setMerge(DefaultableBoolean newMerge)
   {
-    DefaultableBoolean oldMerge = merge;
-    merge = newMerge == null ? MERGE_EDEFAULT : newMerge;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.COLLECTION__MERGE, oldMerge, merge));
-  }
+		DefaultableBoolean oldMerge = merge;
+		merge = newMerge == null ? MERGE_EDEFAULT : newMerge;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.COLLECTION__MERGE, oldMerge, merge));
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public String getDescription()
   {
-    return description;
-  }
+		return description;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public void setDescription(String newDescription)
   {
-    String oldDescription = description;
-    description = newDescription;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.COLLECTION__DESCRIPTION, oldDescription, description));
-  }
+		String oldDescription = description;
+		description = newDescription;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.COLLECTION__DESCRIPTION, oldDescription, description));
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.COLLECTION__VALUE_TYPE:
-        return getValueType();
-      case SpringConfigDslPackage.COLLECTION__MERGE:
-        return getMerge();
-      case SpringConfigDslPackage.COLLECTION__DESCRIPTION:
-        return getDescription();
-    }
-    return super.eGet(featureID, resolve, coreType);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.COLLECTION__VALUE_TYPE:
+				return getValueType();
+			case SpringConfigDslPackage.COLLECTION__MERGE:
+				return getMerge();
+			case SpringConfigDslPackage.COLLECTION__DESCRIPTION:
+				return getDescription();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public void eSet(int featureID, Object newValue)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.COLLECTION__VALUE_TYPE:
-        setValueType((String)newValue);
-        return;
-      case SpringConfigDslPackage.COLLECTION__MERGE:
-        setMerge((DefaultableBoolean)newValue);
-        return;
-      case SpringConfigDslPackage.COLLECTION__DESCRIPTION:
-        setDescription((String)newValue);
-        return;
-    }
-    super.eSet(featureID, newValue);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.COLLECTION__VALUE_TYPE:
+				setValueType((String)newValue);
+				return;
+			case SpringConfigDslPackage.COLLECTION__MERGE:
+				setMerge((DefaultableBoolean)newValue);
+				return;
+			case SpringConfigDslPackage.COLLECTION__DESCRIPTION:
+				setDescription((String)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public void eUnset(int featureID)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.COLLECTION__VALUE_TYPE:
-        setValueType(VALUE_TYPE_EDEFAULT);
-        return;
-      case SpringConfigDslPackage.COLLECTION__MERGE:
-        setMerge(MERGE_EDEFAULT);
-        return;
-      case SpringConfigDslPackage.COLLECTION__DESCRIPTION:
-        setDescription(DESCRIPTION_EDEFAULT);
-        return;
-    }
-    super.eUnset(featureID);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.COLLECTION__VALUE_TYPE:
+				setValueType(VALUE_TYPE_EDEFAULT);
+				return;
+			case SpringConfigDslPackage.COLLECTION__MERGE:
+				setMerge(MERGE_EDEFAULT);
+				return;
+			case SpringConfigDslPackage.COLLECTION__DESCRIPTION:
+				setDescription(DESCRIPTION_EDEFAULT);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public boolean eIsSet(int featureID)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.COLLECTION__VALUE_TYPE:
-        return VALUE_TYPE_EDEFAULT == null ? valueType != null : !VALUE_TYPE_EDEFAULT.equals(valueType);
-      case SpringConfigDslPackage.COLLECTION__MERGE:
-        return merge != MERGE_EDEFAULT;
-      case SpringConfigDslPackage.COLLECTION__DESCRIPTION:
-        return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
-    }
-    return super.eIsSet(featureID);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.COLLECTION__VALUE_TYPE:
+				return VALUE_TYPE_EDEFAULT == null ? valueType != null : !VALUE_TYPE_EDEFAULT.equals(valueType);
+			case SpringConfigDslPackage.COLLECTION__MERGE:
+				return merge != MERGE_EDEFAULT;
+			case SpringConfigDslPackage.COLLECTION__DESCRIPTION:
+				return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
+		}
+		return super.eIsSet(featureID);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public String toString()
   {
-    if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-    StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (valueType: ");
-    result.append(valueType);
-    result.append(", merge: ");
-    result.append(merge);
-    result.append(", description: ");
-    result.append(description);
-    result.append(')');
-    return result.toString();
-  }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (valueType: ");
+		result.append(valueType);
+		result.append(", merge: ");
+		result.append(merge);
+		result.append(", description: ");
+		result.append(description);
+		result.append(')');
+		return result.toString();
+	}
 
 } //CollectionImpl

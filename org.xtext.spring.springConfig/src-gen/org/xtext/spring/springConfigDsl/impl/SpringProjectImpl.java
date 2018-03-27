@@ -37,132 +37,126 @@ import org.xtext.spring.springConfigDsl.SpringProject;
 public class SpringProjectImpl extends MinimalEObjectImpl.Container implements SpringProject
 {
   /**
-   * The cached value of the '{@link #getConfigurations() <em>Configurations</em>}' containment reference list.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getConfigurations() <em>Configurations</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getConfigurations()
-   * @generated
-   * @ordered
-   */
+	 * @see #getConfigurations()
+	 * @generated
+	 * @ordered
+	 */
   protected EList<Configuration> configurations;
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   protected SpringProjectImpl()
   {
-    super();
-  }
+		super();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   protected EClass eStaticClass()
   {
-    return SpringConfigDslPackage.Literals.SPRING_PROJECT;
-  }
+		return SpringConfigDslPackage.Literals.SPRING_PROJECT;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public EList<Configuration> getConfigurations()
   {
-    if (configurations == null)
-    {
-      configurations = new EObjectContainmentEList<Configuration>(Configuration.class, this, SpringConfigDslPackage.SPRING_PROJECT__CONFIGURATIONS);
-    }
-    return configurations;
-  }
+		if (configurations == null) {
+			configurations = new EObjectContainmentEList<Configuration>(Configuration.class, this, SpringConfigDslPackage.SPRING_PROJECT__CONFIGURATIONS);
+		}
+		return configurations;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.SPRING_PROJECT__CONFIGURATIONS:
-        return ((InternalEList<?>)getConfigurations()).basicRemove(otherEnd, msgs);
-    }
-    return super.eInverseRemove(otherEnd, featureID, msgs);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.SPRING_PROJECT__CONFIGURATIONS:
+				return ((InternalEList<?>)getConfigurations()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.SPRING_PROJECT__CONFIGURATIONS:
-        return getConfigurations();
-    }
-    return super.eGet(featureID, resolve, coreType);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.SPRING_PROJECT__CONFIGURATIONS:
+				return getConfigurations();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @SuppressWarnings("unchecked")
   @Override
   public void eSet(int featureID, Object newValue)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.SPRING_PROJECT__CONFIGURATIONS:
-        getConfigurations().clear();
-        getConfigurations().addAll((Collection<? extends Configuration>)newValue);
-        return;
-    }
-    super.eSet(featureID, newValue);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.SPRING_PROJECT__CONFIGURATIONS:
+				getConfigurations().clear();
+				getConfigurations().addAll((Collection<? extends Configuration>)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public void eUnset(int featureID)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.SPRING_PROJECT__CONFIGURATIONS:
-        getConfigurations().clear();
-        return;
-    }
-    super.eUnset(featureID);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.SPRING_PROJECT__CONFIGURATIONS:
+				getConfigurations().clear();
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public boolean eIsSet(int featureID)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.SPRING_PROJECT__CONFIGURATIONS:
-        return configurations != null && !configurations.isEmpty();
-    }
-    return super.eIsSet(featureID);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.SPRING_PROJECT__CONFIGURATIONS:
+				return configurations != null && !configurations.isEmpty();
+		}
+		return super.eIsSet(featureID);
+	}
 
 } //SpringProjectImpl

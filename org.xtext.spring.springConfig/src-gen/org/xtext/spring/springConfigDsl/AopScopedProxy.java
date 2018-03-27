@@ -24,29 +24,29 @@ import org.eclipse.emf.ecore.EObject;
 public interface AopScopedProxy extends EObject
 {
   /**
-   * Returns the value of the '<em><b>Proxy Target Class</b></em>' attribute.
-   * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Proxy Target Class</b></em>' attribute.
+	 * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Proxy Target Class</em>' attribute isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Proxy Target Class</em>' attribute.
-   * @see #setProxyTargetClass(String)
-   * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getAopScopedProxy_ProxyTargetClass()
-   * @model
-   * @generated
-   */
+	 * @return the value of the '<em>Proxy Target Class</em>' attribute.
+	 * @see #setProxyTargetClass(String)
+	 * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getAopScopedProxy_ProxyTargetClass()
+	 * @model
+	 * @generated
+	 */
   String getProxyTargetClass();
 
   /**
-   * Sets the value of the '{@link org.xtext.spring.springConfigDsl.AopScopedProxy#getProxyTargetClass <em>Proxy Target Class</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.xtext.spring.springConfigDsl.AopScopedProxy#getProxyTargetClass <em>Proxy Target Class</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Proxy Target Class</em>' attribute.
-   * @see #getProxyTargetClass()
-   * @generated
-   */
+	 * @param value the new value of the '<em>Proxy Target Class</em>' attribute.
+	 * @see #getProxyTargetClass()
+	 * @generated
+	 */
   void setProxyTargetClass(String value);
 
 } // AopScopedProxy

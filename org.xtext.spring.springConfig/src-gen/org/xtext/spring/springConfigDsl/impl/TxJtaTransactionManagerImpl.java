@@ -20,24 +20,24 @@ import org.xtext.spring.springConfigDsl.TxJtaTransactionManager;
 public class TxJtaTransactionManagerImpl extends MinimalEObjectImpl.Container implements TxJtaTransactionManager
 {
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   protected TxJtaTransactionManagerImpl()
   {
-    super();
-  }
+		super();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   protected EClass eStaticClass()
   {
-    return SpringConfigDslPackage.Literals.TX_JTA_TRANSACTION_MANAGER;
-  }
+		return SpringConfigDslPackage.Literals.TX_JTA_TRANSACTION_MANAGER;
+	}
 
 } //TxJtaTransactionManagerImpl

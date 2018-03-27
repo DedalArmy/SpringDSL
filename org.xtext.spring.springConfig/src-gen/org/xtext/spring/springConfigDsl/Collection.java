@@ -25,84 +25,84 @@ package org.xtext.spring.springConfigDsl;
 public interface Collection extends AbstractArtefact
 {
   /**
-   * Returns the value of the '<em><b>Value Type</b></em>' attribute.
-   * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Value Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Value Type</em>' attribute isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Value Type</em>' attribute.
-   * @see #setValueType(String)
-   * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getCollection_ValueType()
-   * @model
-   * @generated
-   */
+	 * @return the value of the '<em>Value Type</em>' attribute.
+	 * @see #setValueType(String)
+	 * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getCollection_ValueType()
+	 * @model
+	 * @generated
+	 */
   String getValueType();
 
   /**
-   * Sets the value of the '{@link org.xtext.spring.springConfigDsl.Collection#getValueType <em>Value Type</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.xtext.spring.springConfigDsl.Collection#getValueType <em>Value Type</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Value Type</em>' attribute.
-   * @see #getValueType()
-   * @generated
-   */
+	 * @param value the new value of the '<em>Value Type</em>' attribute.
+	 * @see #getValueType()
+	 * @generated
+	 */
   void setValueType(String value);
 
   /**
-   * Returns the value of the '<em><b>Merge</b></em>' attribute.
-   * The literals are from the enumeration {@link org.xtext.spring.springConfigDsl.DefaultableBoolean}.
-   * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Merge</b></em>' attribute.
+	 * The literals are from the enumeration {@link org.xtext.spring.springConfigDsl.DefaultableBoolean}.
+	 * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Merge</em>' attribute isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Merge</em>' attribute.
-   * @see org.xtext.spring.springConfigDsl.DefaultableBoolean
-   * @see #setMerge(DefaultableBoolean)
-   * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getCollection_Merge()
-   * @model
-   * @generated
-   */
+	 * @return the value of the '<em>Merge</em>' attribute.
+	 * @see org.xtext.spring.springConfigDsl.DefaultableBoolean
+	 * @see #setMerge(DefaultableBoolean)
+	 * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getCollection_Merge()
+	 * @model
+	 * @generated
+	 */
   DefaultableBoolean getMerge();
 
   /**
-   * Sets the value of the '{@link org.xtext.spring.springConfigDsl.Collection#getMerge <em>Merge</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.xtext.spring.springConfigDsl.Collection#getMerge <em>Merge</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Merge</em>' attribute.
-   * @see org.xtext.spring.springConfigDsl.DefaultableBoolean
-   * @see #getMerge()
-   * @generated
-   */
+	 * @param value the new value of the '<em>Merge</em>' attribute.
+	 * @see org.xtext.spring.springConfigDsl.DefaultableBoolean
+	 * @see #getMerge()
+	 * @generated
+	 */
   void setMerge(DefaultableBoolean value);
 
   /**
-   * Returns the value of the '<em><b>Description</b></em>' attribute.
-   * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Description</b></em>' attribute.
+	 * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Description</em>' attribute isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Description</em>' attribute.
-   * @see #setDescription(String)
-   * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getCollection_Description()
-   * @model
-   * @generated
-   */
+	 * @return the value of the '<em>Description</em>' attribute.
+	 * @see #setDescription(String)
+	 * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getCollection_Description()
+	 * @model
+	 * @generated
+	 */
   String getDescription();
 
   /**
-   * Sets the value of the '{@link org.xtext.spring.springConfigDsl.Collection#getDescription <em>Description</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.xtext.spring.springConfigDsl.Collection#getDescription <em>Description</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Description</em>' attribute.
-   * @see #getDescription()
-   * @generated
-   */
+	 * @param value the new value of the '<em>Description</em>' attribute.
+	 * @see #getDescription()
+	 * @generated
+	 */
   void setDescription(String value);
 
 } // Collection

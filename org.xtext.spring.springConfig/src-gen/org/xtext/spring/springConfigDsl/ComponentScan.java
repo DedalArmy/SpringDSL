@@ -32,226 +32,226 @@ import org.eclipse.emf.common.util.EList;
 public interface ComponentScan extends Context
 {
   /**
-   * Returns the value of the '<em><b>Base Package</b></em>' attribute.
-   * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Base Package</b></em>' attribute.
+	 * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Base Package</em>' attribute isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Base Package</em>' attribute.
-   * @see #setBasePackage(String)
-   * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getComponentScan_BasePackage()
-   * @model
-   * @generated
-   */
+	 * @return the value of the '<em>Base Package</em>' attribute.
+	 * @see #setBasePackage(String)
+	 * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getComponentScan_BasePackage()
+	 * @model
+	 * @generated
+	 */
   String getBasePackage();
 
   /**
-   * Sets the value of the '{@link org.xtext.spring.springConfigDsl.ComponentScan#getBasePackage <em>Base Package</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.xtext.spring.springConfigDsl.ComponentScan#getBasePackage <em>Base Package</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Base Package</em>' attribute.
-   * @see #getBasePackage()
-   * @generated
-   */
+	 * @param value the new value of the '<em>Base Package</em>' attribute.
+	 * @see #getBasePackage()
+	 * @generated
+	 */
   void setBasePackage(String value);
 
   /**
-   * Returns the value of the '<em><b>Annotation Config</b></em>' attribute.
-   * The literals are from the enumeration {@link org.xtext.spring.springConfigDsl.sBoolean}.
-   * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Annotation Config</b></em>' attribute.
+	 * The literals are from the enumeration {@link org.xtext.spring.springConfigDsl.sBoolean}.
+	 * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Annotation Config</em>' attribute isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Annotation Config</em>' attribute.
-   * @see org.xtext.spring.springConfigDsl.sBoolean
-   * @see #setAnnotationConfig(sBoolean)
-   * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getComponentScan_AnnotationConfig()
-   * @model
-   * @generated
-   */
+	 * @return the value of the '<em>Annotation Config</em>' attribute.
+	 * @see org.xtext.spring.springConfigDsl.sBoolean
+	 * @see #setAnnotationConfig(sBoolean)
+	 * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getComponentScan_AnnotationConfig()
+	 * @model
+	 * @generated
+	 */
   sBoolean getAnnotationConfig();
 
   /**
-   * Sets the value of the '{@link org.xtext.spring.springConfigDsl.ComponentScan#getAnnotationConfig <em>Annotation Config</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.xtext.spring.springConfigDsl.ComponentScan#getAnnotationConfig <em>Annotation Config</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Annotation Config</em>' attribute.
-   * @see org.xtext.spring.springConfigDsl.sBoolean
-   * @see #getAnnotationConfig()
-   * @generated
-   */
+	 * @param value the new value of the '<em>Annotation Config</em>' attribute.
+	 * @see org.xtext.spring.springConfigDsl.sBoolean
+	 * @see #getAnnotationConfig()
+	 * @generated
+	 */
   void setAnnotationConfig(sBoolean value);
 
   /**
-   * Returns the value of the '<em><b>Name Generator Bean</b></em>' reference.
-   * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Name Generator Bean</b></em>' reference.
+	 * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Name Generator Bean</em>' reference isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Name Generator Bean</em>' reference.
-   * @see #setNameGeneratorBean(Component)
-   * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getComponentScan_NameGeneratorBean()
-   * @model
-   * @generated
-   */
+	 * @return the value of the '<em>Name Generator Bean</em>' reference.
+	 * @see #setNameGeneratorBean(Component)
+	 * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getComponentScan_NameGeneratorBean()
+	 * @model
+	 * @generated
+	 */
   Component getNameGeneratorBean();
 
   /**
-   * Sets the value of the '{@link org.xtext.spring.springConfigDsl.ComponentScan#getNameGeneratorBean <em>Name Generator Bean</em>}' reference.
-   * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.xtext.spring.springConfigDsl.ComponentScan#getNameGeneratorBean <em>Name Generator Bean</em>}' reference.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Name Generator Bean</em>' reference.
-   * @see #getNameGeneratorBean()
-   * @generated
-   */
+	 * @param value the new value of the '<em>Name Generator Bean</em>' reference.
+	 * @see #getNameGeneratorBean()
+	 * @generated
+	 */
   void setNameGeneratorBean(Component value);
 
   /**
-   * Returns the value of the '<em><b>Resource Pattern</b></em>' attribute.
-   * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Resource Pattern</b></em>' attribute.
+	 * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Resource Pattern</em>' attribute isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Resource Pattern</em>' attribute.
-   * @see #setResourcePattern(String)
-   * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getComponentScan_ResourcePattern()
-   * @model
-   * @generated
-   */
+	 * @return the value of the '<em>Resource Pattern</em>' attribute.
+	 * @see #setResourcePattern(String)
+	 * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getComponentScan_ResourcePattern()
+	 * @model
+	 * @generated
+	 */
   String getResourcePattern();
 
   /**
-   * Sets the value of the '{@link org.xtext.spring.springConfigDsl.ComponentScan#getResourcePattern <em>Resource Pattern</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.xtext.spring.springConfigDsl.ComponentScan#getResourcePattern <em>Resource Pattern</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Resource Pattern</em>' attribute.
-   * @see #getResourcePattern()
-   * @generated
-   */
+	 * @param value the new value of the '<em>Resource Pattern</em>' attribute.
+	 * @see #getResourcePattern()
+	 * @generated
+	 */
   void setResourcePattern(String value);
 
   /**
-   * Returns the value of the '<em><b>Scope Resolver</b></em>' reference.
-   * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Scope Resolver</b></em>' reference.
+	 * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Scope Resolver</em>' reference isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Scope Resolver</em>' reference.
-   * @see #setScopeResolver(Component)
-   * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getComponentScan_ScopeResolver()
-   * @model
-   * @generated
-   */
+	 * @return the value of the '<em>Scope Resolver</em>' reference.
+	 * @see #setScopeResolver(Component)
+	 * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getComponentScan_ScopeResolver()
+	 * @model
+	 * @generated
+	 */
   Component getScopeResolver();
 
   /**
-   * Sets the value of the '{@link org.xtext.spring.springConfigDsl.ComponentScan#getScopeResolver <em>Scope Resolver</em>}' reference.
-   * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.xtext.spring.springConfigDsl.ComponentScan#getScopeResolver <em>Scope Resolver</em>}' reference.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Scope Resolver</em>' reference.
-   * @see #getScopeResolver()
-   * @generated
-   */
+	 * @param value the new value of the '<em>Scope Resolver</em>' reference.
+	 * @see #getScopeResolver()
+	 * @generated
+	 */
   void setScopeResolver(Component value);
 
   /**
-   * Returns the value of the '<em><b>Scoped Proxy</b></em>' attribute.
-   * The literals are from the enumeration {@link org.xtext.spring.springConfigDsl.EnumScopedProxy}.
-   * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Scoped Proxy</b></em>' attribute.
+	 * The literals are from the enumeration {@link org.xtext.spring.springConfigDsl.EnumScopedProxy}.
+	 * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Scoped Proxy</em>' attribute isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Scoped Proxy</em>' attribute.
-   * @see org.xtext.spring.springConfigDsl.EnumScopedProxy
-   * @see #setScopedProxy(EnumScopedProxy)
-   * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getComponentScan_ScopedProxy()
-   * @model
-   * @generated
-   */
+	 * @return the value of the '<em>Scoped Proxy</em>' attribute.
+	 * @see org.xtext.spring.springConfigDsl.EnumScopedProxy
+	 * @see #setScopedProxy(EnumScopedProxy)
+	 * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getComponentScan_ScopedProxy()
+	 * @model
+	 * @generated
+	 */
   EnumScopedProxy getScopedProxy();
 
   /**
-   * Sets the value of the '{@link org.xtext.spring.springConfigDsl.ComponentScan#getScopedProxy <em>Scoped Proxy</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.xtext.spring.springConfigDsl.ComponentScan#getScopedProxy <em>Scoped Proxy</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Scoped Proxy</em>' attribute.
-   * @see org.xtext.spring.springConfigDsl.EnumScopedProxy
-   * @see #getScopedProxy()
-   * @generated
-   */
+	 * @param value the new value of the '<em>Scoped Proxy</em>' attribute.
+	 * @see org.xtext.spring.springConfigDsl.EnumScopedProxy
+	 * @see #getScopedProxy()
+	 * @generated
+	 */
   void setScopedProxy(EnumScopedProxy value);
 
   /**
-   * Returns the value of the '<em><b>Use Default Filters</b></em>' attribute.
-   * The literals are from the enumeration {@link org.xtext.spring.springConfigDsl.sBoolean}.
-   * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Use Default Filters</b></em>' attribute.
+	 * The literals are from the enumeration {@link org.xtext.spring.springConfigDsl.sBoolean}.
+	 * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Use Default Filters</em>' attribute isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Use Default Filters</em>' attribute.
-   * @see org.xtext.spring.springConfigDsl.sBoolean
-   * @see #setUseDefaultFilters(sBoolean)
-   * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getComponentScan_UseDefaultFilters()
-   * @model
-   * @generated
-   */
+	 * @return the value of the '<em>Use Default Filters</em>' attribute.
+	 * @see org.xtext.spring.springConfigDsl.sBoolean
+	 * @see #setUseDefaultFilters(sBoolean)
+	 * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getComponentScan_UseDefaultFilters()
+	 * @model
+	 * @generated
+	 */
   sBoolean getUseDefaultFilters();
 
   /**
-   * Sets the value of the '{@link org.xtext.spring.springConfigDsl.ComponentScan#getUseDefaultFilters <em>Use Default Filters</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.xtext.spring.springConfigDsl.ComponentScan#getUseDefaultFilters <em>Use Default Filters</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Use Default Filters</em>' attribute.
-   * @see org.xtext.spring.springConfigDsl.sBoolean
-   * @see #getUseDefaultFilters()
-   * @generated
-   */
+	 * @param value the new value of the '<em>Use Default Filters</em>' attribute.
+	 * @see org.xtext.spring.springConfigDsl.sBoolean
+	 * @see #getUseDefaultFilters()
+	 * @generated
+	 */
   void setUseDefaultFilters(sBoolean value);
 
   /**
-   * Returns the value of the '<em><b>Include Filters</b></em>' containment reference list.
-   * The list contents are of type {@link org.xtext.spring.springConfigDsl.IncludeFilter}.
-   * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Include Filters</b></em>' containment reference list.
+	 * The list contents are of type {@link org.xtext.spring.springConfigDsl.IncludeFilter}.
+	 * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Include Filters</em>' containment reference list isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Include Filters</em>' containment reference list.
-   * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getComponentScan_IncludeFilters()
-   * @model containment="true"
-   * @generated
-   */
+	 * @return the value of the '<em>Include Filters</em>' containment reference list.
+	 * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getComponentScan_IncludeFilters()
+	 * @model containment="true"
+	 * @generated
+	 */
   EList<IncludeFilter> getIncludeFilters();
 
   /**
-   * Returns the value of the '<em><b>Exclude Filters</b></em>' containment reference list.
-   * The list contents are of type {@link org.xtext.spring.springConfigDsl.ExcludeFilter}.
-   * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Exclude Filters</b></em>' containment reference list.
+	 * The list contents are of type {@link org.xtext.spring.springConfigDsl.ExcludeFilter}.
+	 * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Exclude Filters</em>' containment reference list isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Exclude Filters</em>' containment reference list.
-   * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getComponentScan_ExcludeFilters()
-   * @model containment="true"
-   * @generated
-   */
+	 * @return the value of the '<em>Exclude Filters</em>' containment reference list.
+	 * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getComponentScan_ExcludeFilters()
+	 * @model containment="true"
+	 * @generated
+	 */
   EList<ExcludeFilter> getExcludeFilters();
 
 } // ComponentScan

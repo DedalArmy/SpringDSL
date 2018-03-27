@@ -66,1150 +66,1131 @@ import org.xtext.spring.springConfigDsl.sBoolean;
 public class ComponentImpl extends AbstractArtefactImpl implements Component
 {
   /**
-   * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getName()
-   * @generated
-   * @ordered
-   */
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
   protected static final String NAME_EDEFAULT = null;
 
   /**
-   * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getName()
-   * @generated
-   * @ordered
-   */
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
   protected String name = NAME_EDEFAULT;
 
   /**
-   * The cached value of the '{@link #getNames() <em>Names</em>}' attribute list.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getNames() <em>Names</em>}' attribute list.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getNames()
-   * @generated
-   * @ordered
-   */
+	 * @see #getNames()
+	 * @generated
+	 * @ordered
+	 */
   protected EList<String> names;
 
   /**
-   * The cached value of the '{@link #getClass_() <em>Class</em>}' containment reference.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getClass_() <em>Class</em>}' containment reference.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getClass_()
-   * @generated
-   * @ordered
-   */
+	 * @see #getClass_()
+	 * @generated
+	 * @ordered
+	 */
   protected CreationMethod class_;
 
   /**
-   * The cached value of the '{@link #getFeatures() <em>Features</em>}' containment reference list.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getFeatures() <em>Features</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getFeatures()
-   * @generated
-   * @ordered
-   */
+	 * @see #getFeatures()
+	 * @generated
+	 * @ordered
+	 */
   protected EList<Feature> features;
 
   /**
-   * The default value of the '{@link #getAbstract() <em>Abstract</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getAbstract() <em>Abstract</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getAbstract()
-   * @generated
-   * @ordered
-   */
+	 * @see #getAbstract()
+	 * @generated
+	 * @ordered
+	 */
   protected static final sBoolean ABSTRACT_EDEFAULT = sBoolean.FALSE;
 
   /**
-   * The cached value of the '{@link #getAbstract() <em>Abstract</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getAbstract() <em>Abstract</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getAbstract()
-   * @generated
-   * @ordered
-   */
+	 * @see #getAbstract()
+	 * @generated
+	 * @ordered
+	 */
   protected sBoolean abstract_ = ABSTRACT_EDEFAULT;
 
   /**
-   * The default value of the '{@link #getAutowireCandidate() <em>Autowire Candidate</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getAutowireCandidate() <em>Autowire Candidate</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getAutowireCandidate()
-   * @generated
-   * @ordered
-   */
+	 * @see #getAutowireCandidate()
+	 * @generated
+	 * @ordered
+	 */
   protected static final DefaultableBoolean AUTOWIRE_CANDIDATE_EDEFAULT = DefaultableBoolean.DEFAULT;
 
   /**
-   * The cached value of the '{@link #getAutowireCandidate() <em>Autowire Candidate</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getAutowireCandidate() <em>Autowire Candidate</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getAutowireCandidate()
-   * @generated
-   * @ordered
-   */
+	 * @see #getAutowireCandidate()
+	 * @generated
+	 * @ordered
+	 */
   protected DefaultableBoolean autowireCandidate = AUTOWIRE_CANDIDATE_EDEFAULT;
 
   /**
-   * The default value of the '{@link #getAutowire() <em>Autowire</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getAutowire() <em>Autowire</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getAutowire()
-   * @generated
-   * @ordered
-   */
+	 * @see #getAutowire()
+	 * @generated
+	 * @ordered
+	 */
   protected static final DefaultableBoolean AUTOWIRE_EDEFAULT = DefaultableBoolean.DEFAULT;
 
   /**
-   * The cached value of the '{@link #getAutowire() <em>Autowire</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getAutowire() <em>Autowire</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getAutowire()
-   * @generated
-   * @ordered
-   */
+	 * @see #getAutowire()
+	 * @generated
+	 * @ordered
+	 */
   protected DefaultableBoolean autowire = AUTOWIRE_EDEFAULT;
 
   /**
-   * The cached value of the '{@link #getDependsOn() <em>Depends On</em>}' reference.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getDependsOn() <em>Depends On</em>}' reference.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getDependsOn()
-   * @generated
-   * @ordered
-   */
+	 * @see #getDependsOn()
+	 * @generated
+	 * @ordered
+	 */
   protected Component dependsOn;
 
   /**
-   * The default value of the '{@link #getDetroyMethod() <em>Detroy Method</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getDetroyMethod() <em>Detroy Method</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getDetroyMethod()
-   * @generated
-   * @ordered
-   */
+	 * @see #getDetroyMethod()
+	 * @generated
+	 * @ordered
+	 */
   protected static final String DETROY_METHOD_EDEFAULT = null;
 
   /**
-   * The cached value of the '{@link #getDetroyMethod() <em>Detroy Method</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getDetroyMethod() <em>Detroy Method</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getDetroyMethod()
-   * @generated
-   * @ordered
-   */
+	 * @see #getDetroyMethod()
+	 * @generated
+	 * @ordered
+	 */
   protected String detroyMethod = DETROY_METHOD_EDEFAULT;
 
   /**
-   * The default value of the '{@link #getInitMethod() <em>Init Method</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getInitMethod() <em>Init Method</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getInitMethod()
-   * @generated
-   * @ordered
-   */
+	 * @see #getInitMethod()
+	 * @generated
+	 * @ordered
+	 */
   protected static final String INIT_METHOD_EDEFAULT = null;
 
   /**
-   * The cached value of the '{@link #getInitMethod() <em>Init Method</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getInitMethod() <em>Init Method</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getInitMethod()
-   * @generated
-   * @ordered
-   */
+	 * @see #getInitMethod()
+	 * @generated
+	 * @ordered
+	 */
   protected String initMethod = INIT_METHOD_EDEFAULT;
 
   /**
-   * The default value of the '{@link #getLazyInit() <em>Lazy Init</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getLazyInit() <em>Lazy Init</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getLazyInit()
-   * @generated
-   * @ordered
-   */
+	 * @see #getLazyInit()
+	 * @generated
+	 * @ordered
+	 */
   protected static final DefaultableBoolean LAZY_INIT_EDEFAULT = DefaultableBoolean.DEFAULT;
 
   /**
-   * The cached value of the '{@link #getLazyInit() <em>Lazy Init</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getLazyInit() <em>Lazy Init</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getLazyInit()
-   * @generated
-   * @ordered
-   */
+	 * @see #getLazyInit()
+	 * @generated
+	 * @ordered
+	 */
   protected DefaultableBoolean lazyInit = LAZY_INIT_EDEFAULT;
 
   /**
-   * The cached value of the '{@link #getParent() <em>Parent</em>}' reference.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getParent() <em>Parent</em>}' reference.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getParent()
-   * @generated
-   * @ordered
-   */
+	 * @see #getParent()
+	 * @generated
+	 * @ordered
+	 */
   protected Component parent;
 
   /**
-   * The default value of the '{@link #getPrimary() <em>Primary</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getPrimary() <em>Primary</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getPrimary()
-   * @generated
-   * @ordered
-   */
+	 * @see #getPrimary()
+	 * @generated
+	 * @ordered
+	 */
   protected static final sBoolean PRIMARY_EDEFAULT = sBoolean.FALSE;
 
   /**
-   * The cached value of the '{@link #getPrimary() <em>Primary</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getPrimary() <em>Primary</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getPrimary()
-   * @generated
-   * @ordered
-   */
+	 * @see #getPrimary()
+	 * @generated
+	 * @ordered
+	 */
   protected sBoolean primary = PRIMARY_EDEFAULT;
 
   /**
-   * The default value of the '{@link #getScope() <em>Scope</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getScope() <em>Scope</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getScope()
-   * @generated
-   * @ordered
-   */
+	 * @see #getScope()
+	 * @generated
+	 * @ordered
+	 */
   protected static final String SCOPE_EDEFAULT = null;
 
   /**
-   * The cached value of the '{@link #getScope() <em>Scope</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getScope() <em>Scope</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getScope()
-   * @generated
-   * @ordered
-   */
+	 * @see #getScope()
+	 * @generated
+	 * @ordered
+	 */
   protected String scope = SCOPE_EDEFAULT;
 
   /**
-   * The default value of the '{@link #getDescription() <em>Description</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getDescription() <em>Description</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getDescription()
-   * @generated
-   * @ordered
-   */
+	 * @see #getDescription()
+	 * @generated
+	 * @ordered
+	 */
   protected static final String DESCRIPTION_EDEFAULT = null;
 
   /**
-   * The cached value of the '{@link #getDescription() <em>Description</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getDescription() <em>Description</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getDescription()
-   * @generated
-   * @ordered
-   */
+	 * @see #getDescription()
+	 * @generated
+	 * @ordered
+	 */
   protected String description = DESCRIPTION_EDEFAULT;
 
   /**
-   * The cached value of the '{@link #getLookupMethods() <em>Lookup Methods</em>}' containment reference list.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getLookupMethods() <em>Lookup Methods</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getLookupMethods()
-   * @generated
-   * @ordered
-   */
+	 * @see #getLookupMethods()
+	 * @generated
+	 * @ordered
+	 */
   protected EList<LookupMethod> lookupMethods;
 
   /**
-   * The cached value of the '{@link #getQualifiers() <em>Qualifiers</em>}' containment reference list.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getQualifiers() <em>Qualifiers</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getQualifiers()
-   * @generated
-   * @ordered
-   */
+	 * @see #getQualifiers()
+	 * @generated
+	 * @ordered
+	 */
   protected EList<Qualifier> qualifiers;
 
   /**
-   * The cached value of the '{@link #getMeta() <em>Meta</em>}' containment reference list.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getMeta() <em>Meta</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getMeta()
-   * @generated
-   * @ordered
-   */
+	 * @see #getMeta()
+	 * @generated
+	 * @ordered
+	 */
   protected EList<Meta> meta;
 
   /**
-   * The cached value of the '{@link #getAopScopedProxy() <em>Aop Scoped Proxy</em>}' containment reference.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getAopScopedProxy() <em>Aop Scoped Proxy</em>}' containment reference.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getAopScopedProxy()
-   * @generated
-   * @ordered
-   */
+	 * @see #getAopScopedProxy()
+	 * @generated
+	 * @ordered
+	 */
   protected AopScopedProxy aopScopedProxy;
 
   /**
-   * The cached value of the '{@link #getUtilPropertiesPath() <em>Util Properties Path</em>}' containment reference list.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getUtilPropertiesPath() <em>Util Properties Path</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getUtilPropertiesPath()
-   * @generated
-   * @ordered
-   */
+	 * @see #getUtilPropertiesPath()
+	 * @generated
+	 * @ordered
+	 */
   protected EList<UtilPropertyPath> utilPropertiesPath;
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   protected ComponentImpl()
   {
-    super();
-  }
+		super();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   protected EClass eStaticClass()
   {
-    return SpringConfigDslPackage.Literals.COMPONENT;
-  }
+		return SpringConfigDslPackage.Literals.COMPONENT;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public String getName()
   {
-    return name;
-  }
+		return name;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public void setName(String newName)
   {
-    String oldName = name;
-    name = newName;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.COMPONENT__NAME, oldName, name));
-  }
+		String oldName = name;
+		name = newName;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.COMPONENT__NAME, oldName, name));
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public EList<String> getNames()
   {
-    if (names == null)
-    {
-      names = new EDataTypeEList<String>(String.class, this, SpringConfigDslPackage.COMPONENT__NAMES);
-    }
-    return names;
-  }
+		if (names == null) {
+			names = new EDataTypeEList<String>(String.class, this, SpringConfigDslPackage.COMPONENT__NAMES);
+		}
+		return names;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public CreationMethod getClass_()
   {
-    return class_;
-  }
+		return class_;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public NotificationChain basicSetClass(CreationMethod newClass, NotificationChain msgs)
   {
-    CreationMethod oldClass = class_;
-    class_ = newClass;
-    if (eNotificationRequired())
-    {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.COMPONENT__CLASS, oldClass, newClass);
-      if (msgs == null) msgs = notification; else msgs.add(notification);
-    }
-    return msgs;
-  }
+		CreationMethod oldClass = class_;
+		class_ = newClass;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.COMPONENT__CLASS, oldClass, newClass);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public void setClass(CreationMethod newClass)
   {
-    if (newClass != class_)
-    {
-      NotificationChain msgs = null;
-      if (class_ != null)
-        msgs = ((InternalEObject)class_).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - SpringConfigDslPackage.COMPONENT__CLASS, null, msgs);
-      if (newClass != null)
-        msgs = ((InternalEObject)newClass).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - SpringConfigDslPackage.COMPONENT__CLASS, null, msgs);
-      msgs = basicSetClass(newClass, msgs);
-      if (msgs != null) msgs.dispatch();
-    }
-    else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.COMPONENT__CLASS, newClass, newClass));
-  }
+		if (newClass != class_) {
+			NotificationChain msgs = null;
+			if (class_ != null)
+				msgs = ((InternalEObject)class_).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - SpringConfigDslPackage.COMPONENT__CLASS, null, msgs);
+			if (newClass != null)
+				msgs = ((InternalEObject)newClass).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - SpringConfigDslPackage.COMPONENT__CLASS, null, msgs);
+			msgs = basicSetClass(newClass, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.COMPONENT__CLASS, newClass, newClass));
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public EList<Feature> getFeatures()
   {
-    if (features == null)
-    {
-      features = new EObjectContainmentEList<Feature>(Feature.class, this, SpringConfigDslPackage.COMPONENT__FEATURES);
-    }
-    return features;
-  }
+		if (features == null) {
+			features = new EObjectContainmentEList<Feature>(Feature.class, this, SpringConfigDslPackage.COMPONENT__FEATURES);
+		}
+		return features;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public sBoolean getAbstract()
   {
-    return abstract_;
-  }
+		return abstract_;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public void setAbstract(sBoolean newAbstract)
   {
-    sBoolean oldAbstract = abstract_;
-    abstract_ = newAbstract == null ? ABSTRACT_EDEFAULT : newAbstract;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.COMPONENT__ABSTRACT, oldAbstract, abstract_));
-  }
+		sBoolean oldAbstract = abstract_;
+		abstract_ = newAbstract == null ? ABSTRACT_EDEFAULT : newAbstract;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.COMPONENT__ABSTRACT, oldAbstract, abstract_));
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public DefaultableBoolean getAutowireCandidate()
   {
-    return autowireCandidate;
-  }
+		return autowireCandidate;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public void setAutowireCandidate(DefaultableBoolean newAutowireCandidate)
   {
-    DefaultableBoolean oldAutowireCandidate = autowireCandidate;
-    autowireCandidate = newAutowireCandidate == null ? AUTOWIRE_CANDIDATE_EDEFAULT : newAutowireCandidate;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.COMPONENT__AUTOWIRE_CANDIDATE, oldAutowireCandidate, autowireCandidate));
-  }
+		DefaultableBoolean oldAutowireCandidate = autowireCandidate;
+		autowireCandidate = newAutowireCandidate == null ? AUTOWIRE_CANDIDATE_EDEFAULT : newAutowireCandidate;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.COMPONENT__AUTOWIRE_CANDIDATE, oldAutowireCandidate, autowireCandidate));
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public DefaultableBoolean getAutowire()
   {
-    return autowire;
-  }
+		return autowire;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public void setAutowire(DefaultableBoolean newAutowire)
   {
-    DefaultableBoolean oldAutowire = autowire;
-    autowire = newAutowire == null ? AUTOWIRE_EDEFAULT : newAutowire;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.COMPONENT__AUTOWIRE, oldAutowire, autowire));
-  }
+		DefaultableBoolean oldAutowire = autowire;
+		autowire = newAutowire == null ? AUTOWIRE_EDEFAULT : newAutowire;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.COMPONENT__AUTOWIRE, oldAutowire, autowire));
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public Component getDependsOn()
   {
-    if (dependsOn != null && dependsOn.eIsProxy())
-    {
-      InternalEObject oldDependsOn = (InternalEObject)dependsOn;
-      dependsOn = (Component)eResolveProxy(oldDependsOn);
-      if (dependsOn != oldDependsOn)
-      {
-        if (eNotificationRequired())
-          eNotify(new ENotificationImpl(this, Notification.RESOLVE, SpringConfigDslPackage.COMPONENT__DEPENDS_ON, oldDependsOn, dependsOn));
-      }
-    }
-    return dependsOn;
-  }
+		if (dependsOn != null && dependsOn.eIsProxy()) {
+			InternalEObject oldDependsOn = (InternalEObject)dependsOn;
+			dependsOn = (Component)eResolveProxy(oldDependsOn);
+			if (dependsOn != oldDependsOn) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, SpringConfigDslPackage.COMPONENT__DEPENDS_ON, oldDependsOn, dependsOn));
+			}
+		}
+		return dependsOn;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public Component basicGetDependsOn()
   {
-    return dependsOn;
-  }
+		return dependsOn;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public void setDependsOn(Component newDependsOn)
   {
-    Component oldDependsOn = dependsOn;
-    dependsOn = newDependsOn;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.COMPONENT__DEPENDS_ON, oldDependsOn, dependsOn));
-  }
+		Component oldDependsOn = dependsOn;
+		dependsOn = newDependsOn;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.COMPONENT__DEPENDS_ON, oldDependsOn, dependsOn));
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public String getDetroyMethod()
   {
-    return detroyMethod;
-  }
+		return detroyMethod;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public void setDetroyMethod(String newDetroyMethod)
   {
-    String oldDetroyMethod = detroyMethod;
-    detroyMethod = newDetroyMethod;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.COMPONENT__DETROY_METHOD, oldDetroyMethod, detroyMethod));
-  }
+		String oldDetroyMethod = detroyMethod;
+		detroyMethod = newDetroyMethod;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.COMPONENT__DETROY_METHOD, oldDetroyMethod, detroyMethod));
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public String getInitMethod()
   {
-    return initMethod;
-  }
+		return initMethod;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public void setInitMethod(String newInitMethod)
   {
-    String oldInitMethod = initMethod;
-    initMethod = newInitMethod;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.COMPONENT__INIT_METHOD, oldInitMethod, initMethod));
-  }
+		String oldInitMethod = initMethod;
+		initMethod = newInitMethod;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.COMPONENT__INIT_METHOD, oldInitMethod, initMethod));
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public DefaultableBoolean getLazyInit()
   {
-    return lazyInit;
-  }
+		return lazyInit;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public void setLazyInit(DefaultableBoolean newLazyInit)
   {
-    DefaultableBoolean oldLazyInit = lazyInit;
-    lazyInit = newLazyInit == null ? LAZY_INIT_EDEFAULT : newLazyInit;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.COMPONENT__LAZY_INIT, oldLazyInit, lazyInit));
-  }
+		DefaultableBoolean oldLazyInit = lazyInit;
+		lazyInit = newLazyInit == null ? LAZY_INIT_EDEFAULT : newLazyInit;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.COMPONENT__LAZY_INIT, oldLazyInit, lazyInit));
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public Component getParent()
   {
-    if (parent != null && parent.eIsProxy())
-    {
-      InternalEObject oldParent = (InternalEObject)parent;
-      parent = (Component)eResolveProxy(oldParent);
-      if (parent != oldParent)
-      {
-        if (eNotificationRequired())
-          eNotify(new ENotificationImpl(this, Notification.RESOLVE, SpringConfigDslPackage.COMPONENT__PARENT, oldParent, parent));
-      }
-    }
-    return parent;
-  }
+		if (parent != null && parent.eIsProxy()) {
+			InternalEObject oldParent = (InternalEObject)parent;
+			parent = (Component)eResolveProxy(oldParent);
+			if (parent != oldParent) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, SpringConfigDslPackage.COMPONENT__PARENT, oldParent, parent));
+			}
+		}
+		return parent;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public Component basicGetParent()
   {
-    return parent;
-  }
+		return parent;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public void setParent(Component newParent)
   {
-    Component oldParent = parent;
-    parent = newParent;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.COMPONENT__PARENT, oldParent, parent));
-  }
+		Component oldParent = parent;
+		parent = newParent;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.COMPONENT__PARENT, oldParent, parent));
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public sBoolean getPrimary()
   {
-    return primary;
-  }
+		return primary;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public void setPrimary(sBoolean newPrimary)
   {
-    sBoolean oldPrimary = primary;
-    primary = newPrimary == null ? PRIMARY_EDEFAULT : newPrimary;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.COMPONENT__PRIMARY, oldPrimary, primary));
-  }
+		sBoolean oldPrimary = primary;
+		primary = newPrimary == null ? PRIMARY_EDEFAULT : newPrimary;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.COMPONENT__PRIMARY, oldPrimary, primary));
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public String getScope()
   {
-    return scope;
-  }
+		return scope;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public void setScope(String newScope)
   {
-    String oldScope = scope;
-    scope = newScope;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.COMPONENT__SCOPE, oldScope, scope));
-  }
+		String oldScope = scope;
+		scope = newScope;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.COMPONENT__SCOPE, oldScope, scope));
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public String getDescription()
   {
-    return description;
-  }
+		return description;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public void setDescription(String newDescription)
   {
-    String oldDescription = description;
-    description = newDescription;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.COMPONENT__DESCRIPTION, oldDescription, description));
-  }
+		String oldDescription = description;
+		description = newDescription;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.COMPONENT__DESCRIPTION, oldDescription, description));
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public EList<LookupMethod> getLookupMethods()
   {
-    if (lookupMethods == null)
-    {
-      lookupMethods = new EObjectContainmentEList<LookupMethod>(LookupMethod.class, this, SpringConfigDslPackage.COMPONENT__LOOKUP_METHODS);
-    }
-    return lookupMethods;
-  }
+		if (lookupMethods == null) {
+			lookupMethods = new EObjectContainmentEList<LookupMethod>(LookupMethod.class, this, SpringConfigDslPackage.COMPONENT__LOOKUP_METHODS);
+		}
+		return lookupMethods;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public EList<Qualifier> getQualifiers()
   {
-    if (qualifiers == null)
-    {
-      qualifiers = new EObjectContainmentEList<Qualifier>(Qualifier.class, this, SpringConfigDslPackage.COMPONENT__QUALIFIERS);
-    }
-    return qualifiers;
-  }
+		if (qualifiers == null) {
+			qualifiers = new EObjectContainmentEList<Qualifier>(Qualifier.class, this, SpringConfigDslPackage.COMPONENT__QUALIFIERS);
+		}
+		return qualifiers;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public EList<Meta> getMeta()
   {
-    if (meta == null)
-    {
-      meta = new EObjectContainmentEList<Meta>(Meta.class, this, SpringConfigDslPackage.COMPONENT__META);
-    }
-    return meta;
-  }
+		if (meta == null) {
+			meta = new EObjectContainmentEList<Meta>(Meta.class, this, SpringConfigDslPackage.COMPONENT__META);
+		}
+		return meta;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public AopScopedProxy getAopScopedProxy()
   {
-    return aopScopedProxy;
-  }
+		return aopScopedProxy;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public NotificationChain basicSetAopScopedProxy(AopScopedProxy newAopScopedProxy, NotificationChain msgs)
   {
-    AopScopedProxy oldAopScopedProxy = aopScopedProxy;
-    aopScopedProxy = newAopScopedProxy;
-    if (eNotificationRequired())
-    {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.COMPONENT__AOP_SCOPED_PROXY, oldAopScopedProxy, newAopScopedProxy);
-      if (msgs == null) msgs = notification; else msgs.add(notification);
-    }
-    return msgs;
-  }
+		AopScopedProxy oldAopScopedProxy = aopScopedProxy;
+		aopScopedProxy = newAopScopedProxy;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.COMPONENT__AOP_SCOPED_PROXY, oldAopScopedProxy, newAopScopedProxy);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public void setAopScopedProxy(AopScopedProxy newAopScopedProxy)
   {
-    if (newAopScopedProxy != aopScopedProxy)
-    {
-      NotificationChain msgs = null;
-      if (aopScopedProxy != null)
-        msgs = ((InternalEObject)aopScopedProxy).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - SpringConfigDslPackage.COMPONENT__AOP_SCOPED_PROXY, null, msgs);
-      if (newAopScopedProxy != null)
-        msgs = ((InternalEObject)newAopScopedProxy).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - SpringConfigDslPackage.COMPONENT__AOP_SCOPED_PROXY, null, msgs);
-      msgs = basicSetAopScopedProxy(newAopScopedProxy, msgs);
-      if (msgs != null) msgs.dispatch();
-    }
-    else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.COMPONENT__AOP_SCOPED_PROXY, newAopScopedProxy, newAopScopedProxy));
-  }
+		if (newAopScopedProxy != aopScopedProxy) {
+			NotificationChain msgs = null;
+			if (aopScopedProxy != null)
+				msgs = ((InternalEObject)aopScopedProxy).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - SpringConfigDslPackage.COMPONENT__AOP_SCOPED_PROXY, null, msgs);
+			if (newAopScopedProxy != null)
+				msgs = ((InternalEObject)newAopScopedProxy).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - SpringConfigDslPackage.COMPONENT__AOP_SCOPED_PROXY, null, msgs);
+			msgs = basicSetAopScopedProxy(newAopScopedProxy, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.COMPONENT__AOP_SCOPED_PROXY, newAopScopedProxy, newAopScopedProxy));
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public EList<UtilPropertyPath> getUtilPropertiesPath()
   {
-    if (utilPropertiesPath == null)
-    {
-      utilPropertiesPath = new EObjectContainmentEList<UtilPropertyPath>(UtilPropertyPath.class, this, SpringConfigDslPackage.COMPONENT__UTIL_PROPERTIES_PATH);
-    }
-    return utilPropertiesPath;
-  }
+		if (utilPropertiesPath == null) {
+			utilPropertiesPath = new EObjectContainmentEList<UtilPropertyPath>(UtilPropertyPath.class, this, SpringConfigDslPackage.COMPONENT__UTIL_PROPERTIES_PATH);
+		}
+		return utilPropertiesPath;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.COMPONENT__CLASS:
-        return basicSetClass(null, msgs);
-      case SpringConfigDslPackage.COMPONENT__FEATURES:
-        return ((InternalEList<?>)getFeatures()).basicRemove(otherEnd, msgs);
-      case SpringConfigDslPackage.COMPONENT__LOOKUP_METHODS:
-        return ((InternalEList<?>)getLookupMethods()).basicRemove(otherEnd, msgs);
-      case SpringConfigDslPackage.COMPONENT__QUALIFIERS:
-        return ((InternalEList<?>)getQualifiers()).basicRemove(otherEnd, msgs);
-      case SpringConfigDslPackage.COMPONENT__META:
-        return ((InternalEList<?>)getMeta()).basicRemove(otherEnd, msgs);
-      case SpringConfigDslPackage.COMPONENT__AOP_SCOPED_PROXY:
-        return basicSetAopScopedProxy(null, msgs);
-      case SpringConfigDslPackage.COMPONENT__UTIL_PROPERTIES_PATH:
-        return ((InternalEList<?>)getUtilPropertiesPath()).basicRemove(otherEnd, msgs);
-    }
-    return super.eInverseRemove(otherEnd, featureID, msgs);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.COMPONENT__CLASS:
+				return basicSetClass(null, msgs);
+			case SpringConfigDslPackage.COMPONENT__FEATURES:
+				return ((InternalEList<?>)getFeatures()).basicRemove(otherEnd, msgs);
+			case SpringConfigDslPackage.COMPONENT__LOOKUP_METHODS:
+				return ((InternalEList<?>)getLookupMethods()).basicRemove(otherEnd, msgs);
+			case SpringConfigDslPackage.COMPONENT__QUALIFIERS:
+				return ((InternalEList<?>)getQualifiers()).basicRemove(otherEnd, msgs);
+			case SpringConfigDslPackage.COMPONENT__META:
+				return ((InternalEList<?>)getMeta()).basicRemove(otherEnd, msgs);
+			case SpringConfigDslPackage.COMPONENT__AOP_SCOPED_PROXY:
+				return basicSetAopScopedProxy(null, msgs);
+			case SpringConfigDslPackage.COMPONENT__UTIL_PROPERTIES_PATH:
+				return ((InternalEList<?>)getUtilPropertiesPath()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.COMPONENT__NAME:
-        return getName();
-      case SpringConfigDslPackage.COMPONENT__NAMES:
-        return getNames();
-      case SpringConfigDslPackage.COMPONENT__CLASS:
-        return getClass_();
-      case SpringConfigDslPackage.COMPONENT__FEATURES:
-        return getFeatures();
-      case SpringConfigDslPackage.COMPONENT__ABSTRACT:
-        return getAbstract();
-      case SpringConfigDslPackage.COMPONENT__AUTOWIRE_CANDIDATE:
-        return getAutowireCandidate();
-      case SpringConfigDslPackage.COMPONENT__AUTOWIRE:
-        return getAutowire();
-      case SpringConfigDslPackage.COMPONENT__DEPENDS_ON:
-        if (resolve) return getDependsOn();
-        return basicGetDependsOn();
-      case SpringConfigDslPackage.COMPONENT__DETROY_METHOD:
-        return getDetroyMethod();
-      case SpringConfigDslPackage.COMPONENT__INIT_METHOD:
-        return getInitMethod();
-      case SpringConfigDslPackage.COMPONENT__LAZY_INIT:
-        return getLazyInit();
-      case SpringConfigDslPackage.COMPONENT__PARENT:
-        if (resolve) return getParent();
-        return basicGetParent();
-      case SpringConfigDslPackage.COMPONENT__PRIMARY:
-        return getPrimary();
-      case SpringConfigDslPackage.COMPONENT__SCOPE:
-        return getScope();
-      case SpringConfigDslPackage.COMPONENT__DESCRIPTION:
-        return getDescription();
-      case SpringConfigDslPackage.COMPONENT__LOOKUP_METHODS:
-        return getLookupMethods();
-      case SpringConfigDslPackage.COMPONENT__QUALIFIERS:
-        return getQualifiers();
-      case SpringConfigDslPackage.COMPONENT__META:
-        return getMeta();
-      case SpringConfigDslPackage.COMPONENT__AOP_SCOPED_PROXY:
-        return getAopScopedProxy();
-      case SpringConfigDslPackage.COMPONENT__UTIL_PROPERTIES_PATH:
-        return getUtilPropertiesPath();
-    }
-    return super.eGet(featureID, resolve, coreType);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.COMPONENT__NAME:
+				return getName();
+			case SpringConfigDslPackage.COMPONENT__NAMES:
+				return getNames();
+			case SpringConfigDslPackage.COMPONENT__CLASS:
+				return getClass_();
+			case SpringConfigDslPackage.COMPONENT__FEATURES:
+				return getFeatures();
+			case SpringConfigDslPackage.COMPONENT__ABSTRACT:
+				return getAbstract();
+			case SpringConfigDslPackage.COMPONENT__AUTOWIRE_CANDIDATE:
+				return getAutowireCandidate();
+			case SpringConfigDslPackage.COMPONENT__AUTOWIRE:
+				return getAutowire();
+			case SpringConfigDslPackage.COMPONENT__DEPENDS_ON:
+				if (resolve) return getDependsOn();
+				return basicGetDependsOn();
+			case SpringConfigDslPackage.COMPONENT__DETROY_METHOD:
+				return getDetroyMethod();
+			case SpringConfigDslPackage.COMPONENT__INIT_METHOD:
+				return getInitMethod();
+			case SpringConfigDslPackage.COMPONENT__LAZY_INIT:
+				return getLazyInit();
+			case SpringConfigDslPackage.COMPONENT__PARENT:
+				if (resolve) return getParent();
+				return basicGetParent();
+			case SpringConfigDslPackage.COMPONENT__PRIMARY:
+				return getPrimary();
+			case SpringConfigDslPackage.COMPONENT__SCOPE:
+				return getScope();
+			case SpringConfigDslPackage.COMPONENT__DESCRIPTION:
+				return getDescription();
+			case SpringConfigDslPackage.COMPONENT__LOOKUP_METHODS:
+				return getLookupMethods();
+			case SpringConfigDslPackage.COMPONENT__QUALIFIERS:
+				return getQualifiers();
+			case SpringConfigDslPackage.COMPONENT__META:
+				return getMeta();
+			case SpringConfigDslPackage.COMPONENT__AOP_SCOPED_PROXY:
+				return getAopScopedProxy();
+			case SpringConfigDslPackage.COMPONENT__UTIL_PROPERTIES_PATH:
+				return getUtilPropertiesPath();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @SuppressWarnings("unchecked")
   @Override
   public void eSet(int featureID, Object newValue)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.COMPONENT__NAME:
-        setName((String)newValue);
-        return;
-      case SpringConfigDslPackage.COMPONENT__NAMES:
-        getNames().clear();
-        getNames().addAll((Collection<? extends String>)newValue);
-        return;
-      case SpringConfigDslPackage.COMPONENT__CLASS:
-        setClass((CreationMethod)newValue);
-        return;
-      case SpringConfigDslPackage.COMPONENT__FEATURES:
-        getFeatures().clear();
-        getFeatures().addAll((Collection<? extends Feature>)newValue);
-        return;
-      case SpringConfigDslPackage.COMPONENT__ABSTRACT:
-        setAbstract((sBoolean)newValue);
-        return;
-      case SpringConfigDslPackage.COMPONENT__AUTOWIRE_CANDIDATE:
-        setAutowireCandidate((DefaultableBoolean)newValue);
-        return;
-      case SpringConfigDslPackage.COMPONENT__AUTOWIRE:
-        setAutowire((DefaultableBoolean)newValue);
-        return;
-      case SpringConfigDslPackage.COMPONENT__DEPENDS_ON:
-        setDependsOn((Component)newValue);
-        return;
-      case SpringConfigDslPackage.COMPONENT__DETROY_METHOD:
-        setDetroyMethod((String)newValue);
-        return;
-      case SpringConfigDslPackage.COMPONENT__INIT_METHOD:
-        setInitMethod((String)newValue);
-        return;
-      case SpringConfigDslPackage.COMPONENT__LAZY_INIT:
-        setLazyInit((DefaultableBoolean)newValue);
-        return;
-      case SpringConfigDslPackage.COMPONENT__PARENT:
-        setParent((Component)newValue);
-        return;
-      case SpringConfigDslPackage.COMPONENT__PRIMARY:
-        setPrimary((sBoolean)newValue);
-        return;
-      case SpringConfigDslPackage.COMPONENT__SCOPE:
-        setScope((String)newValue);
-        return;
-      case SpringConfigDslPackage.COMPONENT__DESCRIPTION:
-        setDescription((String)newValue);
-        return;
-      case SpringConfigDslPackage.COMPONENT__LOOKUP_METHODS:
-        getLookupMethods().clear();
-        getLookupMethods().addAll((Collection<? extends LookupMethod>)newValue);
-        return;
-      case SpringConfigDslPackage.COMPONENT__QUALIFIERS:
-        getQualifiers().clear();
-        getQualifiers().addAll((Collection<? extends Qualifier>)newValue);
-        return;
-      case SpringConfigDslPackage.COMPONENT__META:
-        getMeta().clear();
-        getMeta().addAll((Collection<? extends Meta>)newValue);
-        return;
-      case SpringConfigDslPackage.COMPONENT__AOP_SCOPED_PROXY:
-        setAopScopedProxy((AopScopedProxy)newValue);
-        return;
-      case SpringConfigDslPackage.COMPONENT__UTIL_PROPERTIES_PATH:
-        getUtilPropertiesPath().clear();
-        getUtilPropertiesPath().addAll((Collection<? extends UtilPropertyPath>)newValue);
-        return;
-    }
-    super.eSet(featureID, newValue);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.COMPONENT__NAME:
+				setName((String)newValue);
+				return;
+			case SpringConfigDslPackage.COMPONENT__NAMES:
+				getNames().clear();
+				getNames().addAll((Collection<? extends String>)newValue);
+				return;
+			case SpringConfigDslPackage.COMPONENT__CLASS:
+				setClass((CreationMethod)newValue);
+				return;
+			case SpringConfigDslPackage.COMPONENT__FEATURES:
+				getFeatures().clear();
+				getFeatures().addAll((Collection<? extends Feature>)newValue);
+				return;
+			case SpringConfigDslPackage.COMPONENT__ABSTRACT:
+				setAbstract((sBoolean)newValue);
+				return;
+			case SpringConfigDslPackage.COMPONENT__AUTOWIRE_CANDIDATE:
+				setAutowireCandidate((DefaultableBoolean)newValue);
+				return;
+			case SpringConfigDslPackage.COMPONENT__AUTOWIRE:
+				setAutowire((DefaultableBoolean)newValue);
+				return;
+			case SpringConfigDslPackage.COMPONENT__DEPENDS_ON:
+				setDependsOn((Component)newValue);
+				return;
+			case SpringConfigDslPackage.COMPONENT__DETROY_METHOD:
+				setDetroyMethod((String)newValue);
+				return;
+			case SpringConfigDslPackage.COMPONENT__INIT_METHOD:
+				setInitMethod((String)newValue);
+				return;
+			case SpringConfigDslPackage.COMPONENT__LAZY_INIT:
+				setLazyInit((DefaultableBoolean)newValue);
+				return;
+			case SpringConfigDslPackage.COMPONENT__PARENT:
+				setParent((Component)newValue);
+				return;
+			case SpringConfigDslPackage.COMPONENT__PRIMARY:
+				setPrimary((sBoolean)newValue);
+				return;
+			case SpringConfigDslPackage.COMPONENT__SCOPE:
+				setScope((String)newValue);
+				return;
+			case SpringConfigDslPackage.COMPONENT__DESCRIPTION:
+				setDescription((String)newValue);
+				return;
+			case SpringConfigDslPackage.COMPONENT__LOOKUP_METHODS:
+				getLookupMethods().clear();
+				getLookupMethods().addAll((Collection<? extends LookupMethod>)newValue);
+				return;
+			case SpringConfigDslPackage.COMPONENT__QUALIFIERS:
+				getQualifiers().clear();
+				getQualifiers().addAll((Collection<? extends Qualifier>)newValue);
+				return;
+			case SpringConfigDslPackage.COMPONENT__META:
+				getMeta().clear();
+				getMeta().addAll((Collection<? extends Meta>)newValue);
+				return;
+			case SpringConfigDslPackage.COMPONENT__AOP_SCOPED_PROXY:
+				setAopScopedProxy((AopScopedProxy)newValue);
+				return;
+			case SpringConfigDslPackage.COMPONENT__UTIL_PROPERTIES_PATH:
+				getUtilPropertiesPath().clear();
+				getUtilPropertiesPath().addAll((Collection<? extends UtilPropertyPath>)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public void eUnset(int featureID)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.COMPONENT__NAME:
-        setName(NAME_EDEFAULT);
-        return;
-      case SpringConfigDslPackage.COMPONENT__NAMES:
-        getNames().clear();
-        return;
-      case SpringConfigDslPackage.COMPONENT__CLASS:
-        setClass((CreationMethod)null);
-        return;
-      case SpringConfigDslPackage.COMPONENT__FEATURES:
-        getFeatures().clear();
-        return;
-      case SpringConfigDslPackage.COMPONENT__ABSTRACT:
-        setAbstract(ABSTRACT_EDEFAULT);
-        return;
-      case SpringConfigDslPackage.COMPONENT__AUTOWIRE_CANDIDATE:
-        setAutowireCandidate(AUTOWIRE_CANDIDATE_EDEFAULT);
-        return;
-      case SpringConfigDslPackage.COMPONENT__AUTOWIRE:
-        setAutowire(AUTOWIRE_EDEFAULT);
-        return;
-      case SpringConfigDslPackage.COMPONENT__DEPENDS_ON:
-        setDependsOn((Component)null);
-        return;
-      case SpringConfigDslPackage.COMPONENT__DETROY_METHOD:
-        setDetroyMethod(DETROY_METHOD_EDEFAULT);
-        return;
-      case SpringConfigDslPackage.COMPONENT__INIT_METHOD:
-        setInitMethod(INIT_METHOD_EDEFAULT);
-        return;
-      case SpringConfigDslPackage.COMPONENT__LAZY_INIT:
-        setLazyInit(LAZY_INIT_EDEFAULT);
-        return;
-      case SpringConfigDslPackage.COMPONENT__PARENT:
-        setParent((Component)null);
-        return;
-      case SpringConfigDslPackage.COMPONENT__PRIMARY:
-        setPrimary(PRIMARY_EDEFAULT);
-        return;
-      case SpringConfigDslPackage.COMPONENT__SCOPE:
-        setScope(SCOPE_EDEFAULT);
-        return;
-      case SpringConfigDslPackage.COMPONENT__DESCRIPTION:
-        setDescription(DESCRIPTION_EDEFAULT);
-        return;
-      case SpringConfigDslPackage.COMPONENT__LOOKUP_METHODS:
-        getLookupMethods().clear();
-        return;
-      case SpringConfigDslPackage.COMPONENT__QUALIFIERS:
-        getQualifiers().clear();
-        return;
-      case SpringConfigDslPackage.COMPONENT__META:
-        getMeta().clear();
-        return;
-      case SpringConfigDslPackage.COMPONENT__AOP_SCOPED_PROXY:
-        setAopScopedProxy((AopScopedProxy)null);
-        return;
-      case SpringConfigDslPackage.COMPONENT__UTIL_PROPERTIES_PATH:
-        getUtilPropertiesPath().clear();
-        return;
-    }
-    super.eUnset(featureID);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.COMPONENT__NAME:
+				setName(NAME_EDEFAULT);
+				return;
+			case SpringConfigDslPackage.COMPONENT__NAMES:
+				getNames().clear();
+				return;
+			case SpringConfigDslPackage.COMPONENT__CLASS:
+				setClass((CreationMethod)null);
+				return;
+			case SpringConfigDslPackage.COMPONENT__FEATURES:
+				getFeatures().clear();
+				return;
+			case SpringConfigDslPackage.COMPONENT__ABSTRACT:
+				setAbstract(ABSTRACT_EDEFAULT);
+				return;
+			case SpringConfigDslPackage.COMPONENT__AUTOWIRE_CANDIDATE:
+				setAutowireCandidate(AUTOWIRE_CANDIDATE_EDEFAULT);
+				return;
+			case SpringConfigDslPackage.COMPONENT__AUTOWIRE:
+				setAutowire(AUTOWIRE_EDEFAULT);
+				return;
+			case SpringConfigDslPackage.COMPONENT__DEPENDS_ON:
+				setDependsOn((Component)null);
+				return;
+			case SpringConfigDslPackage.COMPONENT__DETROY_METHOD:
+				setDetroyMethod(DETROY_METHOD_EDEFAULT);
+				return;
+			case SpringConfigDslPackage.COMPONENT__INIT_METHOD:
+				setInitMethod(INIT_METHOD_EDEFAULT);
+				return;
+			case SpringConfigDslPackage.COMPONENT__LAZY_INIT:
+				setLazyInit(LAZY_INIT_EDEFAULT);
+				return;
+			case SpringConfigDslPackage.COMPONENT__PARENT:
+				setParent((Component)null);
+				return;
+			case SpringConfigDslPackage.COMPONENT__PRIMARY:
+				setPrimary(PRIMARY_EDEFAULT);
+				return;
+			case SpringConfigDslPackage.COMPONENT__SCOPE:
+				setScope(SCOPE_EDEFAULT);
+				return;
+			case SpringConfigDslPackage.COMPONENT__DESCRIPTION:
+				setDescription(DESCRIPTION_EDEFAULT);
+				return;
+			case SpringConfigDslPackage.COMPONENT__LOOKUP_METHODS:
+				getLookupMethods().clear();
+				return;
+			case SpringConfigDslPackage.COMPONENT__QUALIFIERS:
+				getQualifiers().clear();
+				return;
+			case SpringConfigDslPackage.COMPONENT__META:
+				getMeta().clear();
+				return;
+			case SpringConfigDslPackage.COMPONENT__AOP_SCOPED_PROXY:
+				setAopScopedProxy((AopScopedProxy)null);
+				return;
+			case SpringConfigDslPackage.COMPONENT__UTIL_PROPERTIES_PATH:
+				getUtilPropertiesPath().clear();
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public boolean eIsSet(int featureID)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.COMPONENT__NAME:
-        return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-      case SpringConfigDslPackage.COMPONENT__NAMES:
-        return names != null && !names.isEmpty();
-      case SpringConfigDslPackage.COMPONENT__CLASS:
-        return class_ != null;
-      case SpringConfigDslPackage.COMPONENT__FEATURES:
-        return features != null && !features.isEmpty();
-      case SpringConfigDslPackage.COMPONENT__ABSTRACT:
-        return abstract_ != ABSTRACT_EDEFAULT;
-      case SpringConfigDslPackage.COMPONENT__AUTOWIRE_CANDIDATE:
-        return autowireCandidate != AUTOWIRE_CANDIDATE_EDEFAULT;
-      case SpringConfigDslPackage.COMPONENT__AUTOWIRE:
-        return autowire != AUTOWIRE_EDEFAULT;
-      case SpringConfigDslPackage.COMPONENT__DEPENDS_ON:
-        return dependsOn != null;
-      case SpringConfigDslPackage.COMPONENT__DETROY_METHOD:
-        return DETROY_METHOD_EDEFAULT == null ? detroyMethod != null : !DETROY_METHOD_EDEFAULT.equals(detroyMethod);
-      case SpringConfigDslPackage.COMPONENT__INIT_METHOD:
-        return INIT_METHOD_EDEFAULT == null ? initMethod != null : !INIT_METHOD_EDEFAULT.equals(initMethod);
-      case SpringConfigDslPackage.COMPONENT__LAZY_INIT:
-        return lazyInit != LAZY_INIT_EDEFAULT;
-      case SpringConfigDslPackage.COMPONENT__PARENT:
-        return parent != null;
-      case SpringConfigDslPackage.COMPONENT__PRIMARY:
-        return primary != PRIMARY_EDEFAULT;
-      case SpringConfigDslPackage.COMPONENT__SCOPE:
-        return SCOPE_EDEFAULT == null ? scope != null : !SCOPE_EDEFAULT.equals(scope);
-      case SpringConfigDslPackage.COMPONENT__DESCRIPTION:
-        return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
-      case SpringConfigDslPackage.COMPONENT__LOOKUP_METHODS:
-        return lookupMethods != null && !lookupMethods.isEmpty();
-      case SpringConfigDslPackage.COMPONENT__QUALIFIERS:
-        return qualifiers != null && !qualifiers.isEmpty();
-      case SpringConfigDslPackage.COMPONENT__META:
-        return meta != null && !meta.isEmpty();
-      case SpringConfigDslPackage.COMPONENT__AOP_SCOPED_PROXY:
-        return aopScopedProxy != null;
-      case SpringConfigDslPackage.COMPONENT__UTIL_PROPERTIES_PATH:
-        return utilPropertiesPath != null && !utilPropertiesPath.isEmpty();
-    }
-    return super.eIsSet(featureID);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.COMPONENT__NAME:
+				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+			case SpringConfigDslPackage.COMPONENT__NAMES:
+				return names != null && !names.isEmpty();
+			case SpringConfigDslPackage.COMPONENT__CLASS:
+				return class_ != null;
+			case SpringConfigDslPackage.COMPONENT__FEATURES:
+				return features != null && !features.isEmpty();
+			case SpringConfigDslPackage.COMPONENT__ABSTRACT:
+				return abstract_ != ABSTRACT_EDEFAULT;
+			case SpringConfigDslPackage.COMPONENT__AUTOWIRE_CANDIDATE:
+				return autowireCandidate != AUTOWIRE_CANDIDATE_EDEFAULT;
+			case SpringConfigDslPackage.COMPONENT__AUTOWIRE:
+				return autowire != AUTOWIRE_EDEFAULT;
+			case SpringConfigDslPackage.COMPONENT__DEPENDS_ON:
+				return dependsOn != null;
+			case SpringConfigDslPackage.COMPONENT__DETROY_METHOD:
+				return DETROY_METHOD_EDEFAULT == null ? detroyMethod != null : !DETROY_METHOD_EDEFAULT.equals(detroyMethod);
+			case SpringConfigDslPackage.COMPONENT__INIT_METHOD:
+				return INIT_METHOD_EDEFAULT == null ? initMethod != null : !INIT_METHOD_EDEFAULT.equals(initMethod);
+			case SpringConfigDslPackage.COMPONENT__LAZY_INIT:
+				return lazyInit != LAZY_INIT_EDEFAULT;
+			case SpringConfigDslPackage.COMPONENT__PARENT:
+				return parent != null;
+			case SpringConfigDslPackage.COMPONENT__PRIMARY:
+				return primary != PRIMARY_EDEFAULT;
+			case SpringConfigDslPackage.COMPONENT__SCOPE:
+				return SCOPE_EDEFAULT == null ? scope != null : !SCOPE_EDEFAULT.equals(scope);
+			case SpringConfigDslPackage.COMPONENT__DESCRIPTION:
+				return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
+			case SpringConfigDslPackage.COMPONENT__LOOKUP_METHODS:
+				return lookupMethods != null && !lookupMethods.isEmpty();
+			case SpringConfigDslPackage.COMPONENT__QUALIFIERS:
+				return qualifiers != null && !qualifiers.isEmpty();
+			case SpringConfigDslPackage.COMPONENT__META:
+				return meta != null && !meta.isEmpty();
+			case SpringConfigDslPackage.COMPONENT__AOP_SCOPED_PROXY:
+				return aopScopedProxy != null;
+			case SpringConfigDslPackage.COMPONENT__UTIL_PROPERTIES_PATH:
+				return utilPropertiesPath != null && !utilPropertiesPath.isEmpty();
+		}
+		return super.eIsSet(featureID);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public String toString()
   {
-    if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-    StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (name: ");
-    result.append(name);
-    result.append(", names: ");
-    result.append(names);
-    result.append(", abstract: ");
-    result.append(abstract_);
-    result.append(", autowireCandidate: ");
-    result.append(autowireCandidate);
-    result.append(", autowire: ");
-    result.append(autowire);
-    result.append(", detroyMethod: ");
-    result.append(detroyMethod);
-    result.append(", initMethod: ");
-    result.append(initMethod);
-    result.append(", lazyInit: ");
-    result.append(lazyInit);
-    result.append(", primary: ");
-    result.append(primary);
-    result.append(", scope: ");
-    result.append(scope);
-    result.append(", description: ");
-    result.append(description);
-    result.append(')');
-    return result.toString();
-  }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (name: ");
+		result.append(name);
+		result.append(", names: ");
+		result.append(names);
+		result.append(", abstract: ");
+		result.append(abstract_);
+		result.append(", autowireCandidate: ");
+		result.append(autowireCandidate);
+		result.append(", autowire: ");
+		result.append(autowire);
+		result.append(", detroyMethod: ");
+		result.append(detroyMethod);
+		result.append(", initMethod: ");
+		result.append(initMethod);
+		result.append(", lazyInit: ");
+		result.append(lazyInit);
+		result.append(", primary: ");
+		result.append(primary);
+		result.append(", scope: ");
+		result.append(scope);
+		result.append(", description: ");
+		result.append(description);
+		result.append(')');
+		return result.toString();
+	}
 
 } //ComponentImpl

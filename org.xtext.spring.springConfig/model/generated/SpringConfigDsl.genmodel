@@ -5,7 +5,7 @@
     updateClasspath="false" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
     complianceLevel="6.0" copyrightFields="false" runtimeVersion="2.13">
   <genPackages prefix="SpringConfigDsl" basePackage="org.xtext.spring" disposableProviderFactory="true"
-      fileExtensions="sdsl" ecorePackage="SpringConfigDsl.ecore#/">
+      fileExtensions="sdsl,xml" ecorePackage="SpringConfigDsl.ecore#/">
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="SpringConfigDsl.ecore#//sBoolean">
       <genEnumLiterals ecoreEnumLiteral="SpringConfigDsl.ecore#//sBoolean/FALSE"/>
       <genEnumLiterals ecoreEnumLiteral="SpringConfigDsl.ecore#//sBoolean/TRUE"/>

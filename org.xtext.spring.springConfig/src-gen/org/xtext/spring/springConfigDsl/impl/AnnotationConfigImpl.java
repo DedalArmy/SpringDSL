@@ -18,24 +18,24 @@ import org.xtext.spring.springConfigDsl.SpringConfigDslPackage;
 public class AnnotationConfigImpl extends ContextImpl implements AnnotationConfig
 {
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   protected AnnotationConfigImpl()
   {
-    super();
-  }
+		super();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   protected EClass eStaticClass()
   {
-    return SpringConfigDslPackage.Literals.ANNOTATION_CONFIG;
-  }
+		return SpringConfigDslPackage.Literals.ANNOTATION_CONFIG;
+	}
 
 } //AnnotationConfigImpl

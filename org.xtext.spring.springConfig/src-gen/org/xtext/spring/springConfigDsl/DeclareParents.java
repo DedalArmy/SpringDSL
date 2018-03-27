@@ -27,107 +27,107 @@ import org.eclipse.emf.ecore.EObject;
 public interface DeclareParents extends EObject
 {
   /**
-   * Returns the value of the '<em><b>Type Matching</b></em>' attribute.
-   * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Type Matching</b></em>' attribute.
+	 * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Type Matching</em>' attribute isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Type Matching</em>' attribute.
-   * @see #setTypeMatching(String)
-   * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getDeclareParents_TypeMatching()
-   * @model
-   * @generated
-   */
+	 * @return the value of the '<em>Type Matching</em>' attribute.
+	 * @see #setTypeMatching(String)
+	 * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getDeclareParents_TypeMatching()
+	 * @model
+	 * @generated
+	 */
   String getTypeMatching();
 
   /**
-   * Sets the value of the '{@link org.xtext.spring.springConfigDsl.DeclareParents#getTypeMatching <em>Type Matching</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.xtext.spring.springConfigDsl.DeclareParents#getTypeMatching <em>Type Matching</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Type Matching</em>' attribute.
-   * @see #getTypeMatching()
-   * @generated
-   */
+	 * @param value the new value of the '<em>Type Matching</em>' attribute.
+	 * @see #getTypeMatching()
+	 * @generated
+	 */
   void setTypeMatching(String value);
 
   /**
-   * Returns the value of the '<em><b>Implement Interface</b></em>' containment reference.
-   * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Implement Interface</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Implement Interface</em>' containment reference isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Implement Interface</em>' containment reference.
-   * @see #setImplementInterface(Interface)
-   * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getDeclareParents_ImplementInterface()
-   * @model containment="true"
-   * @generated
-   */
+	 * @return the value of the '<em>Implement Interface</em>' containment reference.
+	 * @see #setImplementInterface(Interface)
+	 * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getDeclareParents_ImplementInterface()
+	 * @model containment="true"
+	 * @generated
+	 */
   Interface getImplementInterface();
 
   /**
-   * Sets the value of the '{@link org.xtext.spring.springConfigDsl.DeclareParents#getImplementInterface <em>Implement Interface</em>}' containment reference.
-   * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.xtext.spring.springConfigDsl.DeclareParents#getImplementInterface <em>Implement Interface</em>}' containment reference.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Implement Interface</em>' containment reference.
-   * @see #getImplementInterface()
-   * @generated
-   */
+	 * @param value the new value of the '<em>Implement Interface</em>' containment reference.
+	 * @see #getImplementInterface()
+	 * @generated
+	 */
   void setImplementInterface(Interface value);
 
   /**
-   * Returns the value of the '<em><b>Default Impl Interface</b></em>' containment reference.
-   * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Default Impl Interface</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Default Impl Interface</em>' containment reference isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Default Impl Interface</em>' containment reference.
-   * @see #setDefaultImplInterface(AopDefaultImplInterface)
-   * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getDeclareParents_DefaultImplInterface()
-   * @model containment="true"
-   * @generated
-   */
+	 * @return the value of the '<em>Default Impl Interface</em>' containment reference.
+	 * @see #setDefaultImplInterface(AopDefaultImplInterface)
+	 * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getDeclareParents_DefaultImplInterface()
+	 * @model containment="true"
+	 * @generated
+	 */
   AopDefaultImplInterface getDefaultImplInterface();
 
   /**
-   * Sets the value of the '{@link org.xtext.spring.springConfigDsl.DeclareParents#getDefaultImplInterface <em>Default Impl Interface</em>}' containment reference.
-   * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.xtext.spring.springConfigDsl.DeclareParents#getDefaultImplInterface <em>Default Impl Interface</em>}' containment reference.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Default Impl Interface</em>' containment reference.
-   * @see #getDefaultImplInterface()
-   * @generated
-   */
+	 * @param value the new value of the '<em>Default Impl Interface</em>' containment reference.
+	 * @see #getDefaultImplInterface()
+	 * @generated
+	 */
   void setDefaultImplInterface(AopDefaultImplInterface value);
 
   /**
-   * Returns the value of the '<em><b>Delegate Impl Ref</b></em>' containment reference.
-   * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Delegate Impl Ref</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Delegate Impl Ref</em>' containment reference isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Delegate Impl Ref</em>' containment reference.
-   * @see #setDelegateImplRef(AopDelegateImplRef)
-   * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getDeclareParents_DelegateImplRef()
-   * @model containment="true"
-   * @generated
-   */
+	 * @return the value of the '<em>Delegate Impl Ref</em>' containment reference.
+	 * @see #setDelegateImplRef(AopDelegateImplRef)
+	 * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getDeclareParents_DelegateImplRef()
+	 * @model containment="true"
+	 * @generated
+	 */
   AopDelegateImplRef getDelegateImplRef();
 
   /**
-   * Sets the value of the '{@link org.xtext.spring.springConfigDsl.DeclareParents#getDelegateImplRef <em>Delegate Impl Ref</em>}' containment reference.
-   * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.xtext.spring.springConfigDsl.DeclareParents#getDelegateImplRef <em>Delegate Impl Ref</em>}' containment reference.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Delegate Impl Ref</em>' containment reference.
-   * @see #getDelegateImplRef()
-   * @generated
-   */
+	 * @param value the new value of the '<em>Delegate Impl Ref</em>' containment reference.
+	 * @see #getDelegateImplRef()
+	 * @generated
+	 */
   void setDelegateImplRef(AopDelegateImplRef value);
 
 } // DeclareParents

@@ -28,150 +28,146 @@ import org.xtext.spring.springConfigDsl.SpringConfigDslPackage;
 public class AfterReturningImpl extends AdviseImpl implements AfterReturning
 {
   /**
-   * The default value of the '{@link #getReturningValue() <em>Returning Value</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getReturningValue() <em>Returning Value</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getReturningValue()
-   * @generated
-   * @ordered
-   */
+	 * @see #getReturningValue()
+	 * @generated
+	 * @ordered
+	 */
   protected static final String RETURNING_VALUE_EDEFAULT = null;
 
   /**
-   * The cached value of the '{@link #getReturningValue() <em>Returning Value</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getReturningValue() <em>Returning Value</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getReturningValue()
-   * @generated
-   * @ordered
-   */
+	 * @see #getReturningValue()
+	 * @generated
+	 * @ordered
+	 */
   protected String returningValue = RETURNING_VALUE_EDEFAULT;
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   protected AfterReturningImpl()
   {
-    super();
-  }
+		super();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   protected EClass eStaticClass()
   {
-    return SpringConfigDslPackage.Literals.AFTER_RETURNING;
-  }
+		return SpringConfigDslPackage.Literals.AFTER_RETURNING;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public String getReturningValue()
   {
-    return returningValue;
-  }
+		return returningValue;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public void setReturningValue(String newReturningValue)
   {
-    String oldReturningValue = returningValue;
-    returningValue = newReturningValue;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.AFTER_RETURNING__RETURNING_VALUE, oldReturningValue, returningValue));
-  }
+		String oldReturningValue = returningValue;
+		returningValue = newReturningValue;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.AFTER_RETURNING__RETURNING_VALUE, oldReturningValue, returningValue));
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.AFTER_RETURNING__RETURNING_VALUE:
-        return getReturningValue();
-    }
-    return super.eGet(featureID, resolve, coreType);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.AFTER_RETURNING__RETURNING_VALUE:
+				return getReturningValue();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public void eSet(int featureID, Object newValue)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.AFTER_RETURNING__RETURNING_VALUE:
-        setReturningValue((String)newValue);
-        return;
-    }
-    super.eSet(featureID, newValue);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.AFTER_RETURNING__RETURNING_VALUE:
+				setReturningValue((String)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public void eUnset(int featureID)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.AFTER_RETURNING__RETURNING_VALUE:
-        setReturningValue(RETURNING_VALUE_EDEFAULT);
-        return;
-    }
-    super.eUnset(featureID);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.AFTER_RETURNING__RETURNING_VALUE:
+				setReturningValue(RETURNING_VALUE_EDEFAULT);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public boolean eIsSet(int featureID)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.AFTER_RETURNING__RETURNING_VALUE:
-        return RETURNING_VALUE_EDEFAULT == null ? returningValue != null : !RETURNING_VALUE_EDEFAULT.equals(returningValue);
-    }
-    return super.eIsSet(featureID);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.AFTER_RETURNING__RETURNING_VALUE:
+				return RETURNING_VALUE_EDEFAULT == null ? returningValue != null : !RETURNING_VALUE_EDEFAULT.equals(returningValue);
+		}
+		return super.eIsSet(featureID);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public String toString()
   {
-    if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-    StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (returningValue: ");
-    result.append(returningValue);
-    result.append(')');
-    return result.toString();
-  }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (returningValue: ");
+		result.append(returningValue);
+		result.append(')');
+		return result.toString();
+	}
 
 } //AfterReturningImpl

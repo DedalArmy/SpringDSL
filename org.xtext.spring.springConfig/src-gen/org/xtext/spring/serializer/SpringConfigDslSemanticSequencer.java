@@ -813,34 +813,28 @@ public class SpringConfigDslSemanticSequencer extends AbstractDelegatingSemantic
 	 *
 	 * Constraint:
 	 *     (
-	 *         features+=PNamespace? 
 	 *         (
-	 *             (
-	 *                 name=ValidString | 
-	 *                 names+=ValidString | 
-	 *                 class=CreationMethod | 
-	 *                 features+=CNamespace | 
-	 *                 abstract=sBoolean | 
-	 *                 autowireCandidate=DefaultableBoolean | 
-	 *                 autowire=DefaultableBoolean | 
-	 *                 dependsOn=[Component|ValidString] | 
-	 *                 detroyMethod=ValidString | 
-	 *                 initMethod=ValidString | 
-	 *                 lazyInit=DefaultableBoolean | 
-	 *                 parent=[Component|ValidString] | 
-	 *                 primary=sBoolean | 
-	 *                 scope=ValidString
-	 *             )? 
-	 *             features+=PNamespace?
+	 *             name=ValidString | 
+	 *             names+=ValidString | 
+	 *             class=CreationMethod | 
+	 *             features+=PNamespace | 
+	 *             features+=CNamespace | 
+	 *             abstract=sBoolean | 
+	 *             autowireCandidate=DefaultableBoolean | 
+	 *             autowire=DefaultableBoolean | 
+	 *             dependsOn=[Component|ValidString] | 
+	 *             detroyMethod=ValidString | 
+	 *             initMethod=ValidString | 
+	 *             lazyInit=DefaultableBoolean | 
+	 *             parent=[Component|ValidString] | 
+	 *             primary=sBoolean | 
+	 *             scope=ValidString
 	 *         )* 
 	 *         description=Description? 
+	 *         qualifiers+=Qualifier? 
 	 *         (
-	 *             features+=Feature | 
-	 *             lookupMethods+=LookupMethod | 
-	 *             qualifiers+=Qualifier | 
-	 *             meta+=MetaTag | 
-	 *             aopScopedProxy=AopScopedProxy | 
-	 *             utilPropertiesPath+=UtilPropertyPath
+	 *             (features+=Feature | lookupMethods+=LookupMethod | meta+=MetaTag | aopScopedProxy=AopScopedProxy | utilPropertiesPath+=UtilPropertyPath)? 
+	 *             qualifiers+=Qualifier?
 	 *         )*
 	 *     )
 	 */

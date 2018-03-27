@@ -37,374 +37,363 @@ import org.xtext.spring.springConfigDsl.SpringConfigDslPackage;
 public class DeclareParentsImpl extends MinimalEObjectImpl.Container implements DeclareParents
 {
   /**
-   * The default value of the '{@link #getTypeMatching() <em>Type Matching</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getTypeMatching() <em>Type Matching</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getTypeMatching()
-   * @generated
-   * @ordered
-   */
+	 * @see #getTypeMatching()
+	 * @generated
+	 * @ordered
+	 */
   protected static final String TYPE_MATCHING_EDEFAULT = null;
 
   /**
-   * The cached value of the '{@link #getTypeMatching() <em>Type Matching</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getTypeMatching() <em>Type Matching</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getTypeMatching()
-   * @generated
-   * @ordered
-   */
+	 * @see #getTypeMatching()
+	 * @generated
+	 * @ordered
+	 */
   protected String typeMatching = TYPE_MATCHING_EDEFAULT;
 
   /**
-   * The cached value of the '{@link #getImplementInterface() <em>Implement Interface</em>}' containment reference.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getImplementInterface() <em>Implement Interface</em>}' containment reference.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getImplementInterface()
-   * @generated
-   * @ordered
-   */
+	 * @see #getImplementInterface()
+	 * @generated
+	 * @ordered
+	 */
   protected Interface implementInterface;
 
   /**
-   * The cached value of the '{@link #getDefaultImplInterface() <em>Default Impl Interface</em>}' containment reference.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getDefaultImplInterface() <em>Default Impl Interface</em>}' containment reference.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getDefaultImplInterface()
-   * @generated
-   * @ordered
-   */
+	 * @see #getDefaultImplInterface()
+	 * @generated
+	 * @ordered
+	 */
   protected AopDefaultImplInterface defaultImplInterface;
 
   /**
-   * The cached value of the '{@link #getDelegateImplRef() <em>Delegate Impl Ref</em>}' containment reference.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getDelegateImplRef() <em>Delegate Impl Ref</em>}' containment reference.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getDelegateImplRef()
-   * @generated
-   * @ordered
-   */
+	 * @see #getDelegateImplRef()
+	 * @generated
+	 * @ordered
+	 */
   protected AopDelegateImplRef delegateImplRef;
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   protected DeclareParentsImpl()
   {
-    super();
-  }
+		super();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   protected EClass eStaticClass()
   {
-    return SpringConfigDslPackage.Literals.DECLARE_PARENTS;
-  }
+		return SpringConfigDslPackage.Literals.DECLARE_PARENTS;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public String getTypeMatching()
   {
-    return typeMatching;
-  }
+		return typeMatching;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public void setTypeMatching(String newTypeMatching)
   {
-    String oldTypeMatching = typeMatching;
-    typeMatching = newTypeMatching;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.DECLARE_PARENTS__TYPE_MATCHING, oldTypeMatching, typeMatching));
-  }
+		String oldTypeMatching = typeMatching;
+		typeMatching = newTypeMatching;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.DECLARE_PARENTS__TYPE_MATCHING, oldTypeMatching, typeMatching));
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public Interface getImplementInterface()
   {
-    return implementInterface;
-  }
+		return implementInterface;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public NotificationChain basicSetImplementInterface(Interface newImplementInterface, NotificationChain msgs)
   {
-    Interface oldImplementInterface = implementInterface;
-    implementInterface = newImplementInterface;
-    if (eNotificationRequired())
-    {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.DECLARE_PARENTS__IMPLEMENT_INTERFACE, oldImplementInterface, newImplementInterface);
-      if (msgs == null) msgs = notification; else msgs.add(notification);
-    }
-    return msgs;
-  }
+		Interface oldImplementInterface = implementInterface;
+		implementInterface = newImplementInterface;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.DECLARE_PARENTS__IMPLEMENT_INTERFACE, oldImplementInterface, newImplementInterface);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public void setImplementInterface(Interface newImplementInterface)
   {
-    if (newImplementInterface != implementInterface)
-    {
-      NotificationChain msgs = null;
-      if (implementInterface != null)
-        msgs = ((InternalEObject)implementInterface).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - SpringConfigDslPackage.DECLARE_PARENTS__IMPLEMENT_INTERFACE, null, msgs);
-      if (newImplementInterface != null)
-        msgs = ((InternalEObject)newImplementInterface).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - SpringConfigDslPackage.DECLARE_PARENTS__IMPLEMENT_INTERFACE, null, msgs);
-      msgs = basicSetImplementInterface(newImplementInterface, msgs);
-      if (msgs != null) msgs.dispatch();
-    }
-    else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.DECLARE_PARENTS__IMPLEMENT_INTERFACE, newImplementInterface, newImplementInterface));
-  }
+		if (newImplementInterface != implementInterface) {
+			NotificationChain msgs = null;
+			if (implementInterface != null)
+				msgs = ((InternalEObject)implementInterface).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - SpringConfigDslPackage.DECLARE_PARENTS__IMPLEMENT_INTERFACE, null, msgs);
+			if (newImplementInterface != null)
+				msgs = ((InternalEObject)newImplementInterface).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - SpringConfigDslPackage.DECLARE_PARENTS__IMPLEMENT_INTERFACE, null, msgs);
+			msgs = basicSetImplementInterface(newImplementInterface, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.DECLARE_PARENTS__IMPLEMENT_INTERFACE, newImplementInterface, newImplementInterface));
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public AopDefaultImplInterface getDefaultImplInterface()
   {
-    return defaultImplInterface;
-  }
+		return defaultImplInterface;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public NotificationChain basicSetDefaultImplInterface(AopDefaultImplInterface newDefaultImplInterface, NotificationChain msgs)
   {
-    AopDefaultImplInterface oldDefaultImplInterface = defaultImplInterface;
-    defaultImplInterface = newDefaultImplInterface;
-    if (eNotificationRequired())
-    {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.DECLARE_PARENTS__DEFAULT_IMPL_INTERFACE, oldDefaultImplInterface, newDefaultImplInterface);
-      if (msgs == null) msgs = notification; else msgs.add(notification);
-    }
-    return msgs;
-  }
+		AopDefaultImplInterface oldDefaultImplInterface = defaultImplInterface;
+		defaultImplInterface = newDefaultImplInterface;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.DECLARE_PARENTS__DEFAULT_IMPL_INTERFACE, oldDefaultImplInterface, newDefaultImplInterface);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public void setDefaultImplInterface(AopDefaultImplInterface newDefaultImplInterface)
   {
-    if (newDefaultImplInterface != defaultImplInterface)
-    {
-      NotificationChain msgs = null;
-      if (defaultImplInterface != null)
-        msgs = ((InternalEObject)defaultImplInterface).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - SpringConfigDslPackage.DECLARE_PARENTS__DEFAULT_IMPL_INTERFACE, null, msgs);
-      if (newDefaultImplInterface != null)
-        msgs = ((InternalEObject)newDefaultImplInterface).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - SpringConfigDslPackage.DECLARE_PARENTS__DEFAULT_IMPL_INTERFACE, null, msgs);
-      msgs = basicSetDefaultImplInterface(newDefaultImplInterface, msgs);
-      if (msgs != null) msgs.dispatch();
-    }
-    else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.DECLARE_PARENTS__DEFAULT_IMPL_INTERFACE, newDefaultImplInterface, newDefaultImplInterface));
-  }
+		if (newDefaultImplInterface != defaultImplInterface) {
+			NotificationChain msgs = null;
+			if (defaultImplInterface != null)
+				msgs = ((InternalEObject)defaultImplInterface).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - SpringConfigDslPackage.DECLARE_PARENTS__DEFAULT_IMPL_INTERFACE, null, msgs);
+			if (newDefaultImplInterface != null)
+				msgs = ((InternalEObject)newDefaultImplInterface).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - SpringConfigDslPackage.DECLARE_PARENTS__DEFAULT_IMPL_INTERFACE, null, msgs);
+			msgs = basicSetDefaultImplInterface(newDefaultImplInterface, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.DECLARE_PARENTS__DEFAULT_IMPL_INTERFACE, newDefaultImplInterface, newDefaultImplInterface));
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public AopDelegateImplRef getDelegateImplRef()
   {
-    return delegateImplRef;
-  }
+		return delegateImplRef;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public NotificationChain basicSetDelegateImplRef(AopDelegateImplRef newDelegateImplRef, NotificationChain msgs)
   {
-    AopDelegateImplRef oldDelegateImplRef = delegateImplRef;
-    delegateImplRef = newDelegateImplRef;
-    if (eNotificationRequired())
-    {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.DECLARE_PARENTS__DELEGATE_IMPL_REF, oldDelegateImplRef, newDelegateImplRef);
-      if (msgs == null) msgs = notification; else msgs.add(notification);
-    }
-    return msgs;
-  }
+		AopDelegateImplRef oldDelegateImplRef = delegateImplRef;
+		delegateImplRef = newDelegateImplRef;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.DECLARE_PARENTS__DELEGATE_IMPL_REF, oldDelegateImplRef, newDelegateImplRef);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public void setDelegateImplRef(AopDelegateImplRef newDelegateImplRef)
   {
-    if (newDelegateImplRef != delegateImplRef)
-    {
-      NotificationChain msgs = null;
-      if (delegateImplRef != null)
-        msgs = ((InternalEObject)delegateImplRef).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - SpringConfigDslPackage.DECLARE_PARENTS__DELEGATE_IMPL_REF, null, msgs);
-      if (newDelegateImplRef != null)
-        msgs = ((InternalEObject)newDelegateImplRef).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - SpringConfigDslPackage.DECLARE_PARENTS__DELEGATE_IMPL_REF, null, msgs);
-      msgs = basicSetDelegateImplRef(newDelegateImplRef, msgs);
-      if (msgs != null) msgs.dispatch();
-    }
-    else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.DECLARE_PARENTS__DELEGATE_IMPL_REF, newDelegateImplRef, newDelegateImplRef));
-  }
+		if (newDelegateImplRef != delegateImplRef) {
+			NotificationChain msgs = null;
+			if (delegateImplRef != null)
+				msgs = ((InternalEObject)delegateImplRef).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - SpringConfigDslPackage.DECLARE_PARENTS__DELEGATE_IMPL_REF, null, msgs);
+			if (newDelegateImplRef != null)
+				msgs = ((InternalEObject)newDelegateImplRef).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - SpringConfigDslPackage.DECLARE_PARENTS__DELEGATE_IMPL_REF, null, msgs);
+			msgs = basicSetDelegateImplRef(newDelegateImplRef, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.DECLARE_PARENTS__DELEGATE_IMPL_REF, newDelegateImplRef, newDelegateImplRef));
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.DECLARE_PARENTS__IMPLEMENT_INTERFACE:
-        return basicSetImplementInterface(null, msgs);
-      case SpringConfigDslPackage.DECLARE_PARENTS__DEFAULT_IMPL_INTERFACE:
-        return basicSetDefaultImplInterface(null, msgs);
-      case SpringConfigDslPackage.DECLARE_PARENTS__DELEGATE_IMPL_REF:
-        return basicSetDelegateImplRef(null, msgs);
-    }
-    return super.eInverseRemove(otherEnd, featureID, msgs);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.DECLARE_PARENTS__IMPLEMENT_INTERFACE:
+				return basicSetImplementInterface(null, msgs);
+			case SpringConfigDslPackage.DECLARE_PARENTS__DEFAULT_IMPL_INTERFACE:
+				return basicSetDefaultImplInterface(null, msgs);
+			case SpringConfigDslPackage.DECLARE_PARENTS__DELEGATE_IMPL_REF:
+				return basicSetDelegateImplRef(null, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.DECLARE_PARENTS__TYPE_MATCHING:
-        return getTypeMatching();
-      case SpringConfigDslPackage.DECLARE_PARENTS__IMPLEMENT_INTERFACE:
-        return getImplementInterface();
-      case SpringConfigDslPackage.DECLARE_PARENTS__DEFAULT_IMPL_INTERFACE:
-        return getDefaultImplInterface();
-      case SpringConfigDslPackage.DECLARE_PARENTS__DELEGATE_IMPL_REF:
-        return getDelegateImplRef();
-    }
-    return super.eGet(featureID, resolve, coreType);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.DECLARE_PARENTS__TYPE_MATCHING:
+				return getTypeMatching();
+			case SpringConfigDslPackage.DECLARE_PARENTS__IMPLEMENT_INTERFACE:
+				return getImplementInterface();
+			case SpringConfigDslPackage.DECLARE_PARENTS__DEFAULT_IMPL_INTERFACE:
+				return getDefaultImplInterface();
+			case SpringConfigDslPackage.DECLARE_PARENTS__DELEGATE_IMPL_REF:
+				return getDelegateImplRef();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public void eSet(int featureID, Object newValue)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.DECLARE_PARENTS__TYPE_MATCHING:
-        setTypeMatching((String)newValue);
-        return;
-      case SpringConfigDslPackage.DECLARE_PARENTS__IMPLEMENT_INTERFACE:
-        setImplementInterface((Interface)newValue);
-        return;
-      case SpringConfigDslPackage.DECLARE_PARENTS__DEFAULT_IMPL_INTERFACE:
-        setDefaultImplInterface((AopDefaultImplInterface)newValue);
-        return;
-      case SpringConfigDslPackage.DECLARE_PARENTS__DELEGATE_IMPL_REF:
-        setDelegateImplRef((AopDelegateImplRef)newValue);
-        return;
-    }
-    super.eSet(featureID, newValue);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.DECLARE_PARENTS__TYPE_MATCHING:
+				setTypeMatching((String)newValue);
+				return;
+			case SpringConfigDslPackage.DECLARE_PARENTS__IMPLEMENT_INTERFACE:
+				setImplementInterface((Interface)newValue);
+				return;
+			case SpringConfigDslPackage.DECLARE_PARENTS__DEFAULT_IMPL_INTERFACE:
+				setDefaultImplInterface((AopDefaultImplInterface)newValue);
+				return;
+			case SpringConfigDslPackage.DECLARE_PARENTS__DELEGATE_IMPL_REF:
+				setDelegateImplRef((AopDelegateImplRef)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public void eUnset(int featureID)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.DECLARE_PARENTS__TYPE_MATCHING:
-        setTypeMatching(TYPE_MATCHING_EDEFAULT);
-        return;
-      case SpringConfigDslPackage.DECLARE_PARENTS__IMPLEMENT_INTERFACE:
-        setImplementInterface((Interface)null);
-        return;
-      case SpringConfigDslPackage.DECLARE_PARENTS__DEFAULT_IMPL_INTERFACE:
-        setDefaultImplInterface((AopDefaultImplInterface)null);
-        return;
-      case SpringConfigDslPackage.DECLARE_PARENTS__DELEGATE_IMPL_REF:
-        setDelegateImplRef((AopDelegateImplRef)null);
-        return;
-    }
-    super.eUnset(featureID);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.DECLARE_PARENTS__TYPE_MATCHING:
+				setTypeMatching(TYPE_MATCHING_EDEFAULT);
+				return;
+			case SpringConfigDslPackage.DECLARE_PARENTS__IMPLEMENT_INTERFACE:
+				setImplementInterface((Interface)null);
+				return;
+			case SpringConfigDslPackage.DECLARE_PARENTS__DEFAULT_IMPL_INTERFACE:
+				setDefaultImplInterface((AopDefaultImplInterface)null);
+				return;
+			case SpringConfigDslPackage.DECLARE_PARENTS__DELEGATE_IMPL_REF:
+				setDelegateImplRef((AopDelegateImplRef)null);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public boolean eIsSet(int featureID)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.DECLARE_PARENTS__TYPE_MATCHING:
-        return TYPE_MATCHING_EDEFAULT == null ? typeMatching != null : !TYPE_MATCHING_EDEFAULT.equals(typeMatching);
-      case SpringConfigDslPackage.DECLARE_PARENTS__IMPLEMENT_INTERFACE:
-        return implementInterface != null;
-      case SpringConfigDslPackage.DECLARE_PARENTS__DEFAULT_IMPL_INTERFACE:
-        return defaultImplInterface != null;
-      case SpringConfigDslPackage.DECLARE_PARENTS__DELEGATE_IMPL_REF:
-        return delegateImplRef != null;
-    }
-    return super.eIsSet(featureID);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.DECLARE_PARENTS__TYPE_MATCHING:
+				return TYPE_MATCHING_EDEFAULT == null ? typeMatching != null : !TYPE_MATCHING_EDEFAULT.equals(typeMatching);
+			case SpringConfigDslPackage.DECLARE_PARENTS__IMPLEMENT_INTERFACE:
+				return implementInterface != null;
+			case SpringConfigDslPackage.DECLARE_PARENTS__DEFAULT_IMPL_INTERFACE:
+				return defaultImplInterface != null;
+			case SpringConfigDslPackage.DECLARE_PARENTS__DELEGATE_IMPL_REF:
+				return delegateImplRef != null;
+		}
+		return super.eIsSet(featureID);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public String toString()
   {
-    if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-    StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (typeMatching: ");
-    result.append(typeMatching);
-    result.append(')');
-    return result.toString();
-  }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (typeMatching: ");
+		result.append(typeMatching);
+		result.append(')');
+		return result.toString();
+	}
 
 } //DeclareParentsImpl

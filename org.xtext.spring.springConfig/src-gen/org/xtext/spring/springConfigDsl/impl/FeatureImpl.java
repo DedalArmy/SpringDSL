@@ -36,399 +36,392 @@ import org.xtext.spring.springConfigDsl.SpringConfigDslPackage;
 public class FeatureImpl extends MinimalEObjectImpl.Container implements Feature
 {
   /**
-   * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getName()
-   * @generated
-   * @ordered
-   */
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
   protected static final String NAME_EDEFAULT = null;
 
   /**
-   * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getName()
-   * @generated
-   * @ordered
-   */
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
   protected String name = NAME_EDEFAULT;
 
   /**
-   * The cached value of the '{@link #getArtefact() <em>Artefact</em>}' containment reference.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getArtefact() <em>Artefact</em>}' containment reference.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getArtefact()
-   * @generated
-   * @ordered
-   */
+	 * @see #getArtefact()
+	 * @generated
+	 * @ordered
+	 */
   protected AbstractArtefact artefact;
 
   /**
-   * The default value of the '{@link #getDescription() <em>Description</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getDescription() <em>Description</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getDescription()
-   * @generated
-   * @ordered
-   */
+	 * @see #getDescription()
+	 * @generated
+	 * @ordered
+	 */
   protected static final String DESCRIPTION_EDEFAULT = null;
 
   /**
-   * The cached value of the '{@link #getDescription() <em>Description</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getDescription() <em>Description</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getDescription()
-   * @generated
-   * @ordered
-   */
+	 * @see #getDescription()
+	 * @generated
+	 * @ordered
+	 */
   protected String description = DESCRIPTION_EDEFAULT;
 
   /**
-   * The default value of the '{@link #getIndex() <em>Index</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getIndex() <em>Index</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getIndex()
-   * @generated
-   * @ordered
-   */
+	 * @see #getIndex()
+	 * @generated
+	 * @ordered
+	 */
   protected static final String INDEX_EDEFAULT = null;
 
   /**
-   * The cached value of the '{@link #getIndex() <em>Index</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getIndex() <em>Index</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getIndex()
-   * @generated
-   * @ordered
-   */
+	 * @see #getIndex()
+	 * @generated
+	 * @ordered
+	 */
   protected String index = INDEX_EDEFAULT;
 
   /**
-   * The default value of the '{@link #getType() <em>Type</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getType() <em>Type</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getType()
-   * @generated
-   * @ordered
-   */
+	 * @see #getType()
+	 * @generated
+	 * @ordered
+	 */
   protected static final String TYPE_EDEFAULT = null;
 
   /**
-   * The cached value of the '{@link #getType() <em>Type</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getType() <em>Type</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getType()
-   * @generated
-   * @ordered
-   */
+	 * @see #getType()
+	 * @generated
+	 * @ordered
+	 */
   protected String type = TYPE_EDEFAULT;
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   protected FeatureImpl()
   {
-    super();
-  }
+		super();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   protected EClass eStaticClass()
   {
-    return SpringConfigDslPackage.Literals.FEATURE;
-  }
+		return SpringConfigDslPackage.Literals.FEATURE;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public String getName()
   {
-    return name;
-  }
+		return name;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public void setName(String newName)
   {
-    String oldName = name;
-    name = newName;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.FEATURE__NAME, oldName, name));
-  }
+		String oldName = name;
+		name = newName;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.FEATURE__NAME, oldName, name));
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public AbstractArtefact getArtefact()
   {
-    return artefact;
-  }
+		return artefact;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public NotificationChain basicSetArtefact(AbstractArtefact newArtefact, NotificationChain msgs)
   {
-    AbstractArtefact oldArtefact = artefact;
-    artefact = newArtefact;
-    if (eNotificationRequired())
-    {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.FEATURE__ARTEFACT, oldArtefact, newArtefact);
-      if (msgs == null) msgs = notification; else msgs.add(notification);
-    }
-    return msgs;
-  }
+		AbstractArtefact oldArtefact = artefact;
+		artefact = newArtefact;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.FEATURE__ARTEFACT, oldArtefact, newArtefact);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public void setArtefact(AbstractArtefact newArtefact)
   {
-    if (newArtefact != artefact)
-    {
-      NotificationChain msgs = null;
-      if (artefact != null)
-        msgs = ((InternalEObject)artefact).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - SpringConfigDslPackage.FEATURE__ARTEFACT, null, msgs);
-      if (newArtefact != null)
-        msgs = ((InternalEObject)newArtefact).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - SpringConfigDslPackage.FEATURE__ARTEFACT, null, msgs);
-      msgs = basicSetArtefact(newArtefact, msgs);
-      if (msgs != null) msgs.dispatch();
-    }
-    else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.FEATURE__ARTEFACT, newArtefact, newArtefact));
-  }
+		if (newArtefact != artefact) {
+			NotificationChain msgs = null;
+			if (artefact != null)
+				msgs = ((InternalEObject)artefact).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - SpringConfigDslPackage.FEATURE__ARTEFACT, null, msgs);
+			if (newArtefact != null)
+				msgs = ((InternalEObject)newArtefact).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - SpringConfigDslPackage.FEATURE__ARTEFACT, null, msgs);
+			msgs = basicSetArtefact(newArtefact, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.FEATURE__ARTEFACT, newArtefact, newArtefact));
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public String getDescription()
   {
-    return description;
-  }
+		return description;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public void setDescription(String newDescription)
   {
-    String oldDescription = description;
-    description = newDescription;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.FEATURE__DESCRIPTION, oldDescription, description));
-  }
+		String oldDescription = description;
+		description = newDescription;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.FEATURE__DESCRIPTION, oldDescription, description));
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public String getIndex()
   {
-    return index;
-  }
+		return index;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public void setIndex(String newIndex)
   {
-    String oldIndex = index;
-    index = newIndex;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.FEATURE__INDEX, oldIndex, index));
-  }
+		String oldIndex = index;
+		index = newIndex;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.FEATURE__INDEX, oldIndex, index));
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public String getType()
   {
-    return type;
-  }
+		return type;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public void setType(String newType)
   {
-    String oldType = type;
-    type = newType;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.FEATURE__TYPE, oldType, type));
-  }
+		String oldType = type;
+		type = newType;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.FEATURE__TYPE, oldType, type));
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.FEATURE__ARTEFACT:
-        return basicSetArtefact(null, msgs);
-    }
-    return super.eInverseRemove(otherEnd, featureID, msgs);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.FEATURE__ARTEFACT:
+				return basicSetArtefact(null, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.FEATURE__NAME:
-        return getName();
-      case SpringConfigDslPackage.FEATURE__ARTEFACT:
-        return getArtefact();
-      case SpringConfigDslPackage.FEATURE__DESCRIPTION:
-        return getDescription();
-      case SpringConfigDslPackage.FEATURE__INDEX:
-        return getIndex();
-      case SpringConfigDslPackage.FEATURE__TYPE:
-        return getType();
-    }
-    return super.eGet(featureID, resolve, coreType);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.FEATURE__NAME:
+				return getName();
+			case SpringConfigDslPackage.FEATURE__ARTEFACT:
+				return getArtefact();
+			case SpringConfigDslPackage.FEATURE__DESCRIPTION:
+				return getDescription();
+			case SpringConfigDslPackage.FEATURE__INDEX:
+				return getIndex();
+			case SpringConfigDslPackage.FEATURE__TYPE:
+				return getType();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public void eSet(int featureID, Object newValue)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.FEATURE__NAME:
-        setName((String)newValue);
-        return;
-      case SpringConfigDslPackage.FEATURE__ARTEFACT:
-        setArtefact((AbstractArtefact)newValue);
-        return;
-      case SpringConfigDslPackage.FEATURE__DESCRIPTION:
-        setDescription((String)newValue);
-        return;
-      case SpringConfigDslPackage.FEATURE__INDEX:
-        setIndex((String)newValue);
-        return;
-      case SpringConfigDslPackage.FEATURE__TYPE:
-        setType((String)newValue);
-        return;
-    }
-    super.eSet(featureID, newValue);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.FEATURE__NAME:
+				setName((String)newValue);
+				return;
+			case SpringConfigDslPackage.FEATURE__ARTEFACT:
+				setArtefact((AbstractArtefact)newValue);
+				return;
+			case SpringConfigDslPackage.FEATURE__DESCRIPTION:
+				setDescription((String)newValue);
+				return;
+			case SpringConfigDslPackage.FEATURE__INDEX:
+				setIndex((String)newValue);
+				return;
+			case SpringConfigDslPackage.FEATURE__TYPE:
+				setType((String)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public void eUnset(int featureID)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.FEATURE__NAME:
-        setName(NAME_EDEFAULT);
-        return;
-      case SpringConfigDslPackage.FEATURE__ARTEFACT:
-        setArtefact((AbstractArtefact)null);
-        return;
-      case SpringConfigDslPackage.FEATURE__DESCRIPTION:
-        setDescription(DESCRIPTION_EDEFAULT);
-        return;
-      case SpringConfigDslPackage.FEATURE__INDEX:
-        setIndex(INDEX_EDEFAULT);
-        return;
-      case SpringConfigDslPackage.FEATURE__TYPE:
-        setType(TYPE_EDEFAULT);
-        return;
-    }
-    super.eUnset(featureID);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.FEATURE__NAME:
+				setName(NAME_EDEFAULT);
+				return;
+			case SpringConfigDslPackage.FEATURE__ARTEFACT:
+				setArtefact((AbstractArtefact)null);
+				return;
+			case SpringConfigDslPackage.FEATURE__DESCRIPTION:
+				setDescription(DESCRIPTION_EDEFAULT);
+				return;
+			case SpringConfigDslPackage.FEATURE__INDEX:
+				setIndex(INDEX_EDEFAULT);
+				return;
+			case SpringConfigDslPackage.FEATURE__TYPE:
+				setType(TYPE_EDEFAULT);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public boolean eIsSet(int featureID)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.FEATURE__NAME:
-        return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-      case SpringConfigDslPackage.FEATURE__ARTEFACT:
-        return artefact != null;
-      case SpringConfigDslPackage.FEATURE__DESCRIPTION:
-        return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
-      case SpringConfigDslPackage.FEATURE__INDEX:
-        return INDEX_EDEFAULT == null ? index != null : !INDEX_EDEFAULT.equals(index);
-      case SpringConfigDslPackage.FEATURE__TYPE:
-        return TYPE_EDEFAULT == null ? type != null : !TYPE_EDEFAULT.equals(type);
-    }
-    return super.eIsSet(featureID);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.FEATURE__NAME:
+				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+			case SpringConfigDslPackage.FEATURE__ARTEFACT:
+				return artefact != null;
+			case SpringConfigDslPackage.FEATURE__DESCRIPTION:
+				return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
+			case SpringConfigDslPackage.FEATURE__INDEX:
+				return INDEX_EDEFAULT == null ? index != null : !INDEX_EDEFAULT.equals(index);
+			case SpringConfigDslPackage.FEATURE__TYPE:
+				return TYPE_EDEFAULT == null ? type != null : !TYPE_EDEFAULT.equals(type);
+		}
+		return super.eIsSet(featureID);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public String toString()
   {
-    if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-    StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (name: ");
-    result.append(name);
-    result.append(", description: ");
-    result.append(description);
-    result.append(", index: ");
-    result.append(index);
-    result.append(", type: ");
-    result.append(type);
-    result.append(')');
-    return result.toString();
-  }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (name: ");
+		result.append(name);
+		result.append(", description: ");
+		result.append(description);
+		result.append(", index: ");
+		result.append(index);
+		result.append(", type: ");
+		result.append(type);
+		result.append(')');
+		return result.toString();
+	}
 
 } //FeatureImpl

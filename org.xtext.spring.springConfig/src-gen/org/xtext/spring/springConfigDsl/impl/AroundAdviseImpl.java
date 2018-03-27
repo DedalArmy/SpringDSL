@@ -18,24 +18,24 @@ import org.xtext.spring.springConfigDsl.SpringConfigDslPackage;
 public class AroundAdviseImpl extends AdviseImpl implements AroundAdvise
 {
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   protected AroundAdviseImpl()
   {
-    super();
-  }
+		super();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   protected EClass eStaticClass()
   {
-    return SpringConfigDslPackage.Literals.AROUND_ADVISE;
-  }
+		return SpringConfigDslPackage.Literals.AROUND_ADVISE;
+	}
 
 } //AroundAdviseImpl

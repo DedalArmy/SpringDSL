@@ -31,7 +31,7 @@ Workflow {
 		}
 		language = StandardLanguage {
 			name = "org.xtext.spring.SpringConfigDsl"
-			fileExtensions = "sdsl"
+			fileExtensions = "sdsl,xml"
 
 			serializer = {
 				generateStub = false

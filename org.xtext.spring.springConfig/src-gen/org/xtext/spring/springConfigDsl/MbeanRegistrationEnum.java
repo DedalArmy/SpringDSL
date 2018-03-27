@@ -21,237 +21,231 @@ import org.eclipse.emf.common.util.Enumerator;
 public enum MbeanRegistrationEnum implements Enumerator
 {
   /**
-   * The '<em><b>FAILONEXISTING</b></em>' literal object.
-   * <!-- begin-user-doc -->
+	 * The '<em><b>FAILONEXISTING</b></em>' literal object.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #FAILONEXISTING_VALUE
-   * @generated
-   * @ordered
-   */
+	 * @see #FAILONEXISTING_VALUE
+	 * @generated
+	 * @ordered
+	 */
   FAILONEXISTING(0, "FAILONEXISTING", "\"failOnExisting\""),
 
   /**
-   * The '<em><b>IGNOREEXISTING</b></em>' literal object.
-   * <!-- begin-user-doc -->
+	 * The '<em><b>IGNOREEXISTING</b></em>' literal object.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #IGNOREEXISTING_VALUE
-   * @generated
-   * @ordered
-   */
+	 * @see #IGNOREEXISTING_VALUE
+	 * @generated
+	 * @ordered
+	 */
   IGNOREEXISTING(1, "IGNOREEXISTING", "\"ignoreExisting\""),
 
   /**
-   * The '<em><b>REPLACEEXISTING</b></em>' literal object.
-   * <!-- begin-user-doc -->
+	 * The '<em><b>REPLACEEXISTING</b></em>' literal object.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #REPLACEEXISTING_VALUE
-   * @generated
-   * @ordered
-   */
+	 * @see #REPLACEEXISTING_VALUE
+	 * @generated
+	 * @ordered
+	 */
   REPLACEEXISTING(2, "REPLACEEXISTING", "\"replaceExisting\"");
 
   /**
-   * The '<em><b>FAILONEXISTING</b></em>' literal value.
-   * <!-- begin-user-doc -->
+	 * The '<em><b>FAILONEXISTING</b></em>' literal value.
+	 * <!-- begin-user-doc -->
    * <p>
    * If the meaning of '<em><b>FAILONEXISTING</b></em>' literal object isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @see #FAILONEXISTING
-   * @model literal="\"failOnExisting\""
-   * @generated
-   * @ordered
-   */
+	 * @see #FAILONEXISTING
+	 * @model literal="\"failOnExisting\""
+	 * @generated
+	 * @ordered
+	 */
   public static final int FAILONEXISTING_VALUE = 0;
 
   /**
-   * The '<em><b>IGNOREEXISTING</b></em>' literal value.
-   * <!-- begin-user-doc -->
+	 * The '<em><b>IGNOREEXISTING</b></em>' literal value.
+	 * <!-- begin-user-doc -->
    * <p>
    * If the meaning of '<em><b>IGNOREEXISTING</b></em>' literal object isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @see #IGNOREEXISTING
-   * @model literal="\"ignoreExisting\""
-   * @generated
-   * @ordered
-   */
+	 * @see #IGNOREEXISTING
+	 * @model literal="\"ignoreExisting\""
+	 * @generated
+	 * @ordered
+	 */
   public static final int IGNOREEXISTING_VALUE = 1;
 
   /**
-   * The '<em><b>REPLACEEXISTING</b></em>' literal value.
-   * <!-- begin-user-doc -->
+	 * The '<em><b>REPLACEEXISTING</b></em>' literal value.
+	 * <!-- begin-user-doc -->
    * <p>
    * If the meaning of '<em><b>REPLACEEXISTING</b></em>' literal object isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @see #REPLACEEXISTING
-   * @model literal="\"replaceExisting\""
-   * @generated
-   * @ordered
-   */
+	 * @see #REPLACEEXISTING
+	 * @model literal="\"replaceExisting\""
+	 * @generated
+	 * @ordered
+	 */
   public static final int REPLACEEXISTING_VALUE = 2;
 
   /**
-   * An array of all the '<em><b>Mbean Registration Enum</b></em>' enumerators.
-   * <!-- begin-user-doc -->
+	 * An array of all the '<em><b>Mbean Registration Enum</b></em>' enumerators.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   private static final MbeanRegistrationEnum[] VALUES_ARRAY =
-    new MbeanRegistrationEnum[]
-    {
-      FAILONEXISTING,
-      IGNOREEXISTING,
-      REPLACEEXISTING,
-    };
+    new MbeanRegistrationEnum[] {
+			FAILONEXISTING,
+			IGNOREEXISTING,
+			REPLACEEXISTING,
+		};
 
   /**
-   * A public read-only list of all the '<em><b>Mbean Registration Enum</b></em>' enumerators.
-   * <!-- begin-user-doc -->
+	 * A public read-only list of all the '<em><b>Mbean Registration Enum</b></em>' enumerators.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public static final List<MbeanRegistrationEnum> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
 
   /**
-   * Returns the '<em><b>Mbean Registration Enum</b></em>' literal with the specified literal value.
-   * <!-- begin-user-doc -->
+	 * Returns the '<em><b>Mbean Registration Enum</b></em>' literal with the specified literal value.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param literal the literal.
-   * @return the matching enumerator or <code>null</code>.
-   * @generated
-   */
+	 * @param literal the literal.
+	 * @return the matching enumerator or <code>null</code>.
+	 * @generated
+	 */
   public static MbeanRegistrationEnum get(String literal)
   {
-    for (int i = 0; i < VALUES_ARRAY.length; ++i)
-    {
-      MbeanRegistrationEnum result = VALUES_ARRAY[i];
-      if (result.toString().equals(literal))
-      {
-        return result;
-      }
-    }
-    return null;
-  }
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+			MbeanRegistrationEnum result = VALUES_ARRAY[i];
+			if (result.toString().equals(literal)) {
+				return result;
+			}
+		}
+		return null;
+	}
 
   /**
-   * Returns the '<em><b>Mbean Registration Enum</b></em>' literal with the specified name.
-   * <!-- begin-user-doc -->
+	 * Returns the '<em><b>Mbean Registration Enum</b></em>' literal with the specified name.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param name the name.
-   * @return the matching enumerator or <code>null</code>.
-   * @generated
-   */
+	 * @param name the name.
+	 * @return the matching enumerator or <code>null</code>.
+	 * @generated
+	 */
   public static MbeanRegistrationEnum getByName(String name)
   {
-    for (int i = 0; i < VALUES_ARRAY.length; ++i)
-    {
-      MbeanRegistrationEnum result = VALUES_ARRAY[i];
-      if (result.getName().equals(name))
-      {
-        return result;
-      }
-    }
-    return null;
-  }
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+			MbeanRegistrationEnum result = VALUES_ARRAY[i];
+			if (result.getName().equals(name)) {
+				return result;
+			}
+		}
+		return null;
+	}
 
   /**
-   * Returns the '<em><b>Mbean Registration Enum</b></em>' literal with the specified integer value.
-   * <!-- begin-user-doc -->
+	 * Returns the '<em><b>Mbean Registration Enum</b></em>' literal with the specified integer value.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the integer value.
-   * @return the matching enumerator or <code>null</code>.
-   * @generated
-   */
+	 * @param value the integer value.
+	 * @return the matching enumerator or <code>null</code>.
+	 * @generated
+	 */
   public static MbeanRegistrationEnum get(int value)
   {
-    switch (value)
-    {
-      case FAILONEXISTING_VALUE: return FAILONEXISTING;
-      case IGNOREEXISTING_VALUE: return IGNOREEXISTING;
-      case REPLACEEXISTING_VALUE: return REPLACEEXISTING;
-    }
-    return null;
-  }
+		switch (value) {
+			case FAILONEXISTING_VALUE: return FAILONEXISTING;
+			case IGNOREEXISTING_VALUE: return IGNOREEXISTING;
+			case REPLACEEXISTING_VALUE: return REPLACEEXISTING;
+		}
+		return null;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   private final int value;
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   private final String name;
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   private final String literal;
 
   /**
-   * Only this class can construct instances.
-   * <!-- begin-user-doc -->
+	 * Only this class can construct instances.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   private MbeanRegistrationEnum(int value, String name, String literal)
   {
-    this.value = value;
-    this.name = name;
-    this.literal = literal;
-  }
+		this.value = value;
+		this.name = name;
+		this.literal = literal;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public int getValue()
   {
-    return value;
-  }
+	  return value;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public String getName()
   {
-    return name;
-  }
+	  return name;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public String getLiteral()
   {
-    return literal;
-  }
+	  return literal;
+	}
 
   /**
-   * Returns the literal value of the enumerator, which is its string representation.
-   * <!-- begin-user-doc -->
+	 * Returns the literal value of the enumerator, which is its string representation.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public String toString()
   {
-    return literal;
-  }
+		return literal;
+	}
   
 } //MbeanRegistrationEnum

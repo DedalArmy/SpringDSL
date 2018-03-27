@@ -28,150 +28,146 @@ import org.xtext.spring.springConfigDsl.SpringConfigDslPackage;
 public class PropertyPlaceholderImpl extends PropertyHolderImpl implements PropertyPlaceholder
 {
   /**
-   * The default value of the '{@link #getSystemPropertiesMode() <em>System Properties Mode</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getSystemPropertiesMode() <em>System Properties Mode</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getSystemPropertiesMode()
-   * @generated
-   * @ordered
-   */
+	 * @see #getSystemPropertiesMode()
+	 * @generated
+	 * @ordered
+	 */
   protected static final String SYSTEM_PROPERTIES_MODE_EDEFAULT = null;
 
   /**
-   * The cached value of the '{@link #getSystemPropertiesMode() <em>System Properties Mode</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getSystemPropertiesMode() <em>System Properties Mode</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getSystemPropertiesMode()
-   * @generated
-   * @ordered
-   */
+	 * @see #getSystemPropertiesMode()
+	 * @generated
+	 * @ordered
+	 */
   protected String systemPropertiesMode = SYSTEM_PROPERTIES_MODE_EDEFAULT;
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   protected PropertyPlaceholderImpl()
   {
-    super();
-  }
+		super();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   protected EClass eStaticClass()
   {
-    return SpringConfigDslPackage.Literals.PROPERTY_PLACEHOLDER;
-  }
+		return SpringConfigDslPackage.Literals.PROPERTY_PLACEHOLDER;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public String getSystemPropertiesMode()
   {
-    return systemPropertiesMode;
-  }
+		return systemPropertiesMode;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public void setSystemPropertiesMode(String newSystemPropertiesMode)
   {
-    String oldSystemPropertiesMode = systemPropertiesMode;
-    systemPropertiesMode = newSystemPropertiesMode;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.PROPERTY_PLACEHOLDER__SYSTEM_PROPERTIES_MODE, oldSystemPropertiesMode, systemPropertiesMode));
-  }
+		String oldSystemPropertiesMode = systemPropertiesMode;
+		systemPropertiesMode = newSystemPropertiesMode;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.PROPERTY_PLACEHOLDER__SYSTEM_PROPERTIES_MODE, oldSystemPropertiesMode, systemPropertiesMode));
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.PROPERTY_PLACEHOLDER__SYSTEM_PROPERTIES_MODE:
-        return getSystemPropertiesMode();
-    }
-    return super.eGet(featureID, resolve, coreType);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.PROPERTY_PLACEHOLDER__SYSTEM_PROPERTIES_MODE:
+				return getSystemPropertiesMode();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public void eSet(int featureID, Object newValue)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.PROPERTY_PLACEHOLDER__SYSTEM_PROPERTIES_MODE:
-        setSystemPropertiesMode((String)newValue);
-        return;
-    }
-    super.eSet(featureID, newValue);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.PROPERTY_PLACEHOLDER__SYSTEM_PROPERTIES_MODE:
+				setSystemPropertiesMode((String)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public void eUnset(int featureID)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.PROPERTY_PLACEHOLDER__SYSTEM_PROPERTIES_MODE:
-        setSystemPropertiesMode(SYSTEM_PROPERTIES_MODE_EDEFAULT);
-        return;
-    }
-    super.eUnset(featureID);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.PROPERTY_PLACEHOLDER__SYSTEM_PROPERTIES_MODE:
+				setSystemPropertiesMode(SYSTEM_PROPERTIES_MODE_EDEFAULT);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public boolean eIsSet(int featureID)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.PROPERTY_PLACEHOLDER__SYSTEM_PROPERTIES_MODE:
-        return SYSTEM_PROPERTIES_MODE_EDEFAULT == null ? systemPropertiesMode != null : !SYSTEM_PROPERTIES_MODE_EDEFAULT.equals(systemPropertiesMode);
-    }
-    return super.eIsSet(featureID);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.PROPERTY_PLACEHOLDER__SYSTEM_PROPERTIES_MODE:
+				return SYSTEM_PROPERTIES_MODE_EDEFAULT == null ? systemPropertiesMode != null : !SYSTEM_PROPERTIES_MODE_EDEFAULT.equals(systemPropertiesMode);
+		}
+		return super.eIsSet(featureID);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public String toString()
   {
-    if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-    StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (systemPropertiesMode: ");
-    result.append(systemPropertiesMode);
-    result.append(')');
-    return result.toString();
-  }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (systemPropertiesMode: ");
+		result.append(systemPropertiesMode);
+		result.append(')');
+		return result.toString();
+	}
 
 } //PropertyPlaceholderImpl

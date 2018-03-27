@@ -20,24 +20,24 @@ import org.xtext.spring.springConfigDsl.SpringConfigDslPackage;
 public class ClassOrFactoryImpl extends MinimalEObjectImpl.Container implements ClassOrFactory
 {
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   protected ClassOrFactoryImpl()
   {
-    super();
-  }
+		super();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   protected EClass eStaticClass()
   {
-    return SpringConfigDslPackage.Literals.CLASS_OR_FACTORY;
-  }
+		return SpringConfigDslPackage.Literals.CLASS_OR_FACTORY;
+	}
 
 } //ClassOrFactoryImpl

@@ -74,8 +74,8 @@ public class AopIncludeItemProvider
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_AopInclude_AopInclude_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_AopInclude_AopInclude_feature", "_UI_AopInclude_type"),
+				 getString("_UI_AopInclude_aopInclude_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_AopInclude_aopInclude_feature", "_UI_AopInclude_type"),
 				 SpringConfigDslPackage.Literals.AOP_INCLUDE__AOP_INCLUDE,
 				 true,
 				 false,

@@ -37,132 +37,126 @@ import org.xtext.spring.springConfigDsl.TxMethod;
 public class TxAttributeImpl extends MinimalEObjectImpl.Container implements TxAttribute
 {
   /**
-   * The cached value of the '{@link #getTxMethods() <em>Tx Methods</em>}' containment reference list.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getTxMethods() <em>Tx Methods</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getTxMethods()
-   * @generated
-   * @ordered
-   */
+	 * @see #getTxMethods()
+	 * @generated
+	 * @ordered
+	 */
   protected EList<TxMethod> txMethods;
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   protected TxAttributeImpl()
   {
-    super();
-  }
+		super();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   protected EClass eStaticClass()
   {
-    return SpringConfigDslPackage.Literals.TX_ATTRIBUTE;
-  }
+		return SpringConfigDslPackage.Literals.TX_ATTRIBUTE;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public EList<TxMethod> getTxMethods()
   {
-    if (txMethods == null)
-    {
-      txMethods = new EObjectContainmentEList<TxMethod>(TxMethod.class, this, SpringConfigDslPackage.TX_ATTRIBUTE__TX_METHODS);
-    }
-    return txMethods;
-  }
+		if (txMethods == null) {
+			txMethods = new EObjectContainmentEList<TxMethod>(TxMethod.class, this, SpringConfigDslPackage.TX_ATTRIBUTE__TX_METHODS);
+		}
+		return txMethods;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.TX_ATTRIBUTE__TX_METHODS:
-        return ((InternalEList<?>)getTxMethods()).basicRemove(otherEnd, msgs);
-    }
-    return super.eInverseRemove(otherEnd, featureID, msgs);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.TX_ATTRIBUTE__TX_METHODS:
+				return ((InternalEList<?>)getTxMethods()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.TX_ATTRIBUTE__TX_METHODS:
-        return getTxMethods();
-    }
-    return super.eGet(featureID, resolve, coreType);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.TX_ATTRIBUTE__TX_METHODS:
+				return getTxMethods();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @SuppressWarnings("unchecked")
   @Override
   public void eSet(int featureID, Object newValue)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.TX_ATTRIBUTE__TX_METHODS:
-        getTxMethods().clear();
-        getTxMethods().addAll((Collection<? extends TxMethod>)newValue);
-        return;
-    }
-    super.eSet(featureID, newValue);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.TX_ATTRIBUTE__TX_METHODS:
+				getTxMethods().clear();
+				getTxMethods().addAll((Collection<? extends TxMethod>)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public void eUnset(int featureID)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.TX_ATTRIBUTE__TX_METHODS:
-        getTxMethods().clear();
-        return;
-    }
-    super.eUnset(featureID);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.TX_ATTRIBUTE__TX_METHODS:
+				getTxMethods().clear();
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public boolean eIsSet(int featureID)
   {
-    switch (featureID)
-    {
-      case SpringConfigDslPackage.TX_ATTRIBUTE__TX_METHODS:
-        return txMethods != null && !txMethods.isEmpty();
-    }
-    return super.eIsSet(featureID);
-  }
+		switch (featureID) {
+			case SpringConfigDslPackage.TX_ATTRIBUTE__TX_METHODS:
+				return txMethods != null && !txMethods.isEmpty();
+		}
+		return super.eIsSet(featureID);
+	}
 
 } //TxAttributeImpl

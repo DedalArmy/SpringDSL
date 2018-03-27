@@ -875,7 +875,7 @@ public class SpringConfigDslSyntacticSequencer extends AbstractSyntacticSequence
 	
 	/**
 	 * Ambiguous syntax:
-	 *     ('property-placeholder' ('/>' | ('>' '</context:property-placeholder>'))) | ('property-override' ('/>' | ('>' '</context:property-override>')))
+	 *     ('property-override' ('/>' | ('>' '</context:property-override>'))) | ('property-placeholder' ('/>' | ('>' '</context:property-placeholder>')))
 	 *
 	 * This ambiguous syntax occurs at:
 	 *     (rule start) '<context:' (ambiguity) (rule start)
