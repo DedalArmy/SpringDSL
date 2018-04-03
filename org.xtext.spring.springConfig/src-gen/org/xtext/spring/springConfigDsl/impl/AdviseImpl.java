@@ -33,263 +33,269 @@ import org.xtext.spring.springConfigDsl.SpringConfigDslPackage;
 public class AdviseImpl extends MinimalEObjectImpl.Container implements Advise
 {
   /**
-	 * The cached value of the '{@link #getPointcutRef() <em>Pointcut Ref</em>}' reference.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getPointcutRef() <em>Pointcut Ref</em>}' reference.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getPointcutRef()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getPointcutRef()
+   * @generated
+   * @ordered
+   */
   protected AopPointcut pointcutRef;
 
   /**
-	 * The default value of the '{@link #getPointcutExpression() <em>Pointcut Expression</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The default value of the '{@link #getPointcutExpression() <em>Pointcut Expression</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getPointcutExpression()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getPointcutExpression()
+   * @generated
+   * @ordered
+   */
   protected static final String POINTCUT_EXPRESSION_EDEFAULT = null;
 
   /**
-	 * The cached value of the '{@link #getPointcutExpression() <em>Pointcut Expression</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getPointcutExpression() <em>Pointcut Expression</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getPointcutExpression()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getPointcutExpression()
+   * @generated
+   * @ordered
+   */
   protected String pointcutExpression = POINTCUT_EXPRESSION_EDEFAULT;
 
   /**
-	 * The default value of the '{@link #getMethod() <em>Method</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The default value of the '{@link #getMethod() <em>Method</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getMethod()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getMethod()
+   * @generated
+   * @ordered
+   */
   protected static final String METHOD_EDEFAULT = null;
 
   /**
-	 * The cached value of the '{@link #getMethod() <em>Method</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getMethod() <em>Method</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getMethod()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getMethod()
+   * @generated
+   * @ordered
+   */
   protected String method = METHOD_EDEFAULT;
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   protected AdviseImpl()
   {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   protected EClass eStaticClass()
   {
-		return SpringConfigDslPackage.Literals.ADVISE;
-	}
+    return SpringConfigDslPackage.Literals.ADVISE;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public AopPointcut getPointcutRef()
   {
-		if (pointcutRef != null && pointcutRef.eIsProxy()) {
-			InternalEObject oldPointcutRef = (InternalEObject)pointcutRef;
-			pointcutRef = (AopPointcut)eResolveProxy(oldPointcutRef);
-			if (pointcutRef != oldPointcutRef) {
-				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, SpringConfigDslPackage.ADVISE__POINTCUT_REF, oldPointcutRef, pointcutRef));
-			}
-		}
-		return pointcutRef;
-	}
+    if (pointcutRef != null && pointcutRef.eIsProxy())
+    {
+      InternalEObject oldPointcutRef = (InternalEObject)pointcutRef;
+      pointcutRef = (AopPointcut)eResolveProxy(oldPointcutRef);
+      if (pointcutRef != oldPointcutRef)
+      {
+        if (eNotificationRequired())
+          eNotify(new ENotificationImpl(this, Notification.RESOLVE, SpringConfigDslPackage.ADVISE__POINTCUT_REF, oldPointcutRef, pointcutRef));
+      }
+    }
+    return pointcutRef;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public AopPointcut basicGetPointcutRef()
   {
-		return pointcutRef;
-	}
+    return pointcutRef;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public void setPointcutRef(AopPointcut newPointcutRef)
   {
-		AopPointcut oldPointcutRef = pointcutRef;
-		pointcutRef = newPointcutRef;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.ADVISE__POINTCUT_REF, oldPointcutRef, pointcutRef));
-	}
+    AopPointcut oldPointcutRef = pointcutRef;
+    pointcutRef = newPointcutRef;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.ADVISE__POINTCUT_REF, oldPointcutRef, pointcutRef));
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public String getPointcutExpression()
   {
-		return pointcutExpression;
-	}
+    return pointcutExpression;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public void setPointcutExpression(String newPointcutExpression)
   {
-		String oldPointcutExpression = pointcutExpression;
-		pointcutExpression = newPointcutExpression;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.ADVISE__POINTCUT_EXPRESSION, oldPointcutExpression, pointcutExpression));
-	}
+    String oldPointcutExpression = pointcutExpression;
+    pointcutExpression = newPointcutExpression;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.ADVISE__POINTCUT_EXPRESSION, oldPointcutExpression, pointcutExpression));
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public String getMethod()
   {
-		return method;
-	}
+    return method;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public void setMethod(String newMethod)
   {
-		String oldMethod = method;
-		method = newMethod;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.ADVISE__METHOD, oldMethod, method));
-	}
+    String oldMethod = method;
+    method = newMethod;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.ADVISE__METHOD, oldMethod, method));
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType)
   {
-		switch (featureID) {
-			case SpringConfigDslPackage.ADVISE__POINTCUT_REF:
-				if (resolve) return getPointcutRef();
-				return basicGetPointcutRef();
-			case SpringConfigDslPackage.ADVISE__POINTCUT_EXPRESSION:
-				return getPointcutExpression();
-			case SpringConfigDslPackage.ADVISE__METHOD:
-				return getMethod();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+    switch (featureID)
+    {
+      case SpringConfigDslPackage.ADVISE__POINTCUT_REF:
+        if (resolve) return getPointcutRef();
+        return basicGetPointcutRef();
+      case SpringConfigDslPackage.ADVISE__POINTCUT_EXPRESSION:
+        return getPointcutExpression();
+      case SpringConfigDslPackage.ADVISE__METHOD:
+        return getMethod();
+    }
+    return super.eGet(featureID, resolve, coreType);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public void eSet(int featureID, Object newValue)
   {
-		switch (featureID) {
-			case SpringConfigDslPackage.ADVISE__POINTCUT_REF:
-				setPointcutRef((AopPointcut)newValue);
-				return;
-			case SpringConfigDslPackage.ADVISE__POINTCUT_EXPRESSION:
-				setPointcutExpression((String)newValue);
-				return;
-			case SpringConfigDslPackage.ADVISE__METHOD:
-				setMethod((String)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+    switch (featureID)
+    {
+      case SpringConfigDslPackage.ADVISE__POINTCUT_REF:
+        setPointcutRef((AopPointcut)newValue);
+        return;
+      case SpringConfigDslPackage.ADVISE__POINTCUT_EXPRESSION:
+        setPointcutExpression((String)newValue);
+        return;
+      case SpringConfigDslPackage.ADVISE__METHOD:
+        setMethod((String)newValue);
+        return;
+    }
+    super.eSet(featureID, newValue);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public void eUnset(int featureID)
   {
-		switch (featureID) {
-			case SpringConfigDslPackage.ADVISE__POINTCUT_REF:
-				setPointcutRef((AopPointcut)null);
-				return;
-			case SpringConfigDslPackage.ADVISE__POINTCUT_EXPRESSION:
-				setPointcutExpression(POINTCUT_EXPRESSION_EDEFAULT);
-				return;
-			case SpringConfigDslPackage.ADVISE__METHOD:
-				setMethod(METHOD_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+    switch (featureID)
+    {
+      case SpringConfigDslPackage.ADVISE__POINTCUT_REF:
+        setPointcutRef((AopPointcut)null);
+        return;
+      case SpringConfigDslPackage.ADVISE__POINTCUT_EXPRESSION:
+        setPointcutExpression(POINTCUT_EXPRESSION_EDEFAULT);
+        return;
+      case SpringConfigDslPackage.ADVISE__METHOD:
+        setMethod(METHOD_EDEFAULT);
+        return;
+    }
+    super.eUnset(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public boolean eIsSet(int featureID)
   {
-		switch (featureID) {
-			case SpringConfigDslPackage.ADVISE__POINTCUT_REF:
-				return pointcutRef != null;
-			case SpringConfigDslPackage.ADVISE__POINTCUT_EXPRESSION:
-				return POINTCUT_EXPRESSION_EDEFAULT == null ? pointcutExpression != null : !POINTCUT_EXPRESSION_EDEFAULT.equals(pointcutExpression);
-			case SpringConfigDslPackage.ADVISE__METHOD:
-				return METHOD_EDEFAULT == null ? method != null : !METHOD_EDEFAULT.equals(method);
-		}
-		return super.eIsSet(featureID);
-	}
+    switch (featureID)
+    {
+      case SpringConfigDslPackage.ADVISE__POINTCUT_REF:
+        return pointcutRef != null;
+      case SpringConfigDslPackage.ADVISE__POINTCUT_EXPRESSION:
+        return POINTCUT_EXPRESSION_EDEFAULT == null ? pointcutExpression != null : !POINTCUT_EXPRESSION_EDEFAULT.equals(pointcutExpression);
+      case SpringConfigDslPackage.ADVISE__METHOD:
+        return METHOD_EDEFAULT == null ? method != null : !METHOD_EDEFAULT.equals(method);
+    }
+    return super.eIsSet(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public String toString()
   {
-		if (eIsProxy()) return super.toString();
+    if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (PointcutExpression: ");
-		result.append(pointcutExpression);
-		result.append(", method: ");
-		result.append(method);
-		result.append(')');
-		return result.toString();
-	}
+    StringBuffer result = new StringBuffer(super.toString());
+    result.append(" (PointcutExpression: ");
+    result.append(pointcutExpression);
+    result.append(", method: ");
+    result.append(method);
+    result.append(')');
+    return result.toString();
+  }
 
 } //AdviseImpl

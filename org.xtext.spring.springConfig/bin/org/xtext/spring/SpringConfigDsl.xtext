@@ -44,14 +44,20 @@ Configuration returns Configuration:
 	description=Description?
 	(components+=Component|alias+=Alias|imports+=Import
 		|contexts+=Context
+		|mvcs += MVC
 		|aspects+=Aspect
 		|utilConstants+=UtilConstant|utilLists+=UtilList|utilMaps+=UtilMap
 		|utilProperties+=UtilProperties|utilSets+=UtilSet|utilPropertiesPath+=UtilPropertyPath
-		|txAdvices+=TxAdvise|txJtaTransactionManager=TxJtaTransactionManager
+		|txAdvices+=TxAdvise|txJtaTransactionManager+=TxJtaTransactionManager
 		
 	)*
 	(ConfigurationComposite+=Configuration)*
 	('</beans>');
+
+MVC:
+	{MVC}
+	('<mvc' ':' 'annotation-driven' '/>')
+;
 
 
 
@@ -77,7 +83,7 @@ ContextType returns Context:
 /** looks for annotations on beans in the same application context in which it is defined */
 AnnotationConfig:
 	{AnnotationConfig}
-	'annotation-config' (('/>')|('>''</context:annotation-config>'))
+	('annotation-config' (('/>')|('>''</context:annotation-config>')))
 ;
 
 /** Spring can automatically detect stereotyped classes and register corresponding BeanDefinitions with the ApplicationContext 
@@ -434,7 +440,7 @@ ReferenceAtt returns Reference:
 /**Reference create by a tag */
 ReferenceTag returns Reference:
  {Reference}
- '<ref''bean='ref=[Component|ValidString] ('/>'|'>''</ref>') 	
+ '<ref''bean='ref=([AbstractArtefact|ValidString]) ('/>'|'>''</ref>') 	
 ;
 
 

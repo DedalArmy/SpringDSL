@@ -18,24 +18,24 @@ import org.xtext.spring.springConfigDsl.SpringConfigDslPackage;
 public class BeforeAdviseImpl extends AdviseImpl implements BeforeAdvise
 {
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   protected BeforeAdviseImpl()
   {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   protected EClass eStaticClass()
   {
-		return SpringConfigDslPackage.Literals.BEFORE_ADVISE;
-	}
+    return SpringConfigDslPackage.Literals.BEFORE_ADVISE;
+  }
 
 } //BeforeAdviseImpl

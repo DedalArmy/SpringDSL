@@ -25,84 +25,84 @@ package org.xtext.spring.springConfigDsl;
 public interface MbeanExport extends Context
 {
   /**
-	 * Returns the value of the '<em><b>Default Domain</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Default Domain</b></em>' attribute.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Default Domain</em>' attribute isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Default Domain</em>' attribute.
-	 * @see #setDefaultDomain(String)
-	 * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getMbeanExport_DefaultDomain()
-	 * @model
-	 * @generated
-	 */
+   * @return the value of the '<em>Default Domain</em>' attribute.
+   * @see #setDefaultDomain(String)
+   * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getMbeanExport_DefaultDomain()
+   * @model
+   * @generated
+   */
   String getDefaultDomain();
 
   /**
-	 * Sets the value of the '{@link org.xtext.spring.springConfigDsl.MbeanExport#getDefaultDomain <em>Default Domain</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * Sets the value of the '{@link org.xtext.spring.springConfigDsl.MbeanExport#getDefaultDomain <em>Default Domain</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Default Domain</em>' attribute.
-	 * @see #getDefaultDomain()
-	 * @generated
-	 */
+   * @param value the new value of the '<em>Default Domain</em>' attribute.
+   * @see #getDefaultDomain()
+   * @generated
+   */
   void setDefaultDomain(String value);
 
   /**
-	 * Returns the value of the '<em><b>Registration</b></em>' attribute.
-	 * The literals are from the enumeration {@link org.xtext.spring.springConfigDsl.MbeanRegistrationEnum}.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Registration</b></em>' attribute.
+   * The literals are from the enumeration {@link org.xtext.spring.springConfigDsl.MbeanRegistrationEnum}.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Registration</em>' attribute isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Registration</em>' attribute.
-	 * @see org.xtext.spring.springConfigDsl.MbeanRegistrationEnum
-	 * @see #setRegistration(MbeanRegistrationEnum)
-	 * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getMbeanExport_Registration()
-	 * @model
-	 * @generated
-	 */
+   * @return the value of the '<em>Registration</em>' attribute.
+   * @see org.xtext.spring.springConfigDsl.MbeanRegistrationEnum
+   * @see #setRegistration(MbeanRegistrationEnum)
+   * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getMbeanExport_Registration()
+   * @model
+   * @generated
+   */
   MbeanRegistrationEnum getRegistration();
 
   /**
-	 * Sets the value of the '{@link org.xtext.spring.springConfigDsl.MbeanExport#getRegistration <em>Registration</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * Sets the value of the '{@link org.xtext.spring.springConfigDsl.MbeanExport#getRegistration <em>Registration</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Registration</em>' attribute.
-	 * @see org.xtext.spring.springConfigDsl.MbeanRegistrationEnum
-	 * @see #getRegistration()
-	 * @generated
-	 */
+   * @param value the new value of the '<em>Registration</em>' attribute.
+   * @see org.xtext.spring.springConfigDsl.MbeanRegistrationEnum
+   * @see #getRegistration()
+   * @generated
+   */
   void setRegistration(MbeanRegistrationEnum value);
 
   /**
-	 * Returns the value of the '<em><b>Server</b></em>' reference.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Server</b></em>' reference.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Server</em>' reference isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Server</em>' reference.
-	 * @see #setServer(Component)
-	 * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getMbeanExport_Server()
-	 * @model
-	 * @generated
-	 */
+   * @return the value of the '<em>Server</em>' reference.
+   * @see #setServer(Component)
+   * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getMbeanExport_Server()
+   * @model
+   * @generated
+   */
   Component getServer();
 
   /**
-	 * Sets the value of the '{@link org.xtext.spring.springConfigDsl.MbeanExport#getServer <em>Server</em>}' reference.
-	 * <!-- begin-user-doc -->
+   * Sets the value of the '{@link org.xtext.spring.springConfigDsl.MbeanExport#getServer <em>Server</em>}' reference.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Server</em>' reference.
-	 * @see #getServer()
-	 * @generated
-	 */
+   * @param value the new value of the '<em>Server</em>' reference.
+   * @see #getServer()
+   * @generated
+   */
   void setServer(Component value);
 
 } // MbeanExport

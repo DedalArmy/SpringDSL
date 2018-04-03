@@ -24,19 +24,19 @@ import org.eclipse.emf.common.util.EList;
 public interface Props extends Collection
 {
   /**
-	 * Returns the value of the '<em><b>Props</b></em>' containment reference list.
-	 * The list contents are of type {@link org.xtext.spring.springConfigDsl.Prop}.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Props</b></em>' containment reference list.
+   * The list contents are of type {@link org.xtext.spring.springConfigDsl.Prop}.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Props</em>' containment reference list isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Props</em>' containment reference list.
-	 * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getProps_Props()
-	 * @model containment="true"
-	 * @generated
-	 */
+   * @return the value of the '<em>Props</em>' containment reference list.
+   * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getProps_Props()
+   * @model containment="true"
+   * @generated
+   */
   EList<Prop> getProps();
 
 } // Props

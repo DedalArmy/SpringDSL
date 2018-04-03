@@ -18,24 +18,24 @@ import org.xtext.spring.springConfigDsl.SpringConfigDslPackage;
 public class PropertyOverrideImpl extends PropertyHolderImpl implements PropertyOverride
 {
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   protected PropertyOverrideImpl()
   {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   protected EClass eStaticClass()
   {
-		return SpringConfigDslPackage.Literals.PROPERTY_OVERRIDE;
-	}
+    return SpringConfigDslPackage.Literals.PROPERTY_OVERRIDE;
+  }
 
 } //PropertyOverrideImpl

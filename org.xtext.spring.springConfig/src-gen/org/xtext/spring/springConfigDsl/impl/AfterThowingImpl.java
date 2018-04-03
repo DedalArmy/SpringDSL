@@ -28,146 +28,150 @@ import org.xtext.spring.springConfigDsl.SpringConfigDslPackage;
 public class AfterThowingImpl extends AdviseImpl implements AfterThowing
 {
   /**
-	 * The default value of the '{@link #getThrowingValue() <em>Throwing Value</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The default value of the '{@link #getThrowingValue() <em>Throwing Value</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getThrowingValue()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getThrowingValue()
+   * @generated
+   * @ordered
+   */
   protected static final String THROWING_VALUE_EDEFAULT = null;
 
   /**
-	 * The cached value of the '{@link #getThrowingValue() <em>Throwing Value</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getThrowingValue() <em>Throwing Value</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getThrowingValue()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getThrowingValue()
+   * @generated
+   * @ordered
+   */
   protected String throwingValue = THROWING_VALUE_EDEFAULT;
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   protected AfterThowingImpl()
   {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   protected EClass eStaticClass()
   {
-		return SpringConfigDslPackage.Literals.AFTER_THOWING;
-	}
+    return SpringConfigDslPackage.Literals.AFTER_THOWING;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public String getThrowingValue()
   {
-		return throwingValue;
-	}
+    return throwingValue;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public void setThrowingValue(String newThrowingValue)
   {
-		String oldThrowingValue = throwingValue;
-		throwingValue = newThrowingValue;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.AFTER_THOWING__THROWING_VALUE, oldThrowingValue, throwingValue));
-	}
+    String oldThrowingValue = throwingValue;
+    throwingValue = newThrowingValue;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.AFTER_THOWING__THROWING_VALUE, oldThrowingValue, throwingValue));
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType)
   {
-		switch (featureID) {
-			case SpringConfigDslPackage.AFTER_THOWING__THROWING_VALUE:
-				return getThrowingValue();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+    switch (featureID)
+    {
+      case SpringConfigDslPackage.AFTER_THOWING__THROWING_VALUE:
+        return getThrowingValue();
+    }
+    return super.eGet(featureID, resolve, coreType);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public void eSet(int featureID, Object newValue)
   {
-		switch (featureID) {
-			case SpringConfigDslPackage.AFTER_THOWING__THROWING_VALUE:
-				setThrowingValue((String)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+    switch (featureID)
+    {
+      case SpringConfigDslPackage.AFTER_THOWING__THROWING_VALUE:
+        setThrowingValue((String)newValue);
+        return;
+    }
+    super.eSet(featureID, newValue);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public void eUnset(int featureID)
   {
-		switch (featureID) {
-			case SpringConfigDslPackage.AFTER_THOWING__THROWING_VALUE:
-				setThrowingValue(THROWING_VALUE_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+    switch (featureID)
+    {
+      case SpringConfigDslPackage.AFTER_THOWING__THROWING_VALUE:
+        setThrowingValue(THROWING_VALUE_EDEFAULT);
+        return;
+    }
+    super.eUnset(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public boolean eIsSet(int featureID)
   {
-		switch (featureID) {
-			case SpringConfigDslPackage.AFTER_THOWING__THROWING_VALUE:
-				return THROWING_VALUE_EDEFAULT == null ? throwingValue != null : !THROWING_VALUE_EDEFAULT.equals(throwingValue);
-		}
-		return super.eIsSet(featureID);
-	}
+    switch (featureID)
+    {
+      case SpringConfigDslPackage.AFTER_THOWING__THROWING_VALUE:
+        return THROWING_VALUE_EDEFAULT == null ? throwingValue != null : !THROWING_VALUE_EDEFAULT.equals(throwingValue);
+    }
+    return super.eIsSet(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public String toString()
   {
-		if (eIsProxy()) return super.toString();
+    if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (throwingValue: ");
-		result.append(throwingValue);
-		result.append(')');
-		return result.toString();
-	}
+    StringBuffer result = new StringBuffer(super.toString());
+    result.append(" (throwingValue: ");
+    result.append(throwingValue);
+    result.append(')');
+    return result.toString();
+  }
 
 } //AfterThowingImpl

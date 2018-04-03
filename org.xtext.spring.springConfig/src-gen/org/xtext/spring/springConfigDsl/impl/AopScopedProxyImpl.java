@@ -29,146 +29,150 @@ import org.xtext.spring.springConfigDsl.SpringConfigDslPackage;
 public class AopScopedProxyImpl extends MinimalEObjectImpl.Container implements AopScopedProxy
 {
   /**
-	 * The default value of the '{@link #getProxyTargetClass() <em>Proxy Target Class</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The default value of the '{@link #getProxyTargetClass() <em>Proxy Target Class</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getProxyTargetClass()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getProxyTargetClass()
+   * @generated
+   * @ordered
+   */
   protected static final String PROXY_TARGET_CLASS_EDEFAULT = null;
 
   /**
-	 * The cached value of the '{@link #getProxyTargetClass() <em>Proxy Target Class</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getProxyTargetClass() <em>Proxy Target Class</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getProxyTargetClass()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getProxyTargetClass()
+   * @generated
+   * @ordered
+   */
   protected String proxyTargetClass = PROXY_TARGET_CLASS_EDEFAULT;
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   protected AopScopedProxyImpl()
   {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   protected EClass eStaticClass()
   {
-		return SpringConfigDslPackage.Literals.AOP_SCOPED_PROXY;
-	}
+    return SpringConfigDslPackage.Literals.AOP_SCOPED_PROXY;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public String getProxyTargetClass()
   {
-		return proxyTargetClass;
-	}
+    return proxyTargetClass;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public void setProxyTargetClass(String newProxyTargetClass)
   {
-		String oldProxyTargetClass = proxyTargetClass;
-		proxyTargetClass = newProxyTargetClass;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.AOP_SCOPED_PROXY__PROXY_TARGET_CLASS, oldProxyTargetClass, proxyTargetClass));
-	}
+    String oldProxyTargetClass = proxyTargetClass;
+    proxyTargetClass = newProxyTargetClass;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.AOP_SCOPED_PROXY__PROXY_TARGET_CLASS, oldProxyTargetClass, proxyTargetClass));
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType)
   {
-		switch (featureID) {
-			case SpringConfigDslPackage.AOP_SCOPED_PROXY__PROXY_TARGET_CLASS:
-				return getProxyTargetClass();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+    switch (featureID)
+    {
+      case SpringConfigDslPackage.AOP_SCOPED_PROXY__PROXY_TARGET_CLASS:
+        return getProxyTargetClass();
+    }
+    return super.eGet(featureID, resolve, coreType);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public void eSet(int featureID, Object newValue)
   {
-		switch (featureID) {
-			case SpringConfigDslPackage.AOP_SCOPED_PROXY__PROXY_TARGET_CLASS:
-				setProxyTargetClass((String)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+    switch (featureID)
+    {
+      case SpringConfigDslPackage.AOP_SCOPED_PROXY__PROXY_TARGET_CLASS:
+        setProxyTargetClass((String)newValue);
+        return;
+    }
+    super.eSet(featureID, newValue);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public void eUnset(int featureID)
   {
-		switch (featureID) {
-			case SpringConfigDslPackage.AOP_SCOPED_PROXY__PROXY_TARGET_CLASS:
-				setProxyTargetClass(PROXY_TARGET_CLASS_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+    switch (featureID)
+    {
+      case SpringConfigDslPackage.AOP_SCOPED_PROXY__PROXY_TARGET_CLASS:
+        setProxyTargetClass(PROXY_TARGET_CLASS_EDEFAULT);
+        return;
+    }
+    super.eUnset(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public boolean eIsSet(int featureID)
   {
-		switch (featureID) {
-			case SpringConfigDslPackage.AOP_SCOPED_PROXY__PROXY_TARGET_CLASS:
-				return PROXY_TARGET_CLASS_EDEFAULT == null ? proxyTargetClass != null : !PROXY_TARGET_CLASS_EDEFAULT.equals(proxyTargetClass);
-		}
-		return super.eIsSet(featureID);
-	}
+    switch (featureID)
+    {
+      case SpringConfigDslPackage.AOP_SCOPED_PROXY__PROXY_TARGET_CLASS:
+        return PROXY_TARGET_CLASS_EDEFAULT == null ? proxyTargetClass != null : !PROXY_TARGET_CLASS_EDEFAULT.equals(proxyTargetClass);
+    }
+    return super.eIsSet(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public String toString()
   {
-		if (eIsProxy()) return super.toString();
+    if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (proxyTargetClass: ");
-		result.append(proxyTargetClass);
-		result.append(')');
-		return result.toString();
-	}
+    StringBuffer result = new StringBuffer(super.toString());
+    result.append(" (proxyTargetClass: ");
+    result.append(proxyTargetClass);
+    result.append(')');
+    return result.toString();
+  }
 
 } //AopScopedProxyImpl

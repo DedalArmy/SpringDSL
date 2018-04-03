@@ -237,24 +237,26 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cImportsImportParserRuleCall_3_2_0 = (RuleCall)cImportsAssignment_3_2.eContents().get(0);
 		private final Assignment cContextsAssignment_3_3 = (Assignment)cAlternatives_3.eContents().get(3);
 		private final RuleCall cContextsContextParserRuleCall_3_3_0 = (RuleCall)cContextsAssignment_3_3.eContents().get(0);
-		private final Assignment cAspectsAssignment_3_4 = (Assignment)cAlternatives_3.eContents().get(4);
-		private final RuleCall cAspectsAspectParserRuleCall_3_4_0 = (RuleCall)cAspectsAssignment_3_4.eContents().get(0);
-		private final Assignment cUtilConstantsAssignment_3_5 = (Assignment)cAlternatives_3.eContents().get(5);
-		private final RuleCall cUtilConstantsUtilConstantParserRuleCall_3_5_0 = (RuleCall)cUtilConstantsAssignment_3_5.eContents().get(0);
-		private final Assignment cUtilListsAssignment_3_6 = (Assignment)cAlternatives_3.eContents().get(6);
-		private final RuleCall cUtilListsUtilListParserRuleCall_3_6_0 = (RuleCall)cUtilListsAssignment_3_6.eContents().get(0);
-		private final Assignment cUtilMapsAssignment_3_7 = (Assignment)cAlternatives_3.eContents().get(7);
-		private final RuleCall cUtilMapsUtilMapParserRuleCall_3_7_0 = (RuleCall)cUtilMapsAssignment_3_7.eContents().get(0);
-		private final Assignment cUtilPropertiesAssignment_3_8 = (Assignment)cAlternatives_3.eContents().get(8);
-		private final RuleCall cUtilPropertiesUtilPropertiesParserRuleCall_3_8_0 = (RuleCall)cUtilPropertiesAssignment_3_8.eContents().get(0);
-		private final Assignment cUtilSetsAssignment_3_9 = (Assignment)cAlternatives_3.eContents().get(9);
-		private final RuleCall cUtilSetsUtilSetParserRuleCall_3_9_0 = (RuleCall)cUtilSetsAssignment_3_9.eContents().get(0);
-		private final Assignment cUtilPropertiesPathAssignment_3_10 = (Assignment)cAlternatives_3.eContents().get(10);
-		private final RuleCall cUtilPropertiesPathUtilPropertyPathParserRuleCall_3_10_0 = (RuleCall)cUtilPropertiesPathAssignment_3_10.eContents().get(0);
-		private final Assignment cTxAdvicesAssignment_3_11 = (Assignment)cAlternatives_3.eContents().get(11);
-		private final RuleCall cTxAdvicesTxAdviseParserRuleCall_3_11_0 = (RuleCall)cTxAdvicesAssignment_3_11.eContents().get(0);
-		private final Assignment cTxJtaTransactionManagerAssignment_3_12 = (Assignment)cAlternatives_3.eContents().get(12);
-		private final RuleCall cTxJtaTransactionManagerTxJtaTransactionManagerParserRuleCall_3_12_0 = (RuleCall)cTxJtaTransactionManagerAssignment_3_12.eContents().get(0);
+		private final Assignment cMvcsAssignment_3_4 = (Assignment)cAlternatives_3.eContents().get(4);
+		private final RuleCall cMvcsMVCParserRuleCall_3_4_0 = (RuleCall)cMvcsAssignment_3_4.eContents().get(0);
+		private final Assignment cAspectsAssignment_3_5 = (Assignment)cAlternatives_3.eContents().get(5);
+		private final RuleCall cAspectsAspectParserRuleCall_3_5_0 = (RuleCall)cAspectsAssignment_3_5.eContents().get(0);
+		private final Assignment cUtilConstantsAssignment_3_6 = (Assignment)cAlternatives_3.eContents().get(6);
+		private final RuleCall cUtilConstantsUtilConstantParserRuleCall_3_6_0 = (RuleCall)cUtilConstantsAssignment_3_6.eContents().get(0);
+		private final Assignment cUtilListsAssignment_3_7 = (Assignment)cAlternatives_3.eContents().get(7);
+		private final RuleCall cUtilListsUtilListParserRuleCall_3_7_0 = (RuleCall)cUtilListsAssignment_3_7.eContents().get(0);
+		private final Assignment cUtilMapsAssignment_3_8 = (Assignment)cAlternatives_3.eContents().get(8);
+		private final RuleCall cUtilMapsUtilMapParserRuleCall_3_8_0 = (RuleCall)cUtilMapsAssignment_3_8.eContents().get(0);
+		private final Assignment cUtilPropertiesAssignment_3_9 = (Assignment)cAlternatives_3.eContents().get(9);
+		private final RuleCall cUtilPropertiesUtilPropertiesParserRuleCall_3_9_0 = (RuleCall)cUtilPropertiesAssignment_3_9.eContents().get(0);
+		private final Assignment cUtilSetsAssignment_3_10 = (Assignment)cAlternatives_3.eContents().get(10);
+		private final RuleCall cUtilSetsUtilSetParserRuleCall_3_10_0 = (RuleCall)cUtilSetsAssignment_3_10.eContents().get(0);
+		private final Assignment cUtilPropertiesPathAssignment_3_11 = (Assignment)cAlternatives_3.eContents().get(11);
+		private final RuleCall cUtilPropertiesPathUtilPropertyPathParserRuleCall_3_11_0 = (RuleCall)cUtilPropertiesPathAssignment_3_11.eContents().get(0);
+		private final Assignment cTxAdvicesAssignment_3_12 = (Assignment)cAlternatives_3.eContents().get(12);
+		private final RuleCall cTxAdvicesTxAdviseParserRuleCall_3_12_0 = (RuleCall)cTxAdvicesAssignment_3_12.eContents().get(0);
+		private final Assignment cTxJtaTransactionManagerAssignment_3_13 = (Assignment)cAlternatives_3.eContents().get(13);
+		private final RuleCall cTxJtaTransactionManagerTxJtaTransactionManagerParserRuleCall_3_13_0 = (RuleCall)cTxJtaTransactionManagerAssignment_3_13.eContents().get(0);
 		private final Assignment cConfigurationCompositeAssignment_4 = (Assignment)cGroup.eContents().get(4);
 		private final RuleCall cConfigurationCompositeConfigurationParserRuleCall_4_0 = (RuleCall)cConfigurationCompositeAssignment_4.eContents().get(0);
 		private final Keyword cBeansKeyword_5 = (Keyword)cGroup.eContents().get(5);
@@ -272,10 +274,11 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		//	& (IdDashAndColon '=' ValidString)*)
 		//	'>') description=Description? (components+=Component | alias+=Alias | imports+=Import
 		//	| contexts+=Context
+		//	| mvcs+=MVC
 		//	| aspects+=Aspect
 		//	| utilConstants+=UtilConstant | utilLists+=UtilList | utilMaps+=UtilMap
 		//	| utilProperties+=UtilProperties | utilSets+=UtilSet | utilPropertiesPath+=UtilPropertyPath
-		//	| txAdvices+=TxAdvise | txJtaTransactionManager=TxJtaTransactionManager)*
+		//	| txAdvices+=TxAdvise | txJtaTransactionManager+=TxJtaTransactionManager)*
 		//	ConfigurationComposite+=Configuration*
 		//	'</beans>';
 		@Override public ParserRule getRule() { return rule; }
@@ -286,10 +289,10 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		//& ('default-destroy-method=' defaultDestroyMethod=ValidString)? //Method
 		//& ('default-lazy-init=' defaultLazyInit=DefaultableBoolean)? & ('default-merge=' defaultMerge=DefaultableBoolean)? //Default is false
 		//& ('profile=' profile=ValidString)? & (IdDashAndColon '=' ValidString)*) '>') description=Description?
-		//(components+=Component | alias+=Alias | imports+=Import | contexts+=Context | aspects+=Aspect |
+		//(components+=Component | alias+=Alias | imports+=Import | contexts+=Context | mvcs+=MVC | aspects+=Aspect |
 		//utilConstants+=UtilConstant | utilLists+=UtilList | utilMaps+=UtilMap | utilProperties+=UtilProperties |
 		//utilSets+=UtilSet | utilPropertiesPath+=UtilPropertyPath | txAdvices+=TxAdvise |
-		//txJtaTransactionManager=TxJtaTransactionManager)* ConfigurationComposite+=Configuration* '</beans>'
+		//txJtaTransactionManager+=TxJtaTransactionManager)* ConfigurationComposite+=Configuration* '</beans>'
 		public Group getGroup() { return cGroup; }
 		
 		//{Configuration}
@@ -417,10 +420,10 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		//Description
 		public RuleCall getDescriptionDescriptionParserRuleCall_2_0() { return cDescriptionDescriptionParserRuleCall_2_0; }
 		
-		//(components+=Component | alias+=Alias | imports+=Import | contexts+=Context | aspects+=Aspect |
+		//(components+=Component | alias+=Alias | imports+=Import | contexts+=Context | mvcs+=MVC | aspects+=Aspect |
 		//utilConstants+=UtilConstant | utilLists+=UtilList | utilMaps+=UtilMap | utilProperties+=UtilProperties |
 		//utilSets+=UtilSet | utilPropertiesPath+=UtilPropertyPath | txAdvices+=TxAdvise |
-		//txJtaTransactionManager=TxJtaTransactionManager)*
+		//txJtaTransactionManager+=TxJtaTransactionManager)*
 		public Alternatives getAlternatives_3() { return cAlternatives_3; }
 		
 		//components+=Component
@@ -447,59 +450,65 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		//Context
 		public RuleCall getContextsContextParserRuleCall_3_3_0() { return cContextsContextParserRuleCall_3_3_0; }
 		
+		//mvcs+=MVC
+		public Assignment getMvcsAssignment_3_4() { return cMvcsAssignment_3_4; }
+		
+		//MVC
+		public RuleCall getMvcsMVCParserRuleCall_3_4_0() { return cMvcsMVCParserRuleCall_3_4_0; }
+		
 		//aspects+=Aspect
-		public Assignment getAspectsAssignment_3_4() { return cAspectsAssignment_3_4; }
+		public Assignment getAspectsAssignment_3_5() { return cAspectsAssignment_3_5; }
 		
 		//Aspect
-		public RuleCall getAspectsAspectParserRuleCall_3_4_0() { return cAspectsAspectParserRuleCall_3_4_0; }
+		public RuleCall getAspectsAspectParserRuleCall_3_5_0() { return cAspectsAspectParserRuleCall_3_5_0; }
 		
 		//utilConstants+=UtilConstant
-		public Assignment getUtilConstantsAssignment_3_5() { return cUtilConstantsAssignment_3_5; }
+		public Assignment getUtilConstantsAssignment_3_6() { return cUtilConstantsAssignment_3_6; }
 		
 		//UtilConstant
-		public RuleCall getUtilConstantsUtilConstantParserRuleCall_3_5_0() { return cUtilConstantsUtilConstantParserRuleCall_3_5_0; }
+		public RuleCall getUtilConstantsUtilConstantParserRuleCall_3_6_0() { return cUtilConstantsUtilConstantParserRuleCall_3_6_0; }
 		
 		//utilLists+=UtilList
-		public Assignment getUtilListsAssignment_3_6() { return cUtilListsAssignment_3_6; }
+		public Assignment getUtilListsAssignment_3_7() { return cUtilListsAssignment_3_7; }
 		
 		//UtilList
-		public RuleCall getUtilListsUtilListParserRuleCall_3_6_0() { return cUtilListsUtilListParserRuleCall_3_6_0; }
+		public RuleCall getUtilListsUtilListParserRuleCall_3_7_0() { return cUtilListsUtilListParserRuleCall_3_7_0; }
 		
 		//utilMaps+=UtilMap
-		public Assignment getUtilMapsAssignment_3_7() { return cUtilMapsAssignment_3_7; }
+		public Assignment getUtilMapsAssignment_3_8() { return cUtilMapsAssignment_3_8; }
 		
 		//UtilMap
-		public RuleCall getUtilMapsUtilMapParserRuleCall_3_7_0() { return cUtilMapsUtilMapParserRuleCall_3_7_0; }
+		public RuleCall getUtilMapsUtilMapParserRuleCall_3_8_0() { return cUtilMapsUtilMapParserRuleCall_3_8_0; }
 		
 		//utilProperties+=UtilProperties
-		public Assignment getUtilPropertiesAssignment_3_8() { return cUtilPropertiesAssignment_3_8; }
+		public Assignment getUtilPropertiesAssignment_3_9() { return cUtilPropertiesAssignment_3_9; }
 		
 		//UtilProperties
-		public RuleCall getUtilPropertiesUtilPropertiesParserRuleCall_3_8_0() { return cUtilPropertiesUtilPropertiesParserRuleCall_3_8_0; }
+		public RuleCall getUtilPropertiesUtilPropertiesParserRuleCall_3_9_0() { return cUtilPropertiesUtilPropertiesParserRuleCall_3_9_0; }
 		
 		//utilSets+=UtilSet
-		public Assignment getUtilSetsAssignment_3_9() { return cUtilSetsAssignment_3_9; }
+		public Assignment getUtilSetsAssignment_3_10() { return cUtilSetsAssignment_3_10; }
 		
 		//UtilSet
-		public RuleCall getUtilSetsUtilSetParserRuleCall_3_9_0() { return cUtilSetsUtilSetParserRuleCall_3_9_0; }
+		public RuleCall getUtilSetsUtilSetParserRuleCall_3_10_0() { return cUtilSetsUtilSetParserRuleCall_3_10_0; }
 		
 		//utilPropertiesPath+=UtilPropertyPath
-		public Assignment getUtilPropertiesPathAssignment_3_10() { return cUtilPropertiesPathAssignment_3_10; }
+		public Assignment getUtilPropertiesPathAssignment_3_11() { return cUtilPropertiesPathAssignment_3_11; }
 		
 		//UtilPropertyPath
-		public RuleCall getUtilPropertiesPathUtilPropertyPathParserRuleCall_3_10_0() { return cUtilPropertiesPathUtilPropertyPathParserRuleCall_3_10_0; }
+		public RuleCall getUtilPropertiesPathUtilPropertyPathParserRuleCall_3_11_0() { return cUtilPropertiesPathUtilPropertyPathParserRuleCall_3_11_0; }
 		
 		//txAdvices+=TxAdvise
-		public Assignment getTxAdvicesAssignment_3_11() { return cTxAdvicesAssignment_3_11; }
+		public Assignment getTxAdvicesAssignment_3_12() { return cTxAdvicesAssignment_3_12; }
 		
 		//TxAdvise
-		public RuleCall getTxAdvicesTxAdviseParserRuleCall_3_11_0() { return cTxAdvicesTxAdviseParserRuleCall_3_11_0; }
+		public RuleCall getTxAdvicesTxAdviseParserRuleCall_3_12_0() { return cTxAdvicesTxAdviseParserRuleCall_3_12_0; }
 		
-		//txJtaTransactionManager=TxJtaTransactionManager
-		public Assignment getTxJtaTransactionManagerAssignment_3_12() { return cTxJtaTransactionManagerAssignment_3_12; }
+		//txJtaTransactionManager+=TxJtaTransactionManager
+		public Assignment getTxJtaTransactionManagerAssignment_3_13() { return cTxJtaTransactionManagerAssignment_3_13; }
 		
 		//TxJtaTransactionManager
-		public RuleCall getTxJtaTransactionManagerTxJtaTransactionManagerParserRuleCall_3_12_0() { return cTxJtaTransactionManagerTxJtaTransactionManagerParserRuleCall_3_12_0; }
+		public RuleCall getTxJtaTransactionManagerTxJtaTransactionManagerParserRuleCall_3_13_0() { return cTxJtaTransactionManagerTxJtaTransactionManagerParserRuleCall_3_13_0; }
 		
 		//ConfigurationComposite+=Configuration*
 		public Assignment getConfigurationCompositeAssignment_4() { return cConfigurationCompositeAssignment_4; }
@@ -509,6 +518,41 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		
 		//'</beans>'
 		public Keyword getBeansKeyword_5() { return cBeansKeyword_5; }
+	}
+	public class MVCElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.xtext.spring.SpringConfigDsl.MVC");
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final Action cMVCAction_0 = (Action)cGroup.eContents().get(0);
+		private final Group cGroup_1 = (Group)cGroup.eContents().get(1);
+		private final Keyword cMvcKeyword_1_0 = (Keyword)cGroup_1.eContents().get(0);
+		private final Keyword cColonKeyword_1_1 = (Keyword)cGroup_1.eContents().get(1);
+		private final Keyword cAnnotationDrivenKeyword_1_2 = (Keyword)cGroup_1.eContents().get(2);
+		private final Keyword cSolidusGreaterThanSignKeyword_1_3 = (Keyword)cGroup_1.eContents().get(3);
+		
+		//MVC:
+		//	{MVC} ('<mvc' ':' 'annotation-driven' '/>');
+		@Override public ParserRule getRule() { return rule; }
+		
+		//{MVC} ('<mvc' ':' 'annotation-driven' '/>')
+		public Group getGroup() { return cGroup; }
+		
+		//{MVC}
+		public Action getMVCAction_0() { return cMVCAction_0; }
+		
+		//'<mvc' ':' 'annotation-driven' '/>'
+		public Group getGroup_1() { return cGroup_1; }
+		
+		//'<mvc'
+		public Keyword getMvcKeyword_1_0() { return cMvcKeyword_1_0; }
+		
+		//':'
+		public Keyword getColonKeyword_1_1() { return cColonKeyword_1_1; }
+		
+		//'annotation-driven'
+		public Keyword getAnnotationDrivenKeyword_1_2() { return cAnnotationDrivenKeyword_1_2; }
+		
+		//'/>'
+		public Keyword getSolidusGreaterThanSignKeyword_1_3() { return cSolidusGreaterThanSignKeyword_1_3; }
 	}
 	public class AliasElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.xtext.spring.SpringConfigDsl.Alias");
@@ -692,40 +736,44 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.xtext.spring.SpringConfigDsl.AnnotationConfig");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Action cAnnotationConfigAction_0 = (Action)cGroup.eContents().get(0);
-		private final Keyword cAnnotationConfigKeyword_1 = (Keyword)cGroup.eContents().get(1);
-		private final Alternatives cAlternatives_2 = (Alternatives)cGroup.eContents().get(2);
-		private final Keyword cSolidusGreaterThanSignKeyword_2_0 = (Keyword)cAlternatives_2.eContents().get(0);
-		private final Group cGroup_2_1 = (Group)cAlternatives_2.eContents().get(1);
-		private final Keyword cGreaterThanSignKeyword_2_1_0 = (Keyword)cGroup_2_1.eContents().get(0);
-		private final Keyword cContextAnnotationConfigKeyword_2_1_1 = (Keyword)cGroup_2_1.eContents().get(1);
+		private final Group cGroup_1 = (Group)cGroup.eContents().get(1);
+		private final Keyword cAnnotationConfigKeyword_1_0 = (Keyword)cGroup_1.eContents().get(0);
+		private final Alternatives cAlternatives_1_1 = (Alternatives)cGroup_1.eContents().get(1);
+		private final Keyword cSolidusGreaterThanSignKeyword_1_1_0 = (Keyword)cAlternatives_1_1.eContents().get(0);
+		private final Group cGroup_1_1_1 = (Group)cAlternatives_1_1.eContents().get(1);
+		private final Keyword cGreaterThanSignKeyword_1_1_1_0 = (Keyword)cGroup_1_1_1.eContents().get(0);
+		private final Keyword cContextAnnotationConfigKeyword_1_1_1_1 = (Keyword)cGroup_1_1_1.eContents().get(1);
 		
 		///** looks for annotations on beans in the same application context in which it is defined */ AnnotationConfig:
-		//	{AnnotationConfig} 'annotation-config' ('/>' | '>' '</context:annotation-config>');
+		//	{AnnotationConfig} ('annotation-config' ('/>' | '>' '</context:annotation-config>'));
 		@Override public ParserRule getRule() { return rule; }
 		
-		//{AnnotationConfig} 'annotation-config' ('/>' | '>' '</context:annotation-config>')
+		//{AnnotationConfig} ('annotation-config' ('/>' | '>' '</context:annotation-config>'))
 		public Group getGroup() { return cGroup; }
 		
 		//{AnnotationConfig}
 		public Action getAnnotationConfigAction_0() { return cAnnotationConfigAction_0; }
 		
+		//'annotation-config' ('/>' | '>' '</context:annotation-config>')
+		public Group getGroup_1() { return cGroup_1; }
+		
 		//'annotation-config'
-		public Keyword getAnnotationConfigKeyword_1() { return cAnnotationConfigKeyword_1; }
+		public Keyword getAnnotationConfigKeyword_1_0() { return cAnnotationConfigKeyword_1_0; }
 		
 		//'/>' | '>' '</context:annotation-config>'
-		public Alternatives getAlternatives_2() { return cAlternatives_2; }
+		public Alternatives getAlternatives_1_1() { return cAlternatives_1_1; }
 		
 		//'/>'
-		public Keyword getSolidusGreaterThanSignKeyword_2_0() { return cSolidusGreaterThanSignKeyword_2_0; }
+		public Keyword getSolidusGreaterThanSignKeyword_1_1_0() { return cSolidusGreaterThanSignKeyword_1_1_0; }
 		
 		//'>' '</context:annotation-config>'
-		public Group getGroup_2_1() { return cGroup_2_1; }
+		public Group getGroup_1_1_1() { return cGroup_1_1_1; }
 		
 		//'>'
-		public Keyword getGreaterThanSignKeyword_2_1_0() { return cGreaterThanSignKeyword_2_1_0; }
+		public Keyword getGreaterThanSignKeyword_1_1_1_0() { return cGreaterThanSignKeyword_1_1_1_0; }
 		
 		//'</context:annotation-config>'
-		public Keyword getContextAnnotationConfigKeyword_2_1_1() { return cContextAnnotationConfigKeyword_2_1_1; }
+		public Keyword getContextAnnotationConfigKeyword_1_1_1_1() { return cContextAnnotationConfigKeyword_1_1_1_1; }
 	}
 	public class ComponentScanElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.xtext.spring.SpringConfigDsl.ComponentScan");
@@ -4258,8 +4306,8 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cRefKeyword_1 = (Keyword)cGroup.eContents().get(1);
 		private final Keyword cBeanKeyword_2 = (Keyword)cGroup.eContents().get(2);
 		private final Assignment cRefAssignment_3 = (Assignment)cGroup.eContents().get(3);
-		private final CrossReference cRefComponentCrossReference_3_0 = (CrossReference)cRefAssignment_3.eContents().get(0);
-		private final RuleCall cRefComponentValidStringParserRuleCall_3_0_1 = (RuleCall)cRefComponentCrossReference_3_0.eContents().get(1);
+		private final CrossReference cRefAbstractArtefactCrossReference_3_0 = (CrossReference)cRefAssignment_3.eContents().get(0);
+		private final RuleCall cRefAbstractArtefactValidStringParserRuleCall_3_0_1 = (RuleCall)cRefAbstractArtefactCrossReference_3_0.eContents().get(1);
 		private final Alternatives cAlternatives_4 = (Alternatives)cGroup.eContents().get(4);
 		private final Keyword cSolidusGreaterThanSignKeyword_4_0 = (Keyword)cAlternatives_4.eContents().get(0);
 		private final Group cGroup_4_1 = (Group)cAlternatives_4.eContents().get(1);
@@ -4268,10 +4316,10 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		
 		///**Reference create by a tag */ ReferenceTag Reference:
 		//	{Reference}
-		//	'<ref' 'bean=' ref=[Component|ValidString] ('/>' | '>' '</ref>');
+		//	'<ref' 'bean=' ref=[AbstractArtefact|ValidString] ('/>' | '>' '</ref>');
 		@Override public ParserRule getRule() { return rule; }
 		
-		//{Reference} '<ref' 'bean=' ref=[Component|ValidString] ('/>' | '>' '</ref>')
+		//{Reference} '<ref' 'bean=' ref=[AbstractArtefact|ValidString] ('/>' | '>' '</ref>')
 		public Group getGroup() { return cGroup; }
 		
 		//{Reference}
@@ -4283,14 +4331,14 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		//'bean='
 		public Keyword getBeanKeyword_2() { return cBeanKeyword_2; }
 		
-		//ref=[Component|ValidString]
+		//ref=[AbstractArtefact|ValidString]
 		public Assignment getRefAssignment_3() { return cRefAssignment_3; }
 		
-		//[Component|ValidString]
-		public CrossReference getRefComponentCrossReference_3_0() { return cRefComponentCrossReference_3_0; }
+		//[AbstractArtefact|ValidString]
+		public CrossReference getRefAbstractArtefactCrossReference_3_0() { return cRefAbstractArtefactCrossReference_3_0; }
 		
 		//ValidString
-		public RuleCall getRefComponentValidStringParserRuleCall_3_0_1() { return cRefComponentValidStringParserRuleCall_3_0_1; }
+		public RuleCall getRefAbstractArtefactValidStringParserRuleCall_3_0_1() { return cRefAbstractArtefactValidStringParserRuleCall_3_0_1; }
 		
 		//'/>' | '>' '</ref>'
 		public Alternatives getAlternatives_4() { return cAlternatives_4; }
@@ -7722,6 +7770,7 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 	private final AbstractArtefactElements pAbstractArtefact;
 	private final CollectionElements pCollection;
 	private final ConfigurationElements pConfiguration;
+	private final MVCElements pMVC;
 	private final AliasElements pAlias;
 	private final ImportElements pImport;
 	private final ContextElements pContext;
@@ -7838,6 +7887,7 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		this.pAbstractArtefact = new AbstractArtefactElements();
 		this.pCollection = new CollectionElements();
 		this.pConfiguration = new ConfigurationElements();
+		this.pMVC = new MVCElements();
 		this.pAlias = new AliasElements();
 		this.pImport = new ImportElements();
 		this.pContext = new ContextElements();
@@ -8023,10 +8073,11 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 	//	& (IdDashAndColon '=' ValidString)*)
 	//	'>') description=Description? (components+=Component | alias+=Alias | imports+=Import
 	//	| contexts+=Context
+	//	| mvcs+=MVC
 	//	| aspects+=Aspect
 	//	| utilConstants+=UtilConstant | utilLists+=UtilList | utilMaps+=UtilMap
 	//	| utilProperties+=UtilProperties | utilSets+=UtilSet | utilPropertiesPath+=UtilPropertyPath
-	//	| txAdvices+=TxAdvise | txJtaTransactionManager=TxJtaTransactionManager)*
+	//	| txAdvices+=TxAdvise | txJtaTransactionManager+=TxJtaTransactionManager)*
 	//	ConfigurationComposite+=Configuration*
 	//	'</beans>';
 	public ConfigurationElements getConfigurationAccess() {
@@ -8035,6 +8086,16 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 	
 	public ParserRule getConfigurationRule() {
 		return getConfigurationAccess().getRule();
+	}
+	
+	//MVC:
+	//	{MVC} ('<mvc' ':' 'annotation-driven' '/>');
+	public MVCElements getMVCAccess() {
+		return pMVC;
+	}
+	
+	public ParserRule getMVCRule() {
+		return getMVCAccess().getRule();
 	}
 	
 	///*<alias/> */ Alias:
@@ -8080,7 +8141,7 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 	}
 	
 	///** looks for annotations on beans in the same application context in which it is defined */ AnnotationConfig:
-	//	{AnnotationConfig} 'annotation-config' ('/>' | '>' '</context:annotation-config>');
+	//	{AnnotationConfig} ('annotation-config' ('/>' | '>' '</context:annotation-config>'));
 	public AnnotationConfigElements getAnnotationConfigAccess() {
 		return pAnnotationConfig;
 	}
@@ -8654,7 +8715,7 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 	
 	///**Reference create by a tag */ ReferenceTag Reference:
 	//	{Reference}
-	//	'<ref' 'bean=' ref=[Component|ValidString] ('/>' | '>' '</ref>');
+	//	'<ref' 'bean=' ref=[AbstractArtefact|ValidString] ('/>' | '>' '</ref>');
 	public ReferenceTagElements getReferenceTagAccess() {
 		return pReferenceTag;
 	}

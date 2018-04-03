@@ -20,24 +20,24 @@ import org.xtext.spring.springConfigDsl.SpringConfigDslPackage;
 public class ContextImpl extends MinimalEObjectImpl.Container implements Context
 {
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   protected ContextImpl()
   {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   protected EClass eStaticClass()
   {
-		return SpringConfigDslPackage.Literals.CONTEXT;
-	}
+    return SpringConfigDslPackage.Literals.CONTEXT;
+  }
 
 } //ContextImpl

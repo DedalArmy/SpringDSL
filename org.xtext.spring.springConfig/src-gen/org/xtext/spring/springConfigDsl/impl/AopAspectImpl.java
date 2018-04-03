@@ -47,385 +47,395 @@ import org.xtext.spring.springConfigDsl.SpringConfigDslPackage;
 public class AopAspectImpl extends MinimalEObjectImpl.Container implements AopAspect
 {
   /**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getName()
+   * @generated
+   * @ordered
+   */
   protected static final String NAME_EDEFAULT = null;
 
   /**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getName()
+   * @generated
+   * @ordered
+   */
   protected String name = NAME_EDEFAULT;
 
   /**
-	 * The default value of the '{@link #getOrder() <em>Order</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The default value of the '{@link #getOrder() <em>Order</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getOrder()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getOrder()
+   * @generated
+   * @ordered
+   */
   protected static final String ORDER_EDEFAULT = null;
 
   /**
-	 * The cached value of the '{@link #getOrder() <em>Order</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getOrder() <em>Order</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getOrder()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getOrder()
+   * @generated
+   * @ordered
+   */
   protected String order = ORDER_EDEFAULT;
 
   /**
-	 * The cached value of the '{@link #getBackingBeanRef() <em>Backing Bean Ref</em>}' reference.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getBackingBeanRef() <em>Backing Bean Ref</em>}' reference.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getBackingBeanRef()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getBackingBeanRef()
+   * @generated
+   * @ordered
+   */
   protected Component backingBeanRef;
 
   /**
-	 * The cached value of the '{@link #getAopPointcuts() <em>Aop Pointcuts</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getAopPointcuts() <em>Aop Pointcuts</em>}' containment reference list.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getAopPointcuts()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getAopPointcuts()
+   * @generated
+   * @ordered
+   */
   protected EList<AopPointcut> aopPointcuts;
 
   /**
-	 * The cached value of the '{@link #getDeclaredParents() <em>Declared Parents</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getDeclaredParents() <em>Declared Parents</em>}' containment reference list.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getDeclaredParents()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getDeclaredParents()
+   * @generated
+   * @ordered
+   */
   protected EList<DeclareParents> declaredParents;
 
   /**
-	 * The cached value of the '{@link #getAdvises() <em>Advises</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getAdvises() <em>Advises</em>}' containment reference list.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getAdvises()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getAdvises()
+   * @generated
+   * @ordered
+   */
   protected EList<Advise> advises;
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   protected AopAspectImpl()
   {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   protected EClass eStaticClass()
   {
-		return SpringConfigDslPackage.Literals.AOP_ASPECT;
-	}
+    return SpringConfigDslPackage.Literals.AOP_ASPECT;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public String getName()
   {
-		return name;
-	}
+    return name;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public void setName(String newName)
   {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.AOP_ASPECT__NAME, oldName, name));
-	}
+    String oldName = name;
+    name = newName;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.AOP_ASPECT__NAME, oldName, name));
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public String getOrder()
   {
-		return order;
-	}
+    return order;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public void setOrder(String newOrder)
   {
-		String oldOrder = order;
-		order = newOrder;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.AOP_ASPECT__ORDER, oldOrder, order));
-	}
+    String oldOrder = order;
+    order = newOrder;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.AOP_ASPECT__ORDER, oldOrder, order));
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public Component getBackingBeanRef()
   {
-		if (backingBeanRef != null && backingBeanRef.eIsProxy()) {
-			InternalEObject oldBackingBeanRef = (InternalEObject)backingBeanRef;
-			backingBeanRef = (Component)eResolveProxy(oldBackingBeanRef);
-			if (backingBeanRef != oldBackingBeanRef) {
-				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, SpringConfigDslPackage.AOP_ASPECT__BACKING_BEAN_REF, oldBackingBeanRef, backingBeanRef));
-			}
-		}
-		return backingBeanRef;
-	}
+    if (backingBeanRef != null && backingBeanRef.eIsProxy())
+    {
+      InternalEObject oldBackingBeanRef = (InternalEObject)backingBeanRef;
+      backingBeanRef = (Component)eResolveProxy(oldBackingBeanRef);
+      if (backingBeanRef != oldBackingBeanRef)
+      {
+        if (eNotificationRequired())
+          eNotify(new ENotificationImpl(this, Notification.RESOLVE, SpringConfigDslPackage.AOP_ASPECT__BACKING_BEAN_REF, oldBackingBeanRef, backingBeanRef));
+      }
+    }
+    return backingBeanRef;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public Component basicGetBackingBeanRef()
   {
-		return backingBeanRef;
-	}
+    return backingBeanRef;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public void setBackingBeanRef(Component newBackingBeanRef)
   {
-		Component oldBackingBeanRef = backingBeanRef;
-		backingBeanRef = newBackingBeanRef;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.AOP_ASPECT__BACKING_BEAN_REF, oldBackingBeanRef, backingBeanRef));
-	}
+    Component oldBackingBeanRef = backingBeanRef;
+    backingBeanRef = newBackingBeanRef;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.AOP_ASPECT__BACKING_BEAN_REF, oldBackingBeanRef, backingBeanRef));
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public EList<AopPointcut> getAopPointcuts()
   {
-		if (aopPointcuts == null) {
-			aopPointcuts = new EObjectContainmentEList<AopPointcut>(AopPointcut.class, this, SpringConfigDslPackage.AOP_ASPECT__AOP_POINTCUTS);
-		}
-		return aopPointcuts;
-	}
+    if (aopPointcuts == null)
+    {
+      aopPointcuts = new EObjectContainmentEList<AopPointcut>(AopPointcut.class, this, SpringConfigDslPackage.AOP_ASPECT__AOP_POINTCUTS);
+    }
+    return aopPointcuts;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public EList<DeclareParents> getDeclaredParents()
   {
-		if (declaredParents == null) {
-			declaredParents = new EObjectContainmentEList<DeclareParents>(DeclareParents.class, this, SpringConfigDslPackage.AOP_ASPECT__DECLARED_PARENTS);
-		}
-		return declaredParents;
-	}
+    if (declaredParents == null)
+    {
+      declaredParents = new EObjectContainmentEList<DeclareParents>(DeclareParents.class, this, SpringConfigDslPackage.AOP_ASPECT__DECLARED_PARENTS);
+    }
+    return declaredParents;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public EList<Advise> getAdvises()
   {
-		if (advises == null) {
-			advises = new EObjectContainmentEList<Advise>(Advise.class, this, SpringConfigDslPackage.AOP_ASPECT__ADVISES);
-		}
-		return advises;
-	}
+    if (advises == null)
+    {
+      advises = new EObjectContainmentEList<Advise>(Advise.class, this, SpringConfigDslPackage.AOP_ASPECT__ADVISES);
+    }
+    return advises;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
   {
-		switch (featureID) {
-			case SpringConfigDslPackage.AOP_ASPECT__AOP_POINTCUTS:
-				return ((InternalEList<?>)getAopPointcuts()).basicRemove(otherEnd, msgs);
-			case SpringConfigDslPackage.AOP_ASPECT__DECLARED_PARENTS:
-				return ((InternalEList<?>)getDeclaredParents()).basicRemove(otherEnd, msgs);
-			case SpringConfigDslPackage.AOP_ASPECT__ADVISES:
-				return ((InternalEList<?>)getAdvises()).basicRemove(otherEnd, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
-	}
+    switch (featureID)
+    {
+      case SpringConfigDslPackage.AOP_ASPECT__AOP_POINTCUTS:
+        return ((InternalEList<?>)getAopPointcuts()).basicRemove(otherEnd, msgs);
+      case SpringConfigDslPackage.AOP_ASPECT__DECLARED_PARENTS:
+        return ((InternalEList<?>)getDeclaredParents()).basicRemove(otherEnd, msgs);
+      case SpringConfigDslPackage.AOP_ASPECT__ADVISES:
+        return ((InternalEList<?>)getAdvises()).basicRemove(otherEnd, msgs);
+    }
+    return super.eInverseRemove(otherEnd, featureID, msgs);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType)
   {
-		switch (featureID) {
-			case SpringConfigDslPackage.AOP_ASPECT__NAME:
-				return getName();
-			case SpringConfigDslPackage.AOP_ASPECT__ORDER:
-				return getOrder();
-			case SpringConfigDslPackage.AOP_ASPECT__BACKING_BEAN_REF:
-				if (resolve) return getBackingBeanRef();
-				return basicGetBackingBeanRef();
-			case SpringConfigDslPackage.AOP_ASPECT__AOP_POINTCUTS:
-				return getAopPointcuts();
-			case SpringConfigDslPackage.AOP_ASPECT__DECLARED_PARENTS:
-				return getDeclaredParents();
-			case SpringConfigDslPackage.AOP_ASPECT__ADVISES:
-				return getAdvises();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+    switch (featureID)
+    {
+      case SpringConfigDslPackage.AOP_ASPECT__NAME:
+        return getName();
+      case SpringConfigDslPackage.AOP_ASPECT__ORDER:
+        return getOrder();
+      case SpringConfigDslPackage.AOP_ASPECT__BACKING_BEAN_REF:
+        if (resolve) return getBackingBeanRef();
+        return basicGetBackingBeanRef();
+      case SpringConfigDslPackage.AOP_ASPECT__AOP_POINTCUTS:
+        return getAopPointcuts();
+      case SpringConfigDslPackage.AOP_ASPECT__DECLARED_PARENTS:
+        return getDeclaredParents();
+      case SpringConfigDslPackage.AOP_ASPECT__ADVISES:
+        return getAdvises();
+    }
+    return super.eGet(featureID, resolve, coreType);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @SuppressWarnings("unchecked")
   @Override
   public void eSet(int featureID, Object newValue)
   {
-		switch (featureID) {
-			case SpringConfigDslPackage.AOP_ASPECT__NAME:
-				setName((String)newValue);
-				return;
-			case SpringConfigDslPackage.AOP_ASPECT__ORDER:
-				setOrder((String)newValue);
-				return;
-			case SpringConfigDslPackage.AOP_ASPECT__BACKING_BEAN_REF:
-				setBackingBeanRef((Component)newValue);
-				return;
-			case SpringConfigDslPackage.AOP_ASPECT__AOP_POINTCUTS:
-				getAopPointcuts().clear();
-				getAopPointcuts().addAll((Collection<? extends AopPointcut>)newValue);
-				return;
-			case SpringConfigDslPackage.AOP_ASPECT__DECLARED_PARENTS:
-				getDeclaredParents().clear();
-				getDeclaredParents().addAll((Collection<? extends DeclareParents>)newValue);
-				return;
-			case SpringConfigDslPackage.AOP_ASPECT__ADVISES:
-				getAdvises().clear();
-				getAdvises().addAll((Collection<? extends Advise>)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+    switch (featureID)
+    {
+      case SpringConfigDslPackage.AOP_ASPECT__NAME:
+        setName((String)newValue);
+        return;
+      case SpringConfigDslPackage.AOP_ASPECT__ORDER:
+        setOrder((String)newValue);
+        return;
+      case SpringConfigDslPackage.AOP_ASPECT__BACKING_BEAN_REF:
+        setBackingBeanRef((Component)newValue);
+        return;
+      case SpringConfigDslPackage.AOP_ASPECT__AOP_POINTCUTS:
+        getAopPointcuts().clear();
+        getAopPointcuts().addAll((Collection<? extends AopPointcut>)newValue);
+        return;
+      case SpringConfigDslPackage.AOP_ASPECT__DECLARED_PARENTS:
+        getDeclaredParents().clear();
+        getDeclaredParents().addAll((Collection<? extends DeclareParents>)newValue);
+        return;
+      case SpringConfigDslPackage.AOP_ASPECT__ADVISES:
+        getAdvises().clear();
+        getAdvises().addAll((Collection<? extends Advise>)newValue);
+        return;
+    }
+    super.eSet(featureID, newValue);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public void eUnset(int featureID)
   {
-		switch (featureID) {
-			case SpringConfigDslPackage.AOP_ASPECT__NAME:
-				setName(NAME_EDEFAULT);
-				return;
-			case SpringConfigDslPackage.AOP_ASPECT__ORDER:
-				setOrder(ORDER_EDEFAULT);
-				return;
-			case SpringConfigDslPackage.AOP_ASPECT__BACKING_BEAN_REF:
-				setBackingBeanRef((Component)null);
-				return;
-			case SpringConfigDslPackage.AOP_ASPECT__AOP_POINTCUTS:
-				getAopPointcuts().clear();
-				return;
-			case SpringConfigDslPackage.AOP_ASPECT__DECLARED_PARENTS:
-				getDeclaredParents().clear();
-				return;
-			case SpringConfigDslPackage.AOP_ASPECT__ADVISES:
-				getAdvises().clear();
-				return;
-		}
-		super.eUnset(featureID);
-	}
+    switch (featureID)
+    {
+      case SpringConfigDslPackage.AOP_ASPECT__NAME:
+        setName(NAME_EDEFAULT);
+        return;
+      case SpringConfigDslPackage.AOP_ASPECT__ORDER:
+        setOrder(ORDER_EDEFAULT);
+        return;
+      case SpringConfigDslPackage.AOP_ASPECT__BACKING_BEAN_REF:
+        setBackingBeanRef((Component)null);
+        return;
+      case SpringConfigDslPackage.AOP_ASPECT__AOP_POINTCUTS:
+        getAopPointcuts().clear();
+        return;
+      case SpringConfigDslPackage.AOP_ASPECT__DECLARED_PARENTS:
+        getDeclaredParents().clear();
+        return;
+      case SpringConfigDslPackage.AOP_ASPECT__ADVISES:
+        getAdvises().clear();
+        return;
+    }
+    super.eUnset(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public boolean eIsSet(int featureID)
   {
-		switch (featureID) {
-			case SpringConfigDslPackage.AOP_ASPECT__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-			case SpringConfigDslPackage.AOP_ASPECT__ORDER:
-				return ORDER_EDEFAULT == null ? order != null : !ORDER_EDEFAULT.equals(order);
-			case SpringConfigDslPackage.AOP_ASPECT__BACKING_BEAN_REF:
-				return backingBeanRef != null;
-			case SpringConfigDslPackage.AOP_ASPECT__AOP_POINTCUTS:
-				return aopPointcuts != null && !aopPointcuts.isEmpty();
-			case SpringConfigDslPackage.AOP_ASPECT__DECLARED_PARENTS:
-				return declaredParents != null && !declaredParents.isEmpty();
-			case SpringConfigDslPackage.AOP_ASPECT__ADVISES:
-				return advises != null && !advises.isEmpty();
-		}
-		return super.eIsSet(featureID);
-	}
+    switch (featureID)
+    {
+      case SpringConfigDslPackage.AOP_ASPECT__NAME:
+        return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+      case SpringConfigDslPackage.AOP_ASPECT__ORDER:
+        return ORDER_EDEFAULT == null ? order != null : !ORDER_EDEFAULT.equals(order);
+      case SpringConfigDslPackage.AOP_ASPECT__BACKING_BEAN_REF:
+        return backingBeanRef != null;
+      case SpringConfigDslPackage.AOP_ASPECT__AOP_POINTCUTS:
+        return aopPointcuts != null && !aopPointcuts.isEmpty();
+      case SpringConfigDslPackage.AOP_ASPECT__DECLARED_PARENTS:
+        return declaredParents != null && !declaredParents.isEmpty();
+      case SpringConfigDslPackage.AOP_ASPECT__ADVISES:
+        return advises != null && !advises.isEmpty();
+    }
+    return super.eIsSet(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public String toString()
   {
-		if (eIsProxy()) return super.toString();
+    if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
-		result.append(", order: ");
-		result.append(order);
-		result.append(')');
-		return result.toString();
-	}
+    StringBuffer result = new StringBuffer(super.toString());
+    result.append(" (name: ");
+    result.append(name);
+    result.append(", order: ");
+    result.append(order);
+    result.append(')');
+    return result.toString();
+  }
 
 } //AopAspectImpl

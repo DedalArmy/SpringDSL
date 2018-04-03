@@ -23,29 +23,29 @@ package org.xtext.spring.springConfigDsl;
 public interface Class extends ClassOrFactory
 {
   /**
-	 * Returns the value of the '<em><b>Classname</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Classname</b></em>' attribute.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Classname</em>' attribute isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Classname</em>' attribute.
-	 * @see #setClassname(String)
-	 * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getClass_Classname()
-	 * @model
-	 * @generated
-	 */
+   * @return the value of the '<em>Classname</em>' attribute.
+   * @see #setClassname(String)
+   * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getClass_Classname()
+   * @model
+   * @generated
+   */
   String getClassname();
 
   /**
-	 * Sets the value of the '{@link org.xtext.spring.springConfigDsl.Class#getClassname <em>Classname</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * Sets the value of the '{@link org.xtext.spring.springConfigDsl.Class#getClassname <em>Classname</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Classname</em>' attribute.
-	 * @see #getClassname()
-	 * @generated
-	 */
+   * @param value the new value of the '<em>Classname</em>' attribute.
+   * @see #getClassname()
+   * @generated
+   */
   void setClassname(String value);
 
 } // Class

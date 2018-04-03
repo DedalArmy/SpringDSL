@@ -23,29 +23,29 @@ package org.xtext.spring.springConfigDsl;
 public interface Factory extends ClassOrFactory
 {
   /**
-	 * Returns the value of the '<em><b>Factory Bean</b></em>' reference.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Factory Bean</b></em>' reference.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Factory Bean</em>' reference isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Factory Bean</em>' reference.
-	 * @see #setFactoryBean(Component)
-	 * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getFactory_FactoryBean()
-	 * @model
-	 * @generated
-	 */
+   * @return the value of the '<em>Factory Bean</em>' reference.
+   * @see #setFactoryBean(Component)
+   * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getFactory_FactoryBean()
+   * @model
+   * @generated
+   */
   Component getFactoryBean();
 
   /**
-	 * Sets the value of the '{@link org.xtext.spring.springConfigDsl.Factory#getFactoryBean <em>Factory Bean</em>}' reference.
-	 * <!-- begin-user-doc -->
+   * Sets the value of the '{@link org.xtext.spring.springConfigDsl.Factory#getFactoryBean <em>Factory Bean</em>}' reference.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Factory Bean</em>' reference.
-	 * @see #getFactoryBean()
-	 * @generated
-	 */
+   * @param value the new value of the '<em>Factory Bean</em>' reference.
+   * @see #getFactoryBean()
+   * @generated
+   */
   void setFactoryBean(Component value);
 
 } // Factory

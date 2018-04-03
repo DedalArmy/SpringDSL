@@ -30,201 +30,205 @@ import org.xtext.spring.springConfigDsl.SpringConfigDslPackage;
 public class PropertyFileImpl extends MinimalEObjectImpl.Container implements PropertyFile
 {
   /**
-	 * The default value of the '{@link #getLocation() <em>Location</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The default value of the '{@link #getLocation() <em>Location</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getLocation()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getLocation()
+   * @generated
+   * @ordered
+   */
   protected static final String LOCATION_EDEFAULT = null;
 
   /**
-	 * The cached value of the '{@link #getLocation() <em>Location</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getLocation() <em>Location</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getLocation()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getLocation()
+   * @generated
+   * @ordered
+   */
   protected String location = LOCATION_EDEFAULT;
 
   /**
-	 * The default value of the '{@link #getFileEncoding() <em>File Encoding</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The default value of the '{@link #getFileEncoding() <em>File Encoding</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getFileEncoding()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getFileEncoding()
+   * @generated
+   * @ordered
+   */
   protected static final String FILE_ENCODING_EDEFAULT = null;
 
   /**
-	 * The cached value of the '{@link #getFileEncoding() <em>File Encoding</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getFileEncoding() <em>File Encoding</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getFileEncoding()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getFileEncoding()
+   * @generated
+   * @ordered
+   */
   protected String fileEncoding = FILE_ENCODING_EDEFAULT;
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   protected PropertyFileImpl()
   {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   protected EClass eStaticClass()
   {
-		return SpringConfigDslPackage.Literals.PROPERTY_FILE;
-	}
+    return SpringConfigDslPackage.Literals.PROPERTY_FILE;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public String getLocation()
   {
-		return location;
-	}
+    return location;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public void setLocation(String newLocation)
   {
-		String oldLocation = location;
-		location = newLocation;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.PROPERTY_FILE__LOCATION, oldLocation, location));
-	}
+    String oldLocation = location;
+    location = newLocation;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.PROPERTY_FILE__LOCATION, oldLocation, location));
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public String getFileEncoding()
   {
-		return fileEncoding;
-	}
+    return fileEncoding;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public void setFileEncoding(String newFileEncoding)
   {
-		String oldFileEncoding = fileEncoding;
-		fileEncoding = newFileEncoding;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.PROPERTY_FILE__FILE_ENCODING, oldFileEncoding, fileEncoding));
-	}
+    String oldFileEncoding = fileEncoding;
+    fileEncoding = newFileEncoding;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.PROPERTY_FILE__FILE_ENCODING, oldFileEncoding, fileEncoding));
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType)
   {
-		switch (featureID) {
-			case SpringConfigDslPackage.PROPERTY_FILE__LOCATION:
-				return getLocation();
-			case SpringConfigDslPackage.PROPERTY_FILE__FILE_ENCODING:
-				return getFileEncoding();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+    switch (featureID)
+    {
+      case SpringConfigDslPackage.PROPERTY_FILE__LOCATION:
+        return getLocation();
+      case SpringConfigDslPackage.PROPERTY_FILE__FILE_ENCODING:
+        return getFileEncoding();
+    }
+    return super.eGet(featureID, resolve, coreType);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public void eSet(int featureID, Object newValue)
   {
-		switch (featureID) {
-			case SpringConfigDslPackage.PROPERTY_FILE__LOCATION:
-				setLocation((String)newValue);
-				return;
-			case SpringConfigDslPackage.PROPERTY_FILE__FILE_ENCODING:
-				setFileEncoding((String)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+    switch (featureID)
+    {
+      case SpringConfigDslPackage.PROPERTY_FILE__LOCATION:
+        setLocation((String)newValue);
+        return;
+      case SpringConfigDslPackage.PROPERTY_FILE__FILE_ENCODING:
+        setFileEncoding((String)newValue);
+        return;
+    }
+    super.eSet(featureID, newValue);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public void eUnset(int featureID)
   {
-		switch (featureID) {
-			case SpringConfigDslPackage.PROPERTY_FILE__LOCATION:
-				setLocation(LOCATION_EDEFAULT);
-				return;
-			case SpringConfigDslPackage.PROPERTY_FILE__FILE_ENCODING:
-				setFileEncoding(FILE_ENCODING_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+    switch (featureID)
+    {
+      case SpringConfigDslPackage.PROPERTY_FILE__LOCATION:
+        setLocation(LOCATION_EDEFAULT);
+        return;
+      case SpringConfigDslPackage.PROPERTY_FILE__FILE_ENCODING:
+        setFileEncoding(FILE_ENCODING_EDEFAULT);
+        return;
+    }
+    super.eUnset(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public boolean eIsSet(int featureID)
   {
-		switch (featureID) {
-			case SpringConfigDslPackage.PROPERTY_FILE__LOCATION:
-				return LOCATION_EDEFAULT == null ? location != null : !LOCATION_EDEFAULT.equals(location);
-			case SpringConfigDslPackage.PROPERTY_FILE__FILE_ENCODING:
-				return FILE_ENCODING_EDEFAULT == null ? fileEncoding != null : !FILE_ENCODING_EDEFAULT.equals(fileEncoding);
-		}
-		return super.eIsSet(featureID);
-	}
+    switch (featureID)
+    {
+      case SpringConfigDslPackage.PROPERTY_FILE__LOCATION:
+        return LOCATION_EDEFAULT == null ? location != null : !LOCATION_EDEFAULT.equals(location);
+      case SpringConfigDslPackage.PROPERTY_FILE__FILE_ENCODING:
+        return FILE_ENCODING_EDEFAULT == null ? fileEncoding != null : !FILE_ENCODING_EDEFAULT.equals(fileEncoding);
+    }
+    return super.eIsSet(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public String toString()
   {
-		if (eIsProxy()) return super.toString();
+    if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (location: ");
-		result.append(location);
-		result.append(", fileEncoding: ");
-		result.append(fileEncoding);
-		result.append(')');
-		return result.toString();
-	}
+    StringBuffer result = new StringBuffer(super.toString());
+    result.append(" (location: ");
+    result.append(location);
+    result.append(", fileEncoding: ");
+    result.append(fileEncoding);
+    result.append(')');
+    return result.toString();
+  }
 
 } //PropertyFileImpl

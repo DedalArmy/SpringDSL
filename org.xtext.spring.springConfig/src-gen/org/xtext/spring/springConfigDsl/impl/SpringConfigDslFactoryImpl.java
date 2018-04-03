@@ -56,6 +56,7 @@ import org.xtext.spring.springConfigDsl.Interface;
 import org.xtext.spring.springConfigDsl.Key;
 import org.xtext.spring.springConfigDsl.LoadTimeWeaver;
 import org.xtext.spring.springConfigDsl.LookupMethod;
+import org.xtext.spring.springConfigDsl.MVC;
 import org.xtext.spring.springConfigDsl.Map;
 import org.xtext.spring.springConfigDsl.MapEntry;
 import org.xtext.spring.springConfigDsl.MbeanExport;
@@ -99,1122 +100,1140 @@ import org.xtext.spring.springConfigDsl.sSet;
 public class SpringConfigDslFactoryImpl extends EFactoryImpl implements SpringConfigDslFactory
 {
   /**
-	 * Creates the default factory implementation.
-	 * <!-- begin-user-doc -->
+   * Creates the default factory implementation.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public static SpringConfigDslFactory init()
   {
-		try {
-			SpringConfigDslFactory theSpringConfigDslFactory = (SpringConfigDslFactory)EPackage.Registry.INSTANCE.getEFactory(SpringConfigDslPackage.eNS_URI);
-			if (theSpringConfigDslFactory != null) {
-				return theSpringConfigDslFactory;
-			}
-		}
-		catch (Exception exception) {
-			EcorePlugin.INSTANCE.log(exception);
-		}
-		return new SpringConfigDslFactoryImpl();
-	}
+    try
+    {
+      SpringConfigDslFactory theSpringConfigDslFactory = (SpringConfigDslFactory)EPackage.Registry.INSTANCE.getEFactory(SpringConfigDslPackage.eNS_URI);
+      if (theSpringConfigDslFactory != null)
+      {
+        return theSpringConfigDslFactory;
+      }
+    }
+    catch (Exception exception)
+    {
+      EcorePlugin.INSTANCE.log(exception);
+    }
+    return new SpringConfigDslFactoryImpl();
+  }
 
   /**
-	 * Creates an instance of the factory.
-	 * <!-- begin-user-doc -->
+   * Creates an instance of the factory.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public SpringConfigDslFactoryImpl()
   {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public EObject create(EClass eClass)
   {
-		switch (eClass.getClassifierID()) {
-			case SpringConfigDslPackage.SPRING_PROJECT: return createSpringProject();
-			case SpringConfigDslPackage.ABSTRACT_KEY_VALUE: return createAbstractKeyValue();
-			case SpringConfigDslPackage.ABSTRACT_ARTEFACT: return createAbstractArtefact();
-			case SpringConfigDslPackage.COLLECTION: return createCollection();
-			case SpringConfigDslPackage.CONFIGURATION: return createConfiguration();
-			case SpringConfigDslPackage.ALIAS: return createAlias();
-			case SpringConfigDslPackage.IMPORT: return createImport();
-			case SpringConfigDslPackage.CONTEXT: return createContext();
-			case SpringConfigDslPackage.ANNOTATION_CONFIG: return createAnnotationConfig();
-			case SpringConfigDslPackage.COMPONENT_SCAN: return createComponentScan();
-			case SpringConfigDslPackage.INCLUDE_FILTER: return createIncludeFilter();
-			case SpringConfigDslPackage.EXCLUDE_FILTER: return createExcludeFilter();
-			case SpringConfigDslPackage.LOAD_TIME_WEAVER: return createLoadTimeWeaver();
-			case SpringConfigDslPackage.MBEAN_EXPORT: return createMbeanExport();
-			case SpringConfigDslPackage.MBEAN_SERVER: return createMbeanServer();
-			case SpringConfigDslPackage.PROPERTY_HOLDER: return createPropertyHolder();
-			case SpringConfigDslPackage.PROPERTY_PLACEHOLDER: return createPropertyPlaceholder();
-			case SpringConfigDslPackage.PROPERTY_OVERRIDE: return createPropertyOverride();
-			case SpringConfigDslPackage.SPRING_CONFIGURED: return createSpringConfigured();
-			case SpringConfigDslPackage.ASPECT: return createAspect();
-			case SpringConfigDslPackage.AOP_ASPECT_JAUTOPROXY: return createAopAspectJAutoproxy();
-			case SpringConfigDslPackage.AOP_INCLUDE: return createAopInclude();
-			case SpringConfigDslPackage.AOP_CONFIG: return createAopConfig();
-			case SpringConfigDslPackage.AOP_POINTCUT: return createAopPointcut();
-			case SpringConfigDslPackage.AOP_ADVISOR: return createAopAdvisor();
-			case SpringConfigDslPackage.AOP_ASPECT: return createAopAspect();
-			case SpringConfigDslPackage.DECLARE_PARENTS: return createDeclareParents();
-			case SpringConfigDslPackage.INTERFACE: return createInterface();
-			case SpringConfigDslPackage.AOP_DEFAULT_IMPL_INTERFACE: return createAopDefaultImplInterface();
-			case SpringConfigDslPackage.AOP_DELEGATE_IMPL_REF: return createAopDelegateImplRef();
-			case SpringConfigDslPackage.ADVISE: return createAdvise();
-			case SpringConfigDslPackage.BEFORE_ADVISE: return createBeforeAdvise();
-			case SpringConfigDslPackage.AFTER_ADVISE: return createAfterAdvise();
-			case SpringConfigDslPackage.AROUND_ADVISE: return createAroundAdvise();
-			case SpringConfigDslPackage.AFTER_RETURNING: return createAfterReturning();
-			case SpringConfigDslPackage.AFTER_THOWING: return createAfterThowing();
-			case SpringConfigDslPackage.TX_ADVISE: return createTxAdvise();
-			case SpringConfigDslPackage.TX_ATTRIBUTE: return createTxAttribute();
-			case SpringConfigDslPackage.TX_METHOD: return createTxMethod();
-			case SpringConfigDslPackage.TX_JTA_TRANSACTION_MANAGER: return createTxJtaTransactionManager();
-			case SpringConfigDslPackage.COMPONENT: return createComponent();
-			case SpringConfigDslPackage.CREATION_METHOD: return createCreationMethod();
-			case SpringConfigDslPackage.CLASS_OR_FACTORY: return createClassOrFactory();
-			case SpringConfigDslPackage.FACTORY: return createFactory();
-			case SpringConfigDslPackage.CLASS: return createClass();
-			case SpringConfigDslPackage.AOP_SCOPED_PROXY: return createAopScopedProxy();
-			case SpringConfigDslPackage.FEATURE: return createFeature();
-			case SpringConfigDslPackage.ATTRIBUTE: return createAttribute();
-			case SpringConfigDslPackage.REFERENCE: return createReference();
-			case SpringConfigDslPackage.LOOKUP_METHOD: return createLookupMethod();
-			case SpringConfigDslPackage.QUALIFIER: return createQualifier();
-			case SpringConfigDslPackage.META: return createMeta();
-			case SpringConfigDslPackage.QUALIFIER_ATTRIBUTE: return createQualifierAttribute();
-			case SpringConfigDslPackage.SLIST: return createsList();
-			case SpringConfigDslPackage.SSET: return createsSet();
-			case SpringConfigDslPackage.PROPS: return createProps();
-			case SpringConfigDslPackage.PROP: return createProp();
-			case SpringConfigDslPackage.MAP: return createMap();
-			case SpringConfigDslPackage.MAP_ENTRY: return createMapEntry();
-			case SpringConfigDslPackage.KEY: return createKey();
-			case SpringConfigDslPackage.UTIL_CONSTANT: return createUtilConstant();
-			case SpringConfigDslPackage.UTIL_PROPERTY_PATH: return createUtilPropertyPath();
-			case SpringConfigDslPackage.UTIL_PROPERTIES: return createUtilProperties();
-			case SpringConfigDslPackage.UTIL_LIST: return createUtilList();
-			case SpringConfigDslPackage.UTIL_MAP: return createUtilMap();
-			case SpringConfigDslPackage.UTIL_SET: return createUtilSet();
-			case SpringConfigDslPackage.PROPERTY_FILE: return createPropertyFile();
-			case SpringConfigDslPackage.DATA_STRING: return createDataString();
-			default:
-				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
-		}
-	}
+    switch (eClass.getClassifierID())
+    {
+      case SpringConfigDslPackage.SPRING_PROJECT: return createSpringProject();
+      case SpringConfigDslPackage.ABSTRACT_KEY_VALUE: return createAbstractKeyValue();
+      case SpringConfigDslPackage.ABSTRACT_ARTEFACT: return createAbstractArtefact();
+      case SpringConfigDslPackage.COLLECTION: return createCollection();
+      case SpringConfigDslPackage.CONFIGURATION: return createConfiguration();
+      case SpringConfigDslPackage.MVC: return createMVC();
+      case SpringConfigDslPackage.ALIAS: return createAlias();
+      case SpringConfigDslPackage.IMPORT: return createImport();
+      case SpringConfigDslPackage.CONTEXT: return createContext();
+      case SpringConfigDslPackage.ANNOTATION_CONFIG: return createAnnotationConfig();
+      case SpringConfigDslPackage.COMPONENT_SCAN: return createComponentScan();
+      case SpringConfigDslPackage.INCLUDE_FILTER: return createIncludeFilter();
+      case SpringConfigDslPackage.EXCLUDE_FILTER: return createExcludeFilter();
+      case SpringConfigDslPackage.LOAD_TIME_WEAVER: return createLoadTimeWeaver();
+      case SpringConfigDslPackage.MBEAN_EXPORT: return createMbeanExport();
+      case SpringConfigDslPackage.MBEAN_SERVER: return createMbeanServer();
+      case SpringConfigDslPackage.PROPERTY_HOLDER: return createPropertyHolder();
+      case SpringConfigDslPackage.PROPERTY_PLACEHOLDER: return createPropertyPlaceholder();
+      case SpringConfigDslPackage.PROPERTY_OVERRIDE: return createPropertyOverride();
+      case SpringConfigDslPackage.SPRING_CONFIGURED: return createSpringConfigured();
+      case SpringConfigDslPackage.ASPECT: return createAspect();
+      case SpringConfigDslPackage.AOP_ASPECT_JAUTOPROXY: return createAopAspectJAutoproxy();
+      case SpringConfigDslPackage.AOP_INCLUDE: return createAopInclude();
+      case SpringConfigDslPackage.AOP_CONFIG: return createAopConfig();
+      case SpringConfigDslPackage.AOP_POINTCUT: return createAopPointcut();
+      case SpringConfigDslPackage.AOP_ADVISOR: return createAopAdvisor();
+      case SpringConfigDslPackage.AOP_ASPECT: return createAopAspect();
+      case SpringConfigDslPackage.DECLARE_PARENTS: return createDeclareParents();
+      case SpringConfigDslPackage.INTERFACE: return createInterface();
+      case SpringConfigDslPackage.AOP_DEFAULT_IMPL_INTERFACE: return createAopDefaultImplInterface();
+      case SpringConfigDslPackage.AOP_DELEGATE_IMPL_REF: return createAopDelegateImplRef();
+      case SpringConfigDslPackage.ADVISE: return createAdvise();
+      case SpringConfigDslPackage.BEFORE_ADVISE: return createBeforeAdvise();
+      case SpringConfigDslPackage.AFTER_ADVISE: return createAfterAdvise();
+      case SpringConfigDslPackage.AROUND_ADVISE: return createAroundAdvise();
+      case SpringConfigDslPackage.AFTER_RETURNING: return createAfterReturning();
+      case SpringConfigDslPackage.AFTER_THOWING: return createAfterThowing();
+      case SpringConfigDslPackage.TX_ADVISE: return createTxAdvise();
+      case SpringConfigDslPackage.TX_ATTRIBUTE: return createTxAttribute();
+      case SpringConfigDslPackage.TX_METHOD: return createTxMethod();
+      case SpringConfigDslPackage.TX_JTA_TRANSACTION_MANAGER: return createTxJtaTransactionManager();
+      case SpringConfigDslPackage.COMPONENT: return createComponent();
+      case SpringConfigDslPackage.CREATION_METHOD: return createCreationMethod();
+      case SpringConfigDslPackage.CLASS_OR_FACTORY: return createClassOrFactory();
+      case SpringConfigDslPackage.FACTORY: return createFactory();
+      case SpringConfigDslPackage.CLASS: return createClass();
+      case SpringConfigDslPackage.AOP_SCOPED_PROXY: return createAopScopedProxy();
+      case SpringConfigDslPackage.FEATURE: return createFeature();
+      case SpringConfigDslPackage.ATTRIBUTE: return createAttribute();
+      case SpringConfigDslPackage.REFERENCE: return createReference();
+      case SpringConfigDslPackage.LOOKUP_METHOD: return createLookupMethod();
+      case SpringConfigDslPackage.QUALIFIER: return createQualifier();
+      case SpringConfigDslPackage.META: return createMeta();
+      case SpringConfigDslPackage.QUALIFIER_ATTRIBUTE: return createQualifierAttribute();
+      case SpringConfigDslPackage.SLIST: return createsList();
+      case SpringConfigDslPackage.SSET: return createsSet();
+      case SpringConfigDslPackage.PROPS: return createProps();
+      case SpringConfigDslPackage.PROP: return createProp();
+      case SpringConfigDslPackage.MAP: return createMap();
+      case SpringConfigDslPackage.MAP_ENTRY: return createMapEntry();
+      case SpringConfigDslPackage.KEY: return createKey();
+      case SpringConfigDslPackage.UTIL_CONSTANT: return createUtilConstant();
+      case SpringConfigDslPackage.UTIL_PROPERTY_PATH: return createUtilPropertyPath();
+      case SpringConfigDslPackage.UTIL_PROPERTIES: return createUtilProperties();
+      case SpringConfigDslPackage.UTIL_LIST: return createUtilList();
+      case SpringConfigDslPackage.UTIL_MAP: return createUtilMap();
+      case SpringConfigDslPackage.UTIL_SET: return createUtilSet();
+      case SpringConfigDslPackage.PROPERTY_FILE: return createPropertyFile();
+      case SpringConfigDslPackage.DATA_STRING: return createDataString();
+      default:
+        throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
+    }
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public Object createFromString(EDataType eDataType, String initialValue)
   {
-		switch (eDataType.getClassifierID()) {
-			case SpringConfigDslPackage.SBOOLEAN:
-				return createsBooleanFromString(eDataType, initialValue);
-			case SpringConfigDslPackage.DEFAULTABLE_BOOLEAN:
-				return createDefaultableBooleanFromString(eDataType, initialValue);
-			case SpringConfigDslPackage.AUTO_WIRED_TYPE:
-				return createAutoWiredTypeFromString(eDataType, initialValue);
-			case SpringConfigDslPackage.ENUM_SCOPED_PROXY:
-				return createEnumScopedProxyFromString(eDataType, initialValue);
-			case SpringConfigDslPackage.ENUM_TYPE_FILTER:
-				return createEnumTypeFilterFromString(eDataType, initialValue);
-			case SpringConfigDslPackage.MBEAN_REGISTRATION_ENUM:
-				return createMbeanRegistrationEnumFromString(eDataType, initialValue);
-			case SpringConfigDslPackage.ENUM_ISOLATION:
-				return createEnumIsolationFromString(eDataType, initialValue);
-			case SpringConfigDslPackage.PROPAGATION_ENUM:
-				return createPropagationEnumFromString(eDataType, initialValue);
-			default:
-				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
-		}
-	}
+    switch (eDataType.getClassifierID())
+    {
+      case SpringConfigDslPackage.SBOOLEAN:
+        return createsBooleanFromString(eDataType, initialValue);
+      case SpringConfigDslPackage.DEFAULTABLE_BOOLEAN:
+        return createDefaultableBooleanFromString(eDataType, initialValue);
+      case SpringConfigDslPackage.AUTO_WIRED_TYPE:
+        return createAutoWiredTypeFromString(eDataType, initialValue);
+      case SpringConfigDslPackage.ENUM_SCOPED_PROXY:
+        return createEnumScopedProxyFromString(eDataType, initialValue);
+      case SpringConfigDslPackage.ENUM_TYPE_FILTER:
+        return createEnumTypeFilterFromString(eDataType, initialValue);
+      case SpringConfigDslPackage.MBEAN_REGISTRATION_ENUM:
+        return createMbeanRegistrationEnumFromString(eDataType, initialValue);
+      case SpringConfigDslPackage.ENUM_ISOLATION:
+        return createEnumIsolationFromString(eDataType, initialValue);
+      case SpringConfigDslPackage.PROPAGATION_ENUM:
+        return createPropagationEnumFromString(eDataType, initialValue);
+      default:
+        throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
+    }
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public String convertToString(EDataType eDataType, Object instanceValue)
   {
-		switch (eDataType.getClassifierID()) {
-			case SpringConfigDslPackage.SBOOLEAN:
-				return convertsBooleanToString(eDataType, instanceValue);
-			case SpringConfigDslPackage.DEFAULTABLE_BOOLEAN:
-				return convertDefaultableBooleanToString(eDataType, instanceValue);
-			case SpringConfigDslPackage.AUTO_WIRED_TYPE:
-				return convertAutoWiredTypeToString(eDataType, instanceValue);
-			case SpringConfigDslPackage.ENUM_SCOPED_PROXY:
-				return convertEnumScopedProxyToString(eDataType, instanceValue);
-			case SpringConfigDslPackage.ENUM_TYPE_FILTER:
-				return convertEnumTypeFilterToString(eDataType, instanceValue);
-			case SpringConfigDslPackage.MBEAN_REGISTRATION_ENUM:
-				return convertMbeanRegistrationEnumToString(eDataType, instanceValue);
-			case SpringConfigDslPackage.ENUM_ISOLATION:
-				return convertEnumIsolationToString(eDataType, instanceValue);
-			case SpringConfigDslPackage.PROPAGATION_ENUM:
-				return convertPropagationEnumToString(eDataType, instanceValue);
-			default:
-				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
-		}
-	}
+    switch (eDataType.getClassifierID())
+    {
+      case SpringConfigDslPackage.SBOOLEAN:
+        return convertsBooleanToString(eDataType, instanceValue);
+      case SpringConfigDslPackage.DEFAULTABLE_BOOLEAN:
+        return convertDefaultableBooleanToString(eDataType, instanceValue);
+      case SpringConfigDslPackage.AUTO_WIRED_TYPE:
+        return convertAutoWiredTypeToString(eDataType, instanceValue);
+      case SpringConfigDslPackage.ENUM_SCOPED_PROXY:
+        return convertEnumScopedProxyToString(eDataType, instanceValue);
+      case SpringConfigDslPackage.ENUM_TYPE_FILTER:
+        return convertEnumTypeFilterToString(eDataType, instanceValue);
+      case SpringConfigDslPackage.MBEAN_REGISTRATION_ENUM:
+        return convertMbeanRegistrationEnumToString(eDataType, instanceValue);
+      case SpringConfigDslPackage.ENUM_ISOLATION:
+        return convertEnumIsolationToString(eDataType, instanceValue);
+      case SpringConfigDslPackage.PROPAGATION_ENUM:
+        return convertPropagationEnumToString(eDataType, instanceValue);
+      default:
+        throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
+    }
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public SpringProject createSpringProject()
   {
-		SpringProjectImpl springProject = new SpringProjectImpl();
-		return springProject;
-	}
+    SpringProjectImpl springProject = new SpringProjectImpl();
+    return springProject;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public AbstractKeyValue createAbstractKeyValue()
   {
-		AbstractKeyValueImpl abstractKeyValue = new AbstractKeyValueImpl();
-		return abstractKeyValue;
-	}
+    AbstractKeyValueImpl abstractKeyValue = new AbstractKeyValueImpl();
+    return abstractKeyValue;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public AbstractArtefact createAbstractArtefact()
   {
-		AbstractArtefactImpl abstractArtefact = new AbstractArtefactImpl();
-		return abstractArtefact;
-	}
+    AbstractArtefactImpl abstractArtefact = new AbstractArtefactImpl();
+    return abstractArtefact;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public Collection createCollection()
   {
-		CollectionImpl collection = new CollectionImpl();
-		return collection;
-	}
+    CollectionImpl collection = new CollectionImpl();
+    return collection;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public Configuration createConfiguration()
   {
-		ConfigurationImpl configuration = new ConfigurationImpl();
-		return configuration;
-	}
+    ConfigurationImpl configuration = new ConfigurationImpl();
+    return configuration;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
+  public MVC createMVC()
+  {
+    MVCImpl mvc = new MVCImpl();
+    return mvc;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public Alias createAlias()
   {
-		AliasImpl alias = new AliasImpl();
-		return alias;
-	}
+    AliasImpl alias = new AliasImpl();
+    return alias;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public Import createImport()
   {
-		ImportImpl import_ = new ImportImpl();
-		return import_;
-	}
+    ImportImpl import_ = new ImportImpl();
+    return import_;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public Context createContext()
   {
-		ContextImpl context = new ContextImpl();
-		return context;
-	}
+    ContextImpl context = new ContextImpl();
+    return context;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public AnnotationConfig createAnnotationConfig()
   {
-		AnnotationConfigImpl annotationConfig = new AnnotationConfigImpl();
-		return annotationConfig;
-	}
+    AnnotationConfigImpl annotationConfig = new AnnotationConfigImpl();
+    return annotationConfig;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public ComponentScan createComponentScan()
   {
-		ComponentScanImpl componentScan = new ComponentScanImpl();
-		return componentScan;
-	}
+    ComponentScanImpl componentScan = new ComponentScanImpl();
+    return componentScan;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public IncludeFilter createIncludeFilter()
   {
-		IncludeFilterImpl includeFilter = new IncludeFilterImpl();
-		return includeFilter;
-	}
+    IncludeFilterImpl includeFilter = new IncludeFilterImpl();
+    return includeFilter;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public ExcludeFilter createExcludeFilter()
   {
-		ExcludeFilterImpl excludeFilter = new ExcludeFilterImpl();
-		return excludeFilter;
-	}
+    ExcludeFilterImpl excludeFilter = new ExcludeFilterImpl();
+    return excludeFilter;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public LoadTimeWeaver createLoadTimeWeaver()
   {
-		LoadTimeWeaverImpl loadTimeWeaver = new LoadTimeWeaverImpl();
-		return loadTimeWeaver;
-	}
+    LoadTimeWeaverImpl loadTimeWeaver = new LoadTimeWeaverImpl();
+    return loadTimeWeaver;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public MbeanExport createMbeanExport()
   {
-		MbeanExportImpl mbeanExport = new MbeanExportImpl();
-		return mbeanExport;
-	}
+    MbeanExportImpl mbeanExport = new MbeanExportImpl();
+    return mbeanExport;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public MbeanServer createMbeanServer()
   {
-		MbeanServerImpl mbeanServer = new MbeanServerImpl();
-		return mbeanServer;
-	}
+    MbeanServerImpl mbeanServer = new MbeanServerImpl();
+    return mbeanServer;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public PropertyHolder createPropertyHolder()
   {
-		PropertyHolderImpl propertyHolder = new PropertyHolderImpl();
-		return propertyHolder;
-	}
+    PropertyHolderImpl propertyHolder = new PropertyHolderImpl();
+    return propertyHolder;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public PropertyPlaceholder createPropertyPlaceholder()
   {
-		PropertyPlaceholderImpl propertyPlaceholder = new PropertyPlaceholderImpl();
-		return propertyPlaceholder;
-	}
+    PropertyPlaceholderImpl propertyPlaceholder = new PropertyPlaceholderImpl();
+    return propertyPlaceholder;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public PropertyOverride createPropertyOverride()
   {
-		PropertyOverrideImpl propertyOverride = new PropertyOverrideImpl();
-		return propertyOverride;
-	}
+    PropertyOverrideImpl propertyOverride = new PropertyOverrideImpl();
+    return propertyOverride;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public SpringConfigured createSpringConfigured()
   {
-		SpringConfiguredImpl springConfigured = new SpringConfiguredImpl();
-		return springConfigured;
-	}
+    SpringConfiguredImpl springConfigured = new SpringConfiguredImpl();
+    return springConfigured;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public Aspect createAspect()
   {
-		AspectImpl aspect = new AspectImpl();
-		return aspect;
-	}
+    AspectImpl aspect = new AspectImpl();
+    return aspect;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public AopAspectJAutoproxy createAopAspectJAutoproxy()
   {
-		AopAspectJAutoproxyImpl aopAspectJAutoproxy = new AopAspectJAutoproxyImpl();
-		return aopAspectJAutoproxy;
-	}
+    AopAspectJAutoproxyImpl aopAspectJAutoproxy = new AopAspectJAutoproxyImpl();
+    return aopAspectJAutoproxy;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public AopInclude createAopInclude()
   {
-		AopIncludeImpl aopInclude = new AopIncludeImpl();
-		return aopInclude;
-	}
+    AopIncludeImpl aopInclude = new AopIncludeImpl();
+    return aopInclude;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public AopConfig createAopConfig()
   {
-		AopConfigImpl aopConfig = new AopConfigImpl();
-		return aopConfig;
-	}
+    AopConfigImpl aopConfig = new AopConfigImpl();
+    return aopConfig;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public AopPointcut createAopPointcut()
   {
-		AopPointcutImpl aopPointcut = new AopPointcutImpl();
-		return aopPointcut;
-	}
+    AopPointcutImpl aopPointcut = new AopPointcutImpl();
+    return aopPointcut;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public AopAdvisor createAopAdvisor()
   {
-		AopAdvisorImpl aopAdvisor = new AopAdvisorImpl();
-		return aopAdvisor;
-	}
+    AopAdvisorImpl aopAdvisor = new AopAdvisorImpl();
+    return aopAdvisor;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public AopAspect createAopAspect()
   {
-		AopAspectImpl aopAspect = new AopAspectImpl();
-		return aopAspect;
-	}
+    AopAspectImpl aopAspect = new AopAspectImpl();
+    return aopAspect;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public DeclareParents createDeclareParents()
   {
-		DeclareParentsImpl declareParents = new DeclareParentsImpl();
-		return declareParents;
-	}
+    DeclareParentsImpl declareParents = new DeclareParentsImpl();
+    return declareParents;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public Interface createInterface()
   {
-		InterfaceImpl interface_ = new InterfaceImpl();
-		return interface_;
-	}
+    InterfaceImpl interface_ = new InterfaceImpl();
+    return interface_;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public AopDefaultImplInterface createAopDefaultImplInterface()
   {
-		AopDefaultImplInterfaceImpl aopDefaultImplInterface = new AopDefaultImplInterfaceImpl();
-		return aopDefaultImplInterface;
-	}
+    AopDefaultImplInterfaceImpl aopDefaultImplInterface = new AopDefaultImplInterfaceImpl();
+    return aopDefaultImplInterface;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public AopDelegateImplRef createAopDelegateImplRef()
   {
-		AopDelegateImplRefImpl aopDelegateImplRef = new AopDelegateImplRefImpl();
-		return aopDelegateImplRef;
-	}
+    AopDelegateImplRefImpl aopDelegateImplRef = new AopDelegateImplRefImpl();
+    return aopDelegateImplRef;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public Advise createAdvise()
   {
-		AdviseImpl advise = new AdviseImpl();
-		return advise;
-	}
+    AdviseImpl advise = new AdviseImpl();
+    return advise;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public BeforeAdvise createBeforeAdvise()
   {
-		BeforeAdviseImpl beforeAdvise = new BeforeAdviseImpl();
-		return beforeAdvise;
-	}
+    BeforeAdviseImpl beforeAdvise = new BeforeAdviseImpl();
+    return beforeAdvise;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public AfterAdvise createAfterAdvise()
   {
-		AfterAdviseImpl afterAdvise = new AfterAdviseImpl();
-		return afterAdvise;
-	}
+    AfterAdviseImpl afterAdvise = new AfterAdviseImpl();
+    return afterAdvise;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public AroundAdvise createAroundAdvise()
   {
-		AroundAdviseImpl aroundAdvise = new AroundAdviseImpl();
-		return aroundAdvise;
-	}
+    AroundAdviseImpl aroundAdvise = new AroundAdviseImpl();
+    return aroundAdvise;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public AfterReturning createAfterReturning()
   {
-		AfterReturningImpl afterReturning = new AfterReturningImpl();
-		return afterReturning;
-	}
+    AfterReturningImpl afterReturning = new AfterReturningImpl();
+    return afterReturning;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public AfterThowing createAfterThowing()
   {
-		AfterThowingImpl afterThowing = new AfterThowingImpl();
-		return afterThowing;
-	}
+    AfterThowingImpl afterThowing = new AfterThowingImpl();
+    return afterThowing;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public TxAdvise createTxAdvise()
   {
-		TxAdviseImpl txAdvise = new TxAdviseImpl();
-		return txAdvise;
-	}
+    TxAdviseImpl txAdvise = new TxAdviseImpl();
+    return txAdvise;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public TxAttribute createTxAttribute()
   {
-		TxAttributeImpl txAttribute = new TxAttributeImpl();
-		return txAttribute;
-	}
+    TxAttributeImpl txAttribute = new TxAttributeImpl();
+    return txAttribute;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public TxMethod createTxMethod()
   {
-		TxMethodImpl txMethod = new TxMethodImpl();
-		return txMethod;
-	}
+    TxMethodImpl txMethod = new TxMethodImpl();
+    return txMethod;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public TxJtaTransactionManager createTxJtaTransactionManager()
   {
-		TxJtaTransactionManagerImpl txJtaTransactionManager = new TxJtaTransactionManagerImpl();
-		return txJtaTransactionManager;
-	}
+    TxJtaTransactionManagerImpl txJtaTransactionManager = new TxJtaTransactionManagerImpl();
+    return txJtaTransactionManager;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public Component createComponent()
   {
-		ComponentImpl component = new ComponentImpl();
-		return component;
-	}
+    ComponentImpl component = new ComponentImpl();
+    return component;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public CreationMethod createCreationMethod()
   {
-		CreationMethodImpl creationMethod = new CreationMethodImpl();
-		return creationMethod;
-	}
+    CreationMethodImpl creationMethod = new CreationMethodImpl();
+    return creationMethod;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public ClassOrFactory createClassOrFactory()
   {
-		ClassOrFactoryImpl classOrFactory = new ClassOrFactoryImpl();
-		return classOrFactory;
-	}
+    ClassOrFactoryImpl classOrFactory = new ClassOrFactoryImpl();
+    return classOrFactory;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public Factory createFactory()
   {
-		FactoryImpl factory = new FactoryImpl();
-		return factory;
-	}
+    FactoryImpl factory = new FactoryImpl();
+    return factory;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public org.xtext.spring.springConfigDsl.Class createClass()
   {
-		ClassImpl class_ = new ClassImpl();
-		return class_;
-	}
+    ClassImpl class_ = new ClassImpl();
+    return class_;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public AopScopedProxy createAopScopedProxy()
   {
-		AopScopedProxyImpl aopScopedProxy = new AopScopedProxyImpl();
-		return aopScopedProxy;
-	}
+    AopScopedProxyImpl aopScopedProxy = new AopScopedProxyImpl();
+    return aopScopedProxy;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public Feature createFeature()
   {
-		FeatureImpl feature = new FeatureImpl();
-		return feature;
-	}
+    FeatureImpl feature = new FeatureImpl();
+    return feature;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public Attribute createAttribute()
   {
-		AttributeImpl attribute = new AttributeImpl();
-		return attribute;
-	}
+    AttributeImpl attribute = new AttributeImpl();
+    return attribute;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public Reference createReference()
   {
-		ReferenceImpl reference = new ReferenceImpl();
-		return reference;
-	}
+    ReferenceImpl reference = new ReferenceImpl();
+    return reference;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public LookupMethod createLookupMethod()
   {
-		LookupMethodImpl lookupMethod = new LookupMethodImpl();
-		return lookupMethod;
-	}
+    LookupMethodImpl lookupMethod = new LookupMethodImpl();
+    return lookupMethod;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public Qualifier createQualifier()
   {
-		QualifierImpl qualifier = new QualifierImpl();
-		return qualifier;
-	}
+    QualifierImpl qualifier = new QualifierImpl();
+    return qualifier;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public Meta createMeta()
   {
-		MetaImpl meta = new MetaImpl();
-		return meta;
-	}
+    MetaImpl meta = new MetaImpl();
+    return meta;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public QualifierAttribute createQualifierAttribute()
   {
-		QualifierAttributeImpl qualifierAttribute = new QualifierAttributeImpl();
-		return qualifierAttribute;
-	}
+    QualifierAttributeImpl qualifierAttribute = new QualifierAttributeImpl();
+    return qualifierAttribute;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public sList createsList()
   {
-		sListImpl sList = new sListImpl();
-		return sList;
-	}
+    sListImpl sList = new sListImpl();
+    return sList;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public sSet createsSet()
   {
-		sSetImpl sSet = new sSetImpl();
-		return sSet;
-	}
+    sSetImpl sSet = new sSetImpl();
+    return sSet;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public Props createProps()
   {
-		PropsImpl props = new PropsImpl();
-		return props;
-	}
+    PropsImpl props = new PropsImpl();
+    return props;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public Prop createProp()
   {
-		PropImpl prop = new PropImpl();
-		return prop;
-	}
+    PropImpl prop = new PropImpl();
+    return prop;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public Map createMap()
   {
-		MapImpl map = new MapImpl();
-		return map;
-	}
+    MapImpl map = new MapImpl();
+    return map;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public MapEntry createMapEntry()
   {
-		MapEntryImpl mapEntry = new MapEntryImpl();
-		return mapEntry;
-	}
+    MapEntryImpl mapEntry = new MapEntryImpl();
+    return mapEntry;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public Key createKey()
   {
-		KeyImpl key = new KeyImpl();
-		return key;
-	}
+    KeyImpl key = new KeyImpl();
+    return key;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public UtilConstant createUtilConstant()
   {
-		UtilConstantImpl utilConstant = new UtilConstantImpl();
-		return utilConstant;
-	}
+    UtilConstantImpl utilConstant = new UtilConstantImpl();
+    return utilConstant;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public UtilPropertyPath createUtilPropertyPath()
   {
-		UtilPropertyPathImpl utilPropertyPath = new UtilPropertyPathImpl();
-		return utilPropertyPath;
-	}
+    UtilPropertyPathImpl utilPropertyPath = new UtilPropertyPathImpl();
+    return utilPropertyPath;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public UtilProperties createUtilProperties()
   {
-		UtilPropertiesImpl utilProperties = new UtilPropertiesImpl();
-		return utilProperties;
-	}
+    UtilPropertiesImpl utilProperties = new UtilPropertiesImpl();
+    return utilProperties;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public UtilList createUtilList()
   {
-		UtilListImpl utilList = new UtilListImpl();
-		return utilList;
-	}
+    UtilListImpl utilList = new UtilListImpl();
+    return utilList;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public UtilMap createUtilMap()
   {
-		UtilMapImpl utilMap = new UtilMapImpl();
-		return utilMap;
-	}
+    UtilMapImpl utilMap = new UtilMapImpl();
+    return utilMap;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public UtilSet createUtilSet()
   {
-		UtilSetImpl utilSet = new UtilSetImpl();
-		return utilSet;
-	}
+    UtilSetImpl utilSet = new UtilSetImpl();
+    return utilSet;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public PropertyFile createPropertyFile()
   {
-		PropertyFileImpl propertyFile = new PropertyFileImpl();
-		return propertyFile;
-	}
+    PropertyFileImpl propertyFile = new PropertyFileImpl();
+    return propertyFile;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public DataString createDataString()
   {
-		DataStringImpl dataString = new DataStringImpl();
-		return dataString;
-	}
+    DataStringImpl dataString = new DataStringImpl();
+    return dataString;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public sBoolean createsBooleanFromString(EDataType eDataType, String initialValue)
   {
-		sBoolean result = sBoolean.get(initialValue);
-		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
-		return result;
-	}
+    sBoolean result = sBoolean.get(initialValue);
+    if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+    return result;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public String convertsBooleanToString(EDataType eDataType, Object instanceValue)
   {
-		return instanceValue == null ? null : instanceValue.toString();
-	}
+    return instanceValue == null ? null : instanceValue.toString();
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public DefaultableBoolean createDefaultableBooleanFromString(EDataType eDataType, String initialValue)
   {
-		DefaultableBoolean result = DefaultableBoolean.get(initialValue);
-		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
-		return result;
-	}
+    DefaultableBoolean result = DefaultableBoolean.get(initialValue);
+    if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+    return result;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public String convertDefaultableBooleanToString(EDataType eDataType, Object instanceValue)
   {
-		return instanceValue == null ? null : instanceValue.toString();
-	}
+    return instanceValue == null ? null : instanceValue.toString();
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public AutoWiredType createAutoWiredTypeFromString(EDataType eDataType, String initialValue)
   {
-		AutoWiredType result = AutoWiredType.get(initialValue);
-		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
-		return result;
-	}
+    AutoWiredType result = AutoWiredType.get(initialValue);
+    if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+    return result;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public String convertAutoWiredTypeToString(EDataType eDataType, Object instanceValue)
   {
-		return instanceValue == null ? null : instanceValue.toString();
-	}
+    return instanceValue == null ? null : instanceValue.toString();
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public EnumScopedProxy createEnumScopedProxyFromString(EDataType eDataType, String initialValue)
   {
-		EnumScopedProxy result = EnumScopedProxy.get(initialValue);
-		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
-		return result;
-	}
+    EnumScopedProxy result = EnumScopedProxy.get(initialValue);
+    if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+    return result;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public String convertEnumScopedProxyToString(EDataType eDataType, Object instanceValue)
   {
-		return instanceValue == null ? null : instanceValue.toString();
-	}
+    return instanceValue == null ? null : instanceValue.toString();
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public EnumTypeFilter createEnumTypeFilterFromString(EDataType eDataType, String initialValue)
   {
-		EnumTypeFilter result = EnumTypeFilter.get(initialValue);
-		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
-		return result;
-	}
+    EnumTypeFilter result = EnumTypeFilter.get(initialValue);
+    if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+    return result;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public String convertEnumTypeFilterToString(EDataType eDataType, Object instanceValue)
   {
-		return instanceValue == null ? null : instanceValue.toString();
-	}
+    return instanceValue == null ? null : instanceValue.toString();
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public MbeanRegistrationEnum createMbeanRegistrationEnumFromString(EDataType eDataType, String initialValue)
   {
-		MbeanRegistrationEnum result = MbeanRegistrationEnum.get(initialValue);
-		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
-		return result;
-	}
+    MbeanRegistrationEnum result = MbeanRegistrationEnum.get(initialValue);
+    if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+    return result;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public String convertMbeanRegistrationEnumToString(EDataType eDataType, Object instanceValue)
   {
-		return instanceValue == null ? null : instanceValue.toString();
-	}
+    return instanceValue == null ? null : instanceValue.toString();
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public EnumIsolation createEnumIsolationFromString(EDataType eDataType, String initialValue)
   {
-		EnumIsolation result = EnumIsolation.get(initialValue);
-		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
-		return result;
-	}
+    EnumIsolation result = EnumIsolation.get(initialValue);
+    if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+    return result;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public String convertEnumIsolationToString(EDataType eDataType, Object instanceValue)
   {
-		return instanceValue == null ? null : instanceValue.toString();
-	}
+    return instanceValue == null ? null : instanceValue.toString();
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public PropagationEnum createPropagationEnumFromString(EDataType eDataType, String initialValue)
   {
-		PropagationEnum result = PropagationEnum.get(initialValue);
-		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
-		return result;
-	}
+    PropagationEnum result = PropagationEnum.get(initialValue);
+    if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+    return result;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public String convertPropagationEnumToString(EDataType eDataType, Object instanceValue)
   {
-		return instanceValue == null ? null : instanceValue.toString();
-	}
+    return instanceValue == null ? null : instanceValue.toString();
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public SpringConfigDslPackage getSpringConfigDslPackage()
   {
-		return (SpringConfigDslPackage)getEPackage();
-	}
+    return (SpringConfigDslPackage)getEPackage();
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @deprecated
-	 * @generated
-	 */
+   * @deprecated
+   * @generated
+   */
   @Deprecated
   public static SpringConfigDslPackage getPackage()
   {
-		return SpringConfigDslPackage.eINSTANCE;
-	}
+    return SpringConfigDslPackage.eINSTANCE;
+  }
 
 } //SpringConfigDslFactoryImpl

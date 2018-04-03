@@ -26,51 +26,51 @@ import org.eclipse.emf.common.util.EList;
 public interface AopConfig extends Aspect
 {
   /**
-	 * Returns the value of the '<em><b>Aop Pointcuts</b></em>' containment reference list.
-	 * The list contents are of type {@link org.xtext.spring.springConfigDsl.AopPointcut}.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Aop Pointcuts</b></em>' containment reference list.
+   * The list contents are of type {@link org.xtext.spring.springConfigDsl.AopPointcut}.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Aop Pointcuts</em>' containment reference list isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Aop Pointcuts</em>' containment reference list.
-	 * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getAopConfig_AopPointcuts()
-	 * @model containment="true"
-	 * @generated
-	 */
+   * @return the value of the '<em>Aop Pointcuts</em>' containment reference list.
+   * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getAopConfig_AopPointcuts()
+   * @model containment="true"
+   * @generated
+   */
   EList<AopPointcut> getAopPointcuts();
 
   /**
-	 * Returns the value of the '<em><b>Aop Advisors</b></em>' containment reference list.
-	 * The list contents are of type {@link org.xtext.spring.springConfigDsl.AopAdvisor}.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Aop Advisors</b></em>' containment reference list.
+   * The list contents are of type {@link org.xtext.spring.springConfigDsl.AopAdvisor}.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Aop Advisors</em>' containment reference list isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Aop Advisors</em>' containment reference list.
-	 * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getAopConfig_AopAdvisors()
-	 * @model containment="true"
-	 * @generated
-	 */
+   * @return the value of the '<em>Aop Advisors</em>' containment reference list.
+   * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getAopConfig_AopAdvisors()
+   * @model containment="true"
+   * @generated
+   */
   EList<AopAdvisor> getAopAdvisors();
 
   /**
-	 * Returns the value of the '<em><b>Aspects</b></em>' containment reference list.
-	 * The list contents are of type {@link org.xtext.spring.springConfigDsl.AopAspect}.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Aspects</b></em>' containment reference list.
+   * The list contents are of type {@link org.xtext.spring.springConfigDsl.AopAspect}.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Aspects</em>' containment reference list isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Aspects</em>' containment reference list.
-	 * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getAopConfig_Aspects()
-	 * @model containment="true"
-	 * @generated
-	 */
+   * @return the value of the '<em>Aspects</em>' containment reference list.
+   * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getAopConfig_Aspects()
+   * @model containment="true"
+   * @generated
+   */
   EList<AopAspect> getAspects();
 
 } // AopConfig

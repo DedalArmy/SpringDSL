@@ -39,196 +39,202 @@ import org.xtext.spring.springConfigDsl.SpringConfigDslPackage;
 public class MapImpl extends CollectionImpl implements Map
 {
   /**
-	 * The default value of the '{@link #getKeyType() <em>Key Type</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The default value of the '{@link #getKeyType() <em>Key Type</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getKeyType()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getKeyType()
+   * @generated
+   * @ordered
+   */
   protected static final String KEY_TYPE_EDEFAULT = null;
 
   /**
-	 * The cached value of the '{@link #getKeyType() <em>Key Type</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getKeyType() <em>Key Type</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getKeyType()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getKeyType()
+   * @generated
+   * @ordered
+   */
   protected String keyType = KEY_TYPE_EDEFAULT;
 
   /**
-	 * The cached value of the '{@link #getEntries() <em>Entries</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getEntries() <em>Entries</em>}' containment reference list.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getEntries()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getEntries()
+   * @generated
+   * @ordered
+   */
   protected EList<MapEntry> entries;
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   protected MapImpl()
   {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   protected EClass eStaticClass()
   {
-		return SpringConfigDslPackage.Literals.MAP;
-	}
+    return SpringConfigDslPackage.Literals.MAP;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public String getKeyType()
   {
-		return keyType;
-	}
+    return keyType;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public void setKeyType(String newKeyType)
   {
-		String oldKeyType = keyType;
-		keyType = newKeyType;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.MAP__KEY_TYPE, oldKeyType, keyType));
-	}
+    String oldKeyType = keyType;
+    keyType = newKeyType;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.MAP__KEY_TYPE, oldKeyType, keyType));
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public EList<MapEntry> getEntries()
   {
-		if (entries == null) {
-			entries = new EObjectContainmentEList<MapEntry>(MapEntry.class, this, SpringConfigDslPackage.MAP__ENTRIES);
-		}
-		return entries;
-	}
+    if (entries == null)
+    {
+      entries = new EObjectContainmentEList<MapEntry>(MapEntry.class, this, SpringConfigDslPackage.MAP__ENTRIES);
+    }
+    return entries;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
   {
-		switch (featureID) {
-			case SpringConfigDslPackage.MAP__ENTRIES:
-				return ((InternalEList<?>)getEntries()).basicRemove(otherEnd, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
-	}
+    switch (featureID)
+    {
+      case SpringConfigDslPackage.MAP__ENTRIES:
+        return ((InternalEList<?>)getEntries()).basicRemove(otherEnd, msgs);
+    }
+    return super.eInverseRemove(otherEnd, featureID, msgs);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType)
   {
-		switch (featureID) {
-			case SpringConfigDslPackage.MAP__KEY_TYPE:
-				return getKeyType();
-			case SpringConfigDslPackage.MAP__ENTRIES:
-				return getEntries();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+    switch (featureID)
+    {
+      case SpringConfigDslPackage.MAP__KEY_TYPE:
+        return getKeyType();
+      case SpringConfigDslPackage.MAP__ENTRIES:
+        return getEntries();
+    }
+    return super.eGet(featureID, resolve, coreType);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @SuppressWarnings("unchecked")
   @Override
   public void eSet(int featureID, Object newValue)
   {
-		switch (featureID) {
-			case SpringConfigDslPackage.MAP__KEY_TYPE:
-				setKeyType((String)newValue);
-				return;
-			case SpringConfigDslPackage.MAP__ENTRIES:
-				getEntries().clear();
-				getEntries().addAll((Collection<? extends MapEntry>)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+    switch (featureID)
+    {
+      case SpringConfigDslPackage.MAP__KEY_TYPE:
+        setKeyType((String)newValue);
+        return;
+      case SpringConfigDslPackage.MAP__ENTRIES:
+        getEntries().clear();
+        getEntries().addAll((Collection<? extends MapEntry>)newValue);
+        return;
+    }
+    super.eSet(featureID, newValue);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public void eUnset(int featureID)
   {
-		switch (featureID) {
-			case SpringConfigDslPackage.MAP__KEY_TYPE:
-				setKeyType(KEY_TYPE_EDEFAULT);
-				return;
-			case SpringConfigDslPackage.MAP__ENTRIES:
-				getEntries().clear();
-				return;
-		}
-		super.eUnset(featureID);
-	}
+    switch (featureID)
+    {
+      case SpringConfigDslPackage.MAP__KEY_TYPE:
+        setKeyType(KEY_TYPE_EDEFAULT);
+        return;
+      case SpringConfigDslPackage.MAP__ENTRIES:
+        getEntries().clear();
+        return;
+    }
+    super.eUnset(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public boolean eIsSet(int featureID)
   {
-		switch (featureID) {
-			case SpringConfigDslPackage.MAP__KEY_TYPE:
-				return KEY_TYPE_EDEFAULT == null ? keyType != null : !KEY_TYPE_EDEFAULT.equals(keyType);
-			case SpringConfigDslPackage.MAP__ENTRIES:
-				return entries != null && !entries.isEmpty();
-		}
-		return super.eIsSet(featureID);
-	}
+    switch (featureID)
+    {
+      case SpringConfigDslPackage.MAP__KEY_TYPE:
+        return KEY_TYPE_EDEFAULT == null ? keyType != null : !KEY_TYPE_EDEFAULT.equals(keyType);
+      case SpringConfigDslPackage.MAP__ENTRIES:
+        return entries != null && !entries.isEmpty();
+    }
+    return super.eIsSet(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public String toString()
   {
-		if (eIsProxy()) return super.toString();
+    if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (keyType: ");
-		result.append(keyType);
-		result.append(')');
-		return result.toString();
-	}
+    StringBuffer result = new StringBuffer(super.toString());
+    result.append(" (keyType: ");
+    result.append(keyType);
+    result.append(')');
+    return result.toString();
+  }
 
 } //MapImpl

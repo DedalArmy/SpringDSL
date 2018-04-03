@@ -31,6 +31,8 @@
         eType="#//Import" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="contexts" upperBound="-1"
         eType="#//Context" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="mvcs" upperBound="-1" eType="#//MVC"
+        containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="aspects" upperBound="-1"
         eType="#//Aspect" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="utilConstants" upperBound="-1"
@@ -48,10 +50,11 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="txAdvices" upperBound="-1"
         eType="#//TxAdvise" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="txJtaTransactionManager"
-        eType="#//TxJtaTransactionManager" containment="true"/>
+        upperBound="-1" eType="#//TxJtaTransactionManager" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="ConfigurationComposite"
         upperBound="-1" eType="#//Configuration" containment="true"/>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MVC"/>
   <eClassifiers xsi:type="ecore:EClass" name="Alias">
     <eStructuralFeatures xsi:type="ecore:EReference" name="origin" eType="#//Component"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="alias" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -262,7 +265,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Reference" eSuperTypes="#//AbstractArtefact">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="ref" eType="#//Component"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ref" eType="#//AbstractArtefact"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="LookupMethod">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>

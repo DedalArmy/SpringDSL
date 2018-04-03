@@ -30,201 +30,205 @@ import org.xtext.spring.springConfigDsl.UtilPropertyPath;
 public class UtilPropertyPathImpl extends MinimalEObjectImpl.Container implements UtilPropertyPath
 {
   /**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getName()
+   * @generated
+   * @ordered
+   */
   protected static final String NAME_EDEFAULT = null;
 
   /**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getName()
+   * @generated
+   * @ordered
+   */
   protected String name = NAME_EDEFAULT;
 
   /**
-	 * The default value of the '{@link #getPath() <em>Path</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The default value of the '{@link #getPath() <em>Path</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getPath()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getPath()
+   * @generated
+   * @ordered
+   */
   protected static final String PATH_EDEFAULT = null;
 
   /**
-	 * The cached value of the '{@link #getPath() <em>Path</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getPath() <em>Path</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getPath()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getPath()
+   * @generated
+   * @ordered
+   */
   protected String path = PATH_EDEFAULT;
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   protected UtilPropertyPathImpl()
   {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   protected EClass eStaticClass()
   {
-		return SpringConfigDslPackage.Literals.UTIL_PROPERTY_PATH;
-	}
+    return SpringConfigDslPackage.Literals.UTIL_PROPERTY_PATH;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public String getName()
   {
-		return name;
-	}
+    return name;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public void setName(String newName)
   {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.UTIL_PROPERTY_PATH__NAME, oldName, name));
-	}
+    String oldName = name;
+    name = newName;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.UTIL_PROPERTY_PATH__NAME, oldName, name));
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public String getPath()
   {
-		return path;
-	}
+    return path;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public void setPath(String newPath)
   {
-		String oldPath = path;
-		path = newPath;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.UTIL_PROPERTY_PATH__PATH, oldPath, path));
-	}
+    String oldPath = path;
+    path = newPath;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.UTIL_PROPERTY_PATH__PATH, oldPath, path));
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType)
   {
-		switch (featureID) {
-			case SpringConfigDslPackage.UTIL_PROPERTY_PATH__NAME:
-				return getName();
-			case SpringConfigDslPackage.UTIL_PROPERTY_PATH__PATH:
-				return getPath();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+    switch (featureID)
+    {
+      case SpringConfigDslPackage.UTIL_PROPERTY_PATH__NAME:
+        return getName();
+      case SpringConfigDslPackage.UTIL_PROPERTY_PATH__PATH:
+        return getPath();
+    }
+    return super.eGet(featureID, resolve, coreType);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public void eSet(int featureID, Object newValue)
   {
-		switch (featureID) {
-			case SpringConfigDslPackage.UTIL_PROPERTY_PATH__NAME:
-				setName((String)newValue);
-				return;
-			case SpringConfigDslPackage.UTIL_PROPERTY_PATH__PATH:
-				setPath((String)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+    switch (featureID)
+    {
+      case SpringConfigDslPackage.UTIL_PROPERTY_PATH__NAME:
+        setName((String)newValue);
+        return;
+      case SpringConfigDslPackage.UTIL_PROPERTY_PATH__PATH:
+        setPath((String)newValue);
+        return;
+    }
+    super.eSet(featureID, newValue);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public void eUnset(int featureID)
   {
-		switch (featureID) {
-			case SpringConfigDslPackage.UTIL_PROPERTY_PATH__NAME:
-				setName(NAME_EDEFAULT);
-				return;
-			case SpringConfigDslPackage.UTIL_PROPERTY_PATH__PATH:
-				setPath(PATH_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+    switch (featureID)
+    {
+      case SpringConfigDslPackage.UTIL_PROPERTY_PATH__NAME:
+        setName(NAME_EDEFAULT);
+        return;
+      case SpringConfigDslPackage.UTIL_PROPERTY_PATH__PATH:
+        setPath(PATH_EDEFAULT);
+        return;
+    }
+    super.eUnset(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public boolean eIsSet(int featureID)
   {
-		switch (featureID) {
-			case SpringConfigDslPackage.UTIL_PROPERTY_PATH__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-			case SpringConfigDslPackage.UTIL_PROPERTY_PATH__PATH:
-				return PATH_EDEFAULT == null ? path != null : !PATH_EDEFAULT.equals(path);
-		}
-		return super.eIsSet(featureID);
-	}
+    switch (featureID)
+    {
+      case SpringConfigDslPackage.UTIL_PROPERTY_PATH__NAME:
+        return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+      case SpringConfigDslPackage.UTIL_PROPERTY_PATH__PATH:
+        return PATH_EDEFAULT == null ? path != null : !PATH_EDEFAULT.equals(path);
+    }
+    return super.eIsSet(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public String toString()
   {
-		if (eIsProxy()) return super.toString();
+    if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
-		result.append(", path: ");
-		result.append(path);
-		result.append(')');
-		return result.toString();
-	}
+    StringBuffer result = new StringBuffer(super.toString());
+    result.append(" (name: ");
+    result.append(name);
+    result.append(", path: ");
+    result.append(path);
+    result.append(')');
+    return result.toString();
+  }
 
 } //UtilPropertyPathImpl

@@ -25,58 +25,58 @@ import org.eclipse.emf.ecore.EObject;
 public interface ExcludeFilter extends EObject
 {
   /**
-	 * Returns the value of the '<em><b>Type</b></em>' attribute.
-	 * The literals are from the enumeration {@link org.xtext.spring.springConfigDsl.EnumTypeFilter}.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Type</b></em>' attribute.
+   * The literals are from the enumeration {@link org.xtext.spring.springConfigDsl.EnumTypeFilter}.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Type</em>' attribute isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Type</em>' attribute.
-	 * @see org.xtext.spring.springConfigDsl.EnumTypeFilter
-	 * @see #setType(EnumTypeFilter)
-	 * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getExcludeFilter_Type()
-	 * @model
-	 * @generated
-	 */
+   * @return the value of the '<em>Type</em>' attribute.
+   * @see org.xtext.spring.springConfigDsl.EnumTypeFilter
+   * @see #setType(EnumTypeFilter)
+   * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getExcludeFilter_Type()
+   * @model
+   * @generated
+   */
   EnumTypeFilter getType();
 
   /**
-	 * Sets the value of the '{@link org.xtext.spring.springConfigDsl.ExcludeFilter#getType <em>Type</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * Sets the value of the '{@link org.xtext.spring.springConfigDsl.ExcludeFilter#getType <em>Type</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Type</em>' attribute.
-	 * @see org.xtext.spring.springConfigDsl.EnumTypeFilter
-	 * @see #getType()
-	 * @generated
-	 */
+   * @param value the new value of the '<em>Type</em>' attribute.
+   * @see org.xtext.spring.springConfigDsl.EnumTypeFilter
+   * @see #getType()
+   * @generated
+   */
   void setType(EnumTypeFilter value);
 
   /**
-	 * Returns the value of the '<em><b>Expression</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Expression</b></em>' attribute.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Expression</em>' attribute isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Expression</em>' attribute.
-	 * @see #setExpression(String)
-	 * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getExcludeFilter_Expression()
-	 * @model
-	 * @generated
-	 */
+   * @return the value of the '<em>Expression</em>' attribute.
+   * @see #setExpression(String)
+   * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getExcludeFilter_Expression()
+   * @model
+   * @generated
+   */
   String getExpression();
 
   /**
-	 * Sets the value of the '{@link org.xtext.spring.springConfigDsl.ExcludeFilter#getExpression <em>Expression</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * Sets the value of the '{@link org.xtext.spring.springConfigDsl.ExcludeFilter#getExpression <em>Expression</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Expression</em>' attribute.
-	 * @see #getExpression()
-	 * @generated
-	 */
+   * @param value the new value of the '<em>Expression</em>' attribute.
+   * @see #getExpression()
+   * @generated
+   */
   void setExpression(String value);
 
 } // ExcludeFilter

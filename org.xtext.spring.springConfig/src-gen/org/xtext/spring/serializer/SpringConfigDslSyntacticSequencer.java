@@ -26,7 +26,7 @@ public class SpringConfigDslSyntacticSequencer extends AbstractSyntacticSequence
 	protected AbstractElementAlias match_AfterReturning_SolidusGreaterThanSignKeyword_2_0_or___GreaterThanSignKeyword_2_1_0_AopAfterReturningKeyword_2_1_1__;
 	protected AbstractElementAlias match_AfterThowing_SolidusGreaterThanSignKeyword_2_0_or___GreaterThanSignKeyword_2_1_0_AopAfterThrowingKeyword_2_1_1__;
 	protected AbstractElementAlias match_Alias_SolidusGreaterThanSignKeyword_6_0_or___GreaterThanSignKeyword_6_1_0_AliasKeyword_6_1_1__;
-	protected AbstractElementAlias match_AnnotationConfig_SolidusGreaterThanSignKeyword_2_0_or___GreaterThanSignKeyword_2_1_0_ContextAnnotationConfigKeyword_2_1_1__;
+	protected AbstractElementAlias match_AnnotationConfig_SolidusGreaterThanSignKeyword_1_1_0_or___GreaterThanSignKeyword_1_1_1_0_ContextAnnotationConfigKeyword_1_1_1_1__;
 	protected AbstractElementAlias match_AopAdvisor_SolidusGreaterThanSignKeyword_2_0_or___GreaterThanSignKeyword_2_1_0_AopAdvisorKeyword_2_1_1__;
 	protected AbstractElementAlias match_AopAspectJAutoproxy_SolidusGreaterThanSignKeyword_3_0_or___GreaterThanSignKeyword_3_1_0_AopAspectjAutoproxyKeyword_3_1_2__;
 	protected AbstractElementAlias match_AopConfig_SolidusGreaterThanSignKeyword_1_2_0_or___GreaterThanSignKeyword_1_2_1_0_AopConfigKeyword_1_2_1_2__;
@@ -81,7 +81,7 @@ public class SpringConfigDslSyntacticSequencer extends AbstractSyntacticSequence
 		match_AfterReturning_SolidusGreaterThanSignKeyword_2_0_or___GreaterThanSignKeyword_2_1_0_AopAfterReturningKeyword_2_1_1__ = new AlternativeAlias(false, false, new GroupAlias(false, false, new TokenAlias(false, false, grammarAccess.getAfterReturningAccess().getGreaterThanSignKeyword_2_1_0()), new TokenAlias(false, false, grammarAccess.getAfterReturningAccess().getAopAfterReturningKeyword_2_1_1())), new TokenAlias(false, false, grammarAccess.getAfterReturningAccess().getSolidusGreaterThanSignKeyword_2_0()));
 		match_AfterThowing_SolidusGreaterThanSignKeyword_2_0_or___GreaterThanSignKeyword_2_1_0_AopAfterThrowingKeyword_2_1_1__ = new AlternativeAlias(false, false, new GroupAlias(false, false, new TokenAlias(false, false, grammarAccess.getAfterThowingAccess().getGreaterThanSignKeyword_2_1_0()), new TokenAlias(false, false, grammarAccess.getAfterThowingAccess().getAopAfterThrowingKeyword_2_1_1())), new TokenAlias(false, false, grammarAccess.getAfterThowingAccess().getSolidusGreaterThanSignKeyword_2_0()));
 		match_Alias_SolidusGreaterThanSignKeyword_6_0_or___GreaterThanSignKeyword_6_1_0_AliasKeyword_6_1_1__ = new AlternativeAlias(false, false, new GroupAlias(false, false, new TokenAlias(false, false, grammarAccess.getAliasAccess().getGreaterThanSignKeyword_6_1_0()), new TokenAlias(false, false, grammarAccess.getAliasAccess().getAliasKeyword_6_1_1())), new TokenAlias(false, false, grammarAccess.getAliasAccess().getSolidusGreaterThanSignKeyword_6_0()));
-		match_AnnotationConfig_SolidusGreaterThanSignKeyword_2_0_or___GreaterThanSignKeyword_2_1_0_ContextAnnotationConfigKeyword_2_1_1__ = new AlternativeAlias(false, false, new GroupAlias(false, false, new TokenAlias(false, false, grammarAccess.getAnnotationConfigAccess().getGreaterThanSignKeyword_2_1_0()), new TokenAlias(false, false, grammarAccess.getAnnotationConfigAccess().getContextAnnotationConfigKeyword_2_1_1())), new TokenAlias(false, false, grammarAccess.getAnnotationConfigAccess().getSolidusGreaterThanSignKeyword_2_0()));
+		match_AnnotationConfig_SolidusGreaterThanSignKeyword_1_1_0_or___GreaterThanSignKeyword_1_1_1_0_ContextAnnotationConfigKeyword_1_1_1_1__ = new AlternativeAlias(false, false, new GroupAlias(false, false, new TokenAlias(false, false, grammarAccess.getAnnotationConfigAccess().getGreaterThanSignKeyword_1_1_1_0()), new TokenAlias(false, false, grammarAccess.getAnnotationConfigAccess().getContextAnnotationConfigKeyword_1_1_1_1())), new TokenAlias(false, false, grammarAccess.getAnnotationConfigAccess().getSolidusGreaterThanSignKeyword_1_1_0()));
 		match_AopAdvisor_SolidusGreaterThanSignKeyword_2_0_or___GreaterThanSignKeyword_2_1_0_AopAdvisorKeyword_2_1_1__ = new AlternativeAlias(false, false, new GroupAlias(false, false, new TokenAlias(false, false, grammarAccess.getAopAdvisorAccess().getGreaterThanSignKeyword_2_1_0()), new TokenAlias(false, false, grammarAccess.getAopAdvisorAccess().getAopAdvisorKeyword_2_1_1())), new TokenAlias(false, false, grammarAccess.getAopAdvisorAccess().getSolidusGreaterThanSignKeyword_2_0()));
 		match_AopAspectJAutoproxy_SolidusGreaterThanSignKeyword_3_0_or___GreaterThanSignKeyword_3_1_0_AopAspectjAutoproxyKeyword_3_1_2__ = new AlternativeAlias(false, false, new GroupAlias(false, false, new TokenAlias(false, false, grammarAccess.getAopAspectJAutoproxyAccess().getGreaterThanSignKeyword_3_1_0()), new TokenAlias(false, false, grammarAccess.getAopAspectJAutoproxyAccess().getAopAspectjAutoproxyKeyword_3_1_2())), new TokenAlias(false, false, grammarAccess.getAopAspectJAutoproxyAccess().getSolidusGreaterThanSignKeyword_3_0()));
 		match_AopConfig_SolidusGreaterThanSignKeyword_1_2_0_or___GreaterThanSignKeyword_1_2_1_0_AopConfigKeyword_1_2_1_2__ = new AlternativeAlias(false, false, new GroupAlias(false, false, new TokenAlias(false, false, grammarAccess.getAopConfigAccess().getGreaterThanSignKeyword_1_2_1_0()), new TokenAlias(false, false, grammarAccess.getAopConfigAccess().getAopConfigKeyword_1_2_1_2())), new TokenAlias(false, false, grammarAccess.getAopConfigAccess().getSolidusGreaterThanSignKeyword_1_2_0()));
@@ -202,8 +202,8 @@ public class SpringConfigDslSyntacticSequencer extends AbstractSyntacticSequence
 				emit_AfterThowing_SolidusGreaterThanSignKeyword_2_0_or___GreaterThanSignKeyword_2_1_0_AopAfterThrowingKeyword_2_1_1__(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if (match_Alias_SolidusGreaterThanSignKeyword_6_0_or___GreaterThanSignKeyword_6_1_0_AliasKeyword_6_1_1__.equals(syntax))
 				emit_Alias_SolidusGreaterThanSignKeyword_6_0_or___GreaterThanSignKeyword_6_1_0_AliasKeyword_6_1_1__(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if (match_AnnotationConfig_SolidusGreaterThanSignKeyword_2_0_or___GreaterThanSignKeyword_2_1_0_ContextAnnotationConfigKeyword_2_1_1__.equals(syntax))
-				emit_AnnotationConfig_SolidusGreaterThanSignKeyword_2_0_or___GreaterThanSignKeyword_2_1_0_ContextAnnotationConfigKeyword_2_1_1__(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if (match_AnnotationConfig_SolidusGreaterThanSignKeyword_1_1_0_or___GreaterThanSignKeyword_1_1_1_0_ContextAnnotationConfigKeyword_1_1_1_1__.equals(syntax))
+				emit_AnnotationConfig_SolidusGreaterThanSignKeyword_1_1_0_or___GreaterThanSignKeyword_1_1_1_0_ContextAnnotationConfigKeyword_1_1_1_1__(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if (match_AopAdvisor_SolidusGreaterThanSignKeyword_2_0_or___GreaterThanSignKeyword_2_1_0_AopAdvisorKeyword_2_1_1__.equals(syntax))
 				emit_AopAdvisor_SolidusGreaterThanSignKeyword_2_0_or___GreaterThanSignKeyword_2_1_0_AopAdvisorKeyword_2_1_1__(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if (match_AopAspectJAutoproxy_SolidusGreaterThanSignKeyword_3_0_or___GreaterThanSignKeyword_3_1_0_AopAspectjAutoproxyKeyword_3_1_2__.equals(syntax))
@@ -360,7 +360,7 @@ public class SpringConfigDslSyntacticSequencer extends AbstractSyntacticSequence
 	 *     (rule start) '<context:' 'annotation-config' (ambiguity) (rule start)
 	 *     (rule start) 'annotation-config' (ambiguity) (rule start)
 	 */
-	protected void emit_AnnotationConfig_SolidusGreaterThanSignKeyword_2_0_or___GreaterThanSignKeyword_2_1_0_ContextAnnotationConfigKeyword_2_1_1__(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_AnnotationConfig_SolidusGreaterThanSignKeyword_1_1_0_or___GreaterThanSignKeyword_1_1_1_0_ContextAnnotationConfigKeyword_1_1_1_1__(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	
@@ -527,8 +527,9 @@ public class SpringConfigDslSyntacticSequencer extends AbstractSyntacticSequence
 	 *     (rule start) '<beans' (ambiguity) '>' contexts+=Context
 	 *     (rule start) '<beans' (ambiguity) '>' description=Description
 	 *     (rule start) '<beans' (ambiguity) '>' imports+=Import
+	 *     (rule start) '<beans' (ambiguity) '>' mvcs+=MVC
 	 *     (rule start) '<beans' (ambiguity) '>' txAdvices+=TxAdvise
-	 *     (rule start) '<beans' (ambiguity) '>' txJtaTransactionManager=TxJtaTransactionManager
+	 *     (rule start) '<beans' (ambiguity) '>' txJtaTransactionManager+=TxJtaTransactionManager
 	 *     (rule start) '<beans' (ambiguity) '>' utilConstants+=UtilConstant
 	 *     (rule start) '<beans' (ambiguity) '>' utilLists+=UtilList
 	 *     (rule start) '<beans' (ambiguity) '>' utilMaps+=UtilMap
@@ -550,8 +551,9 @@ public class SpringConfigDslSyntacticSequencer extends AbstractSyntacticSequence
 	 *     defaultAutowire=AutoWiredType (ambiguity) '>' contexts+=Context
 	 *     defaultAutowire=AutoWiredType (ambiguity) '>' description=Description
 	 *     defaultAutowire=AutoWiredType (ambiguity) '>' imports+=Import
+	 *     defaultAutowire=AutoWiredType (ambiguity) '>' mvcs+=MVC
 	 *     defaultAutowire=AutoWiredType (ambiguity) '>' txAdvices+=TxAdvise
-	 *     defaultAutowire=AutoWiredType (ambiguity) '>' txJtaTransactionManager=TxJtaTransactionManager
+	 *     defaultAutowire=AutoWiredType (ambiguity) '>' txJtaTransactionManager+=TxJtaTransactionManager
 	 *     defaultAutowire=AutoWiredType (ambiguity) '>' utilConstants+=UtilConstant
 	 *     defaultAutowire=AutoWiredType (ambiguity) '>' utilLists+=UtilList
 	 *     defaultAutowire=AutoWiredType (ambiguity) '>' utilMaps+=UtilMap
@@ -573,8 +575,9 @@ public class SpringConfigDslSyntacticSequencer extends AbstractSyntacticSequence
 	 *     defaultAutowireCandidates=ValidString (ambiguity) '>' contexts+=Context
 	 *     defaultAutowireCandidates=ValidString (ambiguity) '>' description=Description
 	 *     defaultAutowireCandidates=ValidString (ambiguity) '>' imports+=Import
+	 *     defaultAutowireCandidates=ValidString (ambiguity) '>' mvcs+=MVC
 	 *     defaultAutowireCandidates=ValidString (ambiguity) '>' txAdvices+=TxAdvise
-	 *     defaultAutowireCandidates=ValidString (ambiguity) '>' txJtaTransactionManager=TxJtaTransactionManager
+	 *     defaultAutowireCandidates=ValidString (ambiguity) '>' txJtaTransactionManager+=TxJtaTransactionManager
 	 *     defaultAutowireCandidates=ValidString (ambiguity) '>' utilConstants+=UtilConstant
 	 *     defaultAutowireCandidates=ValidString (ambiguity) '>' utilLists+=UtilList
 	 *     defaultAutowireCandidates=ValidString (ambiguity) '>' utilMaps+=UtilMap
@@ -596,8 +599,9 @@ public class SpringConfigDslSyntacticSequencer extends AbstractSyntacticSequence
 	 *     defaultDestroyMethod=ValidString (ambiguity) '>' contexts+=Context
 	 *     defaultDestroyMethod=ValidString (ambiguity) '>' description=Description
 	 *     defaultDestroyMethod=ValidString (ambiguity) '>' imports+=Import
+	 *     defaultDestroyMethod=ValidString (ambiguity) '>' mvcs+=MVC
 	 *     defaultDestroyMethod=ValidString (ambiguity) '>' txAdvices+=TxAdvise
-	 *     defaultDestroyMethod=ValidString (ambiguity) '>' txJtaTransactionManager=TxJtaTransactionManager
+	 *     defaultDestroyMethod=ValidString (ambiguity) '>' txJtaTransactionManager+=TxJtaTransactionManager
 	 *     defaultDestroyMethod=ValidString (ambiguity) '>' utilConstants+=UtilConstant
 	 *     defaultDestroyMethod=ValidString (ambiguity) '>' utilLists+=UtilList
 	 *     defaultDestroyMethod=ValidString (ambiguity) '>' utilMaps+=UtilMap
@@ -619,8 +623,9 @@ public class SpringConfigDslSyntacticSequencer extends AbstractSyntacticSequence
 	 *     defaultInitMethod=ValidString (ambiguity) '>' contexts+=Context
 	 *     defaultInitMethod=ValidString (ambiguity) '>' description=Description
 	 *     defaultInitMethod=ValidString (ambiguity) '>' imports+=Import
+	 *     defaultInitMethod=ValidString (ambiguity) '>' mvcs+=MVC
 	 *     defaultInitMethod=ValidString (ambiguity) '>' txAdvices+=TxAdvise
-	 *     defaultInitMethod=ValidString (ambiguity) '>' txJtaTransactionManager=TxJtaTransactionManager
+	 *     defaultInitMethod=ValidString (ambiguity) '>' txJtaTransactionManager+=TxJtaTransactionManager
 	 *     defaultInitMethod=ValidString (ambiguity) '>' utilConstants+=UtilConstant
 	 *     defaultInitMethod=ValidString (ambiguity) '>' utilLists+=UtilList
 	 *     defaultInitMethod=ValidString (ambiguity) '>' utilMaps+=UtilMap
@@ -642,8 +647,9 @@ public class SpringConfigDslSyntacticSequencer extends AbstractSyntacticSequence
 	 *     defaultLazyInit=DefaultableBoolean (ambiguity) '>' contexts+=Context
 	 *     defaultLazyInit=DefaultableBoolean (ambiguity) '>' description=Description
 	 *     defaultLazyInit=DefaultableBoolean (ambiguity) '>' imports+=Import
+	 *     defaultLazyInit=DefaultableBoolean (ambiguity) '>' mvcs+=MVC
 	 *     defaultLazyInit=DefaultableBoolean (ambiguity) '>' txAdvices+=TxAdvise
-	 *     defaultLazyInit=DefaultableBoolean (ambiguity) '>' txJtaTransactionManager=TxJtaTransactionManager
+	 *     defaultLazyInit=DefaultableBoolean (ambiguity) '>' txJtaTransactionManager+=TxJtaTransactionManager
 	 *     defaultLazyInit=DefaultableBoolean (ambiguity) '>' utilConstants+=UtilConstant
 	 *     defaultLazyInit=DefaultableBoolean (ambiguity) '>' utilLists+=UtilList
 	 *     defaultLazyInit=DefaultableBoolean (ambiguity) '>' utilMaps+=UtilMap
@@ -665,8 +671,9 @@ public class SpringConfigDslSyntacticSequencer extends AbstractSyntacticSequence
 	 *     defaultMerge=DefaultableBoolean (ambiguity) '>' contexts+=Context
 	 *     defaultMerge=DefaultableBoolean (ambiguity) '>' description=Description
 	 *     defaultMerge=DefaultableBoolean (ambiguity) '>' imports+=Import
+	 *     defaultMerge=DefaultableBoolean (ambiguity) '>' mvcs+=MVC
 	 *     defaultMerge=DefaultableBoolean (ambiguity) '>' txAdvices+=TxAdvise
-	 *     defaultMerge=DefaultableBoolean (ambiguity) '>' txJtaTransactionManager=TxJtaTransactionManager
+	 *     defaultMerge=DefaultableBoolean (ambiguity) '>' txJtaTransactionManager+=TxJtaTransactionManager
 	 *     defaultMerge=DefaultableBoolean (ambiguity) '>' utilConstants+=UtilConstant
 	 *     defaultMerge=DefaultableBoolean (ambiguity) '>' utilLists+=UtilList
 	 *     defaultMerge=DefaultableBoolean (ambiguity) '>' utilMaps+=UtilMap
@@ -688,8 +695,9 @@ public class SpringConfigDslSyntacticSequencer extends AbstractSyntacticSequence
 	 *     profile=ValidString (ambiguity) '>' contexts+=Context
 	 *     profile=ValidString (ambiguity) '>' description=Description
 	 *     profile=ValidString (ambiguity) '>' imports+=Import
+	 *     profile=ValidString (ambiguity) '>' mvcs+=MVC
 	 *     profile=ValidString (ambiguity) '>' txAdvices+=TxAdvise
-	 *     profile=ValidString (ambiguity) '>' txJtaTransactionManager=TxJtaTransactionManager
+	 *     profile=ValidString (ambiguity) '>' txJtaTransactionManager+=TxJtaTransactionManager
 	 *     profile=ValidString (ambiguity) '>' utilConstants+=UtilConstant
 	 *     profile=ValidString (ambiguity) '>' utilLists+=UtilList
 	 *     profile=ValidString (ambiguity) '>' utilMaps+=UtilMap
@@ -821,7 +829,7 @@ public class SpringConfigDslSyntacticSequencer extends AbstractSyntacticSequence
 	
 	/**
 	 * Ambiguous syntax:
-	 *     ('>' '</entry>') | '/>'
+	 *     '/>' | ('>' '</entry>')
 	 *
 	 * This ambiguous syntax occurs at:
 	 *     key=MapEntryKeyAtt (ambiguity) (rule end)
@@ -875,7 +883,7 @@ public class SpringConfigDslSyntacticSequencer extends AbstractSyntacticSequence
 	
 	/**
 	 * Ambiguous syntax:
-	 *     ('property-override' ('/>' | ('>' '</context:property-override>'))) | ('property-placeholder' ('/>' | ('>' '</context:property-placeholder>')))
+	 *     ('property-placeholder' ('/>' | ('>' '</context:property-placeholder>'))) | ('property-override' ('/>' | ('>' '</context:property-override>')))
 	 *
 	 * This ambiguous syntax occurs at:
 	 *     (rule start) '<context:' (ambiguity) (rule start)
@@ -963,7 +971,7 @@ public class SpringConfigDslSyntacticSequencer extends AbstractSyntacticSequence
 	 *     '/>' | ('>' '</ref>')
 	 *
 	 * This ambiguous syntax occurs at:
-	 *     ref=[Component|ValidString] (ambiguity) (rule end)
+	 *     ref=[AbstractArtefact|ValidString] (ambiguity) (rule end)
 	 */
 	protected void emit_ReferenceTag_SolidusGreaterThanSignKeyword_4_0_or___GreaterThanSignKeyword_4_1_0_RefKeyword_4_1_1__(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);

@@ -693,9 +693,29 @@ ruleConfiguration returns [EObject current=null]
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getConfigurationAccess().getAspectsAspectParserRuleCall_3_4_0());
+						newCompositeNode(grammarAccess.getConfigurationAccess().getMvcsMVCParserRuleCall_3_4_0());
 					}
-					lv_aspects_26_0=ruleAspect
+					lv_mvcs_26_0=ruleMVC
+					{
+						if ($current==null) {
+							$current = createModelElementForParent(grammarAccess.getConfigurationRule());
+						}
+						add(
+							$current,
+							"mvcs",
+							lv_mvcs_26_0,
+							"org.xtext.spring.SpringConfigDsl.MVC");
+						afterParserOrEnumRuleCall();
+					}
+				)
+			)
+			    |
+			(
+				(
+					{
+						newCompositeNode(grammarAccess.getConfigurationAccess().getAspectsAspectParserRuleCall_3_5_0());
+					}
+					lv_aspects_27_0=ruleAspect
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getConfigurationRule());
@@ -703,7 +723,7 @@ ruleConfiguration returns [EObject current=null]
 						add(
 							$current,
 							"aspects",
-							lv_aspects_26_0,
+							lv_aspects_27_0,
 							"org.xtext.spring.SpringConfigDsl.Aspect");
 						afterParserOrEnumRuleCall();
 					}
@@ -713,9 +733,9 @@ ruleConfiguration returns [EObject current=null]
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getConfigurationAccess().getUtilConstantsUtilConstantParserRuleCall_3_5_0());
+						newCompositeNode(grammarAccess.getConfigurationAccess().getUtilConstantsUtilConstantParserRuleCall_3_6_0());
 					}
-					lv_utilConstants_27_0=ruleUtilConstant
+					lv_utilConstants_28_0=ruleUtilConstant
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getConfigurationRule());
@@ -723,7 +743,7 @@ ruleConfiguration returns [EObject current=null]
 						add(
 							$current,
 							"utilConstants",
-							lv_utilConstants_27_0,
+							lv_utilConstants_28_0,
 							"org.xtext.spring.SpringConfigDsl.UtilConstant");
 						afterParserOrEnumRuleCall();
 					}
@@ -733,9 +753,9 @@ ruleConfiguration returns [EObject current=null]
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getConfigurationAccess().getUtilListsUtilListParserRuleCall_3_6_0());
+						newCompositeNode(grammarAccess.getConfigurationAccess().getUtilListsUtilListParserRuleCall_3_7_0());
 					}
-					lv_utilLists_28_0=ruleUtilList
+					lv_utilLists_29_0=ruleUtilList
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getConfigurationRule());
@@ -743,7 +763,7 @@ ruleConfiguration returns [EObject current=null]
 						add(
 							$current,
 							"utilLists",
-							lv_utilLists_28_0,
+							lv_utilLists_29_0,
 							"org.xtext.spring.SpringConfigDsl.UtilList");
 						afterParserOrEnumRuleCall();
 					}
@@ -753,9 +773,9 @@ ruleConfiguration returns [EObject current=null]
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getConfigurationAccess().getUtilMapsUtilMapParserRuleCall_3_7_0());
+						newCompositeNode(grammarAccess.getConfigurationAccess().getUtilMapsUtilMapParserRuleCall_3_8_0());
 					}
-					lv_utilMaps_29_0=ruleUtilMap
+					lv_utilMaps_30_0=ruleUtilMap
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getConfigurationRule());
@@ -763,7 +783,7 @@ ruleConfiguration returns [EObject current=null]
 						add(
 							$current,
 							"utilMaps",
-							lv_utilMaps_29_0,
+							lv_utilMaps_30_0,
 							"org.xtext.spring.SpringConfigDsl.UtilMap");
 						afterParserOrEnumRuleCall();
 					}
@@ -773,9 +793,9 @@ ruleConfiguration returns [EObject current=null]
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getConfigurationAccess().getUtilPropertiesUtilPropertiesParserRuleCall_3_8_0());
+						newCompositeNode(grammarAccess.getConfigurationAccess().getUtilPropertiesUtilPropertiesParserRuleCall_3_9_0());
 					}
-					lv_utilProperties_30_0=ruleUtilProperties
+					lv_utilProperties_31_0=ruleUtilProperties
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getConfigurationRule());
@@ -783,7 +803,7 @@ ruleConfiguration returns [EObject current=null]
 						add(
 							$current,
 							"utilProperties",
-							lv_utilProperties_30_0,
+							lv_utilProperties_31_0,
 							"org.xtext.spring.SpringConfigDsl.UtilProperties");
 						afterParserOrEnumRuleCall();
 					}
@@ -793,9 +813,9 @@ ruleConfiguration returns [EObject current=null]
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getConfigurationAccess().getUtilSetsUtilSetParserRuleCall_3_9_0());
+						newCompositeNode(grammarAccess.getConfigurationAccess().getUtilSetsUtilSetParserRuleCall_3_10_0());
 					}
-					lv_utilSets_31_0=ruleUtilSet
+					lv_utilSets_32_0=ruleUtilSet
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getConfigurationRule());
@@ -803,7 +823,7 @@ ruleConfiguration returns [EObject current=null]
 						add(
 							$current,
 							"utilSets",
-							lv_utilSets_31_0,
+							lv_utilSets_32_0,
 							"org.xtext.spring.SpringConfigDsl.UtilSet");
 						afterParserOrEnumRuleCall();
 					}
@@ -813,9 +833,9 @@ ruleConfiguration returns [EObject current=null]
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getConfigurationAccess().getUtilPropertiesPathUtilPropertyPathParserRuleCall_3_10_0());
+						newCompositeNode(grammarAccess.getConfigurationAccess().getUtilPropertiesPathUtilPropertyPathParserRuleCall_3_11_0());
 					}
-					lv_utilPropertiesPath_32_0=ruleUtilPropertyPath
+					lv_utilPropertiesPath_33_0=ruleUtilPropertyPath
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getConfigurationRule());
@@ -823,7 +843,7 @@ ruleConfiguration returns [EObject current=null]
 						add(
 							$current,
 							"utilPropertiesPath",
-							lv_utilPropertiesPath_32_0,
+							lv_utilPropertiesPath_33_0,
 							"org.xtext.spring.SpringConfigDsl.UtilPropertyPath");
 						afterParserOrEnumRuleCall();
 					}
@@ -833,9 +853,9 @@ ruleConfiguration returns [EObject current=null]
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getConfigurationAccess().getTxAdvicesTxAdviseParserRuleCall_3_11_0());
+						newCompositeNode(grammarAccess.getConfigurationAccess().getTxAdvicesTxAdviseParserRuleCall_3_12_0());
 					}
-					lv_txAdvices_33_0=ruleTxAdvise
+					lv_txAdvices_34_0=ruleTxAdvise
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getConfigurationRule());
@@ -843,7 +863,7 @@ ruleConfiguration returns [EObject current=null]
 						add(
 							$current,
 							"txAdvices",
-							lv_txAdvices_33_0,
+							lv_txAdvices_34_0,
 							"org.xtext.spring.SpringConfigDsl.TxAdvise");
 						afterParserOrEnumRuleCall();
 					}
@@ -853,17 +873,17 @@ ruleConfiguration returns [EObject current=null]
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getConfigurationAccess().getTxJtaTransactionManagerTxJtaTransactionManagerParserRuleCall_3_12_0());
+						newCompositeNode(grammarAccess.getConfigurationAccess().getTxJtaTransactionManagerTxJtaTransactionManagerParserRuleCall_3_13_0());
 					}
-					lv_txJtaTransactionManager_34_0=ruleTxJtaTransactionManager
+					lv_txJtaTransactionManager_35_0=ruleTxJtaTransactionManager
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getConfigurationRule());
 						}
-						set(
+						add(
 							$current,
 							"txJtaTransactionManager",
-							lv_txJtaTransactionManager_34_0,
+							lv_txJtaTransactionManager_35_0,
 							"org.xtext.spring.SpringConfigDsl.TxJtaTransactionManager");
 						afterParserOrEnumRuleCall();
 					}
@@ -875,7 +895,7 @@ ruleConfiguration returns [EObject current=null]
 				{
 					newCompositeNode(grammarAccess.getConfigurationAccess().getConfigurationCompositeConfigurationParserRuleCall_4_0());
 				}
-				lv_ConfigurationComposite_35_0=ruleConfiguration
+				lv_ConfigurationComposite_36_0=ruleConfiguration
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getConfigurationRule());
@@ -883,16 +903,60 @@ ruleConfiguration returns [EObject current=null]
 					add(
 						$current,
 						"ConfigurationComposite",
-						lv_ConfigurationComposite_35_0,
+						lv_ConfigurationComposite_36_0,
 						"org.xtext.spring.SpringConfigDsl.Configuration");
 					afterParserOrEnumRuleCall();
 				}
 			)
 		)*
-		otherlv_36='</beans>'
+		otherlv_37='</beans>'
 		{
-			newLeafNode(otherlv_36, grammarAccess.getConfigurationAccess().getBeansKeyword_5());
+			newLeafNode(otherlv_37, grammarAccess.getConfigurationAccess().getBeansKeyword_5());
 		}
+	)
+;
+
+// Entry rule entryRuleMVC
+entryRuleMVC returns [EObject current=null]:
+	{ newCompositeNode(grammarAccess.getMVCRule()); }
+	iv_ruleMVC=ruleMVC
+	{ $current=$iv_ruleMVC.current; }
+	EOF;
+
+// Rule MVC
+ruleMVC returns [EObject current=null]
+@init {
+	enterRule();
+}
+@after {
+	leaveRule();
+}:
+	(
+		(
+			{
+				$current = forceCreateModelElement(
+					grammarAccess.getMVCAccess().getMVCAction_0(),
+					$current);
+			}
+		)
+		(
+			otherlv_1='<mvc'
+			{
+				newLeafNode(otherlv_1, grammarAccess.getMVCAccess().getMvcKeyword_1_0());
+			}
+			otherlv_2=':'
+			{
+				newLeafNode(otherlv_2, grammarAccess.getMVCAccess().getColonKeyword_1_1());
+			}
+			otherlv_3='annotation-driven'
+			{
+				newLeafNode(otherlv_3, grammarAccess.getMVCAccess().getAnnotationDrivenKeyword_1_2());
+			}
+			otherlv_4='/>'
+			{
+				newLeafNode(otherlv_4, grammarAccess.getMVCAccess().getSolidusGreaterThanSignKeyword_1_3());
+			}
+		)
 	)
 ;
 
@@ -1191,25 +1255,27 @@ ruleAnnotationConfig returns [EObject current=null]
 					$current);
 			}
 		)
-		otherlv_1='annotation-config'
-		{
-			newLeafNode(otherlv_1, grammarAccess.getAnnotationConfigAccess().getAnnotationConfigKeyword_1());
-		}
 		(
-			otherlv_2='/>'
+			otherlv_1='annotation-config'
 			{
-				newLeafNode(otherlv_2, grammarAccess.getAnnotationConfigAccess().getSolidusGreaterThanSignKeyword_2_0());
+				newLeafNode(otherlv_1, grammarAccess.getAnnotationConfigAccess().getAnnotationConfigKeyword_1_0());
 			}
-			    |
 			(
-				otherlv_3='>'
+				otherlv_2='/>'
 				{
-					newLeafNode(otherlv_3, grammarAccess.getAnnotationConfigAccess().getGreaterThanSignKeyword_2_1_0());
+					newLeafNode(otherlv_2, grammarAccess.getAnnotationConfigAccess().getSolidusGreaterThanSignKeyword_1_1_0());
 				}
-				otherlv_4='</context:annotation-config>'
-				{
-					newLeafNode(otherlv_4, grammarAccess.getAnnotationConfigAccess().getContextAnnotationConfigKeyword_2_1_1());
-				}
+				    |
+				(
+					otherlv_3='>'
+					{
+						newLeafNode(otherlv_3, grammarAccess.getAnnotationConfigAccess().getGreaterThanSignKeyword_1_1_1_0());
+					}
+					otherlv_4='</context:annotation-config>'
+					{
+						newLeafNode(otherlv_4, grammarAccess.getAnnotationConfigAccess().getContextAnnotationConfigKeyword_1_1_1_1());
+					}
+				)
 			)
 		)
 	)
@@ -7161,7 +7227,7 @@ ruleReferenceTag returns [EObject current=null]
 					}
 				}
 				{
-					newCompositeNode(grammarAccess.getReferenceTagAccess().getRefComponentCrossReference_3_0());
+					newCompositeNode(grammarAccess.getReferenceTagAccess().getRefAbstractArtefactCrossReference_3_0());
 				}
 				ruleValidString
 				{

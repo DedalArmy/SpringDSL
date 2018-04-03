@@ -33,263 +33,269 @@ import org.xtext.spring.springConfigDsl.SpringConfigDslPackage;
 public class MbeanExportImpl extends ContextImpl implements MbeanExport
 {
   /**
-	 * The default value of the '{@link #getDefaultDomain() <em>Default Domain</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The default value of the '{@link #getDefaultDomain() <em>Default Domain</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getDefaultDomain()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getDefaultDomain()
+   * @generated
+   * @ordered
+   */
   protected static final String DEFAULT_DOMAIN_EDEFAULT = null;
 
   /**
-	 * The cached value of the '{@link #getDefaultDomain() <em>Default Domain</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getDefaultDomain() <em>Default Domain</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getDefaultDomain()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getDefaultDomain()
+   * @generated
+   * @ordered
+   */
   protected String defaultDomain = DEFAULT_DOMAIN_EDEFAULT;
 
   /**
-	 * The default value of the '{@link #getRegistration() <em>Registration</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The default value of the '{@link #getRegistration() <em>Registration</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getRegistration()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getRegistration()
+   * @generated
+   * @ordered
+   */
   protected static final MbeanRegistrationEnum REGISTRATION_EDEFAULT = MbeanRegistrationEnum.FAILONEXISTING;
 
   /**
-	 * The cached value of the '{@link #getRegistration() <em>Registration</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getRegistration() <em>Registration</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getRegistration()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getRegistration()
+   * @generated
+   * @ordered
+   */
   protected MbeanRegistrationEnum registration = REGISTRATION_EDEFAULT;
 
   /**
-	 * The cached value of the '{@link #getServer() <em>Server</em>}' reference.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getServer() <em>Server</em>}' reference.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getServer()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getServer()
+   * @generated
+   * @ordered
+   */
   protected Component server;
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   protected MbeanExportImpl()
   {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   protected EClass eStaticClass()
   {
-		return SpringConfigDslPackage.Literals.MBEAN_EXPORT;
-	}
+    return SpringConfigDslPackage.Literals.MBEAN_EXPORT;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public String getDefaultDomain()
   {
-		return defaultDomain;
-	}
+    return defaultDomain;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public void setDefaultDomain(String newDefaultDomain)
   {
-		String oldDefaultDomain = defaultDomain;
-		defaultDomain = newDefaultDomain;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.MBEAN_EXPORT__DEFAULT_DOMAIN, oldDefaultDomain, defaultDomain));
-	}
+    String oldDefaultDomain = defaultDomain;
+    defaultDomain = newDefaultDomain;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.MBEAN_EXPORT__DEFAULT_DOMAIN, oldDefaultDomain, defaultDomain));
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public MbeanRegistrationEnum getRegistration()
   {
-		return registration;
-	}
+    return registration;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public void setRegistration(MbeanRegistrationEnum newRegistration)
   {
-		MbeanRegistrationEnum oldRegistration = registration;
-		registration = newRegistration == null ? REGISTRATION_EDEFAULT : newRegistration;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.MBEAN_EXPORT__REGISTRATION, oldRegistration, registration));
-	}
+    MbeanRegistrationEnum oldRegistration = registration;
+    registration = newRegistration == null ? REGISTRATION_EDEFAULT : newRegistration;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.MBEAN_EXPORT__REGISTRATION, oldRegistration, registration));
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public Component getServer()
   {
-		if (server != null && server.eIsProxy()) {
-			InternalEObject oldServer = (InternalEObject)server;
-			server = (Component)eResolveProxy(oldServer);
-			if (server != oldServer) {
-				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, SpringConfigDslPackage.MBEAN_EXPORT__SERVER, oldServer, server));
-			}
-		}
-		return server;
-	}
+    if (server != null && server.eIsProxy())
+    {
+      InternalEObject oldServer = (InternalEObject)server;
+      server = (Component)eResolveProxy(oldServer);
+      if (server != oldServer)
+      {
+        if (eNotificationRequired())
+          eNotify(new ENotificationImpl(this, Notification.RESOLVE, SpringConfigDslPackage.MBEAN_EXPORT__SERVER, oldServer, server));
+      }
+    }
+    return server;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public Component basicGetServer()
   {
-		return server;
-	}
+    return server;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public void setServer(Component newServer)
   {
-		Component oldServer = server;
-		server = newServer;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.MBEAN_EXPORT__SERVER, oldServer, server));
-	}
+    Component oldServer = server;
+    server = newServer;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.MBEAN_EXPORT__SERVER, oldServer, server));
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType)
   {
-		switch (featureID) {
-			case SpringConfigDslPackage.MBEAN_EXPORT__DEFAULT_DOMAIN:
-				return getDefaultDomain();
-			case SpringConfigDslPackage.MBEAN_EXPORT__REGISTRATION:
-				return getRegistration();
-			case SpringConfigDslPackage.MBEAN_EXPORT__SERVER:
-				if (resolve) return getServer();
-				return basicGetServer();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+    switch (featureID)
+    {
+      case SpringConfigDslPackage.MBEAN_EXPORT__DEFAULT_DOMAIN:
+        return getDefaultDomain();
+      case SpringConfigDslPackage.MBEAN_EXPORT__REGISTRATION:
+        return getRegistration();
+      case SpringConfigDslPackage.MBEAN_EXPORT__SERVER:
+        if (resolve) return getServer();
+        return basicGetServer();
+    }
+    return super.eGet(featureID, resolve, coreType);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public void eSet(int featureID, Object newValue)
   {
-		switch (featureID) {
-			case SpringConfigDslPackage.MBEAN_EXPORT__DEFAULT_DOMAIN:
-				setDefaultDomain((String)newValue);
-				return;
-			case SpringConfigDslPackage.MBEAN_EXPORT__REGISTRATION:
-				setRegistration((MbeanRegistrationEnum)newValue);
-				return;
-			case SpringConfigDslPackage.MBEAN_EXPORT__SERVER:
-				setServer((Component)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+    switch (featureID)
+    {
+      case SpringConfigDslPackage.MBEAN_EXPORT__DEFAULT_DOMAIN:
+        setDefaultDomain((String)newValue);
+        return;
+      case SpringConfigDslPackage.MBEAN_EXPORT__REGISTRATION:
+        setRegistration((MbeanRegistrationEnum)newValue);
+        return;
+      case SpringConfigDslPackage.MBEAN_EXPORT__SERVER:
+        setServer((Component)newValue);
+        return;
+    }
+    super.eSet(featureID, newValue);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public void eUnset(int featureID)
   {
-		switch (featureID) {
-			case SpringConfigDslPackage.MBEAN_EXPORT__DEFAULT_DOMAIN:
-				setDefaultDomain(DEFAULT_DOMAIN_EDEFAULT);
-				return;
-			case SpringConfigDslPackage.MBEAN_EXPORT__REGISTRATION:
-				setRegistration(REGISTRATION_EDEFAULT);
-				return;
-			case SpringConfigDslPackage.MBEAN_EXPORT__SERVER:
-				setServer((Component)null);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+    switch (featureID)
+    {
+      case SpringConfigDslPackage.MBEAN_EXPORT__DEFAULT_DOMAIN:
+        setDefaultDomain(DEFAULT_DOMAIN_EDEFAULT);
+        return;
+      case SpringConfigDslPackage.MBEAN_EXPORT__REGISTRATION:
+        setRegistration(REGISTRATION_EDEFAULT);
+        return;
+      case SpringConfigDslPackage.MBEAN_EXPORT__SERVER:
+        setServer((Component)null);
+        return;
+    }
+    super.eUnset(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public boolean eIsSet(int featureID)
   {
-		switch (featureID) {
-			case SpringConfigDslPackage.MBEAN_EXPORT__DEFAULT_DOMAIN:
-				return DEFAULT_DOMAIN_EDEFAULT == null ? defaultDomain != null : !DEFAULT_DOMAIN_EDEFAULT.equals(defaultDomain);
-			case SpringConfigDslPackage.MBEAN_EXPORT__REGISTRATION:
-				return registration != REGISTRATION_EDEFAULT;
-			case SpringConfigDslPackage.MBEAN_EXPORT__SERVER:
-				return server != null;
-		}
-		return super.eIsSet(featureID);
-	}
+    switch (featureID)
+    {
+      case SpringConfigDslPackage.MBEAN_EXPORT__DEFAULT_DOMAIN:
+        return DEFAULT_DOMAIN_EDEFAULT == null ? defaultDomain != null : !DEFAULT_DOMAIN_EDEFAULT.equals(defaultDomain);
+      case SpringConfigDslPackage.MBEAN_EXPORT__REGISTRATION:
+        return registration != REGISTRATION_EDEFAULT;
+      case SpringConfigDslPackage.MBEAN_EXPORT__SERVER:
+        return server != null;
+    }
+    return super.eIsSet(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public String toString()
   {
-		if (eIsProxy()) return super.toString();
+    if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (defaultDomain: ");
-		result.append(defaultDomain);
-		result.append(", registration: ");
-		result.append(registration);
-		result.append(')');
-		return result.toString();
-	}
+    StringBuffer result = new StringBuffer(super.toString());
+    result.append(" (defaultDomain: ");
+    result.append(defaultDomain);
+    result.append(", registration: ");
+    result.append(registration);
+    result.append(')');
+    return result.toString();
+  }
 
 } //MbeanExportImpl

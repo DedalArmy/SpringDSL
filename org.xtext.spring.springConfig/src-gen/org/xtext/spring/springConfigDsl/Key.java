@@ -25,55 +25,55 @@ import org.eclipse.emf.ecore.EObject;
 public interface Key extends EObject
 {
   /**
-	 * Returns the value of the '<em><b>Description</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Description</b></em>' attribute.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Description</em>' attribute isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Description</em>' attribute.
-	 * @see #setDescription(String)
-	 * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getKey_Description()
-	 * @model
-	 * @generated
-	 */
+   * @return the value of the '<em>Description</em>' attribute.
+   * @see #setDescription(String)
+   * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getKey_Description()
+   * @model
+   * @generated
+   */
   String getDescription();
 
   /**
-	 * Sets the value of the '{@link org.xtext.spring.springConfigDsl.Key#getDescription <em>Description</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * Sets the value of the '{@link org.xtext.spring.springConfigDsl.Key#getDescription <em>Description</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Description</em>' attribute.
-	 * @see #getDescription()
-	 * @generated
-	 */
+   * @param value the new value of the '<em>Description</em>' attribute.
+   * @see #getDescription()
+   * @generated
+   */
   void setDescription(String value);
 
   /**
-	 * Returns the value of the '<em><b>Key</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Key</b></em>' containment reference.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Key</em>' containment reference isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Key</em>' containment reference.
-	 * @see #setKey(AbstractKeyValue)
-	 * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getKey_Key()
-	 * @model containment="true"
-	 * @generated
-	 */
+   * @return the value of the '<em>Key</em>' containment reference.
+   * @see #setKey(AbstractKeyValue)
+   * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getKey_Key()
+   * @model containment="true"
+   * @generated
+   */
   AbstractKeyValue getKey();
 
   /**
-	 * Sets the value of the '{@link org.xtext.spring.springConfigDsl.Key#getKey <em>Key</em>}' containment reference.
-	 * <!-- begin-user-doc -->
+   * Sets the value of the '{@link org.xtext.spring.springConfigDsl.Key#getKey <em>Key</em>}' containment reference.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Key</em>' containment reference.
-	 * @see #getKey()
-	 * @generated
-	 */
+   * @param value the new value of the '<em>Key</em>' containment reference.
+   * @see #getKey()
+   * @generated
+   */
   void setKey(AbstractKeyValue value);
 
 } // Key

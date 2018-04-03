@@ -26,19 +26,19 @@ import org.eclipse.emf.ecore.EObject;
 public interface SpringProject extends EObject
 {
   /**
-	 * Returns the value of the '<em><b>Configurations</b></em>' containment reference list.
-	 * The list contents are of type {@link org.xtext.spring.springConfigDsl.Configuration}.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Configurations</b></em>' containment reference list.
+   * The list contents are of type {@link org.xtext.spring.springConfigDsl.Configuration}.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Configurations</em>' containment reference list isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Configurations</em>' containment reference list.
-	 * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getSpringProject_Configurations()
-	 * @model containment="true"
-	 * @generated
-	 */
+   * @return the value of the '<em>Configurations</em>' containment reference list.
+   * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getSpringProject_Configurations()
+   * @model containment="true"
+   * @generated
+   */
   EList<Configuration> getConfigurations();
 
 } // SpringProject

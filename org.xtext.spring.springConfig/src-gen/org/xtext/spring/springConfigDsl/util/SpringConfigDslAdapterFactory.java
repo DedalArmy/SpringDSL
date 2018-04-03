@@ -49,6 +49,7 @@ import org.xtext.spring.springConfigDsl.Interface;
 import org.xtext.spring.springConfigDsl.Key;
 import org.xtext.spring.springConfigDsl.LoadTimeWeaver;
 import org.xtext.spring.springConfigDsl.LookupMethod;
+import org.xtext.spring.springConfigDsl.MVC;
 import org.xtext.spring.springConfigDsl.Map;
 import org.xtext.spring.springConfigDsl.MapEntry;
 import org.xtext.spring.springConfigDsl.MbeanExport;
@@ -90,1378 +91,1471 @@ import org.xtext.spring.springConfigDsl.sSet;
 public class SpringConfigDslAdapterFactory extends AdapterFactoryImpl
 {
   /**
-	 * The cached model package.
-	 * <!-- begin-user-doc -->
+   * The cached model package.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   protected static SpringConfigDslPackage modelPackage;
 
   /**
-	 * Creates an instance of the adapter factory.
-	 * <!-- begin-user-doc -->
+   * Creates an instance of the adapter factory.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public SpringConfigDslAdapterFactory()
   {
-		if (modelPackage == null) {
-			modelPackage = SpringConfigDslPackage.eINSTANCE;
-		}
-	}
+    if (modelPackage == null)
+    {
+      modelPackage = SpringConfigDslPackage.eINSTANCE;
+    }
+  }
 
   /**
-	 * Returns whether this factory is applicable for the type of the object.
-	 * <!-- begin-user-doc -->
+   * Returns whether this factory is applicable for the type of the object.
+   * <!-- begin-user-doc -->
    * This implementation returns <code>true</code> if the object is either the model's package or is an instance object of the model.
    * <!-- end-user-doc -->
-	 * @return whether this factory is applicable for the type of the object.
-	 * @generated
-	 */
+   * @return whether this factory is applicable for the type of the object.
+   * @generated
+   */
   @Override
   public boolean isFactoryForType(Object object)
   {
-		if (object == modelPackage) {
-			return true;
-		}
-		if (object instanceof EObject) {
-			return ((EObject)object).eClass().getEPackage() == modelPackage;
-		}
-		return false;
-	}
+    if (object == modelPackage)
+    {
+      return true;
+    }
+    if (object instanceof EObject)
+    {
+      return ((EObject)object).eClass().getEPackage() == modelPackage;
+    }
+    return false;
+  }
 
   /**
-	 * The switch that delegates to the <code>createXXX</code> methods.
-	 * <!-- begin-user-doc -->
+   * The switch that delegates to the <code>createXXX</code> methods.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   protected SpringConfigDslSwitch<Adapter> modelSwitch =
-    new SpringConfigDslSwitch<Adapter>() {
-			@Override
-			public Adapter caseSpringProject(SpringProject object) {
-				return createSpringProjectAdapter();
-			}
-			@Override
-			public Adapter caseAbstractKeyValue(AbstractKeyValue object) {
-				return createAbstractKeyValueAdapter();
-			}
-			@Override
-			public Adapter caseAbstractArtefact(AbstractArtefact object) {
-				return createAbstractArtefactAdapter();
-			}
-			@Override
-			public Adapter caseCollection(Collection object) {
-				return createCollectionAdapter();
-			}
-			@Override
-			public Adapter caseConfiguration(Configuration object) {
-				return createConfigurationAdapter();
-			}
-			@Override
-			public Adapter caseAlias(Alias object) {
-				return createAliasAdapter();
-			}
-			@Override
-			public Adapter caseImport(Import object) {
-				return createImportAdapter();
-			}
-			@Override
-			public Adapter caseContext(Context object) {
-				return createContextAdapter();
-			}
-			@Override
-			public Adapter caseAnnotationConfig(AnnotationConfig object) {
-				return createAnnotationConfigAdapter();
-			}
-			@Override
-			public Adapter caseComponentScan(ComponentScan object) {
-				return createComponentScanAdapter();
-			}
-			@Override
-			public Adapter caseIncludeFilter(IncludeFilter object) {
-				return createIncludeFilterAdapter();
-			}
-			@Override
-			public Adapter caseExcludeFilter(ExcludeFilter object) {
-				return createExcludeFilterAdapter();
-			}
-			@Override
-			public Adapter caseLoadTimeWeaver(LoadTimeWeaver object) {
-				return createLoadTimeWeaverAdapter();
-			}
-			@Override
-			public Adapter caseMbeanExport(MbeanExport object) {
-				return createMbeanExportAdapter();
-			}
-			@Override
-			public Adapter caseMbeanServer(MbeanServer object) {
-				return createMbeanServerAdapter();
-			}
-			@Override
-			public Adapter casePropertyHolder(PropertyHolder object) {
-				return createPropertyHolderAdapter();
-			}
-			@Override
-			public Adapter casePropertyPlaceholder(PropertyPlaceholder object) {
-				return createPropertyPlaceholderAdapter();
-			}
-			@Override
-			public Adapter casePropertyOverride(PropertyOverride object) {
-				return createPropertyOverrideAdapter();
-			}
-			@Override
-			public Adapter caseSpringConfigured(SpringConfigured object) {
-				return createSpringConfiguredAdapter();
-			}
-			@Override
-			public Adapter caseAspect(Aspect object) {
-				return createAspectAdapter();
-			}
-			@Override
-			public Adapter caseAopAspectJAutoproxy(AopAspectJAutoproxy object) {
-				return createAopAspectJAutoproxyAdapter();
-			}
-			@Override
-			public Adapter caseAopInclude(AopInclude object) {
-				return createAopIncludeAdapter();
-			}
-			@Override
-			public Adapter caseAopConfig(AopConfig object) {
-				return createAopConfigAdapter();
-			}
-			@Override
-			public Adapter caseAopPointcut(AopPointcut object) {
-				return createAopPointcutAdapter();
-			}
-			@Override
-			public Adapter caseAopAdvisor(AopAdvisor object) {
-				return createAopAdvisorAdapter();
-			}
-			@Override
-			public Adapter caseAopAspect(AopAspect object) {
-				return createAopAspectAdapter();
-			}
-			@Override
-			public Adapter caseDeclareParents(DeclareParents object) {
-				return createDeclareParentsAdapter();
-			}
-			@Override
-			public Adapter caseInterface(Interface object) {
-				return createInterfaceAdapter();
-			}
-			@Override
-			public Adapter caseAopDefaultImplInterface(AopDefaultImplInterface object) {
-				return createAopDefaultImplInterfaceAdapter();
-			}
-			@Override
-			public Adapter caseAopDelegateImplRef(AopDelegateImplRef object) {
-				return createAopDelegateImplRefAdapter();
-			}
-			@Override
-			public Adapter caseAdvise(Advise object) {
-				return createAdviseAdapter();
-			}
-			@Override
-			public Adapter caseBeforeAdvise(BeforeAdvise object) {
-				return createBeforeAdviseAdapter();
-			}
-			@Override
-			public Adapter caseAfterAdvise(AfterAdvise object) {
-				return createAfterAdviseAdapter();
-			}
-			@Override
-			public Adapter caseAroundAdvise(AroundAdvise object) {
-				return createAroundAdviseAdapter();
-			}
-			@Override
-			public Adapter caseAfterReturning(AfterReturning object) {
-				return createAfterReturningAdapter();
-			}
-			@Override
-			public Adapter caseAfterThowing(AfterThowing object) {
-				return createAfterThowingAdapter();
-			}
-			@Override
-			public Adapter caseTxAdvise(TxAdvise object) {
-				return createTxAdviseAdapter();
-			}
-			@Override
-			public Adapter caseTxAttribute(TxAttribute object) {
-				return createTxAttributeAdapter();
-			}
-			@Override
-			public Adapter caseTxMethod(TxMethod object) {
-				return createTxMethodAdapter();
-			}
-			@Override
-			public Adapter caseTxJtaTransactionManager(TxJtaTransactionManager object) {
-				return createTxJtaTransactionManagerAdapter();
-			}
-			@Override
-			public Adapter caseComponent(Component object) {
-				return createComponentAdapter();
-			}
-			@Override
-			public Adapter caseCreationMethod(CreationMethod object) {
-				return createCreationMethodAdapter();
-			}
-			@Override
-			public Adapter caseClassOrFactory(ClassOrFactory object) {
-				return createClassOrFactoryAdapter();
-			}
-			@Override
-			public Adapter caseFactory(Factory object) {
-				return createFactoryAdapter();
-			}
-			@Override
-			public Adapter caseClass(org.xtext.spring.springConfigDsl.Class object) {
-				return createClassAdapter();
-			}
-			@Override
-			public Adapter caseAopScopedProxy(AopScopedProxy object) {
-				return createAopScopedProxyAdapter();
-			}
-			@Override
-			public Adapter caseFeature(Feature object) {
-				return createFeatureAdapter();
-			}
-			@Override
-			public Adapter caseAttribute(Attribute object) {
-				return createAttributeAdapter();
-			}
-			@Override
-			public Adapter caseReference(Reference object) {
-				return createReferenceAdapter();
-			}
-			@Override
-			public Adapter caseLookupMethod(LookupMethod object) {
-				return createLookupMethodAdapter();
-			}
-			@Override
-			public Adapter caseQualifier(Qualifier object) {
-				return createQualifierAdapter();
-			}
-			@Override
-			public Adapter caseMeta(Meta object) {
-				return createMetaAdapter();
-			}
-			@Override
-			public Adapter caseQualifierAttribute(QualifierAttribute object) {
-				return createQualifierAttributeAdapter();
-			}
-			@Override
-			public Adapter casesList(sList object) {
-				return createsListAdapter();
-			}
-			@Override
-			public Adapter casesSet(sSet object) {
-				return createsSetAdapter();
-			}
-			@Override
-			public Adapter caseProps(Props object) {
-				return createPropsAdapter();
-			}
-			@Override
-			public Adapter caseProp(Prop object) {
-				return createPropAdapter();
-			}
-			@Override
-			public Adapter caseMap(Map object) {
-				return createMapAdapter();
-			}
-			@Override
-			public Adapter caseMapEntry(MapEntry object) {
-				return createMapEntryAdapter();
-			}
-			@Override
-			public Adapter caseKey(Key object) {
-				return createKeyAdapter();
-			}
-			@Override
-			public Adapter caseUtilConstant(UtilConstant object) {
-				return createUtilConstantAdapter();
-			}
-			@Override
-			public Adapter caseUtilPropertyPath(UtilPropertyPath object) {
-				return createUtilPropertyPathAdapter();
-			}
-			@Override
-			public Adapter caseUtilProperties(UtilProperties object) {
-				return createUtilPropertiesAdapter();
-			}
-			@Override
-			public Adapter caseUtilList(UtilList object) {
-				return createUtilListAdapter();
-			}
-			@Override
-			public Adapter caseUtilMap(UtilMap object) {
-				return createUtilMapAdapter();
-			}
-			@Override
-			public Adapter caseUtilSet(UtilSet object) {
-				return createUtilSetAdapter();
-			}
-			@Override
-			public Adapter casePropertyFile(PropertyFile object) {
-				return createPropertyFileAdapter();
-			}
-			@Override
-			public Adapter caseDataString(DataString object) {
-				return createDataStringAdapter();
-			}
-			@Override
-			public Adapter defaultCase(EObject object) {
-				return createEObjectAdapter();
-			}
-		};
+    new SpringConfigDslSwitch<Adapter>()
+    {
+      @Override
+      public Adapter caseSpringProject(SpringProject object)
+      {
+        return createSpringProjectAdapter();
+      }
+      @Override
+      public Adapter caseAbstractKeyValue(AbstractKeyValue object)
+      {
+        return createAbstractKeyValueAdapter();
+      }
+      @Override
+      public Adapter caseAbstractArtefact(AbstractArtefact object)
+      {
+        return createAbstractArtefactAdapter();
+      }
+      @Override
+      public Adapter caseCollection(Collection object)
+      {
+        return createCollectionAdapter();
+      }
+      @Override
+      public Adapter caseConfiguration(Configuration object)
+      {
+        return createConfigurationAdapter();
+      }
+      @Override
+      public Adapter caseMVC(MVC object)
+      {
+        return createMVCAdapter();
+      }
+      @Override
+      public Adapter caseAlias(Alias object)
+      {
+        return createAliasAdapter();
+      }
+      @Override
+      public Adapter caseImport(Import object)
+      {
+        return createImportAdapter();
+      }
+      @Override
+      public Adapter caseContext(Context object)
+      {
+        return createContextAdapter();
+      }
+      @Override
+      public Adapter caseAnnotationConfig(AnnotationConfig object)
+      {
+        return createAnnotationConfigAdapter();
+      }
+      @Override
+      public Adapter caseComponentScan(ComponentScan object)
+      {
+        return createComponentScanAdapter();
+      }
+      @Override
+      public Adapter caseIncludeFilter(IncludeFilter object)
+      {
+        return createIncludeFilterAdapter();
+      }
+      @Override
+      public Adapter caseExcludeFilter(ExcludeFilter object)
+      {
+        return createExcludeFilterAdapter();
+      }
+      @Override
+      public Adapter caseLoadTimeWeaver(LoadTimeWeaver object)
+      {
+        return createLoadTimeWeaverAdapter();
+      }
+      @Override
+      public Adapter caseMbeanExport(MbeanExport object)
+      {
+        return createMbeanExportAdapter();
+      }
+      @Override
+      public Adapter caseMbeanServer(MbeanServer object)
+      {
+        return createMbeanServerAdapter();
+      }
+      @Override
+      public Adapter casePropertyHolder(PropertyHolder object)
+      {
+        return createPropertyHolderAdapter();
+      }
+      @Override
+      public Adapter casePropertyPlaceholder(PropertyPlaceholder object)
+      {
+        return createPropertyPlaceholderAdapter();
+      }
+      @Override
+      public Adapter casePropertyOverride(PropertyOverride object)
+      {
+        return createPropertyOverrideAdapter();
+      }
+      @Override
+      public Adapter caseSpringConfigured(SpringConfigured object)
+      {
+        return createSpringConfiguredAdapter();
+      }
+      @Override
+      public Adapter caseAspect(Aspect object)
+      {
+        return createAspectAdapter();
+      }
+      @Override
+      public Adapter caseAopAspectJAutoproxy(AopAspectJAutoproxy object)
+      {
+        return createAopAspectJAutoproxyAdapter();
+      }
+      @Override
+      public Adapter caseAopInclude(AopInclude object)
+      {
+        return createAopIncludeAdapter();
+      }
+      @Override
+      public Adapter caseAopConfig(AopConfig object)
+      {
+        return createAopConfigAdapter();
+      }
+      @Override
+      public Adapter caseAopPointcut(AopPointcut object)
+      {
+        return createAopPointcutAdapter();
+      }
+      @Override
+      public Adapter caseAopAdvisor(AopAdvisor object)
+      {
+        return createAopAdvisorAdapter();
+      }
+      @Override
+      public Adapter caseAopAspect(AopAspect object)
+      {
+        return createAopAspectAdapter();
+      }
+      @Override
+      public Adapter caseDeclareParents(DeclareParents object)
+      {
+        return createDeclareParentsAdapter();
+      }
+      @Override
+      public Adapter caseInterface(Interface object)
+      {
+        return createInterfaceAdapter();
+      }
+      @Override
+      public Adapter caseAopDefaultImplInterface(AopDefaultImplInterface object)
+      {
+        return createAopDefaultImplInterfaceAdapter();
+      }
+      @Override
+      public Adapter caseAopDelegateImplRef(AopDelegateImplRef object)
+      {
+        return createAopDelegateImplRefAdapter();
+      }
+      @Override
+      public Adapter caseAdvise(Advise object)
+      {
+        return createAdviseAdapter();
+      }
+      @Override
+      public Adapter caseBeforeAdvise(BeforeAdvise object)
+      {
+        return createBeforeAdviseAdapter();
+      }
+      @Override
+      public Adapter caseAfterAdvise(AfterAdvise object)
+      {
+        return createAfterAdviseAdapter();
+      }
+      @Override
+      public Adapter caseAroundAdvise(AroundAdvise object)
+      {
+        return createAroundAdviseAdapter();
+      }
+      @Override
+      public Adapter caseAfterReturning(AfterReturning object)
+      {
+        return createAfterReturningAdapter();
+      }
+      @Override
+      public Adapter caseAfterThowing(AfterThowing object)
+      {
+        return createAfterThowingAdapter();
+      }
+      @Override
+      public Adapter caseTxAdvise(TxAdvise object)
+      {
+        return createTxAdviseAdapter();
+      }
+      @Override
+      public Adapter caseTxAttribute(TxAttribute object)
+      {
+        return createTxAttributeAdapter();
+      }
+      @Override
+      public Adapter caseTxMethod(TxMethod object)
+      {
+        return createTxMethodAdapter();
+      }
+      @Override
+      public Adapter caseTxJtaTransactionManager(TxJtaTransactionManager object)
+      {
+        return createTxJtaTransactionManagerAdapter();
+      }
+      @Override
+      public Adapter caseComponent(Component object)
+      {
+        return createComponentAdapter();
+      }
+      @Override
+      public Adapter caseCreationMethod(CreationMethod object)
+      {
+        return createCreationMethodAdapter();
+      }
+      @Override
+      public Adapter caseClassOrFactory(ClassOrFactory object)
+      {
+        return createClassOrFactoryAdapter();
+      }
+      @Override
+      public Adapter caseFactory(Factory object)
+      {
+        return createFactoryAdapter();
+      }
+      @Override
+      public Adapter caseClass(org.xtext.spring.springConfigDsl.Class object)
+      {
+        return createClassAdapter();
+      }
+      @Override
+      public Adapter caseAopScopedProxy(AopScopedProxy object)
+      {
+        return createAopScopedProxyAdapter();
+      }
+      @Override
+      public Adapter caseFeature(Feature object)
+      {
+        return createFeatureAdapter();
+      }
+      @Override
+      public Adapter caseAttribute(Attribute object)
+      {
+        return createAttributeAdapter();
+      }
+      @Override
+      public Adapter caseReference(Reference object)
+      {
+        return createReferenceAdapter();
+      }
+      @Override
+      public Adapter caseLookupMethod(LookupMethod object)
+      {
+        return createLookupMethodAdapter();
+      }
+      @Override
+      public Adapter caseQualifier(Qualifier object)
+      {
+        return createQualifierAdapter();
+      }
+      @Override
+      public Adapter caseMeta(Meta object)
+      {
+        return createMetaAdapter();
+      }
+      @Override
+      public Adapter caseQualifierAttribute(QualifierAttribute object)
+      {
+        return createQualifierAttributeAdapter();
+      }
+      @Override
+      public Adapter casesList(sList object)
+      {
+        return createsListAdapter();
+      }
+      @Override
+      public Adapter casesSet(sSet object)
+      {
+        return createsSetAdapter();
+      }
+      @Override
+      public Adapter caseProps(Props object)
+      {
+        return createPropsAdapter();
+      }
+      @Override
+      public Adapter caseProp(Prop object)
+      {
+        return createPropAdapter();
+      }
+      @Override
+      public Adapter caseMap(Map object)
+      {
+        return createMapAdapter();
+      }
+      @Override
+      public Adapter caseMapEntry(MapEntry object)
+      {
+        return createMapEntryAdapter();
+      }
+      @Override
+      public Adapter caseKey(Key object)
+      {
+        return createKeyAdapter();
+      }
+      @Override
+      public Adapter caseUtilConstant(UtilConstant object)
+      {
+        return createUtilConstantAdapter();
+      }
+      @Override
+      public Adapter caseUtilPropertyPath(UtilPropertyPath object)
+      {
+        return createUtilPropertyPathAdapter();
+      }
+      @Override
+      public Adapter caseUtilProperties(UtilProperties object)
+      {
+        return createUtilPropertiesAdapter();
+      }
+      @Override
+      public Adapter caseUtilList(UtilList object)
+      {
+        return createUtilListAdapter();
+      }
+      @Override
+      public Adapter caseUtilMap(UtilMap object)
+      {
+        return createUtilMapAdapter();
+      }
+      @Override
+      public Adapter caseUtilSet(UtilSet object)
+      {
+        return createUtilSetAdapter();
+      }
+      @Override
+      public Adapter casePropertyFile(PropertyFile object)
+      {
+        return createPropertyFileAdapter();
+      }
+      @Override
+      public Adapter caseDataString(DataString object)
+      {
+        return createDataStringAdapter();
+      }
+      @Override
+      public Adapter defaultCase(EObject object)
+      {
+        return createEObjectAdapter();
+      }
+    };
 
   /**
-	 * Creates an adapter for the <code>target</code>.
-	 * <!-- begin-user-doc -->
+   * Creates an adapter for the <code>target</code>.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @param target the object to adapt.
-	 * @return the adapter for the <code>target</code>.
-	 * @generated
-	 */
+   * @param target the object to adapt.
+   * @return the adapter for the <code>target</code>.
+   * @generated
+   */
   @Override
   public Adapter createAdapter(Notifier target)
   {
-		return modelSwitch.doSwitch((EObject)target);
-	}
+    return modelSwitch.doSwitch((EObject)target);
+  }
 
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.SpringProject <em>Spring Project</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.SpringProject <em>Spring Project</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.SpringProject
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.SpringProject
+   * @generated
+   */
   public Adapter createSpringProjectAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.AbstractKeyValue <em>Abstract Key Value</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.AbstractKeyValue <em>Abstract Key Value</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.AbstractKeyValue
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.AbstractKeyValue
+   * @generated
+   */
   public Adapter createAbstractKeyValueAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.AbstractArtefact <em>Abstract Artefact</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.AbstractArtefact <em>Abstract Artefact</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.AbstractArtefact
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.AbstractArtefact
+   * @generated
+   */
   public Adapter createAbstractArtefactAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.Collection <em>Collection</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.Collection <em>Collection</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.Collection
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.Collection
+   * @generated
+   */
   public Adapter createCollectionAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.Configuration <em>Configuration</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.Configuration <em>Configuration</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.Configuration
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.Configuration
+   * @generated
+   */
   public Adapter createConfigurationAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.Alias <em>Alias</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.MVC <em>MVC</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.Alias
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.MVC
+   * @generated
+   */
+  public Adapter createMVCAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.Alias <em>Alias</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.Alias
+   * @generated
+   */
   public Adapter createAliasAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.Import <em>Import</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.Import <em>Import</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.Import
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.Import
+   * @generated
+   */
   public Adapter createImportAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.Context <em>Context</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.Context <em>Context</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.Context
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.Context
+   * @generated
+   */
   public Adapter createContextAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.AnnotationConfig <em>Annotation Config</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.AnnotationConfig <em>Annotation Config</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.AnnotationConfig
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.AnnotationConfig
+   * @generated
+   */
   public Adapter createAnnotationConfigAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.ComponentScan <em>Component Scan</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.ComponentScan <em>Component Scan</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.ComponentScan
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.ComponentScan
+   * @generated
+   */
   public Adapter createComponentScanAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.IncludeFilter <em>Include Filter</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.IncludeFilter <em>Include Filter</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.IncludeFilter
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.IncludeFilter
+   * @generated
+   */
   public Adapter createIncludeFilterAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.ExcludeFilter <em>Exclude Filter</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.ExcludeFilter <em>Exclude Filter</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.ExcludeFilter
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.ExcludeFilter
+   * @generated
+   */
   public Adapter createExcludeFilterAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.LoadTimeWeaver <em>Load Time Weaver</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.LoadTimeWeaver <em>Load Time Weaver</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.LoadTimeWeaver
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.LoadTimeWeaver
+   * @generated
+   */
   public Adapter createLoadTimeWeaverAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.MbeanExport <em>Mbean Export</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.MbeanExport <em>Mbean Export</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.MbeanExport
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.MbeanExport
+   * @generated
+   */
   public Adapter createMbeanExportAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.MbeanServer <em>Mbean Server</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.MbeanServer <em>Mbean Server</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.MbeanServer
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.MbeanServer
+   * @generated
+   */
   public Adapter createMbeanServerAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.PropertyHolder <em>Property Holder</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.PropertyHolder <em>Property Holder</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.PropertyHolder
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.PropertyHolder
+   * @generated
+   */
   public Adapter createPropertyHolderAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.PropertyPlaceholder <em>Property Placeholder</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.PropertyPlaceholder <em>Property Placeholder</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.PropertyPlaceholder
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.PropertyPlaceholder
+   * @generated
+   */
   public Adapter createPropertyPlaceholderAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.PropertyOverride <em>Property Override</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.PropertyOverride <em>Property Override</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.PropertyOverride
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.PropertyOverride
+   * @generated
+   */
   public Adapter createPropertyOverrideAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.SpringConfigured <em>Spring Configured</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.SpringConfigured <em>Spring Configured</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.SpringConfigured
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.SpringConfigured
+   * @generated
+   */
   public Adapter createSpringConfiguredAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.Aspect <em>Aspect</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.Aspect <em>Aspect</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.Aspect
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.Aspect
+   * @generated
+   */
   public Adapter createAspectAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.AopAspectJAutoproxy <em>Aop Aspect JAutoproxy</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.AopAspectJAutoproxy <em>Aop Aspect JAutoproxy</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.AopAspectJAutoproxy
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.AopAspectJAutoproxy
+   * @generated
+   */
   public Adapter createAopAspectJAutoproxyAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.AopInclude <em>Aop Include</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.AopInclude <em>Aop Include</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.AopInclude
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.AopInclude
+   * @generated
+   */
   public Adapter createAopIncludeAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.AopConfig <em>Aop Config</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.AopConfig <em>Aop Config</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.AopConfig
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.AopConfig
+   * @generated
+   */
   public Adapter createAopConfigAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.AopPointcut <em>Aop Pointcut</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.AopPointcut <em>Aop Pointcut</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.AopPointcut
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.AopPointcut
+   * @generated
+   */
   public Adapter createAopPointcutAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.AopAdvisor <em>Aop Advisor</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.AopAdvisor <em>Aop Advisor</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.AopAdvisor
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.AopAdvisor
+   * @generated
+   */
   public Adapter createAopAdvisorAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.AopAspect <em>Aop Aspect</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.AopAspect <em>Aop Aspect</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.AopAspect
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.AopAspect
+   * @generated
+   */
   public Adapter createAopAspectAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.DeclareParents <em>Declare Parents</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.DeclareParents <em>Declare Parents</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.DeclareParents
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.DeclareParents
+   * @generated
+   */
   public Adapter createDeclareParentsAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.Interface <em>Interface</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.Interface <em>Interface</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.Interface
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.Interface
+   * @generated
+   */
   public Adapter createInterfaceAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.AopDefaultImplInterface <em>Aop Default Impl Interface</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.AopDefaultImplInterface <em>Aop Default Impl Interface</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.AopDefaultImplInterface
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.AopDefaultImplInterface
+   * @generated
+   */
   public Adapter createAopDefaultImplInterfaceAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.AopDelegateImplRef <em>Aop Delegate Impl Ref</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.AopDelegateImplRef <em>Aop Delegate Impl Ref</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.AopDelegateImplRef
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.AopDelegateImplRef
+   * @generated
+   */
   public Adapter createAopDelegateImplRefAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.Advise <em>Advise</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.Advise <em>Advise</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.Advise
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.Advise
+   * @generated
+   */
   public Adapter createAdviseAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.BeforeAdvise <em>Before Advise</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.BeforeAdvise <em>Before Advise</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.BeforeAdvise
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.BeforeAdvise
+   * @generated
+   */
   public Adapter createBeforeAdviseAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.AfterAdvise <em>After Advise</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.AfterAdvise <em>After Advise</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.AfterAdvise
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.AfterAdvise
+   * @generated
+   */
   public Adapter createAfterAdviseAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.AroundAdvise <em>Around Advise</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.AroundAdvise <em>Around Advise</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.AroundAdvise
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.AroundAdvise
+   * @generated
+   */
   public Adapter createAroundAdviseAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.AfterReturning <em>After Returning</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.AfterReturning <em>After Returning</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.AfterReturning
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.AfterReturning
+   * @generated
+   */
   public Adapter createAfterReturningAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.AfterThowing <em>After Thowing</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.AfterThowing <em>After Thowing</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.AfterThowing
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.AfterThowing
+   * @generated
+   */
   public Adapter createAfterThowingAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.TxAdvise <em>Tx Advise</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.TxAdvise <em>Tx Advise</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.TxAdvise
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.TxAdvise
+   * @generated
+   */
   public Adapter createTxAdviseAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.TxAttribute <em>Tx Attribute</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.TxAttribute <em>Tx Attribute</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.TxAttribute
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.TxAttribute
+   * @generated
+   */
   public Adapter createTxAttributeAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.TxMethod <em>Tx Method</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.TxMethod <em>Tx Method</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.TxMethod
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.TxMethod
+   * @generated
+   */
   public Adapter createTxMethodAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.TxJtaTransactionManager <em>Tx Jta Transaction Manager</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.TxJtaTransactionManager <em>Tx Jta Transaction Manager</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.TxJtaTransactionManager
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.TxJtaTransactionManager
+   * @generated
+   */
   public Adapter createTxJtaTransactionManagerAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.Component <em>Component</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.Component <em>Component</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.Component
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.Component
+   * @generated
+   */
   public Adapter createComponentAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.CreationMethod <em>Creation Method</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.CreationMethod <em>Creation Method</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.CreationMethod
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.CreationMethod
+   * @generated
+   */
   public Adapter createCreationMethodAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.ClassOrFactory <em>Class Or Factory</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.ClassOrFactory <em>Class Or Factory</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.ClassOrFactory
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.ClassOrFactory
+   * @generated
+   */
   public Adapter createClassOrFactoryAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.Factory <em>Factory</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.Factory <em>Factory</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.Factory
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.Factory
+   * @generated
+   */
   public Adapter createFactoryAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.Class <em>Class</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.Class <em>Class</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.Class
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.Class
+   * @generated
+   */
   public Adapter createClassAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.AopScopedProxy <em>Aop Scoped Proxy</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.AopScopedProxy <em>Aop Scoped Proxy</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.AopScopedProxy
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.AopScopedProxy
+   * @generated
+   */
   public Adapter createAopScopedProxyAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.Feature <em>Feature</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.Feature <em>Feature</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.Feature
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.Feature
+   * @generated
+   */
   public Adapter createFeatureAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.Attribute <em>Attribute</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.Attribute <em>Attribute</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.Attribute
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.Attribute
+   * @generated
+   */
   public Adapter createAttributeAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.Reference <em>Reference</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.Reference <em>Reference</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.Reference
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.Reference
+   * @generated
+   */
   public Adapter createReferenceAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.LookupMethod <em>Lookup Method</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.LookupMethod <em>Lookup Method</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.LookupMethod
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.LookupMethod
+   * @generated
+   */
   public Adapter createLookupMethodAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.Qualifier <em>Qualifier</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.Qualifier <em>Qualifier</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.Qualifier
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.Qualifier
+   * @generated
+   */
   public Adapter createQualifierAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.Meta <em>Meta</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.Meta <em>Meta</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.Meta
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.Meta
+   * @generated
+   */
   public Adapter createMetaAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.QualifierAttribute <em>Qualifier Attribute</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.QualifierAttribute <em>Qualifier Attribute</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.QualifierAttribute
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.QualifierAttribute
+   * @generated
+   */
   public Adapter createQualifierAttributeAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.sList <em>sList</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.sList <em>sList</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.sList
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.sList
+   * @generated
+   */
   public Adapter createsListAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.sSet <em>sSet</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.sSet <em>sSet</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.sSet
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.sSet
+   * @generated
+   */
   public Adapter createsSetAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.Props <em>Props</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.Props <em>Props</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.Props
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.Props
+   * @generated
+   */
   public Adapter createPropsAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.Prop <em>Prop</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.Prop <em>Prop</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.Prop
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.Prop
+   * @generated
+   */
   public Adapter createPropAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.Map <em>Map</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.Map <em>Map</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.Map
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.Map
+   * @generated
+   */
   public Adapter createMapAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.MapEntry <em>Map Entry</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.MapEntry <em>Map Entry</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.MapEntry
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.MapEntry
+   * @generated
+   */
   public Adapter createMapEntryAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.Key <em>Key</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.Key <em>Key</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.Key
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.Key
+   * @generated
+   */
   public Adapter createKeyAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.UtilConstant <em>Util Constant</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.UtilConstant <em>Util Constant</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.UtilConstant
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.UtilConstant
+   * @generated
+   */
   public Adapter createUtilConstantAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.UtilPropertyPath <em>Util Property Path</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.UtilPropertyPath <em>Util Property Path</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.UtilPropertyPath
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.UtilPropertyPath
+   * @generated
+   */
   public Adapter createUtilPropertyPathAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.UtilProperties <em>Util Properties</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.UtilProperties <em>Util Properties</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.UtilProperties
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.UtilProperties
+   * @generated
+   */
   public Adapter createUtilPropertiesAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.UtilList <em>Util List</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.UtilList <em>Util List</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.UtilList
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.UtilList
+   * @generated
+   */
   public Adapter createUtilListAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.UtilMap <em>Util Map</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.UtilMap <em>Util Map</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.UtilMap
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.UtilMap
+   * @generated
+   */
   public Adapter createUtilMapAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.UtilSet <em>Util Set</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.UtilSet <em>Util Set</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.UtilSet
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.UtilSet
+   * @generated
+   */
   public Adapter createUtilSetAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.PropertyFile <em>Property File</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.PropertyFile <em>Property File</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.PropertyFile
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.PropertyFile
+   * @generated
+   */
   public Adapter createPropertyFileAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.DataString <em>Data String</em>}'.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.DataString <em>Data String</em>}'.
+   * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.xtext.spring.springConfigDsl.DataString
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.DataString
+   * @generated
+   */
   public Adapter createDataStringAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Creates a new adapter for the default case.
-	 * <!-- begin-user-doc -->
+   * Creates a new adapter for the default case.
+   * <!-- begin-user-doc -->
    * This default implementation returns null.
    * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @generated
-	 */
+   * @return the new adapter.
+   * @generated
+   */
   public Adapter createEObjectAdapter()
   {
-		return null;
-	}
+    return null;
+  }
 
 } //SpringConfigDslAdapterFactory

@@ -78,6 +78,7 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference SpringConfigDsl.ecore#//Configuration/alias"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference SpringConfigDsl.ecore#//Configuration/imports"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference SpringConfigDsl.ecore#//Configuration/contexts"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference SpringConfigDsl.ecore#//Configuration/mvcs"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference SpringConfigDsl.ecore#//Configuration/aspects"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference SpringConfigDsl.ecore#//Configuration/utilConstants"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference SpringConfigDsl.ecore#//Configuration/utilLists"/>
@@ -89,6 +90,7 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference SpringConfigDsl.ecore#//Configuration/txJtaTransactionManager"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference SpringConfigDsl.ecore#//Configuration/ConfigurationComposite"/>
     </genClasses>
+    <genClasses ecoreClass="SpringConfigDsl.ecore#//MVC"/>
     <genClasses ecoreClass="SpringConfigDsl.ecore#//Alias">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference SpringConfigDsl.ecore#//Alias/origin"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute SpringConfigDsl.ecore#//Alias/alias"/>

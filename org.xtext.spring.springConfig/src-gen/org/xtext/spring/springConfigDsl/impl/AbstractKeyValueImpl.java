@@ -20,24 +20,24 @@ import org.xtext.spring.springConfigDsl.SpringConfigDslPackage;
 public class AbstractKeyValueImpl extends MinimalEObjectImpl.Container implements AbstractKeyValue
 {
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   protected AbstractKeyValueImpl()
   {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   protected EClass eStaticClass()
   {
-		return SpringConfigDslPackage.Literals.ABSTRACT_KEY_VALUE;
-	}
+    return SpringConfigDslPackage.Literals.ABSTRACT_KEY_VALUE;
+  }
 
 } //AbstractKeyValueImpl

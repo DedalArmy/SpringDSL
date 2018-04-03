@@ -21,231 +21,237 @@ import org.eclipse.emf.common.util.Enumerator;
 public enum EnumScopedProxy implements Enumerator
 {
   /**
-	 * The '<em><b>NO</b></em>' literal object.
-	 * <!-- begin-user-doc -->
+   * The '<em><b>NO</b></em>' literal object.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #NO_VALUE
-	 * @generated
-	 * @ordered
-	 */
+   * @see #NO_VALUE
+   * @generated
+   * @ordered
+   */
   NO(0, "NO", "\"no\""),
 
   /**
-	 * The '<em><b>INTERFACES</b></em>' literal object.
-	 * <!-- begin-user-doc -->
+   * The '<em><b>INTERFACES</b></em>' literal object.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #INTERFACES_VALUE
-	 * @generated
-	 * @ordered
-	 */
+   * @see #INTERFACES_VALUE
+   * @generated
+   * @ordered
+   */
   INTERFACES(1, "INTERFACES", "\"interfaces\""),
 
   /**
-	 * The '<em><b>TARGETCLASS</b></em>' literal object.
-	 * <!-- begin-user-doc -->
+   * The '<em><b>TARGETCLASS</b></em>' literal object.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #TARGETCLASS_VALUE
-	 * @generated
-	 * @ordered
-	 */
+   * @see #TARGETCLASS_VALUE
+   * @generated
+   * @ordered
+   */
   TARGETCLASS(2, "TARGETCLASS", "\"targetClass\"");
 
   /**
-	 * The '<em><b>NO</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+   * The '<em><b>NO</b></em>' literal value.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of '<em><b>NO</b></em>' literal object isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @see #NO
-	 * @model literal="\"no\""
-	 * @generated
-	 * @ordered
-	 */
+   * @see #NO
+   * @model literal="\"no\""
+   * @generated
+   * @ordered
+   */
   public static final int NO_VALUE = 0;
 
   /**
-	 * The '<em><b>INTERFACES</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+   * The '<em><b>INTERFACES</b></em>' literal value.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of '<em><b>INTERFACES</b></em>' literal object isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @see #INTERFACES
-	 * @model literal="\"interfaces\""
-	 * @generated
-	 * @ordered
-	 */
+   * @see #INTERFACES
+   * @model literal="\"interfaces\""
+   * @generated
+   * @ordered
+   */
   public static final int INTERFACES_VALUE = 1;
 
   /**
-	 * The '<em><b>TARGETCLASS</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+   * The '<em><b>TARGETCLASS</b></em>' literal value.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of '<em><b>TARGETCLASS</b></em>' literal object isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @see #TARGETCLASS
-	 * @model literal="\"targetClass\""
-	 * @generated
-	 * @ordered
-	 */
+   * @see #TARGETCLASS
+   * @model literal="\"targetClass\""
+   * @generated
+   * @ordered
+   */
   public static final int TARGETCLASS_VALUE = 2;
 
   /**
-	 * An array of all the '<em><b>Enum Scoped Proxy</b></em>' enumerators.
-	 * <!-- begin-user-doc -->
+   * An array of all the '<em><b>Enum Scoped Proxy</b></em>' enumerators.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   private static final EnumScopedProxy[] VALUES_ARRAY =
-    new EnumScopedProxy[] {
-			NO,
-			INTERFACES,
-			TARGETCLASS,
-		};
+    new EnumScopedProxy[]
+    {
+      NO,
+      INTERFACES,
+      TARGETCLASS,
+    };
 
   /**
-	 * A public read-only list of all the '<em><b>Enum Scoped Proxy</b></em>' enumerators.
-	 * <!-- begin-user-doc -->
+   * A public read-only list of all the '<em><b>Enum Scoped Proxy</b></em>' enumerators.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public static final List<EnumScopedProxy> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
 
   /**
-	 * Returns the '<em><b>Enum Scoped Proxy</b></em>' literal with the specified literal value.
-	 * <!-- begin-user-doc -->
+   * Returns the '<em><b>Enum Scoped Proxy</b></em>' literal with the specified literal value.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @param literal the literal.
-	 * @return the matching enumerator or <code>null</code>.
-	 * @generated
-	 */
+   * @param literal the literal.
+   * @return the matching enumerator or <code>null</code>.
+   * @generated
+   */
   public static EnumScopedProxy get(String literal)
   {
-		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-			EnumScopedProxy result = VALUES_ARRAY[i];
-			if (result.toString().equals(literal)) {
-				return result;
-			}
-		}
-		return null;
-	}
+    for (int i = 0; i < VALUES_ARRAY.length; ++i)
+    {
+      EnumScopedProxy result = VALUES_ARRAY[i];
+      if (result.toString().equals(literal))
+      {
+        return result;
+      }
+    }
+    return null;
+  }
 
   /**
-	 * Returns the '<em><b>Enum Scoped Proxy</b></em>' literal with the specified name.
-	 * <!-- begin-user-doc -->
+   * Returns the '<em><b>Enum Scoped Proxy</b></em>' literal with the specified name.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @param name the name.
-	 * @return the matching enumerator or <code>null</code>.
-	 * @generated
-	 */
+   * @param name the name.
+   * @return the matching enumerator or <code>null</code>.
+   * @generated
+   */
   public static EnumScopedProxy getByName(String name)
   {
-		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-			EnumScopedProxy result = VALUES_ARRAY[i];
-			if (result.getName().equals(name)) {
-				return result;
-			}
-		}
-		return null;
-	}
+    for (int i = 0; i < VALUES_ARRAY.length; ++i)
+    {
+      EnumScopedProxy result = VALUES_ARRAY[i];
+      if (result.getName().equals(name))
+      {
+        return result;
+      }
+    }
+    return null;
+  }
 
   /**
-	 * Returns the '<em><b>Enum Scoped Proxy</b></em>' literal with the specified integer value.
-	 * <!-- begin-user-doc -->
+   * Returns the '<em><b>Enum Scoped Proxy</b></em>' literal with the specified integer value.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @param value the integer value.
-	 * @return the matching enumerator or <code>null</code>.
-	 * @generated
-	 */
+   * @param value the integer value.
+   * @return the matching enumerator or <code>null</code>.
+   * @generated
+   */
   public static EnumScopedProxy get(int value)
   {
-		switch (value) {
-			case NO_VALUE: return NO;
-			case INTERFACES_VALUE: return INTERFACES;
-			case TARGETCLASS_VALUE: return TARGETCLASS;
-		}
-		return null;
-	}
+    switch (value)
+    {
+      case NO_VALUE: return NO;
+      case INTERFACES_VALUE: return INTERFACES;
+      case TARGETCLASS_VALUE: return TARGETCLASS;
+    }
+    return null;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   private final int value;
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   private final String name;
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   private final String literal;
 
   /**
-	 * Only this class can construct instances.
-	 * <!-- begin-user-doc -->
+   * Only this class can construct instances.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   private EnumScopedProxy(int value, String name, String literal)
   {
-		this.value = value;
-		this.name = name;
-		this.literal = literal;
-	}
+    this.value = value;
+    this.name = name;
+    this.literal = literal;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public int getValue()
   {
-	  return value;
-	}
+    return value;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public String getName()
   {
-	  return name;
-	}
+    return name;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public String getLiteral()
   {
-	  return literal;
-	}
+    return literal;
+  }
 
   /**
-	 * Returns the literal value of the enumerator, which is its string representation.
-	 * <!-- begin-user-doc -->
+   * Returns the literal value of the enumerator, which is its string representation.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public String toString()
   {
-		return literal;
-	}
+    return literal;
+  }
   
 } //EnumScopedProxy

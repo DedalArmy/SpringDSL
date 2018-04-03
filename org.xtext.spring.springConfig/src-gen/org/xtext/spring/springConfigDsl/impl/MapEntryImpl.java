@@ -36,350 +36,359 @@ import org.xtext.spring.springConfigDsl.SpringConfigDslPackage;
 public class MapEntryImpl extends MinimalEObjectImpl.Container implements MapEntry
 {
   /**
-	 * The cached value of the '{@link #getKey() <em>Key</em>}' containment reference.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getKey() <em>Key</em>}' containment reference.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getKey()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getKey()
+   * @generated
+   * @ordered
+   */
   protected Key key;
 
   /**
-	 * The cached value of the '{@link #getValue() <em>Value</em>}' containment reference.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getValue() <em>Value</em>}' containment reference.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getValue()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getValue()
+   * @generated
+   * @ordered
+   */
   protected AbstractArtefact value;
 
   /**
-	 * The default value of the '{@link #getDescription() <em>Description</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The default value of the '{@link #getDescription() <em>Description</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getDescription()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getDescription()
+   * @generated
+   * @ordered
+   */
   protected static final String DESCRIPTION_EDEFAULT = null;
 
   /**
-	 * The cached value of the '{@link #getDescription() <em>Description</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getDescription() <em>Description</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getDescription()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getDescription()
+   * @generated
+   * @ordered
+   */
   protected String description = DESCRIPTION_EDEFAULT;
 
   /**
-	 * The default value of the '{@link #getValueType() <em>Value Type</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The default value of the '{@link #getValueType() <em>Value Type</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getValueType()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getValueType()
+   * @generated
+   * @ordered
+   */
   protected static final String VALUE_TYPE_EDEFAULT = null;
 
   /**
-	 * The cached value of the '{@link #getValueType() <em>Value Type</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getValueType() <em>Value Type</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getValueType()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getValueType()
+   * @generated
+   * @ordered
+   */
   protected String valueType = VALUE_TYPE_EDEFAULT;
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   protected MapEntryImpl()
   {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   protected EClass eStaticClass()
   {
-		return SpringConfigDslPackage.Literals.MAP_ENTRY;
-	}
+    return SpringConfigDslPackage.Literals.MAP_ENTRY;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public Key getKey()
   {
-		return key;
-	}
+    return key;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public NotificationChain basicSetKey(Key newKey, NotificationChain msgs)
   {
-		Key oldKey = key;
-		key = newKey;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.MAP_ENTRY__KEY, oldKey, newKey);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
-	}
+    Key oldKey = key;
+    key = newKey;
+    if (eNotificationRequired())
+    {
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.MAP_ENTRY__KEY, oldKey, newKey);
+      if (msgs == null) msgs = notification; else msgs.add(notification);
+    }
+    return msgs;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public void setKey(Key newKey)
   {
-		if (newKey != key) {
-			NotificationChain msgs = null;
-			if (key != null)
-				msgs = ((InternalEObject)key).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - SpringConfigDslPackage.MAP_ENTRY__KEY, null, msgs);
-			if (newKey != null)
-				msgs = ((InternalEObject)newKey).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - SpringConfigDslPackage.MAP_ENTRY__KEY, null, msgs);
-			msgs = basicSetKey(newKey, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.MAP_ENTRY__KEY, newKey, newKey));
-	}
+    if (newKey != key)
+    {
+      NotificationChain msgs = null;
+      if (key != null)
+        msgs = ((InternalEObject)key).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - SpringConfigDslPackage.MAP_ENTRY__KEY, null, msgs);
+      if (newKey != null)
+        msgs = ((InternalEObject)newKey).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - SpringConfigDslPackage.MAP_ENTRY__KEY, null, msgs);
+      msgs = basicSetKey(newKey, msgs);
+      if (msgs != null) msgs.dispatch();
+    }
+    else if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.MAP_ENTRY__KEY, newKey, newKey));
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public AbstractArtefact getValue()
   {
-		return value;
-	}
+    return value;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public NotificationChain basicSetValue(AbstractArtefact newValue, NotificationChain msgs)
   {
-		AbstractArtefact oldValue = value;
-		value = newValue;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.MAP_ENTRY__VALUE, oldValue, newValue);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
-	}
+    AbstractArtefact oldValue = value;
+    value = newValue;
+    if (eNotificationRequired())
+    {
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.MAP_ENTRY__VALUE, oldValue, newValue);
+      if (msgs == null) msgs = notification; else msgs.add(notification);
+    }
+    return msgs;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public void setValue(AbstractArtefact newValue)
   {
-		if (newValue != value) {
-			NotificationChain msgs = null;
-			if (value != null)
-				msgs = ((InternalEObject)value).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - SpringConfigDslPackage.MAP_ENTRY__VALUE, null, msgs);
-			if (newValue != null)
-				msgs = ((InternalEObject)newValue).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - SpringConfigDslPackage.MAP_ENTRY__VALUE, null, msgs);
-			msgs = basicSetValue(newValue, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.MAP_ENTRY__VALUE, newValue, newValue));
-	}
+    if (newValue != value)
+    {
+      NotificationChain msgs = null;
+      if (value != null)
+        msgs = ((InternalEObject)value).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - SpringConfigDslPackage.MAP_ENTRY__VALUE, null, msgs);
+      if (newValue != null)
+        msgs = ((InternalEObject)newValue).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - SpringConfigDslPackage.MAP_ENTRY__VALUE, null, msgs);
+      msgs = basicSetValue(newValue, msgs);
+      if (msgs != null) msgs.dispatch();
+    }
+    else if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.MAP_ENTRY__VALUE, newValue, newValue));
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public String getDescription()
   {
-		return description;
-	}
+    return description;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public void setDescription(String newDescription)
   {
-		String oldDescription = description;
-		description = newDescription;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.MAP_ENTRY__DESCRIPTION, oldDescription, description));
-	}
+    String oldDescription = description;
+    description = newDescription;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.MAP_ENTRY__DESCRIPTION, oldDescription, description));
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public String getValueType()
   {
-		return valueType;
-	}
+    return valueType;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public void setValueType(String newValueType)
   {
-		String oldValueType = valueType;
-		valueType = newValueType;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.MAP_ENTRY__VALUE_TYPE, oldValueType, valueType));
-	}
+    String oldValueType = valueType;
+    valueType = newValueType;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.MAP_ENTRY__VALUE_TYPE, oldValueType, valueType));
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
   {
-		switch (featureID) {
-			case SpringConfigDslPackage.MAP_ENTRY__KEY:
-				return basicSetKey(null, msgs);
-			case SpringConfigDslPackage.MAP_ENTRY__VALUE:
-				return basicSetValue(null, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
-	}
+    switch (featureID)
+    {
+      case SpringConfigDslPackage.MAP_ENTRY__KEY:
+        return basicSetKey(null, msgs);
+      case SpringConfigDslPackage.MAP_ENTRY__VALUE:
+        return basicSetValue(null, msgs);
+    }
+    return super.eInverseRemove(otherEnd, featureID, msgs);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType)
   {
-		switch (featureID) {
-			case SpringConfigDslPackage.MAP_ENTRY__KEY:
-				return getKey();
-			case SpringConfigDslPackage.MAP_ENTRY__VALUE:
-				return getValue();
-			case SpringConfigDslPackage.MAP_ENTRY__DESCRIPTION:
-				return getDescription();
-			case SpringConfigDslPackage.MAP_ENTRY__VALUE_TYPE:
-				return getValueType();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+    switch (featureID)
+    {
+      case SpringConfigDslPackage.MAP_ENTRY__KEY:
+        return getKey();
+      case SpringConfigDslPackage.MAP_ENTRY__VALUE:
+        return getValue();
+      case SpringConfigDslPackage.MAP_ENTRY__DESCRIPTION:
+        return getDescription();
+      case SpringConfigDslPackage.MAP_ENTRY__VALUE_TYPE:
+        return getValueType();
+    }
+    return super.eGet(featureID, resolve, coreType);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public void eSet(int featureID, Object newValue)
   {
-		switch (featureID) {
-			case SpringConfigDslPackage.MAP_ENTRY__KEY:
-				setKey((Key)newValue);
-				return;
-			case SpringConfigDslPackage.MAP_ENTRY__VALUE:
-				setValue((AbstractArtefact)newValue);
-				return;
-			case SpringConfigDslPackage.MAP_ENTRY__DESCRIPTION:
-				setDescription((String)newValue);
-				return;
-			case SpringConfigDslPackage.MAP_ENTRY__VALUE_TYPE:
-				setValueType((String)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+    switch (featureID)
+    {
+      case SpringConfigDslPackage.MAP_ENTRY__KEY:
+        setKey((Key)newValue);
+        return;
+      case SpringConfigDslPackage.MAP_ENTRY__VALUE:
+        setValue((AbstractArtefact)newValue);
+        return;
+      case SpringConfigDslPackage.MAP_ENTRY__DESCRIPTION:
+        setDescription((String)newValue);
+        return;
+      case SpringConfigDslPackage.MAP_ENTRY__VALUE_TYPE:
+        setValueType((String)newValue);
+        return;
+    }
+    super.eSet(featureID, newValue);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public void eUnset(int featureID)
   {
-		switch (featureID) {
-			case SpringConfigDslPackage.MAP_ENTRY__KEY:
-				setKey((Key)null);
-				return;
-			case SpringConfigDslPackage.MAP_ENTRY__VALUE:
-				setValue((AbstractArtefact)null);
-				return;
-			case SpringConfigDslPackage.MAP_ENTRY__DESCRIPTION:
-				setDescription(DESCRIPTION_EDEFAULT);
-				return;
-			case SpringConfigDslPackage.MAP_ENTRY__VALUE_TYPE:
-				setValueType(VALUE_TYPE_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+    switch (featureID)
+    {
+      case SpringConfigDslPackage.MAP_ENTRY__KEY:
+        setKey((Key)null);
+        return;
+      case SpringConfigDslPackage.MAP_ENTRY__VALUE:
+        setValue((AbstractArtefact)null);
+        return;
+      case SpringConfigDslPackage.MAP_ENTRY__DESCRIPTION:
+        setDescription(DESCRIPTION_EDEFAULT);
+        return;
+      case SpringConfigDslPackage.MAP_ENTRY__VALUE_TYPE:
+        setValueType(VALUE_TYPE_EDEFAULT);
+        return;
+    }
+    super.eUnset(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public boolean eIsSet(int featureID)
   {
-		switch (featureID) {
-			case SpringConfigDslPackage.MAP_ENTRY__KEY:
-				return key != null;
-			case SpringConfigDslPackage.MAP_ENTRY__VALUE:
-				return value != null;
-			case SpringConfigDslPackage.MAP_ENTRY__DESCRIPTION:
-				return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
-			case SpringConfigDslPackage.MAP_ENTRY__VALUE_TYPE:
-				return VALUE_TYPE_EDEFAULT == null ? valueType != null : !VALUE_TYPE_EDEFAULT.equals(valueType);
-		}
-		return super.eIsSet(featureID);
-	}
+    switch (featureID)
+    {
+      case SpringConfigDslPackage.MAP_ENTRY__KEY:
+        return key != null;
+      case SpringConfigDslPackage.MAP_ENTRY__VALUE:
+        return value != null;
+      case SpringConfigDslPackage.MAP_ENTRY__DESCRIPTION:
+        return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
+      case SpringConfigDslPackage.MAP_ENTRY__VALUE_TYPE:
+        return VALUE_TYPE_EDEFAULT == null ? valueType != null : !VALUE_TYPE_EDEFAULT.equals(valueType);
+    }
+    return super.eIsSet(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public String toString()
   {
-		if (eIsProxy()) return super.toString();
+    if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (description: ");
-		result.append(description);
-		result.append(", valueType: ");
-		result.append(valueType);
-		result.append(')');
-		return result.toString();
-	}
+    StringBuffer result = new StringBuffer(super.toString());
+    result.append(" (description: ");
+    result.append(description);
+    result.append(", valueType: ");
+    result.append(valueType);
+    result.append(')');
+    return result.toString();
+  }
 
 } //MapEntryImpl

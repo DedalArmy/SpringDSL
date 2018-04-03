@@ -31,138 +31,144 @@ import org.xtext.spring.springConfigDsl.SpringConfigDslPackage;
 public class AopIncludeImpl extends MinimalEObjectImpl.Container implements AopInclude
 {
   /**
-	 * The cached value of the '{@link #getAopInclude() <em>Aop Include</em>}' reference.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getAopInclude() <em>Aop Include</em>}' reference.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getAopInclude()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getAopInclude()
+   * @generated
+   * @ordered
+   */
   protected Component aopInclude;
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   protected AopIncludeImpl()
   {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   protected EClass eStaticClass()
   {
-		return SpringConfigDslPackage.Literals.AOP_INCLUDE;
-	}
+    return SpringConfigDslPackage.Literals.AOP_INCLUDE;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public Component getAopInclude()
   {
-		if (aopInclude != null && aopInclude.eIsProxy()) {
-			InternalEObject oldAopInclude = (InternalEObject)aopInclude;
-			aopInclude = (Component)eResolveProxy(oldAopInclude);
-			if (aopInclude != oldAopInclude) {
-				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, SpringConfigDslPackage.AOP_INCLUDE__AOP_INCLUDE, oldAopInclude, aopInclude));
-			}
-		}
-		return aopInclude;
-	}
+    if (aopInclude != null && aopInclude.eIsProxy())
+    {
+      InternalEObject oldAopInclude = (InternalEObject)aopInclude;
+      aopInclude = (Component)eResolveProxy(oldAopInclude);
+      if (aopInclude != oldAopInclude)
+      {
+        if (eNotificationRequired())
+          eNotify(new ENotificationImpl(this, Notification.RESOLVE, SpringConfigDslPackage.AOP_INCLUDE__AOP_INCLUDE, oldAopInclude, aopInclude));
+      }
+    }
+    return aopInclude;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public Component basicGetAopInclude()
   {
-		return aopInclude;
-	}
+    return aopInclude;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public void setAopInclude(Component newAopInclude)
   {
-		Component oldAopInclude = aopInclude;
-		aopInclude = newAopInclude;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.AOP_INCLUDE__AOP_INCLUDE, oldAopInclude, aopInclude));
-	}
+    Component oldAopInclude = aopInclude;
+    aopInclude = newAopInclude;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.AOP_INCLUDE__AOP_INCLUDE, oldAopInclude, aopInclude));
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType)
   {
-		switch (featureID) {
-			case SpringConfigDslPackage.AOP_INCLUDE__AOP_INCLUDE:
-				if (resolve) return getAopInclude();
-				return basicGetAopInclude();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+    switch (featureID)
+    {
+      case SpringConfigDslPackage.AOP_INCLUDE__AOP_INCLUDE:
+        if (resolve) return getAopInclude();
+        return basicGetAopInclude();
+    }
+    return super.eGet(featureID, resolve, coreType);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public void eSet(int featureID, Object newValue)
   {
-		switch (featureID) {
-			case SpringConfigDslPackage.AOP_INCLUDE__AOP_INCLUDE:
-				setAopInclude((Component)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+    switch (featureID)
+    {
+      case SpringConfigDslPackage.AOP_INCLUDE__AOP_INCLUDE:
+        setAopInclude((Component)newValue);
+        return;
+    }
+    super.eSet(featureID, newValue);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public void eUnset(int featureID)
   {
-		switch (featureID) {
-			case SpringConfigDslPackage.AOP_INCLUDE__AOP_INCLUDE:
-				setAopInclude((Component)null);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+    switch (featureID)
+    {
+      case SpringConfigDslPackage.AOP_INCLUDE__AOP_INCLUDE:
+        setAopInclude((Component)null);
+        return;
+    }
+    super.eUnset(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public boolean eIsSet(int featureID)
   {
-		switch (featureID) {
-			case SpringConfigDslPackage.AOP_INCLUDE__AOP_INCLUDE:
-				return aopInclude != null;
-		}
-		return super.eIsSet(featureID);
-	}
+    switch (featureID)
+    {
+      case SpringConfigDslPackage.AOP_INCLUDE__AOP_INCLUDE:
+        return aopInclude != null;
+    }
+    return super.eIsSet(featureID);
+  }
 
 } //AopIncludeImpl

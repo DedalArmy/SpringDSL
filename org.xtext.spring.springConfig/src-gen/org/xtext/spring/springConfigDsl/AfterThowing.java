@@ -23,29 +23,29 @@ package org.xtext.spring.springConfigDsl;
 public interface AfterThowing extends Advise
 {
   /**
-	 * Returns the value of the '<em><b>Throwing Value</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Throwing Value</b></em>' attribute.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Throwing Value</em>' attribute isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Throwing Value</em>' attribute.
-	 * @see #setThrowingValue(String)
-	 * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getAfterThowing_ThrowingValue()
-	 * @model
-	 * @generated
-	 */
+   * @return the value of the '<em>Throwing Value</em>' attribute.
+   * @see #setThrowingValue(String)
+   * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getAfterThowing_ThrowingValue()
+   * @model
+   * @generated
+   */
   String getThrowingValue();
 
   /**
-	 * Sets the value of the '{@link org.xtext.spring.springConfigDsl.AfterThowing#getThrowingValue <em>Throwing Value</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * Sets the value of the '{@link org.xtext.spring.springConfigDsl.AfterThowing#getThrowingValue <em>Throwing Value</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Throwing Value</em>' attribute.
-	 * @see #getThrowingValue()
-	 * @generated
-	 */
+   * @param value the new value of the '<em>Throwing Value</em>' attribute.
+   * @see #getThrowingValue()
+   * @generated
+   */
   void setThrowingValue(String value);
 
 } // AfterThowing

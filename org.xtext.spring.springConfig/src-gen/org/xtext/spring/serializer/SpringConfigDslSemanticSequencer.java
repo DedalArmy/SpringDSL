@@ -47,6 +47,7 @@ import org.xtext.spring.springConfigDsl.Interface;
 import org.xtext.spring.springConfigDsl.Key;
 import org.xtext.spring.springConfigDsl.LoadTimeWeaver;
 import org.xtext.spring.springConfigDsl.LookupMethod;
+import org.xtext.spring.springConfigDsl.MVC;
 import org.xtext.spring.springConfigDsl.Map;
 import org.xtext.spring.springConfigDsl.MapEntry;
 import org.xtext.spring.springConfigDsl.MbeanExport;
@@ -253,6 +254,9 @@ public class SpringConfigDslSemanticSequencer extends AbstractDelegatingSemantic
 				return; 
 			case SpringConfigDslPackage.LOOKUP_METHOD:
 				sequence_LookupMethod(context, (LookupMethod) semanticObject); 
+				return; 
+			case SpringConfigDslPackage.MVC:
+				sequence_MVC(context, (MVC) semanticObject); 
 				return; 
 			case SpringConfigDslPackage.MAP:
 				sequence_Map(context, (Map) semanticObject); 
@@ -865,6 +869,7 @@ public class SpringConfigDslSemanticSequencer extends AbstractDelegatingSemantic
 	 *                 alias+=Alias | 
 	 *                 imports+=Import | 
 	 *                 contexts+=Context | 
+	 *                 mvcs+=MVC | 
 	 *                 aspects+=Aspect | 
 	 *                 utilConstants+=UtilConstant | 
 	 *                 utilLists+=UtilList | 
@@ -873,7 +878,7 @@ public class SpringConfigDslSemanticSequencer extends AbstractDelegatingSemantic
 	 *                 utilSets+=UtilSet | 
 	 *                 utilPropertiesPath+=UtilPropertyPath | 
 	 *                 txAdvices+=TxAdvise | 
-	 *                 txJtaTransactionManager=TxJtaTransactionManager
+	 *                 txJtaTransactionManager+=TxJtaTransactionManager
 	 *             )? 
 	 *             components+=Component?
 	 *         )* 
@@ -1085,6 +1090,18 @@ public class SpringConfigDslSemanticSequencer extends AbstractDelegatingSemantic
 	 *     (name=ValidString | ref=[Component|ValidString])+
 	 */
 	protected void sequence_LookupMethod(ISerializationContext context, LookupMethod semanticObject) {
+		genericSequencer.createSequence(context, semanticObject);
+	}
+	
+	
+	/**
+	 * Contexts:
+	 *     MVC returns MVC
+	 *
+	 * Constraint:
+	 *     {MVC}
+	 */
+	protected void sequence_MVC(ISerializationContext context, MVC semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 	
@@ -1468,7 +1485,7 @@ public class SpringConfigDslSemanticSequencer extends AbstractDelegatingSemantic
 	 *     ReferenceTag returns Reference
 	 *
 	 * Constraint:
-	 *     ref=[Component|ValidString]
+	 *     ref=[AbstractArtefact|ValidString]
 	 */
 	protected void sequence_ReferenceTag(ISerializationContext context, Reference semanticObject) {
 		if (errorAcceptor != null) {
@@ -1476,7 +1493,7 @@ public class SpringConfigDslSemanticSequencer extends AbstractDelegatingSemantic
 				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, SpringConfigDslPackage.Literals.REFERENCE__REF));
 		}
 		SequenceFeeder feeder = createSequencerFeeder(context, semanticObject);
-		feeder.accept(grammarAccess.getReferenceTagAccess().getRefComponentValidStringParserRuleCall_3_0_1(), semanticObject.eGet(SpringConfigDslPackage.Literals.REFERENCE__REF, false));
+		feeder.accept(grammarAccess.getReferenceTagAccess().getRefAbstractArtefactValidStringParserRuleCall_3_0_1(), semanticObject.eGet(SpringConfigDslPackage.Literals.REFERENCE__REF, false));
 		feeder.finish();
 	}
 	

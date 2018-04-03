@@ -26,19 +26,19 @@ import org.eclipse.emf.ecore.EObject;
 public interface TxAttribute extends EObject
 {
   /**
-	 * Returns the value of the '<em><b>Tx Methods</b></em>' containment reference list.
-	 * The list contents are of type {@link org.xtext.spring.springConfigDsl.TxMethod}.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Tx Methods</b></em>' containment reference list.
+   * The list contents are of type {@link org.xtext.spring.springConfigDsl.TxMethod}.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Tx Methods</em>' containment reference list isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Tx Methods</em>' containment reference list.
-	 * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getTxAttribute_TxMethods()
-	 * @model containment="true"
-	 * @generated
-	 */
+   * @return the value of the '<em>Tx Methods</em>' containment reference list.
+   * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getTxAttribute_TxMethods()
+   * @model containment="true"
+   * @generated
+   */
   EList<TxMethod> getTxMethods();
 
 } // TxAttribute

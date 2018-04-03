@@ -26,81 +26,81 @@ import org.eclipse.emf.ecore.EObject;
 public interface Advise extends EObject
 {
   /**
-	 * Returns the value of the '<em><b>Pointcut Ref</b></em>' reference.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Pointcut Ref</b></em>' reference.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Pointcut Ref</em>' reference isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Pointcut Ref</em>' reference.
-	 * @see #setPointcutRef(AopPointcut)
-	 * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getAdvise_PointcutRef()
-	 * @model
-	 * @generated
-	 */
+   * @return the value of the '<em>Pointcut Ref</em>' reference.
+   * @see #setPointcutRef(AopPointcut)
+   * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getAdvise_PointcutRef()
+   * @model
+   * @generated
+   */
   AopPointcut getPointcutRef();
 
   /**
-	 * Sets the value of the '{@link org.xtext.spring.springConfigDsl.Advise#getPointcutRef <em>Pointcut Ref</em>}' reference.
-	 * <!-- begin-user-doc -->
+   * Sets the value of the '{@link org.xtext.spring.springConfigDsl.Advise#getPointcutRef <em>Pointcut Ref</em>}' reference.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Pointcut Ref</em>' reference.
-	 * @see #getPointcutRef()
-	 * @generated
-	 */
+   * @param value the new value of the '<em>Pointcut Ref</em>' reference.
+   * @see #getPointcutRef()
+   * @generated
+   */
   void setPointcutRef(AopPointcut value);
 
   /**
-	 * Returns the value of the '<em><b>Pointcut Expression</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Pointcut Expression</b></em>' attribute.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Pointcut Expression</em>' attribute isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Pointcut Expression</em>' attribute.
-	 * @see #setPointcutExpression(String)
-	 * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getAdvise_PointcutExpression()
-	 * @model
-	 * @generated
-	 */
+   * @return the value of the '<em>Pointcut Expression</em>' attribute.
+   * @see #setPointcutExpression(String)
+   * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getAdvise_PointcutExpression()
+   * @model
+   * @generated
+   */
   String getPointcutExpression();
 
   /**
-	 * Sets the value of the '{@link org.xtext.spring.springConfigDsl.Advise#getPointcutExpression <em>Pointcut Expression</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * Sets the value of the '{@link org.xtext.spring.springConfigDsl.Advise#getPointcutExpression <em>Pointcut Expression</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Pointcut Expression</em>' attribute.
-	 * @see #getPointcutExpression()
-	 * @generated
-	 */
+   * @param value the new value of the '<em>Pointcut Expression</em>' attribute.
+   * @see #getPointcutExpression()
+   * @generated
+   */
   void setPointcutExpression(String value);
 
   /**
-	 * Returns the value of the '<em><b>Method</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Method</b></em>' attribute.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Method</em>' attribute isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Method</em>' attribute.
-	 * @see #setMethod(String)
-	 * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getAdvise_Method()
-	 * @model
-	 * @generated
-	 */
+   * @return the value of the '<em>Method</em>' attribute.
+   * @see #setMethod(String)
+   * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getAdvise_Method()
+   * @model
+   * @generated
+   */
   String getMethod();
 
   /**
-	 * Sets the value of the '{@link org.xtext.spring.springConfigDsl.Advise#getMethod <em>Method</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * Sets the value of the '{@link org.xtext.spring.springConfigDsl.Advise#getMethod <em>Method</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Method</em>' attribute.
-	 * @see #getMethod()
-	 * @generated
-	 */
+   * @param value the new value of the '<em>Method</em>' attribute.
+   * @see #getMethod()
+   * @generated
+   */
   void setMethod(String value);
 
 } // Advise

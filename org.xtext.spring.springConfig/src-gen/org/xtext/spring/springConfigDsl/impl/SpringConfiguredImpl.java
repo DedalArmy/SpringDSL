@@ -18,24 +18,24 @@ import org.xtext.spring.springConfigDsl.SpringConfigured;
 public class SpringConfiguredImpl extends ContextImpl implements SpringConfigured
 {
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   protected SpringConfiguredImpl()
   {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   protected EClass eStaticClass()
   {
-		return SpringConfigDslPackage.Literals.SPRING_CONFIGURED;
-	}
+    return SpringConfigDslPackage.Literals.SPRING_CONFIGURED;
+  }
 
 } //SpringConfiguredImpl

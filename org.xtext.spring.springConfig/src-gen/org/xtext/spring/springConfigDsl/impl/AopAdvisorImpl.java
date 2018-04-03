@@ -37,406 +37,417 @@ import org.xtext.spring.springConfigDsl.TxAdvise;
 public class AopAdvisorImpl extends MinimalEObjectImpl.Container implements AopAdvisor
 {
   /**
-	 * The cached value of the '{@link #getAdviceRef() <em>Advice Ref</em>}' reference.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getAdviceRef() <em>Advice Ref</em>}' reference.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getAdviceRef()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getAdviceRef()
+   * @generated
+   * @ordered
+   */
   protected TxAdvise adviceRef;
 
   /**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getName()
+   * @generated
+   * @ordered
+   */
   protected static final String NAME_EDEFAULT = null;
 
   /**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getName()
+   * @generated
+   * @ordered
+   */
   protected String name = NAME_EDEFAULT;
 
   /**
-	 * The default value of the '{@link #getOrder() <em>Order</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The default value of the '{@link #getOrder() <em>Order</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getOrder()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getOrder()
+   * @generated
+   * @ordered
+   */
   protected static final String ORDER_EDEFAULT = null;
 
   /**
-	 * The cached value of the '{@link #getOrder() <em>Order</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getOrder() <em>Order</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getOrder()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getOrder()
+   * @generated
+   * @ordered
+   */
   protected String order = ORDER_EDEFAULT;
 
   /**
-	 * The cached value of the '{@link #getPointcut() <em>Pointcut</em>}' containment reference.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getPointcut() <em>Pointcut</em>}' containment reference.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getPointcut()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getPointcut()
+   * @generated
+   * @ordered
+   */
   protected AopPointcut pointcut;
 
   /**
-	 * The cached value of the '{@link #getPointcutRef() <em>Pointcut Ref</em>}' reference.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getPointcutRef() <em>Pointcut Ref</em>}' reference.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getPointcutRef()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getPointcutRef()
+   * @generated
+   * @ordered
+   */
   protected AopPointcut pointcutRef;
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   protected AopAdvisorImpl()
   {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   protected EClass eStaticClass()
   {
-		return SpringConfigDslPackage.Literals.AOP_ADVISOR;
-	}
+    return SpringConfigDslPackage.Literals.AOP_ADVISOR;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public TxAdvise getAdviceRef()
   {
-		if (adviceRef != null && adviceRef.eIsProxy()) {
-			InternalEObject oldAdviceRef = (InternalEObject)adviceRef;
-			adviceRef = (TxAdvise)eResolveProxy(oldAdviceRef);
-			if (adviceRef != oldAdviceRef) {
-				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, SpringConfigDslPackage.AOP_ADVISOR__ADVICE_REF, oldAdviceRef, adviceRef));
-			}
-		}
-		return adviceRef;
-	}
+    if (adviceRef != null && adviceRef.eIsProxy())
+    {
+      InternalEObject oldAdviceRef = (InternalEObject)adviceRef;
+      adviceRef = (TxAdvise)eResolveProxy(oldAdviceRef);
+      if (adviceRef != oldAdviceRef)
+      {
+        if (eNotificationRequired())
+          eNotify(new ENotificationImpl(this, Notification.RESOLVE, SpringConfigDslPackage.AOP_ADVISOR__ADVICE_REF, oldAdviceRef, adviceRef));
+      }
+    }
+    return adviceRef;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public TxAdvise basicGetAdviceRef()
   {
-		return adviceRef;
-	}
+    return adviceRef;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public void setAdviceRef(TxAdvise newAdviceRef)
   {
-		TxAdvise oldAdviceRef = adviceRef;
-		adviceRef = newAdviceRef;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.AOP_ADVISOR__ADVICE_REF, oldAdviceRef, adviceRef));
-	}
+    TxAdvise oldAdviceRef = adviceRef;
+    adviceRef = newAdviceRef;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.AOP_ADVISOR__ADVICE_REF, oldAdviceRef, adviceRef));
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public String getName()
   {
-		return name;
-	}
+    return name;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public void setName(String newName)
   {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.AOP_ADVISOR__NAME, oldName, name));
-	}
+    String oldName = name;
+    name = newName;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.AOP_ADVISOR__NAME, oldName, name));
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public String getOrder()
   {
-		return order;
-	}
+    return order;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public void setOrder(String newOrder)
   {
-		String oldOrder = order;
-		order = newOrder;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.AOP_ADVISOR__ORDER, oldOrder, order));
-	}
+    String oldOrder = order;
+    order = newOrder;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.AOP_ADVISOR__ORDER, oldOrder, order));
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public AopPointcut getPointcut()
   {
-		return pointcut;
-	}
+    return pointcut;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public NotificationChain basicSetPointcut(AopPointcut newPointcut, NotificationChain msgs)
   {
-		AopPointcut oldPointcut = pointcut;
-		pointcut = newPointcut;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.AOP_ADVISOR__POINTCUT, oldPointcut, newPointcut);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
-	}
+    AopPointcut oldPointcut = pointcut;
+    pointcut = newPointcut;
+    if (eNotificationRequired())
+    {
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.AOP_ADVISOR__POINTCUT, oldPointcut, newPointcut);
+      if (msgs == null) msgs = notification; else msgs.add(notification);
+    }
+    return msgs;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public void setPointcut(AopPointcut newPointcut)
   {
-		if (newPointcut != pointcut) {
-			NotificationChain msgs = null;
-			if (pointcut != null)
-				msgs = ((InternalEObject)pointcut).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - SpringConfigDslPackage.AOP_ADVISOR__POINTCUT, null, msgs);
-			if (newPointcut != null)
-				msgs = ((InternalEObject)newPointcut).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - SpringConfigDslPackage.AOP_ADVISOR__POINTCUT, null, msgs);
-			msgs = basicSetPointcut(newPointcut, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.AOP_ADVISOR__POINTCUT, newPointcut, newPointcut));
-	}
+    if (newPointcut != pointcut)
+    {
+      NotificationChain msgs = null;
+      if (pointcut != null)
+        msgs = ((InternalEObject)pointcut).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - SpringConfigDslPackage.AOP_ADVISOR__POINTCUT, null, msgs);
+      if (newPointcut != null)
+        msgs = ((InternalEObject)newPointcut).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - SpringConfigDslPackage.AOP_ADVISOR__POINTCUT, null, msgs);
+      msgs = basicSetPointcut(newPointcut, msgs);
+      if (msgs != null) msgs.dispatch();
+    }
+    else if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.AOP_ADVISOR__POINTCUT, newPointcut, newPointcut));
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public AopPointcut getPointcutRef()
   {
-		if (pointcutRef != null && pointcutRef.eIsProxy()) {
-			InternalEObject oldPointcutRef = (InternalEObject)pointcutRef;
-			pointcutRef = (AopPointcut)eResolveProxy(oldPointcutRef);
-			if (pointcutRef != oldPointcutRef) {
-				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, SpringConfigDslPackage.AOP_ADVISOR__POINTCUT_REF, oldPointcutRef, pointcutRef));
-			}
-		}
-		return pointcutRef;
-	}
+    if (pointcutRef != null && pointcutRef.eIsProxy())
+    {
+      InternalEObject oldPointcutRef = (InternalEObject)pointcutRef;
+      pointcutRef = (AopPointcut)eResolveProxy(oldPointcutRef);
+      if (pointcutRef != oldPointcutRef)
+      {
+        if (eNotificationRequired())
+          eNotify(new ENotificationImpl(this, Notification.RESOLVE, SpringConfigDslPackage.AOP_ADVISOR__POINTCUT_REF, oldPointcutRef, pointcutRef));
+      }
+    }
+    return pointcutRef;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public AopPointcut basicGetPointcutRef()
   {
-		return pointcutRef;
-	}
+    return pointcutRef;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public void setPointcutRef(AopPointcut newPointcutRef)
   {
-		AopPointcut oldPointcutRef = pointcutRef;
-		pointcutRef = newPointcutRef;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.AOP_ADVISOR__POINTCUT_REF, oldPointcutRef, pointcutRef));
-	}
+    AopPointcut oldPointcutRef = pointcutRef;
+    pointcutRef = newPointcutRef;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, SpringConfigDslPackage.AOP_ADVISOR__POINTCUT_REF, oldPointcutRef, pointcutRef));
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
   {
-		switch (featureID) {
-			case SpringConfigDslPackage.AOP_ADVISOR__POINTCUT:
-				return basicSetPointcut(null, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
-	}
+    switch (featureID)
+    {
+      case SpringConfigDslPackage.AOP_ADVISOR__POINTCUT:
+        return basicSetPointcut(null, msgs);
+    }
+    return super.eInverseRemove(otherEnd, featureID, msgs);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType)
   {
-		switch (featureID) {
-			case SpringConfigDslPackage.AOP_ADVISOR__ADVICE_REF:
-				if (resolve) return getAdviceRef();
-				return basicGetAdviceRef();
-			case SpringConfigDslPackage.AOP_ADVISOR__NAME:
-				return getName();
-			case SpringConfigDslPackage.AOP_ADVISOR__ORDER:
-				return getOrder();
-			case SpringConfigDslPackage.AOP_ADVISOR__POINTCUT:
-				return getPointcut();
-			case SpringConfigDslPackage.AOP_ADVISOR__POINTCUT_REF:
-				if (resolve) return getPointcutRef();
-				return basicGetPointcutRef();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+    switch (featureID)
+    {
+      case SpringConfigDslPackage.AOP_ADVISOR__ADVICE_REF:
+        if (resolve) return getAdviceRef();
+        return basicGetAdviceRef();
+      case SpringConfigDslPackage.AOP_ADVISOR__NAME:
+        return getName();
+      case SpringConfigDslPackage.AOP_ADVISOR__ORDER:
+        return getOrder();
+      case SpringConfigDslPackage.AOP_ADVISOR__POINTCUT:
+        return getPointcut();
+      case SpringConfigDslPackage.AOP_ADVISOR__POINTCUT_REF:
+        if (resolve) return getPointcutRef();
+        return basicGetPointcutRef();
+    }
+    return super.eGet(featureID, resolve, coreType);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public void eSet(int featureID, Object newValue)
   {
-		switch (featureID) {
-			case SpringConfigDslPackage.AOP_ADVISOR__ADVICE_REF:
-				setAdviceRef((TxAdvise)newValue);
-				return;
-			case SpringConfigDslPackage.AOP_ADVISOR__NAME:
-				setName((String)newValue);
-				return;
-			case SpringConfigDslPackage.AOP_ADVISOR__ORDER:
-				setOrder((String)newValue);
-				return;
-			case SpringConfigDslPackage.AOP_ADVISOR__POINTCUT:
-				setPointcut((AopPointcut)newValue);
-				return;
-			case SpringConfigDslPackage.AOP_ADVISOR__POINTCUT_REF:
-				setPointcutRef((AopPointcut)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+    switch (featureID)
+    {
+      case SpringConfigDslPackage.AOP_ADVISOR__ADVICE_REF:
+        setAdviceRef((TxAdvise)newValue);
+        return;
+      case SpringConfigDslPackage.AOP_ADVISOR__NAME:
+        setName((String)newValue);
+        return;
+      case SpringConfigDslPackage.AOP_ADVISOR__ORDER:
+        setOrder((String)newValue);
+        return;
+      case SpringConfigDslPackage.AOP_ADVISOR__POINTCUT:
+        setPointcut((AopPointcut)newValue);
+        return;
+      case SpringConfigDslPackage.AOP_ADVISOR__POINTCUT_REF:
+        setPointcutRef((AopPointcut)newValue);
+        return;
+    }
+    super.eSet(featureID, newValue);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public void eUnset(int featureID)
   {
-		switch (featureID) {
-			case SpringConfigDslPackage.AOP_ADVISOR__ADVICE_REF:
-				setAdviceRef((TxAdvise)null);
-				return;
-			case SpringConfigDslPackage.AOP_ADVISOR__NAME:
-				setName(NAME_EDEFAULT);
-				return;
-			case SpringConfigDslPackage.AOP_ADVISOR__ORDER:
-				setOrder(ORDER_EDEFAULT);
-				return;
-			case SpringConfigDslPackage.AOP_ADVISOR__POINTCUT:
-				setPointcut((AopPointcut)null);
-				return;
-			case SpringConfigDslPackage.AOP_ADVISOR__POINTCUT_REF:
-				setPointcutRef((AopPointcut)null);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+    switch (featureID)
+    {
+      case SpringConfigDslPackage.AOP_ADVISOR__ADVICE_REF:
+        setAdviceRef((TxAdvise)null);
+        return;
+      case SpringConfigDslPackage.AOP_ADVISOR__NAME:
+        setName(NAME_EDEFAULT);
+        return;
+      case SpringConfigDslPackage.AOP_ADVISOR__ORDER:
+        setOrder(ORDER_EDEFAULT);
+        return;
+      case SpringConfigDslPackage.AOP_ADVISOR__POINTCUT:
+        setPointcut((AopPointcut)null);
+        return;
+      case SpringConfigDslPackage.AOP_ADVISOR__POINTCUT_REF:
+        setPointcutRef((AopPointcut)null);
+        return;
+    }
+    super.eUnset(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public boolean eIsSet(int featureID)
   {
-		switch (featureID) {
-			case SpringConfigDslPackage.AOP_ADVISOR__ADVICE_REF:
-				return adviceRef != null;
-			case SpringConfigDslPackage.AOP_ADVISOR__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-			case SpringConfigDslPackage.AOP_ADVISOR__ORDER:
-				return ORDER_EDEFAULT == null ? order != null : !ORDER_EDEFAULT.equals(order);
-			case SpringConfigDslPackage.AOP_ADVISOR__POINTCUT:
-				return pointcut != null;
-			case SpringConfigDslPackage.AOP_ADVISOR__POINTCUT_REF:
-				return pointcutRef != null;
-		}
-		return super.eIsSet(featureID);
-	}
+    switch (featureID)
+    {
+      case SpringConfigDslPackage.AOP_ADVISOR__ADVICE_REF:
+        return adviceRef != null;
+      case SpringConfigDslPackage.AOP_ADVISOR__NAME:
+        return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+      case SpringConfigDslPackage.AOP_ADVISOR__ORDER:
+        return ORDER_EDEFAULT == null ? order != null : !ORDER_EDEFAULT.equals(order);
+      case SpringConfigDslPackage.AOP_ADVISOR__POINTCUT:
+        return pointcut != null;
+      case SpringConfigDslPackage.AOP_ADVISOR__POINTCUT_REF:
+        return pointcutRef != null;
+    }
+    return super.eIsSet(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public String toString()
   {
-		if (eIsProxy()) return super.toString();
+    if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
-		result.append(", order: ");
-		result.append(order);
-		result.append(')');
-		return result.toString();
-	}
+    StringBuffer result = new StringBuffer(super.toString());
+    result.append(" (name: ");
+    result.append(name);
+    result.append(", order: ");
+    result.append(order);
+    result.append(')');
+    return result.toString();
+  }
 
 } //AopAdvisorImpl
