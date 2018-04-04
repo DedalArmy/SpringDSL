@@ -66,6 +66,7 @@ import org.xtext.spring.springConfigDsl.SpringConfigDslPackage;
 import org.xtext.spring.springConfigDsl.SpringConfigured;
 import org.xtext.spring.springConfigDsl.SpringProject;
 import org.xtext.spring.springConfigDsl.TxAdvise;
+import org.xtext.spring.springConfigDsl.TxAnnotation;
 import org.xtext.spring.springConfigDsl.TxAttribute;
 import org.xtext.spring.springConfigDsl.TxJtaTransactionManager;
 import org.xtext.spring.springConfigDsl.TxMethod;
@@ -421,6 +422,13 @@ public class SpringConfigDslSwitch<T> extends Switch<T>
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
+      case SpringConfigDslPackage.TX_ANNOTATION:
+      {
+        TxAnnotation txAnnotation = (TxAnnotation)theEObject;
+        T result = caseTxAnnotation(txAnnotation);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
       case SpringConfigDslPackage.TX_ADVISE:
       {
         TxAdvise txAdvise = (TxAdvise)theEObject;
@@ -674,6 +682,7 @@ public class SpringConfigDslSwitch<T> extends Switch<T>
       {
         PropertyFile propertyFile = (PropertyFile)theEObject;
         T result = casePropertyFile(propertyFile);
+        if (result == null) result = caseMVC(propertyFile);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -1277,6 +1286,22 @@ public class SpringConfigDslSwitch<T> extends Switch<T>
    * @generated
    */
   public T caseAfterThowing(AfterThowing object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Tx Annotation</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Tx Annotation</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseTxAnnotation(TxAnnotation object)
   {
     return null;
   }

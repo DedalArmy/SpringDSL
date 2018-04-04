@@ -30,6 +30,7 @@ import org.xtext.spring.springConfigDsl.Import;
 import org.xtext.spring.springConfigDsl.MVC;
 import org.xtext.spring.springConfigDsl.SpringConfigDslPackage;
 import org.xtext.spring.springConfigDsl.TxAdvise;
+import org.xtext.spring.springConfigDsl.TxAnnotation;
 import org.xtext.spring.springConfigDsl.TxJtaTransactionManager;
 import org.xtext.spring.springConfigDsl.UtilConstant;
 import org.xtext.spring.springConfigDsl.UtilList;
@@ -68,6 +69,7 @@ import org.xtext.spring.springConfigDsl.UtilSet;
  *   <li>{@link org.xtext.spring.springConfigDsl.impl.ConfigurationImpl#getUtilPropertiesPath <em>Util Properties Path</em>}</li>
  *   <li>{@link org.xtext.spring.springConfigDsl.impl.ConfigurationImpl#getTxAdvices <em>Tx Advices</em>}</li>
  *   <li>{@link org.xtext.spring.springConfigDsl.impl.ConfigurationImpl#getTxJtaTransactionManager <em>Tx Jta Transaction Manager</em>}</li>
+ *   <li>{@link org.xtext.spring.springConfigDsl.impl.ConfigurationImpl#getTxAnnotations <em>Tx Annotations</em>}</li>
  *   <li>{@link org.xtext.spring.springConfigDsl.impl.ConfigurationImpl#getConfigurationComposite <em>Configuration Composite</em>}</li>
  * </ul>
  *
@@ -374,6 +376,16 @@ public class ConfigurationImpl extends MinimalEObjectImpl.Container implements C
    * @ordered
    */
   protected EList<TxJtaTransactionManager> txJtaTransactionManager;
+
+  /**
+   * The cached value of the '{@link #getTxAnnotations() <em>Tx Annotations</em>}' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getTxAnnotations()
+   * @generated
+   * @ordered
+   */
+  protected EList<TxAnnotation> txAnnotations;
 
   /**
    * The cached value of the '{@link #getConfigurationComposite() <em>Configuration Composite</em>}' containment reference list.
@@ -791,6 +803,20 @@ public class ConfigurationImpl extends MinimalEObjectImpl.Container implements C
    * <!-- end-user-doc -->
    * @generated
    */
+  public EList<TxAnnotation> getTxAnnotations()
+  {
+    if (txAnnotations == null)
+    {
+      txAnnotations = new EObjectContainmentEList<TxAnnotation>(TxAnnotation.class, this, SpringConfigDslPackage.CONFIGURATION__TX_ANNOTATIONS);
+    }
+    return txAnnotations;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public EList<Configuration> getConfigurationComposite()
   {
     if (configurationComposite == null)
@@ -838,6 +864,8 @@ public class ConfigurationImpl extends MinimalEObjectImpl.Container implements C
         return ((InternalEList<?>)getTxAdvices()).basicRemove(otherEnd, msgs);
       case SpringConfigDslPackage.CONFIGURATION__TX_JTA_TRANSACTION_MANAGER:
         return ((InternalEList<?>)getTxJtaTransactionManager()).basicRemove(otherEnd, msgs);
+      case SpringConfigDslPackage.CONFIGURATION__TX_ANNOTATIONS:
+        return ((InternalEList<?>)getTxAnnotations()).basicRemove(otherEnd, msgs);
       case SpringConfigDslPackage.CONFIGURATION__CONFIGURATION_COMPOSITE:
         return ((InternalEList<?>)getConfigurationComposite()).basicRemove(otherEnd, msgs);
     }
@@ -898,6 +926,8 @@ public class ConfigurationImpl extends MinimalEObjectImpl.Container implements C
         return getTxAdvices();
       case SpringConfigDslPackage.CONFIGURATION__TX_JTA_TRANSACTION_MANAGER:
         return getTxJtaTransactionManager();
+      case SpringConfigDslPackage.CONFIGURATION__TX_ANNOTATIONS:
+        return getTxAnnotations();
       case SpringConfigDslPackage.CONFIGURATION__CONFIGURATION_COMPOSITE:
         return getConfigurationComposite();
     }
@@ -995,6 +1025,10 @@ public class ConfigurationImpl extends MinimalEObjectImpl.Container implements C
         getTxJtaTransactionManager().clear();
         getTxJtaTransactionManager().addAll((Collection<? extends TxJtaTransactionManager>)newValue);
         return;
+      case SpringConfigDslPackage.CONFIGURATION__TX_ANNOTATIONS:
+        getTxAnnotations().clear();
+        getTxAnnotations().addAll((Collection<? extends TxAnnotation>)newValue);
+        return;
       case SpringConfigDslPackage.CONFIGURATION__CONFIGURATION_COMPOSITE:
         getConfigurationComposite().clear();
         getConfigurationComposite().addAll((Collection<? extends Configuration>)newValue);
@@ -1079,6 +1113,9 @@ public class ConfigurationImpl extends MinimalEObjectImpl.Container implements C
       case SpringConfigDslPackage.CONFIGURATION__TX_JTA_TRANSACTION_MANAGER:
         getTxJtaTransactionManager().clear();
         return;
+      case SpringConfigDslPackage.CONFIGURATION__TX_ANNOTATIONS:
+        getTxAnnotations().clear();
+        return;
       case SpringConfigDslPackage.CONFIGURATION__CONFIGURATION_COMPOSITE:
         getConfigurationComposite().clear();
         return;
@@ -1140,6 +1177,8 @@ public class ConfigurationImpl extends MinimalEObjectImpl.Container implements C
         return txAdvices != null && !txAdvices.isEmpty();
       case SpringConfigDslPackage.CONFIGURATION__TX_JTA_TRANSACTION_MANAGER:
         return txJtaTransactionManager != null && !txJtaTransactionManager.isEmpty();
+      case SpringConfigDslPackage.CONFIGURATION__TX_ANNOTATIONS:
+        return txAnnotations != null && !txAnnotations.isEmpty();
       case SpringConfigDslPackage.CONFIGURATION__CONFIGURATION_COMPOSITE:
         return configurationComposite != null && !configurationComposite.isEmpty();
     }

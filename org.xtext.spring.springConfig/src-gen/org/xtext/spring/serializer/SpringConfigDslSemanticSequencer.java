@@ -65,6 +65,7 @@ import org.xtext.spring.springConfigDsl.SpringConfigDslPackage;
 import org.xtext.spring.springConfigDsl.SpringConfigured;
 import org.xtext.spring.springConfigDsl.SpringProject;
 import org.xtext.spring.springConfigDsl.TxAdvise;
+import org.xtext.spring.springConfigDsl.TxAnnotation;
 import org.xtext.spring.springConfigDsl.TxAttribute;
 import org.xtext.spring.springConfigDsl.TxJtaTransactionManager;
 import org.xtext.spring.springConfigDsl.TxMethod;
@@ -292,7 +293,11 @@ public class SpringConfigDslSemanticSequencer extends AbstractDelegatingSemantic
 				sequence_Prop(context, (Prop) semanticObject); 
 				return; 
 			case SpringConfigDslPackage.PROPERTY_FILE:
-				if (rule == grammarAccess.getPropertyFileSimpleRule()) {
+				if (rule == grammarAccess.getMVCRule()) {
+					sequence_MVC_PropertyFileSimple(context, (PropertyFile) semanticObject); 
+					return; 
+				}
+				else if (rule == grammarAccess.getPropertyFileSimpleRule()) {
 					sequence_PropertyFileSimple(context, (PropertyFile) semanticObject); 
 					return; 
 				}
@@ -352,6 +357,9 @@ public class SpringConfigDslSemanticSequencer extends AbstractDelegatingSemantic
 				return; 
 			case SpringConfigDslPackage.TX_ADVISE:
 				sequence_TxAdvise(context, (TxAdvise) semanticObject); 
+				return; 
+			case SpringConfigDslPackage.TX_ANNOTATION:
+				sequence_TxAnnotation(context, (TxAnnotation) semanticObject); 
 				return; 
 			case SpringConfigDslPackage.TX_ATTRIBUTE:
 				sequence_TxAttribute(context, (TxAttribute) semanticObject); 
@@ -835,10 +843,10 @@ public class SpringConfigDslSemanticSequencer extends AbstractDelegatingSemantic
 	 *             scope=ValidString
 	 *         )* 
 	 *         description=Description? 
-	 *         qualifiers+=Qualifier? 
+	 *         features+=Feature? 
 	 *         (
-	 *             (features+=Feature | lookupMethods+=LookupMethod | meta+=MetaTag | aopScopedProxy=AopScopedProxy | utilPropertiesPath+=UtilPropertyPath)? 
-	 *             qualifiers+=Qualifier?
+	 *             (lookupMethods+=LookupMethod | qualifiers+=Qualifier | meta+=MetaTag | aopScopedProxy=AopScopedProxy | utilPropertiesPath+=UtilPropertyPath)? 
+	 *             features+=Feature?
 	 *         )*
 	 *     )
 	 */
@@ -853,34 +861,35 @@ public class SpringConfigDslSemanticSequencer extends AbstractDelegatingSemantic
 	 *
 	 * Constraint:
 	 *     (
-	 *         (
-	 *             defaultAutowire=AutoWiredType | 
-	 *             defaultInitMethod=ValidString | 
-	 *             defaultAutowireCandidates=ValidString | 
-	 *             defaultDestroyMethod=ValidString | 
-	 *             defaultLazyInit=DefaultableBoolean | 
-	 *             defaultMerge=DefaultableBoolean | 
-	 *             profile=ValidString
-	 *         )* 
-	 *         description=Description? 
-	 *         components+=Component? 
+	 *         defaultAutowire=AutoWiredType? 
 	 *         (
 	 *             (
-	 *                 alias+=Alias | 
-	 *                 imports+=Import | 
-	 *                 contexts+=Context | 
-	 *                 mvcs+=MVC | 
-	 *                 aspects+=Aspect | 
-	 *                 utilConstants+=UtilConstant | 
-	 *                 utilLists+=UtilList | 
-	 *                 utilMaps+=UtilMap | 
-	 *                 utilProperties+=UtilProperties | 
-	 *                 utilSets+=UtilSet | 
-	 *                 utilPropertiesPath+=UtilPropertyPath | 
-	 *                 txAdvices+=TxAdvise | 
-	 *                 txJtaTransactionManager+=TxJtaTransactionManager
+	 *                 defaultInitMethod=ValidString | 
+	 *                 defaultAutowireCandidates=ValidString | 
+	 *                 defaultDestroyMethod=ValidString | 
+	 *                 defaultLazyInit=DefaultableBoolean | 
+	 *                 defaultMerge=DefaultableBoolean | 
+	 *                 profile=ValidString
 	 *             )? 
-	 *             components+=Component?
+	 *             defaultAutowire=AutoWiredType?
+	 *         )* 
+	 *         description=Description? 
+	 *         (
+	 *             components+=Component | 
+	 *             alias+=Alias | 
+	 *             imports+=Import | 
+	 *             contexts+=Context | 
+	 *             mvcs+=MVC | 
+	 *             aspects+=Aspect | 
+	 *             utilConstants+=UtilConstant | 
+	 *             utilLists+=UtilList | 
+	 *             utilMaps+=UtilMap | 
+	 *             utilProperties+=UtilProperties | 
+	 *             utilSets+=UtilSet | 
+	 *             utilPropertiesPath+=UtilPropertyPath | 
+	 *             txAdvices+=TxAdvise | 
+	 *             txJtaTransactionManager+=TxJtaTransactionManager | 
+	 *             txAnnotations+=TxAnnotation
 	 *         )* 
 	 *         ConfigurationComposite+=Configuration*
 	 *     )
@@ -1099,9 +1108,21 @@ public class SpringConfigDslSemanticSequencer extends AbstractDelegatingSemantic
 	 *     MVC returns MVC
 	 *
 	 * Constraint:
-	 *     {MVC}
+	 *     components+=Component+
 	 */
 	protected void sequence_MVC(ISerializationContext context, MVC semanticObject) {
+		genericSequencer.createSequence(context, semanticObject);
+	}
+	
+	
+	/**
+	 * Contexts:
+	 *     MVC returns PropertyFile
+	 *
+	 * Constraint:
+	 *     (location=ValidString components+=Component*)
+	 */
+	protected void sequence_MVC_PropertyFileSimple(ISerializationContext context, PropertyFile semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 	
@@ -1533,6 +1554,24 @@ public class SpringConfigDslSemanticSequencer extends AbstractDelegatingSemantic
 	 */
 	protected void sequence_TxAdvise(ISerializationContext context, TxAdvise semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
+	}
+	
+	
+	/**
+	 * Contexts:
+	 *     TxAnnotation returns TxAnnotation
+	 *
+	 * Constraint:
+	 *     transactionManager=ValidString
+	 */
+	protected void sequence_TxAnnotation(ISerializationContext context, TxAnnotation semanticObject) {
+		if (errorAcceptor != null) {
+			if (transientValues.isValueTransient(semanticObject, SpringConfigDslPackage.Literals.TX_ANNOTATION__TRANSACTION_MANAGER) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, SpringConfigDslPackage.Literals.TX_ANNOTATION__TRANSACTION_MANAGER));
+		}
+		SequenceFeeder feeder = createSequencerFeeder(context, semanticObject);
+		feeder.accept(grammarAccess.getTxAnnotationAccess().getTransactionManagerValidStringParserRuleCall_1_1_0(), semanticObject.getTransactionManager());
+		feeder.finish();
 	}
 	
 	

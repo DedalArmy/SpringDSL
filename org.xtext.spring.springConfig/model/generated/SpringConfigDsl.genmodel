@@ -88,9 +88,12 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference SpringConfigDsl.ecore#//Configuration/utilPropertiesPath"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference SpringConfigDsl.ecore#//Configuration/txAdvices"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference SpringConfigDsl.ecore#//Configuration/txJtaTransactionManager"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference SpringConfigDsl.ecore#//Configuration/txAnnotations"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference SpringConfigDsl.ecore#//Configuration/ConfigurationComposite"/>
     </genClasses>
-    <genClasses ecoreClass="SpringConfigDsl.ecore#//MVC"/>
+    <genClasses ecoreClass="SpringConfigDsl.ecore#//MVC">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference SpringConfigDsl.ecore#//MVC/components"/>
+    </genClasses>
     <genClasses ecoreClass="SpringConfigDsl.ecore#//Alias">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference SpringConfigDsl.ecore#//Alias/origin"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute SpringConfigDsl.ecore#//Alias/alias"/>
@@ -207,6 +210,9 @@
     </genClasses>
     <genClasses ecoreClass="SpringConfigDsl.ecore#//AfterThowing">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute SpringConfigDsl.ecore#//AfterThowing/throwingValue"/>
+    </genClasses>
+    <genClasses ecoreClass="SpringConfigDsl.ecore#//TxAnnotation">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute SpringConfigDsl.ecore#//TxAnnotation/transactionManager"/>
     </genClasses>
     <genClasses ecoreClass="SpringConfigDsl.ecore#//TxAdvise">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute SpringConfigDsl.ecore#//TxAdvise/name"/>

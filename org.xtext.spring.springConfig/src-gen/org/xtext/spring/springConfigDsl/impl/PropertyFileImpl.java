@@ -8,7 +8,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 import org.xtext.spring.springConfigDsl.PropertyFile;
 import org.xtext.spring.springConfigDsl.SpringConfigDslPackage;
@@ -27,7 +26,7 @@ import org.xtext.spring.springConfigDsl.SpringConfigDslPackage;
  *
  * @generated
  */
-public class PropertyFileImpl extends MinimalEObjectImpl.Container implements PropertyFile
+public class PropertyFileImpl extends MVCImpl implements PropertyFile
 {
   /**
    * The default value of the '{@link #getLocation() <em>Location</em>}' attribute.

@@ -38,6 +38,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link org.xtext.spring.springConfigDsl.Configuration#getUtilPropertiesPath <em>Util Properties Path</em>}</li>
  *   <li>{@link org.xtext.spring.springConfigDsl.Configuration#getTxAdvices <em>Tx Advices</em>}</li>
  *   <li>{@link org.xtext.spring.springConfigDsl.Configuration#getTxJtaTransactionManager <em>Tx Jta Transaction Manager</em>}</li>
+ *   <li>{@link org.xtext.spring.springConfigDsl.Configuration#getTxAnnotations <em>Tx Annotations</em>}</li>
  *   <li>{@link org.xtext.spring.springConfigDsl.Configuration#getConfigurationComposite <em>Configuration Composite</em>}</li>
  * </ul>
  *
@@ -487,6 +488,22 @@ public interface Configuration extends EObject
    * @generated
    */
   EList<TxJtaTransactionManager> getTxJtaTransactionManager();
+
+  /**
+   * Returns the value of the '<em><b>Tx Annotations</b></em>' containment reference list.
+   * The list contents are of type {@link org.xtext.spring.springConfigDsl.TxAnnotation}.
+   * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of the '<em>Tx Annotations</em>' containment reference list isn't clear,
+   * there really should be more of a description here...
+   * </p>
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Tx Annotations</em>' containment reference list.
+   * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getConfiguration_TxAnnotations()
+   * @model containment="true"
+   * @generated
+   */
+  EList<TxAnnotation> getTxAnnotations();
 
   /**
    * Returns the value of the '<em><b>Configuration Composite</b></em>' containment reference list.

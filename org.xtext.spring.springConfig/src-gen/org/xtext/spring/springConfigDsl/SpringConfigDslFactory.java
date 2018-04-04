@@ -357,6 +357,15 @@ public interface SpringConfigDslFactory extends EFactory
   AfterThowing createAfterThowing();
 
   /**
+   * Returns a new object of class '<em>Tx Annotation</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Tx Annotation</em>'.
+   * @generated
+   */
+  TxAnnotation createTxAnnotation();
+
+  /**
    * Returns a new object of class '<em>Tx Advise</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->

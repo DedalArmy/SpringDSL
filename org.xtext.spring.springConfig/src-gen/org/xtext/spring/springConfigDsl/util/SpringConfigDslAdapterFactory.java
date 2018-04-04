@@ -68,6 +68,7 @@ import org.xtext.spring.springConfigDsl.SpringConfigDslPackage;
 import org.xtext.spring.springConfigDsl.SpringConfigured;
 import org.xtext.spring.springConfigDsl.SpringProject;
 import org.xtext.spring.springConfigDsl.TxAdvise;
+import org.xtext.spring.springConfigDsl.TxAnnotation;
 import org.xtext.spring.springConfigDsl.TxAttribute;
 import org.xtext.spring.springConfigDsl.TxJtaTransactionManager;
 import org.xtext.spring.springConfigDsl.TxMethod;
@@ -327,6 +328,11 @@ public class SpringConfigDslAdapterFactory extends AdapterFactoryImpl
       public Adapter caseAfterThowing(AfterThowing object)
       {
         return createAfterThowingAdapter();
+      }
+      @Override
+      public Adapter caseTxAnnotation(TxAnnotation object)
+      {
+        return createTxAnnotationAdapter();
       }
       @Override
       public Adapter caseTxAdvise(TxAdvise object)
@@ -1061,6 +1067,21 @@ public class SpringConfigDslAdapterFactory extends AdapterFactoryImpl
    * @generated
    */
   public Adapter createAfterThowingAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.TxAnnotation <em>Tx Annotation</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.TxAnnotation
+   * @generated
+   */
+  public Adapter createTxAnnotationAdapter()
   {
     return null;
   }

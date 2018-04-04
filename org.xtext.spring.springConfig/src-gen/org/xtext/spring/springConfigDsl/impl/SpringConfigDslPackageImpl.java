@@ -76,6 +76,7 @@ import org.xtext.spring.springConfigDsl.SpringConfigDslPackage;
 import org.xtext.spring.springConfigDsl.SpringConfigured;
 import org.xtext.spring.springConfigDsl.SpringProject;
 import org.xtext.spring.springConfigDsl.TxAdvise;
+import org.xtext.spring.springConfigDsl.TxAnnotation;
 import org.xtext.spring.springConfigDsl.TxAttribute;
 import org.xtext.spring.springConfigDsl.TxJtaTransactionManager;
 import org.xtext.spring.springConfigDsl.TxMethod;
@@ -355,6 +356,13 @@ public class SpringConfigDslPackageImpl extends EPackageImpl implements SpringCo
    * @generated
    */
   private EClass afterThowingEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass txAnnotationEClass = null;
 
   /**
    * <!-- begin-user-doc -->
@@ -1014,9 +1022,19 @@ public class SpringConfigDslPackageImpl extends EPackageImpl implements SpringCo
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getConfiguration_ConfigurationComposite()
+  public EReference getConfiguration_TxAnnotations()
   {
     return (EReference)configurationEClass.getEStructuralFeatures().get(22);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EReference getConfiguration_ConfigurationComposite()
+  {
+    return (EReference)configurationEClass.getEStructuralFeatures().get(23);
   }
 
   /**
@@ -1027,6 +1045,16 @@ public class SpringConfigDslPackageImpl extends EPackageImpl implements SpringCo
   public EClass getMVC()
   {
     return mvcEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EReference getMVC_Components()
+  {
+    return (EReference)mvcEClass.getEStructuralFeatures().get(0);
   }
 
   /**
@@ -1957,6 +1985,26 @@ public class SpringConfigDslPackageImpl extends EPackageImpl implements SpringCo
   public EAttribute getAfterThowing_ThrowingValue()
   {
     return (EAttribute)afterThowingEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getTxAnnotation()
+  {
+    return txAnnotationEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getTxAnnotation_TransactionManager()
+  {
+    return (EAttribute)txAnnotationEClass.getEStructuralFeatures().get(0);
   }
 
   /**
@@ -3294,9 +3342,11 @@ public class SpringConfigDslPackageImpl extends EPackageImpl implements SpringCo
     createEReference(configurationEClass, CONFIGURATION__UTIL_PROPERTIES_PATH);
     createEReference(configurationEClass, CONFIGURATION__TX_ADVICES);
     createEReference(configurationEClass, CONFIGURATION__TX_JTA_TRANSACTION_MANAGER);
+    createEReference(configurationEClass, CONFIGURATION__TX_ANNOTATIONS);
     createEReference(configurationEClass, CONFIGURATION__CONFIGURATION_COMPOSITE);
 
     mvcEClass = createEClass(MVC);
+    createEReference(mvcEClass, MVC__COMPONENTS);
 
     aliasEClass = createEClass(ALIAS);
     createEReference(aliasEClass, ALIAS__ORIGIN);
@@ -3421,6 +3471,9 @@ public class SpringConfigDslPackageImpl extends EPackageImpl implements SpringCo
 
     afterThowingEClass = createEClass(AFTER_THOWING);
     createEAttribute(afterThowingEClass, AFTER_THOWING__THROWING_VALUE);
+
+    txAnnotationEClass = createEClass(TX_ANNOTATION);
+    createEAttribute(txAnnotationEClass, TX_ANNOTATION__TRANSACTION_MANAGER);
 
     txAdviseEClass = createEClass(TX_ADVISE);
     createEAttribute(txAdviseEClass, TX_ADVISE__NAME);
@@ -3645,6 +3698,7 @@ public class SpringConfigDslPackageImpl extends EPackageImpl implements SpringCo
     utilListEClass.getESuperTypes().add(this.getsList());
     utilMapEClass.getESuperTypes().add(this.getMap());
     utilSetEClass.getESuperTypes().add(this.getsSet());
+    propertyFileEClass.getESuperTypes().add(this.getMVC());
     dataStringEClass.getESuperTypes().add(this.getAbstractKeyValue());
 
     // Initialize classes and features; add operations and parameters
@@ -3683,9 +3737,11 @@ public class SpringConfigDslPackageImpl extends EPackageImpl implements SpringCo
     initEReference(getConfiguration_UtilPropertiesPath(), this.getUtilPropertyPath(), null, "utilPropertiesPath", null, 0, -1, Configuration.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getConfiguration_TxAdvices(), this.getTxAdvise(), null, "txAdvices", null, 0, -1, Configuration.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getConfiguration_TxJtaTransactionManager(), this.getTxJtaTransactionManager(), null, "txJtaTransactionManager", null, 0, -1, Configuration.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getConfiguration_TxAnnotations(), this.getTxAnnotation(), null, "txAnnotations", null, 0, -1, Configuration.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getConfiguration_ConfigurationComposite(), this.getConfiguration(), null, "ConfigurationComposite", null, 0, -1, Configuration.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(mvcEClass, org.xtext.spring.springConfigDsl.MVC.class, "MVC", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEReference(getMVC_Components(), this.getComponent(), null, "components", null, 0, -1, org.xtext.spring.springConfigDsl.MVC.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(aliasEClass, Alias.class, "Alias", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEReference(getAlias_Origin(), this.getComponent(), null, "origin", null, 0, 1, Alias.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -3810,6 +3866,9 @@ public class SpringConfigDslPackageImpl extends EPackageImpl implements SpringCo
 
     initEClass(afterThowingEClass, AfterThowing.class, "AfterThowing", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getAfterThowing_ThrowingValue(), ecorePackage.getEString(), "throwingValue", null, 0, 1, AfterThowing.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+    initEClass(txAnnotationEClass, TxAnnotation.class, "TxAnnotation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getTxAnnotation_TransactionManager(), ecorePackage.getEString(), "transactionManager", null, 0, 1, TxAnnotation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(txAdviseEClass, TxAdvise.class, "TxAdvise", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getTxAdvise_Name(), ecorePackage.getEString(), "name", null, 0, 1, TxAdvise.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

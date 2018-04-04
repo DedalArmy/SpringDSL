@@ -3,7 +3,6 @@
  */
 package org.xtext.spring.springConfigDsl;
 
-import org.eclipse.emf.ecore.EObject;
 
 /**
  * <!-- begin-user-doc -->
@@ -22,7 +21,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface PropertyFile extends EObject
+public interface PropertyFile extends MVC
 {
   /**
    * Returns the value of the '<em><b>Location</b></em>' attribute.

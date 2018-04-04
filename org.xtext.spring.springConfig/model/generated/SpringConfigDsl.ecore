@@ -51,10 +51,15 @@
         eType="#//TxAdvise" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="txJtaTransactionManager"
         upperBound="-1" eType="#//TxJtaTransactionManager" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="txAnnotations" upperBound="-1"
+        eType="#//TxAnnotation" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="ConfigurationComposite"
         upperBound="-1" eType="#//Configuration" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="MVC"/>
+  <eClassifiers xsi:type="ecore:EClass" name="MVC">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="components" upperBound="-1"
+        eType="#//Component" containment="true"/>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Alias">
     <eStructuralFeatures xsi:type="ecore:EReference" name="origin" eType="#//Component"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="alias" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -186,6 +191,9 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AfterThowing" eSuperTypes="#//Advise">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="throwingValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TxAnnotation">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="transactionManager" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="TxAdvise">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -350,7 +358,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="setClass" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="scope" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="PropertyFile">
+  <eClassifiers xsi:type="ecore:EClass" name="PropertyFile" eSuperTypes="#//MVC">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="location" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="fileEncoding" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>

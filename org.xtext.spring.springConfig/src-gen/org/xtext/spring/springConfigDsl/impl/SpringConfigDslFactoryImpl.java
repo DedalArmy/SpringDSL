@@ -78,6 +78,7 @@ import org.xtext.spring.springConfigDsl.SpringConfigDslPackage;
 import org.xtext.spring.springConfigDsl.SpringConfigured;
 import org.xtext.spring.springConfigDsl.SpringProject;
 import org.xtext.spring.springConfigDsl.TxAdvise;
+import org.xtext.spring.springConfigDsl.TxAnnotation;
 import org.xtext.spring.springConfigDsl.TxAttribute;
 import org.xtext.spring.springConfigDsl.TxJtaTransactionManager;
 import org.xtext.spring.springConfigDsl.TxMethod;
@@ -180,6 +181,7 @@ public class SpringConfigDslFactoryImpl extends EFactoryImpl implements SpringCo
       case SpringConfigDslPackage.AROUND_ADVISE: return createAroundAdvise();
       case SpringConfigDslPackage.AFTER_RETURNING: return createAfterReturning();
       case SpringConfigDslPackage.AFTER_THOWING: return createAfterThowing();
+      case SpringConfigDslPackage.TX_ANNOTATION: return createTxAnnotation();
       case SpringConfigDslPackage.TX_ADVISE: return createTxAdvise();
       case SpringConfigDslPackage.TX_ATTRIBUTE: return createTxAttribute();
       case SpringConfigDslPackage.TX_METHOD: return createTxMethod();
@@ -684,6 +686,17 @@ public class SpringConfigDslFactoryImpl extends EFactoryImpl implements SpringCo
   {
     AfterThowingImpl afterThowing = new AfterThowingImpl();
     return afterThowing;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public TxAnnotation createTxAnnotation()
+  {
+    TxAnnotationImpl txAnnotation = new TxAnnotationImpl();
+    return txAnnotation;
   }
 
   /**
