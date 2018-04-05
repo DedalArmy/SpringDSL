@@ -46,6 +46,7 @@ Configuration returns Configuration:
 	(components+=Component|alias+=Alias|imports+=Import
 		|contexts+=Context
 		|mvcs += MVC
+		|https+=Http
 		|aspects+=Aspect
 		|utilConstants+=UtilConstant|utilLists+=UtilList|utilMaps+=UtilMap
 		|utilProperties+=UtilProperties|utilSets+=UtilSet|utilPropertiesPath+=UtilPropertyPath
@@ -55,12 +56,15 @@ Configuration returns Configuration:
 	(ConfigurationComposite+=Configuration)*
 	('</beans'(':'ID)? '>');
 
-MVC:
-	('<mvc:' (ID|IDWITHDASH) (PropertyFileSimple|"path="QSTRING)? ((ID|IDWITHDASH)'='QSTRING)*   ('/>' |('>' components += (Component)* (('<mvc:'|'</mvc:') (ID|IDWITHDASH) ('>'|'/>')))))
+MVC:			
+	('<mvc:' (->ID|IDWITHDASH) (PropertyFileSimple|"path="QSTRING)? ((->ID|IDWITHDASH)'='QSTRING)*   ('/>' |('>' components += (Component)* (('<mvc:'|'</mvc:') (ID|IDWITHDASH) ('>'|'/>')))))
 ;
 
-
-
+Http:
+	'<http' (IDWITHDASH'='ValidString)*  '>' 
+        ('<'(->ID|IDWITHDASH)+ ((->ID|IDWITHDASH)'='ValidString)* '/>' )*    
+    '</http>'|('/>')
+;
 /*<alias/> */
 Alias returns Alias:
 	{Alias}
@@ -342,7 +346,7 @@ TxJtaTransactionManager:
 Component returns Component:
 	{Component}
 	'<bean' 
-	( (('id='|'name=')name=ValidString)? & ('name='names+=ValidString)?
+	(((('id='|"name=")name=ValidString (("name=")?names+=ValidString)?))?
 	&   class= CreationMethod
 	&  (features+=PNamespace)*
 	&  (features+= CNamespace)* 
@@ -515,7 +519,7 @@ CNamespace returns Feature:
 
 
 LookupMethod:
-'<lookup-method' (('name='name=ValidString) & ('bean='ref=[Component|ValidString]))(('/>')|('>''</lookup-method>'))	
+'<''lookup-method' (('name='name=ValidString) & ('bean='ref=[Component|ValidString]))(('/>')|('>''</lookup-method>'))	
 ;
 
 Qualifier:

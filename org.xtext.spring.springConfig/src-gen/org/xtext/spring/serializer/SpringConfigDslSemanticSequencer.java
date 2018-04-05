@@ -825,13 +825,11 @@ public class SpringConfigDslSemanticSequencer extends AbstractDelegatingSemantic
 	 *
 	 * Constraint:
 	 *     (
-	 *         features+=CNamespace? 
 	 *         (
 	 *             (
-	 *                 name=ValidString | 
-	 *                 names+=ValidString | 
 	 *                 class=CreationMethod | 
 	 *                 features+=PNamespace | 
+	 *                 features+=CNamespace | 
 	 *                 abstract=sBoolean | 
 	 *                 autowireCandidate=DefaultableBoolean | 
 	 *                 autowire=DefaultableBoolean | 
@@ -843,16 +841,13 @@ public class SpringConfigDslSemanticSequencer extends AbstractDelegatingSemantic
 	 *                 primary=sBoolean | 
 	 *                 scope=ValidString
 	 *             )? 
-	 *             features+=CNamespace?
-	 *         )* 
+	 *             (name=ValidString names+=ValidString?)?
+	 *         )+ 
 	 *         description=Description? 
+	 *         qualifiers+=Qualifier? 
 	 *         (
-	 *             features+=Feature | 
-	 *             lookupMethods+=LookupMethod | 
-	 *             qualifiers+=Qualifier | 
-	 *             meta+=MetaTag | 
-	 *             aopScopedProxy=AopScopedProxy | 
-	 *             utilPropertiesPath+=UtilPropertyPath
+	 *             (features+=Feature | lookupMethods+=LookupMethod | meta+=MetaTag | aopScopedProxy=AopScopedProxy | utilPropertiesPath+=UtilPropertyPath)? 
+	 *             qualifiers+=Qualifier?
 	 *         )*
 	 *     )
 	 */
@@ -886,6 +881,7 @@ public class SpringConfigDslSemanticSequencer extends AbstractDelegatingSemantic
 	 *             imports+=Import | 
 	 *             contexts+=Context | 
 	 *             mvcs+=MVC | 
+	 *             https+=Http | 
 	 *             aspects+=Aspect | 
 	 *             utilConstants+=UtilConstant | 
 	 *             utilLists+=UtilList | 

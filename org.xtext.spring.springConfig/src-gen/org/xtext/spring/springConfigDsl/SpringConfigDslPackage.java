@@ -298,13 +298,22 @@ public interface SpringConfigDslPackage extends EPackage
   int CONFIGURATION__MVCS = 12;
 
   /**
+   * The feature id for the '<em><b>Https</b></em>' attribute list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int CONFIGURATION__HTTPS = 13;
+
+  /**
    * The feature id for the '<em><b>Aspects</b></em>' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int CONFIGURATION__ASPECTS = 13;
+  int CONFIGURATION__ASPECTS = 14;
 
   /**
    * The feature id for the '<em><b>Util Constants</b></em>' containment reference list.
@@ -313,7 +322,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @generated
    * @ordered
    */
-  int CONFIGURATION__UTIL_CONSTANTS = 14;
+  int CONFIGURATION__UTIL_CONSTANTS = 15;
 
   /**
    * The feature id for the '<em><b>Util Lists</b></em>' containment reference list.
@@ -322,7 +331,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @generated
    * @ordered
    */
-  int CONFIGURATION__UTIL_LISTS = 15;
+  int CONFIGURATION__UTIL_LISTS = 16;
 
   /**
    * The feature id for the '<em><b>Util Maps</b></em>' containment reference list.
@@ -331,7 +340,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @generated
    * @ordered
    */
-  int CONFIGURATION__UTIL_MAPS = 16;
+  int CONFIGURATION__UTIL_MAPS = 17;
 
   /**
    * The feature id for the '<em><b>Util Properties</b></em>' containment reference list.
@@ -340,7 +349,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @generated
    * @ordered
    */
-  int CONFIGURATION__UTIL_PROPERTIES = 17;
+  int CONFIGURATION__UTIL_PROPERTIES = 18;
 
   /**
    * The feature id for the '<em><b>Util Sets</b></em>' containment reference list.
@@ -349,7 +358,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @generated
    * @ordered
    */
-  int CONFIGURATION__UTIL_SETS = 18;
+  int CONFIGURATION__UTIL_SETS = 19;
 
   /**
    * The feature id for the '<em><b>Util Properties Path</b></em>' containment reference list.
@@ -358,7 +367,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @generated
    * @ordered
    */
-  int CONFIGURATION__UTIL_PROPERTIES_PATH = 19;
+  int CONFIGURATION__UTIL_PROPERTIES_PATH = 20;
 
   /**
    * The feature id for the '<em><b>Tx Advices</b></em>' containment reference list.
@@ -367,7 +376,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @generated
    * @ordered
    */
-  int CONFIGURATION__TX_ADVICES = 20;
+  int CONFIGURATION__TX_ADVICES = 21;
 
   /**
    * The feature id for the '<em><b>Tx Jta Transaction Manager</b></em>' containment reference list.
@@ -376,7 +385,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @generated
    * @ordered
    */
-  int CONFIGURATION__TX_JTA_TRANSACTION_MANAGER = 21;
+  int CONFIGURATION__TX_JTA_TRANSACTION_MANAGER = 22;
 
   /**
    * The feature id for the '<em><b>Tx Annotations</b></em>' containment reference list.
@@ -385,7 +394,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @generated
    * @ordered
    */
-  int CONFIGURATION__TX_ANNOTATIONS = 22;
+  int CONFIGURATION__TX_ANNOTATIONS = 23;
 
   /**
    * The feature id for the '<em><b>Configuration Composite</b></em>' containment reference list.
@@ -394,7 +403,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @generated
    * @ordered
    */
-  int CONFIGURATION__CONFIGURATION_COMPOSITE = 23;
+  int CONFIGURATION__CONFIGURATION_COMPOSITE = 24;
 
   /**
    * The number of structural features of the '<em>Configuration</em>' class.
@@ -403,7 +412,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @generated
    * @ordered
    */
-  int CONFIGURATION_FEATURE_COUNT = 24;
+  int CONFIGURATION_FEATURE_COUNT = 25;
 
   /**
    * The meta object id for the '{@link org.xtext.spring.springConfigDsl.impl.MVCImpl <em>MVC</em>}' class.
@@ -3885,6 +3894,17 @@ public interface SpringConfigDslPackage extends EPackage
   EReference getConfiguration_Mvcs();
 
   /**
+   * Returns the meta object for the attribute list '{@link org.xtext.spring.springConfigDsl.Configuration#getHttps <em>Https</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute list '<em>Https</em>'.
+   * @see org.xtext.spring.springConfigDsl.Configuration#getHttps()
+   * @see #getConfiguration()
+   * @generated
+   */
+  EAttribute getConfiguration_Https();
+
+  /**
    * Returns the meta object for the containment reference list '{@link org.xtext.spring.springConfigDsl.Configuration#getAspects <em>Aspects</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -6604,6 +6624,14 @@ public interface SpringConfigDslPackage extends EPackage
      * @generated
      */
     EReference CONFIGURATION__MVCS = eINSTANCE.getConfiguration_Mvcs();
+
+    /**
+     * The meta object literal for the '<em><b>Https</b></em>' attribute list feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute CONFIGURATION__HTTPS = eINSTANCE.getConfiguration_Https();
 
     /**
      * The meta object literal for the '<em><b>Aspects</b></em>' containment reference list feature.

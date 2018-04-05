@@ -33,6 +33,8 @@
         eType="#//Context" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="mvcs" upperBound="-1" eType="#//MVC"
         containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="https" unique="false" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="aspects" upperBound="-1"
         eType="#//Aspect" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="utilConstants" upperBound="-1"

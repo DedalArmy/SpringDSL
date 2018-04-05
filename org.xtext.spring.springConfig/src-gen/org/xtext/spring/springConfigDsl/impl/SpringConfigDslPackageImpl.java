@@ -932,9 +932,9 @@ public class SpringConfigDslPackageImpl extends EPackageImpl implements SpringCo
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getConfiguration_Aspects()
+  public EAttribute getConfiguration_Https()
   {
-    return (EReference)configurationEClass.getEStructuralFeatures().get(13);
+    return (EAttribute)configurationEClass.getEStructuralFeatures().get(13);
   }
 
   /**
@@ -942,7 +942,7 @@ public class SpringConfigDslPackageImpl extends EPackageImpl implements SpringCo
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getConfiguration_UtilConstants()
+  public EReference getConfiguration_Aspects()
   {
     return (EReference)configurationEClass.getEStructuralFeatures().get(14);
   }
@@ -952,7 +952,7 @@ public class SpringConfigDslPackageImpl extends EPackageImpl implements SpringCo
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getConfiguration_UtilLists()
+  public EReference getConfiguration_UtilConstants()
   {
     return (EReference)configurationEClass.getEStructuralFeatures().get(15);
   }
@@ -962,7 +962,7 @@ public class SpringConfigDslPackageImpl extends EPackageImpl implements SpringCo
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getConfiguration_UtilMaps()
+  public EReference getConfiguration_UtilLists()
   {
     return (EReference)configurationEClass.getEStructuralFeatures().get(16);
   }
@@ -972,7 +972,7 @@ public class SpringConfigDslPackageImpl extends EPackageImpl implements SpringCo
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getConfiguration_UtilProperties()
+  public EReference getConfiguration_UtilMaps()
   {
     return (EReference)configurationEClass.getEStructuralFeatures().get(17);
   }
@@ -982,7 +982,7 @@ public class SpringConfigDslPackageImpl extends EPackageImpl implements SpringCo
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getConfiguration_UtilSets()
+  public EReference getConfiguration_UtilProperties()
   {
     return (EReference)configurationEClass.getEStructuralFeatures().get(18);
   }
@@ -992,7 +992,7 @@ public class SpringConfigDslPackageImpl extends EPackageImpl implements SpringCo
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getConfiguration_UtilPropertiesPath()
+  public EReference getConfiguration_UtilSets()
   {
     return (EReference)configurationEClass.getEStructuralFeatures().get(19);
   }
@@ -1002,7 +1002,7 @@ public class SpringConfigDslPackageImpl extends EPackageImpl implements SpringCo
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getConfiguration_TxAdvices()
+  public EReference getConfiguration_UtilPropertiesPath()
   {
     return (EReference)configurationEClass.getEStructuralFeatures().get(20);
   }
@@ -1012,7 +1012,7 @@ public class SpringConfigDslPackageImpl extends EPackageImpl implements SpringCo
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getConfiguration_TxJtaTransactionManager()
+  public EReference getConfiguration_TxAdvices()
   {
     return (EReference)configurationEClass.getEStructuralFeatures().get(21);
   }
@@ -1022,7 +1022,7 @@ public class SpringConfigDslPackageImpl extends EPackageImpl implements SpringCo
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getConfiguration_TxAnnotations()
+  public EReference getConfiguration_TxJtaTransactionManager()
   {
     return (EReference)configurationEClass.getEStructuralFeatures().get(22);
   }
@@ -1032,9 +1032,19 @@ public class SpringConfigDslPackageImpl extends EPackageImpl implements SpringCo
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getConfiguration_ConfigurationComposite()
+  public EReference getConfiguration_TxAnnotations()
   {
     return (EReference)configurationEClass.getEStructuralFeatures().get(23);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EReference getConfiguration_ConfigurationComposite()
+  {
+    return (EReference)configurationEClass.getEStructuralFeatures().get(24);
   }
 
   /**
@@ -3333,6 +3343,7 @@ public class SpringConfigDslPackageImpl extends EPackageImpl implements SpringCo
     createEReference(configurationEClass, CONFIGURATION__IMPORTS);
     createEReference(configurationEClass, CONFIGURATION__CONTEXTS);
     createEReference(configurationEClass, CONFIGURATION__MVCS);
+    createEAttribute(configurationEClass, CONFIGURATION__HTTPS);
     createEReference(configurationEClass, CONFIGURATION__ASPECTS);
     createEReference(configurationEClass, CONFIGURATION__UTIL_CONSTANTS);
     createEReference(configurationEClass, CONFIGURATION__UTIL_LISTS);
@@ -3728,6 +3739,7 @@ public class SpringConfigDslPackageImpl extends EPackageImpl implements SpringCo
     initEReference(getConfiguration_Imports(), this.getImport(), null, "imports", null, 0, -1, Configuration.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getConfiguration_Contexts(), this.getContext(), null, "contexts", null, 0, -1, Configuration.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getConfiguration_Mvcs(), this.getMVC(), null, "mvcs", null, 0, -1, Configuration.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getConfiguration_Https(), ecorePackage.getEString(), "https", null, 0, -1, Configuration.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getConfiguration_Aspects(), this.getAspect(), null, "aspects", null, 0, -1, Configuration.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getConfiguration_UtilConstants(), this.getUtilConstant(), null, "utilConstants", null, 0, -1, Configuration.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getConfiguration_UtilLists(), this.getUtilList(), null, "utilLists", null, 0, -1, Configuration.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

@@ -16,6 +16,7 @@ import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
+import org.eclipse.emf.ecore.util.EDataTypeEList;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
@@ -60,6 +61,7 @@ import org.xtext.spring.springConfigDsl.UtilSet;
  *   <li>{@link org.xtext.spring.springConfigDsl.impl.ConfigurationImpl#getImports <em>Imports</em>}</li>
  *   <li>{@link org.xtext.spring.springConfigDsl.impl.ConfigurationImpl#getContexts <em>Contexts</em>}</li>
  *   <li>{@link org.xtext.spring.springConfigDsl.impl.ConfigurationImpl#getMvcs <em>Mvcs</em>}</li>
+ *   <li>{@link org.xtext.spring.springConfigDsl.impl.ConfigurationImpl#getHttps <em>Https</em>}</li>
  *   <li>{@link org.xtext.spring.springConfigDsl.impl.ConfigurationImpl#getAspects <em>Aspects</em>}</li>
  *   <li>{@link org.xtext.spring.springConfigDsl.impl.ConfigurationImpl#getUtilConstants <em>Util Constants</em>}</li>
  *   <li>{@link org.xtext.spring.springConfigDsl.impl.ConfigurationImpl#getUtilLists <em>Util Lists</em>}</li>
@@ -286,6 +288,16 @@ public class ConfigurationImpl extends MinimalEObjectImpl.Container implements C
    * @ordered
    */
   protected EList<MVC> mvcs;
+
+  /**
+   * The cached value of the '{@link #getHttps() <em>Https</em>}' attribute list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getHttps()
+   * @generated
+   * @ordered
+   */
+  protected EList<String> https;
 
   /**
    * The cached value of the '{@link #getAspects() <em>Aspects</em>}' containment reference list.
@@ -677,6 +689,20 @@ public class ConfigurationImpl extends MinimalEObjectImpl.Container implements C
    * <!-- end-user-doc -->
    * @generated
    */
+  public EList<String> getHttps()
+  {
+    if (https == null)
+    {
+      https = new EDataTypeEList<String>(String.class, this, SpringConfigDslPackage.CONFIGURATION__HTTPS);
+    }
+    return https;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public EList<Aspect> getAspects()
   {
     if (aspects == null)
@@ -908,6 +934,8 @@ public class ConfigurationImpl extends MinimalEObjectImpl.Container implements C
         return getContexts();
       case SpringConfigDslPackage.CONFIGURATION__MVCS:
         return getMvcs();
+      case SpringConfigDslPackage.CONFIGURATION__HTTPS:
+        return getHttps();
       case SpringConfigDslPackage.CONFIGURATION__ASPECTS:
         return getAspects();
       case SpringConfigDslPackage.CONFIGURATION__UTIL_CONSTANTS:
@@ -988,6 +1016,10 @@ public class ConfigurationImpl extends MinimalEObjectImpl.Container implements C
       case SpringConfigDslPackage.CONFIGURATION__MVCS:
         getMvcs().clear();
         getMvcs().addAll((Collection<? extends MVC>)newValue);
+        return;
+      case SpringConfigDslPackage.CONFIGURATION__HTTPS:
+        getHttps().clear();
+        getHttps().addAll((Collection<? extends String>)newValue);
         return;
       case SpringConfigDslPackage.CONFIGURATION__ASPECTS:
         getAspects().clear();
@@ -1086,6 +1118,9 @@ public class ConfigurationImpl extends MinimalEObjectImpl.Container implements C
       case SpringConfigDslPackage.CONFIGURATION__MVCS:
         getMvcs().clear();
         return;
+      case SpringConfigDslPackage.CONFIGURATION__HTTPS:
+        getHttps().clear();
+        return;
       case SpringConfigDslPackage.CONFIGURATION__ASPECTS:
         getAspects().clear();
         return;
@@ -1159,6 +1194,8 @@ public class ConfigurationImpl extends MinimalEObjectImpl.Container implements C
         return contexts != null && !contexts.isEmpty();
       case SpringConfigDslPackage.CONFIGURATION__MVCS:
         return mvcs != null && !mvcs.isEmpty();
+      case SpringConfigDslPackage.CONFIGURATION__HTTPS:
+        return https != null && !https.isEmpty();
       case SpringConfigDslPackage.CONFIGURATION__ASPECTS:
         return aspects != null && !aspects.isEmpty();
       case SpringConfigDslPackage.CONFIGURATION__UTIL_CONSTANTS:
@@ -1212,6 +1249,8 @@ public class ConfigurationImpl extends MinimalEObjectImpl.Container implements C
     result.append(profile);
     result.append(", description: ");
     result.append(description);
+    result.append(", https: ");
+    result.append(https);
     result.append(')');
     return result.toString();
   }

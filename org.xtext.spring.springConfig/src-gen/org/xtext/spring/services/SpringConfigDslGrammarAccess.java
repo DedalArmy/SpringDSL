@@ -245,26 +245,28 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cContextsContextParserRuleCall_3_3_0 = (RuleCall)cContextsAssignment_3_3.eContents().get(0);
 		private final Assignment cMvcsAssignment_3_4 = (Assignment)cAlternatives_3.eContents().get(4);
 		private final RuleCall cMvcsMVCParserRuleCall_3_4_0 = (RuleCall)cMvcsAssignment_3_4.eContents().get(0);
-		private final Assignment cAspectsAssignment_3_5 = (Assignment)cAlternatives_3.eContents().get(5);
-		private final RuleCall cAspectsAspectParserRuleCall_3_5_0 = (RuleCall)cAspectsAssignment_3_5.eContents().get(0);
-		private final Assignment cUtilConstantsAssignment_3_6 = (Assignment)cAlternatives_3.eContents().get(6);
-		private final RuleCall cUtilConstantsUtilConstantParserRuleCall_3_6_0 = (RuleCall)cUtilConstantsAssignment_3_6.eContents().get(0);
-		private final Assignment cUtilListsAssignment_3_7 = (Assignment)cAlternatives_3.eContents().get(7);
-		private final RuleCall cUtilListsUtilListParserRuleCall_3_7_0 = (RuleCall)cUtilListsAssignment_3_7.eContents().get(0);
-		private final Assignment cUtilMapsAssignment_3_8 = (Assignment)cAlternatives_3.eContents().get(8);
-		private final RuleCall cUtilMapsUtilMapParserRuleCall_3_8_0 = (RuleCall)cUtilMapsAssignment_3_8.eContents().get(0);
-		private final Assignment cUtilPropertiesAssignment_3_9 = (Assignment)cAlternatives_3.eContents().get(9);
-		private final RuleCall cUtilPropertiesUtilPropertiesParserRuleCall_3_9_0 = (RuleCall)cUtilPropertiesAssignment_3_9.eContents().get(0);
-		private final Assignment cUtilSetsAssignment_3_10 = (Assignment)cAlternatives_3.eContents().get(10);
-		private final RuleCall cUtilSetsUtilSetParserRuleCall_3_10_0 = (RuleCall)cUtilSetsAssignment_3_10.eContents().get(0);
-		private final Assignment cUtilPropertiesPathAssignment_3_11 = (Assignment)cAlternatives_3.eContents().get(11);
-		private final RuleCall cUtilPropertiesPathUtilPropertyPathParserRuleCall_3_11_0 = (RuleCall)cUtilPropertiesPathAssignment_3_11.eContents().get(0);
-		private final Assignment cTxAdvicesAssignment_3_12 = (Assignment)cAlternatives_3.eContents().get(12);
-		private final RuleCall cTxAdvicesTxAdviseParserRuleCall_3_12_0 = (RuleCall)cTxAdvicesAssignment_3_12.eContents().get(0);
-		private final Assignment cTxJtaTransactionManagerAssignment_3_13 = (Assignment)cAlternatives_3.eContents().get(13);
-		private final RuleCall cTxJtaTransactionManagerTxJtaTransactionManagerParserRuleCall_3_13_0 = (RuleCall)cTxJtaTransactionManagerAssignment_3_13.eContents().get(0);
-		private final Assignment cTxAnnotationsAssignment_3_14 = (Assignment)cAlternatives_3.eContents().get(14);
-		private final RuleCall cTxAnnotationsTxAnnotationParserRuleCall_3_14_0 = (RuleCall)cTxAnnotationsAssignment_3_14.eContents().get(0);
+		private final Assignment cHttpsAssignment_3_5 = (Assignment)cAlternatives_3.eContents().get(5);
+		private final RuleCall cHttpsHttpParserRuleCall_3_5_0 = (RuleCall)cHttpsAssignment_3_5.eContents().get(0);
+		private final Assignment cAspectsAssignment_3_6 = (Assignment)cAlternatives_3.eContents().get(6);
+		private final RuleCall cAspectsAspectParserRuleCall_3_6_0 = (RuleCall)cAspectsAssignment_3_6.eContents().get(0);
+		private final Assignment cUtilConstantsAssignment_3_7 = (Assignment)cAlternatives_3.eContents().get(7);
+		private final RuleCall cUtilConstantsUtilConstantParserRuleCall_3_7_0 = (RuleCall)cUtilConstantsAssignment_3_7.eContents().get(0);
+		private final Assignment cUtilListsAssignment_3_8 = (Assignment)cAlternatives_3.eContents().get(8);
+		private final RuleCall cUtilListsUtilListParserRuleCall_3_8_0 = (RuleCall)cUtilListsAssignment_3_8.eContents().get(0);
+		private final Assignment cUtilMapsAssignment_3_9 = (Assignment)cAlternatives_3.eContents().get(9);
+		private final RuleCall cUtilMapsUtilMapParserRuleCall_3_9_0 = (RuleCall)cUtilMapsAssignment_3_9.eContents().get(0);
+		private final Assignment cUtilPropertiesAssignment_3_10 = (Assignment)cAlternatives_3.eContents().get(10);
+		private final RuleCall cUtilPropertiesUtilPropertiesParserRuleCall_3_10_0 = (RuleCall)cUtilPropertiesAssignment_3_10.eContents().get(0);
+		private final Assignment cUtilSetsAssignment_3_11 = (Assignment)cAlternatives_3.eContents().get(11);
+		private final RuleCall cUtilSetsUtilSetParserRuleCall_3_11_0 = (RuleCall)cUtilSetsAssignment_3_11.eContents().get(0);
+		private final Assignment cUtilPropertiesPathAssignment_3_12 = (Assignment)cAlternatives_3.eContents().get(12);
+		private final RuleCall cUtilPropertiesPathUtilPropertyPathParserRuleCall_3_12_0 = (RuleCall)cUtilPropertiesPathAssignment_3_12.eContents().get(0);
+		private final Assignment cTxAdvicesAssignment_3_13 = (Assignment)cAlternatives_3.eContents().get(13);
+		private final RuleCall cTxAdvicesTxAdviseParserRuleCall_3_13_0 = (RuleCall)cTxAdvicesAssignment_3_13.eContents().get(0);
+		private final Assignment cTxJtaTransactionManagerAssignment_3_14 = (Assignment)cAlternatives_3.eContents().get(14);
+		private final RuleCall cTxJtaTransactionManagerTxJtaTransactionManagerParserRuleCall_3_14_0 = (RuleCall)cTxJtaTransactionManagerAssignment_3_14.eContents().get(0);
+		private final Assignment cTxAnnotationsAssignment_3_15 = (Assignment)cAlternatives_3.eContents().get(15);
+		private final RuleCall cTxAnnotationsTxAnnotationParserRuleCall_3_15_0 = (RuleCall)cTxAnnotationsAssignment_3_15.eContents().get(0);
 		private final Assignment cConfigurationCompositeAssignment_4 = (Assignment)cGroup.eContents().get(4);
 		private final RuleCall cConfigurationCompositeConfigurationParserRuleCall_4_0 = (RuleCall)cConfigurationCompositeAssignment_4.eContents().get(0);
 		private final Group cGroup_5 = (Group)cGroup.eContents().get(5);
@@ -289,6 +291,7 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		//	'>') description=Description? (components+=Component | alias+=Alias | imports+=Import
 		//	| contexts+=Context
 		//	| mvcs+=MVC
+		//	| https+=Http
 		//	| aspects+=Aspect
 		//	| utilConstants+=UtilConstant | utilLists+=UtilList | utilMaps+=UtilMap
 		//	| utilProperties+=UtilProperties | utilSets+=UtilSet | utilPropertiesPath+=UtilPropertyPath
@@ -302,9 +305,9 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		//& ('default-destroy-method=' defaultDestroyMethod=ValidString)? //Method
 		//& ('default-lazy-init=' defaultLazyInit=DefaultableBoolean)? & ('default-merge=' defaultMerge=DefaultableBoolean)? //Default is false
 		//& ('profile=' profile=ValidString)? & (IdDashAndColon '=' ValidString)*) '>') description=Description?
-		//(components+=Component | alias+=Alias | imports+=Import | contexts+=Context | mvcs+=MVC | aspects+=Aspect |
-		//utilConstants+=UtilConstant | utilLists+=UtilList | utilMaps+=UtilMap | utilProperties+=UtilProperties |
-		//utilSets+=UtilSet | utilPropertiesPath+=UtilPropertyPath | txAdvices+=TxAdvise |
+		//(components+=Component | alias+=Alias | imports+=Import | contexts+=Context | mvcs+=MVC | https+=Http |
+		//aspects+=Aspect | utilConstants+=UtilConstant | utilLists+=UtilList | utilMaps+=UtilMap |
+		//utilProperties+=UtilProperties | utilSets+=UtilSet | utilPropertiesPath+=UtilPropertyPath | txAdvices+=TxAdvise |
 		//txJtaTransactionManager+=TxJtaTransactionManager | txAnnotations+=TxAnnotation)*
 		//ConfigurationComposite+=Configuration* ('</beans' (':' ID)? '>')
 		public Group getGroup() { return cGroup; }
@@ -445,8 +448,8 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		//Description
 		public RuleCall getDescriptionDescriptionParserRuleCall_2_0() { return cDescriptionDescriptionParserRuleCall_2_0; }
 		
-		//(components+=Component | alias+=Alias | imports+=Import | contexts+=Context | mvcs+=MVC | aspects+=Aspect |
-		//utilConstants+=UtilConstant | utilLists+=UtilList | utilMaps+=UtilMap | utilProperties+=UtilProperties |
+		//(components+=Component | alias+=Alias | imports+=Import | contexts+=Context | mvcs+=MVC | https+=Http | aspects+=Aspect
+		//| utilConstants+=UtilConstant | utilLists+=UtilList | utilMaps+=UtilMap | utilProperties+=UtilProperties |
 		//utilSets+=UtilSet | utilPropertiesPath+=UtilPropertyPath | txAdvices+=TxAdvise |
 		//txJtaTransactionManager+=TxJtaTransactionManager | txAnnotations+=TxAnnotation)*
 		public Alternatives getAlternatives_3() { return cAlternatives_3; }
@@ -481,65 +484,71 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		//MVC
 		public RuleCall getMvcsMVCParserRuleCall_3_4_0() { return cMvcsMVCParserRuleCall_3_4_0; }
 		
+		//https+=Http
+		public Assignment getHttpsAssignment_3_5() { return cHttpsAssignment_3_5; }
+		
+		//Http
+		public RuleCall getHttpsHttpParserRuleCall_3_5_0() { return cHttpsHttpParserRuleCall_3_5_0; }
+		
 		//aspects+=Aspect
-		public Assignment getAspectsAssignment_3_5() { return cAspectsAssignment_3_5; }
+		public Assignment getAspectsAssignment_3_6() { return cAspectsAssignment_3_6; }
 		
 		//Aspect
-		public RuleCall getAspectsAspectParserRuleCall_3_5_0() { return cAspectsAspectParserRuleCall_3_5_0; }
+		public RuleCall getAspectsAspectParserRuleCall_3_6_0() { return cAspectsAspectParserRuleCall_3_6_0; }
 		
 		//utilConstants+=UtilConstant
-		public Assignment getUtilConstantsAssignment_3_6() { return cUtilConstantsAssignment_3_6; }
+		public Assignment getUtilConstantsAssignment_3_7() { return cUtilConstantsAssignment_3_7; }
 		
 		//UtilConstant
-		public RuleCall getUtilConstantsUtilConstantParserRuleCall_3_6_0() { return cUtilConstantsUtilConstantParserRuleCall_3_6_0; }
+		public RuleCall getUtilConstantsUtilConstantParserRuleCall_3_7_0() { return cUtilConstantsUtilConstantParserRuleCall_3_7_0; }
 		
 		//utilLists+=UtilList
-		public Assignment getUtilListsAssignment_3_7() { return cUtilListsAssignment_3_7; }
+		public Assignment getUtilListsAssignment_3_8() { return cUtilListsAssignment_3_8; }
 		
 		//UtilList
-		public RuleCall getUtilListsUtilListParserRuleCall_3_7_0() { return cUtilListsUtilListParserRuleCall_3_7_0; }
+		public RuleCall getUtilListsUtilListParserRuleCall_3_8_0() { return cUtilListsUtilListParserRuleCall_3_8_0; }
 		
 		//utilMaps+=UtilMap
-		public Assignment getUtilMapsAssignment_3_8() { return cUtilMapsAssignment_3_8; }
+		public Assignment getUtilMapsAssignment_3_9() { return cUtilMapsAssignment_3_9; }
 		
 		//UtilMap
-		public RuleCall getUtilMapsUtilMapParserRuleCall_3_8_0() { return cUtilMapsUtilMapParserRuleCall_3_8_0; }
+		public RuleCall getUtilMapsUtilMapParserRuleCall_3_9_0() { return cUtilMapsUtilMapParserRuleCall_3_9_0; }
 		
 		//utilProperties+=UtilProperties
-		public Assignment getUtilPropertiesAssignment_3_9() { return cUtilPropertiesAssignment_3_9; }
+		public Assignment getUtilPropertiesAssignment_3_10() { return cUtilPropertiesAssignment_3_10; }
 		
 		//UtilProperties
-		public RuleCall getUtilPropertiesUtilPropertiesParserRuleCall_3_9_0() { return cUtilPropertiesUtilPropertiesParserRuleCall_3_9_0; }
+		public RuleCall getUtilPropertiesUtilPropertiesParserRuleCall_3_10_0() { return cUtilPropertiesUtilPropertiesParserRuleCall_3_10_0; }
 		
 		//utilSets+=UtilSet
-		public Assignment getUtilSetsAssignment_3_10() { return cUtilSetsAssignment_3_10; }
+		public Assignment getUtilSetsAssignment_3_11() { return cUtilSetsAssignment_3_11; }
 		
 		//UtilSet
-		public RuleCall getUtilSetsUtilSetParserRuleCall_3_10_0() { return cUtilSetsUtilSetParserRuleCall_3_10_0; }
+		public RuleCall getUtilSetsUtilSetParserRuleCall_3_11_0() { return cUtilSetsUtilSetParserRuleCall_3_11_0; }
 		
 		//utilPropertiesPath+=UtilPropertyPath
-		public Assignment getUtilPropertiesPathAssignment_3_11() { return cUtilPropertiesPathAssignment_3_11; }
+		public Assignment getUtilPropertiesPathAssignment_3_12() { return cUtilPropertiesPathAssignment_3_12; }
 		
 		//UtilPropertyPath
-		public RuleCall getUtilPropertiesPathUtilPropertyPathParserRuleCall_3_11_0() { return cUtilPropertiesPathUtilPropertyPathParserRuleCall_3_11_0; }
+		public RuleCall getUtilPropertiesPathUtilPropertyPathParserRuleCall_3_12_0() { return cUtilPropertiesPathUtilPropertyPathParserRuleCall_3_12_0; }
 		
 		//txAdvices+=TxAdvise
-		public Assignment getTxAdvicesAssignment_3_12() { return cTxAdvicesAssignment_3_12; }
+		public Assignment getTxAdvicesAssignment_3_13() { return cTxAdvicesAssignment_3_13; }
 		
 		//TxAdvise
-		public RuleCall getTxAdvicesTxAdviseParserRuleCall_3_12_0() { return cTxAdvicesTxAdviseParserRuleCall_3_12_0; }
+		public RuleCall getTxAdvicesTxAdviseParserRuleCall_3_13_0() { return cTxAdvicesTxAdviseParserRuleCall_3_13_0; }
 		
 		//txJtaTransactionManager+=TxJtaTransactionManager
-		public Assignment getTxJtaTransactionManagerAssignment_3_13() { return cTxJtaTransactionManagerAssignment_3_13; }
+		public Assignment getTxJtaTransactionManagerAssignment_3_14() { return cTxJtaTransactionManagerAssignment_3_14; }
 		
 		//TxJtaTransactionManager
-		public RuleCall getTxJtaTransactionManagerTxJtaTransactionManagerParserRuleCall_3_13_0() { return cTxJtaTransactionManagerTxJtaTransactionManagerParserRuleCall_3_13_0; }
+		public RuleCall getTxJtaTransactionManagerTxJtaTransactionManagerParserRuleCall_3_14_0() { return cTxJtaTransactionManagerTxJtaTransactionManagerParserRuleCall_3_14_0; }
 		
 		//txAnnotations+=TxAnnotation
-		public Assignment getTxAnnotationsAssignment_3_14() { return cTxAnnotationsAssignment_3_14; }
+		public Assignment getTxAnnotationsAssignment_3_15() { return cTxAnnotationsAssignment_3_15; }
 		
 		//TxAnnotation
-		public RuleCall getTxAnnotationsTxAnnotationParserRuleCall_3_14_0() { return cTxAnnotationsTxAnnotationParserRuleCall_3_14_0; }
+		public RuleCall getTxAnnotationsTxAnnotationParserRuleCall_3_15_0() { return cTxAnnotationsTxAnnotationParserRuleCall_3_15_0; }
 		
 		//ConfigurationComposite+=Configuration*
 		public Assignment getConfigurationCompositeAssignment_4() { return cConfigurationCompositeAssignment_4; }
@@ -601,21 +610,21 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cSolidusGreaterThanSignKeyword_4_1_2_2_1 = (Keyword)cAlternatives_4_1_2_2.eContents().get(1);
 		
 		//MVC:
-		//	'<mvc:' (ID | IDWITHDASH) (PropertyFileSimple | "path=" QSTRING)? ((ID | IDWITHDASH) '=' QSTRING)* ('/>' | '>'
+		//	'<mvc:' (-> ID | IDWITHDASH) (PropertyFileSimple | "path=" QSTRING)? ((-> ID | IDWITHDASH) '=' QSTRING)* ('/>' | '>'
 		//	components+=Component* (('<mvc:' | '</mvc:') (ID | IDWITHDASH) ('>' | '/>')));
 		@Override public ParserRule getRule() { return rule; }
 		
-		//'<mvc:' (ID | IDWITHDASH) (PropertyFileSimple | "path=" QSTRING)? ((ID | IDWITHDASH) '=' QSTRING)* ('/>' | '>'
+		//'<mvc:' (-> ID | IDWITHDASH) (PropertyFileSimple | "path=" QSTRING)? ((-> ID | IDWITHDASH) '=' QSTRING)* ('/>' | '>'
 		//components+=Component* (('<mvc:' | '</mvc:') (ID | IDWITHDASH) ('>' | '/>')))
 		public Group getGroup() { return cGroup; }
 		
 		//'<mvc:'
 		public Keyword getMvcKeyword_0() { return cMvcKeyword_0; }
 		
-		//ID | IDWITHDASH
+		//-> ID | IDWITHDASH
 		public Alternatives getAlternatives_1() { return cAlternatives_1; }
 		
-		//ID
+		//-> ID
 		public RuleCall getIDTerminalRuleCall_1_0() { return cIDTerminalRuleCall_1_0; }
 		
 		//IDWITHDASH
@@ -636,13 +645,13 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		//QSTRING
 		public RuleCall getQSTRINGParserRuleCall_2_1_1() { return cQSTRINGParserRuleCall_2_1_1; }
 		
-		//((ID | IDWITHDASH) '=' QSTRING)*
+		//((-> ID | IDWITHDASH) '=' QSTRING)*
 		public Group getGroup_3() { return cGroup_3; }
 		
-		//ID | IDWITHDASH
+		//-> ID | IDWITHDASH
 		public Alternatives getAlternatives_3_0() { return cAlternatives_3_0; }
 		
-		//ID
+		//-> ID
 		public RuleCall getIDTerminalRuleCall_3_0_0() { return cIDTerminalRuleCall_3_0_0; }
 		
 		//IDWITHDASH
@@ -701,6 +710,104 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		
 		//'/>'
 		public Keyword getSolidusGreaterThanSignKeyword_4_1_2_2_1() { return cSolidusGreaterThanSignKeyword_4_1_2_2_1; }
+	}
+	public class HttpElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.xtext.spring.SpringConfigDsl.Http");
+		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
+		private final Group cGroup_0 = (Group)cAlternatives.eContents().get(0);
+		private final Keyword cHttpKeyword_0_0 = (Keyword)cGroup_0.eContents().get(0);
+		private final Group cGroup_0_1 = (Group)cGroup_0.eContents().get(1);
+		private final RuleCall cIDWITHDASHTerminalRuleCall_0_1_0 = (RuleCall)cGroup_0_1.eContents().get(0);
+		private final Keyword cEqualsSignKeyword_0_1_1 = (Keyword)cGroup_0_1.eContents().get(1);
+		private final RuleCall cValidStringParserRuleCall_0_1_2 = (RuleCall)cGroup_0_1.eContents().get(2);
+		private final Keyword cGreaterThanSignKeyword_0_2 = (Keyword)cGroup_0.eContents().get(2);
+		private final Group cGroup_0_3 = (Group)cGroup_0.eContents().get(3);
+		private final Keyword cLessThanSignKeyword_0_3_0 = (Keyword)cGroup_0_3.eContents().get(0);
+		private final Alternatives cAlternatives_0_3_1 = (Alternatives)cGroup_0_3.eContents().get(1);
+		private final RuleCall cIDTerminalRuleCall_0_3_1_0 = (RuleCall)cAlternatives_0_3_1.eContents().get(0);
+		private final RuleCall cIDWITHDASHTerminalRuleCall_0_3_1_1 = (RuleCall)cAlternatives_0_3_1.eContents().get(1);
+		private final Group cGroup_0_3_2 = (Group)cGroup_0_3.eContents().get(2);
+		private final Alternatives cAlternatives_0_3_2_0 = (Alternatives)cGroup_0_3_2.eContents().get(0);
+		private final RuleCall cIDTerminalRuleCall_0_3_2_0_0 = (RuleCall)cAlternatives_0_3_2_0.eContents().get(0);
+		private final RuleCall cIDWITHDASHTerminalRuleCall_0_3_2_0_1 = (RuleCall)cAlternatives_0_3_2_0.eContents().get(1);
+		private final Keyword cEqualsSignKeyword_0_3_2_1 = (Keyword)cGroup_0_3_2.eContents().get(1);
+		private final RuleCall cValidStringParserRuleCall_0_3_2_2 = (RuleCall)cGroup_0_3_2.eContents().get(2);
+		private final Keyword cSolidusGreaterThanSignKeyword_0_3_3 = (Keyword)cGroup_0_3.eContents().get(3);
+		private final Keyword cHttpKeyword_0_4 = (Keyword)cGroup_0.eContents().get(4);
+		private final Keyword cSolidusGreaterThanSignKeyword_1 = (Keyword)cAlternatives.eContents().get(1);
+		
+		//Http:
+		//	'<http' (IDWITHDASH '=' ValidString)* '>' ('<' (-> ID | IDWITHDASH)+ ((-> ID | IDWITHDASH) '=' ValidString)* '/>')*
+		//	'</http>' | '/>';
+		@Override public ParserRule getRule() { return rule; }
+		
+		//'<http' (IDWITHDASH '=' ValidString)* '>' ('<' (-> ID | IDWITHDASH)+ ((-> ID | IDWITHDASH) '=' ValidString)* '/>')*
+		//'</http>' | '/>'
+		public Alternatives getAlternatives() { return cAlternatives; }
+		
+		//'<http' (IDWITHDASH '=' ValidString)* '>' ('<' (-> ID | IDWITHDASH)+ ((-> ID | IDWITHDASH) '=' ValidString)* '/>')*
+		//'</http>'
+		public Group getGroup_0() { return cGroup_0; }
+		
+		//'<http'
+		public Keyword getHttpKeyword_0_0() { return cHttpKeyword_0_0; }
+		
+		//(IDWITHDASH '=' ValidString)*
+		public Group getGroup_0_1() { return cGroup_0_1; }
+		
+		//IDWITHDASH
+		public RuleCall getIDWITHDASHTerminalRuleCall_0_1_0() { return cIDWITHDASHTerminalRuleCall_0_1_0; }
+		
+		//'='
+		public Keyword getEqualsSignKeyword_0_1_1() { return cEqualsSignKeyword_0_1_1; }
+		
+		//ValidString
+		public RuleCall getValidStringParserRuleCall_0_1_2() { return cValidStringParserRuleCall_0_1_2; }
+		
+		//'>'
+		public Keyword getGreaterThanSignKeyword_0_2() { return cGreaterThanSignKeyword_0_2; }
+		
+		//('<' (-> ID | IDWITHDASH)+ ((-> ID | IDWITHDASH) '=' ValidString)* '/>')*
+		public Group getGroup_0_3() { return cGroup_0_3; }
+		
+		//'<'
+		public Keyword getLessThanSignKeyword_0_3_0() { return cLessThanSignKeyword_0_3_0; }
+		
+		//(-> ID | IDWITHDASH)+
+		public Alternatives getAlternatives_0_3_1() { return cAlternatives_0_3_1; }
+		
+		//-> ID
+		public RuleCall getIDTerminalRuleCall_0_3_1_0() { return cIDTerminalRuleCall_0_3_1_0; }
+		
+		//IDWITHDASH
+		public RuleCall getIDWITHDASHTerminalRuleCall_0_3_1_1() { return cIDWITHDASHTerminalRuleCall_0_3_1_1; }
+		
+		//((-> ID | IDWITHDASH) '=' ValidString)*
+		public Group getGroup_0_3_2() { return cGroup_0_3_2; }
+		
+		//-> ID | IDWITHDASH
+		public Alternatives getAlternatives_0_3_2_0() { return cAlternatives_0_3_2_0; }
+		
+		//-> ID
+		public RuleCall getIDTerminalRuleCall_0_3_2_0_0() { return cIDTerminalRuleCall_0_3_2_0_0; }
+		
+		//IDWITHDASH
+		public RuleCall getIDWITHDASHTerminalRuleCall_0_3_2_0_1() { return cIDWITHDASHTerminalRuleCall_0_3_2_0_1; }
+		
+		//'='
+		public Keyword getEqualsSignKeyword_0_3_2_1() { return cEqualsSignKeyword_0_3_2_1; }
+		
+		//ValidString
+		public RuleCall getValidStringParserRuleCall_0_3_2_2() { return cValidStringParserRuleCall_0_3_2_2; }
+		
+		//'/>'
+		public Keyword getSolidusGreaterThanSignKeyword_0_3_3() { return cSolidusGreaterThanSignKeyword_0_3_3; }
+		
+		//'</http>'
+		public Keyword getHttpKeyword_0_4() { return cHttpKeyword_0_4; }
+		
+		//'/>'
+		public Keyword getSolidusGreaterThanSignKeyword_1() { return cSolidusGreaterThanSignKeyword_1; }
 	}
 	public class AliasElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.xtext.spring.SpringConfigDsl.Alias");
@@ -983,8 +1090,8 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		// * use-default-filters - Indicates whether automatic detection of classes annotated with @Component, @Repository, @Service, or 
 		// @Controller should be enabled. Default is "true".
 		// */ ComponentScan:
-		//	{ComponentScan} 'component-scan' ('base-package=' basePackage=ValidString & ('annotation-config='
-		//	annotationConfig=sBoolean)?
+		//	{ComponentScan}
+		//	'component-scan' ('base-package=' basePackage=ValidString & ('annotation-config=' annotationConfig=sBoolean)?
 		//	& ('name-generator=' nameGeneratorBean=[Component|ValidString])?
 		//	& ('resource-pattern=' resourcePattern=ValidString)?
 		//	& ('scope-resolver=' scopeResolver=[Component|ValidString])?
@@ -1296,8 +1403,9 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cContextLoadTimeWeaverKeyword_3_1_1 = (Keyword)cGroup_3_1.eContents().get(1);
 		
 		///** load-time weaving for Aspect class */ LoadTimeWeaver:
-		//	{LoadTimeWeaver} 'load-time-weaver' (('aspectj-weaving=' aspectjWeaving=ValidString)? & ('weaver-class='
-		//	weaverClass=ValidString)?) ('/>' | '>' '</context:load-time-weaver>');
+		//	{LoadTimeWeaver}
+		//	'load-time-weaver' (('aspectj-weaving=' aspectjWeaving=ValidString)? & ('weaver-class=' weaverClass=ValidString)?)
+		//	('/>' | '>' '</context:load-time-weaver>');
 		@Override public ParserRule getRule() { return rule; }
 		
 		//{LoadTimeWeaver} 'load-time-weaver' (('aspectj-weaving=' aspectjWeaving=ValidString)? & ('weaver-class='
@@ -1378,7 +1486,8 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cContextMbeanExportKeyword_3_1_1 = (Keyword)cGroup_3_1.eContents().get(1);
 		
 		//MbeanExport:
-		//	{MbeanExport} 'mbean-export' (('default-domain=' defaultDomain=ValidString)? & ('registration='
+		//	{MbeanExport}
+		//	'mbean-export' (('default-domain=' defaultDomain=ValidString)? & ('registration='
 		//	registration=MbeanRegistrationEnum)? & ('server=' server=[Component|ValidString])?) ('/>' | '>'
 		//	'</context:mbean-export>');
 		@Override public ParserRule getRule() { return rule; }
@@ -1473,7 +1582,8 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cContextMbeanServerKeyword_3_1_1 = (Keyword)cGroup_3_1.eContents().get(1);
 		
 		//MbeanServer:
-		//	{MbeanServer} 'mbean-server' (('agent-id=' agentId=ValidString)? & ('id=' name=ValidString)?) ('/>' | '>'
+		//	{MbeanServer}
+		//	'mbean-server' (('agent-id=' agentId=ValidString)? & ('id=' name=ValidString)?) ('/>' | '>'
 		//	'</context:mbean-server>');
 		@Override public ParserRule getRule() { return rule; }
 		
@@ -1860,7 +1970,8 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		
 		///*Signals the current application context to apply dependency injection to non-managed classes that are 
 		// instantiated outside of the Spring bean factory (typically classes annotated with the @Configurable annotation). */ SpringConfigured:
-		//	{SpringConfigured} 'spring-configured' ('/>' | '>' '</context:spring-configured>');
+		//	{SpringConfigured}
+		//	'spring-configured' ('/>' | '>' '</context:spring-configured>');
 		@Override public ParserRule getRule() { return rule; }
 		
 		//{SpringConfigured} 'spring-configured' ('/>' | '>' '</context:spring-configured>')
@@ -1940,7 +2051,8 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cAopAspectjAutoproxyKeyword_3_1_2 = (Keyword)cGroup_3_1.eContents().get(2);
 		
 		///** To enable @AspectJ support with XML based configuration */ AopAspectJAutoproxy:
-		//	{AopAspectJAutoproxy} '<aop:aspectj-autoproxy' (('expose-proxy=' exposeProxy=sBoolean)? & ('proxy-target-class='
+		//	{AopAspectJAutoproxy}
+		//	'<aop:aspectj-autoproxy' (('expose-proxy=' exposeProxy=sBoolean)? & ('proxy-target-class='
 		//	proxyTrajetClass=sBoolean)?) ('/>' | '>' aopincludes+=AopInclude* '</aop:aspectj-autoproxy>');
 		@Override public ParserRule getRule() { return rule; }
 		
@@ -3559,58 +3671,58 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cNameKeyword_2_0_0_1 = (Keyword)cAlternatives_2_0_0.eContents().get(1);
 		private final Assignment cNameAssignment_2_0_1 = (Assignment)cGroup_2_0.eContents().get(1);
 		private final RuleCall cNameValidStringParserRuleCall_2_0_1_0 = (RuleCall)cNameAssignment_2_0_1.eContents().get(0);
-		private final Group cGroup_2_1 = (Group)cUnorderedGroup_2.eContents().get(1);
-		private final Keyword cNameKeyword_2_1_0 = (Keyword)cGroup_2_1.eContents().get(0);
-		private final Assignment cNamesAssignment_2_1_1 = (Assignment)cGroup_2_1.eContents().get(1);
-		private final RuleCall cNamesValidStringParserRuleCall_2_1_1_0 = (RuleCall)cNamesAssignment_2_1_1.eContents().get(0);
-		private final Assignment cClassAssignment_2_2 = (Assignment)cUnorderedGroup_2.eContents().get(2);
-		private final RuleCall cClassCreationMethodParserRuleCall_2_2_0 = (RuleCall)cClassAssignment_2_2.eContents().get(0);
+		private final Group cGroup_2_0_2 = (Group)cGroup_2_0.eContents().get(2);
+		private final Keyword cNameKeyword_2_0_2_0 = (Keyword)cGroup_2_0_2.eContents().get(0);
+		private final Assignment cNamesAssignment_2_0_2_1 = (Assignment)cGroup_2_0_2.eContents().get(1);
+		private final RuleCall cNamesValidStringParserRuleCall_2_0_2_1_0 = (RuleCall)cNamesAssignment_2_0_2_1.eContents().get(0);
+		private final Assignment cClassAssignment_2_1 = (Assignment)cUnorderedGroup_2.eContents().get(1);
+		private final RuleCall cClassCreationMethodParserRuleCall_2_1_0 = (RuleCall)cClassAssignment_2_1.eContents().get(0);
+		private final Assignment cFeaturesAssignment_2_2 = (Assignment)cUnorderedGroup_2.eContents().get(2);
+		private final RuleCall cFeaturesPNamespaceParserRuleCall_2_2_0 = (RuleCall)cFeaturesAssignment_2_2.eContents().get(0);
 		private final Assignment cFeaturesAssignment_2_3 = (Assignment)cUnorderedGroup_2.eContents().get(3);
-		private final RuleCall cFeaturesPNamespaceParserRuleCall_2_3_0 = (RuleCall)cFeaturesAssignment_2_3.eContents().get(0);
-		private final Assignment cFeaturesAssignment_2_4 = (Assignment)cUnorderedGroup_2.eContents().get(4);
-		private final RuleCall cFeaturesCNamespaceParserRuleCall_2_4_0 = (RuleCall)cFeaturesAssignment_2_4.eContents().get(0);
+		private final RuleCall cFeaturesCNamespaceParserRuleCall_2_3_0 = (RuleCall)cFeaturesAssignment_2_3.eContents().get(0);
+		private final Group cGroup_2_4 = (Group)cUnorderedGroup_2.eContents().get(4);
+		private final Keyword cAbstractKeyword_2_4_0 = (Keyword)cGroup_2_4.eContents().get(0);
+		private final Assignment cAbstractAssignment_2_4_1 = (Assignment)cGroup_2_4.eContents().get(1);
+		private final RuleCall cAbstractSBooleanEnumRuleCall_2_4_1_0 = (RuleCall)cAbstractAssignment_2_4_1.eContents().get(0);
 		private final Group cGroup_2_5 = (Group)cUnorderedGroup_2.eContents().get(5);
-		private final Keyword cAbstractKeyword_2_5_0 = (Keyword)cGroup_2_5.eContents().get(0);
-		private final Assignment cAbstractAssignment_2_5_1 = (Assignment)cGroup_2_5.eContents().get(1);
-		private final RuleCall cAbstractSBooleanEnumRuleCall_2_5_1_0 = (RuleCall)cAbstractAssignment_2_5_1.eContents().get(0);
+		private final Keyword cAutowireCandidateKeyword_2_5_0 = (Keyword)cGroup_2_5.eContents().get(0);
+		private final Assignment cAutowireCandidateAssignment_2_5_1 = (Assignment)cGroup_2_5.eContents().get(1);
+		private final RuleCall cAutowireCandidateDefaultableBooleanEnumRuleCall_2_5_1_0 = (RuleCall)cAutowireCandidateAssignment_2_5_1.eContents().get(0);
 		private final Group cGroup_2_6 = (Group)cUnorderedGroup_2.eContents().get(6);
-		private final Keyword cAutowireCandidateKeyword_2_6_0 = (Keyword)cGroup_2_6.eContents().get(0);
-		private final Assignment cAutowireCandidateAssignment_2_6_1 = (Assignment)cGroup_2_6.eContents().get(1);
-		private final RuleCall cAutowireCandidateDefaultableBooleanEnumRuleCall_2_6_1_0 = (RuleCall)cAutowireCandidateAssignment_2_6_1.eContents().get(0);
+		private final Keyword cAutowireKeyword_2_6_0 = (Keyword)cGroup_2_6.eContents().get(0);
+		private final Assignment cAutowireAssignment_2_6_1 = (Assignment)cGroup_2_6.eContents().get(1);
+		private final RuleCall cAutowireDefaultableBooleanEnumRuleCall_2_6_1_0 = (RuleCall)cAutowireAssignment_2_6_1.eContents().get(0);
 		private final Group cGroup_2_7 = (Group)cUnorderedGroup_2.eContents().get(7);
-		private final Keyword cAutowireKeyword_2_7_0 = (Keyword)cGroup_2_7.eContents().get(0);
-		private final Assignment cAutowireAssignment_2_7_1 = (Assignment)cGroup_2_7.eContents().get(1);
-		private final RuleCall cAutowireDefaultableBooleanEnumRuleCall_2_7_1_0 = (RuleCall)cAutowireAssignment_2_7_1.eContents().get(0);
+		private final Keyword cDependsOnKeyword_2_7_0 = (Keyword)cGroup_2_7.eContents().get(0);
+		private final Assignment cDependsOnAssignment_2_7_1 = (Assignment)cGroup_2_7.eContents().get(1);
+		private final CrossReference cDependsOnComponentCrossReference_2_7_1_0 = (CrossReference)cDependsOnAssignment_2_7_1.eContents().get(0);
+		private final RuleCall cDependsOnComponentValidStringParserRuleCall_2_7_1_0_1 = (RuleCall)cDependsOnComponentCrossReference_2_7_1_0.eContents().get(1);
 		private final Group cGroup_2_8 = (Group)cUnorderedGroup_2.eContents().get(8);
-		private final Keyword cDependsOnKeyword_2_8_0 = (Keyword)cGroup_2_8.eContents().get(0);
-		private final Assignment cDependsOnAssignment_2_8_1 = (Assignment)cGroup_2_8.eContents().get(1);
-		private final CrossReference cDependsOnComponentCrossReference_2_8_1_0 = (CrossReference)cDependsOnAssignment_2_8_1.eContents().get(0);
-		private final RuleCall cDependsOnComponentValidStringParserRuleCall_2_8_1_0_1 = (RuleCall)cDependsOnComponentCrossReference_2_8_1_0.eContents().get(1);
+		private final Keyword cDestroyMethodKeyword_2_8_0 = (Keyword)cGroup_2_8.eContents().get(0);
+		private final Assignment cDetroyMethodAssignment_2_8_1 = (Assignment)cGroup_2_8.eContents().get(1);
+		private final RuleCall cDetroyMethodValidStringParserRuleCall_2_8_1_0 = (RuleCall)cDetroyMethodAssignment_2_8_1.eContents().get(0);
 		private final Group cGroup_2_9 = (Group)cUnorderedGroup_2.eContents().get(9);
-		private final Keyword cDestroyMethodKeyword_2_9_0 = (Keyword)cGroup_2_9.eContents().get(0);
-		private final Assignment cDetroyMethodAssignment_2_9_1 = (Assignment)cGroup_2_9.eContents().get(1);
-		private final RuleCall cDetroyMethodValidStringParserRuleCall_2_9_1_0 = (RuleCall)cDetroyMethodAssignment_2_9_1.eContents().get(0);
+		private final Keyword cInitMethodKeyword_2_9_0 = (Keyword)cGroup_2_9.eContents().get(0);
+		private final Assignment cInitMethodAssignment_2_9_1 = (Assignment)cGroup_2_9.eContents().get(1);
+		private final RuleCall cInitMethodValidStringParserRuleCall_2_9_1_0 = (RuleCall)cInitMethodAssignment_2_9_1.eContents().get(0);
 		private final Group cGroup_2_10 = (Group)cUnorderedGroup_2.eContents().get(10);
-		private final Keyword cInitMethodKeyword_2_10_0 = (Keyword)cGroup_2_10.eContents().get(0);
-		private final Assignment cInitMethodAssignment_2_10_1 = (Assignment)cGroup_2_10.eContents().get(1);
-		private final RuleCall cInitMethodValidStringParserRuleCall_2_10_1_0 = (RuleCall)cInitMethodAssignment_2_10_1.eContents().get(0);
+		private final Keyword cLazyInitKeyword_2_10_0 = (Keyword)cGroup_2_10.eContents().get(0);
+		private final Assignment cLazyInitAssignment_2_10_1 = (Assignment)cGroup_2_10.eContents().get(1);
+		private final RuleCall cLazyInitDefaultableBooleanEnumRuleCall_2_10_1_0 = (RuleCall)cLazyInitAssignment_2_10_1.eContents().get(0);
 		private final Group cGroup_2_11 = (Group)cUnorderedGroup_2.eContents().get(11);
-		private final Keyword cLazyInitKeyword_2_11_0 = (Keyword)cGroup_2_11.eContents().get(0);
-		private final Assignment cLazyInitAssignment_2_11_1 = (Assignment)cGroup_2_11.eContents().get(1);
-		private final RuleCall cLazyInitDefaultableBooleanEnumRuleCall_2_11_1_0 = (RuleCall)cLazyInitAssignment_2_11_1.eContents().get(0);
+		private final Keyword cParentKeyword_2_11_0 = (Keyword)cGroup_2_11.eContents().get(0);
+		private final Assignment cParentAssignment_2_11_1 = (Assignment)cGroup_2_11.eContents().get(1);
+		private final CrossReference cParentComponentCrossReference_2_11_1_0 = (CrossReference)cParentAssignment_2_11_1.eContents().get(0);
+		private final RuleCall cParentComponentValidStringParserRuleCall_2_11_1_0_1 = (RuleCall)cParentComponentCrossReference_2_11_1_0.eContents().get(1);
 		private final Group cGroup_2_12 = (Group)cUnorderedGroup_2.eContents().get(12);
-		private final Keyword cParentKeyword_2_12_0 = (Keyword)cGroup_2_12.eContents().get(0);
-		private final Assignment cParentAssignment_2_12_1 = (Assignment)cGroup_2_12.eContents().get(1);
-		private final CrossReference cParentComponentCrossReference_2_12_1_0 = (CrossReference)cParentAssignment_2_12_1.eContents().get(0);
-		private final RuleCall cParentComponentValidStringParserRuleCall_2_12_1_0_1 = (RuleCall)cParentComponentCrossReference_2_12_1_0.eContents().get(1);
+		private final Keyword cPrimaryKeyword_2_12_0 = (Keyword)cGroup_2_12.eContents().get(0);
+		private final Assignment cPrimaryAssignment_2_12_1 = (Assignment)cGroup_2_12.eContents().get(1);
+		private final RuleCall cPrimarySBooleanEnumRuleCall_2_12_1_0 = (RuleCall)cPrimaryAssignment_2_12_1.eContents().get(0);
 		private final Group cGroup_2_13 = (Group)cUnorderedGroup_2.eContents().get(13);
-		private final Keyword cPrimaryKeyword_2_13_0 = (Keyword)cGroup_2_13.eContents().get(0);
-		private final Assignment cPrimaryAssignment_2_13_1 = (Assignment)cGroup_2_13.eContents().get(1);
-		private final RuleCall cPrimarySBooleanEnumRuleCall_2_13_1_0 = (RuleCall)cPrimaryAssignment_2_13_1.eContents().get(0);
-		private final Group cGroup_2_14 = (Group)cUnorderedGroup_2.eContents().get(14);
-		private final Keyword cScopeKeyword_2_14_0 = (Keyword)cGroup_2_14.eContents().get(0);
-		private final Assignment cScopeAssignment_2_14_1 = (Assignment)cGroup_2_14.eContents().get(1);
-		private final RuleCall cScopeValidStringParserRuleCall_2_14_1_0 = (RuleCall)cScopeAssignment_2_14_1.eContents().get(0);
+		private final Keyword cScopeKeyword_2_13_0 = (Keyword)cGroup_2_13.eContents().get(0);
+		private final Assignment cScopeAssignment_2_13_1 = (Assignment)cGroup_2_13.eContents().get(1);
+		private final RuleCall cScopeValidStringParserRuleCall_2_13_1_0 = (RuleCall)cScopeAssignment_2_13_1.eContents().get(0);
 		private final Alternatives cAlternatives_3 = (Alternatives)cGroup.eContents().get(3);
 		private final Keyword cSolidusGreaterThanSignKeyword_3_0 = (Keyword)cAlternatives_3.eContents().get(0);
 		private final Group cGroup_3_1 = (Group)cAlternatives_3.eContents().get(1);
@@ -3634,7 +3746,7 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		
 		///*<bean/> */ Component:
 		//	{Component}
-		//	'<bean' ((('id=' | 'name=') name=ValidString)? & ('name=' names+=ValidString)?
+		//	'<bean' ((('id=' | "name=") name=ValidString ("name="? names+=ValidString)?)?
 		//	& class=CreationMethod
 		//	& features+=PNamespace*
 		//	& features+=CNamespace*
@@ -3653,7 +3765,7 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		//	'</bean>');
 		@Override public ParserRule getRule() { return rule; }
 		
-		//{Component} '<bean' ((('id=' | 'name=') name=ValidString)? & ('name=' names+=ValidString)? & class=CreationMethod &
+		//{Component} '<bean' ((('id=' | "name=") name=ValidString ("name="? names+=ValidString)?)? & class=CreationMethod &
 		//features+=PNamespace* & features+=CNamespace* & ('abstract=' abstract=sBoolean)? //bool
 		//& ('autowire-candidate=' autowireCandidate=DefaultableBoolean)? //enum
 		//& ('autowire=' autowire=DefaultableBoolean)? //enum
@@ -3674,7 +3786,7 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		//'<bean'
 		public Keyword getBeanKeyword_1() { return cBeanKeyword_1; }
 		
-		//(('id=' | 'name=') name=ValidString)? & ('name=' names+=ValidString)? & class=CreationMethod & features+=PNamespace* &
+		//(('id=' | "name=") name=ValidString ("name="? names+=ValidString)?)? & class=CreationMethod & features+=PNamespace* &
 		//features+=CNamespace* & ('abstract=' abstract=sBoolean)? //bool
 		//& ('autowire-candidate=' autowireCandidate=DefaultableBoolean)? //enum
 		//& ('autowire=' autowire=DefaultableBoolean)? //enum
@@ -3687,16 +3799,16 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		//& ('scope=' scope=ValidString)?
 		public UnorderedGroup getUnorderedGroup_2() { return cUnorderedGroup_2; }
 		
-		//(('id=' | 'name=') name=ValidString)?
+		//(('id=' | "name=") name=ValidString ("name="? names+=ValidString)?)?
 		public Group getGroup_2_0() { return cGroup_2_0; }
 		
-		//'id=' | 'name='
+		//'id=' | "name="
 		public Alternatives getAlternatives_2_0_0() { return cAlternatives_2_0_0; }
 		
 		//'id='
 		public Keyword getIdKeyword_2_0_0_0() { return cIdKeyword_2_0_0_0; }
 		
-		//'name='
+		//"name="
 		public Keyword getNameKeyword_2_0_0_1() { return cNameKeyword_2_0_0_1; }
 		
 		//name=ValidString
@@ -3705,161 +3817,161 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		//ValidString
 		public RuleCall getNameValidStringParserRuleCall_2_0_1_0() { return cNameValidStringParserRuleCall_2_0_1_0; }
 		
-		//('name=' names+=ValidString)?
-		public Group getGroup_2_1() { return cGroup_2_1; }
+		//("name="? names+=ValidString)?
+		public Group getGroup_2_0_2() { return cGroup_2_0_2; }
 		
-		//'name='
-		public Keyword getNameKeyword_2_1_0() { return cNameKeyword_2_1_0; }
+		//"name="?
+		public Keyword getNameKeyword_2_0_2_0() { return cNameKeyword_2_0_2_0; }
 		
 		//names+=ValidString
-		public Assignment getNamesAssignment_2_1_1() { return cNamesAssignment_2_1_1; }
+		public Assignment getNamesAssignment_2_0_2_1() { return cNamesAssignment_2_0_2_1; }
 		
 		//ValidString
-		public RuleCall getNamesValidStringParserRuleCall_2_1_1_0() { return cNamesValidStringParserRuleCall_2_1_1_0; }
+		public RuleCall getNamesValidStringParserRuleCall_2_0_2_1_0() { return cNamesValidStringParserRuleCall_2_0_2_1_0; }
 		
 		//class=CreationMethod
-		public Assignment getClassAssignment_2_2() { return cClassAssignment_2_2; }
+		public Assignment getClassAssignment_2_1() { return cClassAssignment_2_1; }
 		
 		//CreationMethod
-		public RuleCall getClassCreationMethodParserRuleCall_2_2_0() { return cClassCreationMethodParserRuleCall_2_2_0; }
+		public RuleCall getClassCreationMethodParserRuleCall_2_1_0() { return cClassCreationMethodParserRuleCall_2_1_0; }
 		
 		//features+=PNamespace*
-		public Assignment getFeaturesAssignment_2_3() { return cFeaturesAssignment_2_3; }
+		public Assignment getFeaturesAssignment_2_2() { return cFeaturesAssignment_2_2; }
 		
 		//PNamespace
-		public RuleCall getFeaturesPNamespaceParserRuleCall_2_3_0() { return cFeaturesPNamespaceParserRuleCall_2_3_0; }
+		public RuleCall getFeaturesPNamespaceParserRuleCall_2_2_0() { return cFeaturesPNamespaceParserRuleCall_2_2_0; }
 		
 		//features+=CNamespace*
-		public Assignment getFeaturesAssignment_2_4() { return cFeaturesAssignment_2_4; }
+		public Assignment getFeaturesAssignment_2_3() { return cFeaturesAssignment_2_3; }
 		
 		//CNamespace
-		public RuleCall getFeaturesCNamespaceParserRuleCall_2_4_0() { return cFeaturesCNamespaceParserRuleCall_2_4_0; }
+		public RuleCall getFeaturesCNamespaceParserRuleCall_2_3_0() { return cFeaturesCNamespaceParserRuleCall_2_3_0; }
 		
 		//('abstract=' abstract=sBoolean)?
-		public Group getGroup_2_5() { return cGroup_2_5; }
+		public Group getGroup_2_4() { return cGroup_2_4; }
 		
 		//'abstract='
-		public Keyword getAbstractKeyword_2_5_0() { return cAbstractKeyword_2_5_0; }
+		public Keyword getAbstractKeyword_2_4_0() { return cAbstractKeyword_2_4_0; }
 		
 		//abstract=sBoolean
-		public Assignment getAbstractAssignment_2_5_1() { return cAbstractAssignment_2_5_1; }
+		public Assignment getAbstractAssignment_2_4_1() { return cAbstractAssignment_2_4_1; }
 		
 		//sBoolean
-		public RuleCall getAbstractSBooleanEnumRuleCall_2_5_1_0() { return cAbstractSBooleanEnumRuleCall_2_5_1_0; }
+		public RuleCall getAbstractSBooleanEnumRuleCall_2_4_1_0() { return cAbstractSBooleanEnumRuleCall_2_4_1_0; }
 		
 		//('autowire-candidate=' autowireCandidate=DefaultableBoolean)?
-		public Group getGroup_2_6() { return cGroup_2_6; }
+		public Group getGroup_2_5() { return cGroup_2_5; }
 		
 		//'autowire-candidate='
-		public Keyword getAutowireCandidateKeyword_2_6_0() { return cAutowireCandidateKeyword_2_6_0; }
+		public Keyword getAutowireCandidateKeyword_2_5_0() { return cAutowireCandidateKeyword_2_5_0; }
 		
 		//autowireCandidate=DefaultableBoolean
-		public Assignment getAutowireCandidateAssignment_2_6_1() { return cAutowireCandidateAssignment_2_6_1; }
+		public Assignment getAutowireCandidateAssignment_2_5_1() { return cAutowireCandidateAssignment_2_5_1; }
 		
 		//DefaultableBoolean
-		public RuleCall getAutowireCandidateDefaultableBooleanEnumRuleCall_2_6_1_0() { return cAutowireCandidateDefaultableBooleanEnumRuleCall_2_6_1_0; }
+		public RuleCall getAutowireCandidateDefaultableBooleanEnumRuleCall_2_5_1_0() { return cAutowireCandidateDefaultableBooleanEnumRuleCall_2_5_1_0; }
 		
 		//('autowire=' autowire=DefaultableBoolean)?
-		public Group getGroup_2_7() { return cGroup_2_7; }
+		public Group getGroup_2_6() { return cGroup_2_6; }
 		
 		//'autowire='
-		public Keyword getAutowireKeyword_2_7_0() { return cAutowireKeyword_2_7_0; }
+		public Keyword getAutowireKeyword_2_6_0() { return cAutowireKeyword_2_6_0; }
 		
 		//autowire=DefaultableBoolean
-		public Assignment getAutowireAssignment_2_7_1() { return cAutowireAssignment_2_7_1; }
+		public Assignment getAutowireAssignment_2_6_1() { return cAutowireAssignment_2_6_1; }
 		
 		//DefaultableBoolean
-		public RuleCall getAutowireDefaultableBooleanEnumRuleCall_2_7_1_0() { return cAutowireDefaultableBooleanEnumRuleCall_2_7_1_0; }
+		public RuleCall getAutowireDefaultableBooleanEnumRuleCall_2_6_1_0() { return cAutowireDefaultableBooleanEnumRuleCall_2_6_1_0; }
 		
 		//('depends-on=' dependsOn=[Component|ValidString])?
-		public Group getGroup_2_8() { return cGroup_2_8; }
+		public Group getGroup_2_7() { return cGroup_2_7; }
 		
 		//'depends-on='
-		public Keyword getDependsOnKeyword_2_8_0() { return cDependsOnKeyword_2_8_0; }
+		public Keyword getDependsOnKeyword_2_7_0() { return cDependsOnKeyword_2_7_0; }
 		
 		//dependsOn=[Component|ValidString]
-		public Assignment getDependsOnAssignment_2_8_1() { return cDependsOnAssignment_2_8_1; }
+		public Assignment getDependsOnAssignment_2_7_1() { return cDependsOnAssignment_2_7_1; }
 		
 		//[Component|ValidString]
-		public CrossReference getDependsOnComponentCrossReference_2_8_1_0() { return cDependsOnComponentCrossReference_2_8_1_0; }
+		public CrossReference getDependsOnComponentCrossReference_2_7_1_0() { return cDependsOnComponentCrossReference_2_7_1_0; }
 		
 		//ValidString
-		public RuleCall getDependsOnComponentValidStringParserRuleCall_2_8_1_0_1() { return cDependsOnComponentValidStringParserRuleCall_2_8_1_0_1; }
+		public RuleCall getDependsOnComponentValidStringParserRuleCall_2_7_1_0_1() { return cDependsOnComponentValidStringParserRuleCall_2_7_1_0_1; }
 		
 		//('destroy-method=' detroyMethod=ValidString)?
-		public Group getGroup_2_9() { return cGroup_2_9; }
+		public Group getGroup_2_8() { return cGroup_2_8; }
 		
 		//'destroy-method='
-		public Keyword getDestroyMethodKeyword_2_9_0() { return cDestroyMethodKeyword_2_9_0; }
+		public Keyword getDestroyMethodKeyword_2_8_0() { return cDestroyMethodKeyword_2_8_0; }
 		
 		//detroyMethod=ValidString
-		public Assignment getDetroyMethodAssignment_2_9_1() { return cDetroyMethodAssignment_2_9_1; }
+		public Assignment getDetroyMethodAssignment_2_8_1() { return cDetroyMethodAssignment_2_8_1; }
 		
 		//ValidString
-		public RuleCall getDetroyMethodValidStringParserRuleCall_2_9_1_0() { return cDetroyMethodValidStringParserRuleCall_2_9_1_0; }
+		public RuleCall getDetroyMethodValidStringParserRuleCall_2_8_1_0() { return cDetroyMethodValidStringParserRuleCall_2_8_1_0; }
 		
 		//('init-method=' initMethod=ValidString)?
-		public Group getGroup_2_10() { return cGroup_2_10; }
+		public Group getGroup_2_9() { return cGroup_2_9; }
 		
 		//'init-method='
-		public Keyword getInitMethodKeyword_2_10_0() { return cInitMethodKeyword_2_10_0; }
+		public Keyword getInitMethodKeyword_2_9_0() { return cInitMethodKeyword_2_9_0; }
 		
 		//initMethod=ValidString
-		public Assignment getInitMethodAssignment_2_10_1() { return cInitMethodAssignment_2_10_1; }
+		public Assignment getInitMethodAssignment_2_9_1() { return cInitMethodAssignment_2_9_1; }
 		
 		//ValidString
-		public RuleCall getInitMethodValidStringParserRuleCall_2_10_1_0() { return cInitMethodValidStringParserRuleCall_2_10_1_0; }
+		public RuleCall getInitMethodValidStringParserRuleCall_2_9_1_0() { return cInitMethodValidStringParserRuleCall_2_9_1_0; }
 		
 		//('lazy-init=' lazyInit=DefaultableBoolean)?
-		public Group getGroup_2_11() { return cGroup_2_11; }
+		public Group getGroup_2_10() { return cGroup_2_10; }
 		
 		//'lazy-init='
-		public Keyword getLazyInitKeyword_2_11_0() { return cLazyInitKeyword_2_11_0; }
+		public Keyword getLazyInitKeyword_2_10_0() { return cLazyInitKeyword_2_10_0; }
 		
 		//lazyInit=DefaultableBoolean
-		public Assignment getLazyInitAssignment_2_11_1() { return cLazyInitAssignment_2_11_1; }
+		public Assignment getLazyInitAssignment_2_10_1() { return cLazyInitAssignment_2_10_1; }
 		
 		//DefaultableBoolean
-		public RuleCall getLazyInitDefaultableBooleanEnumRuleCall_2_11_1_0() { return cLazyInitDefaultableBooleanEnumRuleCall_2_11_1_0; }
+		public RuleCall getLazyInitDefaultableBooleanEnumRuleCall_2_10_1_0() { return cLazyInitDefaultableBooleanEnumRuleCall_2_10_1_0; }
 		
 		//('parent=' parent=[Component|ValidString])?
-		public Group getGroup_2_12() { return cGroup_2_12; }
+		public Group getGroup_2_11() { return cGroup_2_11; }
 		
 		//'parent='
-		public Keyword getParentKeyword_2_12_0() { return cParentKeyword_2_12_0; }
+		public Keyword getParentKeyword_2_11_0() { return cParentKeyword_2_11_0; }
 		
 		//parent=[Component|ValidString]
-		public Assignment getParentAssignment_2_12_1() { return cParentAssignment_2_12_1; }
+		public Assignment getParentAssignment_2_11_1() { return cParentAssignment_2_11_1; }
 		
 		//[Component|ValidString]
-		public CrossReference getParentComponentCrossReference_2_12_1_0() { return cParentComponentCrossReference_2_12_1_0; }
+		public CrossReference getParentComponentCrossReference_2_11_1_0() { return cParentComponentCrossReference_2_11_1_0; }
 		
 		//ValidString
-		public RuleCall getParentComponentValidStringParserRuleCall_2_12_1_0_1() { return cParentComponentValidStringParserRuleCall_2_12_1_0_1; }
+		public RuleCall getParentComponentValidStringParserRuleCall_2_11_1_0_1() { return cParentComponentValidStringParserRuleCall_2_11_1_0_1; }
 		
 		//('primary=' primary=sBoolean)?
-		public Group getGroup_2_13() { return cGroup_2_13; }
+		public Group getGroup_2_12() { return cGroup_2_12; }
 		
 		//'primary='
-		public Keyword getPrimaryKeyword_2_13_0() { return cPrimaryKeyword_2_13_0; }
+		public Keyword getPrimaryKeyword_2_12_0() { return cPrimaryKeyword_2_12_0; }
 		
 		//primary=sBoolean
-		public Assignment getPrimaryAssignment_2_13_1() { return cPrimaryAssignment_2_13_1; }
+		public Assignment getPrimaryAssignment_2_12_1() { return cPrimaryAssignment_2_12_1; }
 		
 		//sBoolean
-		public RuleCall getPrimarySBooleanEnumRuleCall_2_13_1_0() { return cPrimarySBooleanEnumRuleCall_2_13_1_0; }
+		public RuleCall getPrimarySBooleanEnumRuleCall_2_12_1_0() { return cPrimarySBooleanEnumRuleCall_2_12_1_0; }
 		
 		//('scope=' scope=ValidString)?
-		public Group getGroup_2_14() { return cGroup_2_14; }
+		public Group getGroup_2_13() { return cGroup_2_13; }
 		
 		//'scope='
-		public Keyword getScopeKeyword_2_14_0() { return cScopeKeyword_2_14_0; }
+		public Keyword getScopeKeyword_2_13_0() { return cScopeKeyword_2_13_0; }
 		
 		//scope=ValidString
-		public Assignment getScopeAssignment_2_14_1() { return cScopeAssignment_2_14_1; }
+		public Assignment getScopeAssignment_2_13_1() { return cScopeAssignment_2_13_1; }
 		
 		//ValidString
-		public RuleCall getScopeValidStringParserRuleCall_2_14_1_0() { return cScopeValidStringParserRuleCall_2_14_1_0; }
+		public RuleCall getScopeValidStringParserRuleCall_2_13_1_0() { return cScopeValidStringParserRuleCall_2_13_1_0; }
 		
 		//'/>' | '>' description=Description? (features+=Feature | lookupMethods+=LookupMethod | qualifiers+=Qualifier |
 		//meta+=MetaTag | aopScopedProxy=AopScopedProxy | utilPropertiesPath+=UtilPropertyPath)* '</bean>'
@@ -4055,8 +4167,8 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		//(ID ('.'ID)*)
 		//;
 		//*/ AopScopedProxy:
-		//	{AopScopedProxy} '<aop:scoped-proxy' ('proxy-target-class=' proxyTargetClass=ValidString)? ('/>' | '>'
-		//	'</aop:scoped-proxy>');
+		//	{AopScopedProxy}
+		//	'<aop:scoped-proxy' ('proxy-target-class=' proxyTargetClass=ValidString)? ('/>' | '>' '</aop:scoped-proxy>');
 		@Override public ParserRule getRule() { return rule; }
 		
 		//{AopScopedProxy} '<aop:scoped-proxy' ('proxy-target-class=' proxyTargetClass=ValidString)? ('/>' | '>'
@@ -4987,77 +5099,81 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 	public class LookupMethodElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.xtext.spring.SpringConfigDsl.LookupMethod");
 		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Keyword cLookupMethodKeyword_0 = (Keyword)cGroup.eContents().get(0);
-		private final UnorderedGroup cUnorderedGroup_1 = (UnorderedGroup)cGroup.eContents().get(1);
-		private final Group cGroup_1_0 = (Group)cUnorderedGroup_1.eContents().get(0);
-		private final Keyword cNameKeyword_1_0_0 = (Keyword)cGroup_1_0.eContents().get(0);
-		private final Assignment cNameAssignment_1_0_1 = (Assignment)cGroup_1_0.eContents().get(1);
-		private final RuleCall cNameValidStringParserRuleCall_1_0_1_0 = (RuleCall)cNameAssignment_1_0_1.eContents().get(0);
-		private final Group cGroup_1_1 = (Group)cUnorderedGroup_1.eContents().get(1);
-		private final Keyword cBeanKeyword_1_1_0 = (Keyword)cGroup_1_1.eContents().get(0);
-		private final Assignment cRefAssignment_1_1_1 = (Assignment)cGroup_1_1.eContents().get(1);
-		private final CrossReference cRefComponentCrossReference_1_1_1_0 = (CrossReference)cRefAssignment_1_1_1.eContents().get(0);
-		private final RuleCall cRefComponentValidStringParserRuleCall_1_1_1_0_1 = (RuleCall)cRefComponentCrossReference_1_1_1_0.eContents().get(1);
-		private final Alternatives cAlternatives_2 = (Alternatives)cGroup.eContents().get(2);
-		private final Keyword cSolidusGreaterThanSignKeyword_2_0 = (Keyword)cAlternatives_2.eContents().get(0);
-		private final Group cGroup_2_1 = (Group)cAlternatives_2.eContents().get(1);
-		private final Keyword cGreaterThanSignKeyword_2_1_0 = (Keyword)cGroup_2_1.eContents().get(0);
-		private final Keyword cLookupMethodKeyword_2_1_1 = (Keyword)cGroup_2_1.eContents().get(1);
+		private final Keyword cLessThanSignKeyword_0 = (Keyword)cGroup.eContents().get(0);
+		private final Keyword cLookupMethodKeyword_1 = (Keyword)cGroup.eContents().get(1);
+		private final UnorderedGroup cUnorderedGroup_2 = (UnorderedGroup)cGroup.eContents().get(2);
+		private final Group cGroup_2_0 = (Group)cUnorderedGroup_2.eContents().get(0);
+		private final Keyword cNameKeyword_2_0_0 = (Keyword)cGroup_2_0.eContents().get(0);
+		private final Assignment cNameAssignment_2_0_1 = (Assignment)cGroup_2_0.eContents().get(1);
+		private final RuleCall cNameValidStringParserRuleCall_2_0_1_0 = (RuleCall)cNameAssignment_2_0_1.eContents().get(0);
+		private final Group cGroup_2_1 = (Group)cUnorderedGroup_2.eContents().get(1);
+		private final Keyword cBeanKeyword_2_1_0 = (Keyword)cGroup_2_1.eContents().get(0);
+		private final Assignment cRefAssignment_2_1_1 = (Assignment)cGroup_2_1.eContents().get(1);
+		private final CrossReference cRefComponentCrossReference_2_1_1_0 = (CrossReference)cRefAssignment_2_1_1.eContents().get(0);
+		private final RuleCall cRefComponentValidStringParserRuleCall_2_1_1_0_1 = (RuleCall)cRefComponentCrossReference_2_1_1_0.eContents().get(1);
+		private final Alternatives cAlternatives_3 = (Alternatives)cGroup.eContents().get(3);
+		private final Keyword cSolidusGreaterThanSignKeyword_3_0 = (Keyword)cAlternatives_3.eContents().get(0);
+		private final Group cGroup_3_1 = (Group)cAlternatives_3.eContents().get(1);
+		private final Keyword cGreaterThanSignKeyword_3_1_0 = (Keyword)cGroup_3_1.eContents().get(0);
+		private final Keyword cLookupMethodKeyword_3_1_1 = (Keyword)cGroup_3_1.eContents().get(1);
 		
 		//LookupMethod:
-		//	'<lookup-method' ('name=' name=ValidString & 'bean=' ref=[Component|ValidString]) ('/>' | '>' '</lookup-method>');
+		//	'<' 'lookup-method' ('name=' name=ValidString & 'bean=' ref=[Component|ValidString]) ('/>' | '>' '</lookup-method>');
 		@Override public ParserRule getRule() { return rule; }
 		
-		//'<lookup-method' ('name=' name=ValidString & 'bean=' ref=[Component|ValidString]) ('/>' | '>' '</lookup-method>')
+		//'<' 'lookup-method' ('name=' name=ValidString & 'bean=' ref=[Component|ValidString]) ('/>' | '>' '</lookup-method>')
 		public Group getGroup() { return cGroup; }
 		
-		//'<lookup-method'
-		public Keyword getLookupMethodKeyword_0() { return cLookupMethodKeyword_0; }
+		//'<'
+		public Keyword getLessThanSignKeyword_0() { return cLessThanSignKeyword_0; }
+		
+		//'lookup-method'
+		public Keyword getLookupMethodKeyword_1() { return cLookupMethodKeyword_1; }
 		
 		//'name=' name=ValidString & 'bean=' ref=[Component|ValidString]
-		public UnorderedGroup getUnorderedGroup_1() { return cUnorderedGroup_1; }
+		public UnorderedGroup getUnorderedGroup_2() { return cUnorderedGroup_2; }
 		
 		//'name=' name=ValidString
-		public Group getGroup_1_0() { return cGroup_1_0; }
+		public Group getGroup_2_0() { return cGroup_2_0; }
 		
 		//'name='
-		public Keyword getNameKeyword_1_0_0() { return cNameKeyword_1_0_0; }
+		public Keyword getNameKeyword_2_0_0() { return cNameKeyword_2_0_0; }
 		
 		//name=ValidString
-		public Assignment getNameAssignment_1_0_1() { return cNameAssignment_1_0_1; }
+		public Assignment getNameAssignment_2_0_1() { return cNameAssignment_2_0_1; }
 		
 		//ValidString
-		public RuleCall getNameValidStringParserRuleCall_1_0_1_0() { return cNameValidStringParserRuleCall_1_0_1_0; }
+		public RuleCall getNameValidStringParserRuleCall_2_0_1_0() { return cNameValidStringParserRuleCall_2_0_1_0; }
 		
 		//'bean=' ref=[Component|ValidString]
-		public Group getGroup_1_1() { return cGroup_1_1; }
-		
-		//'bean='
-		public Keyword getBeanKeyword_1_1_0() { return cBeanKeyword_1_1_0; }
-		
-		//ref=[Component|ValidString]
-		public Assignment getRefAssignment_1_1_1() { return cRefAssignment_1_1_1; }
-		
-		//[Component|ValidString]
-		public CrossReference getRefComponentCrossReference_1_1_1_0() { return cRefComponentCrossReference_1_1_1_0; }
-		
-		//ValidString
-		public RuleCall getRefComponentValidStringParserRuleCall_1_1_1_0_1() { return cRefComponentValidStringParserRuleCall_1_1_1_0_1; }
-		
-		//'/>' | '>' '</lookup-method>'
-		public Alternatives getAlternatives_2() { return cAlternatives_2; }
-		
-		//'/>'
-		public Keyword getSolidusGreaterThanSignKeyword_2_0() { return cSolidusGreaterThanSignKeyword_2_0; }
-		
-		//'>' '</lookup-method>'
 		public Group getGroup_2_1() { return cGroup_2_1; }
 		
+		//'bean='
+		public Keyword getBeanKeyword_2_1_0() { return cBeanKeyword_2_1_0; }
+		
+		//ref=[Component|ValidString]
+		public Assignment getRefAssignment_2_1_1() { return cRefAssignment_2_1_1; }
+		
+		//[Component|ValidString]
+		public CrossReference getRefComponentCrossReference_2_1_1_0() { return cRefComponentCrossReference_2_1_1_0; }
+		
+		//ValidString
+		public RuleCall getRefComponentValidStringParserRuleCall_2_1_1_0_1() { return cRefComponentValidStringParserRuleCall_2_1_1_0_1; }
+		
+		//'/>' | '>' '</lookup-method>'
+		public Alternatives getAlternatives_3() { return cAlternatives_3; }
+		
+		//'/>'
+		public Keyword getSolidusGreaterThanSignKeyword_3_0() { return cSolidusGreaterThanSignKeyword_3_0; }
+		
+		//'>' '</lookup-method>'
+		public Group getGroup_3_1() { return cGroup_3_1; }
+		
 		//'>'
-		public Keyword getGreaterThanSignKeyword_2_1_0() { return cGreaterThanSignKeyword_2_1_0; }
+		public Keyword getGreaterThanSignKeyword_3_1_0() { return cGreaterThanSignKeyword_3_1_0; }
 		
 		//'</lookup-method>'
-		public Keyword getLookupMethodKeyword_2_1_1() { return cLookupMethodKeyword_2_1_1; }
+		public Keyword getLookupMethodKeyword_3_1_1() { return cLookupMethodKeyword_3_1_1; }
 	}
 	public class QualifierElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.xtext.spring.SpringConfigDsl.Qualifier");
@@ -6082,7 +6198,8 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cKeyKeyword_5 = (Keyword)cGroup.eContents().get(5);
 		
 		///*<key/> */ Key:
-		//	{Key} '<key' '>' description=Description? (key=AbstractArtefact | NullTag) '</key>';
+		//	{Key}
+		//	'<key' '>' description=Description? (key=AbstractArtefact | NullTag) '</key>';
 		@Override public ParserRule getRule() { return rule; }
 		
 		//{Key} '<key' '>' description=Description? (key=AbstractArtefact | NullTag) '</key>'
@@ -7952,6 +8069,7 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 	private final CollectionElements pCollection;
 	private final ConfigurationElements pConfiguration;
 	private final MVCElements pMVC;
+	private final HttpElements pHttp;
 	private final AliasElements pAlias;
 	private final ImportElements pImport;
 	private final ContextElements pContext;
@@ -8071,6 +8189,7 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		this.pCollection = new CollectionElements();
 		this.pConfiguration = new ConfigurationElements();
 		this.pMVC = new MVCElements();
+		this.pHttp = new HttpElements();
 		this.pAlias = new AliasElements();
 		this.pImport = new ImportElements();
 		this.pContext = new ContextElements();
@@ -8259,6 +8378,7 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 	//	'>') description=Description? (components+=Component | alias+=Alias | imports+=Import
 	//	| contexts+=Context
 	//	| mvcs+=MVC
+	//	| https+=Http
 	//	| aspects+=Aspect
 	//	| utilConstants+=UtilConstant | utilLists+=UtilList | utilMaps+=UtilMap
 	//	| utilProperties+=UtilProperties | utilSets+=UtilSet | utilPropertiesPath+=UtilPropertyPath
@@ -8273,7 +8393,7 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 	}
 	
 	//MVC:
-	//	'<mvc:' (ID | IDWITHDASH) (PropertyFileSimple | "path=" QSTRING)? ((ID | IDWITHDASH) '=' QSTRING)* ('/>' | '>'
+	//	'<mvc:' (-> ID | IDWITHDASH) (PropertyFileSimple | "path=" QSTRING)? ((-> ID | IDWITHDASH) '=' QSTRING)* ('/>' | '>'
 	//	components+=Component* (('<mvc:' | '</mvc:') (ID | IDWITHDASH) ('>' | '/>')));
 	public MVCElements getMVCAccess() {
 		return pMVC;
@@ -8281,6 +8401,17 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 	
 	public ParserRule getMVCRule() {
 		return getMVCAccess().getRule();
+	}
+	
+	//Http:
+	//	'<http' (IDWITHDASH '=' ValidString)* '>' ('<' (-> ID | IDWITHDASH)+ ((-> ID | IDWITHDASH) '=' ValidString)* '/>')*
+	//	'</http>' | '/>';
+	public HttpElements getHttpAccess() {
+		return pHttp;
+	}
+	
+	public ParserRule getHttpRule() {
+		return getHttpAccess().getRule();
 	}
 	
 	///*<alias/> */ Alias:
@@ -8349,8 +8480,8 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 	// * use-default-filters - Indicates whether automatic detection of classes annotated with @Component, @Repository, @Service, or 
 	// @Controller should be enabled. Default is "true".
 	// */ ComponentScan:
-	//	{ComponentScan} 'component-scan' ('base-package=' basePackage=ValidString & ('annotation-config='
-	//	annotationConfig=sBoolean)?
+	//	{ComponentScan}
+	//	'component-scan' ('base-package=' basePackage=ValidString & ('annotation-config=' annotationConfig=sBoolean)?
 	//	& ('name-generator=' nameGeneratorBean=[Component|ValidString])?
 	//	& ('resource-pattern=' resourcePattern=ValidString)?
 	//	& ('scope-resolver=' scopeResolver=[Component|ValidString])?
@@ -8388,8 +8519,9 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 	}
 	
 	///** load-time weaving for Aspect class */ LoadTimeWeaver:
-	//	{LoadTimeWeaver} 'load-time-weaver' (('aspectj-weaving=' aspectjWeaving=ValidString)? & ('weaver-class='
-	//	weaverClass=ValidString)?) ('/>' | '>' '</context:load-time-weaver>');
+	//	{LoadTimeWeaver}
+	//	'load-time-weaver' (('aspectj-weaving=' aspectjWeaving=ValidString)? & ('weaver-class=' weaverClass=ValidString)?)
+	//	('/>' | '>' '</context:load-time-weaver>');
 	public LoadTimeWeaverElements getLoadTimeWeaverAccess() {
 		return pLoadTimeWeaver;
 	}
@@ -8399,7 +8531,8 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 	}
 	
 	//MbeanExport:
-	//	{MbeanExport} 'mbean-export' (('default-domain=' defaultDomain=ValidString)? & ('registration='
+	//	{MbeanExport}
+	//	'mbean-export' (('default-domain=' defaultDomain=ValidString)? & ('registration='
 	//	registration=MbeanRegistrationEnum)? & ('server=' server=[Component|ValidString])?) ('/>' | '>'
 	//	'</context:mbean-export>');
 	public MbeanExportElements getMbeanExportAccess() {
@@ -8411,7 +8544,8 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 	}
 	
 	//MbeanServer:
-	//	{MbeanServer} 'mbean-server' (('agent-id=' agentId=ValidString)? & ('id=' name=ValidString)?) ('/>' | '>'
+	//	{MbeanServer}
+	//	'mbean-server' (('agent-id=' agentId=ValidString)? & ('id=' name=ValidString)?) ('/>' | '>'
 	//	'</context:mbean-server>');
 	public MbeanServerElements getMbeanServerAccess() {
 		return pMbeanServer;
@@ -8462,7 +8596,8 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 	
 	///*Signals the current application context to apply dependency injection to non-managed classes that are 
 	// instantiated outside of the Spring bean factory (typically classes annotated with the @Configurable annotation). */ SpringConfigured:
-	//	{SpringConfigured} 'spring-configured' ('/>' | '>' '</context:spring-configured>');
+	//	{SpringConfigured}
+	//	'spring-configured' ('/>' | '>' '</context:spring-configured>');
 	public SpringConfiguredElements getSpringConfiguredAccess() {
 		return pSpringConfigured;
 	}
@@ -8492,7 +8627,8 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 	}
 	
 	///** To enable @AspectJ support with XML based configuration */ AopAspectJAutoproxy:
-	//	{AopAspectJAutoproxy} '<aop:aspectj-autoproxy' (('expose-proxy=' exposeProxy=sBoolean)? & ('proxy-target-class='
+	//	{AopAspectJAutoproxy}
+	//	'<aop:aspectj-autoproxy' (('expose-proxy=' exposeProxy=sBoolean)? & ('proxy-target-class='
 	//	proxyTrajetClass=sBoolean)?) ('/>' | '>' aopincludes+=AopInclude* '</aop:aspectj-autoproxy>');
 	public AopAspectJAutoproxyElements getAopAspectJAutoproxyAccess() {
 		return pAopAspectJAutoproxy;
@@ -8745,7 +8881,7 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 	
 	///*<bean/> */ Component:
 	//	{Component}
-	//	'<bean' ((('id=' | 'name=') name=ValidString)? & ('name=' names+=ValidString)?
+	//	'<bean' ((('id=' | "name=") name=ValidString ("name="? names+=ValidString)?)?
 	//	& class=CreationMethod
 	//	& features+=PNamespace*
 	//	& features+=CNamespace*
@@ -8814,8 +8950,8 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 	//(ID ('.'ID)*)
 	//;
 	//*/ AopScopedProxy:
-	//	{AopScopedProxy} '<aop:scoped-proxy' ('proxy-target-class=' proxyTargetClass=ValidString)? ('/>' | '>'
-	//	'</aop:scoped-proxy>');
+	//	{AopScopedProxy}
+	//	'<aop:scoped-proxy' ('proxy-target-class=' proxyTargetClass=ValidString)? ('/>' | '>' '</aop:scoped-proxy>');
 	public AopScopedProxyElements getAopScopedProxyAccess() {
 		return pAopScopedProxy;
 	}
@@ -8993,7 +9129,7 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 	}
 	
 	//LookupMethod:
-	//	'<lookup-method' ('name=' name=ValidString & 'bean=' ref=[Component|ValidString]) ('/>' | '>' '</lookup-method>');
+	//	'<' 'lookup-method' ('name=' name=ValidString & 'bean=' ref=[Component|ValidString]) ('/>' | '>' '</lookup-method>');
 	public LookupMethodElements getLookupMethodAccess() {
 		return pLookupMethod;
 	}
@@ -9145,7 +9281,8 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 	}
 	
 	///*<key/> */ Key:
-	//	{Key} '<key' '>' description=Description? (key=AbstractArtefact | NullTag) '</key>';
+	//	{Key}
+	//	'<key' '>' description=Description? (key=AbstractArtefact | NullTag) '</key>';
 	public KeyElements getKeyAccess() {
 		return pKey;
 	}

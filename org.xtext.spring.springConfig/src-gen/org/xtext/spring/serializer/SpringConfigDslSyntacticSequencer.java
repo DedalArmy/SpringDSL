@@ -37,6 +37,7 @@ public class SpringConfigDslSyntacticSequencer extends AbstractSyntacticSequence
 	protected AbstractElementAlias match_BeforeAdvise_SolidusGreaterThanSignKeyword_2_0_or___GreaterThanSignKeyword_2_1_0_AopBeforeKeyword_2_1_1__;
 	protected AbstractElementAlias match_ComponentScan_SolidusGreaterThanSignKeyword_3_0_or___GreaterThanSignKeyword_3_1_0_ContextComponentScanKeyword_3_1_3__;
 	protected AbstractElementAlias match_Component_IdKeyword_2_0_0_0_or_NameKeyword_2_0_0_1;
+	protected AbstractElementAlias match_Component_NameKeyword_2_0_2_0_q;
 	protected AbstractElementAlias match_Component_SolidusGreaterThanSignKeyword_3_0_or___GreaterThanSignKeyword_3_1_0_BeanKeyword_3_1_3__;
 	protected AbstractElementAlias match_Configuration___ColonKeyword_5_1_0_IDTerminalRuleCall_5_1_1__q;
 	protected AbstractElementAlias match_Configuration_____ColonKeyword_1_1_0_0_IDTerminalRuleCall_1_1_0_1__q___IdDashAndColonParserRuleCall_1_1_8_0_EqualsSignKeyword_1_1_8_1_ValidStringParserRuleCall_1_1_8_2__q__p;
@@ -48,7 +49,7 @@ public class SpringConfigDslSyntacticSequencer extends AbstractSyntacticSequence
 	protected AbstractElementAlias match_Import_SolidusGreaterThanSignKeyword_4_0_or___GreaterThanSignKeyword_4_1_0_ImportKeyword_4_1_1__;
 	protected AbstractElementAlias match_IncludeFilter_SolidusGreaterThanSignKeyword_2_0_or___GreaterThanSignKeyword_2_1_0_ContextIncludeFilterKeyword_2_1_1__;
 	protected AbstractElementAlias match_LoadTimeWeaver_SolidusGreaterThanSignKeyword_3_0_or___GreaterThanSignKeyword_3_1_0_ContextLoadTimeWeaverKeyword_3_1_1__;
-	protected AbstractElementAlias match_LookupMethod_SolidusGreaterThanSignKeyword_2_0_or___GreaterThanSignKeyword_2_1_0_LookupMethodKeyword_2_1_1__;
+	protected AbstractElementAlias match_LookupMethod_SolidusGreaterThanSignKeyword_3_0_or___GreaterThanSignKeyword_3_1_0_LookupMethodKeyword_3_1_1__;
 	protected AbstractElementAlias match_MVC_GreaterThanSignKeyword_4_1_2_2_0_or_SolidusGreaterThanSignKeyword_4_1_2_2_1;
 	protected AbstractElementAlias match_MVC_IDTerminalRuleCall_1_0_or_IDWITHDASHTerminalRuleCall_1_1;
 	protected AbstractElementAlias match_MVC_IDTerminalRuleCall_4_1_2_1_0_or_IDWITHDASHTerminalRuleCall_4_1_2_1_1;
@@ -56,7 +57,6 @@ public class SpringConfigDslSyntacticSequencer extends AbstractSyntacticSequence
 	protected AbstractElementAlias match_MVC_SolidusGreaterThanSignKeyword_4_0_or___GreaterThanSignKeyword_4_1_0___MvcKeyword_4_1_2_0_0_or_MvcKeyword_4_1_2_0_1_____IDTerminalRuleCall_4_1_2_1_0_or_IDWITHDASHTerminalRuleCall_4_1_2_1_1_____GreaterThanSignKeyword_4_1_2_2_0_or_SolidusGreaterThanSignKeyword_4_1_2_2_1____;
 	protected AbstractElementAlias match_MVC___PathKeyword_2_1_0_QSTRINGParserRuleCall_2_1_1__q;
 	protected AbstractElementAlias match_MVC_____IDTerminalRuleCall_3_0_0_or_IDWITHDASHTerminalRuleCall_3_0_1___EqualsSignKeyword_3_1_QSTRINGParserRuleCall_3_2__a;
-	protected AbstractElementAlias match_MVC_____IDTerminalRuleCall_3_0_0_or_IDWITHDASHTerminalRuleCall_3_0_1___EqualsSignKeyword_3_1_QSTRINGParserRuleCall_3_2__q;
 	protected AbstractElementAlias match_MapEntryAtt_SolidusGreaterThanSignKeyword_1_0_or___GreaterThanSignKeyword_1_1_0_EntryKeyword_1_1_2__;
 	protected AbstractElementAlias match_MbeanExport_SolidusGreaterThanSignKeyword_3_0_or___GreaterThanSignKeyword_3_1_0_ContextMbeanExportKeyword_3_1_1__;
 	protected AbstractElementAlias match_MbeanServer_SolidusGreaterThanSignKeyword_3_0_or___GreaterThanSignKeyword_3_1_0_ContextMbeanServerKeyword_3_1_1__;
@@ -102,6 +102,7 @@ public class SpringConfigDslSyntacticSequencer extends AbstractSyntacticSequence
 		match_BeforeAdvise_SolidusGreaterThanSignKeyword_2_0_or___GreaterThanSignKeyword_2_1_0_AopBeforeKeyword_2_1_1__ = new AlternativeAlias(false, false, new GroupAlias(false, false, new TokenAlias(false, false, grammarAccess.getBeforeAdviseAccess().getGreaterThanSignKeyword_2_1_0()), new TokenAlias(false, false, grammarAccess.getBeforeAdviseAccess().getAopBeforeKeyword_2_1_1())), new TokenAlias(false, false, grammarAccess.getBeforeAdviseAccess().getSolidusGreaterThanSignKeyword_2_0()));
 		match_ComponentScan_SolidusGreaterThanSignKeyword_3_0_or___GreaterThanSignKeyword_3_1_0_ContextComponentScanKeyword_3_1_3__ = new AlternativeAlias(false, false, new GroupAlias(false, false, new TokenAlias(false, false, grammarAccess.getComponentScanAccess().getGreaterThanSignKeyword_3_1_0()), new TokenAlias(false, false, grammarAccess.getComponentScanAccess().getContextComponentScanKeyword_3_1_3())), new TokenAlias(false, false, grammarAccess.getComponentScanAccess().getSolidusGreaterThanSignKeyword_3_0()));
 		match_Component_IdKeyword_2_0_0_0_or_NameKeyword_2_0_0_1 = new AlternativeAlias(false, false, new TokenAlias(false, false, grammarAccess.getComponentAccess().getIdKeyword_2_0_0_0()), new TokenAlias(false, false, grammarAccess.getComponentAccess().getNameKeyword_2_0_0_1()));
+		match_Component_NameKeyword_2_0_2_0_q = new TokenAlias(false, true, grammarAccess.getComponentAccess().getNameKeyword_2_0_2_0());
 		match_Component_SolidusGreaterThanSignKeyword_3_0_or___GreaterThanSignKeyword_3_1_0_BeanKeyword_3_1_3__ = new AlternativeAlias(false, false, new GroupAlias(false, false, new TokenAlias(false, false, grammarAccess.getComponentAccess().getGreaterThanSignKeyword_3_1_0()), new TokenAlias(false, false, grammarAccess.getComponentAccess().getBeanKeyword_3_1_3())), new TokenAlias(false, false, grammarAccess.getComponentAccess().getSolidusGreaterThanSignKeyword_3_0()));
 		match_Configuration___ColonKeyword_5_1_0_IDTerminalRuleCall_5_1_1__q = new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getConfigurationAccess().getColonKeyword_5_1_0()), new TokenAlias(false, false, grammarAccess.getConfigurationAccess().getIDTerminalRuleCall_5_1_1()));
 		match_Configuration_____ColonKeyword_1_1_0_0_IDTerminalRuleCall_1_1_0_1__q___IdDashAndColonParserRuleCall_1_1_8_0_EqualsSignKeyword_1_1_8_1_ValidStringParserRuleCall_1_1_8_2__q__p = new GroupAlias(true, false, new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getConfigurationAccess().getColonKeyword_1_1_0_0()), new TokenAlias(false, false, grammarAccess.getConfigurationAccess().getIDTerminalRuleCall_1_1_0_1())), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getConfigurationAccess().getIdDashAndColonParserRuleCall_1_1_8_0()), new TokenAlias(false, false, grammarAccess.getConfigurationAccess().getEqualsSignKeyword_1_1_8_1()), new TokenAlias(false, false, grammarAccess.getConfigurationAccess().getValidStringParserRuleCall_1_1_8_2())));
@@ -113,7 +114,7 @@ public class SpringConfigDslSyntacticSequencer extends AbstractSyntacticSequence
 		match_Import_SolidusGreaterThanSignKeyword_4_0_or___GreaterThanSignKeyword_4_1_0_ImportKeyword_4_1_1__ = new AlternativeAlias(false, false, new GroupAlias(false, false, new TokenAlias(false, false, grammarAccess.getImportAccess().getGreaterThanSignKeyword_4_1_0()), new TokenAlias(false, false, grammarAccess.getImportAccess().getImportKeyword_4_1_1())), new TokenAlias(false, false, grammarAccess.getImportAccess().getSolidusGreaterThanSignKeyword_4_0()));
 		match_IncludeFilter_SolidusGreaterThanSignKeyword_2_0_or___GreaterThanSignKeyword_2_1_0_ContextIncludeFilterKeyword_2_1_1__ = new AlternativeAlias(false, false, new GroupAlias(false, false, new TokenAlias(false, false, grammarAccess.getIncludeFilterAccess().getGreaterThanSignKeyword_2_1_0()), new TokenAlias(false, false, grammarAccess.getIncludeFilterAccess().getContextIncludeFilterKeyword_2_1_1())), new TokenAlias(false, false, grammarAccess.getIncludeFilterAccess().getSolidusGreaterThanSignKeyword_2_0()));
 		match_LoadTimeWeaver_SolidusGreaterThanSignKeyword_3_0_or___GreaterThanSignKeyword_3_1_0_ContextLoadTimeWeaverKeyword_3_1_1__ = new AlternativeAlias(false, false, new GroupAlias(false, false, new TokenAlias(false, false, grammarAccess.getLoadTimeWeaverAccess().getGreaterThanSignKeyword_3_1_0()), new TokenAlias(false, false, grammarAccess.getLoadTimeWeaverAccess().getContextLoadTimeWeaverKeyword_3_1_1())), new TokenAlias(false, false, grammarAccess.getLoadTimeWeaverAccess().getSolidusGreaterThanSignKeyword_3_0()));
-		match_LookupMethod_SolidusGreaterThanSignKeyword_2_0_or___GreaterThanSignKeyword_2_1_0_LookupMethodKeyword_2_1_1__ = new AlternativeAlias(false, false, new GroupAlias(false, false, new TokenAlias(false, false, grammarAccess.getLookupMethodAccess().getGreaterThanSignKeyword_2_1_0()), new TokenAlias(false, false, grammarAccess.getLookupMethodAccess().getLookupMethodKeyword_2_1_1())), new TokenAlias(false, false, grammarAccess.getLookupMethodAccess().getSolidusGreaterThanSignKeyword_2_0()));
+		match_LookupMethod_SolidusGreaterThanSignKeyword_3_0_or___GreaterThanSignKeyword_3_1_0_LookupMethodKeyword_3_1_1__ = new AlternativeAlias(false, false, new GroupAlias(false, false, new TokenAlias(false, false, grammarAccess.getLookupMethodAccess().getGreaterThanSignKeyword_3_1_0()), new TokenAlias(false, false, grammarAccess.getLookupMethodAccess().getLookupMethodKeyword_3_1_1())), new TokenAlias(false, false, grammarAccess.getLookupMethodAccess().getSolidusGreaterThanSignKeyword_3_0()));
 		match_MVC_GreaterThanSignKeyword_4_1_2_2_0_or_SolidusGreaterThanSignKeyword_4_1_2_2_1 = new AlternativeAlias(false, false, new TokenAlias(false, false, grammarAccess.getMVCAccess().getGreaterThanSignKeyword_4_1_2_2_0()), new TokenAlias(false, false, grammarAccess.getMVCAccess().getSolidusGreaterThanSignKeyword_4_1_2_2_1()));
 		match_MVC_IDTerminalRuleCall_1_0_or_IDWITHDASHTerminalRuleCall_1_1 = new AlternativeAlias(false, false, new TokenAlias(false, false, grammarAccess.getMVCAccess().getIDTerminalRuleCall_1_0()), new TokenAlias(false, false, grammarAccess.getMVCAccess().getIDWITHDASHTerminalRuleCall_1_1()));
 		match_MVC_IDTerminalRuleCall_4_1_2_1_0_or_IDWITHDASHTerminalRuleCall_4_1_2_1_1 = new AlternativeAlias(false, false, new TokenAlias(false, false, grammarAccess.getMVCAccess().getIDTerminalRuleCall_4_1_2_1_0()), new TokenAlias(false, false, grammarAccess.getMVCAccess().getIDWITHDASHTerminalRuleCall_4_1_2_1_1()));
@@ -121,7 +122,6 @@ public class SpringConfigDslSyntacticSequencer extends AbstractSyntacticSequence
 		match_MVC_SolidusGreaterThanSignKeyword_4_0_or___GreaterThanSignKeyword_4_1_0___MvcKeyword_4_1_2_0_0_or_MvcKeyword_4_1_2_0_1_____IDTerminalRuleCall_4_1_2_1_0_or_IDWITHDASHTerminalRuleCall_4_1_2_1_1_____GreaterThanSignKeyword_4_1_2_2_0_or_SolidusGreaterThanSignKeyword_4_1_2_2_1____ = new AlternativeAlias(false, false, new GroupAlias(false, false, new TokenAlias(false, false, grammarAccess.getMVCAccess().getGreaterThanSignKeyword_4_1_0()), new AlternativeAlias(false, false, new TokenAlias(false, false, grammarAccess.getMVCAccess().getMvcKeyword_4_1_2_0_0()), new TokenAlias(false, false, grammarAccess.getMVCAccess().getMvcKeyword_4_1_2_0_1())), new AlternativeAlias(false, false, new TokenAlias(false, false, grammarAccess.getMVCAccess().getIDTerminalRuleCall_4_1_2_1_0()), new TokenAlias(false, false, grammarAccess.getMVCAccess().getIDWITHDASHTerminalRuleCall_4_1_2_1_1())), new AlternativeAlias(false, false, new TokenAlias(false, false, grammarAccess.getMVCAccess().getGreaterThanSignKeyword_4_1_2_2_0()), new TokenAlias(false, false, grammarAccess.getMVCAccess().getSolidusGreaterThanSignKeyword_4_1_2_2_1()))), new TokenAlias(false, false, grammarAccess.getMVCAccess().getSolidusGreaterThanSignKeyword_4_0()));
 		match_MVC___PathKeyword_2_1_0_QSTRINGParserRuleCall_2_1_1__q = new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getMVCAccess().getPathKeyword_2_1_0()), new TokenAlias(false, false, grammarAccess.getMVCAccess().getQSTRINGParserRuleCall_2_1_1()));
 		match_MVC_____IDTerminalRuleCall_3_0_0_or_IDWITHDASHTerminalRuleCall_3_0_1___EqualsSignKeyword_3_1_QSTRINGParserRuleCall_3_2__a = new GroupAlias(true, true, new AlternativeAlias(false, false, new TokenAlias(false, false, grammarAccess.getMVCAccess().getIDTerminalRuleCall_3_0_0()), new TokenAlias(false, false, grammarAccess.getMVCAccess().getIDWITHDASHTerminalRuleCall_3_0_1())), new TokenAlias(false, false, grammarAccess.getMVCAccess().getEqualsSignKeyword_3_1()), new TokenAlias(false, false, grammarAccess.getMVCAccess().getQSTRINGParserRuleCall_3_2()));
-		match_MVC_____IDTerminalRuleCall_3_0_0_or_IDWITHDASHTerminalRuleCall_3_0_1___EqualsSignKeyword_3_1_QSTRINGParserRuleCall_3_2__q = new GroupAlias(false, true, new AlternativeAlias(false, false, new TokenAlias(false, false, grammarAccess.getMVCAccess().getIDTerminalRuleCall_3_0_0()), new TokenAlias(false, false, grammarAccess.getMVCAccess().getIDWITHDASHTerminalRuleCall_3_0_1())), new TokenAlias(false, false, grammarAccess.getMVCAccess().getEqualsSignKeyword_3_1()), new TokenAlias(false, false, grammarAccess.getMVCAccess().getQSTRINGParserRuleCall_3_2()));
 		match_MapEntryAtt_SolidusGreaterThanSignKeyword_1_0_or___GreaterThanSignKeyword_1_1_0_EntryKeyword_1_1_2__ = new AlternativeAlias(false, false, new GroupAlias(false, false, new TokenAlias(false, false, grammarAccess.getMapEntryAttAccess().getGreaterThanSignKeyword_1_1_0()), new TokenAlias(false, false, grammarAccess.getMapEntryAttAccess().getEntryKeyword_1_1_2())), new TokenAlias(false, false, grammarAccess.getMapEntryAttAccess().getSolidusGreaterThanSignKeyword_1_0()));
 		match_MbeanExport_SolidusGreaterThanSignKeyword_3_0_or___GreaterThanSignKeyword_3_1_0_ContextMbeanExportKeyword_3_1_1__ = new AlternativeAlias(false, false, new GroupAlias(false, false, new TokenAlias(false, false, grammarAccess.getMbeanExportAccess().getGreaterThanSignKeyword_3_1_0()), new TokenAlias(false, false, grammarAccess.getMbeanExportAccess().getContextMbeanExportKeyword_3_1_1())), new TokenAlias(false, false, grammarAccess.getMbeanExportAccess().getSolidusGreaterThanSignKeyword_3_0()));
 		match_MbeanServer_SolidusGreaterThanSignKeyword_3_0_or___GreaterThanSignKeyword_3_1_0_ContextMbeanServerKeyword_3_1_1__ = new AlternativeAlias(false, false, new GroupAlias(false, false, new TokenAlias(false, false, grammarAccess.getMbeanServerAccess().getGreaterThanSignKeyword_3_1_0()), new TokenAlias(false, false, grammarAccess.getMbeanServerAccess().getContextMbeanServerKeyword_3_1_1())), new TokenAlias(false, false, grammarAccess.getMbeanServerAccess().getSolidusGreaterThanSignKeyword_3_0()));
@@ -284,6 +284,8 @@ public class SpringConfigDslSyntacticSequencer extends AbstractSyntacticSequence
 				emit_ComponentScan_SolidusGreaterThanSignKeyword_3_0_or___GreaterThanSignKeyword_3_1_0_ContextComponentScanKeyword_3_1_3__(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if (match_Component_IdKeyword_2_0_0_0_or_NameKeyword_2_0_0_1.equals(syntax))
 				emit_Component_IdKeyword_2_0_0_0_or_NameKeyword_2_0_0_1(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if (match_Component_NameKeyword_2_0_2_0_q.equals(syntax))
+				emit_Component_NameKeyword_2_0_2_0_q(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if (match_Component_SolidusGreaterThanSignKeyword_3_0_or___GreaterThanSignKeyword_3_1_0_BeanKeyword_3_1_3__.equals(syntax))
 				emit_Component_SolidusGreaterThanSignKeyword_3_0_or___GreaterThanSignKeyword_3_1_0_BeanKeyword_3_1_3__(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if (match_Configuration___ColonKeyword_5_1_0_IDTerminalRuleCall_5_1_1__q.equals(syntax))
@@ -306,8 +308,8 @@ public class SpringConfigDslSyntacticSequencer extends AbstractSyntacticSequence
 				emit_IncludeFilter_SolidusGreaterThanSignKeyword_2_0_or___GreaterThanSignKeyword_2_1_0_ContextIncludeFilterKeyword_2_1_1__(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if (match_LoadTimeWeaver_SolidusGreaterThanSignKeyword_3_0_or___GreaterThanSignKeyword_3_1_0_ContextLoadTimeWeaverKeyword_3_1_1__.equals(syntax))
 				emit_LoadTimeWeaver_SolidusGreaterThanSignKeyword_3_0_or___GreaterThanSignKeyword_3_1_0_ContextLoadTimeWeaverKeyword_3_1_1__(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if (match_LookupMethod_SolidusGreaterThanSignKeyword_2_0_or___GreaterThanSignKeyword_2_1_0_LookupMethodKeyword_2_1_1__.equals(syntax))
-				emit_LookupMethod_SolidusGreaterThanSignKeyword_2_0_or___GreaterThanSignKeyword_2_1_0_LookupMethodKeyword_2_1_1__(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if (match_LookupMethod_SolidusGreaterThanSignKeyword_3_0_or___GreaterThanSignKeyword_3_1_0_LookupMethodKeyword_3_1_1__.equals(syntax))
+				emit_LookupMethod_SolidusGreaterThanSignKeyword_3_0_or___GreaterThanSignKeyword_3_1_0_LookupMethodKeyword_3_1_1__(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if (match_MVC_GreaterThanSignKeyword_4_1_2_2_0_or_SolidusGreaterThanSignKeyword_4_1_2_2_1.equals(syntax))
 				emit_MVC_GreaterThanSignKeyword_4_1_2_2_0_or_SolidusGreaterThanSignKeyword_4_1_2_2_1(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if (match_MVC_IDTerminalRuleCall_1_0_or_IDWITHDASHTerminalRuleCall_1_1.equals(syntax))
@@ -322,8 +324,6 @@ public class SpringConfigDslSyntacticSequencer extends AbstractSyntacticSequence
 				emit_MVC___PathKeyword_2_1_0_QSTRINGParserRuleCall_2_1_1__q(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if (match_MVC_____IDTerminalRuleCall_3_0_0_or_IDWITHDASHTerminalRuleCall_3_0_1___EqualsSignKeyword_3_1_QSTRINGParserRuleCall_3_2__a.equals(syntax))
 				emit_MVC_____IDTerminalRuleCall_3_0_0_or_IDWITHDASHTerminalRuleCall_3_0_1___EqualsSignKeyword_3_1_QSTRINGParserRuleCall_3_2__a(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if (match_MVC_____IDTerminalRuleCall_3_0_0_or_IDWITHDASHTerminalRuleCall_3_0_1___EqualsSignKeyword_3_1_QSTRINGParserRuleCall_3_2__q.equals(syntax))
-				emit_MVC_____IDTerminalRuleCall_3_0_0_or_IDWITHDASHTerminalRuleCall_3_0_1___EqualsSignKeyword_3_1_QSTRINGParserRuleCall_3_2__q(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if (match_MapEntryAtt_SolidusGreaterThanSignKeyword_1_0_or___GreaterThanSignKeyword_1_1_0_EntryKeyword_1_1_2__.equals(syntax))
 				emit_MapEntryAtt_SolidusGreaterThanSignKeyword_1_0_or___GreaterThanSignKeyword_1_1_0_EntryKeyword_1_1_2__(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if (match_MbeanExport_SolidusGreaterThanSignKeyword_3_0_or___GreaterThanSignKeyword_3_1_0_ContextMbeanExportKeyword_3_1_1__.equals(syntax))
@@ -594,6 +594,17 @@ public class SpringConfigDslSyntacticSequencer extends AbstractSyntacticSequence
 	
 	/**
 	 * Ambiguous syntax:
+	 *     'name='?
+	 *
+	 * This ambiguous syntax occurs at:
+	 *     name=ValidString (ambiguity) names+=ValidString
+	 */
+	protected void emit_Component_NameKeyword_2_0_2_0_q(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+		acceptNodes(transition, nodes);
+	}
+	
+	/**
+	 * Ambiguous syntax:
 	 *     '/>' | ('>' '</bean>')
 	 *
 	 * This ambiguous syntax occurs at:
@@ -636,6 +647,7 @@ public class SpringConfigDslSyntacticSequencer extends AbstractSyntacticSequence
 	 *     defaultLazyInit=DefaultableBoolean ((':' ID)? (IdDashAndColon '=' ValidString)?)+ '>' '</beans' (ambiguity) '>' (rule end)
 	 *     defaultMerge=DefaultableBoolean ((':' ID)? (IdDashAndColon '=' ValidString)?)+ '>' '</beans' (ambiguity) '>' (rule end)
 	 *     description=Description '</beans' (ambiguity) '>' (rule end)
+	 *     https+=Http '</beans' (ambiguity) '>' (rule end)
 	 *     imports+=Import '</beans' (ambiguity) '>' (rule end)
 	 *     mvcs+=MVC '</beans' (ambiguity) '>' (rule end)
 	 *     profile=ValidString ((':' ID)? (IdDashAndColon '=' ValidString)?)+ '>' '</beans' (ambiguity) '>' (rule end)
@@ -665,6 +677,7 @@ public class SpringConfigDslSyntacticSequencer extends AbstractSyntacticSequence
 	 *     (rule start) '<beans' (ambiguity) '>' components+=Component
 	 *     (rule start) '<beans' (ambiguity) '>' contexts+=Context
 	 *     (rule start) '<beans' (ambiguity) '>' description=Description
+	 *     (rule start) '<beans' (ambiguity) '>' https+=Http
 	 *     (rule start) '<beans' (ambiguity) '>' imports+=Import
 	 *     (rule start) '<beans' (ambiguity) '>' mvcs+=MVC
 	 *     (rule start) '<beans' (ambiguity) '>' txAdvices+=TxAdvise
@@ -690,6 +703,7 @@ public class SpringConfigDslSyntacticSequencer extends AbstractSyntacticSequence
 	 *     defaultAutowire=AutoWiredType (ambiguity) '>' components+=Component
 	 *     defaultAutowire=AutoWiredType (ambiguity) '>' contexts+=Context
 	 *     defaultAutowire=AutoWiredType (ambiguity) '>' description=Description
+	 *     defaultAutowire=AutoWiredType (ambiguity) '>' https+=Http
 	 *     defaultAutowire=AutoWiredType (ambiguity) '>' imports+=Import
 	 *     defaultAutowire=AutoWiredType (ambiguity) '>' mvcs+=MVC
 	 *     defaultAutowire=AutoWiredType (ambiguity) '>' txAdvices+=TxAdvise
@@ -715,6 +729,7 @@ public class SpringConfigDslSyntacticSequencer extends AbstractSyntacticSequence
 	 *     defaultAutowireCandidates=ValidString (ambiguity) '>' components+=Component
 	 *     defaultAutowireCandidates=ValidString (ambiguity) '>' contexts+=Context
 	 *     defaultAutowireCandidates=ValidString (ambiguity) '>' description=Description
+	 *     defaultAutowireCandidates=ValidString (ambiguity) '>' https+=Http
 	 *     defaultAutowireCandidates=ValidString (ambiguity) '>' imports+=Import
 	 *     defaultAutowireCandidates=ValidString (ambiguity) '>' mvcs+=MVC
 	 *     defaultAutowireCandidates=ValidString (ambiguity) '>' txAdvices+=TxAdvise
@@ -740,6 +755,7 @@ public class SpringConfigDslSyntacticSequencer extends AbstractSyntacticSequence
 	 *     defaultDestroyMethod=ValidString (ambiguity) '>' components+=Component
 	 *     defaultDestroyMethod=ValidString (ambiguity) '>' contexts+=Context
 	 *     defaultDestroyMethod=ValidString (ambiguity) '>' description=Description
+	 *     defaultDestroyMethod=ValidString (ambiguity) '>' https+=Http
 	 *     defaultDestroyMethod=ValidString (ambiguity) '>' imports+=Import
 	 *     defaultDestroyMethod=ValidString (ambiguity) '>' mvcs+=MVC
 	 *     defaultDestroyMethod=ValidString (ambiguity) '>' txAdvices+=TxAdvise
@@ -765,6 +781,7 @@ public class SpringConfigDslSyntacticSequencer extends AbstractSyntacticSequence
 	 *     defaultInitMethod=ValidString (ambiguity) '>' components+=Component
 	 *     defaultInitMethod=ValidString (ambiguity) '>' contexts+=Context
 	 *     defaultInitMethod=ValidString (ambiguity) '>' description=Description
+	 *     defaultInitMethod=ValidString (ambiguity) '>' https+=Http
 	 *     defaultInitMethod=ValidString (ambiguity) '>' imports+=Import
 	 *     defaultInitMethod=ValidString (ambiguity) '>' mvcs+=MVC
 	 *     defaultInitMethod=ValidString (ambiguity) '>' txAdvices+=TxAdvise
@@ -790,6 +807,7 @@ public class SpringConfigDslSyntacticSequencer extends AbstractSyntacticSequence
 	 *     defaultLazyInit=DefaultableBoolean (ambiguity) '>' components+=Component
 	 *     defaultLazyInit=DefaultableBoolean (ambiguity) '>' contexts+=Context
 	 *     defaultLazyInit=DefaultableBoolean (ambiguity) '>' description=Description
+	 *     defaultLazyInit=DefaultableBoolean (ambiguity) '>' https+=Http
 	 *     defaultLazyInit=DefaultableBoolean (ambiguity) '>' imports+=Import
 	 *     defaultLazyInit=DefaultableBoolean (ambiguity) '>' mvcs+=MVC
 	 *     defaultLazyInit=DefaultableBoolean (ambiguity) '>' txAdvices+=TxAdvise
@@ -815,6 +833,7 @@ public class SpringConfigDslSyntacticSequencer extends AbstractSyntacticSequence
 	 *     defaultMerge=DefaultableBoolean (ambiguity) '>' components+=Component
 	 *     defaultMerge=DefaultableBoolean (ambiguity) '>' contexts+=Context
 	 *     defaultMerge=DefaultableBoolean (ambiguity) '>' description=Description
+	 *     defaultMerge=DefaultableBoolean (ambiguity) '>' https+=Http
 	 *     defaultMerge=DefaultableBoolean (ambiguity) '>' imports+=Import
 	 *     defaultMerge=DefaultableBoolean (ambiguity) '>' mvcs+=MVC
 	 *     defaultMerge=DefaultableBoolean (ambiguity) '>' txAdvices+=TxAdvise
@@ -840,6 +859,7 @@ public class SpringConfigDslSyntacticSequencer extends AbstractSyntacticSequence
 	 *     profile=ValidString (ambiguity) '>' components+=Component
 	 *     profile=ValidString (ambiguity) '>' contexts+=Context
 	 *     profile=ValidString (ambiguity) '>' description=Description
+	 *     profile=ValidString (ambiguity) '>' https+=Http
 	 *     profile=ValidString (ambiguity) '>' imports+=Import
 	 *     profile=ValidString (ambiguity) '>' mvcs+=MVC
 	 *     profile=ValidString (ambiguity) '>' txAdvices+=TxAdvise
@@ -970,7 +990,7 @@ public class SpringConfigDslSyntacticSequencer extends AbstractSyntacticSequence
 	 *     name=ValidString (ambiguity) (rule end)
 	 *     ref=[Component|ValidString] (ambiguity) (rule end)
 	 */
-	protected void emit_LookupMethod_SolidusGreaterThanSignKeyword_2_0_or___GreaterThanSignKeyword_2_1_0_LookupMethodKeyword_2_1_1__(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_LookupMethod_SolidusGreaterThanSignKeyword_3_0_or___GreaterThanSignKeyword_3_1_0_LookupMethodKeyword_3_1_1__(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	
@@ -979,7 +999,7 @@ public class SpringConfigDslSyntacticSequencer extends AbstractSyntacticSequence
 	 *     '>' | '/>'
 	 *
 	 * This ambiguous syntax occurs at:
-	 *     components+=Component ('</mvc:' | '<mvc:') (IDWITHDASH | ID) (ambiguity) (rule end)
+	 *     components+=Component ('</mvc:' | '<mvc:') (ID | IDWITHDASH) (ambiguity) (rule end)
 	 */
 	protected void emit_MVC_GreaterThanSignKeyword_4_1_2_2_0_or_SolidusGreaterThanSignKeyword_4_1_2_2_1(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
@@ -991,8 +1011,8 @@ public class SpringConfigDslSyntacticSequencer extends AbstractSyntacticSequence
 	 *
 	 * This ambiguous syntax occurs at:
 	 *     (rule start) '<mvc:' (ambiguity) 'location=' location=ValidString
-	 *     (rule start) '<mvc:' (ambiguity) ('path=' QSTRING)? ((IDWITHDASH | ID) '=' QSTRING)* ('/>' | ('>' ('</mvc:' | '<mvc:') (IDWITHDASH | ID) ('>' | '/>'))) (rule start)
-	 *     (rule start) '<mvc:' (ambiguity) ('path=' QSTRING)? ((IDWITHDASH | ID) '=' QSTRING)? '>' components+=Component
+	 *     (rule start) '<mvc:' (ambiguity) ('path=' QSTRING)? ((ID | IDWITHDASH) '=' QSTRING)* '>' components+=Component
+	 *     (rule start) '<mvc:' (ambiguity) ('path=' QSTRING)? ((ID | IDWITHDASH) '=' QSTRING)* ('/>' | ('>' ('</mvc:' | '<mvc:') (ID | IDWITHDASH) ('>' | '/>'))) (rule start)
 	 */
 	protected void emit_MVC_IDTerminalRuleCall_1_0_or_IDWITHDASHTerminalRuleCall_1_1(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
@@ -1000,7 +1020,7 @@ public class SpringConfigDslSyntacticSequencer extends AbstractSyntacticSequence
 	
 	/**
 	 * Ambiguous syntax:
-	 *     IDWITHDASH | ID
+	 *     ID | IDWITHDASH
 	 *
 	 * This ambiguous syntax occurs at:
 	 *     components+=Component ('</mvc:' | '<mvc:') (ambiguity) ('>' | '/>') (rule end)
@@ -1014,7 +1034,7 @@ public class SpringConfigDslSyntacticSequencer extends AbstractSyntacticSequence
 	 *     '</mvc:' | '<mvc:'
 	 *
 	 * This ambiguous syntax occurs at:
-	 *     components+=Component (ambiguity) (IDWITHDASH | ID) ('>' | '/>') (rule end)
+	 *     components+=Component (ambiguity) (ID | IDWITHDASH) ('>' | '/>') (rule end)
 	 */
 	protected void emit_MVC_MvcKeyword_4_1_2_0_0_or_MvcKeyword_4_1_2_0_1(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
@@ -1022,11 +1042,11 @@ public class SpringConfigDslSyntacticSequencer extends AbstractSyntacticSequence
 	
 	/**
 	 * Ambiguous syntax:
-	 *     '/>' | ('>' ('</mvc:' | '<mvc:') (IDWITHDASH | ID) ('>' | '/>'))
+	 *     '/>' | ('>' ('</mvc:' | '<mvc:') (ID | IDWITHDASH) ('>' | '/>'))
 	 *
 	 * This ambiguous syntax occurs at:
-	 *     (rule start) '<mvc:' (ID | IDWITHDASH) ('path=' QSTRING)? ((IDWITHDASH | ID) '=' QSTRING)* (ambiguity) (rule start)
-	 *     location=ValidString ((IDWITHDASH | ID) '=' QSTRING)* (ambiguity) (rule end)
+	 *     (rule start) '<mvc:' (ID | IDWITHDASH) ('path=' QSTRING)? ((ID | IDWITHDASH) '=' QSTRING)* (ambiguity) (rule start)
+	 *     location=ValidString ((ID | IDWITHDASH) '=' QSTRING)* (ambiguity) (rule end)
 	 */
 	protected void emit_MVC_SolidusGreaterThanSignKeyword_4_0_or___GreaterThanSignKeyword_4_1_0___MvcKeyword_4_1_2_0_0_or_MvcKeyword_4_1_2_0_1_____IDTerminalRuleCall_4_1_2_1_0_or_IDWITHDASHTerminalRuleCall_4_1_2_1_1_____GreaterThanSignKeyword_4_1_2_2_0_or_SolidusGreaterThanSignKeyword_4_1_2_2_1____(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
@@ -1037,8 +1057,8 @@ public class SpringConfigDslSyntacticSequencer extends AbstractSyntacticSequence
 	 *     ('path=' QSTRING)?
 	 *
 	 * This ambiguous syntax occurs at:
-	 *     (rule start) '<mvc:' (ID | IDWITHDASH) (ambiguity) ((IDWITHDASH | ID) '=' QSTRING)* ('/>' | ('>' ('</mvc:' | '<mvc:') (IDWITHDASH | ID) ('>' | '/>'))) (rule start)
-	 *     (rule start) '<mvc:' (ID | IDWITHDASH) (ambiguity) ((IDWITHDASH | ID) '=' QSTRING)? '>' components+=Component
+	 *     (rule start) '<mvc:' (ID | IDWITHDASH) (ambiguity) ((ID | IDWITHDASH) '=' QSTRING)* '>' components+=Component
+	 *     (rule start) '<mvc:' (ID | IDWITHDASH) (ambiguity) ((ID | IDWITHDASH) '=' QSTRING)* ('/>' | ('>' ('</mvc:' | '<mvc:') (ID | IDWITHDASH) ('>' | '/>'))) (rule start)
 	 */
 	protected void emit_MVC___PathKeyword_2_1_0_QSTRINGParserRuleCall_2_1_1__q(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
@@ -1046,25 +1066,15 @@ public class SpringConfigDslSyntacticSequencer extends AbstractSyntacticSequence
 	
 	/**
 	 * Ambiguous syntax:
-	 *     ((IDWITHDASH | ID) '=' QSTRING)*
-	 *
-	 * This ambiguous syntax occurs at:
-	 *     (rule start) '<mvc:' (ID | IDWITHDASH) ('path=' QSTRING)? (ambiguity) ('/>' | ('>' ('</mvc:' | '<mvc:') (IDWITHDASH | ID) ('>' | '/>'))) (rule start)
-	 *     location=ValidString (ambiguity) '>' components+=Component
-	 *     location=ValidString (ambiguity) ('/>' | ('>' ('</mvc:' | '<mvc:') (IDWITHDASH | ID) ('>' | '/>'))) (rule end)
-	 */
-	protected void emit_MVC_____IDTerminalRuleCall_3_0_0_or_IDWITHDASHTerminalRuleCall_3_0_1___EqualsSignKeyword_3_1_QSTRINGParserRuleCall_3_2__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
-		acceptNodes(transition, nodes);
-	}
-	
-	/**
-	 * Ambiguous syntax:
-	 *     ((IDWITHDASH | ID) '=' QSTRING)?
+	 *     ((ID | IDWITHDASH) '=' QSTRING)*
 	 *
 	 * This ambiguous syntax occurs at:
 	 *     (rule start) '<mvc:' (ID | IDWITHDASH) ('path=' QSTRING)? (ambiguity) '>' components+=Component
+	 *     (rule start) '<mvc:' (ID | IDWITHDASH) ('path=' QSTRING)? (ambiguity) ('/>' | ('>' ('</mvc:' | '<mvc:') (ID | IDWITHDASH) ('>' | '/>'))) (rule start)
+	 *     location=ValidString (ambiguity) '>' components+=Component
+	 *     location=ValidString (ambiguity) ('/>' | ('>' ('</mvc:' | '<mvc:') (ID | IDWITHDASH) ('>' | '/>'))) (rule end)
 	 */
-	protected void emit_MVC_____IDTerminalRuleCall_3_0_0_or_IDWITHDASHTerminalRuleCall_3_0_1___EqualsSignKeyword_3_1_QSTRINGParserRuleCall_3_2__q(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_MVC_____IDTerminalRuleCall_3_0_0_or_IDWITHDASHTerminalRuleCall_3_0_1___EqualsSignKeyword_3_1_QSTRINGParserRuleCall_3_2__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	
@@ -1124,7 +1134,7 @@ public class SpringConfigDslSyntacticSequencer extends AbstractSyntacticSequence
 	
 	/**
 	 * Ambiguous syntax:
-	 *     ('property-override' ('/>' | ('>' '</context:property-override>'))) | ('property-placeholder' ('/>' | ('>' '</context:property-placeholder>')))
+	 *     ('property-placeholder' ('/>' | ('>' '</context:property-placeholder>'))) | ('property-override' ('/>' | ('>' '</context:property-override>')))
 	 *
 	 * This ambiguous syntax occurs at:
 	 *     (rule start) '<context:' (ambiguity) (rule start)

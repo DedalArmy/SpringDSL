@@ -29,6 +29,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link org.xtext.spring.springConfigDsl.Configuration#getImports <em>Imports</em>}</li>
  *   <li>{@link org.xtext.spring.springConfigDsl.Configuration#getContexts <em>Contexts</em>}</li>
  *   <li>{@link org.xtext.spring.springConfigDsl.Configuration#getMvcs <em>Mvcs</em>}</li>
+ *   <li>{@link org.xtext.spring.springConfigDsl.Configuration#getHttps <em>Https</em>}</li>
  *   <li>{@link org.xtext.spring.springConfigDsl.Configuration#getAspects <em>Aspects</em>}</li>
  *   <li>{@link org.xtext.spring.springConfigDsl.Configuration#getUtilConstants <em>Util Constants</em>}</li>
  *   <li>{@link org.xtext.spring.springConfigDsl.Configuration#getUtilLists <em>Util Lists</em>}</li>
@@ -344,6 +345,22 @@ public interface Configuration extends EObject
    * @generated
    */
   EList<MVC> getMvcs();
+
+  /**
+   * Returns the value of the '<em><b>Https</b></em>' attribute list.
+   * The list contents are of type {@link java.lang.String}.
+   * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of the '<em>Https</em>' attribute list isn't clear,
+   * there really should be more of a description here...
+   * </p>
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Https</em>' attribute list.
+   * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getConfiguration_Https()
+   * @model unique="false"
+   * @generated
+   */
+  EList<String> getHttps();
 
   /**
    * Returns the value of the '<em><b>Aspects</b></em>' containment reference list.

@@ -79,6 +79,7 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference SpringConfigDsl.ecore#//Configuration/imports"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference SpringConfigDsl.ecore#//Configuration/contexts"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference SpringConfigDsl.ecore#//Configuration/mvcs"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute SpringConfigDsl.ecore#//Configuration/https"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference SpringConfigDsl.ecore#//Configuration/aspects"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference SpringConfigDsl.ecore#//Configuration/utilConstants"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference SpringConfigDsl.ecore#//Configuration/utilLists"/>
