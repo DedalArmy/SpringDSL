@@ -79,6 +79,7 @@ public class SpringConfigDslParser extends AbstractContentAssistParser {
 					put(grammarAccess.getAfterThowingAccess().getAlternatives_1_0(), "rule__AfterThowing__Alternatives_1_0");
 					put(grammarAccess.getAfterThowingAccess().getAlternatives_2(), "rule__AfterThowing__Alternatives_2");
 					put(grammarAccess.getTxJtaTransactionManagerAccess().getAlternatives_2(), "rule__TxJtaTransactionManager__Alternatives_2");
+					put(grammarAccess.getComponentAccess().getAlternatives_2_0_0(), "rule__Component__Alternatives_2_0_0");
 					put(grammarAccess.getComponentAccess().getAlternatives_3(), "rule__Component__Alternatives_3");
 					put(grammarAccess.getComponentAccess().getAlternatives_3_1_2(), "rule__Component__Alternatives_3_1_2");
 					put(grammarAccess.getCreationMethodAccess().getClassAlternatives_1_0(), "rule__CreationMethod__ClassAlternatives_1_0");
@@ -211,7 +212,6 @@ public class SpringConfigDslParser extends AbstractContentAssistParser {
 					put(grammarAccess.getPropertyOverrideAccess().getGroup_2_1(), "rule__PropertyOverride__Group_2_1__0");
 					put(grammarAccess.getSpringConfiguredAccess().getGroup(), "rule__SpringConfigured__Group__0");
 					put(grammarAccess.getSpringConfiguredAccess().getGroup_2_1(), "rule__SpringConfigured__Group_2_1__0");
-					put(grammarAccess.getAspectAccess().getGroup(), "rule__Aspect__Group__0");
 					put(grammarAccess.getAopAspectJAutoproxyAccess().getGroup(), "rule__AopAspectJAutoproxy__Group__0");
 					put(grammarAccess.getAopAspectJAutoproxyAccess().getGroup_2_0(), "rule__AopAspectJAutoproxy__Group_2_0__0");
 					put(grammarAccess.getAopAspectJAutoproxyAccess().getGroup_2_1(), "rule__AopAspectJAutoproxy__Group_2_1__0");

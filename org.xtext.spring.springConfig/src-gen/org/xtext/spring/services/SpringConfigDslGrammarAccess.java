@@ -1889,22 +1889,14 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 	}
 	public class AspectElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.xtext.spring.SpringConfigDsl.Aspect");
-		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Keyword cAopKeyword_0 = (Keyword)cGroup.eContents().get(0);
-		private final RuleCall cAspectTypeParserRuleCall_1 = (RuleCall)cGroup.eContents().get(1);
+		private final RuleCall cAspectTypeParserRuleCall = (RuleCall)rule.eContents().get(1);
 		
 		///** Aspect main tags */ Aspect:
-		//	'<aop:' AspectType;
+		//	AspectType;
 		@Override public ParserRule getRule() { return rule; }
 		
-		//'<aop:' AspectType
-		public Group getGroup() { return cGroup; }
-		
-		//'<aop:'
-		public Keyword getAopKeyword_0() { return cAopKeyword_0; }
-		
 		//AspectType
-		public RuleCall getAspectTypeParserRuleCall_1() { return cAspectTypeParserRuleCall_1; }
+		public RuleCall getAspectTypeParserRuleCall() { return cAspectTypeParserRuleCall; }
 	}
 	public class AspectTypeElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.xtext.spring.SpringConfigDsl.AspectType");
@@ -1929,7 +1921,7 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.xtext.spring.SpringConfigDsl.AopAspectJAutoproxy");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Action cAopAspectJAutoproxyAction_0 = (Action)cGroup.eContents().get(0);
-		private final Keyword cAspectjAutoproxyKeyword_1 = (Keyword)cGroup.eContents().get(1);
+		private final Keyword cAopAspectjAutoproxyKeyword_1 = (Keyword)cGroup.eContents().get(1);
 		private final UnorderedGroup cUnorderedGroup_2 = (UnorderedGroup)cGroup.eContents().get(2);
 		private final Group cGroup_2_0 = (Group)cUnorderedGroup_2.eContents().get(0);
 		private final Keyword cExposeProxyKeyword_2_0_0 = (Keyword)cGroup_2_0.eContents().get(0);
@@ -1948,19 +1940,19 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cAopAspectjAutoproxyKeyword_3_1_2 = (Keyword)cGroup_3_1.eContents().get(2);
 		
 		///** To enable @AspectJ support with XML based configuration */ AopAspectJAutoproxy:
-		//	{AopAspectJAutoproxy} 'aspectj-autoproxy' (('expose-proxy=' exposeProxy=sBoolean)? & ('proxy-target-class='
+		//	{AopAspectJAutoproxy} '<aop:aspectj-autoproxy' (('expose-proxy=' exposeProxy=sBoolean)? & ('proxy-target-class='
 		//	proxyTrajetClass=sBoolean)?) ('/>' | '>' aopincludes+=AopInclude* '</aop:aspectj-autoproxy>');
 		@Override public ParserRule getRule() { return rule; }
 		
-		//{AopAspectJAutoproxy} 'aspectj-autoproxy' (('expose-proxy=' exposeProxy=sBoolean)? & ('proxy-target-class='
+		//{AopAspectJAutoproxy} '<aop:aspectj-autoproxy' (('expose-proxy=' exposeProxy=sBoolean)? & ('proxy-target-class='
 		//proxyTrajetClass=sBoolean)?) ('/>' | '>' aopincludes+=AopInclude* '</aop:aspectj-autoproxy>')
 		public Group getGroup() { return cGroup; }
 		
 		//{AopAspectJAutoproxy}
 		public Action getAopAspectJAutoproxyAction_0() { return cAopAspectJAutoproxyAction_0; }
 		
-		//'aspectj-autoproxy'
-		public Keyword getAspectjAutoproxyKeyword_1() { return cAspectjAutoproxyKeyword_1; }
+		//'<aop:aspectj-autoproxy'
+		public Keyword getAopAspectjAutoproxyKeyword_1() { return cAopAspectjAutoproxyKeyword_1; }
 		
 		//('expose-proxy=' exposeProxy=sBoolean)? & ('proxy-target-class=' proxyTrajetClass=sBoolean)?
 		public UnorderedGroup getUnorderedGroup_2() { return cUnorderedGroup_2; }
@@ -2013,7 +2005,7 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 	public class AopIncludeElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.xtext.spring.SpringConfigDsl.AopInclude");
 		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Keyword cIncludeKeyword_0 = (Keyword)cGroup.eContents().get(0);
+		private final Keyword cAopIncludeKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Keyword cNameKeyword_1 = (Keyword)cGroup.eContents().get(1);
 		private final Assignment cAopIncludeAssignment_2 = (Assignment)cGroup.eContents().get(2);
 		private final CrossReference cAopIncludeComponentCrossReference_2_0 = (CrossReference)cAopIncludeAssignment_2.eContents().get(0);
@@ -2025,14 +2017,14 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cAopIncludeKeyword_3_1_1 = (Keyword)cGroup_3_1.eContents().get(1);
 		
 		///** Include @AspectJ aspect  use with Spring AOP*/ AopInclude:
-		//	'include' 'name=' aopInclude=[Component|ValidString] ('/>' | '>' '</aop:include>');
+		//	'<aop:include' 'name=' aopInclude=[Component|ValidString] ('/>' | '>' '</aop:include>');
 		@Override public ParserRule getRule() { return rule; }
 		
-		//'include' 'name=' aopInclude=[Component|ValidString] ('/>' | '>' '</aop:include>')
+		//'<aop:include' 'name=' aopInclude=[Component|ValidString] ('/>' | '>' '</aop:include>')
 		public Group getGroup() { return cGroup; }
 		
-		//'include'
-		public Keyword getIncludeKeyword_0() { return cIncludeKeyword_0; }
+		//'<aop:include'
+		public Keyword getAopIncludeKeyword_0() { return cAopIncludeKeyword_0; }
 		
 		//'name='
 		public Keyword getNameKeyword_1() { return cNameKeyword_1; }
@@ -2066,7 +2058,7 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Action cAopConfigAction_0 = (Action)cGroup.eContents().get(0);
 		private final Group cGroup_1 = (Group)cGroup.eContents().get(1);
-		private final Keyword cConfigKeyword_1_0 = (Keyword)cGroup_1.eContents().get(0);
+		private final Keyword cAopConfigKeyword_1_0 = (Keyword)cGroup_1.eContents().get(0);
 		private final UnorderedGroup cUnorderedGroup_1_1 = (UnorderedGroup)cGroup_1.eContents().get(1);
 		private final Group cGroup_1_1_0 = (Group)cUnorderedGroup_1_1.eContents().get(0);
 		private final Keyword cExposeProxyKeyword_1_1_0_0 = (Keyword)cGroup_1_1_0.eContents().get(0);
@@ -2090,23 +2082,25 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cAopConfigKeyword_1_2_1_2 = (Keyword)cGroup_1_2_1.eContents().get(2);
 		
 		//AopConfig:
-		//	{AopConfig} ('config' (('expose-proxy=' exposeProxy=sBoolean)? & ('proxy-target-class=' proxyTrajetClass=sBoolean)?)
-		//	('/>' | '>' (aopPointcuts+=AopPointcut* aopAdvisors+=AopAdvisor* aspects+=AopAspect*) '</aop:config>'));
+		//	{AopConfig} ('<aop:config' (('expose-proxy=' exposeProxy=sBoolean)? & ('proxy-target-class='
+		//	proxyTrajetClass=sBoolean)?) ('/>' | '>' (aopPointcuts+=AopPointcut* aopAdvisors+=AopAdvisor* aspects+=AopAspect*)
+		//	'</aop:config>'));
 		@Override public ParserRule getRule() { return rule; }
 		
-		//{AopConfig} ('config' (('expose-proxy=' exposeProxy=sBoolean)? & ('proxy-target-class=' proxyTrajetClass=sBoolean)?)
-		//('/>' | '>' (aopPointcuts+=AopPointcut* aopAdvisors+=AopAdvisor* aspects+=AopAspect*) '</aop:config>'))
+		//{AopConfig} ('<aop:config' (('expose-proxy=' exposeProxy=sBoolean)? & ('proxy-target-class='
+		//proxyTrajetClass=sBoolean)?) ('/>' | '>' (aopPointcuts+=AopPointcut* aopAdvisors+=AopAdvisor* aspects+=AopAspect*)
+		//'</aop:config>'))
 		public Group getGroup() { return cGroup; }
 		
 		//{AopConfig}
 		public Action getAopConfigAction_0() { return cAopConfigAction_0; }
 		
-		//'config' (('expose-proxy=' exposeProxy=sBoolean)? & ('proxy-target-class=' proxyTrajetClass=sBoolean)?) ('/>' | '>'
+		//'<aop:config' (('expose-proxy=' exposeProxy=sBoolean)? & ('proxy-target-class=' proxyTrajetClass=sBoolean)?) ('/>' | '>'
 		//(aopPointcuts+=AopPointcut* aopAdvisors+=AopAdvisor* aspects+=AopAspect*) '</aop:config>')
 		public Group getGroup_1() { return cGroup_1; }
 		
-		//'config'
-		public Keyword getConfigKeyword_1_0() { return cConfigKeyword_1_0; }
+		//'<aop:config'
+		public Keyword getAopConfigKeyword_1_0() { return cAopConfigKeyword_1_0; }
 		
 		//('expose-proxy=' exposeProxy=sBoolean)? & ('proxy-target-class=' proxyTrajetClass=sBoolean)?
 		public UnorderedGroup getUnorderedGroup_1_1() { return cUnorderedGroup_1_1; }
@@ -3560,7 +3554,9 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cBeanKeyword_1 = (Keyword)cGroup.eContents().get(1);
 		private final UnorderedGroup cUnorderedGroup_2 = (UnorderedGroup)cGroup.eContents().get(2);
 		private final Group cGroup_2_0 = (Group)cUnorderedGroup_2.eContents().get(0);
-		private final Keyword cIdKeyword_2_0_0 = (Keyword)cGroup_2_0.eContents().get(0);
+		private final Alternatives cAlternatives_2_0_0 = (Alternatives)cGroup_2_0.eContents().get(0);
+		private final Keyword cIdKeyword_2_0_0_0 = (Keyword)cAlternatives_2_0_0.eContents().get(0);
+		private final Keyword cNameKeyword_2_0_0_1 = (Keyword)cAlternatives_2_0_0.eContents().get(1);
 		private final Assignment cNameAssignment_2_0_1 = (Assignment)cGroup_2_0.eContents().get(1);
 		private final RuleCall cNameValidStringParserRuleCall_2_0_1_0 = (RuleCall)cNameAssignment_2_0_1.eContents().get(0);
 		private final Group cGroup_2_1 = (Group)cUnorderedGroup_2.eContents().get(1);
@@ -3638,7 +3634,7 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		
 		///*<bean/> */ Component:
 		//	{Component}
-		//	'<bean' (('id=' name=ValidString)? & ('name=' names+=ValidString)?
+		//	'<bean' ((('id=' | 'name=') name=ValidString)? & ('name=' names+=ValidString)?
 		//	& class=CreationMethod
 		//	& features+=PNamespace*
 		//	& features+=CNamespace*
@@ -3657,7 +3653,7 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		//	'</bean>');
 		@Override public ParserRule getRule() { return rule; }
 		
-		//{Component} '<bean' (('id=' name=ValidString)? & ('name=' names+=ValidString)? & class=CreationMethod &
+		//{Component} '<bean' ((('id=' | 'name=') name=ValidString)? & ('name=' names+=ValidString)? & class=CreationMethod &
 		//features+=PNamespace* & features+=CNamespace* & ('abstract=' abstract=sBoolean)? //bool
 		//& ('autowire-candidate=' autowireCandidate=DefaultableBoolean)? //enum
 		//& ('autowire=' autowire=DefaultableBoolean)? //enum
@@ -3678,7 +3674,7 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		//'<bean'
 		public Keyword getBeanKeyword_1() { return cBeanKeyword_1; }
 		
-		//('id=' name=ValidString)? & ('name=' names+=ValidString)? & class=CreationMethod & features+=PNamespace* &
+		//(('id=' | 'name=') name=ValidString)? & ('name=' names+=ValidString)? & class=CreationMethod & features+=PNamespace* &
 		//features+=CNamespace* & ('abstract=' abstract=sBoolean)? //bool
 		//& ('autowire-candidate=' autowireCandidate=DefaultableBoolean)? //enum
 		//& ('autowire=' autowire=DefaultableBoolean)? //enum
@@ -3691,11 +3687,17 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		//& ('scope=' scope=ValidString)?
 		public UnorderedGroup getUnorderedGroup_2() { return cUnorderedGroup_2; }
 		
-		//('id=' name=ValidString)?
+		//(('id=' | 'name=') name=ValidString)?
 		public Group getGroup_2_0() { return cGroup_2_0; }
 		
+		//'id=' | 'name='
+		public Alternatives getAlternatives_2_0_0() { return cAlternatives_2_0_0; }
+		
 		//'id='
-		public Keyword getIdKeyword_2_0_0() { return cIdKeyword_2_0_0; }
+		public Keyword getIdKeyword_2_0_0_0() { return cIdKeyword_2_0_0_0; }
+		
+		//'name='
+		public Keyword getNameKeyword_2_0_0_1() { return cNameKeyword_2_0_0_1; }
 		
 		//name=ValidString
 		public Assignment getNameAssignment_2_0_1() { return cNameAssignment_2_0_1; }
@@ -7065,36 +7067,37 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cINTTerminalRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
 		private final RuleCall cWSTerminalRuleCall_2 = (RuleCall)cAlternatives.eContents().get(2);
 		private final RuleCall cValidStringParserRuleCall_3 = (RuleCall)cAlternatives.eContents().get(3);
-		private final Keyword cCommaKeyword_4 = (Keyword)cAlternatives.eContents().get(4);
-		private final Keyword cFullStopKeyword_5 = (Keyword)cAlternatives.eContents().get(5);
-		private final Keyword cSemicolonKeyword_6 = (Keyword)cAlternatives.eContents().get(6);
-		private final Keyword cColonKeyword_7 = (Keyword)cAlternatives.eContents().get(7);
-		private final Keyword cHyphenMinusKeyword_8 = (Keyword)cAlternatives.eContents().get(8);
-		private final Keyword cQuestionMarkKeyword_9 = (Keyword)cAlternatives.eContents().get(9);
-		private final Keyword cExclamationMarkKeyword_10 = (Keyword)cAlternatives.eContents().get(10);
-		private final Keyword cPlusSignKeyword_11 = (Keyword)cAlternatives.eContents().get(11);
-		private final Keyword cAsteriskKeyword_12 = (Keyword)cAlternatives.eContents().get(12);
-		private final Keyword cEqualsSignKeyword_13 = (Keyword)cAlternatives.eContents().get(13);
-		private final Keyword cDegreeSignKeyword_14 = (Keyword)cAlternatives.eContents().get(14);
-		private final Keyword cGreaterThanSignKeyword_15 = (Keyword)cAlternatives.eContents().get(15);
-		private final Keyword cSolidusKeyword_16 = (Keyword)cAlternatives.eContents().get(16);
-		private final Keyword cVerticalLineKeyword_17 = (Keyword)cAlternatives.eContents().get(17);
-		private final Keyword cBackslashKeyword_18 = (Keyword)cAlternatives.eContents().get(18);
-		private final Keyword cLeftParenthesisKeyword_19 = (Keyword)cAlternatives.eContents().get(19);
-		private final Keyword cRightParenthesisKeyword_20 = (Keyword)cAlternatives.eContents().get(20);
-		private final Keyword cLeftCurlyBracketKeyword_21 = (Keyword)cAlternatives.eContents().get(21);
-		private final Keyword cRightCurlyBracketKeyword_22 = (Keyword)cAlternatives.eContents().get(22);
-		private final Keyword cQuotationMarkKeyword_23 = (Keyword)cAlternatives.eContents().get(23);
-		private final Keyword cApostropheKeyword_24 = (Keyword)cAlternatives.eContents().get(24);
-		private final Keyword cLeftSquareBracketKeyword_25 = (Keyword)cAlternatives.eContents().get(25);
-		private final Keyword cRightSquareBracketKeyword_26 = (Keyword)cAlternatives.eContents().get(26);
-		private final Keyword cCommercialAtKeyword_27 = (Keyword)cAlternatives.eContents().get(27);
-		private final Keyword cAmpersandKeyword_28 = (Keyword)cAlternatives.eContents().get(28);
-		private final Keyword cNumberSignKeyword_29 = (Keyword)cAlternatives.eContents().get(29);
-		private final Keyword cDollarSignKeyword_30 = (Keyword)cAlternatives.eContents().get(30);
+		private final RuleCall cIDWITHDASHTerminalRuleCall_4 = (RuleCall)cAlternatives.eContents().get(4);
+		private final Keyword cCommaKeyword_5 = (Keyword)cAlternatives.eContents().get(5);
+		private final Keyword cFullStopKeyword_6 = (Keyword)cAlternatives.eContents().get(6);
+		private final Keyword cSemicolonKeyword_7 = (Keyword)cAlternatives.eContents().get(7);
+		private final Keyword cColonKeyword_8 = (Keyword)cAlternatives.eContents().get(8);
+		private final Keyword cHyphenMinusKeyword_9 = (Keyword)cAlternatives.eContents().get(9);
+		private final Keyword cQuestionMarkKeyword_10 = (Keyword)cAlternatives.eContents().get(10);
+		private final Keyword cExclamationMarkKeyword_11 = (Keyword)cAlternatives.eContents().get(11);
+		private final Keyword cPlusSignKeyword_12 = (Keyword)cAlternatives.eContents().get(12);
+		private final Keyword cAsteriskKeyword_13 = (Keyword)cAlternatives.eContents().get(13);
+		private final Keyword cEqualsSignKeyword_14 = (Keyword)cAlternatives.eContents().get(14);
+		private final Keyword cDegreeSignKeyword_15 = (Keyword)cAlternatives.eContents().get(15);
+		private final Keyword cGreaterThanSignKeyword_16 = (Keyword)cAlternatives.eContents().get(16);
+		private final Keyword cSolidusKeyword_17 = (Keyword)cAlternatives.eContents().get(17);
+		private final Keyword cVerticalLineKeyword_18 = (Keyword)cAlternatives.eContents().get(18);
+		private final Keyword cBackslashKeyword_19 = (Keyword)cAlternatives.eContents().get(19);
+		private final Keyword cLeftParenthesisKeyword_20 = (Keyword)cAlternatives.eContents().get(20);
+		private final Keyword cRightParenthesisKeyword_21 = (Keyword)cAlternatives.eContents().get(21);
+		private final Keyword cLeftCurlyBracketKeyword_22 = (Keyword)cAlternatives.eContents().get(22);
+		private final Keyword cRightCurlyBracketKeyword_23 = (Keyword)cAlternatives.eContents().get(23);
+		private final Keyword cQuotationMarkKeyword_24 = (Keyword)cAlternatives.eContents().get(24);
+		private final Keyword cApostropheKeyword_25 = (Keyword)cAlternatives.eContents().get(25);
+		private final Keyword cLeftSquareBracketKeyword_26 = (Keyword)cAlternatives.eContents().get(26);
+		private final Keyword cRightSquareBracketKeyword_27 = (Keyword)cAlternatives.eContents().get(27);
+		private final Keyword cCommercialAtKeyword_28 = (Keyword)cAlternatives.eContents().get(28);
+		private final Keyword cAmpersandKeyword_29 = (Keyword)cAlternatives.eContents().get(29);
+		private final Keyword cNumberSignKeyword_30 = (Keyword)cAlternatives.eContents().get(30);
+		private final Keyword cDollarSignKeyword_31 = (Keyword)cAlternatives.eContents().get(31);
 		
 		//QSTRING hidden(ML_COMMENT):
-		//	(ID | INT | WS | ValidString
+		//	(ID | INT | WS | ValidString | IDWITHDASH
 		//	| ',' | '.' | ';' | ':' | '-' | '?' | '!'
 		//	| '+' | '*' | '=' | '°' | '>'
 		//	| '/' | '|' | '\\'
@@ -7102,8 +7105,8 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		//	| '@' | '&' | '#' | '$')*;
 		@Override public ParserRule getRule() { return rule; }
 		
-		//(ID | INT | WS | ValidString | ',' | '.' | ';' | ':' | '-' | '?' | '!' | '+' | '*' | '=' | '°' | '>' | '/' | '|' | '\\'
-		//| '(' | ')' | '{' | '}' | '"' | "'" | '[' | ']' | '@' | '&' | '#' | '$')*
+		//(ID | INT | WS | ValidString | IDWITHDASH | ',' | '.' | ';' | ':' | '-' | '?' | '!' | '+' | '*' | '=' | '°' | '>' | '/'
+		//| '|' | '\\' | '(' | ')' | '{' | '}' | '"' | "'" | '[' | ']' | '@' | '&' | '#' | '$')*
 		public Alternatives getAlternatives() { return cAlternatives; }
 		
 		//ID
@@ -7118,86 +7121,89 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		//ValidString
 		public RuleCall getValidStringParserRuleCall_3() { return cValidStringParserRuleCall_3; }
 		
+		//IDWITHDASH
+		public RuleCall getIDWITHDASHTerminalRuleCall_4() { return cIDWITHDASHTerminalRuleCall_4; }
+		
 		//','
-		public Keyword getCommaKeyword_4() { return cCommaKeyword_4; }
+		public Keyword getCommaKeyword_5() { return cCommaKeyword_5; }
 		
 		//'.'
-		public Keyword getFullStopKeyword_5() { return cFullStopKeyword_5; }
+		public Keyword getFullStopKeyword_6() { return cFullStopKeyword_6; }
 		
 		//';'
-		public Keyword getSemicolonKeyword_6() { return cSemicolonKeyword_6; }
+		public Keyword getSemicolonKeyword_7() { return cSemicolonKeyword_7; }
 		
 		//':'
-		public Keyword getColonKeyword_7() { return cColonKeyword_7; }
+		public Keyword getColonKeyword_8() { return cColonKeyword_8; }
 		
 		//'-'
-		public Keyword getHyphenMinusKeyword_8() { return cHyphenMinusKeyword_8; }
+		public Keyword getHyphenMinusKeyword_9() { return cHyphenMinusKeyword_9; }
 		
 		//'?'
-		public Keyword getQuestionMarkKeyword_9() { return cQuestionMarkKeyword_9; }
+		public Keyword getQuestionMarkKeyword_10() { return cQuestionMarkKeyword_10; }
 		
 		//'!'
-		public Keyword getExclamationMarkKeyword_10() { return cExclamationMarkKeyword_10; }
+		public Keyword getExclamationMarkKeyword_11() { return cExclamationMarkKeyword_11; }
 		
 		//'+'
-		public Keyword getPlusSignKeyword_11() { return cPlusSignKeyword_11; }
+		public Keyword getPlusSignKeyword_12() { return cPlusSignKeyword_12; }
 		
 		//'*'
-		public Keyword getAsteriskKeyword_12() { return cAsteriskKeyword_12; }
+		public Keyword getAsteriskKeyword_13() { return cAsteriskKeyword_13; }
 		
 		//'='
-		public Keyword getEqualsSignKeyword_13() { return cEqualsSignKeyword_13; }
+		public Keyword getEqualsSignKeyword_14() { return cEqualsSignKeyword_14; }
 		
 		//'°'
-		public Keyword getDegreeSignKeyword_14() { return cDegreeSignKeyword_14; }
+		public Keyword getDegreeSignKeyword_15() { return cDegreeSignKeyword_15; }
 		
 		//'>'
-		public Keyword getGreaterThanSignKeyword_15() { return cGreaterThanSignKeyword_15; }
+		public Keyword getGreaterThanSignKeyword_16() { return cGreaterThanSignKeyword_16; }
 		
 		//'/'
-		public Keyword getSolidusKeyword_16() { return cSolidusKeyword_16; }
+		public Keyword getSolidusKeyword_17() { return cSolidusKeyword_17; }
 		
 		//'|'
-		public Keyword getVerticalLineKeyword_17() { return cVerticalLineKeyword_17; }
+		public Keyword getVerticalLineKeyword_18() { return cVerticalLineKeyword_18; }
 		
 		//'\\'
-		public Keyword getBackslashKeyword_18() { return cBackslashKeyword_18; }
+		public Keyword getBackslashKeyword_19() { return cBackslashKeyword_19; }
 		
 		//'('
-		public Keyword getLeftParenthesisKeyword_19() { return cLeftParenthesisKeyword_19; }
+		public Keyword getLeftParenthesisKeyword_20() { return cLeftParenthesisKeyword_20; }
 		
 		//')'
-		public Keyword getRightParenthesisKeyword_20() { return cRightParenthesisKeyword_20; }
+		public Keyword getRightParenthesisKeyword_21() { return cRightParenthesisKeyword_21; }
 		
 		//'{'
-		public Keyword getLeftCurlyBracketKeyword_21() { return cLeftCurlyBracketKeyword_21; }
+		public Keyword getLeftCurlyBracketKeyword_22() { return cLeftCurlyBracketKeyword_22; }
 		
 		//'}'
-		public Keyword getRightCurlyBracketKeyword_22() { return cRightCurlyBracketKeyword_22; }
+		public Keyword getRightCurlyBracketKeyword_23() { return cRightCurlyBracketKeyword_23; }
 		
 		//'"'
-		public Keyword getQuotationMarkKeyword_23() { return cQuotationMarkKeyword_23; }
+		public Keyword getQuotationMarkKeyword_24() { return cQuotationMarkKeyword_24; }
 		
 		//"'"
-		public Keyword getApostropheKeyword_24() { return cApostropheKeyword_24; }
+		public Keyword getApostropheKeyword_25() { return cApostropheKeyword_25; }
 		
 		//'['
-		public Keyword getLeftSquareBracketKeyword_25() { return cLeftSquareBracketKeyword_25; }
+		public Keyword getLeftSquareBracketKeyword_26() { return cLeftSquareBracketKeyword_26; }
 		
 		//']'
-		public Keyword getRightSquareBracketKeyword_26() { return cRightSquareBracketKeyword_26; }
+		public Keyword getRightSquareBracketKeyword_27() { return cRightSquareBracketKeyword_27; }
 		
 		//'@'
-		public Keyword getCommercialAtKeyword_27() { return cCommercialAtKeyword_27; }
+		public Keyword getCommercialAtKeyword_28() { return cCommercialAtKeyword_28; }
 		
 		//'&'
-		public Keyword getAmpersandKeyword_28() { return cAmpersandKeyword_28; }
+		public Keyword getAmpersandKeyword_29() { return cAmpersandKeyword_29; }
 		
 		//'#'
-		public Keyword getNumberSignKeyword_29() { return cNumberSignKeyword_29; }
+		public Keyword getNumberSignKeyword_30() { return cNumberSignKeyword_30; }
 		
 		//'$'
-		public Keyword getDollarSignKeyword_30() { return cDollarSignKeyword_30; }
+		public Keyword getDollarSignKeyword_31() { return cDollarSignKeyword_31; }
 	}
 	public class NullTagElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.xtext.spring.SpringConfigDsl.NullTag");
@@ -8466,7 +8472,7 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 	}
 	
 	///** Aspect main tags */ Aspect:
-	//	'<aop:' AspectType;
+	//	AspectType;
 	public AspectElements getAspectAccess() {
 		return pAspect;
 	}
@@ -8486,7 +8492,7 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 	}
 	
 	///** To enable @AspectJ support with XML based configuration */ AopAspectJAutoproxy:
-	//	{AopAspectJAutoproxy} 'aspectj-autoproxy' (('expose-proxy=' exposeProxy=sBoolean)? & ('proxy-target-class='
+	//	{AopAspectJAutoproxy} '<aop:aspectj-autoproxy' (('expose-proxy=' exposeProxy=sBoolean)? & ('proxy-target-class='
 	//	proxyTrajetClass=sBoolean)?) ('/>' | '>' aopincludes+=AopInclude* '</aop:aspectj-autoproxy>');
 	public AopAspectJAutoproxyElements getAopAspectJAutoproxyAccess() {
 		return pAopAspectJAutoproxy;
@@ -8497,7 +8503,7 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 	}
 	
 	///** Include @AspectJ aspect  use with Spring AOP*/ AopInclude:
-	//	'include' 'name=' aopInclude=[Component|ValidString] ('/>' | '>' '</aop:include>');
+	//	'<aop:include' 'name=' aopInclude=[Component|ValidString] ('/>' | '>' '</aop:include>');
 	public AopIncludeElements getAopIncludeAccess() {
 		return pAopInclude;
 	}
@@ -8507,8 +8513,9 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 	}
 	
 	//AopConfig:
-	//	{AopConfig} ('config' (('expose-proxy=' exposeProxy=sBoolean)? & ('proxy-target-class=' proxyTrajetClass=sBoolean)?)
-	//	('/>' | '>' (aopPointcuts+=AopPointcut* aopAdvisors+=AopAdvisor* aspects+=AopAspect*) '</aop:config>'));
+	//	{AopConfig} ('<aop:config' (('expose-proxy=' exposeProxy=sBoolean)? & ('proxy-target-class='
+	//	proxyTrajetClass=sBoolean)?) ('/>' | '>' (aopPointcuts+=AopPointcut* aopAdvisors+=AopAdvisor* aspects+=AopAspect*)
+	//	'</aop:config>'));
 	public AopConfigElements getAopConfigAccess() {
 		return pAopConfig;
 	}
@@ -8738,7 +8745,7 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 	
 	///*<bean/> */ Component:
 	//	{Component}
-	//	'<bean' (('id=' name=ValidString)? & ('name=' names+=ValidString)?
+	//	'<bean' ((('id=' | 'name=') name=ValidString)? & ('name=' names+=ValidString)?
 	//	& class=CreationMethod
 	//	& features+=PNamespace*
 	//	& features+=CNamespace*
@@ -9318,7 +9325,7 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 	}
 	
 	//QSTRING hidden(ML_COMMENT):
-	//	(ID | INT | WS | ValidString
+	//	(ID | INT | WS | ValidString | IDWITHDASH
 	//	| ',' | '.' | ';' | ':' | '-' | '?' | '!'
 	//	| '+' | '*' | '=' | '°' | '>'
 	//	| '/' | '|' | '\\'

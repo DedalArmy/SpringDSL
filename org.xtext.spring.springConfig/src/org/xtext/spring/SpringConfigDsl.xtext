@@ -186,7 +186,7 @@ SpringConfigured:
 
 /** Aspect main tags */
 Aspect returns Aspect:
-'<aop:'AspectType
+	AspectType
 ;
 
 AspectType returns Aspect:
@@ -196,17 +196,17 @@ AspectType returns Aspect:
 /** To enable @AspectJ support with XML based configuration */
 AopAspectJAutoproxy:
 	{AopAspectJAutoproxy}
-	'aspectj-autoproxy' (('expose-proxy='exposeProxy=sBoolean)? & ('proxy-target-class='proxyTrajetClass=sBoolean)?) (('/>')|('>'(aopincludes+=AopInclude)*'</aop:aspectj-autoproxy>'))
+	'<aop:aspectj-autoproxy' (('expose-proxy='exposeProxy=sBoolean)? & ('proxy-target-class='proxyTrajetClass=sBoolean)?) (('/>')|('>'(aopincludes+=AopInclude)*'</aop:aspectj-autoproxy>'))
 ;
 
 /** Include @AspectJ aspect  use with Spring AOP*/
 AopInclude:
-	'include' 'name='aopInclude=[Component|ValidString] (('/>')|('>''</aop:include>'))
+	'<aop:include' 'name='aopInclude=[Component|ValidString] (('/>')|('>''</aop:include>'))
 ;
 
 AopConfig:
 	{AopConfig}(
-	'config' (('expose-proxy='exposeProxy=sBoolean)? & ('proxy-target-class='proxyTrajetClass=sBoolean)?)
+	'<aop:config' (('expose-proxy='exposeProxy=sBoolean)? & ('proxy-target-class='proxyTrajetClass=sBoolean)?)
 	(('/>')
 	|('>'((aopPointcuts+=AopPointcut)*(aopAdvisors+=AopAdvisor)*(aspects+=AopAspect)*)'</aop:config>')
 	)
@@ -342,7 +342,7 @@ TxJtaTransactionManager:
 Component returns Component:
 	{Component}
 	'<bean' 
-	( ('id='name=ValidString)? & ('name='names+=ValidString)?
+	( (('id='|'name=')name=ValidString)? & ('name='names+=ValidString)?
 	&   class= CreationMethod
 	&  (features+=PNamespace)*
 	&  (features+= CNamespace)* 
@@ -423,7 +423,7 @@ AttributeAtt returns Attribute:
 /**Attribute create by a tag */
 AttributeTag returns Attribute:
 	({Attribute}
-	'<value'('type='type=ValidString)? (('>'value=QSTRING '</value>')|('/>')))
+	'<value'('type='type=ValidString)? (('>' value=QSTRING '</value>')|('/>')))
 	|(UtilConstant)
 ;
 
@@ -729,7 +729,7 @@ IdWithDashs:
 
 	
 QSTRING hidden(ML_COMMENT):
-     (ID|INT|WS|ValidString
+     (ID|INT|WS|ValidString|IDWITHDASH
      	|','|'.'|';'|':'|'-'|'?'|'!'
      	|'+'|'*'|'='|'°' |'>'
      	|'/'|'|'|'\\'
