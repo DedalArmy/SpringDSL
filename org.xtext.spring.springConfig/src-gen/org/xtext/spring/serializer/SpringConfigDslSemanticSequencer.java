@@ -334,7 +334,8 @@ public class SpringConfigDslSemanticSequencer extends AbstractDelegatingSemantic
 					sequence_MapEntrykeyRef(context, (Reference) semanticObject); 
 					return; 
 				}
-				else if (rule == grammarAccess.getReferenceAttRule()) {
+				else if (rule == grammarAccess.getSpringSecurityRule()
+						|| rule == grammarAccess.getReferenceAttRule()) {
 					sequence_ReferenceAtt(context, (Reference) semanticObject); 
 					return; 
 				}
@@ -344,6 +345,7 @@ public class SpringConfigDslSemanticSequencer extends AbstractDelegatingSemantic
 				}
 				else if (rule == grammarAccess.getAbstractKeyValueRule()
 						|| rule == grammarAccess.getAbstractArtefactRule()
+						|| rule == grammarAccess.getHttpRule()
 						|| rule == grammarAccess.getReferenceTagRule()) {
 					sequence_ReferenceTag(context, (Reference) semanticObject); 
 					return; 
@@ -844,10 +846,10 @@ public class SpringConfigDslSemanticSequencer extends AbstractDelegatingSemantic
 	 *             (name=ValidString names+=ValidString?)?
 	 *         )+ 
 	 *         description=Description? 
-	 *         qualifiers+=Qualifier? 
+	 *         features+=Feature? 
 	 *         (
-	 *             (features+=Feature | lookupMethods+=LookupMethod | meta+=MetaTag | aopScopedProxy=AopScopedProxy | utilPropertiesPath+=UtilPropertyPath)? 
-	 *             qualifiers+=Qualifier?
+	 *             (lookupMethods+=LookupMethod | qualifiers+=Qualifier | meta+=MetaTag | aopScopedProxy=AopScopedProxy | utilPropertiesPath+=UtilPropertyPath)? 
+	 *             features+=Feature?
 	 *         )*
 	 *     )
 	 */
@@ -862,36 +864,37 @@ public class SpringConfigDslSemanticSequencer extends AbstractDelegatingSemantic
 	 *
 	 * Constraint:
 	 *     (
-	 *         defaultAutowire=AutoWiredType? 
 	 *         (
-	 *             (
-	 *                 defaultInitMethod=ValidString | 
-	 *                 defaultAutowireCandidates=ValidString | 
-	 *                 defaultDestroyMethod=ValidString | 
-	 *                 defaultLazyInit=DefaultableBoolean | 
-	 *                 defaultMerge=DefaultableBoolean | 
-	 *                 profile=ValidString
-	 *             )? 
-	 *             defaultAutowire=AutoWiredType?
+	 *             defaultAutowire=AutoWiredType | 
+	 *             defaultInitMethod=ValidString | 
+	 *             defaultAutowireCandidates=ValidString | 
+	 *             defaultDestroyMethod=ValidString | 
+	 *             defaultLazyInit=DefaultableBoolean | 
+	 *             defaultMerge=DefaultableBoolean | 
+	 *             profile=ValidString
 	 *         )* 
 	 *         description=Description? 
+	 *         components+=Component? 
 	 *         (
-	 *             components+=Component | 
-	 *             alias+=Alias | 
-	 *             imports+=Import | 
-	 *             contexts+=Context | 
-	 *             mvcs+=MVC | 
-	 *             https+=Http | 
-	 *             aspects+=Aspect | 
-	 *             utilConstants+=UtilConstant | 
-	 *             utilLists+=UtilList | 
-	 *             utilMaps+=UtilMap | 
-	 *             utilProperties+=UtilProperties | 
-	 *             utilSets+=UtilSet | 
-	 *             utilPropertiesPath+=UtilPropertyPath | 
-	 *             txAdvices+=TxAdvise | 
-	 *             txJtaTransactionManager+=TxJtaTransactionManager | 
-	 *             txAnnotations+=TxAnnotation
+	 *             (
+	 *                 alias+=Alias | 
+	 *                 imports+=Import | 
+	 *                 contexts+=Context | 
+	 *                 mvcs+=MVC | 
+	 *                 https+=Http | 
+	 *                 springSecurity+=SpringSecurity | 
+	 *                 aspects+=Aspect | 
+	 *                 utilConstants+=UtilConstant | 
+	 *                 utilLists+=UtilList | 
+	 *                 utilMaps+=UtilMap | 
+	 *                 utilProperties+=UtilProperties | 
+	 *                 utilSets+=UtilSet | 
+	 *                 utilPropertiesPath+=UtilPropertyPath | 
+	 *                 txAdvices+=TxAdvise | 
+	 *                 txJtaTransactionManager+=TxJtaTransactionManager | 
+	 *                 txAnnotations+=TxAnnotation
+	 *             )? 
+	 *             components+=Component?
 	 *         )* 
 	 *         ConfigurationComposite+=Configuration*
 	 *     )
@@ -1467,6 +1470,7 @@ public class SpringConfigDslSemanticSequencer extends AbstractDelegatingSemantic
 	
 	/**
 	 * Contexts:
+	 *     SpringSecurity returns Reference
 	 *     ReferenceAtt returns Reference
 	 *
 	 * Constraint:
@@ -1505,6 +1509,7 @@ public class SpringConfigDslSemanticSequencer extends AbstractDelegatingSemantic
 	 * Contexts:
 	 *     AbstractKeyValue returns Reference
 	 *     AbstractArtefact returns Reference
+	 *     Http returns Reference
 	 *     ReferenceTag returns Reference
 	 *
 	 * Constraint:

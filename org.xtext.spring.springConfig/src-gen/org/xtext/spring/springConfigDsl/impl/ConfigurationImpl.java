@@ -16,7 +16,6 @@ import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
-import org.eclipse.emf.ecore.util.EDataTypeEList;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
@@ -27,9 +26,11 @@ import org.xtext.spring.springConfigDsl.Component;
 import org.xtext.spring.springConfigDsl.Configuration;
 import org.xtext.spring.springConfigDsl.Context;
 import org.xtext.spring.springConfigDsl.DefaultableBoolean;
+import org.xtext.spring.springConfigDsl.Http;
 import org.xtext.spring.springConfigDsl.Import;
 import org.xtext.spring.springConfigDsl.MVC;
 import org.xtext.spring.springConfigDsl.SpringConfigDslPackage;
+import org.xtext.spring.springConfigDsl.SpringSecurity;
 import org.xtext.spring.springConfigDsl.TxAdvise;
 import org.xtext.spring.springConfigDsl.TxAnnotation;
 import org.xtext.spring.springConfigDsl.TxJtaTransactionManager;
@@ -62,6 +63,7 @@ import org.xtext.spring.springConfigDsl.UtilSet;
  *   <li>{@link org.xtext.spring.springConfigDsl.impl.ConfigurationImpl#getContexts <em>Contexts</em>}</li>
  *   <li>{@link org.xtext.spring.springConfigDsl.impl.ConfigurationImpl#getMvcs <em>Mvcs</em>}</li>
  *   <li>{@link org.xtext.spring.springConfigDsl.impl.ConfigurationImpl#getHttps <em>Https</em>}</li>
+ *   <li>{@link org.xtext.spring.springConfigDsl.impl.ConfigurationImpl#getSpringSecurity <em>Spring Security</em>}</li>
  *   <li>{@link org.xtext.spring.springConfigDsl.impl.ConfigurationImpl#getAspects <em>Aspects</em>}</li>
  *   <li>{@link org.xtext.spring.springConfigDsl.impl.ConfigurationImpl#getUtilConstants <em>Util Constants</em>}</li>
  *   <li>{@link org.xtext.spring.springConfigDsl.impl.ConfigurationImpl#getUtilLists <em>Util Lists</em>}</li>
@@ -290,14 +292,24 @@ public class ConfigurationImpl extends MinimalEObjectImpl.Container implements C
   protected EList<MVC> mvcs;
 
   /**
-   * The cached value of the '{@link #getHttps() <em>Https</em>}' attribute list.
+   * The cached value of the '{@link #getHttps() <em>Https</em>}' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @see #getHttps()
    * @generated
    * @ordered
    */
-  protected EList<String> https;
+  protected EList<Http> https;
+
+  /**
+   * The cached value of the '{@link #getSpringSecurity() <em>Spring Security</em>}' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getSpringSecurity()
+   * @generated
+   * @ordered
+   */
+  protected EList<SpringSecurity> springSecurity;
 
   /**
    * The cached value of the '{@link #getAspects() <em>Aspects</em>}' containment reference list.
@@ -689,13 +701,27 @@ public class ConfigurationImpl extends MinimalEObjectImpl.Container implements C
    * <!-- end-user-doc -->
    * @generated
    */
-  public EList<String> getHttps()
+  public EList<Http> getHttps()
   {
     if (https == null)
     {
-      https = new EDataTypeEList<String>(String.class, this, SpringConfigDslPackage.CONFIGURATION__HTTPS);
+      https = new EObjectContainmentEList<Http>(Http.class, this, SpringConfigDslPackage.CONFIGURATION__HTTPS);
     }
     return https;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EList<SpringSecurity> getSpringSecurity()
+  {
+    if (springSecurity == null)
+    {
+      springSecurity = new EObjectContainmentEList<SpringSecurity>(SpringSecurity.class, this, SpringConfigDslPackage.CONFIGURATION__SPRING_SECURITY);
+    }
+    return springSecurity;
   }
 
   /**
@@ -872,6 +898,10 @@ public class ConfigurationImpl extends MinimalEObjectImpl.Container implements C
         return ((InternalEList<?>)getContexts()).basicRemove(otherEnd, msgs);
       case SpringConfigDslPackage.CONFIGURATION__MVCS:
         return ((InternalEList<?>)getMvcs()).basicRemove(otherEnd, msgs);
+      case SpringConfigDslPackage.CONFIGURATION__HTTPS:
+        return ((InternalEList<?>)getHttps()).basicRemove(otherEnd, msgs);
+      case SpringConfigDslPackage.CONFIGURATION__SPRING_SECURITY:
+        return ((InternalEList<?>)getSpringSecurity()).basicRemove(otherEnd, msgs);
       case SpringConfigDslPackage.CONFIGURATION__ASPECTS:
         return ((InternalEList<?>)getAspects()).basicRemove(otherEnd, msgs);
       case SpringConfigDslPackage.CONFIGURATION__UTIL_CONSTANTS:
@@ -936,6 +966,8 @@ public class ConfigurationImpl extends MinimalEObjectImpl.Container implements C
         return getMvcs();
       case SpringConfigDslPackage.CONFIGURATION__HTTPS:
         return getHttps();
+      case SpringConfigDslPackage.CONFIGURATION__SPRING_SECURITY:
+        return getSpringSecurity();
       case SpringConfigDslPackage.CONFIGURATION__ASPECTS:
         return getAspects();
       case SpringConfigDslPackage.CONFIGURATION__UTIL_CONSTANTS:
@@ -1019,7 +1051,11 @@ public class ConfigurationImpl extends MinimalEObjectImpl.Container implements C
         return;
       case SpringConfigDslPackage.CONFIGURATION__HTTPS:
         getHttps().clear();
-        getHttps().addAll((Collection<? extends String>)newValue);
+        getHttps().addAll((Collection<? extends Http>)newValue);
+        return;
+      case SpringConfigDslPackage.CONFIGURATION__SPRING_SECURITY:
+        getSpringSecurity().clear();
+        getSpringSecurity().addAll((Collection<? extends SpringSecurity>)newValue);
         return;
       case SpringConfigDslPackage.CONFIGURATION__ASPECTS:
         getAspects().clear();
@@ -1121,6 +1157,9 @@ public class ConfigurationImpl extends MinimalEObjectImpl.Container implements C
       case SpringConfigDslPackage.CONFIGURATION__HTTPS:
         getHttps().clear();
         return;
+      case SpringConfigDslPackage.CONFIGURATION__SPRING_SECURITY:
+        getSpringSecurity().clear();
+        return;
       case SpringConfigDslPackage.CONFIGURATION__ASPECTS:
         getAspects().clear();
         return;
@@ -1196,6 +1235,8 @@ public class ConfigurationImpl extends MinimalEObjectImpl.Container implements C
         return mvcs != null && !mvcs.isEmpty();
       case SpringConfigDslPackage.CONFIGURATION__HTTPS:
         return https != null && !https.isEmpty();
+      case SpringConfigDslPackage.CONFIGURATION__SPRING_SECURITY:
+        return springSecurity != null && !springSecurity.isEmpty();
       case SpringConfigDslPackage.CONFIGURATION__ASPECTS:
         return aspects != null && !aspects.isEmpty();
       case SpringConfigDslPackage.CONFIGURATION__UTIL_CONSTANTS:
@@ -1249,8 +1290,6 @@ public class ConfigurationImpl extends MinimalEObjectImpl.Container implements C
     result.append(profile);
     result.append(", description: ");
     result.append(description);
-    result.append(", https: ");
-    result.append(https);
     result.append(')');
     return result.toString();
   }

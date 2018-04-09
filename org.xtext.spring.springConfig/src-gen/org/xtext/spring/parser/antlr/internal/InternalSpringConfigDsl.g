@@ -302,10 +302,17 @@ ruleConfiguration returns [EObject current=null]
 			}
 		)
 		(
-			otherlv_1='<beans'
-			{
-				newLeafNode(otherlv_1, grammarAccess.getConfigurationAccess().getBeansKeyword_1_0());
-			}
+			(
+				otherlv_1='<beans'
+				{
+					newLeafNode(otherlv_1, grammarAccess.getConfigurationAccess().getBeansKeyword_1_0_0());
+				}
+				    |
+				otherlv_2='<beans:beans'
+				{
+					newLeafNode(otherlv_2, grammarAccess.getConfigurationAccess().getBeansBeansKeyword_1_0_1());
+				}
+			)
 			(
 				(
 					{ 
@@ -318,14 +325,29 @@ ruleConfiguration returns [EObject current=null]
 						{
 							getUnorderedGroupHelper().select(grammarAccess.getConfigurationAccess().getUnorderedGroup_1_1(), 0);
 						}
-									({true}?=>(otherlv_3=':'
+									({true}?=>(otherlv_4='default-autowire='
 									{
-										newLeafNode(otherlv_3, grammarAccess.getConfigurationAccess().getColonKeyword_1_1_0_0());
+										newLeafNode(otherlv_4, grammarAccess.getConfigurationAccess().getDefaultAutowireKeyword_1_1_0_0());
 									}
-									this_ID_4=RULE_ID
-									{
-										newLeafNode(this_ID_4, grammarAccess.getConfigurationAccess().getIDTerminalRuleCall_1_1_0_1());
-									}
+									(
+										(
+											{
+												newCompositeNode(grammarAccess.getConfigurationAccess().getDefaultAutowireAutoWiredTypeEnumRuleCall_1_1_0_1_0());
+											}
+											lv_defaultAutowire_5_0=ruleAutoWiredType
+											{
+												if ($current==null) {
+													$current = createModelElementForParent(grammarAccess.getConfigurationRule());
+												}
+												set(
+													$current,
+													"defaultAutowire",
+													lv_defaultAutowire_5_0,
+													"org.xtext.spring.SpringConfigDsl.AutoWiredType");
+												afterParserOrEnumRuleCall();
+											}
+										)
+									)
 									))
 						{ 
 							getUnorderedGroupHelper().returnFromSelection(grammarAccess.getConfigurationAccess().getUnorderedGroup_1_1());
@@ -337,25 +359,25 @@ ruleConfiguration returns [EObject current=null]
 						{
 							getUnorderedGroupHelper().select(grammarAccess.getConfigurationAccess().getUnorderedGroup_1_1(), 1);
 						}
-									({true}?=>(otherlv_5='default-autowire='
+									({true}?=>(otherlv_6='default-init-method='
 									{
-										newLeafNode(otherlv_5, grammarAccess.getConfigurationAccess().getDefaultAutowireKeyword_1_1_1_0());
+										newLeafNode(otherlv_6, grammarAccess.getConfigurationAccess().getDefaultInitMethodKeyword_1_1_1_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getConfigurationAccess().getDefaultAutowireAutoWiredTypeEnumRuleCall_1_1_1_1_0());
+												newCompositeNode(grammarAccess.getConfigurationAccess().getDefaultInitMethodValidStringParserRuleCall_1_1_1_1_0());
 											}
-											lv_defaultAutowire_6_0=ruleAutoWiredType
+											lv_defaultInitMethod_7_0=ruleValidString
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getConfigurationRule());
 												}
 												set(
 													$current,
-													"defaultAutowire",
-													lv_defaultAutowire_6_0,
-													"org.xtext.spring.SpringConfigDsl.AutoWiredType");
+													"defaultInitMethod",
+													lv_defaultInitMethod_7_0,
+													"org.xtext.spring.SpringConfigDsl.ValidString");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -371,24 +393,24 @@ ruleConfiguration returns [EObject current=null]
 						{
 							getUnorderedGroupHelper().select(grammarAccess.getConfigurationAccess().getUnorderedGroup_1_1(), 2);
 						}
-									({true}?=>(otherlv_7='default-init-method='
+									({true}?=>(otherlv_8='default-autowire-candidates='
 									{
-										newLeafNode(otherlv_7, grammarAccess.getConfigurationAccess().getDefaultInitMethodKeyword_1_1_2_0());
+										newLeafNode(otherlv_8, grammarAccess.getConfigurationAccess().getDefaultAutowireCandidatesKeyword_1_1_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getConfigurationAccess().getDefaultInitMethodValidStringParserRuleCall_1_1_2_1_0());
+												newCompositeNode(grammarAccess.getConfigurationAccess().getDefaultAutowireCandidatesValidStringParserRuleCall_1_1_2_1_0());
 											}
-											lv_defaultInitMethod_8_0=ruleValidString
+											lv_defaultAutowireCandidates_9_0=ruleValidString
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getConfigurationRule());
 												}
 												set(
 													$current,
-													"defaultInitMethod",
-													lv_defaultInitMethod_8_0,
+													"defaultAutowireCandidates",
+													lv_defaultAutowireCandidates_9_0,
 													"org.xtext.spring.SpringConfigDsl.ValidString");
 												afterParserOrEnumRuleCall();
 											}
@@ -405,24 +427,24 @@ ruleConfiguration returns [EObject current=null]
 						{
 							getUnorderedGroupHelper().select(grammarAccess.getConfigurationAccess().getUnorderedGroup_1_1(), 3);
 						}
-									({true}?=>(otherlv_9='default-autowire-candidates='
+									({true}?=>(otherlv_10='default-destroy-method='
 									{
-										newLeafNode(otherlv_9, grammarAccess.getConfigurationAccess().getDefaultAutowireCandidatesKeyword_1_1_3_0());
+										newLeafNode(otherlv_10, grammarAccess.getConfigurationAccess().getDefaultDestroyMethodKeyword_1_1_3_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getConfigurationAccess().getDefaultAutowireCandidatesValidStringParserRuleCall_1_1_3_1_0());
+												newCompositeNode(grammarAccess.getConfigurationAccess().getDefaultDestroyMethodValidStringParserRuleCall_1_1_3_1_0());
 											}
-											lv_defaultAutowireCandidates_10_0=ruleValidString
+											lv_defaultDestroyMethod_11_0=ruleValidString
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getConfigurationRule());
 												}
 												set(
 													$current,
-													"defaultAutowireCandidates",
-													lv_defaultAutowireCandidates_10_0,
+													"defaultDestroyMethod",
+													lv_defaultDestroyMethod_11_0,
 													"org.xtext.spring.SpringConfigDsl.ValidString");
 												afterParserOrEnumRuleCall();
 											}
@@ -439,25 +461,25 @@ ruleConfiguration returns [EObject current=null]
 						{
 							getUnorderedGroupHelper().select(grammarAccess.getConfigurationAccess().getUnorderedGroup_1_1(), 4);
 						}
-									({true}?=>(otherlv_11='default-destroy-method='
+									({true}?=>(otherlv_12='default-lazy-init='
 									{
-										newLeafNode(otherlv_11, grammarAccess.getConfigurationAccess().getDefaultDestroyMethodKeyword_1_1_4_0());
+										newLeafNode(otherlv_12, grammarAccess.getConfigurationAccess().getDefaultLazyInitKeyword_1_1_4_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getConfigurationAccess().getDefaultDestroyMethodValidStringParserRuleCall_1_1_4_1_0());
+												newCompositeNode(grammarAccess.getConfigurationAccess().getDefaultLazyInitDefaultableBooleanEnumRuleCall_1_1_4_1_0());
 											}
-											lv_defaultDestroyMethod_12_0=ruleValidString
+											lv_defaultLazyInit_13_0=ruleDefaultableBoolean
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getConfigurationRule());
 												}
 												set(
 													$current,
-													"defaultDestroyMethod",
-													lv_defaultDestroyMethod_12_0,
-													"org.xtext.spring.SpringConfigDsl.ValidString");
+													"defaultLazyInit",
+													lv_defaultLazyInit_13_0,
+													"org.xtext.spring.SpringConfigDsl.DefaultableBoolean");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -473,24 +495,24 @@ ruleConfiguration returns [EObject current=null]
 						{
 							getUnorderedGroupHelper().select(grammarAccess.getConfigurationAccess().getUnorderedGroup_1_1(), 5);
 						}
-									({true}?=>(otherlv_13='default-lazy-init='
+									({true}?=>(otherlv_14='default-merge='
 									{
-										newLeafNode(otherlv_13, grammarAccess.getConfigurationAccess().getDefaultLazyInitKeyword_1_1_5_0());
+										newLeafNode(otherlv_14, grammarAccess.getConfigurationAccess().getDefaultMergeKeyword_1_1_5_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getConfigurationAccess().getDefaultLazyInitDefaultableBooleanEnumRuleCall_1_1_5_1_0());
+												newCompositeNode(grammarAccess.getConfigurationAccess().getDefaultMergeDefaultableBooleanEnumRuleCall_1_1_5_1_0());
 											}
-											lv_defaultLazyInit_14_0=ruleDefaultableBoolean
+											lv_defaultMerge_15_0=ruleDefaultableBoolean
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getConfigurationRule());
 												}
 												set(
 													$current,
-													"defaultLazyInit",
-													lv_defaultLazyInit_14_0,
+													"defaultMerge",
+													lv_defaultMerge_15_0,
 													"org.xtext.spring.SpringConfigDsl.DefaultableBoolean");
 												afterParserOrEnumRuleCall();
 											}
@@ -507,25 +529,25 @@ ruleConfiguration returns [EObject current=null]
 						{
 							getUnorderedGroupHelper().select(grammarAccess.getConfigurationAccess().getUnorderedGroup_1_1(), 6);
 						}
-									({true}?=>(otherlv_15='default-merge='
+									({true}?=>(otherlv_16='profile='
 									{
-										newLeafNode(otherlv_15, grammarAccess.getConfigurationAccess().getDefaultMergeKeyword_1_1_6_0());
+										newLeafNode(otherlv_16, grammarAccess.getConfigurationAccess().getProfileKeyword_1_1_6_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getConfigurationAccess().getDefaultMergeDefaultableBooleanEnumRuleCall_1_1_6_1_0());
+												newCompositeNode(grammarAccess.getConfigurationAccess().getProfileValidStringParserRuleCall_1_1_6_1_0());
 											}
-											lv_defaultMerge_16_0=ruleDefaultableBoolean
+											lv_profile_17_0=ruleValidString
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getConfigurationRule());
 												}
 												set(
 													$current,
-													"defaultMerge",
-													lv_defaultMerge_16_0,
-													"org.xtext.spring.SpringConfigDsl.DefaultableBoolean");
+													"profile",
+													lv_profile_17_0,
+													"org.xtext.spring.SpringConfigDsl.ValidString");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -541,53 +563,19 @@ ruleConfiguration returns [EObject current=null]
 						{
 							getUnorderedGroupHelper().select(grammarAccess.getConfigurationAccess().getUnorderedGroup_1_1(), 7);
 						}
-									({true}?=>(otherlv_17='profile='
-									{
-										newLeafNode(otherlv_17, grammarAccess.getConfigurationAccess().getProfileKeyword_1_1_7_0());
-									}
-									(
-										(
-											{
-												newCompositeNode(grammarAccess.getConfigurationAccess().getProfileValidStringParserRuleCall_1_1_7_1_0());
-											}
-											lv_profile_18_0=ruleValidString
-											{
-												if ($current==null) {
-													$current = createModelElementForParent(grammarAccess.getConfigurationRule());
-												}
-												set(
-													$current,
-													"profile",
-													lv_profile_18_0,
-													"org.xtext.spring.SpringConfigDsl.ValidString");
-												afterParserOrEnumRuleCall();
-											}
-										)
-									)
-									))
-						{ 
-							getUnorderedGroupHelper().returnFromSelection(grammarAccess.getConfigurationAccess().getUnorderedGroup_1_1());
-						}
-					)
-				)|
-				(
-					{getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationAccess().getUnorderedGroup_1_1(), 8)}?=>(
-						{
-							getUnorderedGroupHelper().select(grammarAccess.getConfigurationAccess().getUnorderedGroup_1_1(), 8);
-						}
 									({true}?=>({
-										newCompositeNode(grammarAccess.getConfigurationAccess().getIdDashAndColonParserRuleCall_1_1_8_0());
+										newCompositeNode(grammarAccess.getConfigurationAccess().getIdDashAndColonParserRuleCall_1_1_7_0());
 									}
 									ruleIdDashAndColon
 									{
 										afterParserOrEnumRuleCall();
 									}
-									otherlv_20='='
+									otherlv_19='='
 									{
-										newLeafNode(otherlv_20, grammarAccess.getConfigurationAccess().getEqualsSignKeyword_1_1_8_1());
+										newLeafNode(otherlv_19, grammarAccess.getConfigurationAccess().getEqualsSignKeyword_1_1_7_1());
 									}
 									{
-										newCompositeNode(grammarAccess.getConfigurationAccess().getValidStringParserRuleCall_1_1_8_2());
+										newCompositeNode(grammarAccess.getConfigurationAccess().getValidStringParserRuleCall_1_1_7_2());
 									}
 									ruleValidString
 									{
@@ -606,9 +594,9 @@ ruleConfiguration returns [EObject current=null]
 					  getUnorderedGroupHelper().leave(grammarAccess.getConfigurationAccess().getUnorderedGroup_1_1());
 					}
 			)
-			otherlv_22='>'
+			otherlv_21='>'
 			{
-				newLeafNode(otherlv_22, grammarAccess.getConfigurationAccess().getGreaterThanSignKeyword_1_2());
+				newLeafNode(otherlv_21, grammarAccess.getConfigurationAccess().getGreaterThanSignKeyword_1_2());
 			}
 		)
 		(
@@ -616,7 +604,7 @@ ruleConfiguration returns [EObject current=null]
 				{
 					newCompositeNode(grammarAccess.getConfigurationAccess().getDescriptionDescriptionParserRuleCall_2_0());
 				}
-				lv_description_23_0=ruleDescription
+				lv_description_22_0=ruleDescription
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getConfigurationRule());
@@ -624,7 +612,7 @@ ruleConfiguration returns [EObject current=null]
 					set(
 						$current,
 						"description",
-						lv_description_23_0,
+						lv_description_22_0,
 						"org.xtext.spring.SpringConfigDsl.Description");
 					afterParserOrEnumRuleCall();
 				}
@@ -636,7 +624,7 @@ ruleConfiguration returns [EObject current=null]
 					{
 						newCompositeNode(grammarAccess.getConfigurationAccess().getComponentsComponentParserRuleCall_3_0_0());
 					}
-					lv_components_24_0=ruleComponent
+					lv_components_23_0=ruleComponent
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getConfigurationRule());
@@ -644,7 +632,7 @@ ruleConfiguration returns [EObject current=null]
 						add(
 							$current,
 							"components",
-							lv_components_24_0,
+							lv_components_23_0,
 							"org.xtext.spring.SpringConfigDsl.Component");
 						afterParserOrEnumRuleCall();
 					}
@@ -656,7 +644,7 @@ ruleConfiguration returns [EObject current=null]
 					{
 						newCompositeNode(grammarAccess.getConfigurationAccess().getAliasAliasParserRuleCall_3_1_0());
 					}
-					lv_alias_25_0=ruleAlias
+					lv_alias_24_0=ruleAlias
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getConfigurationRule());
@@ -664,7 +652,7 @@ ruleConfiguration returns [EObject current=null]
 						add(
 							$current,
 							"alias",
-							lv_alias_25_0,
+							lv_alias_24_0,
 							"org.xtext.spring.SpringConfigDsl.Alias");
 						afterParserOrEnumRuleCall();
 					}
@@ -676,7 +664,7 @@ ruleConfiguration returns [EObject current=null]
 					{
 						newCompositeNode(grammarAccess.getConfigurationAccess().getImportsImportParserRuleCall_3_2_0());
 					}
-					lv_imports_26_0=ruleImport
+					lv_imports_25_0=ruleImport
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getConfigurationRule());
@@ -684,7 +672,7 @@ ruleConfiguration returns [EObject current=null]
 						add(
 							$current,
 							"imports",
-							lv_imports_26_0,
+							lv_imports_25_0,
 							"org.xtext.spring.SpringConfigDsl.Import");
 						afterParserOrEnumRuleCall();
 					}
@@ -696,7 +684,7 @@ ruleConfiguration returns [EObject current=null]
 					{
 						newCompositeNode(grammarAccess.getConfigurationAccess().getContextsContextParserRuleCall_3_3_0());
 					}
-					lv_contexts_27_0=ruleContext
+					lv_contexts_26_0=ruleContext
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getConfigurationRule());
@@ -704,7 +692,7 @@ ruleConfiguration returns [EObject current=null]
 						add(
 							$current,
 							"contexts",
-							lv_contexts_27_0,
+							lv_contexts_26_0,
 							"org.xtext.spring.SpringConfigDsl.Context");
 						afterParserOrEnumRuleCall();
 					}
@@ -716,7 +704,7 @@ ruleConfiguration returns [EObject current=null]
 					{
 						newCompositeNode(grammarAccess.getConfigurationAccess().getMvcsMVCParserRuleCall_3_4_0());
 					}
-					lv_mvcs_28_0=ruleMVC
+					lv_mvcs_27_0=ruleMVC
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getConfigurationRule());
@@ -724,7 +712,7 @@ ruleConfiguration returns [EObject current=null]
 						add(
 							$current,
 							"mvcs",
-							lv_mvcs_28_0,
+							lv_mvcs_27_0,
 							"org.xtext.spring.SpringConfigDsl.MVC");
 						afterParserOrEnumRuleCall();
 					}
@@ -736,7 +724,7 @@ ruleConfiguration returns [EObject current=null]
 					{
 						newCompositeNode(grammarAccess.getConfigurationAccess().getHttpsHttpParserRuleCall_3_5_0());
 					}
-					lv_https_29_0=ruleHttp
+					lv_https_28_0=ruleHttp
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getConfigurationRule());
@@ -744,7 +732,7 @@ ruleConfiguration returns [EObject current=null]
 						add(
 							$current,
 							"https",
-							lv_https_29_0,
+							lv_https_28_0,
 							"org.xtext.spring.SpringConfigDsl.Http");
 						afterParserOrEnumRuleCall();
 					}
@@ -754,7 +742,27 @@ ruleConfiguration returns [EObject current=null]
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getConfigurationAccess().getAspectsAspectParserRuleCall_3_6_0());
+						newCompositeNode(grammarAccess.getConfigurationAccess().getSpringSecuritySpringSecurityParserRuleCall_3_6_0());
+					}
+					lv_springSecurity_29_0=ruleSpringSecurity
+					{
+						if ($current==null) {
+							$current = createModelElementForParent(grammarAccess.getConfigurationRule());
+						}
+						add(
+							$current,
+							"springSecurity",
+							lv_springSecurity_29_0,
+							"org.xtext.spring.SpringConfigDsl.SpringSecurity");
+						afterParserOrEnumRuleCall();
+					}
+				)
+			)
+			    |
+			(
+				(
+					{
+						newCompositeNode(grammarAccess.getConfigurationAccess().getAspectsAspectParserRuleCall_3_7_0());
 					}
 					lv_aspects_30_0=ruleAspect
 					{
@@ -774,7 +782,7 @@ ruleConfiguration returns [EObject current=null]
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getConfigurationAccess().getUtilConstantsUtilConstantParserRuleCall_3_7_0());
+						newCompositeNode(grammarAccess.getConfigurationAccess().getUtilConstantsUtilConstantParserRuleCall_3_8_0());
 					}
 					lv_utilConstants_31_0=ruleUtilConstant
 					{
@@ -794,7 +802,7 @@ ruleConfiguration returns [EObject current=null]
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getConfigurationAccess().getUtilListsUtilListParserRuleCall_3_8_0());
+						newCompositeNode(grammarAccess.getConfigurationAccess().getUtilListsUtilListParserRuleCall_3_9_0());
 					}
 					lv_utilLists_32_0=ruleUtilList
 					{
@@ -814,7 +822,7 @@ ruleConfiguration returns [EObject current=null]
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getConfigurationAccess().getUtilMapsUtilMapParserRuleCall_3_9_0());
+						newCompositeNode(grammarAccess.getConfigurationAccess().getUtilMapsUtilMapParserRuleCall_3_10_0());
 					}
 					lv_utilMaps_33_0=ruleUtilMap
 					{
@@ -834,7 +842,7 @@ ruleConfiguration returns [EObject current=null]
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getConfigurationAccess().getUtilPropertiesUtilPropertiesParserRuleCall_3_10_0());
+						newCompositeNode(grammarAccess.getConfigurationAccess().getUtilPropertiesUtilPropertiesParserRuleCall_3_11_0());
 					}
 					lv_utilProperties_34_0=ruleUtilProperties
 					{
@@ -854,7 +862,7 @@ ruleConfiguration returns [EObject current=null]
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getConfigurationAccess().getUtilSetsUtilSetParserRuleCall_3_11_0());
+						newCompositeNode(grammarAccess.getConfigurationAccess().getUtilSetsUtilSetParserRuleCall_3_12_0());
 					}
 					lv_utilSets_35_0=ruleUtilSet
 					{
@@ -874,7 +882,7 @@ ruleConfiguration returns [EObject current=null]
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getConfigurationAccess().getUtilPropertiesPathUtilPropertyPathParserRuleCall_3_12_0());
+						newCompositeNode(grammarAccess.getConfigurationAccess().getUtilPropertiesPathUtilPropertyPathParserRuleCall_3_13_0());
 					}
 					lv_utilPropertiesPath_36_0=ruleUtilPropertyPath
 					{
@@ -894,7 +902,7 @@ ruleConfiguration returns [EObject current=null]
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getConfigurationAccess().getTxAdvicesTxAdviseParserRuleCall_3_13_0());
+						newCompositeNode(grammarAccess.getConfigurationAccess().getTxAdvicesTxAdviseParserRuleCall_3_14_0());
 					}
 					lv_txAdvices_37_0=ruleTxAdvise
 					{
@@ -914,7 +922,7 @@ ruleConfiguration returns [EObject current=null]
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getConfigurationAccess().getTxJtaTransactionManagerTxJtaTransactionManagerParserRuleCall_3_14_0());
+						newCompositeNode(grammarAccess.getConfigurationAccess().getTxJtaTransactionManagerTxJtaTransactionManagerParserRuleCall_3_15_0());
 					}
 					lv_txJtaTransactionManager_38_0=ruleTxJtaTransactionManager
 					{
@@ -934,7 +942,7 @@ ruleConfiguration returns [EObject current=null]
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getConfigurationAccess().getTxAnnotationsTxAnnotationParserRuleCall_3_15_0());
+						newCompositeNode(grammarAccess.getConfigurationAccess().getTxAnnotationsTxAnnotationParserRuleCall_3_16_0());
 					}
 					lv_txAnnotations_39_0=ruleTxAnnotation
 					{
@@ -971,23 +979,14 @@ ruleConfiguration returns [EObject current=null]
 			)
 		)*
 		(
-			otherlv_41='</beans'
+			otherlv_41='</beans>'
 			{
 				newLeafNode(otherlv_41, grammarAccess.getConfigurationAccess().getBeansKeyword_5_0());
 			}
-			(
-				otherlv_42=':'
-				{
-					newLeafNode(otherlv_42, grammarAccess.getConfigurationAccess().getColonKeyword_5_1_0());
-				}
-				this_ID_43=RULE_ID
-				{
-					newLeafNode(this_ID_43, grammarAccess.getConfigurationAccess().getIDTerminalRuleCall_5_1_1());
-				}
-			)?
-			otherlv_44='>'
+			    |
+			otherlv_42='</beans:beans>'
 			{
-				newLeafNode(otherlv_44, grammarAccess.getConfigurationAccess().getGreaterThanSignKeyword_5_2());
+				newLeafNode(otherlv_42, grammarAccess.getConfigurationAccess().getBeansBeansKeyword_5_1());
 			}
 		)
 	)
@@ -1149,14 +1148,14 @@ ruleMVC returns [EObject current=null]
 ;
 
 // Entry rule entryRuleHttp
-entryRuleHttp returns [String current=null]:
+entryRuleHttp returns [EObject current=null]:
 	{ newCompositeNode(grammarAccess.getHttpRule()); }
 	iv_ruleHttp=ruleHttp
-	{ $current=$iv_ruleHttp.current.getText(); }
+	{ $current=$iv_ruleHttp.current; }
 	EOF;
 
 // Rule Http
-ruleHttp returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
+ruleHttp returns [EObject current=null]
 @init {
 	enterRule();
 }
@@ -1165,121 +1164,152 @@ ruleHttp returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
 }:
 	(
 		(
-			kw='<http'
+			otherlv_0='<http'
 			{
-				$current.merge(kw);
-				newLeafNode(kw, grammarAccess.getHttpAccess().getHttpKeyword_0_0());
+				newLeafNode(otherlv_0, grammarAccess.getHttpAccess().getHttpKeyword_0_0());
 			}
-			(
-				this_IDWITHDASH_1=RULE_IDWITHDASH
-				{
-					$current.merge(this_IDWITHDASH_1);
-				}
-				{
-					newLeafNode(this_IDWITHDASH_1, grammarAccess.getHttpAccess().getIDWITHDASHTerminalRuleCall_0_1_0());
-				}
-				kw='='
-				{
-					$current.merge(kw);
-					newLeafNode(kw, grammarAccess.getHttpAccess().getEqualsSignKeyword_0_1_1());
-				}
-				{
-					newCompositeNode(grammarAccess.getHttpAccess().getValidStringParserRuleCall_0_1_2());
-				}
-				this_ValidString_3=ruleValidString
-				{
-					$current.merge(this_ValidString_3);
-				}
-				{
-					afterParserOrEnumRuleCall();
-				}
-			)*
-			kw='>'
+			    |
+			otherlv_1='<authentication-manager'
 			{
-				$current.merge(kw);
-				newLeafNode(kw, grammarAccess.getHttpAccess().getGreaterThanSignKeyword_0_2());
-			}
-			(
-				kw='<'
-				{
-					$current.merge(kw);
-					newLeafNode(kw, grammarAccess.getHttpAccess().getLessThanSignKeyword_0_3_0());
-				}
-				(
-					(
-						(RULE_ID)=>
-						this_ID_6=RULE_ID
-						{
-							$current.merge(this_ID_6);
-						}
-						{
-							newLeafNode(this_ID_6, grammarAccess.getHttpAccess().getIDTerminalRuleCall_0_3_1_0());
-						}
-					)
-					    |
-					this_IDWITHDASH_7=RULE_IDWITHDASH
-					{
-						$current.merge(this_IDWITHDASH_7);
-					}
-					{
-						newLeafNode(this_IDWITHDASH_7, grammarAccess.getHttpAccess().getIDWITHDASHTerminalRuleCall_0_3_1_1());
-					}
-				)+
-				(
-					(
-						(
-							(RULE_ID)=>
-							this_ID_8=RULE_ID
-							{
-								$current.merge(this_ID_8);
-							}
-							{
-								newLeafNode(this_ID_8, grammarAccess.getHttpAccess().getIDTerminalRuleCall_0_3_2_0_0());
-							}
-						)
-						    |
-						this_IDWITHDASH_9=RULE_IDWITHDASH
-						{
-							$current.merge(this_IDWITHDASH_9);
-						}
-						{
-							newLeafNode(this_IDWITHDASH_9, grammarAccess.getHttpAccess().getIDWITHDASHTerminalRuleCall_0_3_2_0_1());
-						}
-					)
-					kw='='
-					{
-						$current.merge(kw);
-						newLeafNode(kw, grammarAccess.getHttpAccess().getEqualsSignKeyword_0_3_2_1());
-					}
-					{
-						newCompositeNode(grammarAccess.getHttpAccess().getValidStringParserRuleCall_0_3_2_2());
-					}
-					this_ValidString_11=ruleValidString
-					{
-						$current.merge(this_ValidString_11);
-					}
-					{
-						afterParserOrEnumRuleCall();
-					}
-				)*
-				kw='/>'
-				{
-					$current.merge(kw);
-					newLeafNode(kw, grammarAccess.getHttpAccess().getSolidusGreaterThanSignKeyword_0_3_3());
-				}
-			)*
-			kw='</http>'
-			{
-				$current.merge(kw);
-				newLeafNode(kw, grammarAccess.getHttpAccess().getHttpKeyword_0_4());
+				newLeafNode(otherlv_1, grammarAccess.getHttpAccess().getAuthenticationManagerKeyword_0_1());
 			}
 		)
-		    |
-		kw='/>'
+		(
+			{
+				newCompositeNode(grammarAccess.getHttpAccess().getReferenceTagParserRuleCall_1());
+			}
+			this_ReferenceTag_2=ruleReferenceTag
+			{
+				$current = $this_ReferenceTag_2.current;
+				afterParserOrEnumRuleCall();
+			}
+		)?
+		(
+			(
+				(
+					this_IDWITHDASH_3=RULE_IDWITHDASH
+					{
+						newLeafNode(this_IDWITHDASH_3, grammarAccess.getHttpAccess().getIDWITHDASHTerminalRuleCall_2_0_0_0());
+					}
+					otherlv_4='='
+					{
+						newLeafNode(otherlv_4, grammarAccess.getHttpAccess().getEqualsSignKeyword_2_0_0_1());
+					}
+				)
+				    |
+				otherlv_5='alias='
+				{
+					newLeafNode(otherlv_5, grammarAccess.getHttpAccess().getAliasKeyword_2_0_1());
+				}
+			)
+			{
+				newCompositeNode(grammarAccess.getHttpAccess().getValidStringParserRuleCall_2_1());
+			}
+			ruleValidString
+			{
+				afterParserOrEnumRuleCall();
+			}
+		)*
+		otherlv_7='>'
 		{
-			$current.merge(kw);
-			newLeafNode(kw, grammarAccess.getHttpAccess().getSolidusGreaterThanSignKeyword_1());
+			newLeafNode(otherlv_7, grammarAccess.getHttpAccess().getGreaterThanSignKeyword_3());
 		}
+		(
+			{
+				newCompositeNode(grammarAccess.getHttpAccess().getVALIDTAGParserRuleCall_4());
+			}
+			ruleVALIDTAG
+			{
+				afterParserOrEnumRuleCall();
+			}
+		)*
+		(
+			otherlv_9='</http>'
+			{
+				newLeafNode(otherlv_9, grammarAccess.getHttpAccess().getHttpKeyword_5_0());
+			}
+			    |
+			otherlv_10='</authentication-manager>'
+			{
+				newLeafNode(otherlv_10, grammarAccess.getHttpAccess().getAuthenticationManagerKeyword_5_1());
+			}
+			    |
+			otherlv_11='/>'
+			{
+				newLeafNode(otherlv_11, grammarAccess.getHttpAccess().getSolidusGreaterThanSignKeyword_5_2());
+			}
+		)
+	)
+;
+
+// Entry rule entryRuleSpringSecurity
+entryRuleSpringSecurity returns [EObject current=null]:
+	{ newCompositeNode(grammarAccess.getSpringSecurityRule()); }
+	iv_ruleSpringSecurity=ruleSpringSecurity
+	{ $current=$iv_ruleSpringSecurity.current; }
+	EOF;
+
+// Rule SpringSecurity
+ruleSpringSecurity returns [EObject current=null]
+@init {
+	enterRule();
+}
+@after {
+	leaveRule();
+}:
+	(
+		otherlv_0='<global-method-security'
+		{
+			newLeafNode(otherlv_0, grammarAccess.getSpringSecurityAccess().getGlobalMethodSecurityKeyword_0());
+		}
+		this_IDWITHDASH_1=RULE_IDWITHDASH
+		{
+			newLeafNode(this_IDWITHDASH_1, grammarAccess.getSpringSecurityAccess().getIDWITHDASHTerminalRuleCall_1());
+		}
+		otherlv_2='='
+		{
+			newLeafNode(otherlv_2, grammarAccess.getSpringSecurityAccess().getEqualsSignKeyword_2());
+		}
+		{
+			newCompositeNode(grammarAccess.getSpringSecurityAccess().getValidStringParserRuleCall_3());
+		}
+		ruleValidString
+		{
+			afterParserOrEnumRuleCall();
+		}
+		(
+			otherlv_4='>'
+			{
+				newLeafNode(otherlv_4, grammarAccess.getSpringSecurityAccess().getGreaterThanSignKeyword_4_0());
+			}
+			otherlv_5='<expression-handler'
+			{
+				newLeafNode(otherlv_5, grammarAccess.getSpringSecurityAccess().getExpressionHandlerKeyword_4_1());
+			}
+			{
+				newCompositeNode(grammarAccess.getSpringSecurityAccess().getReferenceAttParserRuleCall_4_2());
+			}
+			this_ReferenceAtt_6=ruleReferenceAtt
+			{
+				$current = $this_ReferenceAtt_6.current;
+				afterParserOrEnumRuleCall();
+			}
+			otherlv_7='/>'
+			{
+				newLeafNode(otherlv_7, grammarAccess.getSpringSecurityAccess().getSolidusGreaterThanSignKeyword_4_3());
+			}
+		)?
+		(
+			otherlv_8='/>'
+			{
+				newLeafNode(otherlv_8, grammarAccess.getSpringSecurityAccess().getSolidusGreaterThanSignKeyword_5_0());
+			}
+			    |
+			otherlv_9='</global-method-security>'
+			{
+				newLeafNode(otherlv_9, grammarAccess.getSpringSecurityAccess().getGlobalMethodSecurityKeyword_5_1());
+			}
+		)
 	)
 ;
 
@@ -6002,10 +6032,17 @@ ruleComponent returns [EObject current=null]
 					$current);
 			}
 		)
-		otherlv_1='<bean'
-		{
-			newLeafNode(otherlv_1, grammarAccess.getComponentAccess().getBeanKeyword_1());
-		}
+		(
+			otherlv_1='<bean'
+			{
+				newLeafNode(otherlv_1, grammarAccess.getComponentAccess().getBeanKeyword_1_0());
+			}
+			    |
+			otherlv_2='<beans:bean'
+			{
+				newLeafNode(otherlv_2, grammarAccess.getComponentAccess().getBeansBeanKeyword_1_1());
+			}
+		)
 		(
 			(
 				{ 
@@ -6019,14 +6056,14 @@ ruleComponent returns [EObject current=null]
 						getUnorderedGroupHelper().select(grammarAccess.getComponentAccess().getUnorderedGroup_2(), 0);
 					}
 								({true}?=>((
-									otherlv_3='id='
+									otherlv_4='id='
 									{
-										newLeafNode(otherlv_3, grammarAccess.getComponentAccess().getIdKeyword_2_0_0_0());
+										newLeafNode(otherlv_4, grammarAccess.getComponentAccess().getIdKeyword_2_0_0_0());
 									}
 									    |
-									otherlv_4='name='
+									otherlv_5='name='
 									{
-										newLeafNode(otherlv_4, grammarAccess.getComponentAccess().getNameKeyword_2_0_0_1());
+										newLeafNode(otherlv_5, grammarAccess.getComponentAccess().getNameKeyword_2_0_0_1());
 									}
 								)
 								(
@@ -6034,7 +6071,7 @@ ruleComponent returns [EObject current=null]
 										{
 											newCompositeNode(grammarAccess.getComponentAccess().getNameValidStringParserRuleCall_2_0_1_0());
 										}
-										lv_name_5_0=ruleValidString
+										lv_name_6_0=ruleValidString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getComponentRule());
@@ -6042,7 +6079,7 @@ ruleComponent returns [EObject current=null]
 											set(
 												$current,
 												"name",
-												lv_name_5_0,
+												lv_name_6_0,
 												"org.xtext.spring.SpringConfigDsl.ValidString");
 											afterParserOrEnumRuleCall();
 										}
@@ -6050,9 +6087,9 @@ ruleComponent returns [EObject current=null]
 								)
 								(
 									(
-										otherlv_6='name='
+										otherlv_7='name='
 										{
-											newLeafNode(otherlv_6, grammarAccess.getComponentAccess().getNameKeyword_2_0_2_0());
+											newLeafNode(otherlv_7, grammarAccess.getComponentAccess().getNameKeyword_2_0_2_0());
 										}
 									)?
 									(
@@ -6060,7 +6097,7 @@ ruleComponent returns [EObject current=null]
 											{
 												newCompositeNode(grammarAccess.getComponentAccess().getNamesValidStringParserRuleCall_2_0_2_1_0());
 											}
-											lv_names_7_0=ruleValidString
+											lv_names_8_0=ruleValidString
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getComponentRule());
@@ -6068,7 +6105,7 @@ ruleComponent returns [EObject current=null]
 												add(
 													$current,
 													"names",
-													lv_names_7_0,
+													lv_names_8_0,
 													"org.xtext.spring.SpringConfigDsl.ValidString");
 												afterParserOrEnumRuleCall();
 											}
@@ -6090,7 +6127,7 @@ ruleComponent returns [EObject current=null]
 									{
 										newCompositeNode(grammarAccess.getComponentAccess().getClassCreationMethodParserRuleCall_2_1_0());
 									}
-									lv_class_8_0=ruleCreationMethod
+									lv_class_9_0=ruleCreationMethod
 									{
 										if ($current==null) {
 											$current = createModelElementForParent(grammarAccess.getComponentRule());
@@ -6098,7 +6135,7 @@ ruleComponent returns [EObject current=null]
 										set(
 											$current,
 											"class",
-											lv_class_8_0,
+											lv_class_9_0,
 											"org.xtext.spring.SpringConfigDsl.CreationMethod");
 										afterParserOrEnumRuleCall();
 									}
@@ -6118,7 +6155,7 @@ ruleComponent returns [EObject current=null]
 									{
 										newCompositeNode(grammarAccess.getComponentAccess().getFeaturesPNamespaceParserRuleCall_2_2_0());
 									}
-									lv_features_9_0=rulePNamespace
+									lv_features_10_0=rulePNamespace
 									{
 										if ($current==null) {
 											$current = createModelElementForParent(grammarAccess.getComponentRule());
@@ -6126,7 +6163,7 @@ ruleComponent returns [EObject current=null]
 										add(
 											$current,
 											"features",
-											lv_features_9_0,
+											lv_features_10_0,
 											"org.xtext.spring.SpringConfigDsl.PNamespace");
 										afterParserOrEnumRuleCall();
 									}
@@ -6146,7 +6183,7 @@ ruleComponent returns [EObject current=null]
 									{
 										newCompositeNode(grammarAccess.getComponentAccess().getFeaturesCNamespaceParserRuleCall_2_3_0());
 									}
-									lv_features_10_0=ruleCNamespace
+									lv_features_11_0=ruleCNamespace
 									{
 										if ($current==null) {
 											$current = createModelElementForParent(grammarAccess.getComponentRule());
@@ -6154,7 +6191,7 @@ ruleComponent returns [EObject current=null]
 										add(
 											$current,
 											"features",
-											lv_features_10_0,
+											lv_features_11_0,
 											"org.xtext.spring.SpringConfigDsl.CNamespace");
 										afterParserOrEnumRuleCall();
 									}
@@ -6170,16 +6207,16 @@ ruleComponent returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getComponentAccess().getUnorderedGroup_2(), 4);
 					}
-								({true}?=>(otherlv_11='abstract='
+								({true}?=>(otherlv_12='abstract='
 								{
-									newLeafNode(otherlv_11, grammarAccess.getComponentAccess().getAbstractKeyword_2_4_0());
+									newLeafNode(otherlv_12, grammarAccess.getComponentAccess().getAbstractKeyword_2_4_0());
 								}
 								(
 									(
 										{
 											newCompositeNode(grammarAccess.getComponentAccess().getAbstractSBooleanEnumRuleCall_2_4_1_0());
 										}
-										lv_abstract_12_0=rulesBoolean
+										lv_abstract_13_0=rulesBoolean
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getComponentRule());
@@ -6187,7 +6224,7 @@ ruleComponent returns [EObject current=null]
 											set(
 												$current,
 												"abstract",
-												lv_abstract_12_0,
+												lv_abstract_13_0,
 												"org.xtext.spring.SpringConfigDsl.sBoolean");
 											afterParserOrEnumRuleCall();
 										}
@@ -6204,16 +6241,16 @@ ruleComponent returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getComponentAccess().getUnorderedGroup_2(), 5);
 					}
-								({true}?=>(otherlv_13='autowire-candidate='
+								({true}?=>(otherlv_14='autowire-candidate='
 								{
-									newLeafNode(otherlv_13, grammarAccess.getComponentAccess().getAutowireCandidateKeyword_2_5_0());
+									newLeafNode(otherlv_14, grammarAccess.getComponentAccess().getAutowireCandidateKeyword_2_5_0());
 								}
 								(
 									(
 										{
 											newCompositeNode(grammarAccess.getComponentAccess().getAutowireCandidateDefaultableBooleanEnumRuleCall_2_5_1_0());
 										}
-										lv_autowireCandidate_14_0=ruleDefaultableBoolean
+										lv_autowireCandidate_15_0=ruleDefaultableBoolean
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getComponentRule());
@@ -6221,7 +6258,7 @@ ruleComponent returns [EObject current=null]
 											set(
 												$current,
 												"autowireCandidate",
-												lv_autowireCandidate_14_0,
+												lv_autowireCandidate_15_0,
 												"org.xtext.spring.SpringConfigDsl.DefaultableBoolean");
 											afterParserOrEnumRuleCall();
 										}
@@ -6238,16 +6275,16 @@ ruleComponent returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getComponentAccess().getUnorderedGroup_2(), 6);
 					}
-								({true}?=>(otherlv_15='autowire='
+								({true}?=>(otherlv_16='autowire='
 								{
-									newLeafNode(otherlv_15, grammarAccess.getComponentAccess().getAutowireKeyword_2_6_0());
+									newLeafNode(otherlv_16, grammarAccess.getComponentAccess().getAutowireKeyword_2_6_0());
 								}
 								(
 									(
 										{
 											newCompositeNode(grammarAccess.getComponentAccess().getAutowireDefaultableBooleanEnumRuleCall_2_6_1_0());
 										}
-										lv_autowire_16_0=ruleDefaultableBoolean
+										lv_autowire_17_0=ruleDefaultableBoolean
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getComponentRule());
@@ -6255,7 +6292,7 @@ ruleComponent returns [EObject current=null]
 											set(
 												$current,
 												"autowire",
-												lv_autowire_16_0,
+												lv_autowire_17_0,
 												"org.xtext.spring.SpringConfigDsl.DefaultableBoolean");
 											afterParserOrEnumRuleCall();
 										}
@@ -6272,9 +6309,9 @@ ruleComponent returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getComponentAccess().getUnorderedGroup_2(), 7);
 					}
-								({true}?=>(otherlv_17='depends-on='
+								({true}?=>(otherlv_18='depends-on='
 								{
-									newLeafNode(otherlv_17, grammarAccess.getComponentAccess().getDependsOnKeyword_2_7_0());
+									newLeafNode(otherlv_18, grammarAccess.getComponentAccess().getDependsOnKeyword_2_7_0());
 								}
 								(
 									(
@@ -6303,16 +6340,16 @@ ruleComponent returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getComponentAccess().getUnorderedGroup_2(), 8);
 					}
-								({true}?=>(otherlv_19='destroy-method='
+								({true}?=>(otherlv_20='destroy-method='
 								{
-									newLeafNode(otherlv_19, grammarAccess.getComponentAccess().getDestroyMethodKeyword_2_8_0());
+									newLeafNode(otherlv_20, grammarAccess.getComponentAccess().getDestroyMethodKeyword_2_8_0());
 								}
 								(
 									(
 										{
 											newCompositeNode(grammarAccess.getComponentAccess().getDetroyMethodValidStringParserRuleCall_2_8_1_0());
 										}
-										lv_detroyMethod_20_0=ruleValidString
+										lv_detroyMethod_21_0=ruleValidString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getComponentRule());
@@ -6320,7 +6357,7 @@ ruleComponent returns [EObject current=null]
 											set(
 												$current,
 												"detroyMethod",
-												lv_detroyMethod_20_0,
+												lv_detroyMethod_21_0,
 												"org.xtext.spring.SpringConfigDsl.ValidString");
 											afterParserOrEnumRuleCall();
 										}
@@ -6337,16 +6374,16 @@ ruleComponent returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getComponentAccess().getUnorderedGroup_2(), 9);
 					}
-								({true}?=>(otherlv_21='init-method='
+								({true}?=>(otherlv_22='init-method='
 								{
-									newLeafNode(otherlv_21, grammarAccess.getComponentAccess().getInitMethodKeyword_2_9_0());
+									newLeafNode(otherlv_22, grammarAccess.getComponentAccess().getInitMethodKeyword_2_9_0());
 								}
 								(
 									(
 										{
 											newCompositeNode(grammarAccess.getComponentAccess().getInitMethodValidStringParserRuleCall_2_9_1_0());
 										}
-										lv_initMethod_22_0=ruleValidString
+										lv_initMethod_23_0=ruleValidString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getComponentRule());
@@ -6354,7 +6391,7 @@ ruleComponent returns [EObject current=null]
 											set(
 												$current,
 												"initMethod",
-												lv_initMethod_22_0,
+												lv_initMethod_23_0,
 												"org.xtext.spring.SpringConfigDsl.ValidString");
 											afterParserOrEnumRuleCall();
 										}
@@ -6371,16 +6408,16 @@ ruleComponent returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getComponentAccess().getUnorderedGroup_2(), 10);
 					}
-								({true}?=>(otherlv_23='lazy-init='
+								({true}?=>(otherlv_24='lazy-init='
 								{
-									newLeafNode(otherlv_23, grammarAccess.getComponentAccess().getLazyInitKeyword_2_10_0());
+									newLeafNode(otherlv_24, grammarAccess.getComponentAccess().getLazyInitKeyword_2_10_0());
 								}
 								(
 									(
 										{
 											newCompositeNode(grammarAccess.getComponentAccess().getLazyInitDefaultableBooleanEnumRuleCall_2_10_1_0());
 										}
-										lv_lazyInit_24_0=ruleDefaultableBoolean
+										lv_lazyInit_25_0=ruleDefaultableBoolean
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getComponentRule());
@@ -6388,7 +6425,7 @@ ruleComponent returns [EObject current=null]
 											set(
 												$current,
 												"lazyInit",
-												lv_lazyInit_24_0,
+												lv_lazyInit_25_0,
 												"org.xtext.spring.SpringConfigDsl.DefaultableBoolean");
 											afterParserOrEnumRuleCall();
 										}
@@ -6405,9 +6442,9 @@ ruleComponent returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getComponentAccess().getUnorderedGroup_2(), 11);
 					}
-								({true}?=>(otherlv_25='parent='
+								({true}?=>(otherlv_26='parent='
 								{
-									newLeafNode(otherlv_25, grammarAccess.getComponentAccess().getParentKeyword_2_11_0());
+									newLeafNode(otherlv_26, grammarAccess.getComponentAccess().getParentKeyword_2_11_0());
 								}
 								(
 									(
@@ -6436,16 +6473,16 @@ ruleComponent returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getComponentAccess().getUnorderedGroup_2(), 12);
 					}
-								({true}?=>(otherlv_27='primary='
+								({true}?=>(otherlv_28='primary='
 								{
-									newLeafNode(otherlv_27, grammarAccess.getComponentAccess().getPrimaryKeyword_2_12_0());
+									newLeafNode(otherlv_28, grammarAccess.getComponentAccess().getPrimaryKeyword_2_12_0());
 								}
 								(
 									(
 										{
 											newCompositeNode(grammarAccess.getComponentAccess().getPrimarySBooleanEnumRuleCall_2_12_1_0());
 										}
-										lv_primary_28_0=rulesBoolean
+										lv_primary_29_0=rulesBoolean
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getComponentRule());
@@ -6453,7 +6490,7 @@ ruleComponent returns [EObject current=null]
 											set(
 												$current,
 												"primary",
-												lv_primary_28_0,
+												lv_primary_29_0,
 												"org.xtext.spring.SpringConfigDsl.sBoolean");
 											afterParserOrEnumRuleCall();
 										}
@@ -6470,16 +6507,16 @@ ruleComponent returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getComponentAccess().getUnorderedGroup_2(), 13);
 					}
-								({true}?=>(otherlv_29='scope='
+								({true}?=>(otherlv_30='scope='
 								{
-									newLeafNode(otherlv_29, grammarAccess.getComponentAccess().getScopeKeyword_2_13_0());
+									newLeafNode(otherlv_30, grammarAccess.getComponentAccess().getScopeKeyword_2_13_0());
 								}
 								(
 									(
 										{
 											newCompositeNode(grammarAccess.getComponentAccess().getScopeValidStringParserRuleCall_2_13_1_0());
 										}
-										lv_scope_30_0=ruleValidString
+										lv_scope_31_0=ruleValidString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getComponentRule());
@@ -6487,7 +6524,7 @@ ruleComponent returns [EObject current=null]
 											set(
 												$current,
 												"scope",
-												lv_scope_30_0,
+												lv_scope_31_0,
 												"org.xtext.spring.SpringConfigDsl.ValidString");
 											afterParserOrEnumRuleCall();
 										}
@@ -6508,22 +6545,22 @@ ruleComponent returns [EObject current=null]
 				}
 		)
 		(
-			otherlv_31='/>'
+			otherlv_32='/>'
 			{
-				newLeafNode(otherlv_31, grammarAccess.getComponentAccess().getSolidusGreaterThanSignKeyword_3_0());
+				newLeafNode(otherlv_32, grammarAccess.getComponentAccess().getSolidusGreaterThanSignKeyword_3_0());
 			}
 			    |
 			(
-				otherlv_32='>'
+				otherlv_33='>'
 				{
-					newLeafNode(otherlv_32, grammarAccess.getComponentAccess().getGreaterThanSignKeyword_3_1_0());
+					newLeafNode(otherlv_33, grammarAccess.getComponentAccess().getGreaterThanSignKeyword_3_1_0());
 				}
 				(
 					(
 						{
 							newCompositeNode(grammarAccess.getComponentAccess().getDescriptionDescriptionParserRuleCall_3_1_1_0());
 						}
-						lv_description_33_0=ruleDescription
+						lv_description_34_0=ruleDescription
 						{
 							if ($current==null) {
 								$current = createModelElementForParent(grammarAccess.getComponentRule());
@@ -6531,7 +6568,7 @@ ruleComponent returns [EObject current=null]
 							set(
 								$current,
 								"description",
-								lv_description_33_0,
+								lv_description_34_0,
 								"org.xtext.spring.SpringConfigDsl.Description");
 							afterParserOrEnumRuleCall();
 						}
@@ -6543,7 +6580,7 @@ ruleComponent returns [EObject current=null]
 							{
 								newCompositeNode(grammarAccess.getComponentAccess().getFeaturesFeatureParserRuleCall_3_1_2_0_0());
 							}
-							lv_features_34_0=ruleFeature
+							lv_features_35_0=ruleFeature
 							{
 								if ($current==null) {
 									$current = createModelElementForParent(grammarAccess.getComponentRule());
@@ -6551,7 +6588,7 @@ ruleComponent returns [EObject current=null]
 								add(
 									$current,
 									"features",
-									lv_features_34_0,
+									lv_features_35_0,
 									"org.xtext.spring.SpringConfigDsl.Feature");
 								afterParserOrEnumRuleCall();
 							}
@@ -6563,7 +6600,7 @@ ruleComponent returns [EObject current=null]
 							{
 								newCompositeNode(grammarAccess.getComponentAccess().getLookupMethodsLookupMethodParserRuleCall_3_1_2_1_0());
 							}
-							lv_lookupMethods_35_0=ruleLookupMethod
+							lv_lookupMethods_36_0=ruleLookupMethod
 							{
 								if ($current==null) {
 									$current = createModelElementForParent(grammarAccess.getComponentRule());
@@ -6571,7 +6608,7 @@ ruleComponent returns [EObject current=null]
 								add(
 									$current,
 									"lookupMethods",
-									lv_lookupMethods_35_0,
+									lv_lookupMethods_36_0,
 									"org.xtext.spring.SpringConfigDsl.LookupMethod");
 								afterParserOrEnumRuleCall();
 							}
@@ -6583,7 +6620,7 @@ ruleComponent returns [EObject current=null]
 							{
 								newCompositeNode(grammarAccess.getComponentAccess().getQualifiersQualifierParserRuleCall_3_1_2_2_0());
 							}
-							lv_qualifiers_36_0=ruleQualifier
+							lv_qualifiers_37_0=ruleQualifier
 							{
 								if ($current==null) {
 									$current = createModelElementForParent(grammarAccess.getComponentRule());
@@ -6591,7 +6628,7 @@ ruleComponent returns [EObject current=null]
 								add(
 									$current,
 									"qualifiers",
-									lv_qualifiers_36_0,
+									lv_qualifiers_37_0,
 									"org.xtext.spring.SpringConfigDsl.Qualifier");
 								afterParserOrEnumRuleCall();
 							}
@@ -6603,7 +6640,7 @@ ruleComponent returns [EObject current=null]
 							{
 								newCompositeNode(grammarAccess.getComponentAccess().getMetaMetaTagParserRuleCall_3_1_2_3_0());
 							}
-							lv_meta_37_0=ruleMetaTag
+							lv_meta_38_0=ruleMetaTag
 							{
 								if ($current==null) {
 									$current = createModelElementForParent(grammarAccess.getComponentRule());
@@ -6611,7 +6648,7 @@ ruleComponent returns [EObject current=null]
 								add(
 									$current,
 									"meta",
-									lv_meta_37_0,
+									lv_meta_38_0,
 									"org.xtext.spring.SpringConfigDsl.MetaTag");
 								afterParserOrEnumRuleCall();
 							}
@@ -6623,7 +6660,7 @@ ruleComponent returns [EObject current=null]
 							{
 								newCompositeNode(grammarAccess.getComponentAccess().getAopScopedProxyAopScopedProxyParserRuleCall_3_1_2_4_0());
 							}
-							lv_aopScopedProxy_38_0=ruleAopScopedProxy
+							lv_aopScopedProxy_39_0=ruleAopScopedProxy
 							{
 								if ($current==null) {
 									$current = createModelElementForParent(grammarAccess.getComponentRule());
@@ -6631,7 +6668,7 @@ ruleComponent returns [EObject current=null]
 								set(
 									$current,
 									"aopScopedProxy",
-									lv_aopScopedProxy_38_0,
+									lv_aopScopedProxy_39_0,
 									"org.xtext.spring.SpringConfigDsl.AopScopedProxy");
 								afterParserOrEnumRuleCall();
 							}
@@ -6643,7 +6680,7 @@ ruleComponent returns [EObject current=null]
 							{
 								newCompositeNode(grammarAccess.getComponentAccess().getUtilPropertiesPathUtilPropertyPathParserRuleCall_3_1_2_5_0());
 							}
-							lv_utilPropertiesPath_39_0=ruleUtilPropertyPath
+							lv_utilPropertiesPath_40_0=ruleUtilPropertyPath
 							{
 								if ($current==null) {
 									$current = createModelElementForParent(grammarAccess.getComponentRule());
@@ -6651,16 +6688,16 @@ ruleComponent returns [EObject current=null]
 								add(
 									$current,
 									"utilPropertiesPath",
-									lv_utilPropertiesPath_39_0,
+									lv_utilPropertiesPath_40_0,
 									"org.xtext.spring.SpringConfigDsl.UtilPropertyPath");
 								afterParserOrEnumRuleCall();
 							}
 						)
 					)
 				)*
-				otherlv_40='</bean>'
+				otherlv_41='</bean>'
 				{
-					newLeafNode(otherlv_40, grammarAccess.getComponentAccess().getBeanKeyword_3_1_3());
+					newLeafNode(otherlv_41, grammarAccess.getComponentAccess().getBeanKeyword_3_1_3());
 				}
 			)
 		)
@@ -8393,36 +8430,32 @@ ruleLookupMethod returns [EObject current=null]
 	leaveRule();
 }:
 	(
-		otherlv_0='<'
+		otherlv_0='<lookup-method'
 		{
-			newLeafNode(otherlv_0, grammarAccess.getLookupMethodAccess().getLessThanSignKeyword_0());
-		}
-		otherlv_1='lookup-method'
-		{
-			newLeafNode(otherlv_1, grammarAccess.getLookupMethodAccess().getLookupMethodKeyword_1());
+			newLeafNode(otherlv_0, grammarAccess.getLookupMethodAccess().getLookupMethodKeyword_0());
 		}
 		(
 			(
 				{ 
-				  getUnorderedGroupHelper().enter(grammarAccess.getLookupMethodAccess().getUnorderedGroup_2());
+				  getUnorderedGroupHelper().enter(grammarAccess.getLookupMethodAccess().getUnorderedGroup_1());
 				}
 				(
 					(
 			(
-				{getUnorderedGroupHelper().canSelect(grammarAccess.getLookupMethodAccess().getUnorderedGroup_2(), 0)}?=>(
+				{getUnorderedGroupHelper().canSelect(grammarAccess.getLookupMethodAccess().getUnorderedGroup_1(), 0)}?=>(
 					{
-						getUnorderedGroupHelper().select(grammarAccess.getLookupMethodAccess().getUnorderedGroup_2(), 0);
+						getUnorderedGroupHelper().select(grammarAccess.getLookupMethodAccess().getUnorderedGroup_1(), 0);
 					}
-								({true}?=>(otherlv_3='name='
+								({true}?=>(otherlv_2='name='
 								{
-									newLeafNode(otherlv_3, grammarAccess.getLookupMethodAccess().getNameKeyword_2_0_0());
+									newLeafNode(otherlv_2, grammarAccess.getLookupMethodAccess().getNameKeyword_1_0_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getLookupMethodAccess().getNameValidStringParserRuleCall_2_0_1_0());
+											newCompositeNode(grammarAccess.getLookupMethodAccess().getNameValidStringParserRuleCall_1_0_1_0());
 										}
-										lv_name_4_0=ruleValidString
+										lv_name_3_0=ruleValidString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getLookupMethodRule());
@@ -8430,7 +8463,7 @@ ruleLookupMethod returns [EObject current=null]
 											set(
 												$current,
 												"name",
-												lv_name_4_0,
+												lv_name_3_0,
 												"org.xtext.spring.SpringConfigDsl.ValidString");
 											afterParserOrEnumRuleCall();
 										}
@@ -8438,18 +8471,18 @@ ruleLookupMethod returns [EObject current=null]
 								)
 								))
 					{ 
-						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getLookupMethodAccess().getUnorderedGroup_2());
+						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getLookupMethodAccess().getUnorderedGroup_1());
 					}
 				)
 			)|
 			(
-				{getUnorderedGroupHelper().canSelect(grammarAccess.getLookupMethodAccess().getUnorderedGroup_2(), 1)}?=>(
+				{getUnorderedGroupHelper().canSelect(grammarAccess.getLookupMethodAccess().getUnorderedGroup_1(), 1)}?=>(
 					{
-						getUnorderedGroupHelper().select(grammarAccess.getLookupMethodAccess().getUnorderedGroup_2(), 1);
+						getUnorderedGroupHelper().select(grammarAccess.getLookupMethodAccess().getUnorderedGroup_1(), 1);
 					}
-								({true}?=>(otherlv_5='bean='
+								({true}?=>(otherlv_4='bean='
 								{
-									newLeafNode(otherlv_5, grammarAccess.getLookupMethodAccess().getBeanKeyword_2_1_0());
+									newLeafNode(otherlv_4, grammarAccess.getLookupMethodAccess().getBeanKeyword_1_1_0());
 								}
 								(
 									(
@@ -8459,7 +8492,7 @@ ruleLookupMethod returns [EObject current=null]
 											}
 										}
 										{
-											newCompositeNode(grammarAccess.getLookupMethodAccess().getRefComponentCrossReference_2_1_1_0());
+											newCompositeNode(grammarAccess.getLookupMethodAccess().getRefComponentCrossReference_1_1_1_0());
 										}
 										ruleValidString
 										{
@@ -8469,32 +8502,32 @@ ruleLookupMethod returns [EObject current=null]
 								)
 								))
 					{ 
-						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getLookupMethodAccess().getUnorderedGroup_2());
+						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getLookupMethodAccess().getUnorderedGroup_1());
 					}
 				)
 			)
 					)+
-					{getUnorderedGroupHelper().canLeave(grammarAccess.getLookupMethodAccess().getUnorderedGroup_2())}?
+					{getUnorderedGroupHelper().canLeave(grammarAccess.getLookupMethodAccess().getUnorderedGroup_1())}?
 				)
 			)
 				{ 
-				  getUnorderedGroupHelper().leave(grammarAccess.getLookupMethodAccess().getUnorderedGroup_2());
+				  getUnorderedGroupHelper().leave(grammarAccess.getLookupMethodAccess().getUnorderedGroup_1());
 				}
 		)
 		(
-			otherlv_7='/>'
+			otherlv_6='/>'
 			{
-				newLeafNode(otherlv_7, grammarAccess.getLookupMethodAccess().getSolidusGreaterThanSignKeyword_3_0());
+				newLeafNode(otherlv_6, grammarAccess.getLookupMethodAccess().getSolidusGreaterThanSignKeyword_2_0());
 			}
 			    |
 			(
-				otherlv_8='>'
+				otherlv_7='>'
 				{
-					newLeafNode(otherlv_8, grammarAccess.getLookupMethodAccess().getGreaterThanSignKeyword_3_1_0());
+					newLeafNode(otherlv_7, grammarAccess.getLookupMethodAccess().getGreaterThanSignKeyword_2_1_0());
 				}
-				otherlv_9='</lookup-method>'
+				otherlv_8='</lookup-method>'
 				{
-					newLeafNode(otherlv_9, grammarAccess.getLookupMethodAccess().getLookupMethodKeyword_3_1_1());
+					newLeafNode(otherlv_8, grammarAccess.getLookupMethodAccess().getLookupMethodKeyword_2_1_1());
 				}
 			)
 		)
@@ -12025,6 +12058,337 @@ ruleIdDashAndColon returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRule
 				newLeafNode(this_ID_3, grammarAccess.getIdDashAndColonAccess().getIDTerminalRuleCall_1_2());
 			}
 		)*
+	)
+;
+
+// Entry rule entryRuleVALIDTAG
+entryRuleVALIDTAG returns [String current=null]:
+	{ newCompositeNode(grammarAccess.getVALIDTAGRule()); }
+	iv_ruleVALIDTAG=ruleVALIDTAG
+	{ $current=$iv_ruleVALIDTAG.current.getText(); }
+	EOF;
+
+// Rule VALIDTAG
+ruleVALIDTAG returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
+@init {
+	enterRule();
+}
+@after {
+	leaveRule();
+}:
+	(
+		{
+			newCompositeNode(grammarAccess.getVALIDTAGAccess().getKeyWordParserRuleCall_0());
+		}
+		this_KeyWord_0=ruleKeyWord
+		{
+			$current.merge(this_KeyWord_0);
+		}
+		{
+			afterParserOrEnumRuleCall();
+		}
+		(
+			(
+				(
+					this_ID_1=RULE_ID
+					{
+						$current.merge(this_ID_1);
+					}
+					{
+						newLeafNode(this_ID_1, grammarAccess.getVALIDTAGAccess().getIDTerminalRuleCall_1_0_0_0());
+					}
+					kw='='
+					{
+						$current.merge(kw);
+						newLeafNode(kw, grammarAccess.getVALIDTAGAccess().getEqualsSignKeyword_1_0_0_1());
+					}
+				)
+				    |
+				(
+					this_IDWITHDASH_3=RULE_IDWITHDASH
+					{
+						$current.merge(this_IDWITHDASH_3);
+					}
+					{
+						newLeafNode(this_IDWITHDASH_3, grammarAccess.getVALIDTAGAccess().getIDWITHDASHTerminalRuleCall_1_0_1_0());
+					}
+					kw='='
+					{
+						$current.merge(kw);
+						newLeafNode(kw, grammarAccess.getVALIDTAGAccess().getEqualsSignKeyword_1_0_1_1());
+					}
+				)
+				    |
+				kw='name='
+				{
+					$current.merge(kw);
+					newLeafNode(kw, grammarAccess.getVALIDTAGAccess().getNameKeyword_1_0_2());
+				}
+				    |
+				kw='type='
+				{
+					$current.merge(kw);
+					newLeafNode(kw, grammarAccess.getVALIDTAGAccess().getTypeKeyword_1_0_3());
+				}
+				    |
+				kw='alias='
+				{
+					$current.merge(kw);
+					newLeafNode(kw, grammarAccess.getVALIDTAGAccess().getAliasKeyword_1_0_4());
+				}
+			)
+			{
+				newCompositeNode(grammarAccess.getVALIDTAGAccess().getValidStringParserRuleCall_1_1());
+			}
+			this_ValidString_8=ruleValidString
+			{
+				$current.merge(this_ValidString_8);
+			}
+			{
+				afterParserOrEnumRuleCall();
+			}
+		)*
+		(
+			(
+				kw='>'
+				{
+					$current.merge(kw);
+					newLeafNode(kw, grammarAccess.getVALIDTAGAccess().getGreaterThanSignKeyword_2_0_0());
+				}
+				(
+					{
+						newCompositeNode(grammarAccess.getVALIDTAGAccess().getVALIDTAGParserRuleCall_2_0_1());
+					}
+					this_VALIDTAG_10=ruleVALIDTAG
+					{
+						$current.merge(this_VALIDTAG_10);
+					}
+					{
+						afterParserOrEnumRuleCall();
+					}
+				)*
+				{
+					newCompositeNode(grammarAccess.getVALIDTAGAccess().getEndingKeyWordParserRuleCall_2_0_2());
+				}
+				this_EndingKeyWord_11=ruleEndingKeyWord
+				{
+					$current.merge(this_EndingKeyWord_11);
+				}
+				{
+					afterParserOrEnumRuleCall();
+				}
+			)
+			    |
+			kw='/>'
+			{
+				$current.merge(kw);
+				newLeafNode(kw, grammarAccess.getVALIDTAGAccess().getSolidusGreaterThanSignKeyword_2_1());
+			}
+		)
+	)
+;
+
+// Entry rule entryRuleEndingKeyWord
+entryRuleEndingKeyWord returns [String current=null]:
+	{ newCompositeNode(grammarAccess.getEndingKeyWordRule()); }
+	iv_ruleEndingKeyWord=ruleEndingKeyWord
+	{ $current=$iv_ruleEndingKeyWord.current.getText(); }
+	EOF;
+
+// Rule EndingKeyWord
+ruleEndingKeyWord returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
+@init {
+	enterRule();
+}
+@after {
+	leaveRule();
+}:
+	(
+		kw='</form-login>'
+		{
+			$current.merge(kw);
+			newLeafNode(kw, grammarAccess.getEndingKeyWordAccess().getFormLoginKeyword_0());
+		}
+		    |
+		kw='</logout>'
+		{
+			$current.merge(kw);
+			newLeafNode(kw, grammarAccess.getEndingKeyWordAccess().getLogoutKeyword_1());
+		}
+		    |
+		kw='</intercept-url>'
+		{
+			$current.merge(kw);
+			newLeafNode(kw, grammarAccess.getEndingKeyWordAccess().getInterceptUrlKeyword_2());
+		}
+		    |
+		kw='</http-basic>'
+		{
+			$current.merge(kw);
+			newLeafNode(kw, grammarAccess.getEndingKeyWordAccess().getHttpBasicKeyword_3());
+		}
+		    |
+		kw='</port-mappings>'
+		{
+			$current.merge(kw);
+			newLeafNode(kw, grammarAccess.getEndingKeyWordAccess().getPortMappingsKeyword_4());
+		}
+		    |
+		kw='</session-management>'
+		{
+			$current.merge(kw);
+			newLeafNode(kw, grammarAccess.getEndingKeyWordAccess().getSessionManagementKeyword_5());
+		}
+		    |
+		kw='</concurrency-control>'
+		{
+			$current.merge(kw);
+			newLeafNode(kw, grammarAccess.getEndingKeyWordAccess().getConcurrencyControlKeyword_6());
+		}
+		    |
+		kw='</openid-login>'
+		{
+			$current.merge(kw);
+			newLeafNode(kw, grammarAccess.getEndingKeyWordAccess().getOpenidLoginKeyword_7());
+		}
+		    |
+		kw='</attribute-exchange>'
+		{
+			$current.merge(kw);
+			newLeafNode(kw, grammarAccess.getEndingKeyWordAccess().getAttributeExchangeKeyword_8());
+		}
+		    |
+		kw='</openid-attribute>'
+		{
+			$current.merge(kw);
+			newLeafNode(kw, grammarAccess.getEndingKeyWordAccess().getOpenidAttributeKeyword_9());
+		}
+		    |
+		kw='</custom-filter>'
+		{
+			$current.merge(kw);
+			newLeafNode(kw, grammarAccess.getEndingKeyWordAccess().getCustomFilterKeyword_10());
+		}
+		    |
+		kw='</authentication-provider>'
+		{
+			$current.merge(kw);
+			newLeafNode(kw, grammarAccess.getEndingKeyWordAccess().getAuthenticationProviderKeyword_11());
+		}
+		    |
+		kw='</password-encoder>'
+		{
+			$current.merge(kw);
+			newLeafNode(kw, grammarAccess.getEndingKeyWordAccess().getPasswordEncoderKeyword_12());
+		}
+		    |
+		kw='</salt-source>'
+		{
+			$current.merge(kw);
+			newLeafNode(kw, grammarAccess.getEndingKeyWordAccess().getSaltSourceKeyword_13());
+		}
+	)
+;
+
+// Entry rule entryRuleKeyWord
+entryRuleKeyWord returns [String current=null]:
+	{ newCompositeNode(grammarAccess.getKeyWordRule()); }
+	iv_ruleKeyWord=ruleKeyWord
+	{ $current=$iv_ruleKeyWord.current.getText(); }
+	EOF;
+
+// Rule KeyWord
+ruleKeyWord returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
+@init {
+	enterRule();
+}
+@after {
+	leaveRule();
+}:
+	(
+		kw='<form-login'
+		{
+			$current.merge(kw);
+			newLeafNode(kw, grammarAccess.getKeyWordAccess().getFormLoginKeyword_0());
+		}
+		    |
+		kw='<logout'
+		{
+			$current.merge(kw);
+			newLeafNode(kw, grammarAccess.getKeyWordAccess().getLogoutKeyword_1());
+		}
+		    |
+		kw='<intercept-url'
+		{
+			$current.merge(kw);
+			newLeafNode(kw, grammarAccess.getKeyWordAccess().getInterceptUrlKeyword_2());
+		}
+		    |
+		kw='<http-basic'
+		{
+			$current.merge(kw);
+			newLeafNode(kw, grammarAccess.getKeyWordAccess().getHttpBasicKeyword_3());
+		}
+		    |
+		kw='<port-mappings'
+		{
+			$current.merge(kw);
+			newLeafNode(kw, grammarAccess.getKeyWordAccess().getPortMappingsKeyword_4());
+		}
+		    |
+		kw='<session-management'
+		{
+			$current.merge(kw);
+			newLeafNode(kw, grammarAccess.getKeyWordAccess().getSessionManagementKeyword_5());
+		}
+		    |
+		kw='<concurrency-control'
+		{
+			$current.merge(kw);
+			newLeafNode(kw, grammarAccess.getKeyWordAccess().getConcurrencyControlKeyword_6());
+		}
+		    |
+		kw='<openid-login'
+		{
+			$current.merge(kw);
+			newLeafNode(kw, grammarAccess.getKeyWordAccess().getOpenidLoginKeyword_7());
+		}
+		    |
+		kw='<attribute-exchange'
+		{
+			$current.merge(kw);
+			newLeafNode(kw, grammarAccess.getKeyWordAccess().getAttributeExchangeKeyword_8());
+		}
+		    |
+		kw='<openid-attribute'
+		{
+			$current.merge(kw);
+			newLeafNode(kw, grammarAccess.getKeyWordAccess().getOpenidAttributeKeyword_9());
+		}
+		    |
+		kw='<custom-filter'
+		{
+			$current.merge(kw);
+			newLeafNode(kw, grammarAccess.getKeyWordAccess().getCustomFilterKeyword_10());
+		}
+		    |
+		kw='<authentication-provider'
+		{
+			$current.merge(kw);
+			newLeafNode(kw, grammarAccess.getKeyWordAccess().getAuthenticationProviderKeyword_11());
+		}
+		    |
+		kw='<password-encoder'
+		{
+			$current.merge(kw);
+			newLeafNode(kw, grammarAccess.getKeyWordAccess().getPasswordEncoderKeyword_12());
+		}
+		    |
+		kw='<salt-source'
+		{
+			$current.merge(kw);
+			newLeafNode(kw, grammarAccess.getKeyWordAccess().getSaltSourceKeyword_13());
+		}
 	)
 ;
 

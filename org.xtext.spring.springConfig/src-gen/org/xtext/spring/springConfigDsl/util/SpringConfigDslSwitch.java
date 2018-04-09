@@ -41,6 +41,7 @@ import org.xtext.spring.springConfigDsl.DeclareParents;
 import org.xtext.spring.springConfigDsl.ExcludeFilter;
 import org.xtext.spring.springConfigDsl.Factory;
 import org.xtext.spring.springConfigDsl.Feature;
+import org.xtext.spring.springConfigDsl.Http;
 import org.xtext.spring.springConfigDsl.Import;
 import org.xtext.spring.springConfigDsl.IncludeFilter;
 import org.xtext.spring.springConfigDsl.Interface;
@@ -65,6 +66,7 @@ import org.xtext.spring.springConfigDsl.Reference;
 import org.xtext.spring.springConfigDsl.SpringConfigDslPackage;
 import org.xtext.spring.springConfigDsl.SpringConfigured;
 import org.xtext.spring.springConfigDsl.SpringProject;
+import org.xtext.spring.springConfigDsl.SpringSecurity;
 import org.xtext.spring.springConfigDsl.TxAdvise;
 import org.xtext.spring.springConfigDsl.TxAnnotation;
 import org.xtext.spring.springConfigDsl.TxAttribute;
@@ -184,6 +186,20 @@ public class SpringConfigDslSwitch<T> extends Switch<T>
       {
         MVC mvc = (MVC)theEObject;
         T result = caseMVC(mvc);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case SpringConfigDslPackage.HTTP:
+      {
+        Http http = (Http)theEObject;
+        T result = caseHttp(http);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case SpringConfigDslPackage.SPRING_SECURITY:
+      {
+        SpringSecurity springSecurity = (SpringSecurity)theEObject;
+        T result = caseSpringSecurity(springSecurity);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -524,6 +540,8 @@ public class SpringConfigDslSwitch<T> extends Switch<T>
         Reference reference = (Reference)theEObject;
         T result = caseReference(reference);
         if (result == null) result = caseAbstractArtefact(reference);
+        if (result == null) result = caseHttp(reference);
+        if (result == null) result = caseSpringSecurity(reference);
         if (result == null) result = caseAbstractKeyValue(reference);
         if (result == null) result = defaultCase(theEObject);
         return result;
@@ -790,6 +808,38 @@ public class SpringConfigDslSwitch<T> extends Switch<T>
    * @generated
    */
   public T caseMVC(MVC object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Http</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Http</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseHttp(Http object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Spring Security</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Spring Security</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseSpringSecurity(SpringSecurity object)
   {
     return null;
   }

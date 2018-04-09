@@ -20,7 +20,7 @@ package org.xtext.spring.springConfigDsl;
  * @model
  * @generated
  */
-public interface Reference extends AbstractArtefact
+public interface Reference extends AbstractArtefact, Http, SpringSecurity
 {
   /**
    * Returns the value of the '<em><b>Ref</b></em>' reference.

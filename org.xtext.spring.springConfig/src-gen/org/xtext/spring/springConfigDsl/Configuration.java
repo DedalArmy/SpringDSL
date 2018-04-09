@@ -30,6 +30,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link org.xtext.spring.springConfigDsl.Configuration#getContexts <em>Contexts</em>}</li>
  *   <li>{@link org.xtext.spring.springConfigDsl.Configuration#getMvcs <em>Mvcs</em>}</li>
  *   <li>{@link org.xtext.spring.springConfigDsl.Configuration#getHttps <em>Https</em>}</li>
+ *   <li>{@link org.xtext.spring.springConfigDsl.Configuration#getSpringSecurity <em>Spring Security</em>}</li>
  *   <li>{@link org.xtext.spring.springConfigDsl.Configuration#getAspects <em>Aspects</em>}</li>
  *   <li>{@link org.xtext.spring.springConfigDsl.Configuration#getUtilConstants <em>Util Constants</em>}</li>
  *   <li>{@link org.xtext.spring.springConfigDsl.Configuration#getUtilLists <em>Util Lists</em>}</li>
@@ -347,20 +348,36 @@ public interface Configuration extends EObject
   EList<MVC> getMvcs();
 
   /**
-   * Returns the value of the '<em><b>Https</b></em>' attribute list.
-   * The list contents are of type {@link java.lang.String}.
+   * Returns the value of the '<em><b>Https</b></em>' containment reference list.
+   * The list contents are of type {@link org.xtext.spring.springConfigDsl.Http}.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Https</em>' attribute list isn't clear,
+   * If the meaning of the '<em>Https</em>' containment reference list isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Https</em>' attribute list.
+   * @return the value of the '<em>Https</em>' containment reference list.
    * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getConfiguration_Https()
-   * @model unique="false"
+   * @model containment="true"
    * @generated
    */
-  EList<String> getHttps();
+  EList<Http> getHttps();
+
+  /**
+   * Returns the value of the '<em><b>Spring Security</b></em>' containment reference list.
+   * The list contents are of type {@link org.xtext.spring.springConfigDsl.SpringSecurity}.
+   * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of the '<em>Spring Security</em>' containment reference list isn't clear,
+   * there really should be more of a description here...
+   * </p>
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Spring Security</em>' containment reference list.
+   * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getConfiguration_SpringSecurity()
+   * @model containment="true"
+   * @generated
+   */
+  EList<SpringSecurity> getSpringSecurity();
 
   /**
    * Returns the value of the '<em><b>Aspects</b></em>' containment reference list.

@@ -194,43 +194,42 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Action cConfigurationAction_0 = (Action)cGroup.eContents().get(0);
 		private final Group cGroup_1 = (Group)cGroup.eContents().get(1);
-		private final Keyword cBeansKeyword_1_0 = (Keyword)cGroup_1.eContents().get(0);
+		private final Alternatives cAlternatives_1_0 = (Alternatives)cGroup_1.eContents().get(0);
+		private final Keyword cBeansKeyword_1_0_0 = (Keyword)cAlternatives_1_0.eContents().get(0);
+		private final Keyword cBeansBeansKeyword_1_0_1 = (Keyword)cAlternatives_1_0.eContents().get(1);
 		private final UnorderedGroup cUnorderedGroup_1_1 = (UnorderedGroup)cGroup_1.eContents().get(1);
 		private final Group cGroup_1_1_0 = (Group)cUnorderedGroup_1_1.eContents().get(0);
-		private final Keyword cColonKeyword_1_1_0_0 = (Keyword)cGroup_1_1_0.eContents().get(0);
-		private final RuleCall cIDTerminalRuleCall_1_1_0_1 = (RuleCall)cGroup_1_1_0.eContents().get(1);
+		private final Keyword cDefaultAutowireKeyword_1_1_0_0 = (Keyword)cGroup_1_1_0.eContents().get(0);
+		private final Assignment cDefaultAutowireAssignment_1_1_0_1 = (Assignment)cGroup_1_1_0.eContents().get(1);
+		private final RuleCall cDefaultAutowireAutoWiredTypeEnumRuleCall_1_1_0_1_0 = (RuleCall)cDefaultAutowireAssignment_1_1_0_1.eContents().get(0);
 		private final Group cGroup_1_1_1 = (Group)cUnorderedGroup_1_1.eContents().get(1);
-		private final Keyword cDefaultAutowireKeyword_1_1_1_0 = (Keyword)cGroup_1_1_1.eContents().get(0);
-		private final Assignment cDefaultAutowireAssignment_1_1_1_1 = (Assignment)cGroup_1_1_1.eContents().get(1);
-		private final RuleCall cDefaultAutowireAutoWiredTypeEnumRuleCall_1_1_1_1_0 = (RuleCall)cDefaultAutowireAssignment_1_1_1_1.eContents().get(0);
+		private final Keyword cDefaultInitMethodKeyword_1_1_1_0 = (Keyword)cGroup_1_1_1.eContents().get(0);
+		private final Assignment cDefaultInitMethodAssignment_1_1_1_1 = (Assignment)cGroup_1_1_1.eContents().get(1);
+		private final RuleCall cDefaultInitMethodValidStringParserRuleCall_1_1_1_1_0 = (RuleCall)cDefaultInitMethodAssignment_1_1_1_1.eContents().get(0);
 		private final Group cGroup_1_1_2 = (Group)cUnorderedGroup_1_1.eContents().get(2);
-		private final Keyword cDefaultInitMethodKeyword_1_1_2_0 = (Keyword)cGroup_1_1_2.eContents().get(0);
-		private final Assignment cDefaultInitMethodAssignment_1_1_2_1 = (Assignment)cGroup_1_1_2.eContents().get(1);
-		private final RuleCall cDefaultInitMethodValidStringParserRuleCall_1_1_2_1_0 = (RuleCall)cDefaultInitMethodAssignment_1_1_2_1.eContents().get(0);
+		private final Keyword cDefaultAutowireCandidatesKeyword_1_1_2_0 = (Keyword)cGroup_1_1_2.eContents().get(0);
+		private final Assignment cDefaultAutowireCandidatesAssignment_1_1_2_1 = (Assignment)cGroup_1_1_2.eContents().get(1);
+		private final RuleCall cDefaultAutowireCandidatesValidStringParserRuleCall_1_1_2_1_0 = (RuleCall)cDefaultAutowireCandidatesAssignment_1_1_2_1.eContents().get(0);
 		private final Group cGroup_1_1_3 = (Group)cUnorderedGroup_1_1.eContents().get(3);
-		private final Keyword cDefaultAutowireCandidatesKeyword_1_1_3_0 = (Keyword)cGroup_1_1_3.eContents().get(0);
-		private final Assignment cDefaultAutowireCandidatesAssignment_1_1_3_1 = (Assignment)cGroup_1_1_3.eContents().get(1);
-		private final RuleCall cDefaultAutowireCandidatesValidStringParserRuleCall_1_1_3_1_0 = (RuleCall)cDefaultAutowireCandidatesAssignment_1_1_3_1.eContents().get(0);
+		private final Keyword cDefaultDestroyMethodKeyword_1_1_3_0 = (Keyword)cGroup_1_1_3.eContents().get(0);
+		private final Assignment cDefaultDestroyMethodAssignment_1_1_3_1 = (Assignment)cGroup_1_1_3.eContents().get(1);
+		private final RuleCall cDefaultDestroyMethodValidStringParserRuleCall_1_1_3_1_0 = (RuleCall)cDefaultDestroyMethodAssignment_1_1_3_1.eContents().get(0);
 		private final Group cGroup_1_1_4 = (Group)cUnorderedGroup_1_1.eContents().get(4);
-		private final Keyword cDefaultDestroyMethodKeyword_1_1_4_0 = (Keyword)cGroup_1_1_4.eContents().get(0);
-		private final Assignment cDefaultDestroyMethodAssignment_1_1_4_1 = (Assignment)cGroup_1_1_4.eContents().get(1);
-		private final RuleCall cDefaultDestroyMethodValidStringParserRuleCall_1_1_4_1_0 = (RuleCall)cDefaultDestroyMethodAssignment_1_1_4_1.eContents().get(0);
+		private final Keyword cDefaultLazyInitKeyword_1_1_4_0 = (Keyword)cGroup_1_1_4.eContents().get(0);
+		private final Assignment cDefaultLazyInitAssignment_1_1_4_1 = (Assignment)cGroup_1_1_4.eContents().get(1);
+		private final RuleCall cDefaultLazyInitDefaultableBooleanEnumRuleCall_1_1_4_1_0 = (RuleCall)cDefaultLazyInitAssignment_1_1_4_1.eContents().get(0);
 		private final Group cGroup_1_1_5 = (Group)cUnorderedGroup_1_1.eContents().get(5);
-		private final Keyword cDefaultLazyInitKeyword_1_1_5_0 = (Keyword)cGroup_1_1_5.eContents().get(0);
-		private final Assignment cDefaultLazyInitAssignment_1_1_5_1 = (Assignment)cGroup_1_1_5.eContents().get(1);
-		private final RuleCall cDefaultLazyInitDefaultableBooleanEnumRuleCall_1_1_5_1_0 = (RuleCall)cDefaultLazyInitAssignment_1_1_5_1.eContents().get(0);
+		private final Keyword cDefaultMergeKeyword_1_1_5_0 = (Keyword)cGroup_1_1_5.eContents().get(0);
+		private final Assignment cDefaultMergeAssignment_1_1_5_1 = (Assignment)cGroup_1_1_5.eContents().get(1);
+		private final RuleCall cDefaultMergeDefaultableBooleanEnumRuleCall_1_1_5_1_0 = (RuleCall)cDefaultMergeAssignment_1_1_5_1.eContents().get(0);
 		private final Group cGroup_1_1_6 = (Group)cUnorderedGroup_1_1.eContents().get(6);
-		private final Keyword cDefaultMergeKeyword_1_1_6_0 = (Keyword)cGroup_1_1_6.eContents().get(0);
-		private final Assignment cDefaultMergeAssignment_1_1_6_1 = (Assignment)cGroup_1_1_6.eContents().get(1);
-		private final RuleCall cDefaultMergeDefaultableBooleanEnumRuleCall_1_1_6_1_0 = (RuleCall)cDefaultMergeAssignment_1_1_6_1.eContents().get(0);
+		private final Keyword cProfileKeyword_1_1_6_0 = (Keyword)cGroup_1_1_6.eContents().get(0);
+		private final Assignment cProfileAssignment_1_1_6_1 = (Assignment)cGroup_1_1_6.eContents().get(1);
+		private final RuleCall cProfileValidStringParserRuleCall_1_1_6_1_0 = (RuleCall)cProfileAssignment_1_1_6_1.eContents().get(0);
 		private final Group cGroup_1_1_7 = (Group)cUnorderedGroup_1_1.eContents().get(7);
-		private final Keyword cProfileKeyword_1_1_7_0 = (Keyword)cGroup_1_1_7.eContents().get(0);
-		private final Assignment cProfileAssignment_1_1_7_1 = (Assignment)cGroup_1_1_7.eContents().get(1);
-		private final RuleCall cProfileValidStringParserRuleCall_1_1_7_1_0 = (RuleCall)cProfileAssignment_1_1_7_1.eContents().get(0);
-		private final Group cGroup_1_1_8 = (Group)cUnorderedGroup_1_1.eContents().get(8);
-		private final RuleCall cIdDashAndColonParserRuleCall_1_1_8_0 = (RuleCall)cGroup_1_1_8.eContents().get(0);
-		private final Keyword cEqualsSignKeyword_1_1_8_1 = (Keyword)cGroup_1_1_8.eContents().get(1);
-		private final RuleCall cValidStringParserRuleCall_1_1_8_2 = (RuleCall)cGroup_1_1_8.eContents().get(2);
+		private final RuleCall cIdDashAndColonParserRuleCall_1_1_7_0 = (RuleCall)cGroup_1_1_7.eContents().get(0);
+		private final Keyword cEqualsSignKeyword_1_1_7_1 = (Keyword)cGroup_1_1_7.eContents().get(1);
+		private final RuleCall cValidStringParserRuleCall_1_1_7_2 = (RuleCall)cGroup_1_1_7.eContents().get(2);
 		private final Keyword cGreaterThanSignKeyword_1_2 = (Keyword)cGroup_1.eContents().get(2);
 		private final Assignment cDescriptionAssignment_2 = (Assignment)cGroup.eContents().get(2);
 		private final RuleCall cDescriptionDescriptionParserRuleCall_2_0 = (RuleCall)cDescriptionAssignment_2.eContents().get(0);
@@ -247,40 +246,38 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cMvcsMVCParserRuleCall_3_4_0 = (RuleCall)cMvcsAssignment_3_4.eContents().get(0);
 		private final Assignment cHttpsAssignment_3_5 = (Assignment)cAlternatives_3.eContents().get(5);
 		private final RuleCall cHttpsHttpParserRuleCall_3_5_0 = (RuleCall)cHttpsAssignment_3_5.eContents().get(0);
-		private final Assignment cAspectsAssignment_3_6 = (Assignment)cAlternatives_3.eContents().get(6);
-		private final RuleCall cAspectsAspectParserRuleCall_3_6_0 = (RuleCall)cAspectsAssignment_3_6.eContents().get(0);
-		private final Assignment cUtilConstantsAssignment_3_7 = (Assignment)cAlternatives_3.eContents().get(7);
-		private final RuleCall cUtilConstantsUtilConstantParserRuleCall_3_7_0 = (RuleCall)cUtilConstantsAssignment_3_7.eContents().get(0);
-		private final Assignment cUtilListsAssignment_3_8 = (Assignment)cAlternatives_3.eContents().get(8);
-		private final RuleCall cUtilListsUtilListParserRuleCall_3_8_0 = (RuleCall)cUtilListsAssignment_3_8.eContents().get(0);
-		private final Assignment cUtilMapsAssignment_3_9 = (Assignment)cAlternatives_3.eContents().get(9);
-		private final RuleCall cUtilMapsUtilMapParserRuleCall_3_9_0 = (RuleCall)cUtilMapsAssignment_3_9.eContents().get(0);
-		private final Assignment cUtilPropertiesAssignment_3_10 = (Assignment)cAlternatives_3.eContents().get(10);
-		private final RuleCall cUtilPropertiesUtilPropertiesParserRuleCall_3_10_0 = (RuleCall)cUtilPropertiesAssignment_3_10.eContents().get(0);
-		private final Assignment cUtilSetsAssignment_3_11 = (Assignment)cAlternatives_3.eContents().get(11);
-		private final RuleCall cUtilSetsUtilSetParserRuleCall_3_11_0 = (RuleCall)cUtilSetsAssignment_3_11.eContents().get(0);
-		private final Assignment cUtilPropertiesPathAssignment_3_12 = (Assignment)cAlternatives_3.eContents().get(12);
-		private final RuleCall cUtilPropertiesPathUtilPropertyPathParserRuleCall_3_12_0 = (RuleCall)cUtilPropertiesPathAssignment_3_12.eContents().get(0);
-		private final Assignment cTxAdvicesAssignment_3_13 = (Assignment)cAlternatives_3.eContents().get(13);
-		private final RuleCall cTxAdvicesTxAdviseParserRuleCall_3_13_0 = (RuleCall)cTxAdvicesAssignment_3_13.eContents().get(0);
-		private final Assignment cTxJtaTransactionManagerAssignment_3_14 = (Assignment)cAlternatives_3.eContents().get(14);
-		private final RuleCall cTxJtaTransactionManagerTxJtaTransactionManagerParserRuleCall_3_14_0 = (RuleCall)cTxJtaTransactionManagerAssignment_3_14.eContents().get(0);
-		private final Assignment cTxAnnotationsAssignment_3_15 = (Assignment)cAlternatives_3.eContents().get(15);
-		private final RuleCall cTxAnnotationsTxAnnotationParserRuleCall_3_15_0 = (RuleCall)cTxAnnotationsAssignment_3_15.eContents().get(0);
+		private final Assignment cSpringSecurityAssignment_3_6 = (Assignment)cAlternatives_3.eContents().get(6);
+		private final RuleCall cSpringSecuritySpringSecurityParserRuleCall_3_6_0 = (RuleCall)cSpringSecurityAssignment_3_6.eContents().get(0);
+		private final Assignment cAspectsAssignment_3_7 = (Assignment)cAlternatives_3.eContents().get(7);
+		private final RuleCall cAspectsAspectParserRuleCall_3_7_0 = (RuleCall)cAspectsAssignment_3_7.eContents().get(0);
+		private final Assignment cUtilConstantsAssignment_3_8 = (Assignment)cAlternatives_3.eContents().get(8);
+		private final RuleCall cUtilConstantsUtilConstantParserRuleCall_3_8_0 = (RuleCall)cUtilConstantsAssignment_3_8.eContents().get(0);
+		private final Assignment cUtilListsAssignment_3_9 = (Assignment)cAlternatives_3.eContents().get(9);
+		private final RuleCall cUtilListsUtilListParserRuleCall_3_9_0 = (RuleCall)cUtilListsAssignment_3_9.eContents().get(0);
+		private final Assignment cUtilMapsAssignment_3_10 = (Assignment)cAlternatives_3.eContents().get(10);
+		private final RuleCall cUtilMapsUtilMapParserRuleCall_3_10_0 = (RuleCall)cUtilMapsAssignment_3_10.eContents().get(0);
+		private final Assignment cUtilPropertiesAssignment_3_11 = (Assignment)cAlternatives_3.eContents().get(11);
+		private final RuleCall cUtilPropertiesUtilPropertiesParserRuleCall_3_11_0 = (RuleCall)cUtilPropertiesAssignment_3_11.eContents().get(0);
+		private final Assignment cUtilSetsAssignment_3_12 = (Assignment)cAlternatives_3.eContents().get(12);
+		private final RuleCall cUtilSetsUtilSetParserRuleCall_3_12_0 = (RuleCall)cUtilSetsAssignment_3_12.eContents().get(0);
+		private final Assignment cUtilPropertiesPathAssignment_3_13 = (Assignment)cAlternatives_3.eContents().get(13);
+		private final RuleCall cUtilPropertiesPathUtilPropertyPathParserRuleCall_3_13_0 = (RuleCall)cUtilPropertiesPathAssignment_3_13.eContents().get(0);
+		private final Assignment cTxAdvicesAssignment_3_14 = (Assignment)cAlternatives_3.eContents().get(14);
+		private final RuleCall cTxAdvicesTxAdviseParserRuleCall_3_14_0 = (RuleCall)cTxAdvicesAssignment_3_14.eContents().get(0);
+		private final Assignment cTxJtaTransactionManagerAssignment_3_15 = (Assignment)cAlternatives_3.eContents().get(15);
+		private final RuleCall cTxJtaTransactionManagerTxJtaTransactionManagerParserRuleCall_3_15_0 = (RuleCall)cTxJtaTransactionManagerAssignment_3_15.eContents().get(0);
+		private final Assignment cTxAnnotationsAssignment_3_16 = (Assignment)cAlternatives_3.eContents().get(16);
+		private final RuleCall cTxAnnotationsTxAnnotationParserRuleCall_3_16_0 = (RuleCall)cTxAnnotationsAssignment_3_16.eContents().get(0);
 		private final Assignment cConfigurationCompositeAssignment_4 = (Assignment)cGroup.eContents().get(4);
 		private final RuleCall cConfigurationCompositeConfigurationParserRuleCall_4_0 = (RuleCall)cConfigurationCompositeAssignment_4.eContents().get(0);
-		private final Group cGroup_5 = (Group)cGroup.eContents().get(5);
-		private final Keyword cBeansKeyword_5_0 = (Keyword)cGroup_5.eContents().get(0);
-		private final Group cGroup_5_1 = (Group)cGroup_5.eContents().get(1);
-		private final Keyword cColonKeyword_5_1_0 = (Keyword)cGroup_5_1.eContents().get(0);
-		private final RuleCall cIDTerminalRuleCall_5_1_1 = (RuleCall)cGroup_5_1.eContents().get(1);
-		private final Keyword cGreaterThanSignKeyword_5_2 = (Keyword)cGroup_5.eContents().get(2);
+		private final Alternatives cAlternatives_5 = (Alternatives)cGroup.eContents().get(5);
+		private final Keyword cBeansKeyword_5_0 = (Keyword)cAlternatives_5.eContents().get(0);
+		private final Keyword cBeansBeansKeyword_5_1 = (Keyword)cAlternatives_5.eContents().get(1);
 		
 		///**Abstract Class of Collection  */ /*Util:
 		//	(UtilConstant|UtilPropertyPath|UtilProperties/* |UtilList|UtilMap|UtilSet)
 		//;*/ /*<beans/> */ Configuration:
-		//	{Configuration} ('<beans' ((':' ID)?
-		//	& ('default-autowire=' defaultAutowire=AutoWiredType)?
+		//	{Configuration} (('<beans' | '<beans:beans') (('default-autowire=' defaultAutowire=AutoWiredType)?
 		//	& ('default-init-method=' defaultInitMethod=ValidString)? //Method
 		//	& ('default-autowire-candidates=' defaultAutowireCandidates=ValidString)? //REGEX
 		//	& ('default-destroy-method=' defaultDestroyMethod=ValidString)? //Method
@@ -292,30 +289,31 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		//	| contexts+=Context
 		//	| mvcs+=MVC
 		//	| https+=Http
+		//	| springSecurity+=SpringSecurity
 		//	| aspects+=Aspect
 		//	| utilConstants+=UtilConstant | utilLists+=UtilList | utilMaps+=UtilMap
 		//	| utilProperties+=UtilProperties | utilSets+=UtilSet | utilPropertiesPath+=UtilPropertyPath
 		//	| txAdvices+=TxAdvise | txJtaTransactionManager+=TxJtaTransactionManager | txAnnotations+=TxAnnotation)*
-		//	ConfigurationComposite+=Configuration* ('</beans' (':' ID)? '>');
+		//	ConfigurationComposite+=Configuration* ('</beans>' | '</beans:beans>');
 		@Override public ParserRule getRule() { return rule; }
 		
-		//{Configuration} ('<beans' ((':' ID)? & ('default-autowire=' defaultAutowire=AutoWiredType)? & ('default-init-method='
-		//defaultInitMethod=ValidString)? //Method
+		//{Configuration} (('<beans' | '<beans:beans') (('default-autowire=' defaultAutowire=AutoWiredType)? &
+		//('default-init-method=' defaultInitMethod=ValidString)? //Method
 		//& ('default-autowire-candidates=' defaultAutowireCandidates=ValidString)? //REGEX
 		//& ('default-destroy-method=' defaultDestroyMethod=ValidString)? //Method
 		//& ('default-lazy-init=' defaultLazyInit=DefaultableBoolean)? & ('default-merge=' defaultMerge=DefaultableBoolean)? //Default is false
 		//& ('profile=' profile=ValidString)? & (IdDashAndColon '=' ValidString)*) '>') description=Description?
 		//(components+=Component | alias+=Alias | imports+=Import | contexts+=Context | mvcs+=MVC | https+=Http |
-		//aspects+=Aspect | utilConstants+=UtilConstant | utilLists+=UtilList | utilMaps+=UtilMap |
-		//utilProperties+=UtilProperties | utilSets+=UtilSet | utilPropertiesPath+=UtilPropertyPath | txAdvices+=TxAdvise |
-		//txJtaTransactionManager+=TxJtaTransactionManager | txAnnotations+=TxAnnotation)*
-		//ConfigurationComposite+=Configuration* ('</beans' (':' ID)? '>')
+		//springSecurity+=SpringSecurity | aspects+=Aspect | utilConstants+=UtilConstant | utilLists+=UtilList |
+		//utilMaps+=UtilMap | utilProperties+=UtilProperties | utilSets+=UtilSet | utilPropertiesPath+=UtilPropertyPath |
+		//txAdvices+=TxAdvise | txJtaTransactionManager+=TxJtaTransactionManager | txAnnotations+=TxAnnotation)*
+		//ConfigurationComposite+=Configuration* ('</beans>' | '</beans:beans>')
 		public Group getGroup() { return cGroup; }
 		
 		//{Configuration}
 		public Action getConfigurationAction_0() { return cConfigurationAction_0; }
 		
-		//'<beans' ((':' ID)? & ('default-autowire=' defaultAutowire=AutoWiredType)? & ('default-init-method='
+		//('<beans' | '<beans:beans') (('default-autowire=' defaultAutowire=AutoWiredType)? & ('default-init-method='
 		//defaultInitMethod=ValidString)? //Method
 		//& ('default-autowire-candidates=' defaultAutowireCandidates=ValidString)? //REGEX
 		//& ('default-destroy-method=' defaultDestroyMethod=ValidString)? //Method
@@ -323,121 +321,117 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		//& ('profile=' profile=ValidString)? & (IdDashAndColon '=' ValidString)*) '>'
 		public Group getGroup_1() { return cGroup_1; }
 		
-		//'<beans'
-		public Keyword getBeansKeyword_1_0() { return cBeansKeyword_1_0; }
+		//'<beans' | '<beans:beans'
+		public Alternatives getAlternatives_1_0() { return cAlternatives_1_0; }
 		
-		//(':' ID)? & ('default-autowire=' defaultAutowire=AutoWiredType)? & ('default-init-method='
-		//defaultInitMethod=ValidString)? //Method
+		//'<beans'
+		public Keyword getBeansKeyword_1_0_0() { return cBeansKeyword_1_0_0; }
+		
+		//'<beans:beans'
+		public Keyword getBeansBeansKeyword_1_0_1() { return cBeansBeansKeyword_1_0_1; }
+		
+		//('default-autowire=' defaultAutowire=AutoWiredType)? & ('default-init-method=' defaultInitMethod=ValidString)? //Method
 		//& ('default-autowire-candidates=' defaultAutowireCandidates=ValidString)? //REGEX
 		//& ('default-destroy-method=' defaultDestroyMethod=ValidString)? //Method
 		//& ('default-lazy-init=' defaultLazyInit=DefaultableBoolean)? & ('default-merge=' defaultMerge=DefaultableBoolean)? //Default is false
 		//& ('profile=' profile=ValidString)? & (IdDashAndColon '=' ValidString)*
 		public UnorderedGroup getUnorderedGroup_1_1() { return cUnorderedGroup_1_1; }
 		
-		//(':' ID)?
+		//('default-autowire=' defaultAutowire=AutoWiredType)?
 		public Group getGroup_1_1_0() { return cGroup_1_1_0; }
 		
-		//':'
-		public Keyword getColonKeyword_1_1_0_0() { return cColonKeyword_1_1_0_0; }
-		
-		//ID
-		public RuleCall getIDTerminalRuleCall_1_1_0_1() { return cIDTerminalRuleCall_1_1_0_1; }
-		
-		//('default-autowire=' defaultAutowire=AutoWiredType)?
-		public Group getGroup_1_1_1() { return cGroup_1_1_1; }
-		
 		//'default-autowire='
-		public Keyword getDefaultAutowireKeyword_1_1_1_0() { return cDefaultAutowireKeyword_1_1_1_0; }
+		public Keyword getDefaultAutowireKeyword_1_1_0_0() { return cDefaultAutowireKeyword_1_1_0_0; }
 		
 		//defaultAutowire=AutoWiredType
-		public Assignment getDefaultAutowireAssignment_1_1_1_1() { return cDefaultAutowireAssignment_1_1_1_1; }
+		public Assignment getDefaultAutowireAssignment_1_1_0_1() { return cDefaultAutowireAssignment_1_1_0_1; }
 		
 		//AutoWiredType
-		public RuleCall getDefaultAutowireAutoWiredTypeEnumRuleCall_1_1_1_1_0() { return cDefaultAutowireAutoWiredTypeEnumRuleCall_1_1_1_1_0; }
+		public RuleCall getDefaultAutowireAutoWiredTypeEnumRuleCall_1_1_0_1_0() { return cDefaultAutowireAutoWiredTypeEnumRuleCall_1_1_0_1_0; }
 		
 		//('default-init-method=' defaultInitMethod=ValidString)?
-		public Group getGroup_1_1_2() { return cGroup_1_1_2; }
+		public Group getGroup_1_1_1() { return cGroup_1_1_1; }
 		
 		//'default-init-method='
-		public Keyword getDefaultInitMethodKeyword_1_1_2_0() { return cDefaultInitMethodKeyword_1_1_2_0; }
+		public Keyword getDefaultInitMethodKeyword_1_1_1_0() { return cDefaultInitMethodKeyword_1_1_1_0; }
 		
 		//defaultInitMethod=ValidString
-		public Assignment getDefaultInitMethodAssignment_1_1_2_1() { return cDefaultInitMethodAssignment_1_1_2_1; }
+		public Assignment getDefaultInitMethodAssignment_1_1_1_1() { return cDefaultInitMethodAssignment_1_1_1_1; }
 		
 		//ValidString
-		public RuleCall getDefaultInitMethodValidStringParserRuleCall_1_1_2_1_0() { return cDefaultInitMethodValidStringParserRuleCall_1_1_2_1_0; }
+		public RuleCall getDefaultInitMethodValidStringParserRuleCall_1_1_1_1_0() { return cDefaultInitMethodValidStringParserRuleCall_1_1_1_1_0; }
 		
 		//('default-autowire-candidates=' defaultAutowireCandidates=ValidString)?
-		public Group getGroup_1_1_3() { return cGroup_1_1_3; }
+		public Group getGroup_1_1_2() { return cGroup_1_1_2; }
 		
 		//'default-autowire-candidates='
-		public Keyword getDefaultAutowireCandidatesKeyword_1_1_3_0() { return cDefaultAutowireCandidatesKeyword_1_1_3_0; }
+		public Keyword getDefaultAutowireCandidatesKeyword_1_1_2_0() { return cDefaultAutowireCandidatesKeyword_1_1_2_0; }
 		
 		//defaultAutowireCandidates=ValidString
-		public Assignment getDefaultAutowireCandidatesAssignment_1_1_3_1() { return cDefaultAutowireCandidatesAssignment_1_1_3_1; }
+		public Assignment getDefaultAutowireCandidatesAssignment_1_1_2_1() { return cDefaultAutowireCandidatesAssignment_1_1_2_1; }
 		
 		//ValidString
-		public RuleCall getDefaultAutowireCandidatesValidStringParserRuleCall_1_1_3_1_0() { return cDefaultAutowireCandidatesValidStringParserRuleCall_1_1_3_1_0; }
+		public RuleCall getDefaultAutowireCandidatesValidStringParserRuleCall_1_1_2_1_0() { return cDefaultAutowireCandidatesValidStringParserRuleCall_1_1_2_1_0; }
 		
 		//('default-destroy-method=' defaultDestroyMethod=ValidString)?
-		public Group getGroup_1_1_4() { return cGroup_1_1_4; }
+		public Group getGroup_1_1_3() { return cGroup_1_1_3; }
 		
 		//'default-destroy-method='
-		public Keyword getDefaultDestroyMethodKeyword_1_1_4_0() { return cDefaultDestroyMethodKeyword_1_1_4_0; }
+		public Keyword getDefaultDestroyMethodKeyword_1_1_3_0() { return cDefaultDestroyMethodKeyword_1_1_3_0; }
 		
 		//defaultDestroyMethod=ValidString
-		public Assignment getDefaultDestroyMethodAssignment_1_1_4_1() { return cDefaultDestroyMethodAssignment_1_1_4_1; }
+		public Assignment getDefaultDestroyMethodAssignment_1_1_3_1() { return cDefaultDestroyMethodAssignment_1_1_3_1; }
 		
 		//ValidString
-		public RuleCall getDefaultDestroyMethodValidStringParserRuleCall_1_1_4_1_0() { return cDefaultDestroyMethodValidStringParserRuleCall_1_1_4_1_0; }
+		public RuleCall getDefaultDestroyMethodValidStringParserRuleCall_1_1_3_1_0() { return cDefaultDestroyMethodValidStringParserRuleCall_1_1_3_1_0; }
 		
 		//('default-lazy-init=' defaultLazyInit=DefaultableBoolean)?
-		public Group getGroup_1_1_5() { return cGroup_1_1_5; }
+		public Group getGroup_1_1_4() { return cGroup_1_1_4; }
 		
 		//'default-lazy-init='
-		public Keyword getDefaultLazyInitKeyword_1_1_5_0() { return cDefaultLazyInitKeyword_1_1_5_0; }
+		public Keyword getDefaultLazyInitKeyword_1_1_4_0() { return cDefaultLazyInitKeyword_1_1_4_0; }
 		
 		//defaultLazyInit=DefaultableBoolean
-		public Assignment getDefaultLazyInitAssignment_1_1_5_1() { return cDefaultLazyInitAssignment_1_1_5_1; }
+		public Assignment getDefaultLazyInitAssignment_1_1_4_1() { return cDefaultLazyInitAssignment_1_1_4_1; }
 		
 		//DefaultableBoolean
-		public RuleCall getDefaultLazyInitDefaultableBooleanEnumRuleCall_1_1_5_1_0() { return cDefaultLazyInitDefaultableBooleanEnumRuleCall_1_1_5_1_0; }
+		public RuleCall getDefaultLazyInitDefaultableBooleanEnumRuleCall_1_1_4_1_0() { return cDefaultLazyInitDefaultableBooleanEnumRuleCall_1_1_4_1_0; }
 		
 		//('default-merge=' defaultMerge=DefaultableBoolean)?
-		public Group getGroup_1_1_6() { return cGroup_1_1_6; }
+		public Group getGroup_1_1_5() { return cGroup_1_1_5; }
 		
 		//'default-merge='
-		public Keyword getDefaultMergeKeyword_1_1_6_0() { return cDefaultMergeKeyword_1_1_6_0; }
+		public Keyword getDefaultMergeKeyword_1_1_5_0() { return cDefaultMergeKeyword_1_1_5_0; }
 		
 		//defaultMerge=DefaultableBoolean
-		public Assignment getDefaultMergeAssignment_1_1_6_1() { return cDefaultMergeAssignment_1_1_6_1; }
+		public Assignment getDefaultMergeAssignment_1_1_5_1() { return cDefaultMergeAssignment_1_1_5_1; }
 		
 		//DefaultableBoolean
-		public RuleCall getDefaultMergeDefaultableBooleanEnumRuleCall_1_1_6_1_0() { return cDefaultMergeDefaultableBooleanEnumRuleCall_1_1_6_1_0; }
+		public RuleCall getDefaultMergeDefaultableBooleanEnumRuleCall_1_1_5_1_0() { return cDefaultMergeDefaultableBooleanEnumRuleCall_1_1_5_1_0; }
 		
 		//('profile=' profile=ValidString)?
-		public Group getGroup_1_1_7() { return cGroup_1_1_7; }
+		public Group getGroup_1_1_6() { return cGroup_1_1_6; }
 		
 		//'profile='
-		public Keyword getProfileKeyword_1_1_7_0() { return cProfileKeyword_1_1_7_0; }
+		public Keyword getProfileKeyword_1_1_6_0() { return cProfileKeyword_1_1_6_0; }
 		
 		//profile=ValidString
-		public Assignment getProfileAssignment_1_1_7_1() { return cProfileAssignment_1_1_7_1; }
+		public Assignment getProfileAssignment_1_1_6_1() { return cProfileAssignment_1_1_6_1; }
 		
 		//ValidString
-		public RuleCall getProfileValidStringParserRuleCall_1_1_7_1_0() { return cProfileValidStringParserRuleCall_1_1_7_1_0; }
+		public RuleCall getProfileValidStringParserRuleCall_1_1_6_1_0() { return cProfileValidStringParserRuleCall_1_1_6_1_0; }
 		
 		//(IdDashAndColon '=' ValidString)*
-		public Group getGroup_1_1_8() { return cGroup_1_1_8; }
+		public Group getGroup_1_1_7() { return cGroup_1_1_7; }
 		
 		//IdDashAndColon
-		public RuleCall getIdDashAndColonParserRuleCall_1_1_8_0() { return cIdDashAndColonParserRuleCall_1_1_8_0; }
+		public RuleCall getIdDashAndColonParserRuleCall_1_1_7_0() { return cIdDashAndColonParserRuleCall_1_1_7_0; }
 		
 		//'='
-		public Keyword getEqualsSignKeyword_1_1_8_1() { return cEqualsSignKeyword_1_1_8_1; }
+		public Keyword getEqualsSignKeyword_1_1_7_1() { return cEqualsSignKeyword_1_1_7_1; }
 		
 		//ValidString
-		public RuleCall getValidStringParserRuleCall_1_1_8_2() { return cValidStringParserRuleCall_1_1_8_2; }
+		public RuleCall getValidStringParserRuleCall_1_1_7_2() { return cValidStringParserRuleCall_1_1_7_2; }
 		
 		//'>'
 		public Keyword getGreaterThanSignKeyword_1_2() { return cGreaterThanSignKeyword_1_2; }
@@ -448,10 +442,10 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		//Description
 		public RuleCall getDescriptionDescriptionParserRuleCall_2_0() { return cDescriptionDescriptionParserRuleCall_2_0; }
 		
-		//(components+=Component | alias+=Alias | imports+=Import | contexts+=Context | mvcs+=MVC | https+=Http | aspects+=Aspect
-		//| utilConstants+=UtilConstant | utilLists+=UtilList | utilMaps+=UtilMap | utilProperties+=UtilProperties |
-		//utilSets+=UtilSet | utilPropertiesPath+=UtilPropertyPath | txAdvices+=TxAdvise |
-		//txJtaTransactionManager+=TxJtaTransactionManager | txAnnotations+=TxAnnotation)*
+		//(components+=Component | alias+=Alias | imports+=Import | contexts+=Context | mvcs+=MVC | https+=Http |
+		//springSecurity+=SpringSecurity | aspects+=Aspect | utilConstants+=UtilConstant | utilLists+=UtilList |
+		//utilMaps+=UtilMap | utilProperties+=UtilProperties | utilSets+=UtilSet | utilPropertiesPath+=UtilPropertyPath |
+		//txAdvices+=TxAdvise | txJtaTransactionManager+=TxJtaTransactionManager | txAnnotations+=TxAnnotation)*
 		public Alternatives getAlternatives_3() { return cAlternatives_3; }
 		
 		//components+=Component
@@ -490,65 +484,71 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		//Http
 		public RuleCall getHttpsHttpParserRuleCall_3_5_0() { return cHttpsHttpParserRuleCall_3_5_0; }
 		
+		//springSecurity+=SpringSecurity
+		public Assignment getSpringSecurityAssignment_3_6() { return cSpringSecurityAssignment_3_6; }
+		
+		//SpringSecurity
+		public RuleCall getSpringSecuritySpringSecurityParserRuleCall_3_6_0() { return cSpringSecuritySpringSecurityParserRuleCall_3_6_0; }
+		
 		//aspects+=Aspect
-		public Assignment getAspectsAssignment_3_6() { return cAspectsAssignment_3_6; }
+		public Assignment getAspectsAssignment_3_7() { return cAspectsAssignment_3_7; }
 		
 		//Aspect
-		public RuleCall getAspectsAspectParserRuleCall_3_6_0() { return cAspectsAspectParserRuleCall_3_6_0; }
+		public RuleCall getAspectsAspectParserRuleCall_3_7_0() { return cAspectsAspectParserRuleCall_3_7_0; }
 		
 		//utilConstants+=UtilConstant
-		public Assignment getUtilConstantsAssignment_3_7() { return cUtilConstantsAssignment_3_7; }
+		public Assignment getUtilConstantsAssignment_3_8() { return cUtilConstantsAssignment_3_8; }
 		
 		//UtilConstant
-		public RuleCall getUtilConstantsUtilConstantParserRuleCall_3_7_0() { return cUtilConstantsUtilConstantParserRuleCall_3_7_0; }
+		public RuleCall getUtilConstantsUtilConstantParserRuleCall_3_8_0() { return cUtilConstantsUtilConstantParserRuleCall_3_8_0; }
 		
 		//utilLists+=UtilList
-		public Assignment getUtilListsAssignment_3_8() { return cUtilListsAssignment_3_8; }
+		public Assignment getUtilListsAssignment_3_9() { return cUtilListsAssignment_3_9; }
 		
 		//UtilList
-		public RuleCall getUtilListsUtilListParserRuleCall_3_8_0() { return cUtilListsUtilListParserRuleCall_3_8_0; }
+		public RuleCall getUtilListsUtilListParserRuleCall_3_9_0() { return cUtilListsUtilListParserRuleCall_3_9_0; }
 		
 		//utilMaps+=UtilMap
-		public Assignment getUtilMapsAssignment_3_9() { return cUtilMapsAssignment_3_9; }
+		public Assignment getUtilMapsAssignment_3_10() { return cUtilMapsAssignment_3_10; }
 		
 		//UtilMap
-		public RuleCall getUtilMapsUtilMapParserRuleCall_3_9_0() { return cUtilMapsUtilMapParserRuleCall_3_9_0; }
+		public RuleCall getUtilMapsUtilMapParserRuleCall_3_10_0() { return cUtilMapsUtilMapParserRuleCall_3_10_0; }
 		
 		//utilProperties+=UtilProperties
-		public Assignment getUtilPropertiesAssignment_3_10() { return cUtilPropertiesAssignment_3_10; }
+		public Assignment getUtilPropertiesAssignment_3_11() { return cUtilPropertiesAssignment_3_11; }
 		
 		//UtilProperties
-		public RuleCall getUtilPropertiesUtilPropertiesParserRuleCall_3_10_0() { return cUtilPropertiesUtilPropertiesParserRuleCall_3_10_0; }
+		public RuleCall getUtilPropertiesUtilPropertiesParserRuleCall_3_11_0() { return cUtilPropertiesUtilPropertiesParserRuleCall_3_11_0; }
 		
 		//utilSets+=UtilSet
-		public Assignment getUtilSetsAssignment_3_11() { return cUtilSetsAssignment_3_11; }
+		public Assignment getUtilSetsAssignment_3_12() { return cUtilSetsAssignment_3_12; }
 		
 		//UtilSet
-		public RuleCall getUtilSetsUtilSetParserRuleCall_3_11_0() { return cUtilSetsUtilSetParserRuleCall_3_11_0; }
+		public RuleCall getUtilSetsUtilSetParserRuleCall_3_12_0() { return cUtilSetsUtilSetParserRuleCall_3_12_0; }
 		
 		//utilPropertiesPath+=UtilPropertyPath
-		public Assignment getUtilPropertiesPathAssignment_3_12() { return cUtilPropertiesPathAssignment_3_12; }
+		public Assignment getUtilPropertiesPathAssignment_3_13() { return cUtilPropertiesPathAssignment_3_13; }
 		
 		//UtilPropertyPath
-		public RuleCall getUtilPropertiesPathUtilPropertyPathParserRuleCall_3_12_0() { return cUtilPropertiesPathUtilPropertyPathParserRuleCall_3_12_0; }
+		public RuleCall getUtilPropertiesPathUtilPropertyPathParserRuleCall_3_13_0() { return cUtilPropertiesPathUtilPropertyPathParserRuleCall_3_13_0; }
 		
 		//txAdvices+=TxAdvise
-		public Assignment getTxAdvicesAssignment_3_13() { return cTxAdvicesAssignment_3_13; }
+		public Assignment getTxAdvicesAssignment_3_14() { return cTxAdvicesAssignment_3_14; }
 		
 		//TxAdvise
-		public RuleCall getTxAdvicesTxAdviseParserRuleCall_3_13_0() { return cTxAdvicesTxAdviseParserRuleCall_3_13_0; }
+		public RuleCall getTxAdvicesTxAdviseParserRuleCall_3_14_0() { return cTxAdvicesTxAdviseParserRuleCall_3_14_0; }
 		
 		//txJtaTransactionManager+=TxJtaTransactionManager
-		public Assignment getTxJtaTransactionManagerAssignment_3_14() { return cTxJtaTransactionManagerAssignment_3_14; }
+		public Assignment getTxJtaTransactionManagerAssignment_3_15() { return cTxJtaTransactionManagerAssignment_3_15; }
 		
 		//TxJtaTransactionManager
-		public RuleCall getTxJtaTransactionManagerTxJtaTransactionManagerParserRuleCall_3_14_0() { return cTxJtaTransactionManagerTxJtaTransactionManagerParserRuleCall_3_14_0; }
+		public RuleCall getTxJtaTransactionManagerTxJtaTransactionManagerParserRuleCall_3_15_0() { return cTxJtaTransactionManagerTxJtaTransactionManagerParserRuleCall_3_15_0; }
 		
 		//txAnnotations+=TxAnnotation
-		public Assignment getTxAnnotationsAssignment_3_15() { return cTxAnnotationsAssignment_3_15; }
+		public Assignment getTxAnnotationsAssignment_3_16() { return cTxAnnotationsAssignment_3_16; }
 		
 		//TxAnnotation
-		public RuleCall getTxAnnotationsTxAnnotationParserRuleCall_3_15_0() { return cTxAnnotationsTxAnnotationParserRuleCall_3_15_0; }
+		public RuleCall getTxAnnotationsTxAnnotationParserRuleCall_3_16_0() { return cTxAnnotationsTxAnnotationParserRuleCall_3_16_0; }
 		
 		//ConfigurationComposite+=Configuration*
 		public Assignment getConfigurationCompositeAssignment_4() { return cConfigurationCompositeAssignment_4; }
@@ -556,23 +556,14 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		//Configuration
 		public RuleCall getConfigurationCompositeConfigurationParserRuleCall_4_0() { return cConfigurationCompositeConfigurationParserRuleCall_4_0; }
 		
-		//'</beans' (':' ID)? '>'
-		public Group getGroup_5() { return cGroup_5; }
+		//'</beans>' | '</beans:beans>'
+		public Alternatives getAlternatives_5() { return cAlternatives_5; }
 		
-		//'</beans'
+		//'</beans>'
 		public Keyword getBeansKeyword_5_0() { return cBeansKeyword_5_0; }
 		
-		//(':' ID)?
-		public Group getGroup_5_1() { return cGroup_5_1; }
-		
-		//':'
-		public Keyword getColonKeyword_5_1_0() { return cColonKeyword_5_1_0; }
-		
-		//ID
-		public RuleCall getIDTerminalRuleCall_5_1_1() { return cIDTerminalRuleCall_5_1_1; }
-		
-		//'>'
-		public Keyword getGreaterThanSignKeyword_5_2() { return cGreaterThanSignKeyword_5_2; }
+		//'</beans:beans>'
+		public Keyword getBeansBeansKeyword_5_1() { return cBeansBeansKeyword_5_1; }
 	}
 	public class MVCElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.xtext.spring.SpringConfigDsl.MVC");
@@ -713,101 +704,145 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 	}
 	public class HttpElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.xtext.spring.SpringConfigDsl.Http");
-		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
-		private final Group cGroup_0 = (Group)cAlternatives.eContents().get(0);
-		private final Keyword cHttpKeyword_0_0 = (Keyword)cGroup_0.eContents().get(0);
-		private final Group cGroup_0_1 = (Group)cGroup_0.eContents().get(1);
-		private final RuleCall cIDWITHDASHTerminalRuleCall_0_1_0 = (RuleCall)cGroup_0_1.eContents().get(0);
-		private final Keyword cEqualsSignKeyword_0_1_1 = (Keyword)cGroup_0_1.eContents().get(1);
-		private final RuleCall cValidStringParserRuleCall_0_1_2 = (RuleCall)cGroup_0_1.eContents().get(2);
-		private final Keyword cGreaterThanSignKeyword_0_2 = (Keyword)cGroup_0.eContents().get(2);
-		private final Group cGroup_0_3 = (Group)cGroup_0.eContents().get(3);
-		private final Keyword cLessThanSignKeyword_0_3_0 = (Keyword)cGroup_0_3.eContents().get(0);
-		private final Alternatives cAlternatives_0_3_1 = (Alternatives)cGroup_0_3.eContents().get(1);
-		private final RuleCall cIDTerminalRuleCall_0_3_1_0 = (RuleCall)cAlternatives_0_3_1.eContents().get(0);
-		private final RuleCall cIDWITHDASHTerminalRuleCall_0_3_1_1 = (RuleCall)cAlternatives_0_3_1.eContents().get(1);
-		private final Group cGroup_0_3_2 = (Group)cGroup_0_3.eContents().get(2);
-		private final Alternatives cAlternatives_0_3_2_0 = (Alternatives)cGroup_0_3_2.eContents().get(0);
-		private final RuleCall cIDTerminalRuleCall_0_3_2_0_0 = (RuleCall)cAlternatives_0_3_2_0.eContents().get(0);
-		private final RuleCall cIDWITHDASHTerminalRuleCall_0_3_2_0_1 = (RuleCall)cAlternatives_0_3_2_0.eContents().get(1);
-		private final Keyword cEqualsSignKeyword_0_3_2_1 = (Keyword)cGroup_0_3_2.eContents().get(1);
-		private final RuleCall cValidStringParserRuleCall_0_3_2_2 = (RuleCall)cGroup_0_3_2.eContents().get(2);
-		private final Keyword cSolidusGreaterThanSignKeyword_0_3_3 = (Keyword)cGroup_0_3.eContents().get(3);
-		private final Keyword cHttpKeyword_0_4 = (Keyword)cGroup_0.eContents().get(4);
-		private final Keyword cSolidusGreaterThanSignKeyword_1 = (Keyword)cAlternatives.eContents().get(1);
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final Alternatives cAlternatives_0 = (Alternatives)cGroup.eContents().get(0);
+		private final Keyword cHttpKeyword_0_0 = (Keyword)cAlternatives_0.eContents().get(0);
+		private final Keyword cAuthenticationManagerKeyword_0_1 = (Keyword)cAlternatives_0.eContents().get(1);
+		private final RuleCall cReferenceTagParserRuleCall_1 = (RuleCall)cGroup.eContents().get(1);
+		private final Group cGroup_2 = (Group)cGroup.eContents().get(2);
+		private final Alternatives cAlternatives_2_0 = (Alternatives)cGroup_2.eContents().get(0);
+		private final Group cGroup_2_0_0 = (Group)cAlternatives_2_0.eContents().get(0);
+		private final RuleCall cIDWITHDASHTerminalRuleCall_2_0_0_0 = (RuleCall)cGroup_2_0_0.eContents().get(0);
+		private final Keyword cEqualsSignKeyword_2_0_0_1 = (Keyword)cGroup_2_0_0.eContents().get(1);
+		private final Keyword cAliasKeyword_2_0_1 = (Keyword)cAlternatives_2_0.eContents().get(1);
+		private final RuleCall cValidStringParserRuleCall_2_1 = (RuleCall)cGroup_2.eContents().get(1);
+		private final Keyword cGreaterThanSignKeyword_3 = (Keyword)cGroup.eContents().get(3);
+		private final RuleCall cVALIDTAGParserRuleCall_4 = (RuleCall)cGroup.eContents().get(4);
+		private final Alternatives cAlternatives_5 = (Alternatives)cGroup.eContents().get(5);
+		private final Keyword cHttpKeyword_5_0 = (Keyword)cAlternatives_5.eContents().get(0);
+		private final Keyword cAuthenticationManagerKeyword_5_1 = (Keyword)cAlternatives_5.eContents().get(1);
+		private final Keyword cSolidusGreaterThanSignKeyword_5_2 = (Keyword)cAlternatives_5.eContents().get(2);
 		
 		//Http:
-		//	'<http' (IDWITHDASH '=' ValidString)* '>' ('<' (-> ID | IDWITHDASH)+ ((-> ID | IDWITHDASH) '=' ValidString)* '/>')*
-		//	'</http>' | '/>';
+		//	('<http' | '<authentication-manager') ReferenceTag? ((IDWITHDASH '=' | 'alias=') ValidString)* '>'
+		//	VALIDTAG* ('</http>' | '</authentication-manager>' | '/>');
 		@Override public ParserRule getRule() { return rule; }
 		
-		//'<http' (IDWITHDASH '=' ValidString)* '>' ('<' (-> ID | IDWITHDASH)+ ((-> ID | IDWITHDASH) '=' ValidString)* '/>')*
-		//'</http>' | '/>'
-		public Alternatives getAlternatives() { return cAlternatives; }
+		//('<http' | '<authentication-manager') ReferenceTag? ((IDWITHDASH '=' | 'alias=') ValidString)* '>' VALIDTAG* ('</http>'
+		//| '</authentication-manager>' | '/>')
+		public Group getGroup() { return cGroup; }
 		
-		//'<http' (IDWITHDASH '=' ValidString)* '>' ('<' (-> ID | IDWITHDASH)+ ((-> ID | IDWITHDASH) '=' ValidString)* '/>')*
-		//'</http>'
-		public Group getGroup_0() { return cGroup_0; }
+		//'<http' | '<authentication-manager'
+		public Alternatives getAlternatives_0() { return cAlternatives_0; }
 		
 		//'<http'
 		public Keyword getHttpKeyword_0_0() { return cHttpKeyword_0_0; }
 		
-		//(IDWITHDASH '=' ValidString)*
-		public Group getGroup_0_1() { return cGroup_0_1; }
+		//'<authentication-manager'
+		public Keyword getAuthenticationManagerKeyword_0_1() { return cAuthenticationManagerKeyword_0_1; }
+		
+		//ReferenceTag?
+		public RuleCall getReferenceTagParserRuleCall_1() { return cReferenceTagParserRuleCall_1; }
+		
+		//((IDWITHDASH '=' | 'alias=') ValidString)*
+		public Group getGroup_2() { return cGroup_2; }
+		
+		//IDWITHDASH '=' | 'alias='
+		public Alternatives getAlternatives_2_0() { return cAlternatives_2_0; }
+		
+		//IDWITHDASH '='
+		public Group getGroup_2_0_0() { return cGroup_2_0_0; }
 		
 		//IDWITHDASH
-		public RuleCall getIDWITHDASHTerminalRuleCall_0_1_0() { return cIDWITHDASHTerminalRuleCall_0_1_0; }
+		public RuleCall getIDWITHDASHTerminalRuleCall_2_0_0_0() { return cIDWITHDASHTerminalRuleCall_2_0_0_0; }
 		
 		//'='
-		public Keyword getEqualsSignKeyword_0_1_1() { return cEqualsSignKeyword_0_1_1; }
+		public Keyword getEqualsSignKeyword_2_0_0_1() { return cEqualsSignKeyword_2_0_0_1; }
+		
+		//'alias='
+		public Keyword getAliasKeyword_2_0_1() { return cAliasKeyword_2_0_1; }
 		
 		//ValidString
-		public RuleCall getValidStringParserRuleCall_0_1_2() { return cValidStringParserRuleCall_0_1_2; }
+		public RuleCall getValidStringParserRuleCall_2_1() { return cValidStringParserRuleCall_2_1; }
 		
 		//'>'
-		public Keyword getGreaterThanSignKeyword_0_2() { return cGreaterThanSignKeyword_0_2; }
+		public Keyword getGreaterThanSignKeyword_3() { return cGreaterThanSignKeyword_3; }
 		
-		//('<' (-> ID | IDWITHDASH)+ ((-> ID | IDWITHDASH) '=' ValidString)* '/>')*
-		public Group getGroup_0_3() { return cGroup_0_3; }
+		//VALIDTAG*
+		public RuleCall getVALIDTAGParserRuleCall_4() { return cVALIDTAGParserRuleCall_4; }
 		
-		//'<'
-		public Keyword getLessThanSignKeyword_0_3_0() { return cLessThanSignKeyword_0_3_0; }
-		
-		//(-> ID | IDWITHDASH)+
-		public Alternatives getAlternatives_0_3_1() { return cAlternatives_0_3_1; }
-		
-		//-> ID
-		public RuleCall getIDTerminalRuleCall_0_3_1_0() { return cIDTerminalRuleCall_0_3_1_0; }
-		
-		//IDWITHDASH
-		public RuleCall getIDWITHDASHTerminalRuleCall_0_3_1_1() { return cIDWITHDASHTerminalRuleCall_0_3_1_1; }
-		
-		//((-> ID | IDWITHDASH) '=' ValidString)*
-		public Group getGroup_0_3_2() { return cGroup_0_3_2; }
-		
-		//-> ID | IDWITHDASH
-		public Alternatives getAlternatives_0_3_2_0() { return cAlternatives_0_3_2_0; }
-		
-		//-> ID
-		public RuleCall getIDTerminalRuleCall_0_3_2_0_0() { return cIDTerminalRuleCall_0_3_2_0_0; }
-		
-		//IDWITHDASH
-		public RuleCall getIDWITHDASHTerminalRuleCall_0_3_2_0_1() { return cIDWITHDASHTerminalRuleCall_0_3_2_0_1; }
-		
-		//'='
-		public Keyword getEqualsSignKeyword_0_3_2_1() { return cEqualsSignKeyword_0_3_2_1; }
-		
-		//ValidString
-		public RuleCall getValidStringParserRuleCall_0_3_2_2() { return cValidStringParserRuleCall_0_3_2_2; }
-		
-		//'/>'
-		public Keyword getSolidusGreaterThanSignKeyword_0_3_3() { return cSolidusGreaterThanSignKeyword_0_3_3; }
+		//'</http>' | '</authentication-manager>' | '/>'
+		public Alternatives getAlternatives_5() { return cAlternatives_5; }
 		
 		//'</http>'
-		public Keyword getHttpKeyword_0_4() { return cHttpKeyword_0_4; }
+		public Keyword getHttpKeyword_5_0() { return cHttpKeyword_5_0; }
+		
+		//'</authentication-manager>'
+		public Keyword getAuthenticationManagerKeyword_5_1() { return cAuthenticationManagerKeyword_5_1; }
 		
 		//'/>'
-		public Keyword getSolidusGreaterThanSignKeyword_1() { return cSolidusGreaterThanSignKeyword_1; }
+		public Keyword getSolidusGreaterThanSignKeyword_5_2() { return cSolidusGreaterThanSignKeyword_5_2; }
+	}
+	public class SpringSecurityElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.xtext.spring.SpringConfigDsl.SpringSecurity");
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final Keyword cGlobalMethodSecurityKeyword_0 = (Keyword)cGroup.eContents().get(0);
+		private final RuleCall cIDWITHDASHTerminalRuleCall_1 = (RuleCall)cGroup.eContents().get(1);
+		private final Keyword cEqualsSignKeyword_2 = (Keyword)cGroup.eContents().get(2);
+		private final RuleCall cValidStringParserRuleCall_3 = (RuleCall)cGroup.eContents().get(3);
+		private final Group cGroup_4 = (Group)cGroup.eContents().get(4);
+		private final Keyword cGreaterThanSignKeyword_4_0 = (Keyword)cGroup_4.eContents().get(0);
+		private final Keyword cExpressionHandlerKeyword_4_1 = (Keyword)cGroup_4.eContents().get(1);
+		private final RuleCall cReferenceAttParserRuleCall_4_2 = (RuleCall)cGroup_4.eContents().get(2);
+		private final Keyword cSolidusGreaterThanSignKeyword_4_3 = (Keyword)cGroup_4.eContents().get(3);
+		private final Alternatives cAlternatives_5 = (Alternatives)cGroup.eContents().get(5);
+		private final Keyword cSolidusGreaterThanSignKeyword_5_0 = (Keyword)cAlternatives_5.eContents().get(0);
+		private final Keyword cGlobalMethodSecurityKeyword_5_1 = (Keyword)cAlternatives_5.eContents().get(1);
+		
+		//SpringSecurity:
+		//	'<global-method-security' IDWITHDASH '=' ValidString ('>' '<expression-handler' ReferenceAtt '/>')? ('/>' |
+		//	'</global-method-security>');
+		@Override public ParserRule getRule() { return rule; }
+		
+		//'<global-method-security' IDWITHDASH '=' ValidString ('>' '<expression-handler' ReferenceAtt '/>')? ('/>' |
+		//'</global-method-security>')
+		public Group getGroup() { return cGroup; }
+		
+		//'<global-method-security'
+		public Keyword getGlobalMethodSecurityKeyword_0() { return cGlobalMethodSecurityKeyword_0; }
+		
+		//IDWITHDASH
+		public RuleCall getIDWITHDASHTerminalRuleCall_1() { return cIDWITHDASHTerminalRuleCall_1; }
+		
+		//'='
+		public Keyword getEqualsSignKeyword_2() { return cEqualsSignKeyword_2; }
+		
+		//ValidString
+		public RuleCall getValidStringParserRuleCall_3() { return cValidStringParserRuleCall_3; }
+		
+		//('>' '<expression-handler' ReferenceAtt '/>')?
+		public Group getGroup_4() { return cGroup_4; }
+		
+		//'>'
+		public Keyword getGreaterThanSignKeyword_4_0() { return cGreaterThanSignKeyword_4_0; }
+		
+		//'<expression-handler'
+		public Keyword getExpressionHandlerKeyword_4_1() { return cExpressionHandlerKeyword_4_1; }
+		
+		//ReferenceAtt
+		public RuleCall getReferenceAttParserRuleCall_4_2() { return cReferenceAttParserRuleCall_4_2; }
+		
+		//'/>'
+		public Keyword getSolidusGreaterThanSignKeyword_4_3() { return cSolidusGreaterThanSignKeyword_4_3; }
+		
+		//'/>' | '</global-method-security>'
+		public Alternatives getAlternatives_5() { return cAlternatives_5; }
+		
+		//'/>'
+		public Keyword getSolidusGreaterThanSignKeyword_5_0() { return cSolidusGreaterThanSignKeyword_5_0; }
+		
+		//'</global-method-security>'
+		public Keyword getGlobalMethodSecurityKeyword_5_1() { return cGlobalMethodSecurityKeyword_5_1; }
 	}
 	public class AliasElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.xtext.spring.SpringConfigDsl.Alias");
@@ -3663,7 +3698,9 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.xtext.spring.SpringConfigDsl.Component");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Action cComponentAction_0 = (Action)cGroup.eContents().get(0);
-		private final Keyword cBeanKeyword_1 = (Keyword)cGroup.eContents().get(1);
+		private final Alternatives cAlternatives_1 = (Alternatives)cGroup.eContents().get(1);
+		private final Keyword cBeanKeyword_1_0 = (Keyword)cAlternatives_1.eContents().get(0);
+		private final Keyword cBeansBeanKeyword_1_1 = (Keyword)cAlternatives_1.eContents().get(1);
 		private final UnorderedGroup cUnorderedGroup_2 = (UnorderedGroup)cGroup.eContents().get(2);
 		private final Group cGroup_2_0 = (Group)cUnorderedGroup_2.eContents().get(0);
 		private final Alternatives cAlternatives_2_0_0 = (Alternatives)cGroup_2_0.eContents().get(0);
@@ -3745,8 +3782,7 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cBeanKeyword_3_1_3 = (Keyword)cGroup_3_1.eContents().get(3);
 		
 		///*<bean/> */ Component:
-		//	{Component}
-		//	'<bean' ((('id=' | "name=") name=ValidString ("name="? names+=ValidString)?)?
+		//	{Component} ('<bean' | '<beans:bean') ((('id=' | "name=") name=ValidString ("name="? names+=ValidString)?)?
 		//	& class=CreationMethod
 		//	& features+=PNamespace*
 		//	& features+=CNamespace*
@@ -3765,8 +3801,8 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		//	'</bean>');
 		@Override public ParserRule getRule() { return rule; }
 		
-		//{Component} '<bean' ((('id=' | "name=") name=ValidString ("name="? names+=ValidString)?)? & class=CreationMethod &
-		//features+=PNamespace* & features+=CNamespace* & ('abstract=' abstract=sBoolean)? //bool
+		//{Component} ('<bean' | '<beans:bean') ((('id=' | "name=") name=ValidString ("name="? names+=ValidString)?)? &
+		//class=CreationMethod & features+=PNamespace* & features+=CNamespace* & ('abstract=' abstract=sBoolean)? //bool
 		//& ('autowire-candidate=' autowireCandidate=DefaultableBoolean)? //enum
 		//& ('autowire=' autowire=DefaultableBoolean)? //enum
 		//& ('depends-on=' dependsOn=[Component|ValidString])? //ref a bean
@@ -3783,8 +3819,14 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		//{Component}
 		public Action getComponentAction_0() { return cComponentAction_0; }
 		
+		//'<bean' | '<beans:bean'
+		public Alternatives getAlternatives_1() { return cAlternatives_1; }
+		
 		//'<bean'
-		public Keyword getBeanKeyword_1() { return cBeanKeyword_1; }
+		public Keyword getBeanKeyword_1_0() { return cBeanKeyword_1_0; }
+		
+		//'<beans:bean'
+		public Keyword getBeansBeanKeyword_1_1() { return cBeansBeanKeyword_1_1; }
 		
 		//(('id=' | "name=") name=ValidString ("name="? names+=ValidString)?)? & class=CreationMethod & features+=PNamespace* &
 		//features+=CNamespace* & ('abstract=' abstract=sBoolean)? //bool
@@ -5099,81 +5141,77 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 	public class LookupMethodElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.xtext.spring.SpringConfigDsl.LookupMethod");
 		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Keyword cLessThanSignKeyword_0 = (Keyword)cGroup.eContents().get(0);
-		private final Keyword cLookupMethodKeyword_1 = (Keyword)cGroup.eContents().get(1);
-		private final UnorderedGroup cUnorderedGroup_2 = (UnorderedGroup)cGroup.eContents().get(2);
-		private final Group cGroup_2_0 = (Group)cUnorderedGroup_2.eContents().get(0);
-		private final Keyword cNameKeyword_2_0_0 = (Keyword)cGroup_2_0.eContents().get(0);
-		private final Assignment cNameAssignment_2_0_1 = (Assignment)cGroup_2_0.eContents().get(1);
-		private final RuleCall cNameValidStringParserRuleCall_2_0_1_0 = (RuleCall)cNameAssignment_2_0_1.eContents().get(0);
-		private final Group cGroup_2_1 = (Group)cUnorderedGroup_2.eContents().get(1);
-		private final Keyword cBeanKeyword_2_1_0 = (Keyword)cGroup_2_1.eContents().get(0);
-		private final Assignment cRefAssignment_2_1_1 = (Assignment)cGroup_2_1.eContents().get(1);
-		private final CrossReference cRefComponentCrossReference_2_1_1_0 = (CrossReference)cRefAssignment_2_1_1.eContents().get(0);
-		private final RuleCall cRefComponentValidStringParserRuleCall_2_1_1_0_1 = (RuleCall)cRefComponentCrossReference_2_1_1_0.eContents().get(1);
-		private final Alternatives cAlternatives_3 = (Alternatives)cGroup.eContents().get(3);
-		private final Keyword cSolidusGreaterThanSignKeyword_3_0 = (Keyword)cAlternatives_3.eContents().get(0);
-		private final Group cGroup_3_1 = (Group)cAlternatives_3.eContents().get(1);
-		private final Keyword cGreaterThanSignKeyword_3_1_0 = (Keyword)cGroup_3_1.eContents().get(0);
-		private final Keyword cLookupMethodKeyword_3_1_1 = (Keyword)cGroup_3_1.eContents().get(1);
+		private final Keyword cLookupMethodKeyword_0 = (Keyword)cGroup.eContents().get(0);
+		private final UnorderedGroup cUnorderedGroup_1 = (UnorderedGroup)cGroup.eContents().get(1);
+		private final Group cGroup_1_0 = (Group)cUnorderedGroup_1.eContents().get(0);
+		private final Keyword cNameKeyword_1_0_0 = (Keyword)cGroup_1_0.eContents().get(0);
+		private final Assignment cNameAssignment_1_0_1 = (Assignment)cGroup_1_0.eContents().get(1);
+		private final RuleCall cNameValidStringParserRuleCall_1_0_1_0 = (RuleCall)cNameAssignment_1_0_1.eContents().get(0);
+		private final Group cGroup_1_1 = (Group)cUnorderedGroup_1.eContents().get(1);
+		private final Keyword cBeanKeyword_1_1_0 = (Keyword)cGroup_1_1.eContents().get(0);
+		private final Assignment cRefAssignment_1_1_1 = (Assignment)cGroup_1_1.eContents().get(1);
+		private final CrossReference cRefComponentCrossReference_1_1_1_0 = (CrossReference)cRefAssignment_1_1_1.eContents().get(0);
+		private final RuleCall cRefComponentValidStringParserRuleCall_1_1_1_0_1 = (RuleCall)cRefComponentCrossReference_1_1_1_0.eContents().get(1);
+		private final Alternatives cAlternatives_2 = (Alternatives)cGroup.eContents().get(2);
+		private final Keyword cSolidusGreaterThanSignKeyword_2_0 = (Keyword)cAlternatives_2.eContents().get(0);
+		private final Group cGroup_2_1 = (Group)cAlternatives_2.eContents().get(1);
+		private final Keyword cGreaterThanSignKeyword_2_1_0 = (Keyword)cGroup_2_1.eContents().get(0);
+		private final Keyword cLookupMethodKeyword_2_1_1 = (Keyword)cGroup_2_1.eContents().get(1);
 		
 		//LookupMethod:
-		//	'<' 'lookup-method' ('name=' name=ValidString & 'bean=' ref=[Component|ValidString]) ('/>' | '>' '</lookup-method>');
+		//	'<lookup-method' ('name=' name=ValidString & 'bean=' ref=[Component|ValidString]) ('/>' | '>' '</lookup-method>');
 		@Override public ParserRule getRule() { return rule; }
 		
-		//'<' 'lookup-method' ('name=' name=ValidString & 'bean=' ref=[Component|ValidString]) ('/>' | '>' '</lookup-method>')
+		//'<lookup-method' ('name=' name=ValidString & 'bean=' ref=[Component|ValidString]) ('/>' | '>' '</lookup-method>')
 		public Group getGroup() { return cGroup; }
 		
-		//'<'
-		public Keyword getLessThanSignKeyword_0() { return cLessThanSignKeyword_0; }
-		
-		//'lookup-method'
-		public Keyword getLookupMethodKeyword_1() { return cLookupMethodKeyword_1; }
+		//'<lookup-method'
+		public Keyword getLookupMethodKeyword_0() { return cLookupMethodKeyword_0; }
 		
 		//'name=' name=ValidString & 'bean=' ref=[Component|ValidString]
-		public UnorderedGroup getUnorderedGroup_2() { return cUnorderedGroup_2; }
+		public UnorderedGroup getUnorderedGroup_1() { return cUnorderedGroup_1; }
 		
 		//'name=' name=ValidString
-		public Group getGroup_2_0() { return cGroup_2_0; }
+		public Group getGroup_1_0() { return cGroup_1_0; }
 		
 		//'name='
-		public Keyword getNameKeyword_2_0_0() { return cNameKeyword_2_0_0; }
+		public Keyword getNameKeyword_1_0_0() { return cNameKeyword_1_0_0; }
 		
 		//name=ValidString
-		public Assignment getNameAssignment_2_0_1() { return cNameAssignment_2_0_1; }
+		public Assignment getNameAssignment_1_0_1() { return cNameAssignment_1_0_1; }
 		
 		//ValidString
-		public RuleCall getNameValidStringParserRuleCall_2_0_1_0() { return cNameValidStringParserRuleCall_2_0_1_0; }
+		public RuleCall getNameValidStringParserRuleCall_1_0_1_0() { return cNameValidStringParserRuleCall_1_0_1_0; }
 		
 		//'bean=' ref=[Component|ValidString]
-		public Group getGroup_2_1() { return cGroup_2_1; }
+		public Group getGroup_1_1() { return cGroup_1_1; }
 		
 		//'bean='
-		public Keyword getBeanKeyword_2_1_0() { return cBeanKeyword_2_1_0; }
+		public Keyword getBeanKeyword_1_1_0() { return cBeanKeyword_1_1_0; }
 		
 		//ref=[Component|ValidString]
-		public Assignment getRefAssignment_2_1_1() { return cRefAssignment_2_1_1; }
+		public Assignment getRefAssignment_1_1_1() { return cRefAssignment_1_1_1; }
 		
 		//[Component|ValidString]
-		public CrossReference getRefComponentCrossReference_2_1_1_0() { return cRefComponentCrossReference_2_1_1_0; }
+		public CrossReference getRefComponentCrossReference_1_1_1_0() { return cRefComponentCrossReference_1_1_1_0; }
 		
 		//ValidString
-		public RuleCall getRefComponentValidStringParserRuleCall_2_1_1_0_1() { return cRefComponentValidStringParserRuleCall_2_1_1_0_1; }
+		public RuleCall getRefComponentValidStringParserRuleCall_1_1_1_0_1() { return cRefComponentValidStringParserRuleCall_1_1_1_0_1; }
 		
 		//'/>' | '>' '</lookup-method>'
-		public Alternatives getAlternatives_3() { return cAlternatives_3; }
+		public Alternatives getAlternatives_2() { return cAlternatives_2; }
 		
 		//'/>'
-		public Keyword getSolidusGreaterThanSignKeyword_3_0() { return cSolidusGreaterThanSignKeyword_3_0; }
+		public Keyword getSolidusGreaterThanSignKeyword_2_0() { return cSolidusGreaterThanSignKeyword_2_0; }
 		
 		//'>' '</lookup-method>'
-		public Group getGroup_3_1() { return cGroup_3_1; }
+		public Group getGroup_2_1() { return cGroup_2_1; }
 		
 		//'>'
-		public Keyword getGreaterThanSignKeyword_3_1_0() { return cGreaterThanSignKeyword_3_1_0; }
+		public Keyword getGreaterThanSignKeyword_2_1_0() { return cGreaterThanSignKeyword_2_1_0; }
 		
 		//'</lookup-method>'
-		public Keyword getLookupMethodKeyword_3_1_1() { return cLookupMethodKeyword_3_1_1; }
+		public Keyword getLookupMethodKeyword_2_1_1() { return cLookupMethodKeyword_2_1_1; }
 	}
 	public class QualifierElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.xtext.spring.SpringConfigDsl.Qualifier");
@@ -7177,6 +7215,236 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		//ID
 		public RuleCall getIDTerminalRuleCall_1_1() { return cIDTerminalRuleCall_1_1; }
 	}
+	public class VALIDTAGElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.xtext.spring.SpringConfigDsl.VALIDTAG");
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final RuleCall cKeyWordParserRuleCall_0 = (RuleCall)cGroup.eContents().get(0);
+		private final Group cGroup_1 = (Group)cGroup.eContents().get(1);
+		private final Alternatives cAlternatives_1_0 = (Alternatives)cGroup_1.eContents().get(0);
+		private final Group cGroup_1_0_0 = (Group)cAlternatives_1_0.eContents().get(0);
+		private final RuleCall cIDTerminalRuleCall_1_0_0_0 = (RuleCall)cGroup_1_0_0.eContents().get(0);
+		private final Keyword cEqualsSignKeyword_1_0_0_1 = (Keyword)cGroup_1_0_0.eContents().get(1);
+		private final Group cGroup_1_0_1 = (Group)cAlternatives_1_0.eContents().get(1);
+		private final RuleCall cIDWITHDASHTerminalRuleCall_1_0_1_0 = (RuleCall)cGroup_1_0_1.eContents().get(0);
+		private final Keyword cEqualsSignKeyword_1_0_1_1 = (Keyword)cGroup_1_0_1.eContents().get(1);
+		private final Keyword cNameKeyword_1_0_2 = (Keyword)cAlternatives_1_0.eContents().get(2);
+		private final Keyword cTypeKeyword_1_0_3 = (Keyword)cAlternatives_1_0.eContents().get(3);
+		private final Keyword cAliasKeyword_1_0_4 = (Keyword)cAlternatives_1_0.eContents().get(4);
+		private final RuleCall cValidStringParserRuleCall_1_1 = (RuleCall)cGroup_1.eContents().get(1);
+		private final Alternatives cAlternatives_2 = (Alternatives)cGroup.eContents().get(2);
+		private final Group cGroup_2_0 = (Group)cAlternatives_2.eContents().get(0);
+		private final Keyword cGreaterThanSignKeyword_2_0_0 = (Keyword)cGroup_2_0.eContents().get(0);
+		private final RuleCall cVALIDTAGParserRuleCall_2_0_1 = (RuleCall)cGroup_2_0.eContents().get(1);
+		private final RuleCall cEndingKeyWordParserRuleCall_2_0_2 = (RuleCall)cGroup_2_0.eContents().get(2);
+		private final Keyword cSolidusGreaterThanSignKeyword_2_1 = (Keyword)cAlternatives_2.eContents().get(1);
+		
+		//VALIDTAG:
+		//	KeyWord ((ID '=' | IDWITHDASH '=' | 'name=' | 'type=' | 'alias=') ValidString)* ('>' VALIDTAG* EndingKeyWord | '/>');
+		@Override public ParserRule getRule() { return rule; }
+		
+		//KeyWord ((ID '=' | IDWITHDASH '=' | 'name=' | 'type=' | 'alias=') ValidString)* ('>' VALIDTAG* EndingKeyWord | '/>')
+		public Group getGroup() { return cGroup; }
+		
+		//KeyWord
+		public RuleCall getKeyWordParserRuleCall_0() { return cKeyWordParserRuleCall_0; }
+		
+		//((ID '=' | IDWITHDASH '=' | 'name=' | 'type=' | 'alias=') ValidString)*
+		public Group getGroup_1() { return cGroup_1; }
+		
+		//ID '=' | IDWITHDASH '=' | 'name=' | 'type=' | 'alias='
+		public Alternatives getAlternatives_1_0() { return cAlternatives_1_0; }
+		
+		//ID '='
+		public Group getGroup_1_0_0() { return cGroup_1_0_0; }
+		
+		//ID
+		public RuleCall getIDTerminalRuleCall_1_0_0_0() { return cIDTerminalRuleCall_1_0_0_0; }
+		
+		//'='
+		public Keyword getEqualsSignKeyword_1_0_0_1() { return cEqualsSignKeyword_1_0_0_1; }
+		
+		//IDWITHDASH '='
+		public Group getGroup_1_0_1() { return cGroup_1_0_1; }
+		
+		//IDWITHDASH
+		public RuleCall getIDWITHDASHTerminalRuleCall_1_0_1_0() { return cIDWITHDASHTerminalRuleCall_1_0_1_0; }
+		
+		//'='
+		public Keyword getEqualsSignKeyword_1_0_1_1() { return cEqualsSignKeyword_1_0_1_1; }
+		
+		//'name='
+		public Keyword getNameKeyword_1_0_2() { return cNameKeyword_1_0_2; }
+		
+		//'type='
+		public Keyword getTypeKeyword_1_0_3() { return cTypeKeyword_1_0_3; }
+		
+		//'alias='
+		public Keyword getAliasKeyword_1_0_4() { return cAliasKeyword_1_0_4; }
+		
+		//ValidString
+		public RuleCall getValidStringParserRuleCall_1_1() { return cValidStringParserRuleCall_1_1; }
+		
+		//'>' VALIDTAG* EndingKeyWord | '/>'
+		public Alternatives getAlternatives_2() { return cAlternatives_2; }
+		
+		//'>' VALIDTAG* EndingKeyWord
+		public Group getGroup_2_0() { return cGroup_2_0; }
+		
+		//'>'
+		public Keyword getGreaterThanSignKeyword_2_0_0() { return cGreaterThanSignKeyword_2_0_0; }
+		
+		//VALIDTAG*
+		public RuleCall getVALIDTAGParserRuleCall_2_0_1() { return cVALIDTAGParserRuleCall_2_0_1; }
+		
+		//EndingKeyWord
+		public RuleCall getEndingKeyWordParserRuleCall_2_0_2() { return cEndingKeyWordParserRuleCall_2_0_2; }
+		
+		//'/>'
+		public Keyword getSolidusGreaterThanSignKeyword_2_1() { return cSolidusGreaterThanSignKeyword_2_1; }
+	}
+	public class EndingKeyWordElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.xtext.spring.SpringConfigDsl.EndingKeyWord");
+		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
+		private final Keyword cFormLoginKeyword_0 = (Keyword)cAlternatives.eContents().get(0);
+		private final Keyword cLogoutKeyword_1 = (Keyword)cAlternatives.eContents().get(1);
+		private final Keyword cInterceptUrlKeyword_2 = (Keyword)cAlternatives.eContents().get(2);
+		private final Keyword cHttpBasicKeyword_3 = (Keyword)cAlternatives.eContents().get(3);
+		private final Keyword cPortMappingsKeyword_4 = (Keyword)cAlternatives.eContents().get(4);
+		private final Keyword cSessionManagementKeyword_5 = (Keyword)cAlternatives.eContents().get(5);
+		private final Keyword cConcurrencyControlKeyword_6 = (Keyword)cAlternatives.eContents().get(6);
+		private final Keyword cOpenidLoginKeyword_7 = (Keyword)cAlternatives.eContents().get(7);
+		private final Keyword cAttributeExchangeKeyword_8 = (Keyword)cAlternatives.eContents().get(8);
+		private final Keyword cOpenidAttributeKeyword_9 = (Keyword)cAlternatives.eContents().get(9);
+		private final Keyword cCustomFilterKeyword_10 = (Keyword)cAlternatives.eContents().get(10);
+		private final Keyword cAuthenticationProviderKeyword_11 = (Keyword)cAlternatives.eContents().get(11);
+		private final Keyword cPasswordEncoderKeyword_12 = (Keyword)cAlternatives.eContents().get(12);
+		private final Keyword cSaltSourceKeyword_13 = (Keyword)cAlternatives.eContents().get(13);
+		
+		//EndingKeyWord:
+		//	'</form-login>' | '</logout>' | '</intercept-url>' | '</http-basic>' | '</port-mappings>'
+		//	| '</session-management>' | '</concurrency-control>' | '</openid-login>' | '</attribute-exchange>'
+		//	| '</openid-attribute>' | '</custom-filter>' | '</authentication-provider>' | '</password-encoder>' |
+		//	'</salt-source>';
+		@Override public ParserRule getRule() { return rule; }
+		
+		//'</form-login>' | '</logout>' | '</intercept-url>' | '</http-basic>' | '</port-mappings>' | '</session-management>' |
+		//'</concurrency-control>' | '</openid-login>' | '</attribute-exchange>' | '</openid-attribute>' | '</custom-filter>' |
+		//'</authentication-provider>' | '</password-encoder>' | '</salt-source>'
+		public Alternatives getAlternatives() { return cAlternatives; }
+		
+		//'</form-login>'
+		public Keyword getFormLoginKeyword_0() { return cFormLoginKeyword_0; }
+		
+		//'</logout>'
+		public Keyword getLogoutKeyword_1() { return cLogoutKeyword_1; }
+		
+		//'</intercept-url>'
+		public Keyword getInterceptUrlKeyword_2() { return cInterceptUrlKeyword_2; }
+		
+		//'</http-basic>'
+		public Keyword getHttpBasicKeyword_3() { return cHttpBasicKeyword_3; }
+		
+		//'</port-mappings>'
+		public Keyword getPortMappingsKeyword_4() { return cPortMappingsKeyword_4; }
+		
+		//'</session-management>'
+		public Keyword getSessionManagementKeyword_5() { return cSessionManagementKeyword_5; }
+		
+		//'</concurrency-control>'
+		public Keyword getConcurrencyControlKeyword_6() { return cConcurrencyControlKeyword_6; }
+		
+		//'</openid-login>'
+		public Keyword getOpenidLoginKeyword_7() { return cOpenidLoginKeyword_7; }
+		
+		//'</attribute-exchange>'
+		public Keyword getAttributeExchangeKeyword_8() { return cAttributeExchangeKeyword_8; }
+		
+		//'</openid-attribute>'
+		public Keyword getOpenidAttributeKeyword_9() { return cOpenidAttributeKeyword_9; }
+		
+		//'</custom-filter>'
+		public Keyword getCustomFilterKeyword_10() { return cCustomFilterKeyword_10; }
+		
+		//'</authentication-provider>'
+		public Keyword getAuthenticationProviderKeyword_11() { return cAuthenticationProviderKeyword_11; }
+		
+		//'</password-encoder>'
+		public Keyword getPasswordEncoderKeyword_12() { return cPasswordEncoderKeyword_12; }
+		
+		//'</salt-source>'
+		public Keyword getSaltSourceKeyword_13() { return cSaltSourceKeyword_13; }
+	}
+	public class KeyWordElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.xtext.spring.SpringConfigDsl.KeyWord");
+		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
+		private final Keyword cFormLoginKeyword_0 = (Keyword)cAlternatives.eContents().get(0);
+		private final Keyword cLogoutKeyword_1 = (Keyword)cAlternatives.eContents().get(1);
+		private final Keyword cInterceptUrlKeyword_2 = (Keyword)cAlternatives.eContents().get(2);
+		private final Keyword cHttpBasicKeyword_3 = (Keyword)cAlternatives.eContents().get(3);
+		private final Keyword cPortMappingsKeyword_4 = (Keyword)cAlternatives.eContents().get(4);
+		private final Keyword cSessionManagementKeyword_5 = (Keyword)cAlternatives.eContents().get(5);
+		private final Keyword cConcurrencyControlKeyword_6 = (Keyword)cAlternatives.eContents().get(6);
+		private final Keyword cOpenidLoginKeyword_7 = (Keyword)cAlternatives.eContents().get(7);
+		private final Keyword cAttributeExchangeKeyword_8 = (Keyword)cAlternatives.eContents().get(8);
+		private final Keyword cOpenidAttributeKeyword_9 = (Keyword)cAlternatives.eContents().get(9);
+		private final Keyword cCustomFilterKeyword_10 = (Keyword)cAlternatives.eContents().get(10);
+		private final Keyword cAuthenticationProviderKeyword_11 = (Keyword)cAlternatives.eContents().get(11);
+		private final Keyword cPasswordEncoderKeyword_12 = (Keyword)cAlternatives.eContents().get(12);
+		private final Keyword cSaltSourceKeyword_13 = (Keyword)cAlternatives.eContents().get(13);
+		
+		//KeyWord:
+		//	'<form-login' | '<logout' | '<intercept-url' | '<http-basic' | '<port-mappings'
+		//	| '<session-management' | '<concurrency-control' | '<openid-login' | '<attribute-exchange'
+		//	| '<openid-attribute' | '<custom-filter' | '<authentication-provider' | '<password-encoder' | '<salt-source';
+		@Override public ParserRule getRule() { return rule; }
+		
+		//'<form-login' | '<logout' | '<intercept-url' | '<http-basic' | '<port-mappings' | '<session-management' |
+		//'<concurrency-control' | '<openid-login' | '<attribute-exchange' | '<openid-attribute' | '<custom-filter' |
+		//'<authentication-provider' | '<password-encoder' | '<salt-source'
+		public Alternatives getAlternatives() { return cAlternatives; }
+		
+		//'<form-login'
+		public Keyword getFormLoginKeyword_0() { return cFormLoginKeyword_0; }
+		
+		//'<logout'
+		public Keyword getLogoutKeyword_1() { return cLogoutKeyword_1; }
+		
+		//'<intercept-url'
+		public Keyword getInterceptUrlKeyword_2() { return cInterceptUrlKeyword_2; }
+		
+		//'<http-basic'
+		public Keyword getHttpBasicKeyword_3() { return cHttpBasicKeyword_3; }
+		
+		//'<port-mappings'
+		public Keyword getPortMappingsKeyword_4() { return cPortMappingsKeyword_4; }
+		
+		//'<session-management'
+		public Keyword getSessionManagementKeyword_5() { return cSessionManagementKeyword_5; }
+		
+		//'<concurrency-control'
+		public Keyword getConcurrencyControlKeyword_6() { return cConcurrencyControlKeyword_6; }
+		
+		//'<openid-login'
+		public Keyword getOpenidLoginKeyword_7() { return cOpenidLoginKeyword_7; }
+		
+		//'<attribute-exchange'
+		public Keyword getAttributeExchangeKeyword_8() { return cAttributeExchangeKeyword_8; }
+		
+		//'<openid-attribute'
+		public Keyword getOpenidAttributeKeyword_9() { return cOpenidAttributeKeyword_9; }
+		
+		//'<custom-filter'
+		public Keyword getCustomFilterKeyword_10() { return cCustomFilterKeyword_10; }
+		
+		//'<authentication-provider'
+		public Keyword getAuthenticationProviderKeyword_11() { return cAuthenticationProviderKeyword_11; }
+		
+		//'<password-encoder'
+		public Keyword getPasswordEncoderKeyword_12() { return cPasswordEncoderKeyword_12; }
+		
+		//'<salt-source'
+		public Keyword getSaltSourceKeyword_13() { return cSaltSourceKeyword_13; }
+	}
 	public class QSTRINGElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.xtext.spring.SpringConfigDsl.QSTRING");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
@@ -8070,6 +8338,7 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 	private final ConfigurationElements pConfiguration;
 	private final MVCElements pMVC;
 	private final HttpElements pHttp;
+	private final SpringSecurityElements pSpringSecurity;
 	private final AliasElements pAlias;
 	private final ImportElements pImport;
 	private final ContextElements pContext;
@@ -8159,6 +8428,9 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 	private final DataStringElements pDataString;
 	private final IdDashAndColonElements pIdDashAndColon;
 	private final IdWithDashsElements pIdWithDashs;
+	private final VALIDTAGElements pVALIDTAG;
+	private final EndingKeyWordElements pEndingKeyWord;
+	private final KeyWordElements pKeyWord;
 	private final QSTRINGElements pQSTRING;
 	private final NullTagElements pNullTag;
 	private final ValidStringElements pValidString;
@@ -8190,6 +8462,7 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		this.pConfiguration = new ConfigurationElements();
 		this.pMVC = new MVCElements();
 		this.pHttp = new HttpElements();
+		this.pSpringSecurity = new SpringSecurityElements();
 		this.pAlias = new AliasElements();
 		this.pImport = new ImportElements();
 		this.pContext = new ContextElements();
@@ -8279,6 +8552,9 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 		this.pDataString = new DataStringElements();
 		this.pIdDashAndColon = new IdDashAndColonElements();
 		this.pIdWithDashs = new IdWithDashsElements();
+		this.pVALIDTAG = new VALIDTAGElements();
+		this.pEndingKeyWord = new EndingKeyWordElements();
+		this.pKeyWord = new KeyWordElements();
 		this.pQSTRING = new QSTRINGElements();
 		this.pNullTag = new NullTagElements();
 		this.pValidString = new ValidStringElements();
@@ -8366,8 +8642,7 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 	///**Abstract Class of Collection  */ /*Util:
 	//	(UtilConstant|UtilPropertyPath|UtilProperties/* |UtilList|UtilMap|UtilSet)
 	//;*/ /*<beans/> */ Configuration:
-	//	{Configuration} ('<beans' ((':' ID)?
-	//	& ('default-autowire=' defaultAutowire=AutoWiredType)?
+	//	{Configuration} (('<beans' | '<beans:beans') (('default-autowire=' defaultAutowire=AutoWiredType)?
 	//	& ('default-init-method=' defaultInitMethod=ValidString)? //Method
 	//	& ('default-autowire-candidates=' defaultAutowireCandidates=ValidString)? //REGEX
 	//	& ('default-destroy-method=' defaultDestroyMethod=ValidString)? //Method
@@ -8379,11 +8654,12 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 	//	| contexts+=Context
 	//	| mvcs+=MVC
 	//	| https+=Http
+	//	| springSecurity+=SpringSecurity
 	//	| aspects+=Aspect
 	//	| utilConstants+=UtilConstant | utilLists+=UtilList | utilMaps+=UtilMap
 	//	| utilProperties+=UtilProperties | utilSets+=UtilSet | utilPropertiesPath+=UtilPropertyPath
 	//	| txAdvices+=TxAdvise | txJtaTransactionManager+=TxJtaTransactionManager | txAnnotations+=TxAnnotation)*
-	//	ConfigurationComposite+=Configuration* ('</beans' (':' ID)? '>');
+	//	ConfigurationComposite+=Configuration* ('</beans>' | '</beans:beans>');
 	public ConfigurationElements getConfigurationAccess() {
 		return pConfiguration;
 	}
@@ -8404,14 +8680,25 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 	}
 	
 	//Http:
-	//	'<http' (IDWITHDASH '=' ValidString)* '>' ('<' (-> ID | IDWITHDASH)+ ((-> ID | IDWITHDASH) '=' ValidString)* '/>')*
-	//	'</http>' | '/>';
+	//	('<http' | '<authentication-manager') ReferenceTag? ((IDWITHDASH '=' | 'alias=') ValidString)* '>'
+	//	VALIDTAG* ('</http>' | '</authentication-manager>' | '/>');
 	public HttpElements getHttpAccess() {
 		return pHttp;
 	}
 	
 	public ParserRule getHttpRule() {
 		return getHttpAccess().getRule();
+	}
+	
+	//SpringSecurity:
+	//	'<global-method-security' IDWITHDASH '=' ValidString ('>' '<expression-handler' ReferenceAtt '/>')? ('/>' |
+	//	'</global-method-security>');
+	public SpringSecurityElements getSpringSecurityAccess() {
+		return pSpringSecurity;
+	}
+	
+	public ParserRule getSpringSecurityRule() {
+		return getSpringSecurityAccess().getRule();
 	}
 	
 	///*<alias/> */ Alias:
@@ -8880,8 +9167,7 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 	}
 	
 	///*<bean/> */ Component:
-	//	{Component}
-	//	'<bean' ((('id=' | "name=") name=ValidString ("name="? names+=ValidString)?)?
+	//	{Component} ('<bean' | '<beans:bean') ((('id=' | "name=") name=ValidString ("name="? names+=ValidString)?)?
 	//	& class=CreationMethod
 	//	& features+=PNamespace*
 	//	& features+=CNamespace*
@@ -9129,7 +9415,7 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 	}
 	
 	//LookupMethod:
-	//	'<' 'lookup-method' ('name=' name=ValidString & 'bean=' ref=[Component|ValidString]) ('/>' | '>' '</lookup-method>');
+	//	'<lookup-method' ('name=' name=ValidString & 'bean=' ref=[Component|ValidString]) ('/>' | '>' '</lookup-method>');
 	public LookupMethodElements getLookupMethodAccess() {
 		return pLookupMethod;
 	}
@@ -9459,6 +9745,41 @@ public class SpringConfigDslGrammarAccess extends AbstractGrammarElementFinder {
 	
 	public ParserRule getIdWithDashsRule() {
 		return getIdWithDashsAccess().getRule();
+	}
+	
+	//VALIDTAG:
+	//	KeyWord ((ID '=' | IDWITHDASH '=' | 'name=' | 'type=' | 'alias=') ValidString)* ('>' VALIDTAG* EndingKeyWord | '/>');
+	public VALIDTAGElements getVALIDTAGAccess() {
+		return pVALIDTAG;
+	}
+	
+	public ParserRule getVALIDTAGRule() {
+		return getVALIDTAGAccess().getRule();
+	}
+	
+	//EndingKeyWord:
+	//	'</form-login>' | '</logout>' | '</intercept-url>' | '</http-basic>' | '</port-mappings>'
+	//	| '</session-management>' | '</concurrency-control>' | '</openid-login>' | '</attribute-exchange>'
+	//	| '</openid-attribute>' | '</custom-filter>' | '</authentication-provider>' | '</password-encoder>' |
+	//	'</salt-source>';
+	public EndingKeyWordElements getEndingKeyWordAccess() {
+		return pEndingKeyWord;
+	}
+	
+	public ParserRule getEndingKeyWordRule() {
+		return getEndingKeyWordAccess().getRule();
+	}
+	
+	//KeyWord:
+	//	'<form-login' | '<logout' | '<intercept-url' | '<http-basic' | '<port-mappings'
+	//	| '<session-management' | '<concurrency-control' | '<openid-login' | '<attribute-exchange'
+	//	| '<openid-attribute' | '<custom-filter' | '<authentication-provider' | '<password-encoder' | '<salt-source';
+	public KeyWordElements getKeyWordAccess() {
+		return pKeyWord;
+	}
+	
+	public ParserRule getKeyWordRule() {
+		return getKeyWordAccess().getRule();
 	}
 	
 	//QSTRING hidden(ML_COMMENT):

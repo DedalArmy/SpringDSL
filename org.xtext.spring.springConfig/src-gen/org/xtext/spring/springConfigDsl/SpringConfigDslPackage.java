@@ -298,7 +298,7 @@ public interface SpringConfigDslPackage extends EPackage
   int CONFIGURATION__MVCS = 12;
 
   /**
-   * The feature id for the '<em><b>Https</b></em>' attribute list.
+   * The feature id for the '<em><b>Https</b></em>' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
@@ -307,13 +307,22 @@ public interface SpringConfigDslPackage extends EPackage
   int CONFIGURATION__HTTPS = 13;
 
   /**
+   * The feature id for the '<em><b>Spring Security</b></em>' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int CONFIGURATION__SPRING_SECURITY = 14;
+
+  /**
    * The feature id for the '<em><b>Aspects</b></em>' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int CONFIGURATION__ASPECTS = 14;
+  int CONFIGURATION__ASPECTS = 15;
 
   /**
    * The feature id for the '<em><b>Util Constants</b></em>' containment reference list.
@@ -322,7 +331,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @generated
    * @ordered
    */
-  int CONFIGURATION__UTIL_CONSTANTS = 15;
+  int CONFIGURATION__UTIL_CONSTANTS = 16;
 
   /**
    * The feature id for the '<em><b>Util Lists</b></em>' containment reference list.
@@ -331,7 +340,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @generated
    * @ordered
    */
-  int CONFIGURATION__UTIL_LISTS = 16;
+  int CONFIGURATION__UTIL_LISTS = 17;
 
   /**
    * The feature id for the '<em><b>Util Maps</b></em>' containment reference list.
@@ -340,7 +349,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @generated
    * @ordered
    */
-  int CONFIGURATION__UTIL_MAPS = 17;
+  int CONFIGURATION__UTIL_MAPS = 18;
 
   /**
    * The feature id for the '<em><b>Util Properties</b></em>' containment reference list.
@@ -349,7 +358,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @generated
    * @ordered
    */
-  int CONFIGURATION__UTIL_PROPERTIES = 18;
+  int CONFIGURATION__UTIL_PROPERTIES = 19;
 
   /**
    * The feature id for the '<em><b>Util Sets</b></em>' containment reference list.
@@ -358,7 +367,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @generated
    * @ordered
    */
-  int CONFIGURATION__UTIL_SETS = 19;
+  int CONFIGURATION__UTIL_SETS = 20;
 
   /**
    * The feature id for the '<em><b>Util Properties Path</b></em>' containment reference list.
@@ -367,7 +376,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @generated
    * @ordered
    */
-  int CONFIGURATION__UTIL_PROPERTIES_PATH = 20;
+  int CONFIGURATION__UTIL_PROPERTIES_PATH = 21;
 
   /**
    * The feature id for the '<em><b>Tx Advices</b></em>' containment reference list.
@@ -376,7 +385,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @generated
    * @ordered
    */
-  int CONFIGURATION__TX_ADVICES = 21;
+  int CONFIGURATION__TX_ADVICES = 22;
 
   /**
    * The feature id for the '<em><b>Tx Jta Transaction Manager</b></em>' containment reference list.
@@ -385,7 +394,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @generated
    * @ordered
    */
-  int CONFIGURATION__TX_JTA_TRANSACTION_MANAGER = 22;
+  int CONFIGURATION__TX_JTA_TRANSACTION_MANAGER = 23;
 
   /**
    * The feature id for the '<em><b>Tx Annotations</b></em>' containment reference list.
@@ -394,7 +403,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @generated
    * @ordered
    */
-  int CONFIGURATION__TX_ANNOTATIONS = 23;
+  int CONFIGURATION__TX_ANNOTATIONS = 24;
 
   /**
    * The feature id for the '<em><b>Configuration Composite</b></em>' containment reference list.
@@ -403,7 +412,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @generated
    * @ordered
    */
-  int CONFIGURATION__CONFIGURATION_COMPOSITE = 24;
+  int CONFIGURATION__CONFIGURATION_COMPOSITE = 25;
 
   /**
    * The number of structural features of the '<em>Configuration</em>' class.
@@ -412,7 +421,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @generated
    * @ordered
    */
-  int CONFIGURATION_FEATURE_COUNT = 25;
+  int CONFIGURATION_FEATURE_COUNT = 26;
 
   /**
    * The meta object id for the '{@link org.xtext.spring.springConfigDsl.impl.MVCImpl <em>MVC</em>}' class.
@@ -443,6 +452,44 @@ public interface SpringConfigDslPackage extends EPackage
   int MVC_FEATURE_COUNT = 1;
 
   /**
+   * The meta object id for the '{@link org.xtext.spring.springConfigDsl.impl.HttpImpl <em>Http</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see org.xtext.spring.springConfigDsl.impl.HttpImpl
+   * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getHttp()
+   * @generated
+   */
+  int HTTP = 6;
+
+  /**
+   * The number of structural features of the '<em>Http</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int HTTP_FEATURE_COUNT = 0;
+
+  /**
+   * The meta object id for the '{@link org.xtext.spring.springConfigDsl.impl.SpringSecurityImpl <em>Spring Security</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see org.xtext.spring.springConfigDsl.impl.SpringSecurityImpl
+   * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getSpringSecurity()
+   * @generated
+   */
+  int SPRING_SECURITY = 7;
+
+  /**
+   * The number of structural features of the '<em>Spring Security</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SPRING_SECURITY_FEATURE_COUNT = 0;
+
+  /**
    * The meta object id for the '{@link org.xtext.spring.springConfigDsl.impl.AliasImpl <em>Alias</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -450,7 +497,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getAlias()
    * @generated
    */
-  int ALIAS = 6;
+  int ALIAS = 8;
 
   /**
    * The feature id for the '<em><b>Origin</b></em>' reference.
@@ -487,7 +534,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getImport()
    * @generated
    */
-  int IMPORT = 7;
+  int IMPORT = 9;
 
   /**
    * The feature id for the '<em><b>Resource</b></em>' attribute.
@@ -515,7 +562,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getContext()
    * @generated
    */
-  int CONTEXT = 8;
+  int CONTEXT = 10;
 
   /**
    * The number of structural features of the '<em>Context</em>' class.
@@ -534,7 +581,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getAnnotationConfig()
    * @generated
    */
-  int ANNOTATION_CONFIG = 9;
+  int ANNOTATION_CONFIG = 11;
 
   /**
    * The number of structural features of the '<em>Annotation Config</em>' class.
@@ -553,7 +600,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getComponentScan()
    * @generated
    */
-  int COMPONENT_SCAN = 10;
+  int COMPONENT_SCAN = 12;
 
   /**
    * The feature id for the '<em><b>Base Package</b></em>' attribute.
@@ -653,7 +700,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getIncludeFilter()
    * @generated
    */
-  int INCLUDE_FILTER = 11;
+  int INCLUDE_FILTER = 13;
 
   /**
    * The feature id for the '<em><b>Type</b></em>' attribute.
@@ -690,7 +737,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getExcludeFilter()
    * @generated
    */
-  int EXCLUDE_FILTER = 12;
+  int EXCLUDE_FILTER = 14;
 
   /**
    * The feature id for the '<em><b>Type</b></em>' attribute.
@@ -727,7 +774,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getLoadTimeWeaver()
    * @generated
    */
-  int LOAD_TIME_WEAVER = 13;
+  int LOAD_TIME_WEAVER = 15;
 
   /**
    * The feature id for the '<em><b>Aspectj Weaving</b></em>' attribute.
@@ -764,7 +811,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getMbeanExport()
    * @generated
    */
-  int MBEAN_EXPORT = 14;
+  int MBEAN_EXPORT = 16;
 
   /**
    * The feature id for the '<em><b>Default Domain</b></em>' attribute.
@@ -810,7 +857,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getMbeanServer()
    * @generated
    */
-  int MBEAN_SERVER = 15;
+  int MBEAN_SERVER = 17;
 
   /**
    * The feature id for the '<em><b>Agent Id</b></em>' attribute.
@@ -847,7 +894,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getPropertyHolder()
    * @generated
    */
-  int PROPERTY_HOLDER = 16;
+  int PROPERTY_HOLDER = 18;
 
   /**
    * The feature id for the '<em><b>Propertyfile</b></em>' containment reference.
@@ -920,7 +967,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getPropertyPlaceholder()
    * @generated
    */
-  int PROPERTY_PLACEHOLDER = 17;
+  int PROPERTY_PLACEHOLDER = 19;
 
   /**
    * The feature id for the '<em><b>Propertyfile</b></em>' containment reference.
@@ -1002,7 +1049,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getPropertyOverride()
    * @generated
    */
-  int PROPERTY_OVERRIDE = 18;
+  int PROPERTY_OVERRIDE = 20;
 
   /**
    * The feature id for the '<em><b>Propertyfile</b></em>' containment reference.
@@ -1075,7 +1122,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getSpringConfigured()
    * @generated
    */
-  int SPRING_CONFIGURED = 19;
+  int SPRING_CONFIGURED = 21;
 
   /**
    * The number of structural features of the '<em>Spring Configured</em>' class.
@@ -1094,7 +1141,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getAspect()
    * @generated
    */
-  int ASPECT = 20;
+  int ASPECT = 22;
 
   /**
    * The feature id for the '<em><b>Expose Proxy</b></em>' attribute.
@@ -1131,7 +1178,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getAopAspectJAutoproxy()
    * @generated
    */
-  int AOP_ASPECT_JAUTOPROXY = 21;
+  int AOP_ASPECT_JAUTOPROXY = 23;
 
   /**
    * The feature id for the '<em><b>Expose Proxy</b></em>' attribute.
@@ -1177,7 +1224,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getAopInclude()
    * @generated
    */
-  int AOP_INCLUDE = 22;
+  int AOP_INCLUDE = 24;
 
   /**
    * The feature id for the '<em><b>Aop Include</b></em>' reference.
@@ -1205,7 +1252,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getAopConfig()
    * @generated
    */
-  int AOP_CONFIG = 23;
+  int AOP_CONFIG = 25;
 
   /**
    * The feature id for the '<em><b>Expose Proxy</b></em>' attribute.
@@ -1269,7 +1316,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getAopPointcut()
    * @generated
    */
-  int AOP_POINTCUT = 24;
+  int AOP_POINTCUT = 26;
 
   /**
    * The feature id for the '<em><b>Expression</b></em>' attribute.
@@ -1306,7 +1353,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getAopAdvisor()
    * @generated
    */
-  int AOP_ADVISOR = 25;
+  int AOP_ADVISOR = 27;
 
   /**
    * The feature id for the '<em><b>Advice Ref</b></em>' reference.
@@ -1370,7 +1417,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getAopAspect()
    * @generated
    */
-  int AOP_ASPECT = 26;
+  int AOP_ASPECT = 28;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1443,7 +1490,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getDeclareParents()
    * @generated
    */
-  int DECLARE_PARENTS = 27;
+  int DECLARE_PARENTS = 29;
 
   /**
    * The feature id for the '<em><b>Type Matching</b></em>' attribute.
@@ -1498,7 +1545,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getInterface()
    * @generated
    */
-  int INTERFACE = 28;
+  int INTERFACE = 30;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1526,7 +1573,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getAopDefaultImplInterface()
    * @generated
    */
-  int AOP_DEFAULT_IMPL_INTERFACE = 29;
+  int AOP_DEFAULT_IMPL_INTERFACE = 31;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1554,7 +1601,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getAopDelegateImplRef()
    * @generated
    */
-  int AOP_DELEGATE_IMPL_REF = 30;
+  int AOP_DELEGATE_IMPL_REF = 32;
 
   /**
    * The feature id for the '<em><b>Ref</b></em>' reference.
@@ -1582,7 +1629,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getAdvise()
    * @generated
    */
-  int ADVISE = 31;
+  int ADVISE = 33;
 
   /**
    * The feature id for the '<em><b>Pointcut Ref</b></em>' reference.
@@ -1628,7 +1675,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getBeforeAdvise()
    * @generated
    */
-  int BEFORE_ADVISE = 32;
+  int BEFORE_ADVISE = 34;
 
   /**
    * The feature id for the '<em><b>Pointcut Ref</b></em>' reference.
@@ -1674,7 +1721,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getAfterAdvise()
    * @generated
    */
-  int AFTER_ADVISE = 33;
+  int AFTER_ADVISE = 35;
 
   /**
    * The feature id for the '<em><b>Pointcut Ref</b></em>' reference.
@@ -1720,7 +1767,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getAroundAdvise()
    * @generated
    */
-  int AROUND_ADVISE = 34;
+  int AROUND_ADVISE = 36;
 
   /**
    * The feature id for the '<em><b>Pointcut Ref</b></em>' reference.
@@ -1766,7 +1813,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getAfterReturning()
    * @generated
    */
-  int AFTER_RETURNING = 35;
+  int AFTER_RETURNING = 37;
 
   /**
    * The feature id for the '<em><b>Pointcut Ref</b></em>' reference.
@@ -1821,7 +1868,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getAfterThowing()
    * @generated
    */
-  int AFTER_THOWING = 36;
+  int AFTER_THOWING = 38;
 
   /**
    * The feature id for the '<em><b>Pointcut Ref</b></em>' reference.
@@ -1876,7 +1923,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getTxAnnotation()
    * @generated
    */
-  int TX_ANNOTATION = 37;
+  int TX_ANNOTATION = 39;
 
   /**
    * The feature id for the '<em><b>Transaction Manager</b></em>' attribute.
@@ -1904,7 +1951,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getTxAdvise()
    * @generated
    */
-  int TX_ADVISE = 38;
+  int TX_ADVISE = 40;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1950,7 +1997,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getTxAttribute()
    * @generated
    */
-  int TX_ATTRIBUTE = 39;
+  int TX_ATTRIBUTE = 41;
 
   /**
    * The feature id for the '<em><b>Tx Methods</b></em>' containment reference list.
@@ -1978,7 +2025,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getTxMethod()
    * @generated
    */
-  int TX_METHOD = 40;
+  int TX_METHOD = 42;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -2060,7 +2107,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getTxJtaTransactionManager()
    * @generated
    */
-  int TX_JTA_TRANSACTION_MANAGER = 41;
+  int TX_JTA_TRANSACTION_MANAGER = 43;
 
   /**
    * The number of structural features of the '<em>Tx Jta Transaction Manager</em>' class.
@@ -2079,7 +2126,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getComponent()
    * @generated
    */
-  int COMPONENT = 42;
+  int COMPONENT = 44;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -2278,7 +2325,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getCreationMethod()
    * @generated
    */
-  int CREATION_METHOD = 43;
+  int CREATION_METHOD = 45;
 
   /**
    * The feature id for the '<em><b>Factory Method</b></em>' attribute.
@@ -2315,7 +2362,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getClassOrFactory()
    * @generated
    */
-  int CLASS_OR_FACTORY = 44;
+  int CLASS_OR_FACTORY = 46;
 
   /**
    * The number of structural features of the '<em>Class Or Factory</em>' class.
@@ -2334,7 +2381,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getFactory()
    * @generated
    */
-  int FACTORY = 45;
+  int FACTORY = 47;
 
   /**
    * The feature id for the '<em><b>Factory Bean</b></em>' reference.
@@ -2362,7 +2409,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getClass_()
    * @generated
    */
-  int CLASS = 46;
+  int CLASS = 48;
 
   /**
    * The feature id for the '<em><b>Classname</b></em>' attribute.
@@ -2390,7 +2437,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getAopScopedProxy()
    * @generated
    */
-  int AOP_SCOPED_PROXY = 47;
+  int AOP_SCOPED_PROXY = 49;
 
   /**
    * The feature id for the '<em><b>Proxy Target Class</b></em>' attribute.
@@ -2418,7 +2465,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getFeature()
    * @generated
    */
-  int FEATURE = 48;
+  int FEATURE = 50;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -2482,7 +2529,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getAttribute()
    * @generated
    */
-  int ATTRIBUTE = 49;
+  int ATTRIBUTE = 51;
 
   /**
    * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -2519,7 +2566,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getReference()
    * @generated
    */
-  int REFERENCE = 50;
+  int REFERENCE = 52;
 
   /**
    * The feature id for the '<em><b>Ref</b></em>' reference.
@@ -2547,7 +2594,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getLookupMethod()
    * @generated
    */
-  int LOOKUP_METHOD = 51;
+  int LOOKUP_METHOD = 53;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -2584,7 +2631,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getQualifier()
    * @generated
    */
-  int QUALIFIER = 52;
+  int QUALIFIER = 54;
 
   /**
    * The feature id for the '<em><b>Type</b></em>' attribute.
@@ -2630,7 +2677,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getMeta()
    * @generated
    */
-  int META = 53;
+  int META = 55;
 
   /**
    * The feature id for the '<em><b>Key</b></em>' attribute.
@@ -2667,7 +2714,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getQualifierAttribute()
    * @generated
    */
-  int QUALIFIER_ATTRIBUTE = 54;
+  int QUALIFIER_ATTRIBUTE = 56;
 
   /**
    * The feature id for the '<em><b>Key</b></em>' attribute.
@@ -2704,7 +2751,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getsList()
    * @generated
    */
-  int SLIST = 55;
+  int SLIST = 57;
 
   /**
    * The feature id for the '<em><b>Value Type</b></em>' attribute.
@@ -2759,7 +2806,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getsSet()
    * @generated
    */
-  int SSET = 56;
+  int SSET = 58;
 
   /**
    * The feature id for the '<em><b>Value Type</b></em>' attribute.
@@ -2814,7 +2861,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getProps()
    * @generated
    */
-  int PROPS = 57;
+  int PROPS = 59;
 
   /**
    * The feature id for the '<em><b>Value Type</b></em>' attribute.
@@ -2869,7 +2916,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getProp()
    * @generated
    */
-  int PROP = 58;
+  int PROP = 60;
 
   /**
    * The feature id for the '<em><b>Key</b></em>' attribute.
@@ -2906,7 +2953,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getMap()
    * @generated
    */
-  int MAP = 59;
+  int MAP = 61;
 
   /**
    * The feature id for the '<em><b>Value Type</b></em>' attribute.
@@ -2970,7 +3017,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getMapEntry()
    * @generated
    */
-  int MAP_ENTRY = 60;
+  int MAP_ENTRY = 62;
 
   /**
    * The feature id for the '<em><b>Key</b></em>' containment reference.
@@ -3025,7 +3072,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getKey()
    * @generated
    */
-  int KEY = 61;
+  int KEY = 63;
 
   /**
    * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -3062,7 +3109,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getUtilConstant()
    * @generated
    */
-  int UTIL_CONSTANT = 62;
+  int UTIL_CONSTANT = 64;
 
   /**
    * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -3117,7 +3164,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getUtilPropertyPath()
    * @generated
    */
-  int UTIL_PROPERTY_PATH = 63;
+  int UTIL_PROPERTY_PATH = 65;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -3154,7 +3201,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getUtilProperties()
    * @generated
    */
-  int UTIL_PROPERTIES = 64;
+  int UTIL_PROPERTIES = 66;
 
   /**
    * The feature id for the '<em><b>Value Type</b></em>' attribute.
@@ -3254,7 +3301,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getUtilList()
    * @generated
    */
-  int UTIL_LIST = 65;
+  int UTIL_LIST = 67;
 
   /**
    * The feature id for the '<em><b>Value Type</b></em>' attribute.
@@ -3336,7 +3383,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getUtilMap()
    * @generated
    */
-  int UTIL_MAP = 66;
+  int UTIL_MAP = 68;
 
   /**
    * The feature id for the '<em><b>Value Type</b></em>' attribute.
@@ -3427,7 +3474,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getUtilSet()
    * @generated
    */
-  int UTIL_SET = 67;
+  int UTIL_SET = 69;
 
   /**
    * The feature id for the '<em><b>Value Type</b></em>' attribute.
@@ -3509,7 +3556,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getPropertyFile()
    * @generated
    */
-  int PROPERTY_FILE = 68;
+  int PROPERTY_FILE = 70;
 
   /**
    * The feature id for the '<em><b>Components</b></em>' containment reference list.
@@ -3555,7 +3602,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getDataString()
    * @generated
    */
-  int DATA_STRING = 69;
+  int DATA_STRING = 71;
 
   /**
    * The feature id for the '<em><b>S</b></em>' attribute.
@@ -3583,7 +3630,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getsBoolean()
    * @generated
    */
-  int SBOOLEAN = 70;
+  int SBOOLEAN = 72;
 
   /**
    * The meta object id for the '{@link org.xtext.spring.springConfigDsl.DefaultableBoolean <em>Defaultable Boolean</em>}' enum.
@@ -3593,7 +3640,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getDefaultableBoolean()
    * @generated
    */
-  int DEFAULTABLE_BOOLEAN = 71;
+  int DEFAULTABLE_BOOLEAN = 73;
 
   /**
    * The meta object id for the '{@link org.xtext.spring.springConfigDsl.AutoWiredType <em>Auto Wired Type</em>}' enum.
@@ -3603,7 +3650,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getAutoWiredType()
    * @generated
    */
-  int AUTO_WIRED_TYPE = 72;
+  int AUTO_WIRED_TYPE = 74;
 
   /**
    * The meta object id for the '{@link org.xtext.spring.springConfigDsl.EnumScopedProxy <em>Enum Scoped Proxy</em>}' enum.
@@ -3613,7 +3660,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getEnumScopedProxy()
    * @generated
    */
-  int ENUM_SCOPED_PROXY = 73;
+  int ENUM_SCOPED_PROXY = 75;
 
   /**
    * The meta object id for the '{@link org.xtext.spring.springConfigDsl.EnumTypeFilter <em>Enum Type Filter</em>}' enum.
@@ -3623,7 +3670,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getEnumTypeFilter()
    * @generated
    */
-  int ENUM_TYPE_FILTER = 74;
+  int ENUM_TYPE_FILTER = 76;
 
   /**
    * The meta object id for the '{@link org.xtext.spring.springConfigDsl.MbeanRegistrationEnum <em>Mbean Registration Enum</em>}' enum.
@@ -3633,7 +3680,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getMbeanRegistrationEnum()
    * @generated
    */
-  int MBEAN_REGISTRATION_ENUM = 75;
+  int MBEAN_REGISTRATION_ENUM = 77;
 
   /**
    * The meta object id for the '{@link org.xtext.spring.springConfigDsl.EnumIsolation <em>Enum Isolation</em>}' enum.
@@ -3643,7 +3690,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getEnumIsolation()
    * @generated
    */
-  int ENUM_ISOLATION = 76;
+  int ENUM_ISOLATION = 78;
 
   /**
    * The meta object id for the '{@link org.xtext.spring.springConfigDsl.PropagationEnum <em>Propagation Enum</em>}' enum.
@@ -3653,7 +3700,7 @@ public interface SpringConfigDslPackage extends EPackage
    * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getPropagationEnum()
    * @generated
    */
-  int PROPAGATION_ENUM = 77;
+  int PROPAGATION_ENUM = 79;
 
 
   /**
@@ -3894,15 +3941,26 @@ public interface SpringConfigDslPackage extends EPackage
   EReference getConfiguration_Mvcs();
 
   /**
-   * Returns the meta object for the attribute list '{@link org.xtext.spring.springConfigDsl.Configuration#getHttps <em>Https</em>}'.
+   * Returns the meta object for the containment reference list '{@link org.xtext.spring.springConfigDsl.Configuration#getHttps <em>Https</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the attribute list '<em>Https</em>'.
+   * @return the meta object for the containment reference list '<em>Https</em>'.
    * @see org.xtext.spring.springConfigDsl.Configuration#getHttps()
    * @see #getConfiguration()
    * @generated
    */
-  EAttribute getConfiguration_Https();
+  EReference getConfiguration_Https();
+
+  /**
+   * Returns the meta object for the containment reference list '{@link org.xtext.spring.springConfigDsl.Configuration#getSpringSecurity <em>Spring Security</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the containment reference list '<em>Spring Security</em>'.
+   * @see org.xtext.spring.springConfigDsl.Configuration#getSpringSecurity()
+   * @see #getConfiguration()
+   * @generated
+   */
+  EReference getConfiguration_SpringSecurity();
 
   /**
    * Returns the meta object for the containment reference list '{@link org.xtext.spring.springConfigDsl.Configuration#getAspects <em>Aspects</em>}'.
@@ -4045,6 +4103,26 @@ public interface SpringConfigDslPackage extends EPackage
    * @generated
    */
   EReference getMVC_Components();
+
+  /**
+   * Returns the meta object for class '{@link org.xtext.spring.springConfigDsl.Http <em>Http</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Http</em>'.
+   * @see org.xtext.spring.springConfigDsl.Http
+   * @generated
+   */
+  EClass getHttp();
+
+  /**
+   * Returns the meta object for class '{@link org.xtext.spring.springConfigDsl.SpringSecurity <em>Spring Security</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Spring Security</em>'.
+   * @see org.xtext.spring.springConfigDsl.SpringSecurity
+   * @generated
+   */
+  EClass getSpringSecurity();
 
   /**
    * Returns the meta object for class '{@link org.xtext.spring.springConfigDsl.Alias <em>Alias</em>}'.
@@ -6626,12 +6704,20 @@ public interface SpringConfigDslPackage extends EPackage
     EReference CONFIGURATION__MVCS = eINSTANCE.getConfiguration_Mvcs();
 
     /**
-     * The meta object literal for the '<em><b>Https</b></em>' attribute list feature.
+     * The meta object literal for the '<em><b>Https</b></em>' containment reference list feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute CONFIGURATION__HTTPS = eINSTANCE.getConfiguration_Https();
+    EReference CONFIGURATION__HTTPS = eINSTANCE.getConfiguration_Https();
+
+    /**
+     * The meta object literal for the '<em><b>Spring Security</b></em>' containment reference list feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference CONFIGURATION__SPRING_SECURITY = eINSTANCE.getConfiguration_SpringSecurity();
 
     /**
      * The meta object literal for the '<em><b>Aspects</b></em>' containment reference list feature.
@@ -6738,6 +6824,26 @@ public interface SpringConfigDslPackage extends EPackage
      * @generated
      */
     EReference MVC__COMPONENTS = eINSTANCE.getMVC_Components();
+
+    /**
+     * The meta object literal for the '{@link org.xtext.spring.springConfigDsl.impl.HttpImpl <em>Http</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see org.xtext.spring.springConfigDsl.impl.HttpImpl
+     * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getHttp()
+     * @generated
+     */
+    EClass HTTP = eINSTANCE.getHttp();
+
+    /**
+     * The meta object literal for the '{@link org.xtext.spring.springConfigDsl.impl.SpringSecurityImpl <em>Spring Security</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see org.xtext.spring.springConfigDsl.impl.SpringSecurityImpl
+     * @see org.xtext.spring.springConfigDsl.impl.SpringConfigDslPackageImpl#getSpringSecurity()
+     * @generated
+     */
+    EClass SPRING_SECURITY = eINSTANCE.getSpringSecurity();
 
     /**
      * The meta object literal for the '{@link org.xtext.spring.springConfigDsl.impl.AliasImpl <em>Alias</em>}' class.

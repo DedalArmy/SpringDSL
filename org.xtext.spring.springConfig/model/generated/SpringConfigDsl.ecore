@@ -33,8 +33,10 @@
         eType="#//Context" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="mvcs" upperBound="-1" eType="#//MVC"
         containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="https" unique="false" upperBound="-1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="https" upperBound="-1"
+        eType="#//Http" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="springSecurity" upperBound="-1"
+        eType="#//SpringSecurity" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="aspects" upperBound="-1"
         eType="#//Aspect" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="utilConstants" upperBound="-1"
@@ -62,6 +64,8 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="components" upperBound="-1"
         eType="#//Component" containment="true"/>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Http"/>
+  <eClassifiers xsi:type="ecore:EClass" name="SpringSecurity"/>
   <eClassifiers xsi:type="ecore:EClass" name="Alias">
     <eStructuralFeatures xsi:type="ecore:EReference" name="origin" eType="#//Component"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="alias" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -274,7 +278,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Reference" eSuperTypes="#//AbstractArtefact">
+  <eClassifiers xsi:type="ecore:EClass" name="Reference" eSuperTypes="#//AbstractArtefact #//Http #//SpringSecurity">
     <eStructuralFeatures xsi:type="ecore:EReference" name="ref" eType="#//AbstractArtefact"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="LookupMethod">

@@ -30,10 +30,10 @@ Collection returns Collection:
 Configuration returns Configuration:
 	{Configuration}
 	(
-	'<beans'
+	('<beans' | '<beans:beans')
 	
-	((':'ID)?
-	&('default-autowire='defaultAutowire=AutoWiredType)?
+	(
+	('default-autowire='defaultAutowire=AutoWiredType)?
 	&('default-init-method='defaultInitMethod=ValidString)? //Method
 	&('default-autowire-candidates='defaultAutowireCandidates=ValidString)? //REGEX
 	&('default-destroy-method='defaultDestroyMethod=ValidString)? //Method
@@ -46,7 +46,8 @@ Configuration returns Configuration:
 	(components+=Component|alias+=Alias|imports+=Import
 		|contexts+=Context
 		|mvcs += MVC
-		|https+=Http
+		|security+=Security
+		|springSecurity += SpringSecurity
 		|aspects+=Aspect
 		|utilConstants+=UtilConstant|utilLists+=UtilList|utilMaps+=UtilMap
 		|utilProperties+=UtilProperties|utilSets+=UtilSet|utilPropertiesPath+=UtilPropertyPath
@@ -54,16 +55,22 @@ Configuration returns Configuration:
 		
 	)*
 	(ConfigurationComposite+=Configuration)*
-	('</beans'(':'ID)? '>');
+	('</beans>'| '</beans:beans>');
 
 MVC:			
 	('<mvc:' (->ID|IDWITHDASH) (PropertyFileSimple|"path="QSTRING)? ((->ID|IDWITHDASH)'='QSTRING)*   ('/>' |('>' components += (Component)* (('<mvc:'|'</mvc:') (ID|IDWITHDASH) ('>'|'/>')))))
 ;
 
-Http:
-	'<http' (IDWITHDASH'='ValidString)*  '>' 
-        ('<'(->ID|IDWITHDASH)+ ((->ID|IDWITHDASH)'='ValidString)* '/>' )*    
-    '</http>'|('/>')
+Security:
+		('<http'|'<authentication-manager')(ReferenceTag)?((IDWITHDASH'='|'alias=')(ValidString))*  '>' 
+	       (VALIDTAG)*    
+	    ('</http>'| '</authentication-manager>'|'/>')
+	;
+	
+SpringSecurity :
+	'<global-method-security' (IDWITHDASH)'='ValidString
+		('>''<expression-handler' ReferenceAtt '/>')? 
+	('/>' | '</global-method-security>')
 ;
 /*<alias/> */
 Alias returns Alias:
@@ -345,7 +352,7 @@ TxJtaTransactionManager:
 /*<bean/> */
 Component returns Component:
 	{Component}
-	'<bean' 
+	('<bean' |'<beans:bean')
 	(((('id='|"name=")name=ValidString (("name=")?names+=ValidString)?))?
 	&   class= CreationMethod
 	&  (features+=PNamespace)*
@@ -519,7 +526,7 @@ CNamespace returns Feature:
 
 
 LookupMethod:
-'<''lookup-method' (('name='name=ValidString) & ('bean='ref=[Component|ValidString]))(('/>')|('>''</lookup-method>'))	
+'<lookup-method' (('name='name=ValidString) & ('bean='ref=[Component|ValidString]))(('/>')|('>''</lookup-method>'))	
 ;
 
 Qualifier:
@@ -731,7 +738,22 @@ IdDashAndColon:
 IdWithDashs:
 	ID ('-' ID)*;
 
-	
+VALIDTAG :
+	 KeyWord ((ID'='|IDWITHDASH'='|'name='|'type='|'alias=')(ValidString))* ('>' (VALIDTAG)* EndingKeyWord|'/>') 
+;
+
+EndingKeyWord:
+	('</form-login>'|'</logout>'|'</intercept-url>'|'</http-basic>'|'</port-mappings>'
+	|'</session-management>'|'</concurrency-control>'|'</openid-login>'|'</attribute-exchange>'
+	|'</openid-attribute>'|'</custom-filter>'|'</authentication-provider>'|'</password-encoder>'|'</salt-source>')
+;	
+
+KeyWord :
+	('<form-login'|'<logout'|'<intercept-url'|'<http-basic'|'<port-mappings'
+	|'<session-management'|'<concurrency-control'|'<openid-login'|'<attribute-exchange'
+	|'<openid-attribute'|'<custom-filter'|'<authentication-provider'|'<password-encoder'|'<salt-source')
+;
+
 QSTRING hidden(ML_COMMENT):
      (ID|INT|WS|ValidString|IDWITHDASH
      	|','|'.'|';'|':'|'-'|'?'|'!'
@@ -802,6 +824,7 @@ enum PropagationEnum:
 ;
 /***TERMINAL RULES */
 terminal ID  		: '^'?('a'..'z'|'A'..'Z'|'_') ('a'..'z'|'A'..'Z'|'_'|'0'..'9')*;
+
 terminal IDWITHDASH : ('a'..'z'|'A'..'Z'|'_') ('a'..'z'|'A'..'Z'|'_'|'0'..'9' | '-')* ;
 terminal INT returns ecore::EInt: ('0'..'9')+;
 
@@ -809,6 +832,7 @@ terminal STRING	:
 			'"' ( '\\' . | !('\\'|'"') )* '"' |
 			"'" ( '\\' . | !('\\'|"'") )* "'"
 		; 
+		
 
 terminal WS			: (' '|'\t'|'\r'|'\n')+;
 

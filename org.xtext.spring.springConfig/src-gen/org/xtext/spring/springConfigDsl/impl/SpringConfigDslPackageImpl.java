@@ -49,6 +49,7 @@ import org.xtext.spring.springConfigDsl.EnumTypeFilter;
 import org.xtext.spring.springConfigDsl.ExcludeFilter;
 import org.xtext.spring.springConfigDsl.Factory;
 import org.xtext.spring.springConfigDsl.Feature;
+import org.xtext.spring.springConfigDsl.Http;
 import org.xtext.spring.springConfigDsl.Import;
 import org.xtext.spring.springConfigDsl.IncludeFilter;
 import org.xtext.spring.springConfigDsl.Interface;
@@ -75,6 +76,7 @@ import org.xtext.spring.springConfigDsl.SpringConfigDslFactory;
 import org.xtext.spring.springConfigDsl.SpringConfigDslPackage;
 import org.xtext.spring.springConfigDsl.SpringConfigured;
 import org.xtext.spring.springConfigDsl.SpringProject;
+import org.xtext.spring.springConfigDsl.SpringSecurity;
 import org.xtext.spring.springConfigDsl.TxAdvise;
 import org.xtext.spring.springConfigDsl.TxAnnotation;
 import org.xtext.spring.springConfigDsl.TxAttribute;
@@ -139,6 +141,20 @@ public class SpringConfigDslPackageImpl extends EPackageImpl implements SpringCo
    * @generated
    */
   private EClass mvcEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass httpEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass springSecurityEClass = null;
 
   /**
    * <!-- begin-user-doc -->
@@ -932,9 +948,9 @@ public class SpringConfigDslPackageImpl extends EPackageImpl implements SpringCo
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getConfiguration_Https()
+  public EReference getConfiguration_Https()
   {
-    return (EAttribute)configurationEClass.getEStructuralFeatures().get(13);
+    return (EReference)configurationEClass.getEStructuralFeatures().get(13);
   }
 
   /**
@@ -942,7 +958,7 @@ public class SpringConfigDslPackageImpl extends EPackageImpl implements SpringCo
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getConfiguration_Aspects()
+  public EReference getConfiguration_SpringSecurity()
   {
     return (EReference)configurationEClass.getEStructuralFeatures().get(14);
   }
@@ -952,7 +968,7 @@ public class SpringConfigDslPackageImpl extends EPackageImpl implements SpringCo
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getConfiguration_UtilConstants()
+  public EReference getConfiguration_Aspects()
   {
     return (EReference)configurationEClass.getEStructuralFeatures().get(15);
   }
@@ -962,7 +978,7 @@ public class SpringConfigDslPackageImpl extends EPackageImpl implements SpringCo
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getConfiguration_UtilLists()
+  public EReference getConfiguration_UtilConstants()
   {
     return (EReference)configurationEClass.getEStructuralFeatures().get(16);
   }
@@ -972,7 +988,7 @@ public class SpringConfigDslPackageImpl extends EPackageImpl implements SpringCo
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getConfiguration_UtilMaps()
+  public EReference getConfiguration_UtilLists()
   {
     return (EReference)configurationEClass.getEStructuralFeatures().get(17);
   }
@@ -982,7 +998,7 @@ public class SpringConfigDslPackageImpl extends EPackageImpl implements SpringCo
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getConfiguration_UtilProperties()
+  public EReference getConfiguration_UtilMaps()
   {
     return (EReference)configurationEClass.getEStructuralFeatures().get(18);
   }
@@ -992,7 +1008,7 @@ public class SpringConfigDslPackageImpl extends EPackageImpl implements SpringCo
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getConfiguration_UtilSets()
+  public EReference getConfiguration_UtilProperties()
   {
     return (EReference)configurationEClass.getEStructuralFeatures().get(19);
   }
@@ -1002,7 +1018,7 @@ public class SpringConfigDslPackageImpl extends EPackageImpl implements SpringCo
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getConfiguration_UtilPropertiesPath()
+  public EReference getConfiguration_UtilSets()
   {
     return (EReference)configurationEClass.getEStructuralFeatures().get(20);
   }
@@ -1012,7 +1028,7 @@ public class SpringConfigDslPackageImpl extends EPackageImpl implements SpringCo
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getConfiguration_TxAdvices()
+  public EReference getConfiguration_UtilPropertiesPath()
   {
     return (EReference)configurationEClass.getEStructuralFeatures().get(21);
   }
@@ -1022,7 +1038,7 @@ public class SpringConfigDslPackageImpl extends EPackageImpl implements SpringCo
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getConfiguration_TxJtaTransactionManager()
+  public EReference getConfiguration_TxAdvices()
   {
     return (EReference)configurationEClass.getEStructuralFeatures().get(22);
   }
@@ -1032,7 +1048,7 @@ public class SpringConfigDslPackageImpl extends EPackageImpl implements SpringCo
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getConfiguration_TxAnnotations()
+  public EReference getConfiguration_TxJtaTransactionManager()
   {
     return (EReference)configurationEClass.getEStructuralFeatures().get(23);
   }
@@ -1042,9 +1058,19 @@ public class SpringConfigDslPackageImpl extends EPackageImpl implements SpringCo
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getConfiguration_ConfigurationComposite()
+  public EReference getConfiguration_TxAnnotations()
   {
     return (EReference)configurationEClass.getEStructuralFeatures().get(24);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EReference getConfiguration_ConfigurationComposite()
+  {
+    return (EReference)configurationEClass.getEStructuralFeatures().get(25);
   }
 
   /**
@@ -1065,6 +1091,26 @@ public class SpringConfigDslPackageImpl extends EPackageImpl implements SpringCo
   public EReference getMVC_Components()
   {
     return (EReference)mvcEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getHttp()
+  {
+    return httpEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getSpringSecurity()
+  {
+    return springSecurityEClass;
   }
 
   /**
@@ -3343,7 +3389,8 @@ public class SpringConfigDslPackageImpl extends EPackageImpl implements SpringCo
     createEReference(configurationEClass, CONFIGURATION__IMPORTS);
     createEReference(configurationEClass, CONFIGURATION__CONTEXTS);
     createEReference(configurationEClass, CONFIGURATION__MVCS);
-    createEAttribute(configurationEClass, CONFIGURATION__HTTPS);
+    createEReference(configurationEClass, CONFIGURATION__HTTPS);
+    createEReference(configurationEClass, CONFIGURATION__SPRING_SECURITY);
     createEReference(configurationEClass, CONFIGURATION__ASPECTS);
     createEReference(configurationEClass, CONFIGURATION__UTIL_CONSTANTS);
     createEReference(configurationEClass, CONFIGURATION__UTIL_LISTS);
@@ -3358,6 +3405,10 @@ public class SpringConfigDslPackageImpl extends EPackageImpl implements SpringCo
 
     mvcEClass = createEClass(MVC);
     createEReference(mvcEClass, MVC__COMPONENTS);
+
+    httpEClass = createEClass(HTTP);
+
+    springSecurityEClass = createEClass(SPRING_SECURITY);
 
     aliasEClass = createEClass(ALIAS);
     createEReference(aliasEClass, ALIAS__ORIGIN);
@@ -3700,6 +3751,8 @@ public class SpringConfigDslPackageImpl extends EPackageImpl implements SpringCo
     classEClass.getESuperTypes().add(this.getClassOrFactory());
     attributeEClass.getESuperTypes().add(this.getAbstractArtefact());
     referenceEClass.getESuperTypes().add(this.getAbstractArtefact());
+    referenceEClass.getESuperTypes().add(this.getHttp());
+    referenceEClass.getESuperTypes().add(this.getSpringSecurity());
     sListEClass.getESuperTypes().add(this.getCollection());
     sSetEClass.getESuperTypes().add(this.getCollection());
     propsEClass.getESuperTypes().add(this.getCollection());
@@ -3739,7 +3792,8 @@ public class SpringConfigDslPackageImpl extends EPackageImpl implements SpringCo
     initEReference(getConfiguration_Imports(), this.getImport(), null, "imports", null, 0, -1, Configuration.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getConfiguration_Contexts(), this.getContext(), null, "contexts", null, 0, -1, Configuration.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getConfiguration_Mvcs(), this.getMVC(), null, "mvcs", null, 0, -1, Configuration.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getConfiguration_Https(), ecorePackage.getEString(), "https", null, 0, -1, Configuration.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getConfiguration_Https(), this.getHttp(), null, "https", null, 0, -1, Configuration.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getConfiguration_SpringSecurity(), this.getSpringSecurity(), null, "springSecurity", null, 0, -1, Configuration.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getConfiguration_Aspects(), this.getAspect(), null, "aspects", null, 0, -1, Configuration.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getConfiguration_UtilConstants(), this.getUtilConstant(), null, "utilConstants", null, 0, -1, Configuration.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getConfiguration_UtilLists(), this.getUtilList(), null, "utilLists", null, 0, -1, Configuration.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -3754,6 +3808,10 @@ public class SpringConfigDslPackageImpl extends EPackageImpl implements SpringCo
 
     initEClass(mvcEClass, org.xtext.spring.springConfigDsl.MVC.class, "MVC", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEReference(getMVC_Components(), this.getComponent(), null, "components", null, 0, -1, org.xtext.spring.springConfigDsl.MVC.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+    initEClass(httpEClass, Http.class, "Http", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+    initEClass(springSecurityEClass, SpringSecurity.class, "SpringSecurity", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
     initEClass(aliasEClass, Alias.class, "Alias", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEReference(getAlias_Origin(), this.getComponent(), null, "origin", null, 0, 1, Alias.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

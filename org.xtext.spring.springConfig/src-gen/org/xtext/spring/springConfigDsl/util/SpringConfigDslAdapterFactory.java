@@ -43,6 +43,7 @@ import org.xtext.spring.springConfigDsl.DeclareParents;
 import org.xtext.spring.springConfigDsl.ExcludeFilter;
 import org.xtext.spring.springConfigDsl.Factory;
 import org.xtext.spring.springConfigDsl.Feature;
+import org.xtext.spring.springConfigDsl.Http;
 import org.xtext.spring.springConfigDsl.Import;
 import org.xtext.spring.springConfigDsl.IncludeFilter;
 import org.xtext.spring.springConfigDsl.Interface;
@@ -67,6 +68,7 @@ import org.xtext.spring.springConfigDsl.Reference;
 import org.xtext.spring.springConfigDsl.SpringConfigDslPackage;
 import org.xtext.spring.springConfigDsl.SpringConfigured;
 import org.xtext.spring.springConfigDsl.SpringProject;
+import org.xtext.spring.springConfigDsl.SpringSecurity;
 import org.xtext.spring.springConfigDsl.TxAdvise;
 import org.xtext.spring.springConfigDsl.TxAnnotation;
 import org.xtext.spring.springConfigDsl.TxAttribute;
@@ -173,6 +175,16 @@ public class SpringConfigDslAdapterFactory extends AdapterFactoryImpl
       public Adapter caseMVC(MVC object)
       {
         return createMVCAdapter();
+      }
+      @Override
+      public Adapter caseHttp(Http object)
+      {
+        return createHttpAdapter();
+      }
+      @Override
+      public Adapter caseSpringSecurity(SpringSecurity object)
+      {
+        return createSpringSecurityAdapter();
       }
       @Override
       public Adapter caseAlias(Alias object)
@@ -602,6 +614,36 @@ public class SpringConfigDslAdapterFactory extends AdapterFactoryImpl
    * @generated
    */
   public Adapter createMVCAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.Http <em>Http</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.Http
+   * @generated
+   */
+  public Adapter createHttpAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link org.xtext.spring.springConfigDsl.SpringSecurity <em>Spring Security</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see org.xtext.spring.springConfigDsl.SpringSecurity
+   * @generated
+   */
+  public Adapter createSpringSecurityAdapter()
   {
     return null;
   }

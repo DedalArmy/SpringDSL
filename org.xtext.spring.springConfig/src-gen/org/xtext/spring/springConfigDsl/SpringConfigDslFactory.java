@@ -78,6 +78,24 @@ public interface SpringConfigDslFactory extends EFactory
   MVC createMVC();
 
   /**
+   * Returns a new object of class '<em>Http</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Http</em>'.
+   * @generated
+   */
+  Http createHttp();
+
+  /**
+   * Returns a new object of class '<em>Spring Security</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Spring Security</em>'.
+   * @generated
+   */
+  SpringSecurity createSpringSecurity();
+
+  /**
    * Returns a new object of class '<em>Alias</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
