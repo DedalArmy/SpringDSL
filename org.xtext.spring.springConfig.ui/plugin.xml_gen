@@ -204,6 +204,15 @@
 			</activeWhen>
 		</handler>
 	</extension>
+	<extension point="org.eclipse.core.contenttype.contentTypes">
+		<content-type
+			base-type="org.eclipse.core.runtime.text"
+			file-extensions="sdsl,xml"
+			id="org.xtext.spring.SpringConfigDsl.contenttype"
+			name="SpringConfigDsl File"
+			priority="normal">
+		</content-type>
+	</extension>
 	<!-- adding resource factories -->
 	<extension
 		point="org.eclipse.emf.ecore.extension_parser">
@@ -252,6 +261,15 @@
 			point="org.eclipse.core.resources.markers">
 		<super type="org.eclipse.xtext.ui.check.expensive"/>
 		<persistent value="true"/>
+	</extension>
+	<extension point="org.eclipse.ui.preferencePages">
+		<page
+			category="org.xtext.spring.SpringConfigDsl"
+			class="org.xtext.spring.ui.SpringConfigDslExecutableExtensionFactory:org.eclipse.xtext.ui.validation.ValidatorPreferencePage"
+			id="org.xtext.spring.SpringConfigDsl.validator.preferencePage"
+			name="Errors/Warnings">
+			<keywordReference id="org.xtext.spring.ui.keyword_SpringConfigDsl"/>
+		</page>
 	</extension>
 	<extension point="org.eclipse.xtext.builder.participant">
 		<participant
@@ -401,12 +419,18 @@
 			class="org.xtext.spring.ui.SpringConfigDslExecutableExtensionFactory:org.eclipse.xtext.ui.compare.InjectableViewerCreator"
 			extensions="sdsl,xml">
 		</viewer>
+		<contentTypeBinding
+			contentTypeId="org.xtext.spring.SpringConfigDsl.contenttype"
+			contentViewerId="org.xtext.spring.SpringConfigDsl.compare.contentViewers" />
 	</extension>
 	<extension point="org.eclipse.compare.contentMergeViewers">
 		<viewer id="org.xtext.spring.SpringConfigDsl.compare.contentMergeViewers"
 			class="org.xtext.spring.ui.SpringConfigDslExecutableExtensionFactory:org.eclipse.xtext.ui.compare.InjectableViewerCreator"
 			extensions="sdsl,xml" label="SpringConfigDsl Compare">
 		</viewer>
+		<contentTypeBinding
+			contentTypeId="org.xtext.spring.SpringConfigDsl.contenttype"
+			contentMergeViewerId="org.xtext.spring.SpringConfigDsl.compare.contentMergeViewers" />
 	</extension>
 	<extension point="org.eclipse.ui.editors.documentProviders">
 		<provider id="org.xtext.spring.SpringConfigDsl.editors.documentProviders"
