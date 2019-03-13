@@ -262,15 +262,6 @@
 		<super type="org.eclipse.xtext.ui.check.expensive"/>
 		<persistent value="true"/>
 	</extension>
-	<extension point="org.eclipse.ui.preferencePages">
-		<page
-			category="org.xtext.spring.SpringConfigDsl"
-			class="org.xtext.spring.ui.SpringConfigDslExecutableExtensionFactory:org.eclipse.xtext.ui.validation.ValidatorPreferencePage"
-			id="org.xtext.spring.SpringConfigDsl.validator.preferencePage"
-			name="Errors/Warnings">
-			<keywordReference id="org.xtext.spring.ui.keyword_SpringConfigDsl"/>
-		</page>
-	</extension>
 	<extension point="org.eclipse.xtext.builder.participant">
 		<participant
 			class="org.xtext.spring.ui.SpringConfigDslExecutableExtensionFactory:org.eclipse.xtext.builder.IXtextBuilderParticipant"

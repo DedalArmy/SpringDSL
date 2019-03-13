@@ -15,41 +15,41 @@ import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
-import org.xtext.spring.springConfigDsl.AopAspectJAutoproxy;
-import org.xtext.spring.springConfigDsl.AopInclude;
+import org.xtext.spring.springConfigDsl.AbstractArtefact;
+import org.xtext.spring.springConfigDsl.Array;
 import org.xtext.spring.springConfigDsl.SpringConfigDslPackage;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Aop Aspect JAutoproxy</b></em>'.
+ * An implementation of the model object '<em><b>Array</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link org.xtext.spring.springConfigDsl.impl.AopAspectJAutoproxyImpl#getAopincludes <em>Aopincludes</em>}</li>
+ *   <li>{@link org.xtext.spring.springConfigDsl.impl.ArrayImpl#getArtefacts <em>Artefacts</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class AopAspectJAutoproxyImpl extends AspectImpl implements AopAspectJAutoproxy
+public class ArrayImpl extends CollectionImpl implements Array
 {
   /**
-   * The cached value of the '{@link #getAopincludes() <em>Aopincludes</em>}' containment reference list.
+   * The cached value of the '{@link #getArtefacts() <em>Artefacts</em>}' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getAopincludes()
+   * @see #getArtefacts()
    * @generated
    * @ordered
    */
-  protected EList<AopInclude> aopincludes;
+  protected EList<AbstractArtefact> artefacts;
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  protected AopAspectJAutoproxyImpl()
+  protected ArrayImpl()
   {
     super();
   }
@@ -62,7 +62,7 @@ public class AopAspectJAutoproxyImpl extends AspectImpl implements AopAspectJAut
   @Override
   protected EClass eStaticClass()
   {
-    return SpringConfigDslPackage.Literals.AOP_ASPECT_JAUTOPROXY;
+    return SpringConfigDslPackage.Literals.ARRAY;
   }
 
   /**
@@ -71,13 +71,13 @@ public class AopAspectJAutoproxyImpl extends AspectImpl implements AopAspectJAut
    * @generated
    */
   @Override
-  public EList<AopInclude> getAopincludes()
+  public EList<AbstractArtefact> getArtefacts()
   {
-    if (aopincludes == null)
+    if (artefacts == null)
     {
-      aopincludes = new EObjectContainmentEList<AopInclude>(AopInclude.class, this, SpringConfigDslPackage.AOP_ASPECT_JAUTOPROXY__AOPINCLUDES);
+      artefacts = new EObjectContainmentEList<AbstractArtefact>(AbstractArtefact.class, this, SpringConfigDslPackage.ARRAY__ARTEFACTS);
     }
-    return aopincludes;
+    return artefacts;
   }
 
   /**
@@ -90,8 +90,8 @@ public class AopAspectJAutoproxyImpl extends AspectImpl implements AopAspectJAut
   {
     switch (featureID)
     {
-      case SpringConfigDslPackage.AOP_ASPECT_JAUTOPROXY__AOPINCLUDES:
-        return ((InternalEList<?>)getAopincludes()).basicRemove(otherEnd, msgs);
+      case SpringConfigDslPackage.ARRAY__ARTEFACTS:
+        return ((InternalEList<?>)getArtefacts()).basicRemove(otherEnd, msgs);
     }
     return super.eInverseRemove(otherEnd, featureID, msgs);
   }
@@ -106,8 +106,8 @@ public class AopAspectJAutoproxyImpl extends AspectImpl implements AopAspectJAut
   {
     switch (featureID)
     {
-      case SpringConfigDslPackage.AOP_ASPECT_JAUTOPROXY__AOPINCLUDES:
-        return getAopincludes();
+      case SpringConfigDslPackage.ARRAY__ARTEFACTS:
+        return getArtefacts();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -123,9 +123,9 @@ public class AopAspectJAutoproxyImpl extends AspectImpl implements AopAspectJAut
   {
     switch (featureID)
     {
-      case SpringConfigDslPackage.AOP_ASPECT_JAUTOPROXY__AOPINCLUDES:
-        getAopincludes().clear();
-        getAopincludes().addAll((Collection<? extends AopInclude>)newValue);
+      case SpringConfigDslPackage.ARRAY__ARTEFACTS:
+        getArtefacts().clear();
+        getArtefacts().addAll((Collection<? extends AbstractArtefact>)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -141,8 +141,8 @@ public class AopAspectJAutoproxyImpl extends AspectImpl implements AopAspectJAut
   {
     switch (featureID)
     {
-      case SpringConfigDslPackage.AOP_ASPECT_JAUTOPROXY__AOPINCLUDES:
-        getAopincludes().clear();
+      case SpringConfigDslPackage.ARRAY__ARTEFACTS:
+        getArtefacts().clear();
         return;
     }
     super.eUnset(featureID);
@@ -158,10 +158,10 @@ public class AopAspectJAutoproxyImpl extends AspectImpl implements AopAspectJAut
   {
     switch (featureID)
     {
-      case SpringConfigDslPackage.AOP_ASPECT_JAUTOPROXY__AOPINCLUDES:
-        return aopincludes != null && !aopincludes.isEmpty();
+      case SpringConfigDslPackage.ARRAY__ARTEFACTS:
+        return artefacts != null && !artefacts.isEmpty();
     }
     return super.eIsSet(featureID);
   }
 
-} //AopAspectJAutoproxyImpl
+} //ArrayImpl

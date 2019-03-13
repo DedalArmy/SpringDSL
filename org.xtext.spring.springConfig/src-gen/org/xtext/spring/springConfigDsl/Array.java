@@ -7,21 +7,21 @@ import org.eclipse.emf.common.util.EList;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>sSet</b></em>'.
+ * A representation of the model object '<em><b>Array</b></em>'.
  * <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.xtext.spring.springConfigDsl.sSet#getArtefacts <em>Artefacts</em>}</li>
+ *   <li>{@link org.xtext.spring.springConfigDsl.Array#getArtefacts <em>Artefacts</em>}</li>
  * </ul>
  *
- * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getsSet()
+ * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getArray()
  * @model
  * @generated
  */
-public interface sSet extends Collection
+public interface Array extends Collection
 {
   /**
    * Returns the value of the '<em><b>Artefacts</b></em>' containment reference list.
@@ -33,10 +33,10 @@ public interface sSet extends Collection
    * </p>
    * <!-- end-user-doc -->
    * @return the value of the '<em>Artefacts</em>' containment reference list.
-   * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getsSet_Artefacts()
+   * @see org.xtext.spring.springConfigDsl.SpringConfigDslPackage#getArray_Artefacts()
    * @model containment="true"
    * @generated
    */
   EList<AbstractArtefact> getArtefacts();
 
-} // sSet
+} // Array

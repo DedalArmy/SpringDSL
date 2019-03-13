@@ -12,21 +12,21 @@
           </style>
         </nodeMappings>
         <nodeMappings name="ConfigurationNode" semanticCandidatesExpression="aql:self.eAllContents()" domainClass="springConfigDsl::Configuration">
-          <style xsi:type="style:SquareDescription" labelExpression="Configuration" labelPosition="node" resizeKind="NSEW" width="10" height="5">
+          <style xsi:type="style:SquareDescription" labelExpression="&lt;&lt;beans>>" labelPosition="node" resizeKind="NSEW" width="10" height="5">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_green']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_chocolate']"/>
           </style>
         </nodeMappings>
         <nodeMappings name="ComponentNode" semanticCandidatesExpression="aql:self.eAllContents()" domainClass="springConfigDsl::Component">
-          <style xsi:type="style:SquareDescription" labelExpression="aql:'Component  '+self.name" labelPosition="node" resizeKind="NSEW" width="10" height="5">
+          <style xsi:type="style:SquareDescription" labelExpression="aql:'&lt;&lt;bean>>\n'+self.name" labelPosition="node" resizeKind="NSEW" width="10" height="5">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
           </style>
         </nodeMappings>
         <nodeMappings name="FeatureNode" semanticCandidatesExpression="aql:self.eAllContents()" domainClass="springConfigDsl::Feature">
-          <style xsi:type="style:SquareDescription" labelPosition="node" resizeKind="NSEW" width="10" height="5">
+          <style xsi:type="style:SquareDescription" labelExpression="aql:'&lt;&lt;property>>\n'+self.name" labelPosition="node" resizeKind="NSEW" width="10" height="5">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_purple']"/>
@@ -68,7 +68,7 @@
           </style>
         </nodeMappings>
         <nodeMappings name="ClassNode" semanticCandidatesExpression="aql:self.eAllContents()" domainClass="springConfigDsl::Class">
-          <style xsi:type="style:SquareDescription" labelExpression="feature:classname" labelPosition="node" resizeKind="NSEW" width="10" height="5">
+          <style xsi:type="style:SquareDescription" labelExpression="aql:'&lt;&lt;Class>>\n'+self.classname" labelPosition="node" resizeKind="NSEW" width="10" height="5">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_chocolate']"/>

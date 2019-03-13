@@ -19,7 +19,7 @@ AbstractArtefact returns AbstractArtefact:
 
 /**Abstract Class of Collection  */
 Collection returns Collection:
-	/*Array|*/sList | sSet  | Map | Props;
+	Array|sList | sSet  | Map | Props;
 
 /**Abstract Class of Collection  */
 /*Util:
@@ -531,6 +531,14 @@ QualifierAttribute:
 	
 ;
 
+/* <array> */
+Array returns Array:
+	({Array})
+	('<array' (('value-type='valueType=ValidString)? &('merge='merge=DefaultableBoolean)?) '>'
+		(description=Description)?
+		(artefacts+=AbstractArtefact|NullTag)*
+	'</array>')
+;
 
 /*<list/> */
 sList returns sList:
