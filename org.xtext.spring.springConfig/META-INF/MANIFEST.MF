@@ -25,5 +25,6 @@ Export-Package: org.xtext.spring.springConfigDsl.util,
  org.xtext.spring.scoping,
  org.xtext.spring.services,
  org.xtext.spring.springConfigDsl,
- org.xtext.spring.generator
+ org.xtext.spring.generator,
+ org.xtext.spring.formatting2
 Import-Package: org.apache.log4j
