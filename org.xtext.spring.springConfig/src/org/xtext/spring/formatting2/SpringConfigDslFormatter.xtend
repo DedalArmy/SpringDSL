@@ -65,7 +65,7 @@ class SpringConfigDslFormatter extends AbstractFormatter2 {
 		for (txJtaTransactionManager : configuration.txJtaTransactionManager) {
 			txJtaTransactionManager.format
 		}
-		for (_configuration : configuration.ConfigurationComposite) {
+		for (_configuration : configuration.configurationComposite) {
 			_configuration.format
 		}
 	}
