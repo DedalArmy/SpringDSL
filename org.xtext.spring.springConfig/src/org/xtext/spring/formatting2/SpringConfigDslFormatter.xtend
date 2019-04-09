@@ -9,6 +9,7 @@ import org.eclipse.xtext.formatting2.IFormattableDocument
 import org.xtext.spring.services.SpringConfigDslGrammarAccess
 import org.xtext.spring.springConfigDsl.Configuration
 import org.xtext.spring.springConfigDsl.SpringProject
+import org.xtext.spring.springConfigDsl.Component
 
 class SpringConfigDslFormatter extends AbstractFormatter2 {
 	
@@ -17,13 +18,16 @@ class SpringConfigDslFormatter extends AbstractFormatter2 {
 	def dispatch void format(SpringProject springProject, extension IFormattableDocument document) {
 		// TODO: format HiddenRegions around keywords, attributes, cross references, etc. 
 		for (configuration : springProject.configurations) {
+			springProject.append[newLine]
 			configuration.format
 		}
 	}
 
 	def dispatch void format(Configuration configuration, extension IFormattableDocument document) {
 		// TODO: format HiddenRegions around keywords, attributes, cross references, etc. 
+		
 		for (component : configuration.components) {
+			component.append[newLine]
 			component.format
 		}
 		for (alias : configuration.alias) {
@@ -69,6 +73,14 @@ class SpringConfigDslFormatter extends AbstractFormatter2 {
 			_configuration.format
 		}
 	}
+	
+	def dispatch void format(Component component, extension IFormattableDocument document) {
+		for(feature : component.features) {
+			feature.append[newLine]
+			feature.format
+		}
+	}
+	
 	
 	// TODO: implement for ComponentScan, PropertyPlaceholder, PropertyOverride, AopAspectJAutoproxy, AopConfig, AopAdvisor, AopAspect, DeclareParents, TxAdvise, TxAttribute, Component, CreationMethod, Feature, Qualifier, Array, sList, sSet, Props, Map, MapEntry, Key, UtilProperties, UtilList, UtilMap, UtilSet
 }
