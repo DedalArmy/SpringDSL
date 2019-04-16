@@ -26,6 +26,12 @@ class SpringConfigDslFormatter extends AbstractFormatter2 {
 	def dispatch void format(Configuration configuration, extension IFormattableDocument document) {
 		// TODO: format HiddenRegions around keywords, attributes, cross references, etc. 
 		
+		interior(
+			configuration.regionFor.keyword(">").append[newLine],
+			configuration.regionFor.keyword("</beans"),
+			[indent]
+		)
+		
 		for (component : configuration.components) {
 			component.append[newLine]
 			component.format
