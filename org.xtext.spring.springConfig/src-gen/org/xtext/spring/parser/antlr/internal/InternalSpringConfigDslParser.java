@@ -383,7 +383,7 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleSpringProject"
-    // InternalSpringConfigDsl.g:72:1: ruleSpringProject returns [EObject current=null] : ( () otherlv_1= '<?xml' otherlv_2= 'version' otherlv_3= '=' this_STRING_4= RULE_STRING otherlv_5= 'encoding' otherlv_6= '=' this_STRING_7= RULE_STRING (otherlv_8= 'standalone' otherlv_9= '=' (otherlv_10= 'yes' | otherlv_11= 'no' ) )? otherlv_12= '?>' ( (lv_configurations_13_0= ruleConfiguration ) ) ) ;
+    // InternalSpringConfigDsl.g:72:1: ruleSpringProject returns [EObject current=null] : ( () otherlv_1= '<?xml' otherlv_2= 'version' otherlv_3= '=' this_STRING_4= RULE_STRING otherlv_5= 'encoding' otherlv_6= '=' this_STRING_7= RULE_STRING (otherlv_8= 'standalone' otherlv_9= '=' (otherlv_10= 'yes' | otherlv_11= 'no' ) )? otherlv_12= '?>' ( (lv_configurations_13_0= ruleConfiguration ) )* ) ;
     public final EObject ruleSpringProject() throws RecognitionException {
         EObject current = null;
 
@@ -406,11 +406,11 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalSpringConfigDsl.g:78:2: ( ( () otherlv_1= '<?xml' otherlv_2= 'version' otherlv_3= '=' this_STRING_4= RULE_STRING otherlv_5= 'encoding' otherlv_6= '=' this_STRING_7= RULE_STRING (otherlv_8= 'standalone' otherlv_9= '=' (otherlv_10= 'yes' | otherlv_11= 'no' ) )? otherlv_12= '?>' ( (lv_configurations_13_0= ruleConfiguration ) ) ) )
-            // InternalSpringConfigDsl.g:79:2: ( () otherlv_1= '<?xml' otherlv_2= 'version' otherlv_3= '=' this_STRING_4= RULE_STRING otherlv_5= 'encoding' otherlv_6= '=' this_STRING_7= RULE_STRING (otherlv_8= 'standalone' otherlv_9= '=' (otherlv_10= 'yes' | otherlv_11= 'no' ) )? otherlv_12= '?>' ( (lv_configurations_13_0= ruleConfiguration ) ) )
+            // InternalSpringConfigDsl.g:78:2: ( ( () otherlv_1= '<?xml' otherlv_2= 'version' otherlv_3= '=' this_STRING_4= RULE_STRING otherlv_5= 'encoding' otherlv_6= '=' this_STRING_7= RULE_STRING (otherlv_8= 'standalone' otherlv_9= '=' (otherlv_10= 'yes' | otherlv_11= 'no' ) )? otherlv_12= '?>' ( (lv_configurations_13_0= ruleConfiguration ) )* ) )
+            // InternalSpringConfigDsl.g:79:2: ( () otherlv_1= '<?xml' otherlv_2= 'version' otherlv_3= '=' this_STRING_4= RULE_STRING otherlv_5= 'encoding' otherlv_6= '=' this_STRING_7= RULE_STRING (otherlv_8= 'standalone' otherlv_9= '=' (otherlv_10= 'yes' | otherlv_11= 'no' ) )? otherlv_12= '?>' ( (lv_configurations_13_0= ruleConfiguration ) )* )
             {
-            // InternalSpringConfigDsl.g:79:2: ( () otherlv_1= '<?xml' otherlv_2= 'version' otherlv_3= '=' this_STRING_4= RULE_STRING otherlv_5= 'encoding' otherlv_6= '=' this_STRING_7= RULE_STRING (otherlv_8= 'standalone' otherlv_9= '=' (otherlv_10= 'yes' | otherlv_11= 'no' ) )? otherlv_12= '?>' ( (lv_configurations_13_0= ruleConfiguration ) ) )
-            // InternalSpringConfigDsl.g:80:3: () otherlv_1= '<?xml' otherlv_2= 'version' otherlv_3= '=' this_STRING_4= RULE_STRING otherlv_5= 'encoding' otherlv_6= '=' this_STRING_7= RULE_STRING (otherlv_8= 'standalone' otherlv_9= '=' (otherlv_10= 'yes' | otherlv_11= 'no' ) )? otherlv_12= '?>' ( (lv_configurations_13_0= ruleConfiguration ) )
+            // InternalSpringConfigDsl.g:79:2: ( () otherlv_1= '<?xml' otherlv_2= 'version' otherlv_3= '=' this_STRING_4= RULE_STRING otherlv_5= 'encoding' otherlv_6= '=' this_STRING_7= RULE_STRING (otherlv_8= 'standalone' otherlv_9= '=' (otherlv_10= 'yes' | otherlv_11= 'no' ) )? otherlv_12= '?>' ( (lv_configurations_13_0= ruleConfiguration ) )* )
+            // InternalSpringConfigDsl.g:80:3: () otherlv_1= '<?xml' otherlv_2= 'version' otherlv_3= '=' this_STRING_4= RULE_STRING otherlv_5= 'encoding' otherlv_6= '=' this_STRING_7= RULE_STRING (otherlv_8= 'standalone' otherlv_9= '=' (otherlv_10= 'yes' | otherlv_11= 'no' ) )? otherlv_12= '?>' ( (lv_configurations_13_0= ruleConfiguration ) )*
             {
             // InternalSpringConfigDsl.g:80:3: ()
             // InternalSpringConfigDsl.g:81:4: 
@@ -520,36 +520,54 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
 
             			newLeafNode(otherlv_12, grammarAccess.getSpringProjectAccess().getQuestionMarkGreaterThanSignKeyword_9());
             		
-            // InternalSpringConfigDsl.g:140:3: ( (lv_configurations_13_0= ruleConfiguration ) )
-            // InternalSpringConfigDsl.g:141:4: (lv_configurations_13_0= ruleConfiguration )
-            {
-            // InternalSpringConfigDsl.g:141:4: (lv_configurations_13_0= ruleConfiguration )
-            // InternalSpringConfigDsl.g:142:5: lv_configurations_13_0= ruleConfiguration
-            {
+            // InternalSpringConfigDsl.g:140:3: ( (lv_configurations_13_0= ruleConfiguration ) )*
+            loop3:
+            do {
+                int alt3=2;
+                int LA3_0 = input.LA(1);
 
-            					newCompositeNode(grammarAccess.getSpringProjectAccess().getConfigurationsConfigurationParserRuleCall_10_0());
-            				
-            pushFollow(FOLLOW_2);
-            lv_configurations_13_0=ruleConfiguration();
-
-            state._fsp--;
+                if ( (LA3_0==18) ) {
+                    alt3=1;
+                }
 
 
-            					if (current==null) {
-            						current = createModelElementForParent(grammarAccess.getSpringProjectRule());
-            					}
-            					add(
-            						current,
-            						"configurations",
-            						lv_configurations_13_0,
-            						"org.xtext.spring.SpringConfigDsl.Configuration");
-            					afterParserOrEnumRuleCall();
-            				
+                switch (alt3) {
+            	case 1 :
+            	    // InternalSpringConfigDsl.g:141:4: (lv_configurations_13_0= ruleConfiguration )
+            	    {
+            	    // InternalSpringConfigDsl.g:141:4: (lv_configurations_13_0= ruleConfiguration )
+            	    // InternalSpringConfigDsl.g:142:5: lv_configurations_13_0= ruleConfiguration
+            	    {
 
-            }
+            	    					newCompositeNode(grammarAccess.getSpringProjectAccess().getConfigurationsConfigurationParserRuleCall_10_0());
+            	    				
+            	    pushFollow(FOLLOW_10);
+            	    lv_configurations_13_0=ruleConfiguration();
+
+            	    state._fsp--;
 
 
-            }
+            	    					if (current==null) {
+            	    						current = createModelElementForParent(grammarAccess.getSpringProjectRule());
+            	    					}
+            	    					add(
+            	    						current,
+            	    						"configurations",
+            	    						lv_configurations_13_0,
+            	    						"org.xtext.spring.SpringConfigDsl.Configuration");
+            	    					afterParserOrEnumRuleCall();
+            	    				
+
+            	    }
+
+
+            	    }
+            	    break;
+
+            	default :
+            	    break loop3;
+                }
+            } while (true);
 
 
             }
@@ -633,27 +651,27 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:177:2: (this_Component_0= ruleComponent | this_AttributeTag_1= ruleAttributeTag | this_IdRefTag_2= ruleIdRefTag | this_ReferenceTag_3= ruleReferenceTag | this_Collection_4= ruleCollection )
             {
             // InternalSpringConfigDsl.g:177:2: (this_Component_0= ruleComponent | this_AttributeTag_1= ruleAttributeTag | this_IdRefTag_2= ruleIdRefTag | this_ReferenceTag_3= ruleReferenceTag | this_Collection_4= ruleCollection )
-            int alt3=5;
+            int alt4=5;
             switch ( input.LA(1) ) {
             case 134:
                 {
-                alt3=1;
+                alt4=1;
                 }
                 break;
             case 154:
             case 197:
                 {
-                alt3=2;
+                alt4=2;
                 }
                 break;
             case 156:
                 {
-                alt3=3;
+                alt4=3;
                 }
                 break;
             case 159:
                 {
-                alt3=4;
+                alt4=4;
                 }
                 break;
             case 176:
@@ -666,17 +684,17 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             case 206:
             case 209:
                 {
-                alt3=5;
+                alt4=5;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 3, 0, input);
+                    new NoViableAltException("", 4, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt3) {
+            switch (alt4) {
                 case 1 :
                     // InternalSpringConfigDsl.g:178:3: this_Component_0= ruleComponent
                     {
@@ -849,45 +867,45 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:240:2: (this_Array_0= ruleArray | this_sList_1= rulesList | this_sSet_2= rulesSet | this_Map_3= ruleMap | this_Props_4= ruleProps )
             {
             // InternalSpringConfigDsl.g:240:2: (this_Array_0= ruleArray | this_sList_1= rulesList | this_sSet_2= rulesSet | this_Map_3= ruleMap | this_Props_4= ruleProps )
-            int alt4=5;
+            int alt5=5;
             switch ( input.LA(1) ) {
             case 176:
                 {
-                alt4=1;
+                alt5=1;
                 }
                 break;
             case 180:
             case 204:
                 {
-                alt4=2;
+                alt5=2;
                 }
                 break;
             case 182:
             case 209:
                 {
-                alt4=3;
+                alt5=3;
                 }
                 break;
             case 188:
             case 206:
                 {
-                alt4=4;
+                alt5=4;
                 }
                 break;
             case 184:
             case 202:
                 {
-                alt4=5;
+                alt5=5;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 4, 0, input);
+                    new NoViableAltException("", 5, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt4) {
+            switch (alt5) {
                 case 1 :
                     // InternalSpringConfigDsl.g:241:3: this_Array_0= ruleArray
                     {
@@ -1140,11 +1158,11 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:322:7: ( ({...}? => ( ({...}? => (otherlv_3= 'default-autowire=' ( (lv_defaultAutowire_4_0= ruleAutoWiredType ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_5= 'default-init-method=' ( (lv_defaultInitMethod_6_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_7= 'default-autowire-candidates=' ( (lv_defaultAutowireCandidates_8_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_9= 'default-destroy-method=' ( (lv_defaultDestroyMethod_10_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_11= 'default-lazy-init=' ( (lv_defaultLazyInit_12_0= ruleDefaultableBoolean ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_13= 'default-merge=' ( (lv_defaultMerge_14_0= ruleDefaultableBoolean ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_15= 'profile=' ( (lv_profile_16_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => ( ruleIdDashAndColon otherlv_18= '=' ruleValidString ) )+ ) ) )*
             {
             // InternalSpringConfigDsl.g:322:7: ( ({...}? => ( ({...}? => (otherlv_3= 'default-autowire=' ( (lv_defaultAutowire_4_0= ruleAutoWiredType ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_5= 'default-init-method=' ( (lv_defaultInitMethod_6_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_7= 'default-autowire-candidates=' ( (lv_defaultAutowireCandidates_8_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_9= 'default-destroy-method=' ( (lv_defaultDestroyMethod_10_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_11= 'default-lazy-init=' ( (lv_defaultLazyInit_12_0= ruleDefaultableBoolean ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_13= 'default-merge=' ( (lv_defaultMerge_14_0= ruleDefaultableBoolean ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_15= 'profile=' ( (lv_profile_16_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => ( ruleIdDashAndColon otherlv_18= '=' ruleValidString ) )+ ) ) )*
-            loop6:
+            loop7:
             do {
-                int alt6=9;
-                alt6 = dfa6.predict(input);
-                switch (alt6) {
+                int alt7=9;
+                alt7 = dfa7.predict(input);
+                switch (alt7) {
             	case 1 :
             	    // InternalSpringConfigDsl.g:323:5: ({...}? => ( ({...}? => (otherlv_3= 'default-autowire=' ( (lv_defaultAutowire_4_0= ruleAutoWiredType ) ) ) ) ) )
             	    {
@@ -1700,24 +1718,24 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	    							getUnorderedGroupHelper().select(grammarAccess.getConfigurationAccess().getUnorderedGroup_1_1(), 7);
             	    						
             	    // InternalSpringConfigDsl.g:566:10: ({...}? => ( ruleIdDashAndColon otherlv_18= '=' ruleValidString ) )+
-            	    int cnt5=0;
-            	    loop5:
+            	    int cnt6=0;
+            	    loop6:
             	    do {
-            	        int alt5=2;
-            	        int LA5_0 = input.LA(1);
+            	        int alt6=2;
+            	        int LA6_0 = input.LA(1);
 
-            	        if ( (LA5_0==RULE_ID) ) {
-            	            int LA5_2 = input.LA(2);
+            	        if ( (LA6_0==RULE_ID) ) {
+            	            int LA6_2 = input.LA(2);
 
             	            if ( ((true)) ) {
-            	                alt5=1;
+            	                alt6=1;
             	            }
 
 
             	        }
 
 
-            	        switch (alt5) {
+            	        switch (alt6) {
             	    	case 1 :
             	    	    // InternalSpringConfigDsl.g:566:11: {...}? => ( ruleIdDashAndColon otherlv_18= '=' ruleValidString )
             	    	    {
@@ -1761,12 +1779,12 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	    	    break;
 
             	    	default :
-            	    	    if ( cnt5 >= 1 ) break loop5;
+            	    	    if ( cnt6 >= 1 ) break loop6;
             	                EarlyExitException eee =
-            	                    new EarlyExitException(5, input);
+            	                    new EarlyExitException(6, input);
             	                throw eee;
             	        }
-            	        cnt5++;
+            	        cnt6++;
             	    } while (true);
 
             	     
@@ -1783,7 +1801,7 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop6;
+            	    break loop7;
                 }
             } while (true);
 
@@ -1807,13 +1825,13 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             }
 
             // InternalSpringConfigDsl.g:602:3: ( (lv_description_21_0= ruleDescription ) )?
-            int alt7=2;
-            int LA7_0 = input.LA(1);
+            int alt8=2;
+            int LA8_0 = input.LA(1);
 
-            if ( (LA7_0==214) ) {
-                alt7=1;
+            if ( (LA8_0==214) ) {
+                alt8=1;
             }
-            switch (alt7) {
+            switch (alt8) {
                 case 1 :
                     // InternalSpringConfigDsl.g:603:4: (lv_description_21_0= ruleDescription )
                     {
@@ -1849,84 +1867,84 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             }
 
             // InternalSpringConfigDsl.g:621:3: ( ( (lv_components_22_0= ruleComponent ) ) | ( (lv_alias_23_0= ruleAlias ) ) | ( (lv_imports_24_0= ruleImport ) ) | ( (lv_contexts_25_0= ruleContext ) ) | ( (lv_mvcs_26_0= ruleMVC ) ) | ( (lv_aspects_27_0= ruleAspect ) ) | ( (lv_utilConstants_28_0= ruleUtilConstant ) ) | ( (lv_utilLists_29_0= ruleUtilList ) ) | ( (lv_utilMaps_30_0= ruleUtilMap ) ) | ( (lv_utilProperties_31_0= ruleUtilProperties ) ) | ( (lv_utilSets_32_0= ruleUtilSet ) ) | ( (lv_utilPropertiesPath_33_0= ruleUtilPropertyPath ) ) | ( (lv_txAdvices_34_0= ruleTxAdvise ) ) | ( (lv_txJtaTransactionManager_35_0= ruleTxJtaTransactionManager ) ) )*
-            loop8:
+            loop9:
             do {
-                int alt8=15;
+                int alt9=15;
                 switch ( input.LA(1) ) {
                 case 134:
                     {
-                    alt8=1;
+                    alt9=1;
                     }
                     break;
                 case 32:
                     {
-                    alt8=2;
+                    alt9=2;
                     }
                     break;
                 case 36:
                     {
-                    alt8=3;
+                    alt9=3;
                     }
                     break;
                 case 39:
                     {
-                    alt8=4;
+                    alt9=4;
                     }
                     break;
                 case 28:
                     {
-                    alt8=5;
+                    alt9=5;
                     }
                     break;
                 case 82:
                     {
-                    alt8=6;
+                    alt9=6;
                     }
                     break;
                 case 197:
                     {
-                    alt8=7;
+                    alt9=7;
                     }
                     break;
                 case 204:
                     {
-                    alt8=8;
+                    alt9=8;
                     }
                     break;
                 case 206:
                     {
-                    alt8=9;
+                    alt9=9;
                     }
                     break;
                 case 202:
                     {
-                    alt8=10;
+                    alt9=10;
                     }
                     break;
                 case 209:
                     {
-                    alt8=11;
+                    alt9=11;
                     }
                     break;
                 case 200:
                     {
-                    alt8=12;
+                    alt9=12;
                     }
                     break;
                 case 120:
                     {
-                    alt8=13;
+                    alt9=13;
                     }
                     break;
                 case 132:
                     {
-                    alt8=14;
+                    alt9=14;
                     }
                     break;
 
                 }
 
-                switch (alt8) {
+                switch (alt9) {
             	case 1 :
             	    // InternalSpringConfigDsl.g:622:4: ( (lv_components_22_0= ruleComponent ) )
             	    {
@@ -2447,22 +2465,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop8;
+            	    break loop9;
                 }
             } while (true);
 
             // InternalSpringConfigDsl.g:902:3: ( (lv_ConfigurationComposite_36_0= ruleConfiguration ) )*
-            loop9:
+            loop10:
             do {
-                int alt9=2;
-                int LA9_0 = input.LA(1);
+                int alt10=2;
+                int LA10_0 = input.LA(1);
 
-                if ( (LA9_0==18) ) {
-                    alt9=1;
+                if ( (LA10_0==18) ) {
+                    alt10=1;
                 }
 
 
-                switch (alt9) {
+                switch (alt10) {
             	case 1 :
             	    // InternalSpringConfigDsl.g:903:4: (lv_ConfigurationComposite_36_0= ruleConfiguration )
             	    {
@@ -2496,7 +2514,7 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop9;
+            	    break loop10;
                 }
             } while (true);
 
@@ -2780,22 +2798,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             }
 
             // InternalSpringConfigDsl.g:1042:3: (otherlv_6= '/>' | (otherlv_7= '>' otherlv_8= '</alias>' ) )
-            int alt10=2;
-            int LA10_0 = input.LA(1);
+            int alt11=2;
+            int LA11_0 = input.LA(1);
 
-            if ( (LA10_0==31) ) {
-                alt10=1;
+            if ( (LA11_0==31) ) {
+                alt11=1;
             }
-            else if ( (LA10_0==26) ) {
-                alt10=2;
+            else if ( (LA11_0==26) ) {
+                alt11=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 10, 0, input);
+                    new NoViableAltException("", 11, 0, input);
 
                 throw nvae;
             }
-            switch (alt10) {
+            switch (alt11) {
                 case 1 :
                     // InternalSpringConfigDsl.g:1043:4: otherlv_6= '/>'
                     {
@@ -2961,22 +2979,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             }
 
             // InternalSpringConfigDsl.g:1112:3: (otherlv_4= '/>' | (otherlv_5= '>' otherlv_6= '</import>' ) )
-            int alt11=2;
-            int LA11_0 = input.LA(1);
+            int alt12=2;
+            int LA12_0 = input.LA(1);
 
-            if ( (LA11_0==31) ) {
-                alt11=1;
+            if ( (LA12_0==31) ) {
+                alt12=1;
             }
-            else if ( (LA11_0==26) ) {
-                alt11=2;
+            else if ( (LA12_0==26) ) {
+                alt12=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 11, 0, input);
+                    new NoViableAltException("", 12, 0, input);
 
                 throw nvae;
             }
-            switch (alt11) {
+            switch (alt12) {
                 case 1 :
                     // InternalSpringConfigDsl.g:1113:4: otherlv_4= '/>'
                     {
@@ -3189,52 +3207,52 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:1178:2: (this_AnnotationConfig_0= ruleAnnotationConfig | this_ComponentScan_1= ruleComponentScan | this_LoadTimeWeaver_2= ruleLoadTimeWeaver | this_MbeanExport_3= ruleMbeanExport | this_MbeanServer_4= ruleMbeanServer | this_PropertyHolder_5= rulePropertyHolder | this_SpringConfigured_6= ruleSpringConfigured )
             {
             // InternalSpringConfigDsl.g:1178:2: (this_AnnotationConfig_0= ruleAnnotationConfig | this_ComponentScan_1= ruleComponentScan | this_LoadTimeWeaver_2= ruleLoadTimeWeaver | this_MbeanExport_3= ruleMbeanExport | this_MbeanServer_4= ruleMbeanServer | this_PropertyHolder_5= rulePropertyHolder | this_SpringConfigured_6= ruleSpringConfigured )
-            int alt12=7;
+            int alt13=7;
             switch ( input.LA(1) ) {
             case 40:
                 {
-                alt12=1;
+                alt13=1;
                 }
                 break;
             case 42:
                 {
-                alt12=2;
+                alt13=2;
                 }
                 break;
             case 57:
                 {
-                alt12=3;
+                alt13=3;
                 }
                 break;
             case 61:
                 {
-                alt12=4;
+                alt13=4;
                 }
                 break;
             case 66:
                 {
-                alt12=5;
+                alt13=5;
                 }
                 break;
             case 70:
             case 78:
                 {
-                alt12=6;
+                alt13=6;
                 }
                 break;
             case 80:
                 {
-                alt12=7;
+                alt13=7;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 12, 0, input);
+                    new NoViableAltException("", 13, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt12) {
+            switch (alt13) {
                 case 1 :
                     // InternalSpringConfigDsl.g:1179:3: this_AnnotationConfig_0= ruleAnnotationConfig
                     {
@@ -3458,22 +3476,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             				newLeafNode(otherlv_1, grammarAccess.getAnnotationConfigAccess().getAnnotationConfigKeyword_1_0());
             			
             // InternalSpringConfigDsl.g:1272:4: (otherlv_2= '/>' | (otherlv_3= '>' otherlv_4= '</context:annotation-config>' ) )
-            int alt13=2;
-            int LA13_0 = input.LA(1);
+            int alt14=2;
+            int LA14_0 = input.LA(1);
 
-            if ( (LA13_0==31) ) {
-                alt13=1;
+            if ( (LA14_0==31) ) {
+                alt14=1;
             }
-            else if ( (LA13_0==26) ) {
-                alt13=2;
+            else if ( (LA14_0==26) ) {
+                alt14=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 13, 0, input);
+                    new NoViableAltException("", 14, 0, input);
 
                 throw nvae;
             }
-            switch (alt13) {
+            switch (alt14) {
                 case 1 :
                     // InternalSpringConfigDsl.g:1273:5: otherlv_2= '/>'
                     {
@@ -3637,36 +3655,36 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:1326:6: ( ({...}? => ( ({...}? => (otherlv_3= 'base-package=' ( (lv_basePackage_4_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_5= 'annotation-config=' ( (lv_annotationConfig_6_0= rulesBoolean ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_7= 'name-generator=' ( ( ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_9= 'resource-pattern=' ( (lv_resourcePattern_10_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_11= 'scope-resolver=' ( ( ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_13= 'scoped-proxy=' ( (lv_scopedProxy_14_0= ruleEnumScopedProxy ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_15= 'use-default-filters=' ( (lv_useDefaultFilters_16_0= rulesBoolean ) ) ) ) ) ) )+ {...}?
             {
             // InternalSpringConfigDsl.g:1326:6: ( ({...}? => ( ({...}? => (otherlv_3= 'base-package=' ( (lv_basePackage_4_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_5= 'annotation-config=' ( (lv_annotationConfig_6_0= rulesBoolean ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_7= 'name-generator=' ( ( ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_9= 'resource-pattern=' ( (lv_resourcePattern_10_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_11= 'scope-resolver=' ( ( ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_13= 'scoped-proxy=' ( (lv_scopedProxy_14_0= ruleEnumScopedProxy ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_15= 'use-default-filters=' ( (lv_useDefaultFilters_16_0= rulesBoolean ) ) ) ) ) ) )+
-            int cnt14=0;
-            loop14:
+            int cnt15=0;
+            loop15:
             do {
-                int alt14=8;
-                int LA14_0 = input.LA(1);
+                int alt15=8;
+                int LA15_0 = input.LA(1);
 
-                if ( LA14_0 == 43 && getUnorderedGroupHelper().canSelect(grammarAccess.getComponentScanAccess().getUnorderedGroup_2(), 0) ) {
-                    alt14=1;
+                if ( LA15_0 == 43 && getUnorderedGroupHelper().canSelect(grammarAccess.getComponentScanAccess().getUnorderedGroup_2(), 0) ) {
+                    alt15=1;
                 }
-                else if ( LA14_0 == 44 && getUnorderedGroupHelper().canSelect(grammarAccess.getComponentScanAccess().getUnorderedGroup_2(), 1) ) {
-                    alt14=2;
+                else if ( LA15_0 == 44 && getUnorderedGroupHelper().canSelect(grammarAccess.getComponentScanAccess().getUnorderedGroup_2(), 1) ) {
+                    alt15=2;
                 }
-                else if ( LA14_0 == 45 && getUnorderedGroupHelper().canSelect(grammarAccess.getComponentScanAccess().getUnorderedGroup_2(), 2) ) {
-                    alt14=3;
+                else if ( LA15_0 == 45 && getUnorderedGroupHelper().canSelect(grammarAccess.getComponentScanAccess().getUnorderedGroup_2(), 2) ) {
+                    alt15=3;
                 }
-                else if ( LA14_0 == 46 && getUnorderedGroupHelper().canSelect(grammarAccess.getComponentScanAccess().getUnorderedGroup_2(), 3) ) {
-                    alt14=4;
+                else if ( LA15_0 == 46 && getUnorderedGroupHelper().canSelect(grammarAccess.getComponentScanAccess().getUnorderedGroup_2(), 3) ) {
+                    alt15=4;
                 }
-                else if ( LA14_0 == 47 && getUnorderedGroupHelper().canSelect(grammarAccess.getComponentScanAccess().getUnorderedGroup_2(), 4) ) {
-                    alt14=5;
+                else if ( LA15_0 == 47 && getUnorderedGroupHelper().canSelect(grammarAccess.getComponentScanAccess().getUnorderedGroup_2(), 4) ) {
+                    alt15=5;
                 }
-                else if ( LA14_0 == 48 && getUnorderedGroupHelper().canSelect(grammarAccess.getComponentScanAccess().getUnorderedGroup_2(), 5) ) {
-                    alt14=6;
+                else if ( LA15_0 == 48 && getUnorderedGroupHelper().canSelect(grammarAccess.getComponentScanAccess().getUnorderedGroup_2(), 5) ) {
+                    alt15=6;
                 }
-                else if ( LA14_0 == 49 && getUnorderedGroupHelper().canSelect(grammarAccess.getComponentScanAccess().getUnorderedGroup_2(), 6) ) {
-                    alt14=7;
+                else if ( LA15_0 == 49 && getUnorderedGroupHelper().canSelect(grammarAccess.getComponentScanAccess().getUnorderedGroup_2(), 6) ) {
+                    alt15=7;
                 }
 
 
-                switch (alt14) {
+                switch (alt15) {
             	case 1 :
             	    // InternalSpringConfigDsl.g:1327:4: ({...}? => ( ({...}? => (otherlv_3= 'base-package=' ( (lv_basePackage_4_0= ruleValidString ) ) ) ) ) )
             	    {
@@ -4202,12 +4220,12 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    if ( cnt14 >= 1 ) break loop14;
+            	    if ( cnt15 >= 1 ) break loop15;
                         EarlyExitException eee =
-                            new EarlyExitException(14, input);
+                            new EarlyExitException(15, input);
                         throw eee;
                 }
-                cnt14++;
+                cnt15++;
             } while (true);
 
             if ( ! getUnorderedGroupHelper().canLeave(grammarAccess.getComponentScanAccess().getUnorderedGroup_2()) ) {
@@ -4226,22 +4244,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             }
 
             // InternalSpringConfigDsl.g:1567:3: (otherlv_17= '/>' | (otherlv_18= '>' ( (lv_includeFilters_19_0= ruleIncludeFilter ) )* ( (lv_excludeFilters_20_0= ruleExcludeFilter ) )* otherlv_21= '</context:component-scan>' ) )
-            int alt17=2;
-            int LA17_0 = input.LA(1);
+            int alt18=2;
+            int LA18_0 = input.LA(1);
 
-            if ( (LA17_0==31) ) {
-                alt17=1;
+            if ( (LA18_0==31) ) {
+                alt18=1;
             }
-            else if ( (LA17_0==26) ) {
-                alt17=2;
+            else if ( (LA18_0==26) ) {
+                alt18=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 17, 0, input);
+                    new NoViableAltException("", 18, 0, input);
 
                 throw nvae;
             }
-            switch (alt17) {
+            switch (alt18) {
                 case 1 :
                     // InternalSpringConfigDsl.g:1568:4: otherlv_17= '/>'
                     {
@@ -4263,17 +4281,17 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     					newLeafNode(otherlv_18, grammarAccess.getComponentScanAccess().getGreaterThanSignKeyword_3_1_0());
                     				
                     // InternalSpringConfigDsl.g:1578:5: ( (lv_includeFilters_19_0= ruleIncludeFilter ) )*
-                    loop15:
+                    loop16:
                     do {
-                        int alt15=2;
-                        int LA15_0 = input.LA(1);
+                        int alt16=2;
+                        int LA16_0 = input.LA(1);
 
-                        if ( (LA15_0==51) ) {
-                            alt15=1;
+                        if ( (LA16_0==51) ) {
+                            alt16=1;
                         }
 
 
-                        switch (alt15) {
+                        switch (alt16) {
                     	case 1 :
                     	    // InternalSpringConfigDsl.g:1579:6: (lv_includeFilters_19_0= ruleIncludeFilter )
                     	    {
@@ -4307,22 +4325,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop15;
+                    	    break loop16;
                         }
                     } while (true);
 
                     // InternalSpringConfigDsl.g:1597:5: ( (lv_excludeFilters_20_0= ruleExcludeFilter ) )*
-                    loop16:
+                    loop17:
                     do {
-                        int alt16=2;
-                        int LA16_0 = input.LA(1);
+                        int alt17=2;
+                        int LA17_0 = input.LA(1);
 
-                        if ( (LA16_0==55) ) {
-                            alt16=1;
+                        if ( (LA17_0==55) ) {
+                            alt17=1;
                         }
 
 
-                        switch (alt16) {
+                        switch (alt17) {
                     	case 1 :
                     	    // InternalSpringConfigDsl.g:1598:6: (lv_excludeFilters_20_0= ruleExcludeFilter )
                     	    {
@@ -4356,7 +4374,7 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop16;
+                    	    break loop17;
                         }
                     } while (true);
 
@@ -4474,21 +4492,21 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:1651:6: ( ({...}? => ( ({...}? => (otherlv_2= 'type=' ( (lv_type_3_0= ruleEnumTypeFilter ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_4= 'expression=' ( (lv_expression_5_0= ruleValidString ) ) ) ) ) ) )+ {...}?
             {
             // InternalSpringConfigDsl.g:1651:6: ( ({...}? => ( ({...}? => (otherlv_2= 'type=' ( (lv_type_3_0= ruleEnumTypeFilter ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_4= 'expression=' ( (lv_expression_5_0= ruleValidString ) ) ) ) ) ) )+
-            int cnt18=0;
-            loop18:
+            int cnt19=0;
+            loop19:
             do {
-                int alt18=3;
-                int LA18_0 = input.LA(1);
+                int alt19=3;
+                int LA19_0 = input.LA(1);
 
-                if ( LA18_0 == 52 && getUnorderedGroupHelper().canSelect(grammarAccess.getIncludeFilterAccess().getUnorderedGroup_1(), 0) ) {
-                    alt18=1;
+                if ( LA19_0 == 52 && getUnorderedGroupHelper().canSelect(grammarAccess.getIncludeFilterAccess().getUnorderedGroup_1(), 0) ) {
+                    alt19=1;
                 }
-                else if ( LA18_0 == 53 && getUnorderedGroupHelper().canSelect(grammarAccess.getIncludeFilterAccess().getUnorderedGroup_1(), 1) ) {
-                    alt18=2;
+                else if ( LA19_0 == 53 && getUnorderedGroupHelper().canSelect(grammarAccess.getIncludeFilterAccess().getUnorderedGroup_1(), 1) ) {
+                    alt19=2;
                 }
 
 
-                switch (alt18) {
+                switch (alt19) {
             	case 1 :
             	    // InternalSpringConfigDsl.g:1652:4: ({...}? => ( ({...}? => (otherlv_2= 'type=' ( (lv_type_3_0= ruleEnumTypeFilter ) ) ) ) ) )
             	    {
@@ -4645,12 +4663,12 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    if ( cnt18 >= 1 ) break loop18;
+            	    if ( cnt19 >= 1 ) break loop19;
                         EarlyExitException eee =
-                            new EarlyExitException(18, input);
+                            new EarlyExitException(19, input);
                         throw eee;
                 }
-                cnt18++;
+                cnt19++;
             } while (true);
 
             if ( ! getUnorderedGroupHelper().canLeave(grammarAccess.getIncludeFilterAccess().getUnorderedGroup_1()) ) {
@@ -4669,22 +4687,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             }
 
             // InternalSpringConfigDsl.g:1728:3: (otherlv_6= '/>' | (otherlv_7= '>' otherlv_8= '</context:include-filter>' ) )
-            int alt19=2;
-            int LA19_0 = input.LA(1);
+            int alt20=2;
+            int LA20_0 = input.LA(1);
 
-            if ( (LA19_0==31) ) {
-                alt19=1;
+            if ( (LA20_0==31) ) {
+                alt20=1;
             }
-            else if ( (LA19_0==26) ) {
-                alt19=2;
+            else if ( (LA20_0==26) ) {
+                alt20=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 19, 0, input);
+                    new NoViableAltException("", 20, 0, input);
 
                 throw nvae;
             }
-            switch (alt19) {
+            switch (alt20) {
                 case 1 :
                     // InternalSpringConfigDsl.g:1729:4: otherlv_6= '/>'
                     {
@@ -4819,21 +4837,21 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:1774:6: ( ({...}? => ( ({...}? => (otherlv_2= 'type=' ( (lv_type_3_0= ruleEnumTypeFilter ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_4= 'expression=' ( (lv_expression_5_0= ruleValidString ) ) ) ) ) ) )+ {...}?
             {
             // InternalSpringConfigDsl.g:1774:6: ( ({...}? => ( ({...}? => (otherlv_2= 'type=' ( (lv_type_3_0= ruleEnumTypeFilter ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_4= 'expression=' ( (lv_expression_5_0= ruleValidString ) ) ) ) ) ) )+
-            int cnt20=0;
-            loop20:
+            int cnt21=0;
+            loop21:
             do {
-                int alt20=3;
-                int LA20_0 = input.LA(1);
+                int alt21=3;
+                int LA21_0 = input.LA(1);
 
-                if ( LA20_0 == 52 && getUnorderedGroupHelper().canSelect(grammarAccess.getExcludeFilterAccess().getUnorderedGroup_1(), 0) ) {
-                    alt20=1;
+                if ( LA21_0 == 52 && getUnorderedGroupHelper().canSelect(grammarAccess.getExcludeFilterAccess().getUnorderedGroup_1(), 0) ) {
+                    alt21=1;
                 }
-                else if ( LA20_0 == 53 && getUnorderedGroupHelper().canSelect(grammarAccess.getExcludeFilterAccess().getUnorderedGroup_1(), 1) ) {
-                    alt20=2;
+                else if ( LA21_0 == 53 && getUnorderedGroupHelper().canSelect(grammarAccess.getExcludeFilterAccess().getUnorderedGroup_1(), 1) ) {
+                    alt21=2;
                 }
 
 
-                switch (alt20) {
+                switch (alt21) {
             	case 1 :
             	    // InternalSpringConfigDsl.g:1775:4: ({...}? => ( ({...}? => (otherlv_2= 'type=' ( (lv_type_3_0= ruleEnumTypeFilter ) ) ) ) ) )
             	    {
@@ -4990,12 +5008,12 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    if ( cnt20 >= 1 ) break loop20;
+            	    if ( cnt21 >= 1 ) break loop21;
                         EarlyExitException eee =
-                            new EarlyExitException(20, input);
+                            new EarlyExitException(21, input);
                         throw eee;
                 }
-                cnt20++;
+                cnt21++;
             } while (true);
 
             if ( ! getUnorderedGroupHelper().canLeave(grammarAccess.getExcludeFilterAccess().getUnorderedGroup_1()) ) {
@@ -5014,22 +5032,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             }
 
             // InternalSpringConfigDsl.g:1851:3: (otherlv_6= '/>' | (otherlv_7= '>' otherlv_8= '</context:exclude-filter>' ) )
-            int alt21=2;
-            int LA21_0 = input.LA(1);
+            int alt22=2;
+            int LA22_0 = input.LA(1);
 
-            if ( (LA21_0==31) ) {
-                alt21=1;
+            if ( (LA22_0==31) ) {
+                alt22=1;
             }
-            else if ( (LA21_0==26) ) {
-                alt21=2;
+            else if ( (LA22_0==26) ) {
+                alt22=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 21, 0, input);
+                    new NoViableAltException("", 22, 0, input);
 
                 throw nvae;
             }
-            switch (alt21) {
+            switch (alt22) {
                 case 1 :
                     // InternalSpringConfigDsl.g:1852:4: otherlv_6= '/>'
                     {
@@ -5175,20 +5193,20 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:1904:6: ( ({...}? => ( ({...}? => (otherlv_3= 'aspectj-weaving=' ( (lv_aspectjWeaving_4_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_5= 'weaver-class=' ( (lv_weaverClass_6_0= ruleValidString ) ) ) ) ) ) )*
             {
             // InternalSpringConfigDsl.g:1904:6: ( ({...}? => ( ({...}? => (otherlv_3= 'aspectj-weaving=' ( (lv_aspectjWeaving_4_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_5= 'weaver-class=' ( (lv_weaverClass_6_0= ruleValidString ) ) ) ) ) ) )*
-            loop22:
+            loop23:
             do {
-                int alt22=3;
-                int LA22_0 = input.LA(1);
+                int alt23=3;
+                int LA23_0 = input.LA(1);
 
-                if ( LA22_0 == 58 && getUnorderedGroupHelper().canSelect(grammarAccess.getLoadTimeWeaverAccess().getUnorderedGroup_2(), 0) ) {
-                    alt22=1;
+                if ( LA23_0 == 58 && getUnorderedGroupHelper().canSelect(grammarAccess.getLoadTimeWeaverAccess().getUnorderedGroup_2(), 0) ) {
+                    alt23=1;
                 }
-                else if ( LA22_0 == 59 && getUnorderedGroupHelper().canSelect(grammarAccess.getLoadTimeWeaverAccess().getUnorderedGroup_2(), 1) ) {
-                    alt22=2;
+                else if ( LA23_0 == 59 && getUnorderedGroupHelper().canSelect(grammarAccess.getLoadTimeWeaverAccess().getUnorderedGroup_2(), 1) ) {
+                    alt23=2;
                 }
 
 
-                switch (alt22) {
+                switch (alt23) {
             	case 1 :
             	    // InternalSpringConfigDsl.g:1905:4: ({...}? => ( ({...}? => (otherlv_3= 'aspectj-weaving=' ( (lv_aspectjWeaving_4_0= ruleValidString ) ) ) ) ) )
             	    {
@@ -5345,7 +5363,7 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop22;
+            	    break loop23;
                 }
             } while (true);
 
@@ -5362,22 +5380,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             }
 
             // InternalSpringConfigDsl.g:1980:3: (otherlv_7= '/>' | (otherlv_8= '>' otherlv_9= '</context:load-time-weaver>' ) )
-            int alt23=2;
-            int LA23_0 = input.LA(1);
+            int alt24=2;
+            int LA24_0 = input.LA(1);
 
-            if ( (LA23_0==31) ) {
-                alt23=1;
+            if ( (LA24_0==31) ) {
+                alt24=1;
             }
-            else if ( (LA23_0==26) ) {
-                alt23=2;
+            else if ( (LA24_0==26) ) {
+                alt24=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 23, 0, input);
+                    new NoViableAltException("", 24, 0, input);
 
                 throw nvae;
             }
-            switch (alt23) {
+            switch (alt24) {
                 case 1 :
                     // InternalSpringConfigDsl.g:1981:4: otherlv_7= '/>'
                     {
@@ -5524,23 +5542,23 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:2033:6: ( ({...}? => ( ({...}? => (otherlv_3= 'default-domain=' ( (lv_defaultDomain_4_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_5= 'registration=' ( (lv_registration_6_0= ruleMbeanRegistrationEnum ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_7= 'server=' ( ( ruleValidString ) ) ) ) ) ) )*
             {
             // InternalSpringConfigDsl.g:2033:6: ( ({...}? => ( ({...}? => (otherlv_3= 'default-domain=' ( (lv_defaultDomain_4_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_5= 'registration=' ( (lv_registration_6_0= ruleMbeanRegistrationEnum ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_7= 'server=' ( ( ruleValidString ) ) ) ) ) ) )*
-            loop24:
+            loop25:
             do {
-                int alt24=4;
-                int LA24_0 = input.LA(1);
+                int alt25=4;
+                int LA25_0 = input.LA(1);
 
-                if ( LA24_0 == 62 && getUnorderedGroupHelper().canSelect(grammarAccess.getMbeanExportAccess().getUnorderedGroup_2(), 0) ) {
-                    alt24=1;
+                if ( LA25_0 == 62 && getUnorderedGroupHelper().canSelect(grammarAccess.getMbeanExportAccess().getUnorderedGroup_2(), 0) ) {
+                    alt25=1;
                 }
-                else if ( LA24_0 == 63 && getUnorderedGroupHelper().canSelect(grammarAccess.getMbeanExportAccess().getUnorderedGroup_2(), 1) ) {
-                    alt24=2;
+                else if ( LA25_0 == 63 && getUnorderedGroupHelper().canSelect(grammarAccess.getMbeanExportAccess().getUnorderedGroup_2(), 1) ) {
+                    alt25=2;
                 }
-                else if ( LA24_0 == 64 && getUnorderedGroupHelper().canSelect(grammarAccess.getMbeanExportAccess().getUnorderedGroup_2(), 2) ) {
-                    alt24=3;
+                else if ( LA25_0 == 64 && getUnorderedGroupHelper().canSelect(grammarAccess.getMbeanExportAccess().getUnorderedGroup_2(), 2) ) {
+                    alt25=3;
                 }
 
 
-                switch (alt24) {
+                switch (alt25) {
             	case 1 :
             	    // InternalSpringConfigDsl.g:2034:4: ({...}? => ( ({...}? => (otherlv_3= 'default-domain=' ( (lv_defaultDomain_4_0= ruleValidString ) ) ) ) ) )
             	    {
@@ -5771,7 +5789,7 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop24;
+            	    break loop25;
                 }
             } while (true);
 
@@ -5788,22 +5806,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             }
 
             // InternalSpringConfigDsl.g:2140:3: (otherlv_9= '/>' | (otherlv_10= '>' otherlv_11= '</context:mbean-export>' ) )
-            int alt25=2;
-            int LA25_0 = input.LA(1);
+            int alt26=2;
+            int LA26_0 = input.LA(1);
 
-            if ( (LA25_0==31) ) {
-                alt25=1;
+            if ( (LA26_0==31) ) {
+                alt26=1;
             }
-            else if ( (LA25_0==26) ) {
-                alt25=2;
+            else if ( (LA26_0==26) ) {
+                alt26=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 25, 0, input);
+                    new NoViableAltException("", 26, 0, input);
 
                 throw nvae;
             }
-            switch (alt25) {
+            switch (alt26) {
                 case 1 :
                     // InternalSpringConfigDsl.g:2141:4: otherlv_9= '/>'
                     {
@@ -5949,20 +5967,20 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:2193:6: ( ({...}? => ( ({...}? => (otherlv_3= 'agent-id=' ( (lv_agentId_4_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_5= 'id=' ( (lv_name_6_0= ruleValidString ) ) ) ) ) ) )*
             {
             // InternalSpringConfigDsl.g:2193:6: ( ({...}? => ( ({...}? => (otherlv_3= 'agent-id=' ( (lv_agentId_4_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_5= 'id=' ( (lv_name_6_0= ruleValidString ) ) ) ) ) ) )*
-            loop26:
+            loop27:
             do {
-                int alt26=3;
-                int LA26_0 = input.LA(1);
+                int alt27=3;
+                int LA27_0 = input.LA(1);
 
-                if ( LA26_0 == 67 && getUnorderedGroupHelper().canSelect(grammarAccess.getMbeanServerAccess().getUnorderedGroup_2(), 0) ) {
-                    alt26=1;
+                if ( LA27_0 == 67 && getUnorderedGroupHelper().canSelect(grammarAccess.getMbeanServerAccess().getUnorderedGroup_2(), 0) ) {
+                    alt27=1;
                 }
-                else if ( LA26_0 == 68 && getUnorderedGroupHelper().canSelect(grammarAccess.getMbeanServerAccess().getUnorderedGroup_2(), 1) ) {
-                    alt26=2;
+                else if ( LA27_0 == 68 && getUnorderedGroupHelper().canSelect(grammarAccess.getMbeanServerAccess().getUnorderedGroup_2(), 1) ) {
+                    alt27=2;
                 }
 
 
-                switch (alt26) {
+                switch (alt27) {
             	case 1 :
             	    // InternalSpringConfigDsl.g:2194:4: ({...}? => ( ({...}? => (otherlv_3= 'agent-id=' ( (lv_agentId_4_0= ruleValidString ) ) ) ) ) )
             	    {
@@ -6119,7 +6137,7 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop26;
+            	    break loop27;
                 }
             } while (true);
 
@@ -6136,22 +6154,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             }
 
             // InternalSpringConfigDsl.g:2269:3: (otherlv_7= '/>' | (otherlv_8= '>' otherlv_9= '</context:mbean-server>' ) )
-            int alt27=2;
-            int LA27_0 = input.LA(1);
+            int alt28=2;
+            int LA28_0 = input.LA(1);
 
-            if ( (LA27_0==31) ) {
-                alt27=1;
+            if ( (LA28_0==31) ) {
+                alt28=1;
             }
-            else if ( (LA27_0==26) ) {
-                alt27=2;
+            else if ( (LA28_0==26) ) {
+                alt28=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 27, 0, input);
+                    new NoViableAltException("", 28, 0, input);
 
                 throw nvae;
             }
-            switch (alt27) {
+            switch (alt28) {
                 case 1 :
                     // InternalSpringConfigDsl.g:2270:4: otherlv_7= '/>'
                     {
@@ -6261,22 +6279,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:2304:2: (this_PropertyPlaceholder_0= rulePropertyPlaceholder | this_PropertyOverride_1= rulePropertyOverride )
             {
             // InternalSpringConfigDsl.g:2304:2: (this_PropertyPlaceholder_0= rulePropertyPlaceholder | this_PropertyOverride_1= rulePropertyOverride )
-            int alt28=2;
-            int LA28_0 = input.LA(1);
+            int alt29=2;
+            int LA29_0 = input.LA(1);
 
-            if ( (LA28_0==70) ) {
-                alt28=1;
+            if ( (LA29_0==70) ) {
+                alt29=1;
             }
-            else if ( (LA28_0==78) ) {
-                alt28=2;
+            else if ( (LA29_0==78) ) {
+                alt29=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 28, 0, input);
+                    new NoViableAltException("", 29, 0, input);
 
                 throw nvae;
             }
-            switch (alt28) {
+            switch (alt29) {
                 case 1 :
                     // InternalSpringConfigDsl.g:2305:3: this_PropertyPlaceholder_0= rulePropertyPlaceholder
                     {
@@ -6426,35 +6444,35 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:2351:6: ( ({...}? => ( ({...}? => ( (lv_propertyfile_2_0= rulePropertyFile ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_3= 'ignore-resource-not-found=' ( (lv_ignoreResourceNotFound_4_0= rulesBoolean ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_5= 'ignore-unresolvable=' ( (lv_ignoreUnresolvable_6_0= rulesBoolean ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_7= 'local-override=' ( (lv_localOverride_8_0= rulesBoolean ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_9= 'order=' ( (lv_order_10_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_11= 'properties-ref=' ( ( ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_13= 'system-properties-mode=' ( (lv_systemPropertiesMode_14_0= ruleValidString ) ) ) ) ) ) )*
             {
             // InternalSpringConfigDsl.g:2351:6: ( ({...}? => ( ({...}? => ( (lv_propertyfile_2_0= rulePropertyFile ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_3= 'ignore-resource-not-found=' ( (lv_ignoreResourceNotFound_4_0= rulesBoolean ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_5= 'ignore-unresolvable=' ( (lv_ignoreUnresolvable_6_0= rulesBoolean ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_7= 'local-override=' ( (lv_localOverride_8_0= rulesBoolean ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_9= 'order=' ( (lv_order_10_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_11= 'properties-ref=' ( ( ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_13= 'system-properties-mode=' ( (lv_systemPropertiesMode_14_0= ruleValidString ) ) ) ) ) ) )*
-            loop29:
+            loop30:
             do {
-                int alt29=8;
-                int LA29_0 = input.LA(1);
+                int alt30=8;
+                int LA30_0 = input.LA(1);
 
-                if ( LA29_0 >= 212 && LA29_0 <= 213 && getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyPlaceholderAccess().getUnorderedGroup_1(), 0) ) {
-                    alt29=1;
+                if ( LA30_0 >= 212 && LA30_0 <= 213 && getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyPlaceholderAccess().getUnorderedGroup_1(), 0) ) {
+                    alt30=1;
                 }
-                else if ( LA29_0 == 71 && getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyPlaceholderAccess().getUnorderedGroup_1(), 1) ) {
-                    alt29=2;
+                else if ( LA30_0 == 71 && getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyPlaceholderAccess().getUnorderedGroup_1(), 1) ) {
+                    alt30=2;
                 }
-                else if ( LA29_0 == 72 && getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyPlaceholderAccess().getUnorderedGroup_1(), 2) ) {
-                    alt29=3;
+                else if ( LA30_0 == 72 && getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyPlaceholderAccess().getUnorderedGroup_1(), 2) ) {
+                    alt30=3;
                 }
-                else if ( LA29_0 == 73 && getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyPlaceholderAccess().getUnorderedGroup_1(), 3) ) {
-                    alt29=4;
+                else if ( LA30_0 == 73 && getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyPlaceholderAccess().getUnorderedGroup_1(), 3) ) {
+                    alt30=4;
                 }
-                else if ( LA29_0 == 74 && getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyPlaceholderAccess().getUnorderedGroup_1(), 4) ) {
-                    alt29=5;
+                else if ( LA30_0 == 74 && getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyPlaceholderAccess().getUnorderedGroup_1(), 4) ) {
+                    alt30=5;
                 }
-                else if ( LA29_0 == 75 && getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyPlaceholderAccess().getUnorderedGroup_1(), 5) ) {
-                    alt29=6;
+                else if ( LA30_0 == 75 && getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyPlaceholderAccess().getUnorderedGroup_1(), 5) ) {
+                    alt30=6;
                 }
-                else if ( LA29_0 == 76 && getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyPlaceholderAccess().getUnorderedGroup_1(), 6) ) {
-                    alt29=7;
+                else if ( LA30_0 == 76 && getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyPlaceholderAccess().getUnorderedGroup_1(), 6) ) {
+                    alt30=7;
                 }
 
 
-                switch (alt29) {
+                switch (alt30) {
             	case 1 :
             	    // InternalSpringConfigDsl.g:2352:4: ({...}? => ( ({...}? => ( (lv_propertyfile_2_0= rulePropertyFile ) ) ) ) )
             	    {
@@ -6983,7 +7001,7 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop29;
+            	    break loop30;
                 }
             } while (true);
 
@@ -7000,22 +7018,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             }
 
             // InternalSpringConfigDsl.g:2588:3: (otherlv_15= '/>' | (otherlv_16= '>' otherlv_17= '</context:property-placeholder>' ) )
-            int alt30=2;
-            int LA30_0 = input.LA(1);
+            int alt31=2;
+            int LA31_0 = input.LA(1);
 
-            if ( (LA30_0==31) ) {
-                alt30=1;
+            if ( (LA31_0==31) ) {
+                alt31=1;
             }
-            else if ( (LA30_0==26) ) {
-                alt30=2;
+            else if ( (LA31_0==26) ) {
+                alt31=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 30, 0, input);
+                    new NoViableAltException("", 31, 0, input);
 
                 throw nvae;
             }
-            switch (alt30) {
+            switch (alt31) {
                 case 1 :
                     // InternalSpringConfigDsl.g:2589:4: otherlv_15= '/>'
                     {
@@ -7159,33 +7177,33 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:2634:6: ( ({...}? => ( ({...}? => ( (lv_propertyfile_2_0= rulePropertyFile ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_3= 'ignore-resource-not-found=' ( (lv_ignoreResourceNotFound_4_0= rulesBoolean ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_5= 'ignore-unresolvable=' ( (lv_ignoreUnresolvable_6_0= rulesBoolean ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_7= 'local-override=' ( (lv_localOverride_8_0= rulesBoolean ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_9= 'order=' ( (lv_order_10_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_11= 'properties-ref=' ( ( ruleValidString ) ) ) ) ) ) )+ {...}?
             {
             // InternalSpringConfigDsl.g:2634:6: ( ({...}? => ( ({...}? => ( (lv_propertyfile_2_0= rulePropertyFile ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_3= 'ignore-resource-not-found=' ( (lv_ignoreResourceNotFound_4_0= rulesBoolean ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_5= 'ignore-unresolvable=' ( (lv_ignoreUnresolvable_6_0= rulesBoolean ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_7= 'local-override=' ( (lv_localOverride_8_0= rulesBoolean ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_9= 'order=' ( (lv_order_10_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_11= 'properties-ref=' ( ( ruleValidString ) ) ) ) ) ) )+
-            int cnt31=0;
-            loop31:
+            int cnt32=0;
+            loop32:
             do {
-                int alt31=7;
-                int LA31_0 = input.LA(1);
+                int alt32=7;
+                int LA32_0 = input.LA(1);
 
-                if ( LA31_0 >= 212 && LA31_0 <= 213 && getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyOverrideAccess().getUnorderedGroup_1(), 0) ) {
-                    alt31=1;
+                if ( LA32_0 >= 212 && LA32_0 <= 213 && getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyOverrideAccess().getUnorderedGroup_1(), 0) ) {
+                    alt32=1;
                 }
-                else if ( LA31_0 == 71 && getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyOverrideAccess().getUnorderedGroup_1(), 1) ) {
-                    alt31=2;
+                else if ( LA32_0 == 71 && getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyOverrideAccess().getUnorderedGroup_1(), 1) ) {
+                    alt32=2;
                 }
-                else if ( LA31_0 == 72 && getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyOverrideAccess().getUnorderedGroup_1(), 2) ) {
-                    alt31=3;
+                else if ( LA32_0 == 72 && getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyOverrideAccess().getUnorderedGroup_1(), 2) ) {
+                    alt32=3;
                 }
-                else if ( LA31_0 == 73 && getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyOverrideAccess().getUnorderedGroup_1(), 3) ) {
-                    alt31=4;
+                else if ( LA32_0 == 73 && getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyOverrideAccess().getUnorderedGroup_1(), 3) ) {
+                    alt32=4;
                 }
-                else if ( LA31_0 == 74 && getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyOverrideAccess().getUnorderedGroup_1(), 4) ) {
-                    alt31=5;
+                else if ( LA32_0 == 74 && getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyOverrideAccess().getUnorderedGroup_1(), 4) ) {
+                    alt32=5;
                 }
-                else if ( LA31_0 == 75 && getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyOverrideAccess().getUnorderedGroup_1(), 5) ) {
-                    alt31=6;
+                else if ( LA32_0 == 75 && getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyOverrideAccess().getUnorderedGroup_1(), 5) ) {
+                    alt32=6;
                 }
 
 
-                switch (alt31) {
+                switch (alt32) {
             	case 1 :
             	    // InternalSpringConfigDsl.g:2635:4: ({...}? => ( ({...}? => ( (lv_propertyfile_2_0= rulePropertyFile ) ) ) ) )
             	    {
@@ -7637,12 +7655,12 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    if ( cnt31 >= 1 ) break loop31;
+            	    if ( cnt32 >= 1 ) break loop32;
                         EarlyExitException eee =
-                            new EarlyExitException(31, input);
+                            new EarlyExitException(32, input);
                         throw eee;
                 }
-                cnt31++;
+                cnt32++;
             } while (true);
 
             if ( ! getUnorderedGroupHelper().canLeave(grammarAccess.getPropertyOverrideAccess().getUnorderedGroup_1()) ) {
@@ -7661,22 +7679,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             }
 
             // InternalSpringConfigDsl.g:2838:3: (otherlv_13= '/>' | (otherlv_14= '>' otherlv_15= '</context:property-override>' ) )
-            int alt32=2;
-            int LA32_0 = input.LA(1);
+            int alt33=2;
+            int LA33_0 = input.LA(1);
 
-            if ( (LA32_0==31) ) {
-                alt32=1;
+            if ( (LA33_0==31) ) {
+                alt33=1;
             }
-            else if ( (LA32_0==26) ) {
-                alt32=2;
+            else if ( (LA33_0==26) ) {
+                alt33=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 32, 0, input);
+                    new NoViableAltException("", 33, 0, input);
 
                 throw nvae;
             }
-            switch (alt32) {
+            switch (alt33) {
                 case 1 :
                     // InternalSpringConfigDsl.g:2839:4: otherlv_13= '/>'
                     {
@@ -7804,22 +7822,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             			newLeafNode(otherlv_1, grammarAccess.getSpringConfiguredAccess().getSpringConfiguredKeyword_1());
             		
             // InternalSpringConfigDsl.g:2885:3: (otherlv_2= '/>' | (otherlv_3= '>' otherlv_4= '</context:spring-configured>' ) )
-            int alt33=2;
-            int LA33_0 = input.LA(1);
+            int alt34=2;
+            int LA34_0 = input.LA(1);
 
-            if ( (LA33_0==31) ) {
-                alt33=1;
+            if ( (LA34_0==31) ) {
+                alt34=1;
             }
-            else if ( (LA33_0==26) ) {
-                alt33=2;
+            else if ( (LA34_0==26) ) {
+                alt34=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 33, 0, input);
+                    new NoViableAltException("", 34, 0, input);
 
                 throw nvae;
             }
-            switch (alt33) {
+            switch (alt34) {
                 case 1 :
                     // InternalSpringConfigDsl.g:2886:4: otherlv_2= '/>'
                     {
@@ -8022,22 +8040,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:2951:2: (this_AopAspectJAutoproxy_0= ruleAopAspectJAutoproxy | this_AopConfig_1= ruleAopConfig )
             {
             // InternalSpringConfigDsl.g:2951:2: (this_AopAspectJAutoproxy_0= ruleAopAspectJAutoproxy | this_AopConfig_1= ruleAopConfig )
-            int alt34=2;
-            int LA34_0 = input.LA(1);
+            int alt35=2;
+            int LA35_0 = input.LA(1);
 
-            if ( (LA34_0==83) ) {
-                alt34=1;
+            if ( (LA35_0==83) ) {
+                alt35=1;
             }
-            else if ( (LA34_0==89) ) {
-                alt34=2;
+            else if ( (LA35_0==89) ) {
+                alt35=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 34, 0, input);
+                    new NoViableAltException("", 35, 0, input);
 
                 throw nvae;
             }
-            switch (alt34) {
+            switch (alt35) {
                 case 1 :
                     // InternalSpringConfigDsl.g:2952:3: this_AopAspectJAutoproxy_0= ruleAopAspectJAutoproxy
                     {
@@ -8188,20 +8206,20 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:3005:6: ( ({...}? => ( ({...}? => (otherlv_3= 'expose-proxy=' ( (lv_exposeProxy_4_0= rulesBoolean ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_5= 'proxy-target-class=' ( (lv_proxyTrajetClass_6_0= rulesBoolean ) ) ) ) ) ) )*
             {
             // InternalSpringConfigDsl.g:3005:6: ( ({...}? => ( ({...}? => (otherlv_3= 'expose-proxy=' ( (lv_exposeProxy_4_0= rulesBoolean ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_5= 'proxy-target-class=' ( (lv_proxyTrajetClass_6_0= rulesBoolean ) ) ) ) ) ) )*
-            loop35:
+            loop36:
             do {
-                int alt35=3;
-                int LA35_0 = input.LA(1);
+                int alt36=3;
+                int LA36_0 = input.LA(1);
 
-                if ( LA35_0 == 84 && getUnorderedGroupHelper().canSelect(grammarAccess.getAopAspectJAutoproxyAccess().getUnorderedGroup_2(), 0) ) {
-                    alt35=1;
+                if ( LA36_0 == 84 && getUnorderedGroupHelper().canSelect(grammarAccess.getAopAspectJAutoproxyAccess().getUnorderedGroup_2(), 0) ) {
+                    alt36=1;
                 }
-                else if ( LA35_0 == 85 && getUnorderedGroupHelper().canSelect(grammarAccess.getAopAspectJAutoproxyAccess().getUnorderedGroup_2(), 1) ) {
-                    alt35=2;
+                else if ( LA36_0 == 85 && getUnorderedGroupHelper().canSelect(grammarAccess.getAopAspectJAutoproxyAccess().getUnorderedGroup_2(), 1) ) {
+                    alt36=2;
                 }
 
 
-                switch (alt35) {
+                switch (alt36) {
             	case 1 :
             	    // InternalSpringConfigDsl.g:3006:4: ({...}? => ( ({...}? => (otherlv_3= 'expose-proxy=' ( (lv_exposeProxy_4_0= rulesBoolean ) ) ) ) ) )
             	    {
@@ -8358,7 +8376,7 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop35;
+            	    break loop36;
                 }
             } while (true);
 
@@ -8375,22 +8393,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             }
 
             // InternalSpringConfigDsl.g:3081:3: (otherlv_7= '/>' | (otherlv_8= '>' ( (lv_aopincludes_9_0= ruleAopInclude ) )* otherlv_10= '</aop:aspectj-autoproxy>' ) )
-            int alt37=2;
-            int LA37_0 = input.LA(1);
+            int alt38=2;
+            int LA38_0 = input.LA(1);
 
-            if ( (LA37_0==31) ) {
-                alt37=1;
+            if ( (LA38_0==31) ) {
+                alt38=1;
             }
-            else if ( (LA37_0==26) ) {
-                alt37=2;
+            else if ( (LA38_0==26) ) {
+                alt38=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 37, 0, input);
+                    new NoViableAltException("", 38, 0, input);
 
                 throw nvae;
             }
-            switch (alt37) {
+            switch (alt38) {
                 case 1 :
                     // InternalSpringConfigDsl.g:3082:4: otherlv_7= '/>'
                     {
@@ -8412,17 +8430,17 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     					newLeafNode(otherlv_8, grammarAccess.getAopAspectJAutoproxyAccess().getGreaterThanSignKeyword_3_1_0());
                     				
                     // InternalSpringConfigDsl.g:3092:5: ( (lv_aopincludes_9_0= ruleAopInclude ) )*
-                    loop36:
+                    loop37:
                     do {
-                        int alt36=2;
-                        int LA36_0 = input.LA(1);
+                        int alt37=2;
+                        int LA37_0 = input.LA(1);
 
-                        if ( (LA36_0==87) ) {
-                            alt36=1;
+                        if ( (LA37_0==87) ) {
+                            alt37=1;
                         }
 
 
-                        switch (alt36) {
+                        switch (alt37) {
                     	case 1 :
                     	    // InternalSpringConfigDsl.g:3093:6: (lv_aopincludes_9_0= ruleAopInclude )
                     	    {
@@ -8456,7 +8474,7 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop36;
+                    	    break loop37;
                         }
                     } while (true);
 
@@ -8589,22 +8607,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             }
 
             // InternalSpringConfigDsl.g:3160:3: (otherlv_3= '/>' | (otherlv_4= '>' otherlv_5= '</aop:include>' ) )
-            int alt38=2;
-            int LA38_0 = input.LA(1);
+            int alt39=2;
+            int LA39_0 = input.LA(1);
 
-            if ( (LA38_0==31) ) {
-                alt38=1;
+            if ( (LA39_0==31) ) {
+                alt39=1;
             }
-            else if ( (LA38_0==26) ) {
-                alt38=2;
+            else if ( (LA39_0==26) ) {
+                alt39=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 38, 0, input);
+                    new NoViableAltException("", 39, 0, input);
 
                 throw nvae;
             }
-            switch (alt38) {
+            switch (alt39) {
                 case 1 :
                     // InternalSpringConfigDsl.g:3161:4: otherlv_3= '/>'
                     {
@@ -8759,20 +8777,20 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:3214:7: ( ({...}? => ( ({...}? => (otherlv_3= 'expose-proxy=' ( (lv_exposeProxy_4_0= rulesBoolean ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_5= 'proxy-target-class=' ( (lv_proxyTrajetClass_6_0= rulesBoolean ) ) ) ) ) ) )*
             {
             // InternalSpringConfigDsl.g:3214:7: ( ({...}? => ( ({...}? => (otherlv_3= 'expose-proxy=' ( (lv_exposeProxy_4_0= rulesBoolean ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_5= 'proxy-target-class=' ( (lv_proxyTrajetClass_6_0= rulesBoolean ) ) ) ) ) ) )*
-            loop39:
+            loop40:
             do {
-                int alt39=3;
-                int LA39_0 = input.LA(1);
+                int alt40=3;
+                int LA40_0 = input.LA(1);
 
-                if ( LA39_0 == 84 && getUnorderedGroupHelper().canSelect(grammarAccess.getAopConfigAccess().getUnorderedGroup_1_1(), 0) ) {
-                    alt39=1;
+                if ( LA40_0 == 84 && getUnorderedGroupHelper().canSelect(grammarAccess.getAopConfigAccess().getUnorderedGroup_1_1(), 0) ) {
+                    alt40=1;
                 }
-                else if ( LA39_0 == 85 && getUnorderedGroupHelper().canSelect(grammarAccess.getAopConfigAccess().getUnorderedGroup_1_1(), 1) ) {
-                    alt39=2;
+                else if ( LA40_0 == 85 && getUnorderedGroupHelper().canSelect(grammarAccess.getAopConfigAccess().getUnorderedGroup_1_1(), 1) ) {
+                    alt40=2;
                 }
 
 
-                switch (alt39) {
+                switch (alt40) {
             	case 1 :
             	    // InternalSpringConfigDsl.g:3215:5: ({...}? => ( ({...}? => (otherlv_3= 'expose-proxy=' ( (lv_exposeProxy_4_0= rulesBoolean ) ) ) ) ) )
             	    {
@@ -8929,7 +8947,7 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop39;
+            	    break loop40;
                 }
             } while (true);
 
@@ -8946,22 +8964,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             }
 
             // InternalSpringConfigDsl.g:3290:4: (otherlv_7= '/>' | (otherlv_8= '>' ( ( (lv_aopPointcuts_9_0= ruleAopPointcut ) )* ( (lv_aopAdvisors_10_0= ruleAopAdvisor ) )* ( (lv_aspects_11_0= ruleAopAspect ) )* ) otherlv_12= '</aop:config>' ) )
-            int alt43=2;
-            int LA43_0 = input.LA(1);
+            int alt44=2;
+            int LA44_0 = input.LA(1);
 
-            if ( (LA43_0==31) ) {
-                alt43=1;
+            if ( (LA44_0==31) ) {
+                alt44=1;
             }
-            else if ( (LA43_0==26) ) {
-                alt43=2;
+            else if ( (LA44_0==26) ) {
+                alt44=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 43, 0, input);
+                    new NoViableAltException("", 44, 0, input);
 
                 throw nvae;
             }
-            switch (alt43) {
+            switch (alt44) {
                 case 1 :
                     // InternalSpringConfigDsl.g:3291:5: otherlv_7= '/>'
                     {
@@ -8986,17 +9004,17 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     // InternalSpringConfigDsl.g:3302:7: ( (lv_aopPointcuts_9_0= ruleAopPointcut ) )* ( (lv_aopAdvisors_10_0= ruleAopAdvisor ) )* ( (lv_aspects_11_0= ruleAopAspect ) )*
                     {
                     // InternalSpringConfigDsl.g:3302:7: ( (lv_aopPointcuts_9_0= ruleAopPointcut ) )*
-                    loop40:
+                    loop41:
                     do {
-                        int alt40=2;
-                        int LA40_0 = input.LA(1);
+                        int alt41=2;
+                        int LA41_0 = input.LA(1);
 
-                        if ( (LA40_0==91) ) {
-                            alt40=1;
+                        if ( (LA41_0==91) ) {
+                            alt41=1;
                         }
 
 
-                        switch (alt40) {
+                        switch (alt41) {
                     	case 1 :
                     	    // InternalSpringConfigDsl.g:3303:8: (lv_aopPointcuts_9_0= ruleAopPointcut )
                     	    {
@@ -9030,22 +9048,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop40;
+                    	    break loop41;
                         }
                     } while (true);
 
                     // InternalSpringConfigDsl.g:3321:7: ( (lv_aopAdvisors_10_0= ruleAopAdvisor ) )*
-                    loop41:
+                    loop42:
                     do {
-                        int alt41=2;
-                        int LA41_0 = input.LA(1);
+                        int alt42=2;
+                        int LA42_0 = input.LA(1);
 
-                        if ( (LA41_0==93) ) {
-                            alt41=1;
+                        if ( (LA42_0==93) ) {
+                            alt42=1;
                         }
 
 
-                        switch (alt41) {
+                        switch (alt42) {
                     	case 1 :
                     	    // InternalSpringConfigDsl.g:3322:8: (lv_aopAdvisors_10_0= ruleAopAdvisor )
                     	    {
@@ -9079,22 +9097,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop41;
+                    	    break loop42;
                         }
                     } while (true);
 
                     // InternalSpringConfigDsl.g:3340:7: ( (lv_aspects_11_0= ruleAopAspect ) )*
-                    loop42:
+                    loop43:
                     do {
-                        int alt42=2;
-                        int LA42_0 = input.LA(1);
+                        int alt43=2;
+                        int LA43_0 = input.LA(1);
 
-                        if ( (LA42_0==98) ) {
-                            alt42=1;
+                        if ( (LA43_0==98) ) {
+                            alt43=1;
                         }
 
 
-                        switch (alt42) {
+                        switch (alt43) {
                     	case 1 :
                     	    // InternalSpringConfigDsl.g:3341:8: (lv_aspects_11_0= ruleAopAspect )
                     	    {
@@ -9128,7 +9146,7 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop42;
+                    	    break loop43;
                         }
                     } while (true);
 
@@ -9252,21 +9270,21 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:3396:6: ( ({...}? => ( ({...}? => (otherlv_2= 'expression=' ( (lv_expression_3_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_4= 'id=' ( (lv_name_5_0= ruleValidString ) ) ) ) ) ) )+ {...}?
             {
             // InternalSpringConfigDsl.g:3396:6: ( ({...}? => ( ({...}? => (otherlv_2= 'expression=' ( (lv_expression_3_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_4= 'id=' ( (lv_name_5_0= ruleValidString ) ) ) ) ) ) )+
-            int cnt44=0;
-            loop44:
+            int cnt45=0;
+            loop45:
             do {
-                int alt44=3;
-                int LA44_0 = input.LA(1);
+                int alt45=3;
+                int LA45_0 = input.LA(1);
 
-                if ( LA44_0 == 53 && getUnorderedGroupHelper().canSelect(grammarAccess.getAopPointcutAccess().getUnorderedGroup_1(), 0) ) {
-                    alt44=1;
+                if ( LA45_0 == 53 && getUnorderedGroupHelper().canSelect(grammarAccess.getAopPointcutAccess().getUnorderedGroup_1(), 0) ) {
+                    alt45=1;
                 }
-                else if ( LA44_0 == 68 && getUnorderedGroupHelper().canSelect(grammarAccess.getAopPointcutAccess().getUnorderedGroup_1(), 1) ) {
-                    alt44=2;
+                else if ( LA45_0 == 68 && getUnorderedGroupHelper().canSelect(grammarAccess.getAopPointcutAccess().getUnorderedGroup_1(), 1) ) {
+                    alt45=2;
                 }
 
 
-                switch (alt44) {
+                switch (alt45) {
             	case 1 :
             	    // InternalSpringConfigDsl.g:3397:4: ({...}? => ( ({...}? => (otherlv_2= 'expression=' ( (lv_expression_3_0= ruleValidString ) ) ) ) ) )
             	    {
@@ -9423,12 +9441,12 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    if ( cnt44 >= 1 ) break loop44;
+            	    if ( cnt45 >= 1 ) break loop45;
                         EarlyExitException eee =
-                            new EarlyExitException(44, input);
+                            new EarlyExitException(45, input);
                         throw eee;
                 }
-                cnt44++;
+                cnt45++;
             } while (true);
 
             if ( ! getUnorderedGroupHelper().canLeave(grammarAccess.getAopPointcutAccess().getUnorderedGroup_1()) ) {
@@ -9447,22 +9465,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             }
 
             // InternalSpringConfigDsl.g:3473:3: (otherlv_6= '/>' | (otherlv_7= '>' otherlv_8= '</aop:pointcut>' ) )
-            int alt45=2;
-            int LA45_0 = input.LA(1);
+            int alt46=2;
+            int LA46_0 = input.LA(1);
 
-            if ( (LA45_0==31) ) {
-                alt45=1;
+            if ( (LA46_0==31) ) {
+                alt46=1;
             }
-            else if ( (LA45_0==26) ) {
-                alt45=2;
+            else if ( (LA46_0==26) ) {
+                alt46=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 45, 0, input);
+                    new NoViableAltException("", 46, 0, input);
 
                 throw nvae;
             }
-            switch (alt45) {
+            switch (alt46) {
                 case 1 :
                     // InternalSpringConfigDsl.g:3474:4: otherlv_6= '/>'
                     {
@@ -9601,27 +9619,27 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:3519:6: ( ({...}? => ( ({...}? => (otherlv_2= 'advice-ref=' ( ( ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_4= 'id=' ( (lv_name_5_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_6= 'order=' ( (lv_order_7_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => ( ( (lv_pointcut_8_0= rulePointCutExpression ) ) | (otherlv_9= 'pointcut-ref=' ( ( ruleValidString ) ) ) ) ) ) ) )+ {...}?
             {
             // InternalSpringConfigDsl.g:3519:6: ( ({...}? => ( ({...}? => (otherlv_2= 'advice-ref=' ( ( ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_4= 'id=' ( (lv_name_5_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_6= 'order=' ( (lv_order_7_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => ( ( (lv_pointcut_8_0= rulePointCutExpression ) ) | (otherlv_9= 'pointcut-ref=' ( ( ruleValidString ) ) ) ) ) ) ) )+
-            int cnt47=0;
-            loop47:
+            int cnt48=0;
+            loop48:
             do {
-                int alt47=5;
-                int LA47_0 = input.LA(1);
+                int alt48=5;
+                int LA48_0 = input.LA(1);
 
-                if ( LA47_0 == 94 && getUnorderedGroupHelper().canSelect(grammarAccess.getAopAdvisorAccess().getUnorderedGroup_1(), 0) ) {
-                    alt47=1;
+                if ( LA48_0 == 94 && getUnorderedGroupHelper().canSelect(grammarAccess.getAopAdvisorAccess().getUnorderedGroup_1(), 0) ) {
+                    alt48=1;
                 }
-                else if ( LA47_0 == 68 && getUnorderedGroupHelper().canSelect(grammarAccess.getAopAdvisorAccess().getUnorderedGroup_1(), 1) ) {
-                    alt47=2;
+                else if ( LA48_0 == 68 && getUnorderedGroupHelper().canSelect(grammarAccess.getAopAdvisorAccess().getUnorderedGroup_1(), 1) ) {
+                    alt48=2;
                 }
-                else if ( LA47_0 == 74 && getUnorderedGroupHelper().canSelect(grammarAccess.getAopAdvisorAccess().getUnorderedGroup_1(), 2) ) {
-                    alt47=3;
+                else if ( LA48_0 == 74 && getUnorderedGroupHelper().canSelect(grammarAccess.getAopAdvisorAccess().getUnorderedGroup_1(), 2) ) {
+                    alt48=3;
                 }
-                else if ( ( LA47_0 == 95 || LA47_0 == 97 ) && getUnorderedGroupHelper().canSelect(grammarAccess.getAopAdvisorAccess().getUnorderedGroup_1(), 3) ) {
-                    alt47=4;
+                else if ( ( LA48_0 == 95 || LA48_0 == 97 ) && getUnorderedGroupHelper().canSelect(grammarAccess.getAopAdvisorAccess().getUnorderedGroup_1(), 3) ) {
+                    alt48=4;
                 }
 
 
-                switch (alt47) {
+                switch (alt48) {
             	case 1 :
             	    // InternalSpringConfigDsl.g:3520:4: ({...}? => ( ({...}? => (otherlv_2= 'advice-ref=' ( ( ruleValidString ) ) ) ) ) )
             	    {
@@ -9872,22 +9890,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	        throw new FailedPredicateException(input, "ruleAopAdvisor", "true");
             	    }
             	    // InternalSpringConfigDsl.g:3624:19: ( ( (lv_pointcut_8_0= rulePointCutExpression ) ) | (otherlv_9= 'pointcut-ref=' ( ( ruleValidString ) ) ) )
-            	    int alt46=2;
-            	    int LA46_0 = input.LA(1);
+            	    int alt47=2;
+            	    int LA47_0 = input.LA(1);
 
-            	    if ( (LA46_0==97) ) {
-            	        alt46=1;
+            	    if ( (LA47_0==97) ) {
+            	        alt47=1;
             	    }
-            	    else if ( (LA46_0==95) ) {
-            	        alt46=2;
+            	    else if ( (LA47_0==95) ) {
+            	        alt47=2;
             	    }
             	    else {
             	        NoViableAltException nvae =
-            	            new NoViableAltException("", 46, 0, input);
+            	            new NoViableAltException("", 47, 0, input);
 
             	        throw nvae;
             	    }
-            	    switch (alt46) {
+            	    switch (alt47) {
             	        case 1 :
             	            // InternalSpringConfigDsl.g:3624:20: ( (lv_pointcut_8_0= rulePointCutExpression ) )
             	            {
@@ -9989,12 +10007,12 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    if ( cnt47 >= 1 ) break loop47;
+            	    if ( cnt48 >= 1 ) break loop48;
                         EarlyExitException eee =
-                            new EarlyExitException(47, input);
+                            new EarlyExitException(48, input);
                         throw eee;
                 }
-                cnt47++;
+                cnt48++;
             } while (true);
 
             if ( ! getUnorderedGroupHelper().canLeave(grammarAccess.getAopAdvisorAccess().getUnorderedGroup_1()) ) {
@@ -10013,22 +10031,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             }
 
             // InternalSpringConfigDsl.g:3680:3: (otherlv_11= '/>' | (otherlv_12= '>' otherlv_13= '</aop:advisor>' ) )
-            int alt48=2;
-            int LA48_0 = input.LA(1);
+            int alt49=2;
+            int LA49_0 = input.LA(1);
 
-            if ( (LA48_0==31) ) {
-                alt48=1;
+            if ( (LA49_0==31) ) {
+                alt49=1;
             }
-            else if ( (LA48_0==26) ) {
-                alt48=2;
+            else if ( (LA49_0==26) ) {
+                alt49=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 48, 0, input);
+                    new NoViableAltException("", 49, 0, input);
 
                 throw nvae;
             }
-            switch (alt48) {
+            switch (alt49) {
                 case 1 :
                     // InternalSpringConfigDsl.g:3681:4: otherlv_11= '/>'
                     {
@@ -10281,24 +10299,24 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:3768:6: ( ({...}? => ( ({...}? => (otherlv_2= 'id=' ( (lv_name_3_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_4= 'order=' ( (lv_order_5_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_6= 'ref=' ( ( ruleValidString ) ) ) ) ) ) )+ {...}?
             {
             // InternalSpringConfigDsl.g:3768:6: ( ({...}? => ( ({...}? => (otherlv_2= 'id=' ( (lv_name_3_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_4= 'order=' ( (lv_order_5_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_6= 'ref=' ( ( ruleValidString ) ) ) ) ) ) )+
-            int cnt49=0;
-            loop49:
+            int cnt50=0;
+            loop50:
             do {
-                int alt49=4;
-                int LA49_0 = input.LA(1);
+                int alt50=4;
+                int LA50_0 = input.LA(1);
 
-                if ( LA49_0 == 68 && getUnorderedGroupHelper().canSelect(grammarAccess.getAopAspectAccess().getUnorderedGroup_1(), 0) ) {
-                    alt49=1;
+                if ( LA50_0 == 68 && getUnorderedGroupHelper().canSelect(grammarAccess.getAopAspectAccess().getUnorderedGroup_1(), 0) ) {
+                    alt50=1;
                 }
-                else if ( LA49_0 == 74 && getUnorderedGroupHelper().canSelect(grammarAccess.getAopAspectAccess().getUnorderedGroup_1(), 1) ) {
-                    alt49=2;
+                else if ( LA50_0 == 74 && getUnorderedGroupHelper().canSelect(grammarAccess.getAopAspectAccess().getUnorderedGroup_1(), 1) ) {
+                    alt50=2;
                 }
-                else if ( LA49_0 == 99 && getUnorderedGroupHelper().canSelect(grammarAccess.getAopAspectAccess().getUnorderedGroup_1(), 2) ) {
-                    alt49=3;
+                else if ( LA50_0 == 99 && getUnorderedGroupHelper().canSelect(grammarAccess.getAopAspectAccess().getUnorderedGroup_1(), 2) ) {
+                    alt50=3;
                 }
 
 
-                switch (alt49) {
+                switch (alt50) {
             	case 1 :
             	    // InternalSpringConfigDsl.g:3769:4: ({...}? => ( ({...}? => (otherlv_2= 'id=' ( (lv_name_3_0= ruleValidString ) ) ) ) ) )
             	    {
@@ -10529,12 +10547,12 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    if ( cnt49 >= 1 ) break loop49;
+            	    if ( cnt50 >= 1 ) break loop50;
                         EarlyExitException eee =
-                            new EarlyExitException(49, input);
+                            new EarlyExitException(50, input);
                         throw eee;
                 }
-                cnt49++;
+                cnt50++;
             } while (true);
 
             if ( ! getUnorderedGroupHelper().canLeave(grammarAccess.getAopAspectAccess().getUnorderedGroup_1()) ) {
@@ -10557,18 +10575,18 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             			newLeafNode(otherlv_8, grammarAccess.getAopAspectAccess().getGreaterThanSignKeyword_2());
             		
             // InternalSpringConfigDsl.g:3880:3: ( ( (lv_aopPointcuts_9_0= ruleAopPointcut ) ) | ( (lv_declaredParents_10_0= ruleDeclareParents ) ) | ( (lv_advises_11_0= ruleAdvise ) ) )*
-            loop50:
+            loop51:
             do {
-                int alt50=4;
+                int alt51=4;
                 switch ( input.LA(1) ) {
                 case 91:
                     {
-                    alt50=1;
+                    alt51=1;
                     }
                     break;
                 case 101:
                     {
-                    alt50=2;
+                    alt51=2;
                     }
                     break;
                 case 107:
@@ -10577,13 +10595,13 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                 case 114:
                 case 117:
                     {
-                    alt50=3;
+                    alt51=3;
                     }
                     break;
 
                 }
 
-                switch (alt50) {
+                switch (alt51) {
             	case 1 :
             	    // InternalSpringConfigDsl.g:3881:4: ( (lv_aopPointcuts_9_0= ruleAopPointcut ) )
             	    {
@@ -10697,7 +10715,7 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop50;
+            	    break loop51;
                 }
             } while (true);
 
@@ -10809,24 +10827,24 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:3974:6: ( ({...}? => ( ({...}? => (otherlv_2= 'types-matching=' ( (lv_typeMatching_3_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_implementInterface_4_0= ruleAopImplInterface ) ) ) ) ) | ({...}? => ( ({...}? => ( ( (lv_defaultImplInterface_5_0= ruleAopDefaultImplInterface ) ) | ( (lv_delegateImplRef_6_0= ruleAopDelegateImplRef ) ) ) ) ) ) )+ {...}?
             {
             // InternalSpringConfigDsl.g:3974:6: ( ({...}? => ( ({...}? => (otherlv_2= 'types-matching=' ( (lv_typeMatching_3_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_implementInterface_4_0= ruleAopImplInterface ) ) ) ) ) | ({...}? => ( ({...}? => ( ( (lv_defaultImplInterface_5_0= ruleAopDefaultImplInterface ) ) | ( (lv_delegateImplRef_6_0= ruleAopDelegateImplRef ) ) ) ) ) ) )+
-            int cnt52=0;
-            loop52:
+            int cnt53=0;
+            loop53:
             do {
-                int alt52=4;
-                int LA52_0 = input.LA(1);
+                int alt53=4;
+                int LA53_0 = input.LA(1);
 
-                if ( LA52_0 == 102 && getUnorderedGroupHelper().canSelect(grammarAccess.getDeclareParentsAccess().getUnorderedGroup_1(), 0) ) {
-                    alt52=1;
+                if ( LA53_0 == 102 && getUnorderedGroupHelper().canSelect(grammarAccess.getDeclareParentsAccess().getUnorderedGroup_1(), 0) ) {
+                    alt53=1;
                 }
-                else if ( LA52_0 == 104 && getUnorderedGroupHelper().canSelect(grammarAccess.getDeclareParentsAccess().getUnorderedGroup_1(), 1) ) {
-                    alt52=2;
+                else if ( LA53_0 == 104 && getUnorderedGroupHelper().canSelect(grammarAccess.getDeclareParentsAccess().getUnorderedGroup_1(), 1) ) {
+                    alt53=2;
                 }
-                else if ( LA52_0 >= 105 && LA52_0 <= 106 && getUnorderedGroupHelper().canSelect(grammarAccess.getDeclareParentsAccess().getUnorderedGroup_1(), 2) ) {
-                    alt52=3;
+                else if ( LA53_0 >= 105 && LA53_0 <= 106 && getUnorderedGroupHelper().canSelect(grammarAccess.getDeclareParentsAccess().getUnorderedGroup_1(), 2) ) {
+                    alt53=3;
                 }
 
 
-                switch (alt52) {
+                switch (alt53) {
             	case 1 :
             	    // InternalSpringConfigDsl.g:3975:4: ({...}? => ( ({...}? => (otherlv_2= 'types-matching=' ( (lv_typeMatching_3_0= ruleValidString ) ) ) ) ) )
             	    {
@@ -10993,22 +11011,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	        throw new FailedPredicateException(input, "ruleDeclareParents", "true");
             	    }
             	    // InternalSpringConfigDsl.g:4042:19: ( ( (lv_defaultImplInterface_5_0= ruleAopDefaultImplInterface ) ) | ( (lv_delegateImplRef_6_0= ruleAopDelegateImplRef ) ) )
-            	    int alt51=2;
-            	    int LA51_0 = input.LA(1);
+            	    int alt52=2;
+            	    int LA52_0 = input.LA(1);
 
-            	    if ( (LA51_0==105) ) {
-            	        alt51=1;
+            	    if ( (LA52_0==105) ) {
+            	        alt52=1;
             	    }
-            	    else if ( (LA51_0==106) ) {
-            	        alt51=2;
+            	    else if ( (LA52_0==106) ) {
+            	        alt52=2;
             	    }
             	    else {
             	        NoViableAltException nvae =
-            	            new NoViableAltException("", 51, 0, input);
+            	            new NoViableAltException("", 52, 0, input);
 
             	        throw nvae;
             	    }
-            	    switch (alt51) {
+            	    switch (alt52) {
             	        case 1 :
             	            // InternalSpringConfigDsl.g:4042:20: ( (lv_defaultImplInterface_5_0= ruleAopDefaultImplInterface ) )
             	            {
@@ -11103,12 +11121,12 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    if ( cnt52 >= 1 ) break loop52;
+            	    if ( cnt53 >= 1 ) break loop53;
                         EarlyExitException eee =
-                            new EarlyExitException(52, input);
+                            new EarlyExitException(53, input);
                         throw eee;
                 }
-                cnt52++;
+                cnt53++;
             } while (true);
 
             if ( ! getUnorderedGroupHelper().canLeave(grammarAccess.getDeclareParentsAccess().getUnorderedGroup_1()) ) {
@@ -11127,22 +11145,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             }
 
             // InternalSpringConfigDsl.g:4095:3: (otherlv_7= '/>' | (otherlv_8= '>' otherlv_9= '</aop:declare-parents>' ) )
-            int alt53=2;
-            int LA53_0 = input.LA(1);
+            int alt54=2;
+            int LA54_0 = input.LA(1);
 
-            if ( (LA53_0==31) ) {
-                alt53=1;
+            if ( (LA54_0==31) ) {
+                alt54=1;
             }
-            else if ( (LA53_0==26) ) {
-                alt53=2;
+            else if ( (LA54_0==26) ) {
+                alt54=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 53, 0, input);
+                    new NoViableAltException("", 54, 0, input);
 
                 throw nvae;
             }
-            switch (alt53) {
+            switch (alt54) {
                 case 1 :
                     // InternalSpringConfigDsl.g:4096:4: otherlv_7= '/>'
                     {
@@ -11589,41 +11607,41 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:4253:2: (this_BeforeAdvise_0= ruleBeforeAdvise | this_AfterAdvise_1= ruleAfterAdvise | this_AroundAdvise_2= ruleAroundAdvise | this_AfterReturning_3= ruleAfterReturning | this_AfterThowing_4= ruleAfterThowing )
             {
             // InternalSpringConfigDsl.g:4253:2: (this_BeforeAdvise_0= ruleBeforeAdvise | this_AfterAdvise_1= ruleAfterAdvise | this_AroundAdvise_2= ruleAroundAdvise | this_AfterReturning_3= ruleAfterReturning | this_AfterThowing_4= ruleAfterThowing )
-            int alt54=5;
+            int alt55=5;
             switch ( input.LA(1) ) {
             case 107:
                 {
-                alt54=1;
+                alt55=1;
                 }
                 break;
             case 110:
                 {
-                alt54=2;
+                alt55=2;
                 }
                 break;
             case 112:
                 {
-                alt54=3;
+                alt55=3;
                 }
                 break;
             case 114:
                 {
-                alt54=4;
+                alt55=4;
                 }
                 break;
             case 117:
                 {
-                alt54=5;
+                alt55=5;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 54, 0, input);
+                    new NoViableAltException("", 55, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt54) {
+            switch (alt55) {
                 case 1 :
                     // InternalSpringConfigDsl.g:4254:3: this_BeforeAdvise_0= ruleBeforeAdvise
                     {
@@ -11816,21 +11834,21 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:4327:6: ( ({...}? => ( ({...}? => ( (otherlv_2= 'pointcut-ref=' ( ( ruleValidString ) ) ) | (otherlv_4= 'pointcut=' ( (lv_PointcutExpression_5_0= ruleValidString ) ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_6= 'method=' ( (lv_method_7_0= ruleValidString ) ) ) ) ) ) )+ {...}?
             {
             // InternalSpringConfigDsl.g:4327:6: ( ({...}? => ( ({...}? => ( (otherlv_2= 'pointcut-ref=' ( ( ruleValidString ) ) ) | (otherlv_4= 'pointcut=' ( (lv_PointcutExpression_5_0= ruleValidString ) ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_6= 'method=' ( (lv_method_7_0= ruleValidString ) ) ) ) ) ) )+
-            int cnt56=0;
-            loop56:
+            int cnt57=0;
+            loop57:
             do {
-                int alt56=3;
-                int LA56_0 = input.LA(1);
+                int alt57=3;
+                int LA57_0 = input.LA(1);
 
-                if ( ( LA56_0 == 95 || LA56_0 == 97 ) && getUnorderedGroupHelper().canSelect(grammarAccess.getBeforeAdviseAccess().getUnorderedGroup_1(), 0) ) {
-                    alt56=1;
+                if ( ( LA57_0 == 95 || LA57_0 == 97 ) && getUnorderedGroupHelper().canSelect(grammarAccess.getBeforeAdviseAccess().getUnorderedGroup_1(), 0) ) {
+                    alt57=1;
                 }
-                else if ( LA56_0 == 108 && getUnorderedGroupHelper().canSelect(grammarAccess.getBeforeAdviseAccess().getUnorderedGroup_1(), 1) ) {
-                    alt56=2;
+                else if ( LA57_0 == 108 && getUnorderedGroupHelper().canSelect(grammarAccess.getBeforeAdviseAccess().getUnorderedGroup_1(), 1) ) {
+                    alt57=2;
                 }
 
 
-                switch (alt56) {
+                switch (alt57) {
             	case 1 :
             	    // InternalSpringConfigDsl.g:4328:4: ({...}? => ( ({...}? => ( (otherlv_2= 'pointcut-ref=' ( ( ruleValidString ) ) ) | (otherlv_4= 'pointcut=' ( (lv_PointcutExpression_5_0= ruleValidString ) ) ) ) ) ) )
             	    {
@@ -11853,22 +11871,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	        throw new FailedPredicateException(input, "ruleBeforeAdvise", "true");
             	    }
             	    // InternalSpringConfigDsl.g:4333:19: ( (otherlv_2= 'pointcut-ref=' ( ( ruleValidString ) ) ) | (otherlv_4= 'pointcut=' ( (lv_PointcutExpression_5_0= ruleValidString ) ) ) )
-            	    int alt55=2;
-            	    int LA55_0 = input.LA(1);
+            	    int alt56=2;
+            	    int LA56_0 = input.LA(1);
 
-            	    if ( (LA55_0==95) ) {
-            	        alt55=1;
+            	    if ( (LA56_0==95) ) {
+            	        alt56=1;
             	    }
-            	    else if ( (LA55_0==97) ) {
-            	        alt55=2;
+            	    else if ( (LA56_0==97) ) {
+            	        alt56=2;
             	    }
             	    else {
             	        NoViableAltException nvae =
-            	            new NoViableAltException("", 55, 0, input);
+            	            new NoViableAltException("", 56, 0, input);
 
             	        throw nvae;
             	    }
-            	    switch (alt55) {
+            	    switch (alt56) {
             	        case 1 :
             	            // InternalSpringConfigDsl.g:4333:20: (otherlv_2= 'pointcut-ref=' ( ( ruleValidString ) ) )
             	            {
@@ -12057,12 +12075,12 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    if ( cnt56 >= 1 ) break loop56;
+            	    if ( cnt57 >= 1 ) break loop57;
                         EarlyExitException eee =
-                            new EarlyExitException(56, input);
+                            new EarlyExitException(57, input);
                         throw eee;
                 }
-                cnt56++;
+                cnt57++;
             } while (true);
 
             if ( ! getUnorderedGroupHelper().canLeave(grammarAccess.getBeforeAdviseAccess().getUnorderedGroup_1()) ) {
@@ -12081,22 +12099,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             }
 
             // InternalSpringConfigDsl.g:4429:3: (otherlv_8= '/>' | (otherlv_9= '>' otherlv_10= '</aop:before>' ) )
-            int alt57=2;
-            int LA57_0 = input.LA(1);
+            int alt58=2;
+            int LA58_0 = input.LA(1);
 
-            if ( (LA57_0==31) ) {
-                alt57=1;
+            if ( (LA58_0==31) ) {
+                alt58=1;
             }
-            else if ( (LA57_0==26) ) {
-                alt57=2;
+            else if ( (LA58_0==26) ) {
+                alt58=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 57, 0, input);
+                    new NoViableAltException("", 58, 0, input);
 
                 throw nvae;
             }
-            switch (alt57) {
+            switch (alt58) {
                 case 1 :
                     // InternalSpringConfigDsl.g:4430:4: otherlv_8= '/>'
                     {
@@ -12232,21 +12250,21 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:4475:6: ( ({...}? => ( ({...}? => ( (otherlv_2= 'pointcut-ref=' ( ( ruleValidString ) ) ) | (otherlv_4= 'pointcut=' ( (lv_PointcutExpression_5_0= ruleValidString ) ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_6= 'method=' ( (lv_method_7_0= ruleValidString ) ) ) ) ) ) )+ {...}?
             {
             // InternalSpringConfigDsl.g:4475:6: ( ({...}? => ( ({...}? => ( (otherlv_2= 'pointcut-ref=' ( ( ruleValidString ) ) ) | (otherlv_4= 'pointcut=' ( (lv_PointcutExpression_5_0= ruleValidString ) ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_6= 'method=' ( (lv_method_7_0= ruleValidString ) ) ) ) ) ) )+
-            int cnt59=0;
-            loop59:
+            int cnt60=0;
+            loop60:
             do {
-                int alt59=3;
-                int LA59_0 = input.LA(1);
+                int alt60=3;
+                int LA60_0 = input.LA(1);
 
-                if ( ( LA59_0 == 95 || LA59_0 == 97 ) && getUnorderedGroupHelper().canSelect(grammarAccess.getAfterAdviseAccess().getUnorderedGroup_1(), 0) ) {
-                    alt59=1;
+                if ( ( LA60_0 == 95 || LA60_0 == 97 ) && getUnorderedGroupHelper().canSelect(grammarAccess.getAfterAdviseAccess().getUnorderedGroup_1(), 0) ) {
+                    alt60=1;
                 }
-                else if ( LA59_0 == 108 && getUnorderedGroupHelper().canSelect(grammarAccess.getAfterAdviseAccess().getUnorderedGroup_1(), 1) ) {
-                    alt59=2;
+                else if ( LA60_0 == 108 && getUnorderedGroupHelper().canSelect(grammarAccess.getAfterAdviseAccess().getUnorderedGroup_1(), 1) ) {
+                    alt60=2;
                 }
 
 
-                switch (alt59) {
+                switch (alt60) {
             	case 1 :
             	    // InternalSpringConfigDsl.g:4476:4: ({...}? => ( ({...}? => ( (otherlv_2= 'pointcut-ref=' ( ( ruleValidString ) ) ) | (otherlv_4= 'pointcut=' ( (lv_PointcutExpression_5_0= ruleValidString ) ) ) ) ) ) )
             	    {
@@ -12269,22 +12287,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	        throw new FailedPredicateException(input, "ruleAfterAdvise", "true");
             	    }
             	    // InternalSpringConfigDsl.g:4481:19: ( (otherlv_2= 'pointcut-ref=' ( ( ruleValidString ) ) ) | (otherlv_4= 'pointcut=' ( (lv_PointcutExpression_5_0= ruleValidString ) ) ) )
-            	    int alt58=2;
-            	    int LA58_0 = input.LA(1);
+            	    int alt59=2;
+            	    int LA59_0 = input.LA(1);
 
-            	    if ( (LA58_0==95) ) {
-            	        alt58=1;
+            	    if ( (LA59_0==95) ) {
+            	        alt59=1;
             	    }
-            	    else if ( (LA58_0==97) ) {
-            	        alt58=2;
+            	    else if ( (LA59_0==97) ) {
+            	        alt59=2;
             	    }
             	    else {
             	        NoViableAltException nvae =
-            	            new NoViableAltException("", 58, 0, input);
+            	            new NoViableAltException("", 59, 0, input);
 
             	        throw nvae;
             	    }
-            	    switch (alt58) {
+            	    switch (alt59) {
             	        case 1 :
             	            // InternalSpringConfigDsl.g:4481:20: (otherlv_2= 'pointcut-ref=' ( ( ruleValidString ) ) )
             	            {
@@ -12473,12 +12491,12 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    if ( cnt59 >= 1 ) break loop59;
+            	    if ( cnt60 >= 1 ) break loop60;
                         EarlyExitException eee =
-                            new EarlyExitException(59, input);
+                            new EarlyExitException(60, input);
                         throw eee;
                 }
-                cnt59++;
+                cnt60++;
             } while (true);
 
             if ( ! getUnorderedGroupHelper().canLeave(grammarAccess.getAfterAdviseAccess().getUnorderedGroup_1()) ) {
@@ -12497,22 +12515,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             }
 
             // InternalSpringConfigDsl.g:4577:3: (otherlv_8= '/>' | (otherlv_9= '>' otherlv_10= '</aop:after>' ) )
-            int alt60=2;
-            int LA60_0 = input.LA(1);
+            int alt61=2;
+            int LA61_0 = input.LA(1);
 
-            if ( (LA60_0==31) ) {
-                alt60=1;
+            if ( (LA61_0==31) ) {
+                alt61=1;
             }
-            else if ( (LA60_0==26) ) {
-                alt60=2;
+            else if ( (LA61_0==26) ) {
+                alt61=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 60, 0, input);
+                    new NoViableAltException("", 61, 0, input);
 
                 throw nvae;
             }
-            switch (alt60) {
+            switch (alt61) {
                 case 1 :
                     // InternalSpringConfigDsl.g:4578:4: otherlv_8= '/>'
                     {
@@ -12648,21 +12666,21 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:4623:6: ( ({...}? => ( ({...}? => ( (otherlv_2= 'pointcut-ref=' ( ( ruleValidString ) ) ) | (otherlv_4= 'pointcut=' ( (lv_PointcutExpression_5_0= ruleValidString ) ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_6= 'method=' ( (lv_method_7_0= ruleValidString ) ) ) ) ) ) )+ {...}?
             {
             // InternalSpringConfigDsl.g:4623:6: ( ({...}? => ( ({...}? => ( (otherlv_2= 'pointcut-ref=' ( ( ruleValidString ) ) ) | (otherlv_4= 'pointcut=' ( (lv_PointcutExpression_5_0= ruleValidString ) ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_6= 'method=' ( (lv_method_7_0= ruleValidString ) ) ) ) ) ) )+
-            int cnt62=0;
-            loop62:
+            int cnt63=0;
+            loop63:
             do {
-                int alt62=3;
-                int LA62_0 = input.LA(1);
+                int alt63=3;
+                int LA63_0 = input.LA(1);
 
-                if ( ( LA62_0 == 95 || LA62_0 == 97 ) && getUnorderedGroupHelper().canSelect(grammarAccess.getAroundAdviseAccess().getUnorderedGroup_1(), 0) ) {
-                    alt62=1;
+                if ( ( LA63_0 == 95 || LA63_0 == 97 ) && getUnorderedGroupHelper().canSelect(grammarAccess.getAroundAdviseAccess().getUnorderedGroup_1(), 0) ) {
+                    alt63=1;
                 }
-                else if ( LA62_0 == 108 && getUnorderedGroupHelper().canSelect(grammarAccess.getAroundAdviseAccess().getUnorderedGroup_1(), 1) ) {
-                    alt62=2;
+                else if ( LA63_0 == 108 && getUnorderedGroupHelper().canSelect(grammarAccess.getAroundAdviseAccess().getUnorderedGroup_1(), 1) ) {
+                    alt63=2;
                 }
 
 
-                switch (alt62) {
+                switch (alt63) {
             	case 1 :
             	    // InternalSpringConfigDsl.g:4624:4: ({...}? => ( ({...}? => ( (otherlv_2= 'pointcut-ref=' ( ( ruleValidString ) ) ) | (otherlv_4= 'pointcut=' ( (lv_PointcutExpression_5_0= ruleValidString ) ) ) ) ) ) )
             	    {
@@ -12685,22 +12703,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	        throw new FailedPredicateException(input, "ruleAroundAdvise", "true");
             	    }
             	    // InternalSpringConfigDsl.g:4629:19: ( (otherlv_2= 'pointcut-ref=' ( ( ruleValidString ) ) ) | (otherlv_4= 'pointcut=' ( (lv_PointcutExpression_5_0= ruleValidString ) ) ) )
-            	    int alt61=2;
-            	    int LA61_0 = input.LA(1);
+            	    int alt62=2;
+            	    int LA62_0 = input.LA(1);
 
-            	    if ( (LA61_0==95) ) {
-            	        alt61=1;
+            	    if ( (LA62_0==95) ) {
+            	        alt62=1;
             	    }
-            	    else if ( (LA61_0==97) ) {
-            	        alt61=2;
+            	    else if ( (LA62_0==97) ) {
+            	        alt62=2;
             	    }
             	    else {
             	        NoViableAltException nvae =
-            	            new NoViableAltException("", 61, 0, input);
+            	            new NoViableAltException("", 62, 0, input);
 
             	        throw nvae;
             	    }
-            	    switch (alt61) {
+            	    switch (alt62) {
             	        case 1 :
             	            // InternalSpringConfigDsl.g:4629:20: (otherlv_2= 'pointcut-ref=' ( ( ruleValidString ) ) )
             	            {
@@ -12889,12 +12907,12 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    if ( cnt62 >= 1 ) break loop62;
+            	    if ( cnt63 >= 1 ) break loop63;
                         EarlyExitException eee =
-                            new EarlyExitException(62, input);
+                            new EarlyExitException(63, input);
                         throw eee;
                 }
-                cnt62++;
+                cnt63++;
             } while (true);
 
             if ( ! getUnorderedGroupHelper().canLeave(grammarAccess.getAroundAdviseAccess().getUnorderedGroup_1()) ) {
@@ -12913,22 +12931,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             }
 
             // InternalSpringConfigDsl.g:4725:3: (otherlv_8= '/>' | (otherlv_9= '>' otherlv_10= '</aop:around>' ) )
-            int alt63=2;
-            int LA63_0 = input.LA(1);
+            int alt64=2;
+            int LA64_0 = input.LA(1);
 
-            if ( (LA63_0==31) ) {
-                alt63=1;
+            if ( (LA64_0==31) ) {
+                alt64=1;
             }
-            else if ( (LA63_0==26) ) {
-                alt63=2;
+            else if ( (LA64_0==26) ) {
+                alt64=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 63, 0, input);
+                    new NoViableAltException("", 64, 0, input);
 
                 throw nvae;
             }
-            switch (alt63) {
+            switch (alt64) {
                 case 1 :
                     // InternalSpringConfigDsl.g:4726:4: otherlv_8= '/>'
                     {
@@ -13067,24 +13085,24 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:4771:6: ( ({...}? => ( ({...}? => ( (otherlv_2= 'pointcut-ref=' ( ( ruleValidString ) ) ) | (otherlv_4= 'pointcut=' ( (lv_PointcutExpression_5_0= ruleValidString ) ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_6= 'method=' ( (lv_method_7_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_8= 'returning=' ( (lv_returningValue_9_0= ruleValidString ) ) ) ) ) ) )+ {...}?
             {
             // InternalSpringConfigDsl.g:4771:6: ( ({...}? => ( ({...}? => ( (otherlv_2= 'pointcut-ref=' ( ( ruleValidString ) ) ) | (otherlv_4= 'pointcut=' ( (lv_PointcutExpression_5_0= ruleValidString ) ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_6= 'method=' ( (lv_method_7_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_8= 'returning=' ( (lv_returningValue_9_0= ruleValidString ) ) ) ) ) ) )+
-            int cnt65=0;
-            loop65:
+            int cnt66=0;
+            loop66:
             do {
-                int alt65=4;
-                int LA65_0 = input.LA(1);
+                int alt66=4;
+                int LA66_0 = input.LA(1);
 
-                if ( ( LA65_0 == 95 || LA65_0 == 97 ) && getUnorderedGroupHelper().canSelect(grammarAccess.getAfterReturningAccess().getUnorderedGroup_1(), 0) ) {
-                    alt65=1;
+                if ( ( LA66_0 == 95 || LA66_0 == 97 ) && getUnorderedGroupHelper().canSelect(grammarAccess.getAfterReturningAccess().getUnorderedGroup_1(), 0) ) {
+                    alt66=1;
                 }
-                else if ( LA65_0 == 108 && getUnorderedGroupHelper().canSelect(grammarAccess.getAfterReturningAccess().getUnorderedGroup_1(), 1) ) {
-                    alt65=2;
+                else if ( LA66_0 == 108 && getUnorderedGroupHelper().canSelect(grammarAccess.getAfterReturningAccess().getUnorderedGroup_1(), 1) ) {
+                    alt66=2;
                 }
-                else if ( LA65_0 == 115 && getUnorderedGroupHelper().canSelect(grammarAccess.getAfterReturningAccess().getUnorderedGroup_1(), 2) ) {
-                    alt65=3;
+                else if ( LA66_0 == 115 && getUnorderedGroupHelper().canSelect(grammarAccess.getAfterReturningAccess().getUnorderedGroup_1(), 2) ) {
+                    alt66=3;
                 }
 
 
-                switch (alt65) {
+                switch (alt66) {
             	case 1 :
             	    // InternalSpringConfigDsl.g:4772:4: ({...}? => ( ({...}? => ( (otherlv_2= 'pointcut-ref=' ( ( ruleValidString ) ) ) | (otherlv_4= 'pointcut=' ( (lv_PointcutExpression_5_0= ruleValidString ) ) ) ) ) ) )
             	    {
@@ -13107,22 +13125,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	        throw new FailedPredicateException(input, "ruleAfterReturning", "true");
             	    }
             	    // InternalSpringConfigDsl.g:4777:19: ( (otherlv_2= 'pointcut-ref=' ( ( ruleValidString ) ) ) | (otherlv_4= 'pointcut=' ( (lv_PointcutExpression_5_0= ruleValidString ) ) ) )
-            	    int alt64=2;
-            	    int LA64_0 = input.LA(1);
+            	    int alt65=2;
+            	    int LA65_0 = input.LA(1);
 
-            	    if ( (LA64_0==95) ) {
-            	        alt64=1;
+            	    if ( (LA65_0==95) ) {
+            	        alt65=1;
             	    }
-            	    else if ( (LA64_0==97) ) {
-            	        alt64=2;
+            	    else if ( (LA65_0==97) ) {
+            	        alt65=2;
             	    }
             	    else {
             	        NoViableAltException nvae =
-            	            new NoViableAltException("", 64, 0, input);
+            	            new NoViableAltException("", 65, 0, input);
 
             	        throw nvae;
             	    }
-            	    switch (alt64) {
+            	    switch (alt65) {
             	        case 1 :
             	            // InternalSpringConfigDsl.g:4777:20: (otherlv_2= 'pointcut-ref=' ( ( ruleValidString ) ) )
             	            {
@@ -13388,12 +13406,12 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    if ( cnt65 >= 1 ) break loop65;
+            	    if ( cnt66 >= 1 ) break loop66;
                         EarlyExitException eee =
-                            new EarlyExitException(65, input);
+                            new EarlyExitException(66, input);
                         throw eee;
                 }
-                cnt65++;
+                cnt66++;
             } while (true);
 
             if ( ! getUnorderedGroupHelper().canLeave(grammarAccess.getAfterReturningAccess().getUnorderedGroup_1()) ) {
@@ -13412,22 +13430,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             }
 
             // InternalSpringConfigDsl.g:4907:3: (otherlv_10= '/>' | (otherlv_11= '>' otherlv_12= '</aop:after-returning>' ) )
-            int alt66=2;
-            int LA66_0 = input.LA(1);
+            int alt67=2;
+            int LA67_0 = input.LA(1);
 
-            if ( (LA66_0==31) ) {
-                alt66=1;
+            if ( (LA67_0==31) ) {
+                alt67=1;
             }
-            else if ( (LA66_0==26) ) {
-                alt66=2;
+            else if ( (LA67_0==26) ) {
+                alt67=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 66, 0, input);
+                    new NoViableAltException("", 67, 0, input);
 
                 throw nvae;
             }
-            switch (alt66) {
+            switch (alt67) {
                 case 1 :
                     // InternalSpringConfigDsl.g:4908:4: otherlv_10= '/>'
                     {
@@ -13566,24 +13584,24 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:4953:6: ( ({...}? => ( ({...}? => ( (otherlv_2= 'pointcut-ref=' ( ( ruleValidString ) ) ) | (otherlv_4= 'pointcut=' ( (lv_PointcutExpression_5_0= ruleValidString ) ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_6= 'method=' ( (lv_method_7_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_8= 'throwing=' ( (lv_throwingValue_9_0= ruleValidString ) ) ) ) ) ) )+ {...}?
             {
             // InternalSpringConfigDsl.g:4953:6: ( ({...}? => ( ({...}? => ( (otherlv_2= 'pointcut-ref=' ( ( ruleValidString ) ) ) | (otherlv_4= 'pointcut=' ( (lv_PointcutExpression_5_0= ruleValidString ) ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_6= 'method=' ( (lv_method_7_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_8= 'throwing=' ( (lv_throwingValue_9_0= ruleValidString ) ) ) ) ) ) )+
-            int cnt68=0;
-            loop68:
+            int cnt69=0;
+            loop69:
             do {
-                int alt68=4;
-                int LA68_0 = input.LA(1);
+                int alt69=4;
+                int LA69_0 = input.LA(1);
 
-                if ( ( LA68_0 == 95 || LA68_0 == 97 ) && getUnorderedGroupHelper().canSelect(grammarAccess.getAfterThowingAccess().getUnorderedGroup_1(), 0) ) {
-                    alt68=1;
+                if ( ( LA69_0 == 95 || LA69_0 == 97 ) && getUnorderedGroupHelper().canSelect(grammarAccess.getAfterThowingAccess().getUnorderedGroup_1(), 0) ) {
+                    alt69=1;
                 }
-                else if ( LA68_0 == 108 && getUnorderedGroupHelper().canSelect(grammarAccess.getAfterThowingAccess().getUnorderedGroup_1(), 1) ) {
-                    alt68=2;
+                else if ( LA69_0 == 108 && getUnorderedGroupHelper().canSelect(grammarAccess.getAfterThowingAccess().getUnorderedGroup_1(), 1) ) {
+                    alt69=2;
                 }
-                else if ( LA68_0 == 118 && getUnorderedGroupHelper().canSelect(grammarAccess.getAfterThowingAccess().getUnorderedGroup_1(), 2) ) {
-                    alt68=3;
+                else if ( LA69_0 == 118 && getUnorderedGroupHelper().canSelect(grammarAccess.getAfterThowingAccess().getUnorderedGroup_1(), 2) ) {
+                    alt69=3;
                 }
 
 
-                switch (alt68) {
+                switch (alt69) {
             	case 1 :
             	    // InternalSpringConfigDsl.g:4954:4: ({...}? => ( ({...}? => ( (otherlv_2= 'pointcut-ref=' ( ( ruleValidString ) ) ) | (otherlv_4= 'pointcut=' ( (lv_PointcutExpression_5_0= ruleValidString ) ) ) ) ) ) )
             	    {
@@ -13606,22 +13624,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	        throw new FailedPredicateException(input, "ruleAfterThowing", "true");
             	    }
             	    // InternalSpringConfigDsl.g:4959:19: ( (otherlv_2= 'pointcut-ref=' ( ( ruleValidString ) ) ) | (otherlv_4= 'pointcut=' ( (lv_PointcutExpression_5_0= ruleValidString ) ) ) )
-            	    int alt67=2;
-            	    int LA67_0 = input.LA(1);
+            	    int alt68=2;
+            	    int LA68_0 = input.LA(1);
 
-            	    if ( (LA67_0==95) ) {
-            	        alt67=1;
+            	    if ( (LA68_0==95) ) {
+            	        alt68=1;
             	    }
-            	    else if ( (LA67_0==97) ) {
-            	        alt67=2;
+            	    else if ( (LA68_0==97) ) {
+            	        alt68=2;
             	    }
             	    else {
             	        NoViableAltException nvae =
-            	            new NoViableAltException("", 67, 0, input);
+            	            new NoViableAltException("", 68, 0, input);
 
             	        throw nvae;
             	    }
-            	    switch (alt67) {
+            	    switch (alt68) {
             	        case 1 :
             	            // InternalSpringConfigDsl.g:4959:20: (otherlv_2= 'pointcut-ref=' ( ( ruleValidString ) ) )
             	            {
@@ -13887,12 +13905,12 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    if ( cnt68 >= 1 ) break loop68;
+            	    if ( cnt69 >= 1 ) break loop69;
                         EarlyExitException eee =
-                            new EarlyExitException(68, input);
+                            new EarlyExitException(69, input);
                         throw eee;
                 }
-                cnt68++;
+                cnt69++;
             } while (true);
 
             if ( ! getUnorderedGroupHelper().canLeave(grammarAccess.getAfterThowingAccess().getUnorderedGroup_1()) ) {
@@ -13911,22 +13929,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             }
 
             // InternalSpringConfigDsl.g:5089:3: (otherlv_10= '/>' | (otherlv_11= '>' otherlv_12= '</aop:after-throwing>' ) )
-            int alt69=2;
-            int LA69_0 = input.LA(1);
+            int alt70=2;
+            int LA70_0 = input.LA(1);
 
-            if ( (LA69_0==31) ) {
-                alt69=1;
+            if ( (LA70_0==31) ) {
+                alt70=1;
             }
-            else if ( (LA69_0==26) ) {
-                alt69=2;
+            else if ( (LA70_0==26) ) {
+                alt70=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 69, 0, input);
+                    new NoViableAltException("", 70, 0, input);
 
                 throw nvae;
             }
-            switch (alt69) {
+            switch (alt70) {
                 case 1 :
                     // InternalSpringConfigDsl.g:5090:4: otherlv_10= '/>'
                     {
@@ -14062,21 +14080,21 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:5135:6: ( ({...}? => ( ({...}? => (otherlv_2= 'id=' ( (lv_name_3_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_4= 'transaction-manager=' ( (lv_transactionManager_5_0= ruleValidString ) ) ) ) ) ) )+ {...}?
             {
             // InternalSpringConfigDsl.g:5135:6: ( ({...}? => ( ({...}? => (otherlv_2= 'id=' ( (lv_name_3_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_4= 'transaction-manager=' ( (lv_transactionManager_5_0= ruleValidString ) ) ) ) ) ) )+
-            int cnt70=0;
-            loop70:
+            int cnt71=0;
+            loop71:
             do {
-                int alt70=3;
-                int LA70_0 = input.LA(1);
+                int alt71=3;
+                int LA71_0 = input.LA(1);
 
-                if ( LA70_0 == 68 && getUnorderedGroupHelper().canSelect(grammarAccess.getTxAdviseAccess().getUnorderedGroup_1(), 0) ) {
-                    alt70=1;
+                if ( LA71_0 == 68 && getUnorderedGroupHelper().canSelect(grammarAccess.getTxAdviseAccess().getUnorderedGroup_1(), 0) ) {
+                    alt71=1;
                 }
-                else if ( LA70_0 == 121 && getUnorderedGroupHelper().canSelect(grammarAccess.getTxAdviseAccess().getUnorderedGroup_1(), 1) ) {
-                    alt70=2;
+                else if ( LA71_0 == 121 && getUnorderedGroupHelper().canSelect(grammarAccess.getTxAdviseAccess().getUnorderedGroup_1(), 1) ) {
+                    alt71=2;
                 }
 
 
-                switch (alt70) {
+                switch (alt71) {
             	case 1 :
             	    // InternalSpringConfigDsl.g:5136:4: ({...}? => ( ({...}? => (otherlv_2= 'id=' ( (lv_name_3_0= ruleValidString ) ) ) ) ) )
             	    {
@@ -14233,12 +14251,12 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    if ( cnt70 >= 1 ) break loop70;
+            	    if ( cnt71 >= 1 ) break loop71;
                         EarlyExitException eee =
-                            new EarlyExitException(70, input);
+                            new EarlyExitException(71, input);
                         throw eee;
                 }
-                cnt70++;
+                cnt71++;
             } while (true);
 
             if ( ! getUnorderedGroupHelper().canLeave(grammarAccess.getTxAdviseAccess().getUnorderedGroup_1()) ) {
@@ -14261,13 +14279,13 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             			newLeafNode(otherlv_6, grammarAccess.getTxAdviseAccess().getGreaterThanSignKeyword_2());
             		
             // InternalSpringConfigDsl.g:5216:3: ( (lv_txAttribute_7_0= ruleTxAttribute ) )?
-            int alt71=2;
-            int LA71_0 = input.LA(1);
+            int alt72=2;
+            int LA72_0 = input.LA(1);
 
-            if ( (LA71_0==123) ) {
-                alt71=1;
+            if ( (LA72_0==123) ) {
+                alt72=1;
             }
-            switch (alt71) {
+            switch (alt72) {
                 case 1 :
                     // InternalSpringConfigDsl.g:5217:4: (lv_txAttribute_7_0= ruleTxAttribute )
                     {
@@ -14405,18 +14423,18 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             			newLeafNode(otherlv_2, grammarAccess.getTxAttributeAccess().getGreaterThanSignKeyword_2());
             		
             // InternalSpringConfigDsl.g:5273:3: ( (lv_txMethods_3_0= ruleTxMethod ) )+
-            int cnt72=0;
-            loop72:
+            int cnt73=0;
+            loop73:
             do {
-                int alt72=2;
-                int LA72_0 = input.LA(1);
+                int alt73=2;
+                int LA73_0 = input.LA(1);
 
-                if ( (LA72_0==125) ) {
-                    alt72=1;
+                if ( (LA73_0==125) ) {
+                    alt73=1;
                 }
 
 
-                switch (alt72) {
+                switch (alt73) {
             	case 1 :
             	    // InternalSpringConfigDsl.g:5274:4: (lv_txMethods_3_0= ruleTxMethod )
             	    {
@@ -14450,12 +14468,12 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    if ( cnt72 >= 1 ) break loop72;
+            	    if ( cnt73 >= 1 ) break loop73;
                         EarlyExitException eee =
-                            new EarlyExitException(72, input);
+                            new EarlyExitException(73, input);
                         throw eee;
                 }
-                cnt72++;
+                cnt73++;
             } while (true);
 
             otherlv_4=(Token)match(input,124,FOLLOW_2); 
@@ -14575,36 +14593,36 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:5325:6: ( ({...}? => ( ({...}? => (otherlv_2= 'name=' ( (lv_name_3_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_4= 'isolation=' ( (lv_isolation_5_0= ruleEnumIsolation ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_6= 'no-rollback-for=' ( (lv_noRollBackFor_7_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_8= 'propagation=' ( (lv_propagation_9_0= ruleEnumIsolation ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_10= 'read-only=' ( (lv_readOnly_11_0= rulesBoolean ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_12= 'rollback-for=' ( (lv_rollbackFor_13_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_14= 'timeout=' ( (lv_timeOut_15_0= ruleValidString ) ) ) ) ) ) )+ {...}?
             {
             // InternalSpringConfigDsl.g:5325:6: ( ({...}? => ( ({...}? => (otherlv_2= 'name=' ( (lv_name_3_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_4= 'isolation=' ( (lv_isolation_5_0= ruleEnumIsolation ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_6= 'no-rollback-for=' ( (lv_noRollBackFor_7_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_8= 'propagation=' ( (lv_propagation_9_0= ruleEnumIsolation ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_10= 'read-only=' ( (lv_readOnly_11_0= rulesBoolean ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_12= 'rollback-for=' ( (lv_rollbackFor_13_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_14= 'timeout=' ( (lv_timeOut_15_0= ruleValidString ) ) ) ) ) ) )+
-            int cnt73=0;
-            loop73:
+            int cnt74=0;
+            loop74:
             do {
-                int alt73=8;
-                int LA73_0 = input.LA(1);
+                int alt74=8;
+                int LA74_0 = input.LA(1);
 
-                if ( LA73_0 == 33 && getUnorderedGroupHelper().canSelect(grammarAccess.getTxMethodAccess().getUnorderedGroup_1(), 0) ) {
-                    alt73=1;
+                if ( LA74_0 == 33 && getUnorderedGroupHelper().canSelect(grammarAccess.getTxMethodAccess().getUnorderedGroup_1(), 0) ) {
+                    alt74=1;
                 }
-                else if ( LA73_0 == 126 && getUnorderedGroupHelper().canSelect(grammarAccess.getTxMethodAccess().getUnorderedGroup_1(), 1) ) {
-                    alt73=2;
+                else if ( LA74_0 == 126 && getUnorderedGroupHelper().canSelect(grammarAccess.getTxMethodAccess().getUnorderedGroup_1(), 1) ) {
+                    alt74=2;
                 }
-                else if ( LA73_0 == 127 && getUnorderedGroupHelper().canSelect(grammarAccess.getTxMethodAccess().getUnorderedGroup_1(), 2) ) {
-                    alt73=3;
+                else if ( LA74_0 == 127 && getUnorderedGroupHelper().canSelect(grammarAccess.getTxMethodAccess().getUnorderedGroup_1(), 2) ) {
+                    alt74=3;
                 }
-                else if ( LA73_0 == 128 && getUnorderedGroupHelper().canSelect(grammarAccess.getTxMethodAccess().getUnorderedGroup_1(), 3) ) {
-                    alt73=4;
+                else if ( LA74_0 == 128 && getUnorderedGroupHelper().canSelect(grammarAccess.getTxMethodAccess().getUnorderedGroup_1(), 3) ) {
+                    alt74=4;
                 }
-                else if ( LA73_0 == 129 && getUnorderedGroupHelper().canSelect(grammarAccess.getTxMethodAccess().getUnorderedGroup_1(), 4) ) {
-                    alt73=5;
+                else if ( LA74_0 == 129 && getUnorderedGroupHelper().canSelect(grammarAccess.getTxMethodAccess().getUnorderedGroup_1(), 4) ) {
+                    alt74=5;
                 }
-                else if ( LA73_0 == 130 && getUnorderedGroupHelper().canSelect(grammarAccess.getTxMethodAccess().getUnorderedGroup_1(), 5) ) {
-                    alt73=6;
+                else if ( LA74_0 == 130 && getUnorderedGroupHelper().canSelect(grammarAccess.getTxMethodAccess().getUnorderedGroup_1(), 5) ) {
+                    alt74=6;
                 }
-                else if ( LA73_0 == 131 && getUnorderedGroupHelper().canSelect(grammarAccess.getTxMethodAccess().getUnorderedGroup_1(), 6) ) {
-                    alt73=7;
+                else if ( LA74_0 == 131 && getUnorderedGroupHelper().canSelect(grammarAccess.getTxMethodAccess().getUnorderedGroup_1(), 6) ) {
+                    alt74=7;
                 }
 
 
-                switch (alt73) {
+                switch (alt74) {
             	case 1 :
             	    // InternalSpringConfigDsl.g:5326:4: ({...}? => ( ({...}? => (otherlv_2= 'name=' ( (lv_name_3_0= ruleValidString ) ) ) ) ) )
             	    {
@@ -15146,12 +15164,12 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    if ( cnt73 >= 1 ) break loop73;
+            	    if ( cnt74 >= 1 ) break loop74;
                         EarlyExitException eee =
-                            new EarlyExitException(73, input);
+                            new EarlyExitException(74, input);
                         throw eee;
                 }
-                cnt73++;
+                cnt74++;
             } while (true);
 
             if ( ! getUnorderedGroupHelper().canLeave(grammarAccess.getTxMethodAccess().getUnorderedGroup_1()) ) {
@@ -15263,22 +15281,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             			newLeafNode(otherlv_1, grammarAccess.getTxJtaTransactionManagerAccess().getTxJtaTransactionManagerKeyword_1());
             		
             // InternalSpringConfigDsl.g:5602:3: (otherlv_2= '/>' | (otherlv_3= '>' otherlv_4= '</tx:jta-transaction-manager>' ) )
-            int alt74=2;
-            int LA74_0 = input.LA(1);
+            int alt75=2;
+            int LA75_0 = input.LA(1);
 
-            if ( (LA74_0==31) ) {
-                alt74=1;
+            if ( (LA75_0==31) ) {
+                alt75=1;
             }
-            else if ( (LA74_0==26) ) {
-                alt74=2;
+            else if ( (LA75_0==26) ) {
+                alt75=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 74, 0, input);
+                    new NoViableAltException("", 75, 0, input);
 
                 throw nvae;
             }
-            switch (alt74) {
+            switch (alt75) {
                 case 1 :
                     // InternalSpringConfigDsl.g:5603:4: otherlv_2= '/>'
                     {
@@ -15470,12 +15488,12 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:5655:6: ( ({...}? => ( ({...}? => (otherlv_3= 'id=' ( (lv_name_4_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_5= 'name=' ( (lv_names_6_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_class_7_0= ruleCreationMethod ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_features_8_0= rulePNamespace ) ) )+ ) ) | ({...}? => ( ({...}? => ( (lv_features_9_0= ruleCNamespace ) ) )+ ) ) | ({...}? => ( ({...}? => (otherlv_10= 'abstract=' ( (lv_abstract_11_0= rulesBoolean ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_12= 'autowire-candidate=' ( (lv_autowireCandidate_13_0= ruleDefaultableBoolean ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_14= 'autowire=' ( (lv_autowire_15_0= ruleDefaultableBoolean ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_16= 'depends-on=' ( ( ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_18= 'destroy-method=' ( (lv_detroyMethod_19_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_20= 'init-method=' ( (lv_initMethod_21_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_22= 'lazy-init=' ( (lv_lazyInit_23_0= ruleDefaultableBoolean ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_24= 'parent=' ( ( ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_26= 'primary=' ( (lv_primary_27_0= rulesBoolean ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_28= 'scope=' ( (lv_scope_29_0= ruleValidString ) ) ) ) ) ) )+ {...}?
             {
             // InternalSpringConfigDsl.g:5655:6: ( ({...}? => ( ({...}? => (otherlv_3= 'id=' ( (lv_name_4_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_5= 'name=' ( (lv_names_6_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_class_7_0= ruleCreationMethod ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_features_8_0= rulePNamespace ) ) )+ ) ) | ({...}? => ( ({...}? => ( (lv_features_9_0= ruleCNamespace ) ) )+ ) ) | ({...}? => ( ({...}? => (otherlv_10= 'abstract=' ( (lv_abstract_11_0= rulesBoolean ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_12= 'autowire-candidate=' ( (lv_autowireCandidate_13_0= ruleDefaultableBoolean ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_14= 'autowire=' ( (lv_autowire_15_0= ruleDefaultableBoolean ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_16= 'depends-on=' ( ( ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_18= 'destroy-method=' ( (lv_detroyMethod_19_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_20= 'init-method=' ( (lv_initMethod_21_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_22= 'lazy-init=' ( (lv_lazyInit_23_0= ruleDefaultableBoolean ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_24= 'parent=' ( ( ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_26= 'primary=' ( (lv_primary_27_0= rulesBoolean ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_28= 'scope=' ( (lv_scope_29_0= ruleValidString ) ) ) ) ) ) )+
-            int cnt77=0;
-            loop77:
+            int cnt78=0;
+            loop78:
             do {
-                int alt77=16;
-                alt77 = dfa77.predict(input);
-                switch (alt77) {
+                int alt78=16;
+                alt78 = dfa78.predict(input);
+                switch (alt78) {
             	case 1 :
             	    // InternalSpringConfigDsl.g:5656:4: ({...}? => ( ({...}? => (otherlv_3= 'id=' ( (lv_name_4_0= ruleValidString ) ) ) ) ) )
             	    {
@@ -15713,24 +15731,24 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	    						getUnorderedGroupHelper().select(grammarAccess.getComponentAccess().getUnorderedGroup_2(), 3);
             	    					
             	    // InternalSpringConfigDsl.g:5757:9: ({...}? => ( (lv_features_8_0= rulePNamespace ) ) )+
-            	    int cnt75=0;
-            	    loop75:
+            	    int cnt76=0;
+            	    loop76:
             	    do {
-            	        int alt75=2;
-            	        int LA75_0 = input.LA(1);
+            	        int alt76=2;
+            	        int LA76_0 = input.LA(1);
 
-            	        if ( (LA75_0==164) ) {
-            	            int LA75_2 = input.LA(2);
+            	        if ( (LA76_0==164) ) {
+            	            int LA76_2 = input.LA(2);
 
             	            if ( ((true)) ) {
-            	                alt75=1;
+            	                alt76=1;
             	            }
 
 
             	        }
 
 
-            	        switch (alt75) {
+            	        switch (alt76) {
             	    	case 1 :
             	    	    // InternalSpringConfigDsl.g:5757:10: {...}? => ( (lv_features_8_0= rulePNamespace ) )
             	    	    {
@@ -15773,12 +15791,12 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	    	    break;
 
             	    	default :
-            	    	    if ( cnt75 >= 1 ) break loop75;
+            	    	    if ( cnt76 >= 1 ) break loop76;
             	                EarlyExitException eee =
-            	                    new EarlyExitException(75, input);
+            	                    new EarlyExitException(76, input);
             	                throw eee;
             	        }
-            	        cnt75++;
+            	        cnt76++;
             	    } while (true);
 
             	     
@@ -15809,24 +15827,24 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	    						getUnorderedGroupHelper().select(grammarAccess.getComponentAccess().getUnorderedGroup_2(), 4);
             	    					
             	    // InternalSpringConfigDsl.g:5785:9: ({...}? => ( (lv_features_9_0= ruleCNamespace ) ) )+
-            	    int cnt76=0;
-            	    loop76:
+            	    int cnt77=0;
+            	    loop77:
             	    do {
-            	        int alt76=2;
-            	        int LA76_0 = input.LA(1);
+            	        int alt77=2;
+            	        int LA77_0 = input.LA(1);
 
-            	        if ( (LA76_0==166) ) {
-            	            int LA76_2 = input.LA(2);
+            	        if ( (LA77_0==166) ) {
+            	            int LA77_2 = input.LA(2);
 
             	            if ( ((true)) ) {
-            	                alt76=1;
+            	                alt77=1;
             	            }
 
 
             	        }
 
 
-            	        switch (alt76) {
+            	        switch (alt77) {
             	    	case 1 :
             	    	    // InternalSpringConfigDsl.g:5785:10: {...}? => ( (lv_features_9_0= ruleCNamespace ) )
             	    	    {
@@ -15869,12 +15887,12 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	    	    break;
 
             	    	default :
-            	    	    if ( cnt76 >= 1 ) break loop76;
+            	    	    if ( cnt77 >= 1 ) break loop77;
             	                EarlyExitException eee =
-            	                    new EarlyExitException(76, input);
+            	                    new EarlyExitException(77, input);
             	                throw eee;
             	        }
-            	        cnt76++;
+            	        cnt77++;
             	    } while (true);
 
             	     
@@ -16655,12 +16673,12 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    if ( cnt77 >= 1 ) break loop77;
+            	    if ( cnt78 >= 1 ) break loop78;
                         EarlyExitException eee =
-                            new EarlyExitException(77, input);
+                            new EarlyExitException(78, input);
                         throw eee;
                 }
-                cnt77++;
+                cnt78++;
             } while (true);
 
             if ( ! getUnorderedGroupHelper().canLeave(grammarAccess.getComponentAccess().getUnorderedGroup_2()) ) {
@@ -16679,22 +16697,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             }
 
             // InternalSpringConfigDsl.g:6150:3: (otherlv_30= '/>' | (otherlv_31= '>' ( (lv_description_32_0= ruleDescription ) )? ( ( (lv_features_33_0= ruleFeature ) ) | ( (lv_lookupMethods_34_0= ruleLookupMethod ) ) | ( (lv_qualifiers_35_0= ruleQualifier ) ) | ( (lv_meta_36_0= ruleMetaTag ) ) | ( (lv_aopScopedProxy_37_0= ruleAopScopedProxy ) ) | ( (lv_utilPropertiesPath_38_0= ruleUtilPropertyPath ) ) )* otherlv_39= '</bean>' ) )
-            int alt80=2;
-            int LA80_0 = input.LA(1);
+            int alt81=2;
+            int LA81_0 = input.LA(1);
 
-            if ( (LA80_0==31) ) {
-                alt80=1;
+            if ( (LA81_0==31) ) {
+                alt81=1;
             }
-            else if ( (LA80_0==26) ) {
-                alt80=2;
+            else if ( (LA81_0==26) ) {
+                alt81=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 80, 0, input);
+                    new NoViableAltException("", 81, 0, input);
 
                 throw nvae;
             }
-            switch (alt80) {
+            switch (alt81) {
                 case 1 :
                     // InternalSpringConfigDsl.g:6151:4: otherlv_30= '/>'
                     {
@@ -16716,13 +16734,13 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     					newLeafNode(otherlv_31, grammarAccess.getComponentAccess().getGreaterThanSignKeyword_3_1_0());
                     				
                     // InternalSpringConfigDsl.g:6161:5: ( (lv_description_32_0= ruleDescription ) )?
-                    int alt78=2;
-                    int LA78_0 = input.LA(1);
+                    int alt79=2;
+                    int LA79_0 = input.LA(1);
 
-                    if ( (LA78_0==214) ) {
-                        alt78=1;
+                    if ( (LA79_0==214) ) {
+                        alt79=1;
                     }
-                    switch (alt78) {
+                    switch (alt79) {
                         case 1 :
                             // InternalSpringConfigDsl.g:6162:6: (lv_description_32_0= ruleDescription )
                             {
@@ -16758,45 +16776,45 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     }
 
                     // InternalSpringConfigDsl.g:6180:5: ( ( (lv_features_33_0= ruleFeature ) ) | ( (lv_lookupMethods_34_0= ruleLookupMethod ) ) | ( (lv_qualifiers_35_0= ruleQualifier ) ) | ( (lv_meta_36_0= ruleMetaTag ) ) | ( (lv_aopScopedProxy_37_0= ruleAopScopedProxy ) ) | ( (lv_utilPropertiesPath_38_0= ruleUtilPropertyPath ) ) )*
-                    loop79:
+                    loop80:
                     do {
-                        int alt79=7;
+                        int alt80=7;
                         switch ( input.LA(1) ) {
                         case 151:
                         case 161:
                             {
-                            alt79=1;
+                            alt80=1;
                             }
                             break;
                         case 167:
                             {
-                            alt79=2;
+                            alt80=2;
                             }
                             break;
                         case 169:
                             {
-                            alt79=3;
+                            alt80=3;
                             }
                             break;
                         case 171:
                             {
-                            alt79=4;
+                            alt80=4;
                             }
                             break;
                         case 149:
                             {
-                            alt79=5;
+                            alt80=5;
                             }
                             break;
                         case 200:
                             {
-                            alt79=6;
+                            alt80=6;
                             }
                             break;
 
                         }
 
-                        switch (alt79) {
+                        switch (alt80) {
                     	case 1 :
                     	    // InternalSpringConfigDsl.g:6181:6: ( (lv_features_33_0= ruleFeature ) )
                     	    {
@@ -17021,7 +17039,7 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop79;
+                    	    break loop80;
                         }
                     } while (true);
 
@@ -17129,17 +17147,17 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:6331:5: ( ({...}? => ( ({...}? => (otherlv_1= 'factory-method=' ( (lv_factoryMethod_2_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => ( ( (lv_class_3_1= ruleClass | lv_class_3_2= ruleFactory ) ) ) ) ) ) )+ {...}?
             {
             // InternalSpringConfigDsl.g:6331:5: ( ({...}? => ( ({...}? => (otherlv_1= 'factory-method=' ( (lv_factoryMethod_2_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => ( ( (lv_class_3_1= ruleClass | lv_class_3_2= ruleFactory ) ) ) ) ) ) )+
-            int cnt82=0;
-            loop82:
+            int cnt83=0;
+            loop83:
             do {
-                int alt82=3;
+                int alt83=3;
                 switch ( input.LA(1) ) {
                 case 146:
                     {
-                    int LA82_2 = input.LA(2);
+                    int LA83_2 = input.LA(2);
 
                     if ( getUnorderedGroupHelper().canSelect(grammarAccess.getCreationMethodAccess().getUnorderedGroup(), 0) ) {
-                        alt82=1;
+                        alt83=1;
                     }
 
 
@@ -17147,10 +17165,10 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     break;
                 case 148:
                     {
-                    int LA82_3 = input.LA(2);
+                    int LA83_3 = input.LA(2);
 
                     if ( getUnorderedGroupHelper().canSelect(grammarAccess.getCreationMethodAccess().getUnorderedGroup(), 1) ) {
-                        alt82=2;
+                        alt83=2;
                     }
 
 
@@ -17158,10 +17176,10 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     break;
                 case 147:
                     {
-                    int LA82_4 = input.LA(2);
+                    int LA83_4 = input.LA(2);
 
                     if ( getUnorderedGroupHelper().canSelect(grammarAccess.getCreationMethodAccess().getUnorderedGroup(), 1) ) {
-                        alt82=2;
+                        alt83=2;
                     }
 
 
@@ -17170,7 +17188,7 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
 
                 }
 
-                switch (alt82) {
+                switch (alt83) {
             	case 1 :
             	    // InternalSpringConfigDsl.g:6332:3: ({...}? => ( ({...}? => (otherlv_1= 'factory-method=' ( (lv_factoryMethod_2_0= ruleValidString ) ) ) ) ) )
             	    {
@@ -17276,22 +17294,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	    // InternalSpringConfigDsl.g:6372:9: (lv_class_3_1= ruleClass | lv_class_3_2= ruleFactory )
             	    {
             	    // InternalSpringConfigDsl.g:6372:9: (lv_class_3_1= ruleClass | lv_class_3_2= ruleFactory )
-            	    int alt81=2;
-            	    int LA81_0 = input.LA(1);
+            	    int alt82=2;
+            	    int LA82_0 = input.LA(1);
 
-            	    if ( (LA81_0==148) ) {
-            	        alt81=1;
+            	    if ( (LA82_0==148) ) {
+            	        alt82=1;
             	    }
-            	    else if ( (LA81_0==147) ) {
-            	        alt81=2;
+            	    else if ( (LA82_0==147) ) {
+            	        alt82=2;
             	    }
             	    else {
             	        NoViableAltException nvae =
-            	            new NoViableAltException("", 81, 0, input);
+            	            new NoViableAltException("", 82, 0, input);
 
             	        throw nvae;
             	    }
-            	    switch (alt81) {
+            	    switch (alt82) {
             	        case 1 :
             	            // InternalSpringConfigDsl.g:6373:10: lv_class_3_1= ruleClass
             	            {
@@ -17368,12 +17386,12 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    if ( cnt82 >= 1 ) break loop82;
+            	    if ( cnt83 >= 1 ) break loop83;
                         EarlyExitException eee =
-                            new EarlyExitException(82, input);
+                            new EarlyExitException(83, input);
                         throw eee;
                 }
-                cnt82++;
+                cnt83++;
             } while (true);
 
             if ( ! getUnorderedGroupHelper().canLeave(grammarAccess.getCreationMethodAccess().getUnorderedGroup()) ) {
@@ -17704,13 +17722,13 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             			newLeafNode(otherlv_1, grammarAccess.getAopScopedProxyAccess().getAopScopedProxyKeyword_1());
             		
             // InternalSpringConfigDsl.g:6530:3: (otherlv_2= 'proxy-target-class=' ( (lv_proxyTargetClass_3_0= ruleValidString ) ) )?
-            int alt83=2;
-            int LA83_0 = input.LA(1);
+            int alt84=2;
+            int LA84_0 = input.LA(1);
 
-            if ( (LA83_0==85) ) {
-                alt83=1;
+            if ( (LA84_0==85) ) {
+                alt84=1;
             }
-            switch (alt83) {
+            switch (alt84) {
                 case 1 :
                     // InternalSpringConfigDsl.g:6531:4: otherlv_2= 'proxy-target-class=' ( (lv_proxyTargetClass_3_0= ruleValidString ) )
                     {
@@ -17756,22 +17774,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             }
 
             // InternalSpringConfigDsl.g:6555:3: (otherlv_4= '/>' | (otherlv_5= '>' otherlv_6= '</aop:scoped-proxy>' ) )
-            int alt84=2;
-            int LA84_0 = input.LA(1);
+            int alt85=2;
+            int LA85_0 = input.LA(1);
 
-            if ( (LA84_0==31) ) {
-                alt84=1;
+            if ( (LA85_0==31) ) {
+                alt85=1;
             }
-            else if ( (LA84_0==26) ) {
-                alt84=2;
+            else if ( (LA85_0==26) ) {
+                alt85=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 84, 0, input);
+                    new NoViableAltException("", 85, 0, input);
 
                 throw nvae;
             }
-            switch (alt84) {
+            switch (alt85) {
                 case 1 :
                     // InternalSpringConfigDsl.g:6556:4: otherlv_4= '/>'
                     {
@@ -17881,22 +17899,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:6590:2: (this_Property_0= ruleProperty | this_ConstructorArg_1= ruleConstructorArg )
             {
             // InternalSpringConfigDsl.g:6590:2: (this_Property_0= ruleProperty | this_ConstructorArg_1= ruleConstructorArg )
-            int alt85=2;
-            int LA85_0 = input.LA(1);
+            int alt86=2;
+            int LA86_0 = input.LA(1);
 
-            if ( (LA85_0==151) ) {
-                alt85=1;
+            if ( (LA86_0==151) ) {
+                alt86=1;
             }
-            else if ( (LA85_0==161) ) {
-                alt85=2;
+            else if ( (LA86_0==161) ) {
+                alt86=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 85, 0, input);
+                    new NoViableAltException("", 86, 0, input);
 
                 throw nvae;
             }
-            switch (alt85) {
+            switch (alt86) {
                 case 1 :
                     // InternalSpringConfigDsl.g:6591:3: this_Property_0= ruleProperty
                     {
@@ -18034,9 +18052,9 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             			newLeafNode(otherlv_0, grammarAccess.getPropertyAccess().getPropertyKeyword_0());
             		
             // InternalSpringConfigDsl.g:6631:3: ( ( ( ( ( ( ({...}? => ( ({...}? => (otherlv_2= 'name=' ( (lv_name_3_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => ( ( (lv_artefact_4_1= ruleReferenceAtt | lv_artefact_4_2= ruleAttributeAtt ) ) ) ) ) ) )+ {...}?) ) ) (otherlv_5= '/>' | (otherlv_6= '>' ( (lv_description_7_0= ruleDescription ) )? otherlv_8= '</property>' ) ) ) | ( (otherlv_9= 'name=' ( (lv_name_10_0= ruleValidString ) ) ) otherlv_11= '>' ( (lv_description_12_0= ruleDescription ) )? ( ( (lv_artefact_13_0= ruleAbstractArtefact ) ) | ruleNullTag ) otherlv_15= '</property>' ) )
-            int alt92=2;
-            alt92 = dfa92.predict(input);
-            switch (alt92) {
+            int alt93=2;
+            alt93 = dfa93.predict(input);
+            switch (alt93) {
                 case 1 :
                     // InternalSpringConfigDsl.g:6632:4: ( ( ( ( ( ({...}? => ( ({...}? => (otherlv_2= 'name=' ( (lv_name_3_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => ( ( (lv_artefact_4_1= ruleReferenceAtt | lv_artefact_4_2= ruleAttributeAtt ) ) ) ) ) ) )+ {...}?) ) ) (otherlv_5= '/>' | (otherlv_6= '>' ( (lv_description_7_0= ruleDescription ) )? otherlv_8= '</property>' ) ) )
                     {
@@ -18056,21 +18074,21 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     // InternalSpringConfigDsl.g:6639:8: ( ({...}? => ( ({...}? => (otherlv_2= 'name=' ( (lv_name_3_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => ( ( (lv_artefact_4_1= ruleReferenceAtt | lv_artefact_4_2= ruleAttributeAtt ) ) ) ) ) ) )+ {...}?
                     {
                     // InternalSpringConfigDsl.g:6639:8: ( ({...}? => ( ({...}? => (otherlv_2= 'name=' ( (lv_name_3_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => ( ( (lv_artefact_4_1= ruleReferenceAtt | lv_artefact_4_2= ruleAttributeAtt ) ) ) ) ) ) )+
-                    int cnt87=0;
-                    loop87:
+                    int cnt88=0;
+                    loop88:
                     do {
-                        int alt87=3;
-                        int LA87_0 = input.LA(1);
+                        int alt88=3;
+                        int LA88_0 = input.LA(1);
 
-                        if ( LA87_0 == 33 && getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyAccess().getUnorderedGroup_1_0_0(), 0) ) {
-                            alt87=1;
+                        if ( LA88_0 == 33 && getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyAccess().getUnorderedGroup_1_0_0(), 0) ) {
+                            alt88=1;
                         }
-                        else if ( ( LA87_0 == 99 || LA87_0 == 153 ) && getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyAccess().getUnorderedGroup_1_0_0(), 1) ) {
-                            alt87=2;
+                        else if ( ( LA88_0 == 99 || LA88_0 == 153 ) && getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyAccess().getUnorderedGroup_1_0_0(), 1) ) {
+                            alt88=2;
                         }
 
 
-                        switch (alt87) {
+                        switch (alt88) {
                     	case 1 :
                     	    // InternalSpringConfigDsl.g:6640:6: ({...}? => ( ({...}? => (otherlv_2= 'name=' ( (lv_name_3_0= ruleValidString ) ) ) ) ) )
                     	    {
@@ -18176,22 +18194,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     	    // InternalSpringConfigDsl.g:6680:12: (lv_artefact_4_1= ruleReferenceAtt | lv_artefact_4_2= ruleAttributeAtt )
                     	    {
                     	    // InternalSpringConfigDsl.g:6680:12: (lv_artefact_4_1= ruleReferenceAtt | lv_artefact_4_2= ruleAttributeAtt )
-                    	    int alt86=2;
-                    	    int LA86_0 = input.LA(1);
+                    	    int alt87=2;
+                    	    int LA87_0 = input.LA(1);
 
-                    	    if ( (LA86_0==99) ) {
-                    	        alt86=1;
+                    	    if ( (LA87_0==99) ) {
+                    	        alt87=1;
                     	    }
-                    	    else if ( (LA86_0==153) ) {
-                    	        alt86=2;
+                    	    else if ( (LA87_0==153) ) {
+                    	        alt87=2;
                     	    }
                     	    else {
                     	        NoViableAltException nvae =
-                    	            new NoViableAltException("", 86, 0, input);
+                    	            new NoViableAltException("", 87, 0, input);
 
                     	        throw nvae;
                     	    }
-                    	    switch (alt86) {
+                    	    switch (alt87) {
                     	        case 1 :
                     	            // InternalSpringConfigDsl.g:6681:13: lv_artefact_4_1= ruleReferenceAtt
                     	            {
@@ -18268,12 +18286,12 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    if ( cnt87 >= 1 ) break loop87;
+                    	    if ( cnt88 >= 1 ) break loop88;
                                 EarlyExitException eee =
-                                    new EarlyExitException(87, input);
+                                    new EarlyExitException(88, input);
                                 throw eee;
                         }
-                        cnt87++;
+                        cnt88++;
                     } while (true);
 
                     if ( ! getUnorderedGroupHelper().canLeave(grammarAccess.getPropertyAccess().getUnorderedGroup_1_0_0()) ) {
@@ -18292,22 +18310,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     }
 
                     // InternalSpringConfigDsl.g:6728:5: (otherlv_5= '/>' | (otherlv_6= '>' ( (lv_description_7_0= ruleDescription ) )? otherlv_8= '</property>' ) )
-                    int alt89=2;
-                    int LA89_0 = input.LA(1);
+                    int alt90=2;
+                    int LA90_0 = input.LA(1);
 
-                    if ( (LA89_0==31) ) {
-                        alt89=1;
+                    if ( (LA90_0==31) ) {
+                        alt90=1;
                     }
-                    else if ( (LA89_0==26) ) {
-                        alt89=2;
+                    else if ( (LA90_0==26) ) {
+                        alt90=2;
                     }
                     else {
                         NoViableAltException nvae =
-                            new NoViableAltException("", 89, 0, input);
+                            new NoViableAltException("", 90, 0, input);
 
                         throw nvae;
                     }
-                    switch (alt89) {
+                    switch (alt90) {
                         case 1 :
                             // InternalSpringConfigDsl.g:6729:6: otherlv_5= '/>'
                             {
@@ -18329,13 +18347,13 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                             							newLeafNode(otherlv_6, grammarAccess.getPropertyAccess().getGreaterThanSignKeyword_1_0_1_1_0());
                             						
                             // InternalSpringConfigDsl.g:6739:7: ( (lv_description_7_0= ruleDescription ) )?
-                            int alt88=2;
-                            int LA88_0 = input.LA(1);
+                            int alt89=2;
+                            int LA89_0 = input.LA(1);
 
-                            if ( (LA88_0==214) ) {
-                                alt88=1;
+                            if ( (LA89_0==214) ) {
+                                alt89=1;
                             }
-                            switch (alt88) {
+                            switch (alt89) {
                                 case 1 :
                                     // InternalSpringConfigDsl.g:6740:8: (lv_description_7_0= ruleDescription )
                                     {
@@ -18441,13 +18459,13 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     					newLeafNode(otherlv_11, grammarAccess.getPropertyAccess().getGreaterThanSignKeyword_1_1_1());
                     				
                     // InternalSpringConfigDsl.g:6796:5: ( (lv_description_12_0= ruleDescription ) )?
-                    int alt90=2;
-                    int LA90_0 = input.LA(1);
+                    int alt91=2;
+                    int LA91_0 = input.LA(1);
 
-                    if ( (LA90_0==214) ) {
-                        alt90=1;
+                    if ( (LA91_0==214) ) {
+                        alt91=1;
                     }
-                    switch (alt90) {
+                    switch (alt91) {
                         case 1 :
                             // InternalSpringConfigDsl.g:6797:6: (lv_description_12_0= ruleDescription )
                             {
@@ -18483,22 +18501,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     }
 
                     // InternalSpringConfigDsl.g:6815:5: ( ( (lv_artefact_13_0= ruleAbstractArtefact ) ) | ruleNullTag )
-                    int alt91=2;
-                    int LA91_0 = input.LA(1);
+                    int alt92=2;
+                    int LA92_0 = input.LA(1);
 
-                    if ( (LA91_0==134||LA91_0==154||LA91_0==156||LA91_0==159||LA91_0==176||LA91_0==180||LA91_0==182||LA91_0==184||LA91_0==188||LA91_0==197||LA91_0==202||LA91_0==204||LA91_0==206||LA91_0==209) ) {
-                        alt91=1;
+                    if ( (LA92_0==134||LA92_0==154||LA92_0==156||LA92_0==159||LA92_0==176||LA92_0==180||LA92_0==182||LA92_0==184||LA92_0==188||LA92_0==197||LA92_0==202||LA92_0==204||LA92_0==206||LA92_0==209) ) {
+                        alt92=1;
                     }
-                    else if ( (LA91_0==239) ) {
-                        alt91=2;
+                    else if ( (LA92_0==239) ) {
+                        alt92=2;
                     }
                     else {
                         NoViableAltException nvae =
-                            new NoViableAltException("", 91, 0, input);
+                            new NoViableAltException("", 92, 0, input);
 
                         throw nvae;
                     }
-                    switch (alt91) {
+                    switch (alt92) {
                         case 1 :
                             // InternalSpringConfigDsl.g:6816:6: ( (lv_artefact_13_0= ruleAbstractArtefact ) )
                             {
@@ -18781,22 +18799,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:6919:2: ( ( () otherlv_1= '<value' (otherlv_2= 'type=' ( (lv_type_3_0= ruleValidString ) ) )? ( (otherlv_4= '>' ( (lv_value_5_0= ruleQSTRING ) ) otherlv_6= '</value>' ) | otherlv_7= '/>' ) ) | this_UtilConstant_8= ruleUtilConstant )
             {
             // InternalSpringConfigDsl.g:6919:2: ( ( () otherlv_1= '<value' (otherlv_2= 'type=' ( (lv_type_3_0= ruleValidString ) ) )? ( (otherlv_4= '>' ( (lv_value_5_0= ruleQSTRING ) ) otherlv_6= '</value>' ) | otherlv_7= '/>' ) ) | this_UtilConstant_8= ruleUtilConstant )
-            int alt95=2;
-            int LA95_0 = input.LA(1);
+            int alt96=2;
+            int LA96_0 = input.LA(1);
 
-            if ( (LA95_0==154) ) {
-                alt95=1;
+            if ( (LA96_0==154) ) {
+                alt96=1;
             }
-            else if ( (LA95_0==197) ) {
-                alt95=2;
+            else if ( (LA96_0==197) ) {
+                alt96=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 95, 0, input);
+                    new NoViableAltException("", 96, 0, input);
 
                 throw nvae;
             }
-            switch (alt95) {
+            switch (alt96) {
                 case 1 :
                     // InternalSpringConfigDsl.g:6920:3: ( () otherlv_1= '<value' (otherlv_2= 'type=' ( (lv_type_3_0= ruleValidString ) ) )? ( (otherlv_4= '>' ( (lv_value_5_0= ruleQSTRING ) ) otherlv_6= '</value>' ) | otherlv_7= '/>' ) )
                     {
@@ -18819,13 +18837,13 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     				newLeafNode(otherlv_1, grammarAccess.getAttributeTagAccess().getValueKeyword_0_1());
                     			
                     // InternalSpringConfigDsl.g:6932:4: (otherlv_2= 'type=' ( (lv_type_3_0= ruleValidString ) ) )?
-                    int alt93=2;
-                    int LA93_0 = input.LA(1);
+                    int alt94=2;
+                    int LA94_0 = input.LA(1);
 
-                    if ( (LA93_0==52) ) {
-                        alt93=1;
+                    if ( (LA94_0==52) ) {
+                        alt94=1;
                     }
-                    switch (alt93) {
+                    switch (alt94) {
                         case 1 :
                             // InternalSpringConfigDsl.g:6933:5: otherlv_2= 'type=' ( (lv_type_3_0= ruleValidString ) )
                             {
@@ -18871,22 +18889,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     }
 
                     // InternalSpringConfigDsl.g:6957:4: ( (otherlv_4= '>' ( (lv_value_5_0= ruleQSTRING ) ) otherlv_6= '</value>' ) | otherlv_7= '/>' )
-                    int alt94=2;
-                    int LA94_0 = input.LA(1);
+                    int alt95=2;
+                    int LA95_0 = input.LA(1);
 
-                    if ( (LA94_0==26) ) {
-                        alt94=1;
+                    if ( (LA95_0==26) ) {
+                        alt95=1;
                     }
-                    else if ( (LA94_0==31) ) {
-                        alt94=2;
+                    else if ( (LA95_0==31) ) {
+                        alt95=2;
                     }
                     else {
                         NoViableAltException nvae =
-                            new NoViableAltException("", 94, 0, input);
+                            new NoViableAltException("", 95, 0, input);
 
                         throw nvae;
                     }
-                    switch (alt94) {
+                    switch (alt95) {
                         case 1 :
                             // InternalSpringConfigDsl.g:6958:5: (otherlv_4= '>' ( (lv_value_5_0= ruleQSTRING ) ) otherlv_6= '</value>' )
                             {
@@ -19320,22 +19338,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             }
 
             // InternalSpringConfigDsl.g:7134:3: (otherlv_4= '/>' | (otherlv_5= '>' otherlv_6= '</idref>' ) )
-            int alt96=2;
-            int LA96_0 = input.LA(1);
+            int alt97=2;
+            int LA97_0 = input.LA(1);
 
-            if ( (LA96_0==31) ) {
-                alt96=1;
+            if ( (LA97_0==31) ) {
+                alt97=1;
             }
-            else if ( (LA96_0==26) ) {
-                alt96=2;
+            else if ( (LA97_0==26) ) {
+                alt97=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 96, 0, input);
+                    new NoViableAltException("", 97, 0, input);
 
                 throw nvae;
             }
-            switch (alt96) {
+            switch (alt97) {
                 case 1 :
                     // InternalSpringConfigDsl.g:7135:4: otherlv_4= '/>'
                     {
@@ -19614,22 +19632,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             }
 
             // InternalSpringConfigDsl.g:7247:3: (otherlv_4= '/>' | (otherlv_5= '>' otherlv_6= '</ref>' ) )
-            int alt97=2;
-            int LA97_0 = input.LA(1);
+            int alt98=2;
+            int LA98_0 = input.LA(1);
 
-            if ( (LA97_0==31) ) {
-                alt97=1;
+            if ( (LA98_0==31) ) {
+                alt98=1;
             }
-            else if ( (LA97_0==26) ) {
-                alt97=2;
+            else if ( (LA98_0==26) ) {
+                alt98=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 97, 0, input);
+                    new NoViableAltException("", 98, 0, input);
 
                 throw nvae;
             }
-            switch (alt97) {
+            switch (alt98) {
                 case 1 :
                     // InternalSpringConfigDsl.g:7248:4: otherlv_4= '/>'
                     {
@@ -19860,9 +19878,9 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             			newLeafNode(otherlv_0, grammarAccess.getConstructorArgAccess().getConstructorArgKeyword_0());
             		
             // InternalSpringConfigDsl.g:7320:3: ( (this_ConstructorArgAtt_1= ruleConstructorArgAtt ( (otherlv_2= '>' ( (lv_description_3_0= ruleDescription ) )? otherlv_4= '</constructor-arg>' ) | otherlv_5= '/>' ) ) | ( () ( ( ( ( ({...}? => ( ({...}? => (otherlv_8= 'index=' ( (lv_index_9_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_10= 'name=' ( (lv_name_11_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_12= 'type=' ( (lv_type_13_0= ruleValidString ) ) ) ) ) ) )* ) ) ) otherlv_14= '>' ( (lv_description_15_0= ruleDescription ) )? ( ( (lv_artefact_16_0= ruleAbstractArtefact ) ) | ruleNullTag ) otherlv_18= '</constructor-arg>' ) )
-            int alt103=2;
-            alt103 = dfa103.predict(input);
-            switch (alt103) {
+            int alt104=2;
+            alt104 = dfa104.predict(input);
+            switch (alt104) {
                 case 1 :
                     // InternalSpringConfigDsl.g:7321:4: (this_ConstructorArgAtt_1= ruleConstructorArgAtt ( (otherlv_2= '>' ( (lv_description_3_0= ruleDescription ) )? otherlv_4= '</constructor-arg>' ) | otherlv_5= '/>' ) )
                     {
@@ -19882,22 +19900,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     					afterParserOrEnumRuleCall();
                     				
                     // InternalSpringConfigDsl.g:7330:5: ( (otherlv_2= '>' ( (lv_description_3_0= ruleDescription ) )? otherlv_4= '</constructor-arg>' ) | otherlv_5= '/>' )
-                    int alt99=2;
-                    int LA99_0 = input.LA(1);
+                    int alt100=2;
+                    int LA100_0 = input.LA(1);
 
-                    if ( (LA99_0==26) ) {
-                        alt99=1;
+                    if ( (LA100_0==26) ) {
+                        alt100=1;
                     }
-                    else if ( (LA99_0==31) ) {
-                        alt99=2;
+                    else if ( (LA100_0==31) ) {
+                        alt100=2;
                     }
                     else {
                         NoViableAltException nvae =
-                            new NoViableAltException("", 99, 0, input);
+                            new NoViableAltException("", 100, 0, input);
 
                         throw nvae;
                     }
-                    switch (alt99) {
+                    switch (alt100) {
                         case 1 :
                             // InternalSpringConfigDsl.g:7331:6: (otherlv_2= '>' ( (lv_description_3_0= ruleDescription ) )? otherlv_4= '</constructor-arg>' )
                             {
@@ -19909,13 +19927,13 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                             							newLeafNode(otherlv_2, grammarAccess.getConstructorArgAccess().getGreaterThanSignKeyword_1_0_1_0_0());
                             						
                             // InternalSpringConfigDsl.g:7336:7: ( (lv_description_3_0= ruleDescription ) )?
-                            int alt98=2;
-                            int LA98_0 = input.LA(1);
+                            int alt99=2;
+                            int LA99_0 = input.LA(1);
 
-                            if ( (LA98_0==214) ) {
-                                alt98=1;
+                            if ( (LA99_0==214) ) {
+                                alt99=1;
                             }
-                            switch (alt98) {
+                            switch (alt99) {
                                 case 1 :
                                     // InternalSpringConfigDsl.g:7337:8: (lv_description_3_0= ruleDescription )
                                     {
@@ -20009,23 +20027,23 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     // InternalSpringConfigDsl.g:7382:8: ( ({...}? => ( ({...}? => (otherlv_8= 'index=' ( (lv_index_9_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_10= 'name=' ( (lv_name_11_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_12= 'type=' ( (lv_type_13_0= ruleValidString ) ) ) ) ) ) )*
                     {
                     // InternalSpringConfigDsl.g:7382:8: ( ({...}? => ( ({...}? => (otherlv_8= 'index=' ( (lv_index_9_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_10= 'name=' ( (lv_name_11_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_12= 'type=' ( (lv_type_13_0= ruleValidString ) ) ) ) ) ) )*
-                    loop100:
+                    loop101:
                     do {
-                        int alt100=4;
-                        int LA100_0 = input.LA(1);
+                        int alt101=4;
+                        int LA101_0 = input.LA(1);
 
-                        if ( LA100_0 == 163 && getUnorderedGroupHelper().canSelect(grammarAccess.getConstructorArgAccess().getUnorderedGroup_1_1_1(), 0) ) {
-                            alt100=1;
+                        if ( LA101_0 == 163 && getUnorderedGroupHelper().canSelect(grammarAccess.getConstructorArgAccess().getUnorderedGroup_1_1_1(), 0) ) {
+                            alt101=1;
                         }
-                        else if ( LA100_0 == 33 && getUnorderedGroupHelper().canSelect(grammarAccess.getConstructorArgAccess().getUnorderedGroup_1_1_1(), 1) ) {
-                            alt100=2;
+                        else if ( LA101_0 == 33 && getUnorderedGroupHelper().canSelect(grammarAccess.getConstructorArgAccess().getUnorderedGroup_1_1_1(), 1) ) {
+                            alt101=2;
                         }
-                        else if ( LA100_0 == 52 && getUnorderedGroupHelper().canSelect(grammarAccess.getConstructorArgAccess().getUnorderedGroup_1_1_1(), 2) ) {
-                            alt100=3;
+                        else if ( LA101_0 == 52 && getUnorderedGroupHelper().canSelect(grammarAccess.getConstructorArgAccess().getUnorderedGroup_1_1_1(), 2) ) {
+                            alt101=3;
                         }
 
 
-                        switch (alt100) {
+                        switch (alt101) {
                     	case 1 :
                     	    // InternalSpringConfigDsl.g:7383:6: ({...}? => ( ({...}? => (otherlv_8= 'index=' ( (lv_index_9_0= ruleValidString ) ) ) ) ) )
                     	    {
@@ -20259,7 +20277,7 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop100;
+                    	    break loop101;
                         }
                     } while (true);
 
@@ -20280,13 +20298,13 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     					newLeafNode(otherlv_14, grammarAccess.getConstructorArgAccess().getGreaterThanSignKeyword_1_1_2());
                     				
                     // InternalSpringConfigDsl.g:7496:5: ( (lv_description_15_0= ruleDescription ) )?
-                    int alt101=2;
-                    int LA101_0 = input.LA(1);
+                    int alt102=2;
+                    int LA102_0 = input.LA(1);
 
-                    if ( (LA101_0==214) ) {
-                        alt101=1;
+                    if ( (LA102_0==214) ) {
+                        alt102=1;
                     }
-                    switch (alt101) {
+                    switch (alt102) {
                         case 1 :
                             // InternalSpringConfigDsl.g:7497:6: (lv_description_15_0= ruleDescription )
                             {
@@ -20322,22 +20340,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     }
 
                     // InternalSpringConfigDsl.g:7515:5: ( ( (lv_artefact_16_0= ruleAbstractArtefact ) ) | ruleNullTag )
-                    int alt102=2;
-                    int LA102_0 = input.LA(1);
+                    int alt103=2;
+                    int LA103_0 = input.LA(1);
 
-                    if ( (LA102_0==134||LA102_0==154||LA102_0==156||LA102_0==159||LA102_0==176||LA102_0==180||LA102_0==182||LA102_0==184||LA102_0==188||LA102_0==197||LA102_0==202||LA102_0==204||LA102_0==206||LA102_0==209) ) {
-                        alt102=1;
+                    if ( (LA103_0==134||LA103_0==154||LA103_0==156||LA103_0==159||LA103_0==176||LA103_0==180||LA103_0==182||LA103_0==184||LA103_0==188||LA103_0==197||LA103_0==202||LA103_0==204||LA103_0==206||LA103_0==209) ) {
+                        alt103=1;
                     }
-                    else if ( (LA102_0==239) ) {
-                        alt102=2;
+                    else if ( (LA103_0==239) ) {
+                        alt103=2;
                     }
                     else {
                         NoViableAltException nvae =
-                            new NoViableAltException("", 102, 0, input);
+                            new NoViableAltException("", 103, 0, input);
 
                         throw nvae;
                     }
-                    switch (alt102) {
+                    switch (alt103) {
                         case 1 :
                             // InternalSpringConfigDsl.g:7516:6: ( (lv_artefact_16_0= ruleAbstractArtefact ) )
                             {
@@ -20500,24 +20518,24 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:7574:5: ( ({...}? => ( ({...}? => (otherlv_1= 'index=' ( (lv_index_2_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_3= 'name=' ( (lv_name_4_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_artefact_5_0= ruleAttributesCons ) ) ) ) ) )+ {...}?
             {
             // InternalSpringConfigDsl.g:7574:5: ( ({...}? => ( ({...}? => (otherlv_1= 'index=' ( (lv_index_2_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_3= 'name=' ( (lv_name_4_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_artefact_5_0= ruleAttributesCons ) ) ) ) ) )+
-            int cnt104=0;
-            loop104:
+            int cnt105=0;
+            loop105:
             do {
-                int alt104=4;
-                int LA104_0 = input.LA(1);
+                int alt105=4;
+                int LA105_0 = input.LA(1);
 
-                if ( LA104_0 == 163 && getUnorderedGroupHelper().canSelect(grammarAccess.getConstructorArgAttAccess().getUnorderedGroup(), 0) ) {
-                    alt104=1;
+                if ( LA105_0 == 163 && getUnorderedGroupHelper().canSelect(grammarAccess.getConstructorArgAttAccess().getUnorderedGroup(), 0) ) {
+                    alt105=1;
                 }
-                else if ( LA104_0 == 33 && getUnorderedGroupHelper().canSelect(grammarAccess.getConstructorArgAttAccess().getUnorderedGroup(), 1) ) {
-                    alt104=2;
+                else if ( LA105_0 == 33 && getUnorderedGroupHelper().canSelect(grammarAccess.getConstructorArgAttAccess().getUnorderedGroup(), 1) ) {
+                    alt105=2;
                 }
-                else if ( ( LA104_0 == 52 || LA104_0 == 99 || LA104_0 == 153 ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConstructorArgAttAccess().getUnorderedGroup(), 2) ) {
-                    alt104=3;
+                else if ( ( LA105_0 == 52 || LA105_0 == 99 || LA105_0 == 153 ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConstructorArgAttAccess().getUnorderedGroup(), 2) ) {
+                    alt105=3;
                 }
 
 
-                switch (alt104) {
+                switch (alt105) {
             	case 1 :
             	    // InternalSpringConfigDsl.g:7575:3: ({...}? => ( ({...}? => (otherlv_1= 'index=' ( (lv_index_2_0= ruleValidString ) ) ) ) ) )
             	    {
@@ -20741,12 +20759,12 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    if ( cnt104 >= 1 ) break loop104;
+            	    if ( cnt105 >= 1 ) break loop105;
                         EarlyExitException eee =
-                            new EarlyExitException(104, input);
+                            new EarlyExitException(105, input);
                         throw eee;
                 }
-                cnt104++;
+                cnt105++;
             } while (true);
 
             if ( ! getUnorderedGroupHelper().canLeave(grammarAccess.getConstructorArgAttAccess().getUnorderedGroup()) ) {
@@ -20840,22 +20858,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:7696:2: ( ( () ( ( ( ( ({...}? => ( ({...}? => (otherlv_2= 'value=' ( (lv_value_3_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_4= 'type=' ( (lv_type_5_0= ruleValidString ) ) ) ) ) ) )+ {...}?) ) ) ) | ( () (otherlv_7= 'ref=' ( ( ruleValidString ) ) ) ) )
             {
             // InternalSpringConfigDsl.g:7696:2: ( ( () ( ( ( ( ({...}? => ( ({...}? => (otherlv_2= 'value=' ( (lv_value_3_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_4= 'type=' ( (lv_type_5_0= ruleValidString ) ) ) ) ) ) )+ {...}?) ) ) ) | ( () (otherlv_7= 'ref=' ( ( ruleValidString ) ) ) ) )
-            int alt106=2;
-            int LA106_0 = input.LA(1);
+            int alt107=2;
+            int LA107_0 = input.LA(1);
 
-            if ( (LA106_0==52||LA106_0==153) ) {
-                alt106=1;
+            if ( (LA107_0==52||LA107_0==153) ) {
+                alt107=1;
             }
-            else if ( (LA106_0==99) ) {
-                alt106=2;
+            else if ( (LA107_0==99) ) {
+                alt107=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 106, 0, input);
+                    new NoViableAltException("", 107, 0, input);
 
                 throw nvae;
             }
-            switch (alt106) {
+            switch (alt107) {
                 case 1 :
                     // InternalSpringConfigDsl.g:7697:3: ( () ( ( ( ( ({...}? => ( ({...}? => (otherlv_2= 'value=' ( (lv_value_3_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_4= 'type=' ( (lv_type_5_0= ruleValidString ) ) ) ) ) ) )+ {...}?) ) ) )
                     {
@@ -20886,33 +20904,33 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     // InternalSpringConfigDsl.g:7711:7: ( ({...}? => ( ({...}? => (otherlv_2= 'value=' ( (lv_value_3_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_4= 'type=' ( (lv_type_5_0= ruleValidString ) ) ) ) ) ) )+ {...}?
                     {
                     // InternalSpringConfigDsl.g:7711:7: ( ({...}? => ( ({...}? => (otherlv_2= 'value=' ( (lv_value_3_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_4= 'type=' ( (lv_type_5_0= ruleValidString ) ) ) ) ) ) )+
-                    int cnt105=0;
-                    loop105:
+                    int cnt106=0;
+                    loop106:
                     do {
-                        int alt105=3;
-                        int LA105_0 = input.LA(1);
+                        int alt106=3;
+                        int LA106_0 = input.LA(1);
 
-                        if ( (LA105_0==153) ) {
-                            int LA105_2 = input.LA(2);
+                        if ( (LA106_0==153) ) {
+                            int LA106_2 = input.LA(2);
 
                             if ( getUnorderedGroupHelper().canSelect(grammarAccess.getAttributesConsAccess().getUnorderedGroup_0_1(), 0) ) {
-                                alt105=1;
+                                alt106=1;
                             }
 
 
                         }
-                        else if ( (LA105_0==52) ) {
-                            int LA105_3 = input.LA(2);
+                        else if ( (LA106_0==52) ) {
+                            int LA106_3 = input.LA(2);
 
                             if ( getUnorderedGroupHelper().canSelect(grammarAccess.getAttributesConsAccess().getUnorderedGroup_0_1(), 1) ) {
-                                alt105=2;
+                                alt106=2;
                             }
 
 
                         }
 
 
-                        switch (alt105) {
+                        switch (alt106) {
                     	case 1 :
                     	    // InternalSpringConfigDsl.g:7712:5: ({...}? => ( ({...}? => (otherlv_2= 'value=' ( (lv_value_3_0= ruleValidString ) ) ) ) ) )
                     	    {
@@ -21069,12 +21087,12 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    if ( cnt105 >= 1 ) break loop105;
+                    	    if ( cnt106 >= 1 ) break loop106;
                                 EarlyExitException eee =
-                                    new EarlyExitException(105, input);
+                                    new EarlyExitException(106, input);
                                 throw eee;
                         }
-                        cnt105++;
+                        cnt106++;
                     } while (true);
 
                     if ( ! getUnorderedGroupHelper().canLeave(grammarAccess.getAttributesConsAccess().getUnorderedGroup_0_1()) ) {
@@ -21273,22 +21291,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             }
 
             // InternalSpringConfigDsl.g:7862:3: ( (otherlv_2= '-ref' otherlv_3= '=' ( (lv_artefact_4_0= ruleReferenceComponent ) ) ) | (otherlv_5= '=' ( (lv_artefact_6_0= ruleAttributSimple ) ) ) )
-            int alt107=2;
-            int LA107_0 = input.LA(1);
+            int alt108=2;
+            int LA108_0 = input.LA(1);
 
-            if ( (LA107_0==165) ) {
-                alt107=1;
+            if ( (LA108_0==165) ) {
+                alt108=1;
             }
-            else if ( (LA107_0==12) ) {
-                alt107=2;
+            else if ( (LA108_0==12) ) {
+                alt108=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 107, 0, input);
+                    new NoViableAltException("", 108, 0, input);
 
                 throw nvae;
             }
-            switch (alt107) {
+            switch (alt108) {
                 case 1 :
                     // InternalSpringConfigDsl.g:7863:4: (otherlv_2= '-ref' otherlv_3= '=' ( (lv_artefact_4_0= ruleReferenceComponent ) ) )
                     {
@@ -21504,22 +21522,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             }
 
             // InternalSpringConfigDsl.g:7960:3: ( (otherlv_2= '-ref' otherlv_3= '=' ( (lv_artefact_4_0= ruleReferenceComponent ) ) ) | (otherlv_5= '=' ( (lv_artefact_6_0= ruleAttributSimple ) ) ) )
-            int alt108=2;
-            int LA108_0 = input.LA(1);
+            int alt109=2;
+            int LA109_0 = input.LA(1);
 
-            if ( (LA108_0==165) ) {
-                alt108=1;
+            if ( (LA109_0==165) ) {
+                alt109=1;
             }
-            else if ( (LA108_0==12) ) {
-                alt108=2;
+            else if ( (LA109_0==12) ) {
+                alt109=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 108, 0, input);
+                    new NoViableAltException("", 109, 0, input);
 
                 throw nvae;
             }
-            switch (alt108) {
+            switch (alt109) {
                 case 1 :
                     // InternalSpringConfigDsl.g:7961:4: (otherlv_2= '-ref' otherlv_3= '=' ( (lv_artefact_4_0= ruleReferenceComponent ) ) )
                     {
@@ -21720,21 +21738,21 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:8046:6: ( ({...}? => ( ({...}? => (otherlv_2= 'name=' ( (lv_name_3_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_4= 'bean=' ( ( ruleValidString ) ) ) ) ) ) )+ {...}?
             {
             // InternalSpringConfigDsl.g:8046:6: ( ({...}? => ( ({...}? => (otherlv_2= 'name=' ( (lv_name_3_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_4= 'bean=' ( ( ruleValidString ) ) ) ) ) ) )+
-            int cnt109=0;
-            loop109:
+            int cnt110=0;
+            loop110:
             do {
-                int alt109=3;
-                int LA109_0 = input.LA(1);
+                int alt110=3;
+                int LA110_0 = input.LA(1);
 
-                if ( LA109_0 == 33 && getUnorderedGroupHelper().canSelect(grammarAccess.getLookupMethodAccess().getUnorderedGroup_1(), 0) ) {
-                    alt109=1;
+                if ( LA110_0 == 33 && getUnorderedGroupHelper().canSelect(grammarAccess.getLookupMethodAccess().getUnorderedGroup_1(), 0) ) {
+                    alt110=1;
                 }
-                else if ( LA109_0 == 157 && getUnorderedGroupHelper().canSelect(grammarAccess.getLookupMethodAccess().getUnorderedGroup_1(), 1) ) {
-                    alt109=2;
+                else if ( LA110_0 == 157 && getUnorderedGroupHelper().canSelect(grammarAccess.getLookupMethodAccess().getUnorderedGroup_1(), 1) ) {
+                    alt110=2;
                 }
 
 
-                switch (alt109) {
+                switch (alt110) {
             	case 1 :
             	    // InternalSpringConfigDsl.g:8047:4: ({...}? => ( ({...}? => (otherlv_2= 'name=' ( (lv_name_3_0= ruleValidString ) ) ) ) ) )
             	    {
@@ -21888,12 +21906,12 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    if ( cnt109 >= 1 ) break loop109;
+            	    if ( cnt110 >= 1 ) break loop110;
                         EarlyExitException eee =
-                            new EarlyExitException(109, input);
+                            new EarlyExitException(110, input);
                         throw eee;
                 }
-                cnt109++;
+                cnt110++;
             } while (true);
 
             if ( ! getUnorderedGroupHelper().canLeave(grammarAccess.getLookupMethodAccess().getUnorderedGroup_1()) ) {
@@ -21912,22 +21930,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             }
 
             // InternalSpringConfigDsl.g:8120:3: (otherlv_6= '/>' | (otherlv_7= '>' otherlv_8= '</lookup-method>' ) )
-            int alt110=2;
-            int LA110_0 = input.LA(1);
+            int alt111=2;
+            int LA111_0 = input.LA(1);
 
-            if ( (LA110_0==31) ) {
-                alt110=1;
+            if ( (LA111_0==31) ) {
+                alt111=1;
             }
-            else if ( (LA110_0==26) ) {
-                alt110=2;
+            else if ( (LA111_0==26) ) {
+                alt111=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 110, 0, input);
+                    new NoViableAltException("", 111, 0, input);
 
                 throw nvae;
             }
-            switch (alt110) {
+            switch (alt111) {
                 case 1 :
                     // InternalSpringConfigDsl.g:8121:4: otherlv_6= '/>'
                     {
@@ -22064,21 +22082,21 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:8166:6: ( ({...}? => ( ({...}? => (otherlv_2= 'type=' ( (lv_type_3_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_4= 'value=' ( (lv_value_5_0= ruleValidString ) ) ) ) ) ) )+ {...}?
             {
             // InternalSpringConfigDsl.g:8166:6: ( ({...}? => ( ({...}? => (otherlv_2= 'type=' ( (lv_type_3_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_4= 'value=' ( (lv_value_5_0= ruleValidString ) ) ) ) ) ) )+
-            int cnt111=0;
-            loop111:
+            int cnt112=0;
+            loop112:
             do {
-                int alt111=3;
-                int LA111_0 = input.LA(1);
+                int alt112=3;
+                int LA112_0 = input.LA(1);
 
-                if ( LA111_0 == 52 && getUnorderedGroupHelper().canSelect(grammarAccess.getQualifierAccess().getUnorderedGroup_1(), 0) ) {
-                    alt111=1;
+                if ( LA112_0 == 52 && getUnorderedGroupHelper().canSelect(grammarAccess.getQualifierAccess().getUnorderedGroup_1(), 0) ) {
+                    alt112=1;
                 }
-                else if ( LA111_0 == 153 && getUnorderedGroupHelper().canSelect(grammarAccess.getQualifierAccess().getUnorderedGroup_1(), 1) ) {
-                    alt111=2;
+                else if ( LA112_0 == 153 && getUnorderedGroupHelper().canSelect(grammarAccess.getQualifierAccess().getUnorderedGroup_1(), 1) ) {
+                    alt112=2;
                 }
 
 
-                switch (alt111) {
+                switch (alt112) {
             	case 1 :
             	    // InternalSpringConfigDsl.g:8167:4: ({...}? => ( ({...}? => (otherlv_2= 'type=' ( (lv_type_3_0= ruleValidString ) ) ) ) ) )
             	    {
@@ -22235,12 +22253,12 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    if ( cnt111 >= 1 ) break loop111;
+            	    if ( cnt112 >= 1 ) break loop112;
                         EarlyExitException eee =
-                            new EarlyExitException(111, input);
+                            new EarlyExitException(112, input);
                         throw eee;
                 }
-                cnt111++;
+                cnt112++;
             } while (true);
 
             if ( ! getUnorderedGroupHelper().canLeave(grammarAccess.getQualifierAccess().getUnorderedGroup_1()) ) {
@@ -22259,22 +22277,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             }
 
             // InternalSpringConfigDsl.g:8243:3: (otherlv_6= '/>' | (otherlv_7= '>' ( (lv_qualifierAttributes_8_0= ruleQualifierAttribute ) )* otherlv_9= '</qualifier>' ) )
-            int alt113=2;
-            int LA113_0 = input.LA(1);
+            int alt114=2;
+            int LA114_0 = input.LA(1);
 
-            if ( (LA113_0==31) ) {
-                alt113=1;
+            if ( (LA114_0==31) ) {
+                alt114=1;
             }
-            else if ( (LA113_0==26) ) {
-                alt113=2;
+            else if ( (LA114_0==26) ) {
+                alt114=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 113, 0, input);
+                    new NoViableAltException("", 114, 0, input);
 
                 throw nvae;
             }
-            switch (alt113) {
+            switch (alt114) {
                 case 1 :
                     // InternalSpringConfigDsl.g:8244:4: otherlv_6= '/>'
                     {
@@ -22296,17 +22314,17 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     					newLeafNode(otherlv_7, grammarAccess.getQualifierAccess().getGreaterThanSignKeyword_2_1_0());
                     				
                     // InternalSpringConfigDsl.g:8254:5: ( (lv_qualifierAttributes_8_0= ruleQualifierAttribute ) )*
-                    loop112:
+                    loop113:
                     do {
-                        int alt112=2;
-                        int LA112_0 = input.LA(1);
+                        int alt113=2;
+                        int LA113_0 = input.LA(1);
 
-                        if ( (LA112_0==174) ) {
-                            alt112=1;
+                        if ( (LA113_0==174) ) {
+                            alt113=1;
                         }
 
 
-                        switch (alt112) {
+                        switch (alt113) {
                     	case 1 :
                     	    // InternalSpringConfigDsl.g:8255:6: (lv_qualifierAttributes_8_0= ruleQualifierAttribute )
                     	    {
@@ -22340,7 +22358,7 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop112;
+                    	    break loop113;
                         }
                     } while (true);
 
@@ -22458,21 +22476,21 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:8308:6: ( ({...}? => ( ({...}? => (otherlv_2= 'key=' ( (lv_key_3_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_4= 'value=' ( (lv_value_5_0= ruleValidString ) ) ) ) ) ) )+ {...}?
             {
             // InternalSpringConfigDsl.g:8308:6: ( ({...}? => ( ({...}? => (otherlv_2= 'key=' ( (lv_key_3_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_4= 'value=' ( (lv_value_5_0= ruleValidString ) ) ) ) ) ) )+
-            int cnt114=0;
-            loop114:
+            int cnt115=0;
+            loop115:
             do {
-                int alt114=3;
-                int LA114_0 = input.LA(1);
+                int alt115=3;
+                int LA115_0 = input.LA(1);
 
-                if ( LA114_0 == 172 && getUnorderedGroupHelper().canSelect(grammarAccess.getMetaTagAccess().getUnorderedGroup_1(), 0) ) {
-                    alt114=1;
+                if ( LA115_0 == 172 && getUnorderedGroupHelper().canSelect(grammarAccess.getMetaTagAccess().getUnorderedGroup_1(), 0) ) {
+                    alt115=1;
                 }
-                else if ( LA114_0 == 153 && getUnorderedGroupHelper().canSelect(grammarAccess.getMetaTagAccess().getUnorderedGroup_1(), 1) ) {
-                    alt114=2;
+                else if ( LA115_0 == 153 && getUnorderedGroupHelper().canSelect(grammarAccess.getMetaTagAccess().getUnorderedGroup_1(), 1) ) {
+                    alt115=2;
                 }
 
 
-                switch (alt114) {
+                switch (alt115) {
             	case 1 :
             	    // InternalSpringConfigDsl.g:8309:4: ({...}? => ( ({...}? => (otherlv_2= 'key=' ( (lv_key_3_0= ruleValidString ) ) ) ) ) )
             	    {
@@ -22629,12 +22647,12 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    if ( cnt114 >= 1 ) break loop114;
+            	    if ( cnt115 >= 1 ) break loop115;
                         EarlyExitException eee =
-                            new EarlyExitException(114, input);
+                            new EarlyExitException(115, input);
                         throw eee;
                 }
-                cnt114++;
+                cnt115++;
             } while (true);
 
             if ( ! getUnorderedGroupHelper().canLeave(grammarAccess.getMetaTagAccess().getUnorderedGroup_1()) ) {
@@ -22653,22 +22671,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             }
 
             // InternalSpringConfigDsl.g:8385:3: (otherlv_6= '/>' | (otherlv_7= '>' otherlv_8= '</meta>' ) )
-            int alt115=2;
-            int LA115_0 = input.LA(1);
+            int alt116=2;
+            int LA116_0 = input.LA(1);
 
-            if ( (LA115_0==31) ) {
-                alt115=1;
+            if ( (LA116_0==31) ) {
+                alt116=1;
             }
-            else if ( (LA115_0==26) ) {
-                alt115=2;
+            else if ( (LA116_0==26) ) {
+                alt116=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 115, 0, input);
+                    new NoViableAltException("", 116, 0, input);
 
                 throw nvae;
             }
-            switch (alt115) {
+            switch (alt116) {
                 case 1 :
                     // InternalSpringConfigDsl.g:8386:4: otherlv_6= '/>'
                     {
@@ -22803,21 +22821,21 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:8431:6: ( ({...}? => ( ({...}? => (otherlv_2= 'key=' ( (lv_key_3_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_4= 'value=' ( (lv_value_5_0= ruleValidString ) ) ) ) ) ) )+ {...}?
             {
             // InternalSpringConfigDsl.g:8431:6: ( ({...}? => ( ({...}? => (otherlv_2= 'key=' ( (lv_key_3_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_4= 'value=' ( (lv_value_5_0= ruleValidString ) ) ) ) ) ) )+
-            int cnt116=0;
-            loop116:
+            int cnt117=0;
+            loop117:
             do {
-                int alt116=3;
-                int LA116_0 = input.LA(1);
+                int alt117=3;
+                int LA117_0 = input.LA(1);
 
-                if ( LA116_0 == 172 && getUnorderedGroupHelper().canSelect(grammarAccess.getQualifierAttributeAccess().getUnorderedGroup_1(), 0) ) {
-                    alt116=1;
+                if ( LA117_0 == 172 && getUnorderedGroupHelper().canSelect(grammarAccess.getQualifierAttributeAccess().getUnorderedGroup_1(), 0) ) {
+                    alt117=1;
                 }
-                else if ( LA116_0 == 153 && getUnorderedGroupHelper().canSelect(grammarAccess.getQualifierAttributeAccess().getUnorderedGroup_1(), 1) ) {
-                    alt116=2;
+                else if ( LA117_0 == 153 && getUnorderedGroupHelper().canSelect(grammarAccess.getQualifierAttributeAccess().getUnorderedGroup_1(), 1) ) {
+                    alt117=2;
                 }
 
 
-                switch (alt116) {
+                switch (alt117) {
             	case 1 :
             	    // InternalSpringConfigDsl.g:8432:4: ({...}? => ( ({...}? => (otherlv_2= 'key=' ( (lv_key_3_0= ruleValidString ) ) ) ) ) )
             	    {
@@ -22974,12 +22992,12 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    if ( cnt116 >= 1 ) break loop116;
+            	    if ( cnt117 >= 1 ) break loop117;
                         EarlyExitException eee =
-                            new EarlyExitException(116, input);
+                            new EarlyExitException(117, input);
                         throw eee;
                 }
-                cnt116++;
+                cnt117++;
             } while (true);
 
             if ( ! getUnorderedGroupHelper().canLeave(grammarAccess.getQualifierAttributeAccess().getUnorderedGroup_1()) ) {
@@ -22998,22 +23016,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             }
 
             // InternalSpringConfigDsl.g:8508:3: (otherlv_6= '/>' | (otherlv_7= '>' otherlv_8= '</attribute>' ) )
-            int alt117=2;
-            int LA117_0 = input.LA(1);
+            int alt118=2;
+            int LA118_0 = input.LA(1);
 
-            if ( (LA117_0==31) ) {
-                alt117=1;
+            if ( (LA118_0==31) ) {
+                alt118=1;
             }
-            else if ( (LA117_0==26) ) {
-                alt117=2;
+            else if ( (LA118_0==26) ) {
+                alt118=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 117, 0, input);
+                    new NoViableAltException("", 118, 0, input);
 
                 throw nvae;
             }
-            switch (alt117) {
+            switch (alt118) {
                 case 1 :
                     // InternalSpringConfigDsl.g:8509:4: otherlv_6= '/>'
                     {
@@ -23165,20 +23183,20 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:8562:7: ( ({...}? => ( ({...}? => (otherlv_3= 'value-type=' ( (lv_valueType_4_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_5= 'merge=' ( (lv_merge_6_0= ruleDefaultableBoolean ) ) ) ) ) ) )*
             {
             // InternalSpringConfigDsl.g:8562:7: ( ({...}? => ( ({...}? => (otherlv_3= 'value-type=' ( (lv_valueType_4_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_5= 'merge=' ( (lv_merge_6_0= ruleDefaultableBoolean ) ) ) ) ) ) )*
-            loop118:
+            loop119:
             do {
-                int alt118=3;
-                int LA118_0 = input.LA(1);
+                int alt119=3;
+                int LA119_0 = input.LA(1);
 
-                if ( LA118_0 == 177 && getUnorderedGroupHelper().canSelect(grammarAccess.getArrayAccess().getUnorderedGroup_1_1(), 0) ) {
-                    alt118=1;
+                if ( LA119_0 == 177 && getUnorderedGroupHelper().canSelect(grammarAccess.getArrayAccess().getUnorderedGroup_1_1(), 0) ) {
+                    alt119=1;
                 }
-                else if ( LA118_0 == 178 && getUnorderedGroupHelper().canSelect(grammarAccess.getArrayAccess().getUnorderedGroup_1_1(), 1) ) {
-                    alt118=2;
+                else if ( LA119_0 == 178 && getUnorderedGroupHelper().canSelect(grammarAccess.getArrayAccess().getUnorderedGroup_1_1(), 1) ) {
+                    alt119=2;
                 }
 
 
-                switch (alt118) {
+                switch (alt119) {
             	case 1 :
             	    // InternalSpringConfigDsl.g:8563:5: ({...}? => ( ({...}? => (otherlv_3= 'value-type=' ( (lv_valueType_4_0= ruleValidString ) ) ) ) ) )
             	    {
@@ -23335,7 +23353,7 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop118;
+            	    break loop119;
                 }
             } while (true);
 
@@ -23356,13 +23374,13 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             				newLeafNode(otherlv_7, grammarAccess.getArrayAccess().getGreaterThanSignKeyword_1_2());
             			
             // InternalSpringConfigDsl.g:8642:4: ( (lv_description_8_0= ruleDescription ) )?
-            int alt119=2;
-            int LA119_0 = input.LA(1);
+            int alt120=2;
+            int LA120_0 = input.LA(1);
 
-            if ( (LA119_0==214) ) {
-                alt119=1;
+            if ( (LA120_0==214) ) {
+                alt120=1;
             }
-            switch (alt119) {
+            switch (alt120) {
                 case 1 :
                     // InternalSpringConfigDsl.g:8643:5: (lv_description_8_0= ruleDescription )
                     {
@@ -23398,20 +23416,20 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             }
 
             // InternalSpringConfigDsl.g:8661:4: ( ( (lv_artefacts_9_0= ruleAbstractArtefact ) ) | ruleNullTag )*
-            loop120:
+            loop121:
             do {
-                int alt120=3;
-                int LA120_0 = input.LA(1);
+                int alt121=3;
+                int LA121_0 = input.LA(1);
 
-                if ( (LA120_0==134||LA120_0==154||LA120_0==156||LA120_0==159||LA120_0==176||LA120_0==180||LA120_0==182||LA120_0==184||LA120_0==188||LA120_0==197||LA120_0==202||LA120_0==204||LA120_0==206||LA120_0==209) ) {
-                    alt120=1;
+                if ( (LA121_0==134||LA121_0==154||LA121_0==156||LA121_0==159||LA121_0==176||LA121_0==180||LA121_0==182||LA121_0==184||LA121_0==188||LA121_0==197||LA121_0==202||LA121_0==204||LA121_0==206||LA121_0==209) ) {
+                    alt121=1;
                 }
-                else if ( (LA120_0==239) ) {
-                    alt120=2;
+                else if ( (LA121_0==239) ) {
+                    alt121=2;
                 }
 
 
-                switch (alt120) {
+                switch (alt121) {
             	case 1 :
             	    // InternalSpringConfigDsl.g:8662:5: ( (lv_artefacts_9_0= ruleAbstractArtefact ) )
             	    {
@@ -23468,7 +23486,7 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop120;
+            	    break loop121;
                 }
             } while (true);
 
@@ -23566,22 +23584,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:8713:2: ( ( () (otherlv_1= '<list' ( ( ( ( ({...}? => ( ({...}? => (otherlv_3= 'value-type=' ( (lv_valueType_4_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_5= 'merge=' ( (lv_merge_6_0= ruleDefaultableBoolean ) ) ) ) ) ) )* ) ) ) otherlv_7= '>' ( (lv_description_8_0= ruleDescription ) )? ( ( (lv_artefacts_9_0= ruleAbstractArtefact ) ) | ruleNullTag )* otherlv_11= '</list>' ) ) | this_UtilList_12= ruleUtilList )
             {
             // InternalSpringConfigDsl.g:8713:2: ( ( () (otherlv_1= '<list' ( ( ( ( ({...}? => ( ({...}? => (otherlv_3= 'value-type=' ( (lv_valueType_4_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_5= 'merge=' ( (lv_merge_6_0= ruleDefaultableBoolean ) ) ) ) ) ) )* ) ) ) otherlv_7= '>' ( (lv_description_8_0= ruleDescription ) )? ( ( (lv_artefacts_9_0= ruleAbstractArtefact ) ) | ruleNullTag )* otherlv_11= '</list>' ) ) | this_UtilList_12= ruleUtilList )
-            int alt124=2;
-            int LA124_0 = input.LA(1);
+            int alt125=2;
+            int LA125_0 = input.LA(1);
 
-            if ( (LA124_0==180) ) {
-                alt124=1;
+            if ( (LA125_0==180) ) {
+                alt125=1;
             }
-            else if ( (LA124_0==204) ) {
-                alt124=2;
+            else if ( (LA125_0==204) ) {
+                alt125=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 124, 0, input);
+                    new NoViableAltException("", 125, 0, input);
 
                 throw nvae;
             }
-            switch (alt124) {
+            switch (alt125) {
                 case 1 :
                     // InternalSpringConfigDsl.g:8714:3: ( () (otherlv_1= '<list' ( ( ( ( ({...}? => ( ({...}? => (otherlv_3= 'value-type=' ( (lv_valueType_4_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_5= 'merge=' ( (lv_merge_6_0= ruleDefaultableBoolean ) ) ) ) ) ) )* ) ) ) otherlv_7= '>' ( (lv_description_8_0= ruleDescription ) )? ( ( (lv_artefacts_9_0= ruleAbstractArtefact ) ) | ruleNullTag )* otherlv_11= '</list>' ) )
                     {
@@ -23619,20 +23637,20 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     // InternalSpringConfigDsl.g:8733:8: ( ({...}? => ( ({...}? => (otherlv_3= 'value-type=' ( (lv_valueType_4_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_5= 'merge=' ( (lv_merge_6_0= ruleDefaultableBoolean ) ) ) ) ) ) )*
                     {
                     // InternalSpringConfigDsl.g:8733:8: ( ({...}? => ( ({...}? => (otherlv_3= 'value-type=' ( (lv_valueType_4_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_5= 'merge=' ( (lv_merge_6_0= ruleDefaultableBoolean ) ) ) ) ) ) )*
-                    loop121:
+                    loop122:
                     do {
-                        int alt121=3;
-                        int LA121_0 = input.LA(1);
+                        int alt122=3;
+                        int LA122_0 = input.LA(1);
 
-                        if ( LA121_0 == 177 && getUnorderedGroupHelper().canSelect(grammarAccess.getSListAccess().getUnorderedGroup_0_1_1(), 0) ) {
-                            alt121=1;
+                        if ( LA122_0 == 177 && getUnorderedGroupHelper().canSelect(grammarAccess.getSListAccess().getUnorderedGroup_0_1_1(), 0) ) {
+                            alt122=1;
                         }
-                        else if ( LA121_0 == 178 && getUnorderedGroupHelper().canSelect(grammarAccess.getSListAccess().getUnorderedGroup_0_1_1(), 1) ) {
-                            alt121=2;
+                        else if ( LA122_0 == 178 && getUnorderedGroupHelper().canSelect(grammarAccess.getSListAccess().getUnorderedGroup_0_1_1(), 1) ) {
+                            alt122=2;
                         }
 
 
-                        switch (alt121) {
+                        switch (alt122) {
                     	case 1 :
                     	    // InternalSpringConfigDsl.g:8734:6: ({...}? => ( ({...}? => (otherlv_3= 'value-type=' ( (lv_valueType_4_0= ruleValidString ) ) ) ) ) )
                     	    {
@@ -23789,7 +23807,7 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop121;
+                    	    break loop122;
                         }
                     } while (true);
 
@@ -23810,13 +23828,13 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     					newLeafNode(otherlv_7, grammarAccess.getSListAccess().getGreaterThanSignKeyword_0_1_2());
                     				
                     // InternalSpringConfigDsl.g:8813:5: ( (lv_description_8_0= ruleDescription ) )?
-                    int alt122=2;
-                    int LA122_0 = input.LA(1);
+                    int alt123=2;
+                    int LA123_0 = input.LA(1);
 
-                    if ( (LA122_0==214) ) {
-                        alt122=1;
+                    if ( (LA123_0==214) ) {
+                        alt123=1;
                     }
-                    switch (alt122) {
+                    switch (alt123) {
                         case 1 :
                             // InternalSpringConfigDsl.g:8814:6: (lv_description_8_0= ruleDescription )
                             {
@@ -23852,20 +23870,20 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     }
 
                     // InternalSpringConfigDsl.g:8832:5: ( ( (lv_artefacts_9_0= ruleAbstractArtefact ) ) | ruleNullTag )*
-                    loop123:
+                    loop124:
                     do {
-                        int alt123=3;
-                        int LA123_0 = input.LA(1);
+                        int alt124=3;
+                        int LA124_0 = input.LA(1);
 
-                        if ( (LA123_0==134||LA123_0==154||LA123_0==156||LA123_0==159||LA123_0==176||LA123_0==180||LA123_0==182||LA123_0==184||LA123_0==188||LA123_0==197||LA123_0==202||LA123_0==204||LA123_0==206||LA123_0==209) ) {
-                            alt123=1;
+                        if ( (LA124_0==134||LA124_0==154||LA124_0==156||LA124_0==159||LA124_0==176||LA124_0==180||LA124_0==182||LA124_0==184||LA124_0==188||LA124_0==197||LA124_0==202||LA124_0==204||LA124_0==206||LA124_0==209) ) {
+                            alt124=1;
                         }
-                        else if ( (LA123_0==239) ) {
-                            alt123=2;
+                        else if ( (LA124_0==239) ) {
+                            alt124=2;
                         }
 
 
-                        switch (alt123) {
+                        switch (alt124) {
                     	case 1 :
                     	    // InternalSpringConfigDsl.g:8833:6: ( (lv_artefacts_9_0= ruleAbstractArtefact ) )
                     	    {
@@ -23922,7 +23940,7 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop123;
+                    	    break loop124;
                         }
                     } while (true);
 
@@ -24044,22 +24062,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:8894:2: ( ( () (otherlv_1= '<set' ( ( ( ( ({...}? => ( ({...}? => (otherlv_3= 'value-type=' ( (lv_valueType_4_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_5= 'merge=' ( (lv_merge_6_0= ruleDefaultableBoolean ) ) ) ) ) ) )* ) ) ) otherlv_7= '>' ( (lv_description_8_0= ruleDescription ) )? ( ( (lv_artefacts_9_0= ruleAbstractArtefact ) ) | ruleNullTag )* otherlv_11= '</set>' ) ) | this_UtilSet_12= ruleUtilSet )
             {
             // InternalSpringConfigDsl.g:8894:2: ( ( () (otherlv_1= '<set' ( ( ( ( ({...}? => ( ({...}? => (otherlv_3= 'value-type=' ( (lv_valueType_4_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_5= 'merge=' ( (lv_merge_6_0= ruleDefaultableBoolean ) ) ) ) ) ) )* ) ) ) otherlv_7= '>' ( (lv_description_8_0= ruleDescription ) )? ( ( (lv_artefacts_9_0= ruleAbstractArtefact ) ) | ruleNullTag )* otherlv_11= '</set>' ) ) | this_UtilSet_12= ruleUtilSet )
-            int alt128=2;
-            int LA128_0 = input.LA(1);
+            int alt129=2;
+            int LA129_0 = input.LA(1);
 
-            if ( (LA128_0==182) ) {
-                alt128=1;
+            if ( (LA129_0==182) ) {
+                alt129=1;
             }
-            else if ( (LA128_0==209) ) {
-                alt128=2;
+            else if ( (LA129_0==209) ) {
+                alt129=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 128, 0, input);
+                    new NoViableAltException("", 129, 0, input);
 
                 throw nvae;
             }
-            switch (alt128) {
+            switch (alt129) {
                 case 1 :
                     // InternalSpringConfigDsl.g:8895:3: ( () (otherlv_1= '<set' ( ( ( ( ({...}? => ( ({...}? => (otherlv_3= 'value-type=' ( (lv_valueType_4_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_5= 'merge=' ( (lv_merge_6_0= ruleDefaultableBoolean ) ) ) ) ) ) )* ) ) ) otherlv_7= '>' ( (lv_description_8_0= ruleDescription ) )? ( ( (lv_artefacts_9_0= ruleAbstractArtefact ) ) | ruleNullTag )* otherlv_11= '</set>' ) )
                     {
@@ -24097,20 +24115,20 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     // InternalSpringConfigDsl.g:8914:8: ( ({...}? => ( ({...}? => (otherlv_3= 'value-type=' ( (lv_valueType_4_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_5= 'merge=' ( (lv_merge_6_0= ruleDefaultableBoolean ) ) ) ) ) ) )*
                     {
                     // InternalSpringConfigDsl.g:8914:8: ( ({...}? => ( ({...}? => (otherlv_3= 'value-type=' ( (lv_valueType_4_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_5= 'merge=' ( (lv_merge_6_0= ruleDefaultableBoolean ) ) ) ) ) ) )*
-                    loop125:
+                    loop126:
                     do {
-                        int alt125=3;
-                        int LA125_0 = input.LA(1);
+                        int alt126=3;
+                        int LA126_0 = input.LA(1);
 
-                        if ( LA125_0 == 177 && getUnorderedGroupHelper().canSelect(grammarAccess.getSSetAccess().getUnorderedGroup_0_1_1(), 0) ) {
-                            alt125=1;
+                        if ( LA126_0 == 177 && getUnorderedGroupHelper().canSelect(grammarAccess.getSSetAccess().getUnorderedGroup_0_1_1(), 0) ) {
+                            alt126=1;
                         }
-                        else if ( LA125_0 == 178 && getUnorderedGroupHelper().canSelect(grammarAccess.getSSetAccess().getUnorderedGroup_0_1_1(), 1) ) {
-                            alt125=2;
+                        else if ( LA126_0 == 178 && getUnorderedGroupHelper().canSelect(grammarAccess.getSSetAccess().getUnorderedGroup_0_1_1(), 1) ) {
+                            alt126=2;
                         }
 
 
-                        switch (alt125) {
+                        switch (alt126) {
                     	case 1 :
                     	    // InternalSpringConfigDsl.g:8915:6: ({...}? => ( ({...}? => (otherlv_3= 'value-type=' ( (lv_valueType_4_0= ruleValidString ) ) ) ) ) )
                     	    {
@@ -24267,7 +24285,7 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop125;
+                    	    break loop126;
                         }
                     } while (true);
 
@@ -24288,13 +24306,13 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     					newLeafNode(otherlv_7, grammarAccess.getSSetAccess().getGreaterThanSignKeyword_0_1_2());
                     				
                     // InternalSpringConfigDsl.g:8994:5: ( (lv_description_8_0= ruleDescription ) )?
-                    int alt126=2;
-                    int LA126_0 = input.LA(1);
+                    int alt127=2;
+                    int LA127_0 = input.LA(1);
 
-                    if ( (LA126_0==214) ) {
-                        alt126=1;
+                    if ( (LA127_0==214) ) {
+                        alt127=1;
                     }
-                    switch (alt126) {
+                    switch (alt127) {
                         case 1 :
                             // InternalSpringConfigDsl.g:8995:6: (lv_description_8_0= ruleDescription )
                             {
@@ -24330,20 +24348,20 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     }
 
                     // InternalSpringConfigDsl.g:9013:5: ( ( (lv_artefacts_9_0= ruleAbstractArtefact ) ) | ruleNullTag )*
-                    loop127:
+                    loop128:
                     do {
-                        int alt127=3;
-                        int LA127_0 = input.LA(1);
+                        int alt128=3;
+                        int LA128_0 = input.LA(1);
 
-                        if ( (LA127_0==134||LA127_0==154||LA127_0==156||LA127_0==159||LA127_0==176||LA127_0==180||LA127_0==182||LA127_0==184||LA127_0==188||LA127_0==197||LA127_0==202||LA127_0==204||LA127_0==206||LA127_0==209) ) {
-                            alt127=1;
+                        if ( (LA128_0==134||LA128_0==154||LA128_0==156||LA128_0==159||LA128_0==176||LA128_0==180||LA128_0==182||LA128_0==184||LA128_0==188||LA128_0==197||LA128_0==202||LA128_0==204||LA128_0==206||LA128_0==209) ) {
+                            alt128=1;
                         }
-                        else if ( (LA127_0==239) ) {
-                            alt127=2;
+                        else if ( (LA128_0==239) ) {
+                            alt128=2;
                         }
 
 
-                        switch (alt127) {
+                        switch (alt128) {
                     	case 1 :
                     	    // InternalSpringConfigDsl.g:9014:6: ( (lv_artefacts_9_0= ruleAbstractArtefact ) )
                     	    {
@@ -24400,7 +24418,7 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop127;
+                    	    break loop128;
                         }
                     } while (true);
 
@@ -24522,22 +24540,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:9075:2: ( ( () (otherlv_1= '<props' ( ( ( ( ({...}? => ( ({...}? => (otherlv_3= 'value-type=' ( (lv_valueType_4_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_5= 'merge=' ( (lv_merge_6_0= ruleDefaultableBoolean ) ) ) ) ) ) )* ) ) ) otherlv_7= '>' ( (lv_description_8_0= ruleDescription ) )? ( (lv_props_9_0= ruleProp ) )* otherlv_10= '</props>' ) ) | this_UtilProperties_11= ruleUtilProperties )
             {
             // InternalSpringConfigDsl.g:9075:2: ( ( () (otherlv_1= '<props' ( ( ( ( ({...}? => ( ({...}? => (otherlv_3= 'value-type=' ( (lv_valueType_4_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_5= 'merge=' ( (lv_merge_6_0= ruleDefaultableBoolean ) ) ) ) ) ) )* ) ) ) otherlv_7= '>' ( (lv_description_8_0= ruleDescription ) )? ( (lv_props_9_0= ruleProp ) )* otherlv_10= '</props>' ) ) | this_UtilProperties_11= ruleUtilProperties )
-            int alt132=2;
-            int LA132_0 = input.LA(1);
+            int alt133=2;
+            int LA133_0 = input.LA(1);
 
-            if ( (LA132_0==184) ) {
-                alt132=1;
+            if ( (LA133_0==184) ) {
+                alt133=1;
             }
-            else if ( (LA132_0==202) ) {
-                alt132=2;
+            else if ( (LA133_0==202) ) {
+                alt133=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 132, 0, input);
+                    new NoViableAltException("", 133, 0, input);
 
                 throw nvae;
             }
-            switch (alt132) {
+            switch (alt133) {
                 case 1 :
                     // InternalSpringConfigDsl.g:9076:3: ( () (otherlv_1= '<props' ( ( ( ( ({...}? => ( ({...}? => (otherlv_3= 'value-type=' ( (lv_valueType_4_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_5= 'merge=' ( (lv_merge_6_0= ruleDefaultableBoolean ) ) ) ) ) ) )* ) ) ) otherlv_7= '>' ( (lv_description_8_0= ruleDescription ) )? ( (lv_props_9_0= ruleProp ) )* otherlv_10= '</props>' ) )
                     {
@@ -24575,20 +24593,20 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     // InternalSpringConfigDsl.g:9095:8: ( ({...}? => ( ({...}? => (otherlv_3= 'value-type=' ( (lv_valueType_4_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_5= 'merge=' ( (lv_merge_6_0= ruleDefaultableBoolean ) ) ) ) ) ) )*
                     {
                     // InternalSpringConfigDsl.g:9095:8: ( ({...}? => ( ({...}? => (otherlv_3= 'value-type=' ( (lv_valueType_4_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_5= 'merge=' ( (lv_merge_6_0= ruleDefaultableBoolean ) ) ) ) ) ) )*
-                    loop129:
+                    loop130:
                     do {
-                        int alt129=3;
-                        int LA129_0 = input.LA(1);
+                        int alt130=3;
+                        int LA130_0 = input.LA(1);
 
-                        if ( LA129_0 == 177 && getUnorderedGroupHelper().canSelect(grammarAccess.getPropsAccess().getUnorderedGroup_0_1_1(), 0) ) {
-                            alt129=1;
+                        if ( LA130_0 == 177 && getUnorderedGroupHelper().canSelect(grammarAccess.getPropsAccess().getUnorderedGroup_0_1_1(), 0) ) {
+                            alt130=1;
                         }
-                        else if ( LA129_0 == 178 && getUnorderedGroupHelper().canSelect(grammarAccess.getPropsAccess().getUnorderedGroup_0_1_1(), 1) ) {
-                            alt129=2;
+                        else if ( LA130_0 == 178 && getUnorderedGroupHelper().canSelect(grammarAccess.getPropsAccess().getUnorderedGroup_0_1_1(), 1) ) {
+                            alt130=2;
                         }
 
 
-                        switch (alt129) {
+                        switch (alt130) {
                     	case 1 :
                     	    // InternalSpringConfigDsl.g:9096:6: ({...}? => ( ({...}? => (otherlv_3= 'value-type=' ( (lv_valueType_4_0= ruleValidString ) ) ) ) ) )
                     	    {
@@ -24745,7 +24763,7 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop129;
+                    	    break loop130;
                         }
                     } while (true);
 
@@ -24766,13 +24784,13 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     					newLeafNode(otherlv_7, grammarAccess.getPropsAccess().getGreaterThanSignKeyword_0_1_2());
                     				
                     // InternalSpringConfigDsl.g:9175:5: ( (lv_description_8_0= ruleDescription ) )?
-                    int alt130=2;
-                    int LA130_0 = input.LA(1);
+                    int alt131=2;
+                    int LA131_0 = input.LA(1);
 
-                    if ( (LA130_0==214) ) {
-                        alt130=1;
+                    if ( (LA131_0==214) ) {
+                        alt131=1;
                     }
-                    switch (alt130) {
+                    switch (alt131) {
                         case 1 :
                             // InternalSpringConfigDsl.g:9176:6: (lv_description_8_0= ruleDescription )
                             {
@@ -24808,17 +24826,17 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     }
 
                     // InternalSpringConfigDsl.g:9194:5: ( (lv_props_9_0= ruleProp ) )*
-                    loop131:
+                    loop132:
                     do {
-                        int alt131=2;
-                        int LA131_0 = input.LA(1);
+                        int alt132=2;
+                        int LA132_0 = input.LA(1);
 
-                        if ( (LA131_0==186) ) {
-                            alt131=1;
+                        if ( (LA132_0==186) ) {
+                            alt132=1;
                         }
 
 
-                        switch (alt131) {
+                        switch (alt132) {
                     	case 1 :
                     	    // InternalSpringConfigDsl.g:9195:6: (lv_props_9_0= ruleProp )
                     	    {
@@ -24852,7 +24870,7 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop131;
+                    	    break loop132;
                         }
                     } while (true);
 
@@ -25137,22 +25155,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:9319:2: ( ( () (otherlv_1= '<map' ( ( ( ( ({...}? => ( ({...}? => (otherlv_3= 'key-type=' ( (lv_keyType_4_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_5= 'merge=' ( (lv_merge_6_0= ruleDefaultableBoolean ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_7= 'value-type=' ( (lv_valueType_8_0= ruleValidString ) ) ) ) ) ) )* ) ) ) otherlv_9= '>' ( (lv_description_10_0= ruleDescription ) )? ( (lv_entries_11_0= ruleMapEntry ) )* otherlv_12= '</map>' ) ) | this_UtilMap_13= ruleUtilMap )
             {
             // InternalSpringConfigDsl.g:9319:2: ( ( () (otherlv_1= '<map' ( ( ( ( ({...}? => ( ({...}? => (otherlv_3= 'key-type=' ( (lv_keyType_4_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_5= 'merge=' ( (lv_merge_6_0= ruleDefaultableBoolean ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_7= 'value-type=' ( (lv_valueType_8_0= ruleValidString ) ) ) ) ) ) )* ) ) ) otherlv_9= '>' ( (lv_description_10_0= ruleDescription ) )? ( (lv_entries_11_0= ruleMapEntry ) )* otherlv_12= '</map>' ) ) | this_UtilMap_13= ruleUtilMap )
-            int alt136=2;
-            int LA136_0 = input.LA(1);
+            int alt137=2;
+            int LA137_0 = input.LA(1);
 
-            if ( (LA136_0==188) ) {
-                alt136=1;
+            if ( (LA137_0==188) ) {
+                alt137=1;
             }
-            else if ( (LA136_0==206) ) {
-                alt136=2;
+            else if ( (LA137_0==206) ) {
+                alt137=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 136, 0, input);
+                    new NoViableAltException("", 137, 0, input);
 
                 throw nvae;
             }
-            switch (alt136) {
+            switch (alt137) {
                 case 1 :
                     // InternalSpringConfigDsl.g:9320:3: ( () (otherlv_1= '<map' ( ( ( ( ({...}? => ( ({...}? => (otherlv_3= 'key-type=' ( (lv_keyType_4_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_5= 'merge=' ( (lv_merge_6_0= ruleDefaultableBoolean ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_7= 'value-type=' ( (lv_valueType_8_0= ruleValidString ) ) ) ) ) ) )* ) ) ) otherlv_9= '>' ( (lv_description_10_0= ruleDescription ) )? ( (lv_entries_11_0= ruleMapEntry ) )* otherlv_12= '</map>' ) )
                     {
@@ -25190,23 +25208,23 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     // InternalSpringConfigDsl.g:9339:8: ( ({...}? => ( ({...}? => (otherlv_3= 'key-type=' ( (lv_keyType_4_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_5= 'merge=' ( (lv_merge_6_0= ruleDefaultableBoolean ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_7= 'value-type=' ( (lv_valueType_8_0= ruleValidString ) ) ) ) ) ) )*
                     {
                     // InternalSpringConfigDsl.g:9339:8: ( ({...}? => ( ({...}? => (otherlv_3= 'key-type=' ( (lv_keyType_4_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_5= 'merge=' ( (lv_merge_6_0= ruleDefaultableBoolean ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_7= 'value-type=' ( (lv_valueType_8_0= ruleValidString ) ) ) ) ) ) )*
-                    loop133:
+                    loop134:
                     do {
-                        int alt133=4;
-                        int LA133_0 = input.LA(1);
+                        int alt134=4;
+                        int LA134_0 = input.LA(1);
 
-                        if ( LA133_0 == 189 && getUnorderedGroupHelper().canSelect(grammarAccess.getMapAccess().getUnorderedGroup_0_1_1(), 0) ) {
-                            alt133=1;
+                        if ( LA134_0 == 189 && getUnorderedGroupHelper().canSelect(grammarAccess.getMapAccess().getUnorderedGroup_0_1_1(), 0) ) {
+                            alt134=1;
                         }
-                        else if ( LA133_0 == 178 && getUnorderedGroupHelper().canSelect(grammarAccess.getMapAccess().getUnorderedGroup_0_1_1(), 1) ) {
-                            alt133=2;
+                        else if ( LA134_0 == 178 && getUnorderedGroupHelper().canSelect(grammarAccess.getMapAccess().getUnorderedGroup_0_1_1(), 1) ) {
+                            alt134=2;
                         }
-                        else if ( LA133_0 == 177 && getUnorderedGroupHelper().canSelect(grammarAccess.getMapAccess().getUnorderedGroup_0_1_1(), 2) ) {
-                            alt133=3;
+                        else if ( LA134_0 == 177 && getUnorderedGroupHelper().canSelect(grammarAccess.getMapAccess().getUnorderedGroup_0_1_1(), 2) ) {
+                            alt134=3;
                         }
 
 
-                        switch (alt133) {
+                        switch (alt134) {
                     	case 1 :
                     	    // InternalSpringConfigDsl.g:9340:6: ({...}? => ( ({...}? => (otherlv_3= 'key-type=' ( (lv_keyType_4_0= ruleValidString ) ) ) ) ) )
                     	    {
@@ -25440,7 +25458,7 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop133;
+                    	    break loop134;
                         }
                     } while (true);
 
@@ -25461,13 +25479,13 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     					newLeafNode(otherlv_9, grammarAccess.getMapAccess().getGreaterThanSignKeyword_0_1_2());
                     				
                     // InternalSpringConfigDsl.g:9453:5: ( (lv_description_10_0= ruleDescription ) )?
-                    int alt134=2;
-                    int LA134_0 = input.LA(1);
+                    int alt135=2;
+                    int LA135_0 = input.LA(1);
 
-                    if ( (LA134_0==214) ) {
-                        alt134=1;
+                    if ( (LA135_0==214) ) {
+                        alt135=1;
                     }
-                    switch (alt134) {
+                    switch (alt135) {
                         case 1 :
                             // InternalSpringConfigDsl.g:9454:6: (lv_description_10_0= ruleDescription )
                             {
@@ -25503,17 +25521,17 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     }
 
                     // InternalSpringConfigDsl.g:9472:5: ( (lv_entries_11_0= ruleMapEntry ) )*
-                    loop135:
+                    loop136:
                     do {
-                        int alt135=2;
-                        int LA135_0 = input.LA(1);
+                        int alt136=2;
+                        int LA136_0 = input.LA(1);
 
-                        if ( (LA135_0==191) ) {
-                            alt135=1;
+                        if ( (LA136_0==191) ) {
+                            alt136=1;
                         }
 
 
-                        switch (alt135) {
+                        switch (alt136) {
                     	case 1 :
                     	    // InternalSpringConfigDsl.g:9473:6: (lv_entries_11_0= ruleMapEntry )
                     	    {
@@ -25547,7 +25565,7 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop135;
+                    	    break loop136;
                         }
                     } while (true);
 
@@ -25676,29 +25694,29 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             			newLeafNode(otherlv_0, grammarAccess.getMapEntryAccess().getEntryKeyword_0());
             		
             // InternalSpringConfigDsl.g:9529:3: ( (this_MapEntryKey_1= ruleMapEntryKey | this_MapEntryValue_2= ruleMapEntryValue | this_MapEntryAtt_3= ruleMapEntryAtt ) | (otherlv_4= '>' ( (lv_key_5_0= ruleKey ) ) ( ( (lv_value_6_0= ruleAbstractArtefact ) ) | ruleNullTag ) ( (lv_description_8_0= ruleDescription ) )? otherlv_9= '</entry>' ) )
-            int alt140=2;
-            int LA140_0 = input.LA(1);
+            int alt141=2;
+            int LA141_0 = input.LA(1);
 
-            if ( (LA140_0==153||LA140_0==172||LA140_0==177||(LA140_0>=195 && LA140_0<=196)) ) {
-                alt140=1;
+            if ( (LA141_0==153||LA141_0==172||LA141_0==177||(LA141_0>=195 && LA141_0<=196)) ) {
+                alt141=1;
             }
-            else if ( (LA140_0==26) ) {
-                alt140=2;
+            else if ( (LA141_0==26) ) {
+                alt141=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 140, 0, input);
+                    new NoViableAltException("", 141, 0, input);
 
                 throw nvae;
             }
-            switch (alt140) {
+            switch (alt141) {
                 case 1 :
                     // InternalSpringConfigDsl.g:9530:4: (this_MapEntryKey_1= ruleMapEntryKey | this_MapEntryValue_2= ruleMapEntryValue | this_MapEntryAtt_3= ruleMapEntryAtt )
                     {
                     // InternalSpringConfigDsl.g:9530:4: (this_MapEntryKey_1= ruleMapEntryKey | this_MapEntryValue_2= ruleMapEntryValue | this_MapEntryAtt_3= ruleMapEntryAtt )
-                    int alt137=3;
-                    alt137 = dfa137.predict(input);
-                    switch (alt137) {
+                    int alt138=3;
+                    alt138 = dfa138.predict(input);
+                    switch (alt138) {
                         case 1 :
                             // InternalSpringConfigDsl.g:9531:5: this_MapEntryKey_1= ruleMapEntryKey
                             {
@@ -25801,22 +25819,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     }
 
                     // InternalSpringConfigDsl.g:9583:5: ( ( (lv_value_6_0= ruleAbstractArtefact ) ) | ruleNullTag )
-                    int alt138=2;
-                    int LA138_0 = input.LA(1);
+                    int alt139=2;
+                    int LA139_0 = input.LA(1);
 
-                    if ( (LA138_0==134||LA138_0==154||LA138_0==156||LA138_0==159||LA138_0==176||LA138_0==180||LA138_0==182||LA138_0==184||LA138_0==188||LA138_0==197||LA138_0==202||LA138_0==204||LA138_0==206||LA138_0==209) ) {
-                        alt138=1;
+                    if ( (LA139_0==134||LA139_0==154||LA139_0==156||LA139_0==159||LA139_0==176||LA139_0==180||LA139_0==182||LA139_0==184||LA139_0==188||LA139_0==197||LA139_0==202||LA139_0==204||LA139_0==206||LA139_0==209) ) {
+                        alt139=1;
                     }
-                    else if ( (LA138_0==239) ) {
-                        alt138=2;
+                    else if ( (LA139_0==239) ) {
+                        alt139=2;
                     }
                     else {
                         NoViableAltException nvae =
-                            new NoViableAltException("", 138, 0, input);
+                            new NoViableAltException("", 139, 0, input);
 
                         throw nvae;
                     }
-                    switch (alt138) {
+                    switch (alt139) {
                         case 1 :
                             // InternalSpringConfigDsl.g:9584:6: ( (lv_value_6_0= ruleAbstractArtefact ) )
                             {
@@ -25875,13 +25893,13 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     }
 
                     // InternalSpringConfigDsl.g:9612:5: ( (lv_description_8_0= ruleDescription ) )?
-                    int alt139=2;
-                    int LA139_0 = input.LA(1);
+                    int alt140=2;
+                    int LA140_0 = input.LA(1);
 
-                    if ( (LA139_0==214) ) {
-                        alt139=1;
+                    if ( (LA140_0==214) ) {
+                        alt140=1;
                     }
-                    switch (alt139) {
+                    switch (alt140) {
                         case 1 :
                             // InternalSpringConfigDsl.g:9613:6: (lv_description_8_0= ruleDescription )
                             {
@@ -26027,21 +26045,21 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:9662:6: ( ({...}? => ( ({...}? => (otherlv_1= 'value-type=' ( (lv_valueType_2_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_key_3_0= ruleMapEntryKeyAtt ) ) ) ) ) )+ {...}?
             {
             // InternalSpringConfigDsl.g:9662:6: ( ({...}? => ( ({...}? => (otherlv_1= 'value-type=' ( (lv_valueType_2_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_key_3_0= ruleMapEntryKeyAtt ) ) ) ) ) )+
-            int cnt141=0;
-            loop141:
+            int cnt142=0;
+            loop142:
             do {
-                int alt141=3;
-                int LA141_0 = input.LA(1);
+                int alt142=3;
+                int LA142_0 = input.LA(1);
 
-                if ( LA141_0 == 177 && getUnorderedGroupHelper().canSelect(grammarAccess.getMapEntryKeyAccess().getUnorderedGroup_0(), 0) ) {
-                    alt141=1;
+                if ( LA142_0 == 177 && getUnorderedGroupHelper().canSelect(grammarAccess.getMapEntryKeyAccess().getUnorderedGroup_0(), 0) ) {
+                    alt142=1;
                 }
-                else if ( ( LA141_0 == 172 || LA141_0 == 195 ) && getUnorderedGroupHelper().canSelect(grammarAccess.getMapEntryKeyAccess().getUnorderedGroup_0(), 1) ) {
-                    alt141=2;
+                else if ( ( LA142_0 == 172 || LA142_0 == 195 ) && getUnorderedGroupHelper().canSelect(grammarAccess.getMapEntryKeyAccess().getUnorderedGroup_0(), 1) ) {
+                    alt142=2;
                 }
 
 
-                switch (alt141) {
+                switch (alt142) {
             	case 1 :
             	    // InternalSpringConfigDsl.g:9663:4: ({...}? => ( ({...}? => (otherlv_1= 'value-type=' ( (lv_valueType_2_0= ruleValidString ) ) ) ) ) )
             	    {
@@ -26188,12 +26206,12 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    if ( cnt141 >= 1 ) break loop141;
+            	    if ( cnt142 >= 1 ) break loop142;
                         EarlyExitException eee =
-                            new EarlyExitException(141, input);
+                            new EarlyExitException(142, input);
                         throw eee;
                 }
-                cnt141++;
+                cnt142++;
             } while (true);
 
             if ( ! getUnorderedGroupHelper().canLeave(grammarAccess.getMapEntryKeyAccess().getUnorderedGroup_0()) ) {
@@ -26216,13 +26234,13 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             			newLeafNode(otherlv_4, grammarAccess.getMapEntryKeyAccess().getGreaterThanSignKeyword_1());
             		
             // InternalSpringConfigDsl.g:9737:3: ( (lv_description_5_0= ruleDescription ) )?
-            int alt142=2;
-            int LA142_0 = input.LA(1);
+            int alt143=2;
+            int LA143_0 = input.LA(1);
 
-            if ( (LA142_0==214) ) {
-                alt142=1;
+            if ( (LA143_0==214) ) {
+                alt143=1;
             }
-            switch (alt142) {
+            switch (alt143) {
                 case 1 :
                     // InternalSpringConfigDsl.g:9738:4: (lv_description_5_0= ruleDescription )
                     {
@@ -26392,21 +26410,21 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:9804:6: ( ({...}? => ( ({...}? => (otherlv_1= 'value-type=' ( (lv_valueType_2_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => ( ( (lv_value_3_0= ruleAttributSimpleValue ) ) | ( (lv_value_4_0= ruleMapEntryValRef ) ) ) ) ) ) )+ {...}?
             {
             // InternalSpringConfigDsl.g:9804:6: ( ({...}? => ( ({...}? => (otherlv_1= 'value-type=' ( (lv_valueType_2_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => ( ( (lv_value_3_0= ruleAttributSimpleValue ) ) | ( (lv_value_4_0= ruleMapEntryValRef ) ) ) ) ) ) )+
-            int cnt144=0;
-            loop144:
+            int cnt145=0;
+            loop145:
             do {
-                int alt144=3;
-                int LA144_0 = input.LA(1);
+                int alt145=3;
+                int LA145_0 = input.LA(1);
 
-                if ( LA144_0 == 177 && getUnorderedGroupHelper().canSelect(grammarAccess.getMapEntryValueAccess().getUnorderedGroup_0(), 0) ) {
-                    alt144=1;
+                if ( LA145_0 == 177 && getUnorderedGroupHelper().canSelect(grammarAccess.getMapEntryValueAccess().getUnorderedGroup_0(), 0) ) {
+                    alt145=1;
                 }
-                else if ( ( LA144_0 == 153 || LA144_0 == 196 ) && getUnorderedGroupHelper().canSelect(grammarAccess.getMapEntryValueAccess().getUnorderedGroup_0(), 1) ) {
-                    alt144=2;
+                else if ( ( LA145_0 == 153 || LA145_0 == 196 ) && getUnorderedGroupHelper().canSelect(grammarAccess.getMapEntryValueAccess().getUnorderedGroup_0(), 1) ) {
+                    alt145=2;
                 }
 
 
-                switch (alt144) {
+                switch (alt145) {
             	case 1 :
             	    // InternalSpringConfigDsl.g:9805:4: ({...}? => ( ({...}? => (otherlv_1= 'value-type=' ( (lv_valueType_2_0= ruleValidString ) ) ) ) ) )
             	    {
@@ -26506,22 +26524,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	        throw new FailedPredicateException(input, "ruleMapEntryValue", "true");
             	    }
             	    // InternalSpringConfigDsl.g:9844:19: ( ( (lv_value_3_0= ruleAttributSimpleValue ) ) | ( (lv_value_4_0= ruleMapEntryValRef ) ) )
-            	    int alt143=2;
-            	    int LA143_0 = input.LA(1);
+            	    int alt144=2;
+            	    int LA144_0 = input.LA(1);
 
-            	    if ( (LA143_0==153) ) {
-            	        alt143=1;
+            	    if ( (LA144_0==153) ) {
+            	        alt144=1;
             	    }
-            	    else if ( (LA143_0==196) ) {
-            	        alt143=2;
+            	    else if ( (LA144_0==196) ) {
+            	        alt144=2;
             	    }
             	    else {
             	        NoViableAltException nvae =
-            	            new NoViableAltException("", 143, 0, input);
+            	            new NoViableAltException("", 144, 0, input);
 
             	        throw nvae;
             	    }
-            	    switch (alt143) {
+            	    switch (alt144) {
             	        case 1 :
             	            // InternalSpringConfigDsl.g:9844:20: ( (lv_value_3_0= ruleAttributSimpleValue ) )
             	            {
@@ -26616,12 +26634,12 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    if ( cnt144 >= 1 ) break loop144;
+            	    if ( cnt145 >= 1 ) break loop145;
                         EarlyExitException eee =
-                            new EarlyExitException(144, input);
+                            new EarlyExitException(145, input);
                         throw eee;
                 }
-                cnt144++;
+                cnt145++;
             } while (true);
 
             if ( ! getUnorderedGroupHelper().canLeave(grammarAccess.getMapEntryValueAccess().getUnorderedGroup_0()) ) {
@@ -26675,13 +26693,13 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             }
 
             // InternalSpringConfigDsl.g:9920:3: ( (lv_description_7_0= ruleDescription ) )?
-            int alt145=2;
-            int LA145_0 = input.LA(1);
+            int alt146=2;
+            int LA146_0 = input.LA(1);
 
-            if ( (LA145_0==214) ) {
-                alt145=1;
+            if ( (LA146_0==214) ) {
+                alt146=1;
             }
-            switch (alt145) {
+            switch (alt146) {
                 case 1 :
                     // InternalSpringConfigDsl.g:9921:4: (lv_description_7_0= ruleDescription )
                     {
@@ -26821,21 +26839,21 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:9968:6: ( ({...}? => ( ({...}? => ( (otherlv_1= 'value-type=' ( (lv_valueType_2_0= ruleValidString ) ) )? ( (lv_key_3_0= ruleMapEntryKeyAtt ) ) ) ) ) ) | ({...}? => ( ({...}? => ( ( (lv_value_4_0= ruleAttributSimpleValue ) ) | ( (lv_value_5_0= ruleMapEntryValRef ) ) ) ) ) ) )+ {...}?
             {
             // InternalSpringConfigDsl.g:9968:6: ( ({...}? => ( ({...}? => ( (otherlv_1= 'value-type=' ( (lv_valueType_2_0= ruleValidString ) ) )? ( (lv_key_3_0= ruleMapEntryKeyAtt ) ) ) ) ) ) | ({...}? => ( ({...}? => ( ( (lv_value_4_0= ruleAttributSimpleValue ) ) | ( (lv_value_5_0= ruleMapEntryValRef ) ) ) ) ) ) )+
-            int cnt148=0;
-            loop148:
+            int cnt149=0;
+            loop149:
             do {
-                int alt148=3;
-                int LA148_0 = input.LA(1);
+                int alt149=3;
+                int LA149_0 = input.LA(1);
 
-                if ( ( LA148_0 == 172 || LA148_0 == 177 || LA148_0 == 195 ) && getUnorderedGroupHelper().canSelect(grammarAccess.getMapEntryAttAccess().getUnorderedGroup_0(), 0) ) {
-                    alt148=1;
+                if ( ( LA149_0 == 172 || LA149_0 == 177 || LA149_0 == 195 ) && getUnorderedGroupHelper().canSelect(grammarAccess.getMapEntryAttAccess().getUnorderedGroup_0(), 0) ) {
+                    alt149=1;
                 }
-                else if ( ( LA148_0 == 153 || LA148_0 == 196 ) && getUnorderedGroupHelper().canSelect(grammarAccess.getMapEntryAttAccess().getUnorderedGroup_0(), 1) ) {
-                    alt148=2;
+                else if ( ( LA149_0 == 153 || LA149_0 == 196 ) && getUnorderedGroupHelper().canSelect(grammarAccess.getMapEntryAttAccess().getUnorderedGroup_0(), 1) ) {
+                    alt149=2;
                 }
 
 
-                switch (alt148) {
+                switch (alt149) {
             	case 1 :
             	    // InternalSpringConfigDsl.g:9969:4: ({...}? => ( ({...}? => ( (otherlv_1= 'value-type=' ( (lv_valueType_2_0= ruleValidString ) ) )? ( (lv_key_3_0= ruleMapEntryKeyAtt ) ) ) ) ) )
             	    {
@@ -26861,13 +26879,13 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	    // InternalSpringConfigDsl.g:9974:20: (otherlv_1= 'value-type=' ( (lv_valueType_2_0= ruleValidString ) ) )? ( (lv_key_3_0= ruleMapEntryKeyAtt ) )
             	    {
             	    // InternalSpringConfigDsl.g:9974:20: (otherlv_1= 'value-type=' ( (lv_valueType_2_0= ruleValidString ) ) )?
-            	    int alt146=2;
-            	    int LA146_0 = input.LA(1);
+            	    int alt147=2;
+            	    int LA147_0 = input.LA(1);
 
-            	    if ( (LA146_0==177) ) {
-            	        alt146=1;
+            	    if ( (LA147_0==177) ) {
+            	        alt147=1;
             	    }
-            	    switch (alt146) {
+            	    switch (alt147) {
             	        case 1 :
             	            // InternalSpringConfigDsl.g:9975:10: otherlv_1= 'value-type=' ( (lv_valueType_2_0= ruleValidString ) )
             	            {
@@ -26983,22 +27001,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	        throw new FailedPredicateException(input, "ruleMapEntryAtt", "true");
             	    }
             	    // InternalSpringConfigDsl.g:10029:19: ( ( (lv_value_4_0= ruleAttributSimpleValue ) ) | ( (lv_value_5_0= ruleMapEntryValRef ) ) )
-            	    int alt147=2;
-            	    int LA147_0 = input.LA(1);
+            	    int alt148=2;
+            	    int LA148_0 = input.LA(1);
 
-            	    if ( (LA147_0==153) ) {
-            	        alt147=1;
+            	    if ( (LA148_0==153) ) {
+            	        alt148=1;
             	    }
-            	    else if ( (LA147_0==196) ) {
-            	        alt147=2;
+            	    else if ( (LA148_0==196) ) {
+            	        alt148=2;
             	    }
             	    else {
             	        NoViableAltException nvae =
-            	            new NoViableAltException("", 147, 0, input);
+            	            new NoViableAltException("", 148, 0, input);
 
             	        throw nvae;
             	    }
-            	    switch (alt147) {
+            	    switch (alt148) {
             	        case 1 :
             	            // InternalSpringConfigDsl.g:10029:20: ( (lv_value_4_0= ruleAttributSimpleValue ) )
             	            {
@@ -27093,12 +27111,12 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    if ( cnt148 >= 1 ) break loop148;
+            	    if ( cnt149 >= 1 ) break loop149;
                         EarlyExitException eee =
-                            new EarlyExitException(148, input);
+                            new EarlyExitException(149, input);
                         throw eee;
                 }
-                cnt148++;
+                cnt149++;
             } while (true);
 
             if ( ! getUnorderedGroupHelper().canLeave(grammarAccess.getMapEntryAttAccess().getUnorderedGroup_0()) ) {
@@ -27117,22 +27135,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             }
 
             // InternalSpringConfigDsl.g:10082:3: (otherlv_6= '/>' | (otherlv_7= '>' ( (lv_description_8_0= ruleDescription ) )? otherlv_9= '</entry>' ) )
-            int alt150=2;
-            int LA150_0 = input.LA(1);
+            int alt151=2;
+            int LA151_0 = input.LA(1);
 
-            if ( (LA150_0==31) ) {
-                alt150=1;
+            if ( (LA151_0==31) ) {
+                alt151=1;
             }
-            else if ( (LA150_0==26) ) {
-                alt150=2;
+            else if ( (LA151_0==26) ) {
+                alt151=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 150, 0, input);
+                    new NoViableAltException("", 151, 0, input);
 
                 throw nvae;
             }
-            switch (alt150) {
+            switch (alt151) {
                 case 1 :
                     // InternalSpringConfigDsl.g:10083:4: otherlv_6= '/>'
                     {
@@ -27154,13 +27172,13 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     					newLeafNode(otherlv_7, grammarAccess.getMapEntryAttAccess().getGreaterThanSignKeyword_1_1_0());
                     				
                     // InternalSpringConfigDsl.g:10093:5: ( (lv_description_8_0= ruleDescription ) )?
-                    int alt149=2;
-                    int LA149_0 = input.LA(1);
+                    int alt150=2;
+                    int LA150_0 = input.LA(1);
 
-                    if ( (LA149_0==214) ) {
-                        alt149=1;
+                    if ( (LA150_0==214) ) {
+                        alt150=1;
                     }
-                    switch (alt149) {
+                    switch (alt150) {
                         case 1 :
                             // InternalSpringConfigDsl.g:10094:6: (lv_description_8_0= ruleDescription )
                             {
@@ -27309,13 +27327,13 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             			newLeafNode(otherlv_2, grammarAccess.getKeyAccess().getGreaterThanSignKeyword_2());
             		
             // InternalSpringConfigDsl.g:10152:3: ( (lv_description_3_0= ruleDescription ) )?
-            int alt151=2;
-            int LA151_0 = input.LA(1);
+            int alt152=2;
+            int LA152_0 = input.LA(1);
 
-            if ( (LA151_0==214) ) {
-                alt151=1;
+            if ( (LA152_0==214) ) {
+                alt152=1;
             }
-            switch (alt151) {
+            switch (alt152) {
                 case 1 :
                     // InternalSpringConfigDsl.g:10153:4: (lv_description_3_0= ruleDescription )
                     {
@@ -27351,22 +27369,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             }
 
             // InternalSpringConfigDsl.g:10171:3: ( ( (lv_key_4_0= ruleAbstractArtefact ) ) | ruleNullTag )
-            int alt152=2;
-            int LA152_0 = input.LA(1);
+            int alt153=2;
+            int LA153_0 = input.LA(1);
 
-            if ( (LA152_0==134||LA152_0==154||LA152_0==156||LA152_0==159||LA152_0==176||LA152_0==180||LA152_0==182||LA152_0==184||LA152_0==188||LA152_0==197||LA152_0==202||LA152_0==204||LA152_0==206||LA152_0==209) ) {
-                alt152=1;
+            if ( (LA153_0==134||LA153_0==154||LA153_0==156||LA153_0==159||LA153_0==176||LA153_0==180||LA153_0==182||LA153_0==184||LA153_0==188||LA153_0==197||LA153_0==202||LA153_0==204||LA153_0==206||LA153_0==209) ) {
+                alt153=1;
             }
-            else if ( (LA152_0==239) ) {
-                alt152=2;
+            else if ( (LA153_0==239) ) {
+                alt153=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 152, 0, input);
+                    new NoViableAltException("", 153, 0, input);
 
                 throw nvae;
             }
-            switch (alt152) {
+            switch (alt153) {
                 case 1 :
                     // InternalSpringConfigDsl.g:10172:4: ( (lv_key_4_0= ruleAbstractArtefact ) )
                     {
@@ -27519,22 +27537,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             }
 
             // InternalSpringConfigDsl.g:10230:3: ( (otherlv_1= 'key=' ( (lv_key_2_0= ruleDataString ) ) ) | ( (lv_key_3_0= ruleMapEntrykeyRef ) ) )
-            int alt153=2;
-            int LA153_0 = input.LA(1);
+            int alt154=2;
+            int LA154_0 = input.LA(1);
 
-            if ( (LA153_0==172) ) {
-                alt153=1;
+            if ( (LA154_0==172) ) {
+                alt154=1;
             }
-            else if ( (LA153_0==195) ) {
-                alt153=2;
+            else if ( (LA154_0==195) ) {
+                alt154=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 153, 0, input);
+                    new NoViableAltException("", 154, 0, input);
 
                 throw nvae;
             }
-            switch (alt153) {
+            switch (alt154) {
                 case 1 :
                     // InternalSpringConfigDsl.g:10231:4: (otherlv_1= 'key=' ( (lv_key_2_0= ruleDataString ) ) )
                     {
@@ -27947,21 +27965,21 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:10391:6: ( ({...}? => ( ({...}? => (otherlv_3= 'static-field=' ( (lv_StaticField_4_0= RULE_STRING ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_5= 'id=' ( (lv_name_6_0= ruleValidString ) ) ) ) ) ) )+ {...}?
             {
             // InternalSpringConfigDsl.g:10391:6: ( ({...}? => ( ({...}? => (otherlv_3= 'static-field=' ( (lv_StaticField_4_0= RULE_STRING ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_5= 'id=' ( (lv_name_6_0= ruleValidString ) ) ) ) ) ) )+
-            int cnt154=0;
-            loop154:
+            int cnt155=0;
+            loop155:
             do {
-                int alt154=3;
-                int LA154_0 = input.LA(1);
+                int alt155=3;
+                int LA155_0 = input.LA(1);
 
-                if ( LA154_0 == 198 && getUnorderedGroupHelper().canSelect(grammarAccess.getUtilConstantAccess().getUnorderedGroup_2(), 0) ) {
-                    alt154=1;
+                if ( LA155_0 == 198 && getUnorderedGroupHelper().canSelect(grammarAccess.getUtilConstantAccess().getUnorderedGroup_2(), 0) ) {
+                    alt155=1;
                 }
-                else if ( LA154_0 == 68 && getUnorderedGroupHelper().canSelect(grammarAccess.getUtilConstantAccess().getUnorderedGroup_2(), 1) ) {
-                    alt154=2;
+                else if ( LA155_0 == 68 && getUnorderedGroupHelper().canSelect(grammarAccess.getUtilConstantAccess().getUnorderedGroup_2(), 1) ) {
+                    alt155=2;
                 }
 
 
-                switch (alt154) {
+                switch (alt155) {
             	case 1 :
             	    // InternalSpringConfigDsl.g:10392:4: ({...}? => ( ({...}? => (otherlv_3= 'static-field=' ( (lv_StaticField_4_0= RULE_STRING ) ) ) ) ) )
             	    {
@@ -28113,12 +28131,12 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    if ( cnt154 >= 1 ) break loop154;
+            	    if ( cnt155 >= 1 ) break loop155;
                         EarlyExitException eee =
-                            new EarlyExitException(154, input);
+                            new EarlyExitException(155, input);
                         throw eee;
                 }
-                cnt154++;
+                cnt155++;
             } while (true);
 
             if ( ! getUnorderedGroupHelper().canLeave(grammarAccess.getUtilConstantAccess().getUnorderedGroup_2()) ) {
@@ -28137,22 +28155,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             }
 
             // InternalSpringConfigDsl.g:10467:3: (otherlv_7= '/>' | (otherlv_8= '>' otherlv_9= '</util:constant>' ) )
-            int alt155=2;
-            int LA155_0 = input.LA(1);
+            int alt156=2;
+            int LA156_0 = input.LA(1);
 
-            if ( (LA155_0==31) ) {
-                alt155=1;
+            if ( (LA156_0==31) ) {
+                alt156=1;
             }
-            else if ( (LA155_0==26) ) {
-                alt155=2;
+            else if ( (LA156_0==26) ) {
+                alt156=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 155, 0, input);
+                    new NoViableAltException("", 156, 0, input);
 
                 throw nvae;
             }
-            switch (alt155) {
+            switch (alt156) {
                 case 1 :
                     // InternalSpringConfigDsl.g:10468:4: otherlv_7= '/>'
                     {
@@ -28287,21 +28305,21 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:10513:6: ( ({...}? => ( ({...}? => (otherlv_2= 'id=' ( (lv_name_3_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_4= 'path=' ( (lv_path_5_0= ruleValidString ) ) ) ) ) ) )+ {...}?
             {
             // InternalSpringConfigDsl.g:10513:6: ( ({...}? => ( ({...}? => (otherlv_2= 'id=' ( (lv_name_3_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_4= 'path=' ( (lv_path_5_0= ruleValidString ) ) ) ) ) ) )+
-            int cnt156=0;
-            loop156:
+            int cnt157=0;
+            loop157:
             do {
-                int alt156=3;
-                int LA156_0 = input.LA(1);
+                int alt157=3;
+                int LA157_0 = input.LA(1);
 
-                if ( LA156_0 == 68 && getUnorderedGroupHelper().canSelect(grammarAccess.getUtilPropertyPathAccess().getUnorderedGroup_1(), 0) ) {
-                    alt156=1;
+                if ( LA157_0 == 68 && getUnorderedGroupHelper().canSelect(grammarAccess.getUtilPropertyPathAccess().getUnorderedGroup_1(), 0) ) {
+                    alt157=1;
                 }
-                else if ( LA156_0 == 201 && getUnorderedGroupHelper().canSelect(grammarAccess.getUtilPropertyPathAccess().getUnorderedGroup_1(), 1) ) {
-                    alt156=2;
+                else if ( LA157_0 == 201 && getUnorderedGroupHelper().canSelect(grammarAccess.getUtilPropertyPathAccess().getUnorderedGroup_1(), 1) ) {
+                    alt157=2;
                 }
 
 
-                switch (alt156) {
+                switch (alt157) {
             	case 1 :
             	    // InternalSpringConfigDsl.g:10514:4: ({...}? => ( ({...}? => (otherlv_2= 'id=' ( (lv_name_3_0= ruleValidString ) ) ) ) ) )
             	    {
@@ -28458,12 +28476,12 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    if ( cnt156 >= 1 ) break loop156;
+            	    if ( cnt157 >= 1 ) break loop157;
                         EarlyExitException eee =
-                            new EarlyExitException(156, input);
+                            new EarlyExitException(157, input);
                         throw eee;
                 }
-                cnt156++;
+                cnt157++;
             } while (true);
 
             if ( ! getUnorderedGroupHelper().canLeave(grammarAccess.getUtilPropertyPathAccess().getUnorderedGroup_1()) ) {
@@ -28482,22 +28500,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             }
 
             // InternalSpringConfigDsl.g:10590:3: (otherlv_6= '/>' | (otherlv_7= '>' otherlv_8= '</util:constant>' ) )
-            int alt157=2;
-            int LA157_0 = input.LA(1);
+            int alt158=2;
+            int LA158_0 = input.LA(1);
 
-            if ( (LA157_0==31) ) {
-                alt157=1;
+            if ( (LA158_0==31) ) {
+                alt158=1;
             }
-            else if ( (LA157_0==26) ) {
-                alt157=2;
+            else if ( (LA158_0==26) ) {
+                alt158=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 157, 0, input);
+                    new NoViableAltException("", 158, 0, input);
 
                 throw nvae;
             }
-            switch (alt157) {
+            switch (alt158) {
                 case 1 :
                     // InternalSpringConfigDsl.g:10591:4: otherlv_6= '/>'
                     {
@@ -28656,33 +28674,33 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:10643:6: ( ({...}? => ( ({...}? => ( (lv_propertyfile_3_0= rulePropertyFileSimple ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_4= 'id=' ( (lv_name_5_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_6= 'ignore-resource-not-found=' ( (lv_ignoreResourceNotFound_7_0= rulesBoolean ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_8= 'local-override=' ( (lv_localOverride_9_0= rulesBoolean ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_10= 'scope=' ( (lv_scope_11_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_12= 'value-type=' ( (lv_valueType_13_0= ruleValidString ) ) )? (otherlv_14= '/>' | (otherlv_15= '>' ( (lv_props_16_0= ruleProp ) )* otherlv_17= '</util:properties>' ) ) ) ) ) ) )+ {...}?
             {
             // InternalSpringConfigDsl.g:10643:6: ( ({...}? => ( ({...}? => ( (lv_propertyfile_3_0= rulePropertyFileSimple ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_4= 'id=' ( (lv_name_5_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_6= 'ignore-resource-not-found=' ( (lv_ignoreResourceNotFound_7_0= rulesBoolean ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_8= 'local-override=' ( (lv_localOverride_9_0= rulesBoolean ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_10= 'scope=' ( (lv_scope_11_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_12= 'value-type=' ( (lv_valueType_13_0= ruleValidString ) ) )? (otherlv_14= '/>' | (otherlv_15= '>' ( (lv_props_16_0= ruleProp ) )* otherlv_17= '</util:properties>' ) ) ) ) ) ) )+
-            int cnt161=0;
-            loop161:
+            int cnt162=0;
+            loop162:
             do {
-                int alt161=7;
-                int LA161_0 = input.LA(1);
+                int alt162=7;
+                int LA162_0 = input.LA(1);
 
-                if ( LA161_0 == 212 && getUnorderedGroupHelper().canSelect(grammarAccess.getUtilPropertiesAccess().getUnorderedGroup_2(), 0) ) {
-                    alt161=1;
+                if ( LA162_0 == 212 && getUnorderedGroupHelper().canSelect(grammarAccess.getUtilPropertiesAccess().getUnorderedGroup_2(), 0) ) {
+                    alt162=1;
                 }
-                else if ( LA161_0 == 68 && getUnorderedGroupHelper().canSelect(grammarAccess.getUtilPropertiesAccess().getUnorderedGroup_2(), 1) ) {
-                    alt161=2;
+                else if ( LA162_0 == 68 && getUnorderedGroupHelper().canSelect(grammarAccess.getUtilPropertiesAccess().getUnorderedGroup_2(), 1) ) {
+                    alt162=2;
                 }
-                else if ( LA161_0 == 71 && getUnorderedGroupHelper().canSelect(grammarAccess.getUtilPropertiesAccess().getUnorderedGroup_2(), 2) ) {
-                    alt161=3;
+                else if ( LA162_0 == 71 && getUnorderedGroupHelper().canSelect(grammarAccess.getUtilPropertiesAccess().getUnorderedGroup_2(), 2) ) {
+                    alt162=3;
                 }
-                else if ( LA161_0 == 73 && getUnorderedGroupHelper().canSelect(grammarAccess.getUtilPropertiesAccess().getUnorderedGroup_2(), 3) ) {
-                    alt161=4;
+                else if ( LA162_0 == 73 && getUnorderedGroupHelper().canSelect(grammarAccess.getUtilPropertiesAccess().getUnorderedGroup_2(), 3) ) {
+                    alt162=4;
                 }
-                else if ( LA161_0 == 144 && getUnorderedGroupHelper().canSelect(grammarAccess.getUtilPropertiesAccess().getUnorderedGroup_2(), 4) ) {
-                    alt161=5;
+                else if ( LA162_0 == 144 && getUnorderedGroupHelper().canSelect(grammarAccess.getUtilPropertiesAccess().getUnorderedGroup_2(), 4) ) {
+                    alt162=5;
                 }
-                else if ( ( LA161_0 == 26 || LA161_0 == 31 || LA161_0 == 177 ) && getUnorderedGroupHelper().canSelect(grammarAccess.getUtilPropertiesAccess().getUnorderedGroup_2(), 5) ) {
-                    alt161=6;
+                else if ( ( LA162_0 == 26 || LA162_0 == 31 || LA162_0 == 177 ) && getUnorderedGroupHelper().canSelect(grammarAccess.getUtilPropertiesAccess().getUnorderedGroup_2(), 5) ) {
+                    alt162=6;
                 }
 
 
-                switch (alt161) {
+                switch (alt162) {
             	case 1 :
             	    // InternalSpringConfigDsl.g:10644:4: ({...}? => ( ({...}? => ( (lv_propertyfile_3_0= rulePropertyFileSimple ) ) ) ) )
             	    {
@@ -29083,13 +29101,13 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	    // InternalSpringConfigDsl.g:10813:20: (otherlv_12= 'value-type=' ( (lv_valueType_13_0= ruleValidString ) ) )? (otherlv_14= '/>' | (otherlv_15= '>' ( (lv_props_16_0= ruleProp ) )* otherlv_17= '</util:properties>' ) )
             	    {
             	    // InternalSpringConfigDsl.g:10813:20: (otherlv_12= 'value-type=' ( (lv_valueType_13_0= ruleValidString ) ) )?
-            	    int alt158=2;
-            	    int LA158_0 = input.LA(1);
+            	    int alt159=2;
+            	    int LA159_0 = input.LA(1);
 
-            	    if ( (LA158_0==177) ) {
-            	        alt158=1;
+            	    if ( (LA159_0==177) ) {
+            	        alt159=1;
             	    }
-            	    switch (alt158) {
+            	    switch (alt159) {
             	        case 1 :
             	            // InternalSpringConfigDsl.g:10814:10: otherlv_12= 'value-type=' ( (lv_valueType_13_0= ruleValidString ) )
             	            {
@@ -29135,22 +29153,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	    }
 
             	    // InternalSpringConfigDsl.g:10838:9: (otherlv_14= '/>' | (otherlv_15= '>' ( (lv_props_16_0= ruleProp ) )* otherlv_17= '</util:properties>' ) )
-            	    int alt160=2;
-            	    int LA160_0 = input.LA(1);
+            	    int alt161=2;
+            	    int LA161_0 = input.LA(1);
 
-            	    if ( (LA160_0==31) ) {
-            	        alt160=1;
+            	    if ( (LA161_0==31) ) {
+            	        alt161=1;
             	    }
-            	    else if ( (LA160_0==26) ) {
-            	        alt160=2;
+            	    else if ( (LA161_0==26) ) {
+            	        alt161=2;
             	    }
             	    else {
             	        NoViableAltException nvae =
-            	            new NoViableAltException("", 160, 0, input);
+            	            new NoViableAltException("", 161, 0, input);
 
             	        throw nvae;
             	    }
-            	    switch (alt160) {
+            	    switch (alt161) {
             	        case 1 :
             	            // InternalSpringConfigDsl.g:10839:10: otherlv_14= '/>'
             	            {
@@ -29172,17 +29190,17 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	            											newLeafNode(otherlv_15, grammarAccess.getUtilPropertiesAccess().getGreaterThanSignKeyword_2_5_1_1_0());
             	            										
             	            // InternalSpringConfigDsl.g:10849:11: ( (lv_props_16_0= ruleProp ) )*
-            	            loop159:
+            	            loop160:
             	            do {
-            	                int alt159=2;
-            	                int LA159_0 = input.LA(1);
+            	                int alt160=2;
+            	                int LA160_0 = input.LA(1);
 
-            	                if ( (LA159_0==186) ) {
-            	                    alt159=1;
+            	                if ( (LA160_0==186) ) {
+            	                    alt160=1;
             	                }
 
 
-            	                switch (alt159) {
+            	                switch (alt160) {
             	            	case 1 :
             	            	    // InternalSpringConfigDsl.g:10850:12: (lv_props_16_0= ruleProp )
             	            	    {
@@ -29216,7 +29234,7 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	            	    break;
 
             	            	default :
-            	            	    break loop159;
+            	            	    break loop160;
             	                }
             	            } while (true);
 
@@ -29253,12 +29271,12 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    if ( cnt161 >= 1 ) break loop161;
+            	    if ( cnt162 >= 1 ) break loop162;
                         EarlyExitException eee =
-                            new EarlyExitException(161, input);
+                            new EarlyExitException(162, input);
                         throw eee;
                 }
-                cnt161++;
+                cnt162++;
             } while (true);
 
             if ( ! getUnorderedGroupHelper().canLeave(grammarAccess.getUtilPropertiesAccess().getUnorderedGroup_2()) ) {
@@ -29396,26 +29414,26 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:10924:6: ( ({...}? => ( ({...}? => (otherlv_3= 'id=' ( (lv_name_4_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_5= 'list-class=' ( (lv_listClass_6_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_7= 'scope=' ( (lv_scope_8_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_9= 'value-type=' ( (lv_valueType_10_0= ruleValidString ) ) ) ) ) ) )*
             {
             // InternalSpringConfigDsl.g:10924:6: ( ({...}? => ( ({...}? => (otherlv_3= 'id=' ( (lv_name_4_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_5= 'list-class=' ( (lv_listClass_6_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_7= 'scope=' ( (lv_scope_8_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_9= 'value-type=' ( (lv_valueType_10_0= ruleValidString ) ) ) ) ) ) )*
-            loop162:
+            loop163:
             do {
-                int alt162=5;
-                int LA162_0 = input.LA(1);
+                int alt163=5;
+                int LA163_0 = input.LA(1);
 
-                if ( LA162_0 == 68 && getUnorderedGroupHelper().canSelect(grammarAccess.getUtilListAccess().getUnorderedGroup_2(), 0) ) {
-                    alt162=1;
+                if ( LA163_0 == 68 && getUnorderedGroupHelper().canSelect(grammarAccess.getUtilListAccess().getUnorderedGroup_2(), 0) ) {
+                    alt163=1;
                 }
-                else if ( LA162_0 == 205 && getUnorderedGroupHelper().canSelect(grammarAccess.getUtilListAccess().getUnorderedGroup_2(), 1) ) {
-                    alt162=2;
+                else if ( LA163_0 == 205 && getUnorderedGroupHelper().canSelect(grammarAccess.getUtilListAccess().getUnorderedGroup_2(), 1) ) {
+                    alt163=2;
                 }
-                else if ( LA162_0 == 144 && getUnorderedGroupHelper().canSelect(grammarAccess.getUtilListAccess().getUnorderedGroup_2(), 2) ) {
-                    alt162=3;
+                else if ( LA163_0 == 144 && getUnorderedGroupHelper().canSelect(grammarAccess.getUtilListAccess().getUnorderedGroup_2(), 2) ) {
+                    alt163=3;
                 }
-                else if ( LA162_0 == 177 && getUnorderedGroupHelper().canSelect(grammarAccess.getUtilListAccess().getUnorderedGroup_2(), 3) ) {
-                    alt162=4;
+                else if ( LA163_0 == 177 && getUnorderedGroupHelper().canSelect(grammarAccess.getUtilListAccess().getUnorderedGroup_2(), 3) ) {
+                    alt163=4;
                 }
 
 
-                switch (alt162) {
+                switch (alt163) {
             	case 1 :
             	    // InternalSpringConfigDsl.g:10925:4: ({...}? => ( ({...}? => (otherlv_3= 'id=' ( (lv_name_4_0= ruleValidString ) ) ) ) ) )
             	    {
@@ -29726,7 +29744,7 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop162;
+            	    break loop163;
                 }
             } while (true);
 
@@ -29743,22 +29761,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             }
 
             // InternalSpringConfigDsl.g:11068:3: (otherlv_11= '/>' | (otherlv_12= '>' ( (lv_artefacts_13_0= ruleAbstractArtefact ) )* otherlv_14= '</util:properties>' ) )
-            int alt164=2;
-            int LA164_0 = input.LA(1);
+            int alt165=2;
+            int LA165_0 = input.LA(1);
 
-            if ( (LA164_0==31) ) {
-                alt164=1;
+            if ( (LA165_0==31) ) {
+                alt165=1;
             }
-            else if ( (LA164_0==26) ) {
-                alt164=2;
+            else if ( (LA165_0==26) ) {
+                alt165=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 164, 0, input);
+                    new NoViableAltException("", 165, 0, input);
 
                 throw nvae;
             }
-            switch (alt164) {
+            switch (alt165) {
                 case 1 :
                     // InternalSpringConfigDsl.g:11069:4: otherlv_11= '/>'
                     {
@@ -29780,17 +29798,17 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     					newLeafNode(otherlv_12, grammarAccess.getUtilListAccess().getGreaterThanSignKeyword_3_1_0());
                     				
                     // InternalSpringConfigDsl.g:11079:5: ( (lv_artefacts_13_0= ruleAbstractArtefact ) )*
-                    loop163:
+                    loop164:
                     do {
-                        int alt163=2;
-                        int LA163_0 = input.LA(1);
+                        int alt164=2;
+                        int LA164_0 = input.LA(1);
 
-                        if ( (LA163_0==134||LA163_0==154||LA163_0==156||LA163_0==159||LA163_0==176||LA163_0==180||LA163_0==182||LA163_0==184||LA163_0==188||LA163_0==197||LA163_0==202||LA163_0==204||LA163_0==206||LA163_0==209) ) {
-                            alt163=1;
+                        if ( (LA164_0==134||LA164_0==154||LA164_0==156||LA164_0==159||LA164_0==176||LA164_0==180||LA164_0==182||LA164_0==184||LA164_0==188||LA164_0==197||LA164_0==202||LA164_0==204||LA164_0==206||LA164_0==209) ) {
+                            alt164=1;
                         }
 
 
-                        switch (alt163) {
+                        switch (alt164) {
                     	case 1 :
                     	    // InternalSpringConfigDsl.g:11080:6: (lv_artefacts_13_0= ruleAbstractArtefact )
                     	    {
@@ -29824,7 +29842,7 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop163;
+                    	    break loop164;
                         }
                     } while (true);
 
@@ -29964,29 +29982,29 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:11140:6: ( ({...}? => ( ({...}? => (otherlv_3= 'id=' ( (lv_name_4_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_5= 'key-type=' ( (lv_keyType_6_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_7= 'map-class=' ( (lv_mapClass_8_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_9= 'scope=' ( (lv_scope_10_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_11= 'value-type=' ( (lv_valueType_12_0= ruleValidString ) ) ) ) ) ) )*
             {
             // InternalSpringConfigDsl.g:11140:6: ( ({...}? => ( ({...}? => (otherlv_3= 'id=' ( (lv_name_4_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_5= 'key-type=' ( (lv_keyType_6_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_7= 'map-class=' ( (lv_mapClass_8_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_9= 'scope=' ( (lv_scope_10_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_11= 'value-type=' ( (lv_valueType_12_0= ruleValidString ) ) ) ) ) ) )*
-            loop165:
+            loop166:
             do {
-                int alt165=6;
-                int LA165_0 = input.LA(1);
+                int alt166=6;
+                int LA166_0 = input.LA(1);
 
-                if ( LA165_0 == 68 && getUnorderedGroupHelper().canSelect(grammarAccess.getUtilMapAccess().getUnorderedGroup_2(), 0) ) {
-                    alt165=1;
+                if ( LA166_0 == 68 && getUnorderedGroupHelper().canSelect(grammarAccess.getUtilMapAccess().getUnorderedGroup_2(), 0) ) {
+                    alt166=1;
                 }
-                else if ( LA165_0 == 189 && getUnorderedGroupHelper().canSelect(grammarAccess.getUtilMapAccess().getUnorderedGroup_2(), 1) ) {
-                    alt165=2;
+                else if ( LA166_0 == 189 && getUnorderedGroupHelper().canSelect(grammarAccess.getUtilMapAccess().getUnorderedGroup_2(), 1) ) {
+                    alt166=2;
                 }
-                else if ( LA165_0 == 207 && getUnorderedGroupHelper().canSelect(grammarAccess.getUtilMapAccess().getUnorderedGroup_2(), 2) ) {
-                    alt165=3;
+                else if ( LA166_0 == 207 && getUnorderedGroupHelper().canSelect(grammarAccess.getUtilMapAccess().getUnorderedGroup_2(), 2) ) {
+                    alt166=3;
                 }
-                else if ( LA165_0 == 144 && getUnorderedGroupHelper().canSelect(grammarAccess.getUtilMapAccess().getUnorderedGroup_2(), 3) ) {
-                    alt165=4;
+                else if ( LA166_0 == 144 && getUnorderedGroupHelper().canSelect(grammarAccess.getUtilMapAccess().getUnorderedGroup_2(), 3) ) {
+                    alt166=4;
                 }
-                else if ( LA165_0 == 177 && getUnorderedGroupHelper().canSelect(grammarAccess.getUtilMapAccess().getUnorderedGroup_2(), 4) ) {
-                    alt165=5;
+                else if ( LA166_0 == 177 && getUnorderedGroupHelper().canSelect(grammarAccess.getUtilMapAccess().getUnorderedGroup_2(), 4) ) {
+                    alt166=5;
                 }
 
 
-                switch (alt165) {
+                switch (alt166) {
             	case 1 :
             	    // InternalSpringConfigDsl.g:11141:4: ({...}? => ( ({...}? => (otherlv_3= 'id=' ( (lv_name_4_0= ruleValidString ) ) ) ) ) )
             	    {
@@ -30374,7 +30392,7 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop165;
+            	    break loop166;
                 }
             } while (true);
 
@@ -30391,22 +30409,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             }
 
             // InternalSpringConfigDsl.g:11318:3: (otherlv_13= '/>' | (otherlv_14= '>' ( (lv_entries_15_0= ruleMapEntry ) )* otherlv_16= '</util:map>' ) )
-            int alt167=2;
-            int LA167_0 = input.LA(1);
+            int alt168=2;
+            int LA168_0 = input.LA(1);
 
-            if ( (LA167_0==31) ) {
-                alt167=1;
+            if ( (LA168_0==31) ) {
+                alt168=1;
             }
-            else if ( (LA167_0==26) ) {
-                alt167=2;
+            else if ( (LA168_0==26) ) {
+                alt168=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 167, 0, input);
+                    new NoViableAltException("", 168, 0, input);
 
                 throw nvae;
             }
-            switch (alt167) {
+            switch (alt168) {
                 case 1 :
                     // InternalSpringConfigDsl.g:11319:4: otherlv_13= '/>'
                     {
@@ -30428,17 +30446,17 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     					newLeafNode(otherlv_14, grammarAccess.getUtilMapAccess().getGreaterThanSignKeyword_3_1_0());
                     				
                     // InternalSpringConfigDsl.g:11329:5: ( (lv_entries_15_0= ruleMapEntry ) )*
-                    loop166:
+                    loop167:
                     do {
-                        int alt166=2;
-                        int LA166_0 = input.LA(1);
+                        int alt167=2;
+                        int LA167_0 = input.LA(1);
 
-                        if ( (LA166_0==191) ) {
-                            alt166=1;
+                        if ( (LA167_0==191) ) {
+                            alt167=1;
                         }
 
 
-                        switch (alt166) {
+                        switch (alt167) {
                     	case 1 :
                     	    // InternalSpringConfigDsl.g:11330:6: (lv_entries_15_0= ruleMapEntry )
                     	    {
@@ -30472,7 +30490,7 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop166;
+                    	    break loop167;
                         }
                     } while (true);
 
@@ -30609,26 +30627,26 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:11390:6: ( ({...}? => ( ({...}? => (otherlv_3= 'id=' ( (lv_name_4_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_5= 'set-class=' ( (lv_setClass_6_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_7= 'scope=' ( (lv_scope_8_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_9= 'value-type=' ( (lv_valueType_10_0= ruleValidString ) ) ) ) ) ) )*
             {
             // InternalSpringConfigDsl.g:11390:6: ( ({...}? => ( ({...}? => (otherlv_3= 'id=' ( (lv_name_4_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_5= 'set-class=' ( (lv_setClass_6_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_7= 'scope=' ( (lv_scope_8_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_9= 'value-type=' ( (lv_valueType_10_0= ruleValidString ) ) ) ) ) ) )*
-            loop168:
+            loop169:
             do {
-                int alt168=5;
-                int LA168_0 = input.LA(1);
+                int alt169=5;
+                int LA169_0 = input.LA(1);
 
-                if ( LA168_0 == 68 && getUnorderedGroupHelper().canSelect(grammarAccess.getUtilSetAccess().getUnorderedGroup_2(), 0) ) {
-                    alt168=1;
+                if ( LA169_0 == 68 && getUnorderedGroupHelper().canSelect(grammarAccess.getUtilSetAccess().getUnorderedGroup_2(), 0) ) {
+                    alt169=1;
                 }
-                else if ( LA168_0 == 210 && getUnorderedGroupHelper().canSelect(grammarAccess.getUtilSetAccess().getUnorderedGroup_2(), 1) ) {
-                    alt168=2;
+                else if ( LA169_0 == 210 && getUnorderedGroupHelper().canSelect(grammarAccess.getUtilSetAccess().getUnorderedGroup_2(), 1) ) {
+                    alt169=2;
                 }
-                else if ( LA168_0 == 144 && getUnorderedGroupHelper().canSelect(grammarAccess.getUtilSetAccess().getUnorderedGroup_2(), 2) ) {
-                    alt168=3;
+                else if ( LA169_0 == 144 && getUnorderedGroupHelper().canSelect(grammarAccess.getUtilSetAccess().getUnorderedGroup_2(), 2) ) {
+                    alt169=3;
                 }
-                else if ( LA168_0 == 177 && getUnorderedGroupHelper().canSelect(grammarAccess.getUtilSetAccess().getUnorderedGroup_2(), 3) ) {
-                    alt168=4;
+                else if ( LA169_0 == 177 && getUnorderedGroupHelper().canSelect(grammarAccess.getUtilSetAccess().getUnorderedGroup_2(), 3) ) {
+                    alt169=4;
                 }
 
 
-                switch (alt168) {
+                switch (alt169) {
             	case 1 :
             	    // InternalSpringConfigDsl.g:11391:4: ({...}? => ( ({...}? => (otherlv_3= 'id=' ( (lv_name_4_0= ruleValidString ) ) ) ) ) )
             	    {
@@ -30939,7 +30957,7 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop168;
+            	    break loop169;
                 }
             } while (true);
 
@@ -30956,22 +30974,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             }
 
             // InternalSpringConfigDsl.g:11534:3: (otherlv_11= '/>' | (otherlv_12= '>' ( (lv_artefacts_13_0= ruleAbstractArtefact ) )* otherlv_14= '</util:set>' ) )
-            int alt170=2;
-            int LA170_0 = input.LA(1);
+            int alt171=2;
+            int LA171_0 = input.LA(1);
 
-            if ( (LA170_0==31) ) {
-                alt170=1;
+            if ( (LA171_0==31) ) {
+                alt171=1;
             }
-            else if ( (LA170_0==26) ) {
-                alt170=2;
+            else if ( (LA171_0==26) ) {
+                alt171=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 170, 0, input);
+                    new NoViableAltException("", 171, 0, input);
 
                 throw nvae;
             }
-            switch (alt170) {
+            switch (alt171) {
                 case 1 :
                     // InternalSpringConfigDsl.g:11535:4: otherlv_11= '/>'
                     {
@@ -30993,17 +31011,17 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     					newLeafNode(otherlv_12, grammarAccess.getUtilSetAccess().getGreaterThanSignKeyword_3_1_0());
                     				
                     // InternalSpringConfigDsl.g:11545:5: ( (lv_artefacts_13_0= ruleAbstractArtefact ) )*
-                    loop169:
+                    loop170:
                     do {
-                        int alt169=2;
-                        int LA169_0 = input.LA(1);
+                        int alt170=2;
+                        int LA170_0 = input.LA(1);
 
-                        if ( (LA169_0==134||LA169_0==154||LA169_0==156||LA169_0==159||LA169_0==176||LA169_0==180||LA169_0==182||LA169_0==184||LA169_0==188||LA169_0==197||LA169_0==202||LA169_0==204||LA169_0==206||LA169_0==209) ) {
-                            alt169=1;
+                        if ( (LA170_0==134||LA170_0==154||LA170_0==156||LA170_0==159||LA170_0==176||LA170_0==180||LA170_0==182||LA170_0==184||LA170_0==188||LA170_0==197||LA170_0==202||LA170_0==204||LA170_0==206||LA170_0==209) ) {
+                            alt170=1;
                         }
 
 
-                        switch (alt169) {
+                        switch (alt170) {
                     	case 1 :
                     	    // InternalSpringConfigDsl.g:11546:6: (lv_artefacts_13_0= ruleAbstractArtefact )
                     	    {
@@ -31037,7 +31055,7 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop169;
+                    	    break loop170;
                         }
                     } while (true);
 
@@ -31256,33 +31274,33 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:11636:5: ( ({...}? => ( ({...}? => (otherlv_1= 'location=' ( (lv_location_2_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_3= 'file-encoding=' ( (lv_fileEncoding_4_0= ruleValidString ) ) ) ) ) ) )+ {...}?
             {
             // InternalSpringConfigDsl.g:11636:5: ( ({...}? => ( ({...}? => (otherlv_1= 'location=' ( (lv_location_2_0= ruleValidString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_3= 'file-encoding=' ( (lv_fileEncoding_4_0= ruleValidString ) ) ) ) ) ) )+
-            int cnt171=0;
-            loop171:
+            int cnt172=0;
+            loop172:
             do {
-                int alt171=3;
-                int LA171_0 = input.LA(1);
+                int alt172=3;
+                int LA172_0 = input.LA(1);
 
-                if ( (LA171_0==212) ) {
-                    int LA171_2 = input.LA(2);
+                if ( (LA172_0==212) ) {
+                    int LA172_2 = input.LA(2);
 
                     if ( getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyFileAccess().getUnorderedGroup(), 0) ) {
-                        alt171=1;
+                        alt172=1;
                     }
 
 
                 }
-                else if ( (LA171_0==213) ) {
-                    int LA171_3 = input.LA(2);
+                else if ( (LA172_0==213) ) {
+                    int LA172_3 = input.LA(2);
 
                     if ( getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyFileAccess().getUnorderedGroup(), 1) ) {
-                        alt171=2;
+                        alt172=2;
                     }
 
 
                 }
 
 
-                switch (alt171) {
+                switch (alt172) {
             	case 1 :
             	    // InternalSpringConfigDsl.g:11637:3: ({...}? => ( ({...}? => (otherlv_1= 'location=' ( (lv_location_2_0= ruleValidString ) ) ) ) ) )
             	    {
@@ -31439,12 +31457,12 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    if ( cnt171 >= 1 ) break loop171;
+            	    if ( cnt172 >= 1 ) break loop172;
                         EarlyExitException eee =
-                            new EarlyExitException(171, input);
+                            new EarlyExitException(172, input);
                         throw eee;
                 }
-                cnt171++;
+                cnt172++;
             } while (true);
 
             if ( ! getUnorderedGroupHelper().canLeave(grammarAccess.getPropertyFileAccess().getUnorderedGroup()) ) {
@@ -31747,22 +31765,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             			newLeafNode(this_ID_0, grammarAccess.getIdDashAndColonAccess().getIDTerminalRuleCall_0());
             		
             // InternalSpringConfigDsl.g:11813:3: ( (kw= '-' this_ID_2= RULE_ID ) | (kw= ':' this_ID_4= RULE_ID )* )
-            int alt173=2;
-            int LA173_0 = input.LA(1);
+            int alt174=2;
+            int LA174_0 = input.LA(1);
 
-            if ( (LA173_0==216) ) {
-                alt173=1;
+            if ( (LA174_0==216) ) {
+                alt174=1;
             }
-            else if ( (LA173_0==EOF||LA173_0==12||LA173_0==29) ) {
-                alt173=2;
+            else if ( (LA174_0==EOF||LA174_0==12||LA174_0==29) ) {
+                alt174=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 173, 0, input);
+                    new NoViableAltException("", 174, 0, input);
 
                 throw nvae;
             }
-            switch (alt173) {
+            switch (alt174) {
                 case 1 :
                     // InternalSpringConfigDsl.g:11814:4: (kw= '-' this_ID_2= RULE_ID )
                     {
@@ -31791,17 +31809,17 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     // InternalSpringConfigDsl.g:11829:4: (kw= ':' this_ID_4= RULE_ID )*
                     {
                     // InternalSpringConfigDsl.g:11829:4: (kw= ':' this_ID_4= RULE_ID )*
-                    loop172:
+                    loop173:
                     do {
-                        int alt172=2;
-                        int LA172_0 = input.LA(1);
+                        int alt173=2;
+                        int LA173_0 = input.LA(1);
 
-                        if ( (LA172_0==29) ) {
-                            alt172=1;
+                        if ( (LA173_0==29) ) {
+                            alt173=1;
                         }
 
 
-                        switch (alt172) {
+                        switch (alt173) {
                     	case 1 :
                     	    // InternalSpringConfigDsl.g:11830:5: kw= ':' this_ID_4= RULE_ID
                     	    {
@@ -31822,7 +31840,7 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop172;
+                    	    break loop173;
                         }
                     } while (true);
 
@@ -31917,23 +31935,23 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:11868:2: (this_ID_0= RULE_ID | this_INT_1= RULE_INT | this_WS_2= RULE_WS | this_ValidString_3= ruleValidString | kw= ',' | kw= '.' | kw= ';' | kw= ':' | kw= '-' | kw= '?' | kw= '!' | kw= '+' | kw= '*' | kw= '=' | kw= '\\u00B0' | kw= '>' | kw= '/' | kw= '|' | kw= '\\\\' | kw= '(' | kw= ')' | kw= '{' | kw= '}' | kw= '\"' | kw= '\\'' | kw= '[' | kw= ']' | kw= '@' | kw= '&' | kw= '#' )*
             {
             // InternalSpringConfigDsl.g:11868:2: (this_ID_0= RULE_ID | this_INT_1= RULE_INT | this_WS_2= RULE_WS | this_ValidString_3= ruleValidString | kw= ',' | kw= '.' | kw= ';' | kw= ':' | kw= '-' | kw= '?' | kw= '!' | kw= '+' | kw= '*' | kw= '=' | kw= '\\u00B0' | kw= '>' | kw= '/' | kw= '|' | kw= '\\\\' | kw= '(' | kw= ')' | kw= '{' | kw= '}' | kw= '\"' | kw= '\\'' | kw= '[' | kw= ']' | kw= '@' | kw= '&' | kw= '#' )*
-            loop174:
+            loop175:
             do {
-                int alt174=31;
+                int alt175=31;
                 switch ( input.LA(1) ) {
                 case RULE_ID:
                     {
-                    alt174=1;
+                    alt175=1;
                     }
                     break;
                 case RULE_INT:
                     {
-                    alt174=2;
+                    alt175=2;
                     }
                     break;
                 case RULE_WS:
                     {
-                    alt174=3;
+                    alt175=3;
                     }
                     break;
                 case RULE_STRING:
@@ -31947,143 +31965,143 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
                 case 248:
                 case 249:
                     {
-                    alt174=4;
+                    alt175=4;
                     }
                     break;
                 case 217:
                     {
-                    alt174=5;
+                    alt175=5;
                     }
                     break;
                 case 218:
                     {
-                    alt174=6;
+                    alt175=6;
                     }
                     break;
                 case 219:
                     {
-                    alt174=7;
+                    alt175=7;
                     }
                     break;
                 case 29:
                     {
-                    alt174=8;
+                    alt175=8;
                     }
                     break;
                 case 216:
                     {
-                    alt174=9;
+                    alt175=9;
                     }
                     break;
                 case 220:
                     {
-                    alt174=10;
+                    alt175=10;
                     }
                     break;
                 case 221:
                     {
-                    alt174=11;
+                    alt175=11;
                     }
                     break;
                 case 222:
                     {
-                    alt174=12;
+                    alt175=12;
                     }
                     break;
                 case 223:
                     {
-                    alt174=13;
+                    alt175=13;
                     }
                     break;
                 case 12:
                     {
-                    alt174=14;
+                    alt175=14;
                     }
                     break;
                 case 224:
                     {
-                    alt174=15;
+                    alt175=15;
                     }
                     break;
                 case 26:
                     {
-                    alt174=16;
+                    alt175=16;
                     }
                     break;
                 case 225:
                     {
-                    alt174=17;
+                    alt175=17;
                     }
                     break;
                 case 226:
                     {
-                    alt174=18;
+                    alt175=18;
                     }
                     break;
                 case 227:
                     {
-                    alt174=19;
+                    alt175=19;
                     }
                     break;
                 case 228:
                     {
-                    alt174=20;
+                    alt175=20;
                     }
                     break;
                 case 229:
                     {
-                    alt174=21;
+                    alt175=21;
                     }
                     break;
                 case 230:
                     {
-                    alt174=22;
+                    alt175=22;
                     }
                     break;
                 case 231:
                     {
-                    alt174=23;
+                    alt175=23;
                     }
                     break;
                 case 232:
                     {
-                    alt174=24;
+                    alt175=24;
                     }
                     break;
                 case 233:
                     {
-                    alt174=25;
+                    alt175=25;
                     }
                     break;
                 case 234:
                     {
-                    alt174=26;
+                    alt175=26;
                     }
                     break;
                 case 235:
                     {
-                    alt174=27;
+                    alt175=27;
                     }
                     break;
                 case 236:
                     {
-                    alt174=28;
+                    alt175=28;
                     }
                     break;
                 case 237:
                     {
-                    alt174=29;
+                    alt175=29;
                     }
                     break;
                 case 238:
                     {
-                    alt174=30;
+                    alt175=30;
                     }
                     break;
 
                 }
 
-                switch (alt174) {
+                switch (alt175) {
             	case 1 :
             	    // InternalSpringConfigDsl.g:11869:3: this_ID_0= RULE_ID
             	    {
@@ -32431,7 +32449,7 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop174;
+            	    break loop175;
                 }
             } while (true);
 
@@ -32516,22 +32534,22 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             			newLeafNode(kw, grammarAccess.getNullTagAccess().getNullKeyword_0());
             		
             // InternalSpringConfigDsl.g:12086:3: (kw= '/>' | (kw= '>' kw= '</null>' ) )
-            int alt175=2;
-            int LA175_0 = input.LA(1);
+            int alt176=2;
+            int LA176_0 = input.LA(1);
 
-            if ( (LA175_0==31) ) {
-                alt175=1;
+            if ( (LA176_0==31) ) {
+                alt176=1;
             }
-            else if ( (LA175_0==26) ) {
-                alt175=2;
+            else if ( (LA176_0==26) ) {
+                alt176=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 175, 0, input);
+                    new NoViableAltException("", 176, 0, input);
 
                 throw nvae;
             }
-            switch (alt175) {
+            switch (alt176) {
                 case 1 :
                     // InternalSpringConfigDsl.g:12087:4: kw= '/>'
                     {
@@ -32642,66 +32660,66 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:12124:2: (this_STRING_0= RULE_STRING | kw= '\"true\"' | kw= '\"false\"' | kw= '\"default\"' | kw= '\"no\"' | kw= '\"byName\"' | kw= '\"byType\"' | kw= '\"constructor\"' | kw= '\"interfaces\"' | kw= '\"targetClass\"' )
             {
             // InternalSpringConfigDsl.g:12124:2: (this_STRING_0= RULE_STRING | kw= '\"true\"' | kw= '\"false\"' | kw= '\"default\"' | kw= '\"no\"' | kw= '\"byName\"' | kw= '\"byType\"' | kw= '\"constructor\"' | kw= '\"interfaces\"' | kw= '\"targetClass\"' )
-            int alt176=10;
+            int alt177=10;
             switch ( input.LA(1) ) {
             case RULE_STRING:
                 {
-                alt176=1;
+                alt177=1;
                 }
                 break;
             case 241:
                 {
-                alt176=2;
+                alt177=2;
                 }
                 break;
             case 242:
                 {
-                alt176=3;
+                alt177=3;
                 }
                 break;
             case 243:
                 {
-                alt176=4;
+                alt177=4;
                 }
                 break;
             case 244:
                 {
-                alt176=5;
+                alt177=5;
                 }
                 break;
             case 245:
                 {
-                alt176=6;
+                alt177=6;
                 }
                 break;
             case 246:
                 {
-                alt176=7;
+                alt177=7;
                 }
                 break;
             case 247:
                 {
-                alt176=8;
+                alt177=8;
                 }
                 break;
             case 248:
                 {
-                alt176=9;
+                alt177=9;
                 }
                 break;
             case 249:
                 {
-                alt176=10;
+                alt177=10;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 176, 0, input);
+                    new NoViableAltException("", 177, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt176) {
+            switch (alt177) {
                 case 1 :
                     // InternalSpringConfigDsl.g:12125:3: this_STRING_0= RULE_STRING
                     {
@@ -32854,36 +32872,36 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:12197:2: ( (enumLiteral_0= '\"false\"' ) | (enumLiteral_1= '\\'false\\'' ) | (enumLiteral_2= '\"true\"' ) | (enumLiteral_3= '\\'true\\'' ) )
             {
             // InternalSpringConfigDsl.g:12197:2: ( (enumLiteral_0= '\"false\"' ) | (enumLiteral_1= '\\'false\\'' ) | (enumLiteral_2= '\"true\"' ) | (enumLiteral_3= '\\'true\\'' ) )
-            int alt177=4;
+            int alt178=4;
             switch ( input.LA(1) ) {
             case 242:
                 {
-                alt177=1;
+                alt178=1;
                 }
                 break;
             case 250:
                 {
-                alt177=2;
+                alt178=2;
                 }
                 break;
             case 241:
                 {
-                alt177=3;
+                alt178=3;
                 }
                 break;
             case 251:
                 {
-                alt177=4;
+                alt178=4;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 177, 0, input);
+                    new NoViableAltException("", 178, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt177) {
+            switch (alt178) {
                 case 1 :
                     // InternalSpringConfigDsl.g:12198:3: (enumLiteral_0= '\"false\"' )
                     {
@@ -32994,46 +33012,46 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:12240:2: ( (enumLiteral_0= '\"default\"' ) | (enumLiteral_1= '\\'default\\'' ) | (enumLiteral_2= '\"false\"' ) | (enumLiteral_3= '\\'false\\'' ) | (enumLiteral_4= '\"true\"' ) | (enumLiteral_5= '\\'true\\'' ) )
             {
             // InternalSpringConfigDsl.g:12240:2: ( (enumLiteral_0= '\"default\"' ) | (enumLiteral_1= '\\'default\\'' ) | (enumLiteral_2= '\"false\"' ) | (enumLiteral_3= '\\'false\\'' ) | (enumLiteral_4= '\"true\"' ) | (enumLiteral_5= '\\'true\\'' ) )
-            int alt178=6;
+            int alt179=6;
             switch ( input.LA(1) ) {
             case 243:
                 {
-                alt178=1;
+                alt179=1;
                 }
                 break;
             case 252:
                 {
-                alt178=2;
+                alt179=2;
                 }
                 break;
             case 242:
                 {
-                alt178=3;
+                alt179=3;
                 }
                 break;
             case 250:
                 {
-                alt178=4;
+                alt179=4;
                 }
                 break;
             case 241:
                 {
-                alt178=5;
+                alt179=5;
                 }
                 break;
             case 251:
                 {
-                alt178=6;
+                alt179=6;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 178, 0, input);
+                    new NoViableAltException("", 179, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt178) {
+            switch (alt179) {
                 case 1 :
                     // InternalSpringConfigDsl.g:12241:3: (enumLiteral_0= '\"default\"' )
                     {
@@ -33182,66 +33200,66 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:12299:2: ( (enumLiteral_0= '\"default\"' ) | (enumLiteral_1= '\\'default\\'' ) | (enumLiteral_2= '\"no\"' ) | (enumLiteral_3= '\\'no\\'' ) | (enumLiteral_4= '\"byName\"' ) | (enumLiteral_5= '\\'byName\\'' ) | (enumLiteral_6= '\"byType\"' ) | (enumLiteral_7= '\\'byType\\'' ) | (enumLiteral_8= '\"constructor\"' ) | (enumLiteral_9= '\\'constructor\\'' ) )
             {
             // InternalSpringConfigDsl.g:12299:2: ( (enumLiteral_0= '\"default\"' ) | (enumLiteral_1= '\\'default\\'' ) | (enumLiteral_2= '\"no\"' ) | (enumLiteral_3= '\\'no\\'' ) | (enumLiteral_4= '\"byName\"' ) | (enumLiteral_5= '\\'byName\\'' ) | (enumLiteral_6= '\"byType\"' ) | (enumLiteral_7= '\\'byType\\'' ) | (enumLiteral_8= '\"constructor\"' ) | (enumLiteral_9= '\\'constructor\\'' ) )
-            int alt179=10;
+            int alt180=10;
             switch ( input.LA(1) ) {
             case 243:
                 {
-                alt179=1;
+                alt180=1;
                 }
                 break;
             case 252:
                 {
-                alt179=2;
+                alt180=2;
                 }
                 break;
             case 244:
                 {
-                alt179=3;
+                alt180=3;
                 }
                 break;
             case 253:
                 {
-                alt179=4;
+                alt180=4;
                 }
                 break;
             case 245:
                 {
-                alt179=5;
+                alt180=5;
                 }
                 break;
             case 254:
                 {
-                alt179=6;
+                alt180=6;
                 }
                 break;
             case 246:
                 {
-                alt179=7;
+                alt180=7;
                 }
                 break;
             case 255:
                 {
-                alt179=8;
+                alt180=8;
                 }
                 break;
             case 247:
                 {
-                alt179=9;
+                alt180=9;
                 }
                 break;
             case 256:
                 {
-                alt179=10;
+                alt180=10;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 179, 0, input);
+                    new NoViableAltException("", 180, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt179) {
+            switch (alt180) {
                 case 1 :
                     // InternalSpringConfigDsl.g:12300:3: (enumLiteral_0= '\"default\"' )
                     {
@@ -33454,46 +33472,46 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:12390:2: ( (enumLiteral_0= '\"no\"' ) | (enumLiteral_1= '\\'no\\'' ) | (enumLiteral_2= '\"interfaces\"' ) | (enumLiteral_3= '\\'interfaces\\'' ) | (enumLiteral_4= '\"targetClass\"' ) | (enumLiteral_5= '\\'targetClass\\'' ) )
             {
             // InternalSpringConfigDsl.g:12390:2: ( (enumLiteral_0= '\"no\"' ) | (enumLiteral_1= '\\'no\\'' ) | (enumLiteral_2= '\"interfaces\"' ) | (enumLiteral_3= '\\'interfaces\\'' ) | (enumLiteral_4= '\"targetClass\"' ) | (enumLiteral_5= '\\'targetClass\\'' ) )
-            int alt180=6;
+            int alt181=6;
             switch ( input.LA(1) ) {
             case 244:
                 {
-                alt180=1;
+                alt181=1;
                 }
                 break;
             case 253:
                 {
-                alt180=2;
+                alt181=2;
                 }
                 break;
             case 248:
                 {
-                alt180=3;
+                alt181=3;
                 }
                 break;
             case 257:
                 {
-                alt180=4;
+                alt181=4;
                 }
                 break;
             case 249:
                 {
-                alt180=5;
+                alt181=5;
                 }
                 break;
             case 258:
                 {
-                alt180=6;
+                alt181=6;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 180, 0, input);
+                    new NoViableAltException("", 181, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt180) {
+            switch (alt181) {
                 case 1 :
                     // InternalSpringConfigDsl.g:12391:3: (enumLiteral_0= '\"no\"' )
                     {
@@ -33642,66 +33660,66 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:12449:2: ( (enumLiteral_0= '\"annotation\"' ) | (enumLiteral_1= '\\'annotation\\'' ) | (enumLiteral_2= '\"assignable\"' ) | (enumLiteral_3= '\\'assignable\\'' ) | (enumLiteral_4= '\"aspectj\"' ) | (enumLiteral_5= '\\'aspectj\\'' ) | (enumLiteral_6= '\"regex\"' ) | (enumLiteral_7= '\\'regex\\'' ) | (enumLiteral_8= '\"custom\"' ) | (enumLiteral_9= '\\'custom\\'' ) )
             {
             // InternalSpringConfigDsl.g:12449:2: ( (enumLiteral_0= '\"annotation\"' ) | (enumLiteral_1= '\\'annotation\\'' ) | (enumLiteral_2= '\"assignable\"' ) | (enumLiteral_3= '\\'assignable\\'' ) | (enumLiteral_4= '\"aspectj\"' ) | (enumLiteral_5= '\\'aspectj\\'' ) | (enumLiteral_6= '\"regex\"' ) | (enumLiteral_7= '\\'regex\\'' ) | (enumLiteral_8= '\"custom\"' ) | (enumLiteral_9= '\\'custom\\'' ) )
-            int alt181=10;
+            int alt182=10;
             switch ( input.LA(1) ) {
             case 259:
                 {
-                alt181=1;
+                alt182=1;
                 }
                 break;
             case 260:
                 {
-                alt181=2;
+                alt182=2;
                 }
                 break;
             case 261:
                 {
-                alt181=3;
+                alt182=3;
                 }
                 break;
             case 262:
                 {
-                alt181=4;
+                alt182=4;
                 }
                 break;
             case 263:
                 {
-                alt181=5;
+                alt182=5;
                 }
                 break;
             case 264:
                 {
-                alt181=6;
+                alt182=6;
                 }
                 break;
             case 265:
                 {
-                alt181=7;
+                alt182=7;
                 }
                 break;
             case 266:
                 {
-                alt181=8;
+                alt182=8;
                 }
                 break;
             case 267:
                 {
-                alt181=9;
+                alt182=9;
                 }
                 break;
             case 268:
                 {
-                alt181=10;
+                alt182=10;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 181, 0, input);
+                    new NoViableAltException("", 182, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt181) {
+            switch (alt182) {
                 case 1 :
                     // InternalSpringConfigDsl.g:12450:3: (enumLiteral_0= '\"annotation\"' )
                     {
@@ -33914,46 +33932,46 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:12540:2: ( (enumLiteral_0= '\"failOnExisting\"' ) | (enumLiteral_1= '\\'failOnExisting\\'' ) | (enumLiteral_2= '\"ignoreExisting\"' ) | (enumLiteral_3= '\\'ignoreExisting\\'' ) | (enumLiteral_4= '\"replaceExisting\"' ) | (enumLiteral_5= '\\'replaceExisting\\'' ) )
             {
             // InternalSpringConfigDsl.g:12540:2: ( (enumLiteral_0= '\"failOnExisting\"' ) | (enumLiteral_1= '\\'failOnExisting\\'' ) | (enumLiteral_2= '\"ignoreExisting\"' ) | (enumLiteral_3= '\\'ignoreExisting\\'' ) | (enumLiteral_4= '\"replaceExisting\"' ) | (enumLiteral_5= '\\'replaceExisting\\'' ) )
-            int alt182=6;
+            int alt183=6;
             switch ( input.LA(1) ) {
             case 269:
                 {
-                alt182=1;
+                alt183=1;
                 }
                 break;
             case 270:
                 {
-                alt182=2;
+                alt183=2;
                 }
                 break;
             case 271:
                 {
-                alt182=3;
+                alt183=3;
                 }
                 break;
             case 272:
                 {
-                alt182=4;
+                alt183=4;
                 }
                 break;
             case 273:
                 {
-                alt182=5;
+                alt183=5;
                 }
                 break;
             case 274:
                 {
-                alt182=6;
+                alt183=6;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 182, 0, input);
+                    new NoViableAltException("", 183, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt182) {
+            switch (alt183) {
                 case 1 :
                     // InternalSpringConfigDsl.g:12541:3: (enumLiteral_0= '\"failOnExisting\"' )
                     {
@@ -34102,66 +34120,66 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
             // InternalSpringConfigDsl.g:12599:2: ( (enumLiteral_0= '\"DEFAULT\"' ) | (enumLiteral_1= '\\'DEFAULT\\'' ) | (enumLiteral_2= '\"READ_UNCOMMITTED\"' ) | (enumLiteral_3= '\\'READ_UNCOMMITTED\\'' ) | (enumLiteral_4= '\"READ_COMMITTED\"' ) | (enumLiteral_5= '\\'READ_COMMITTED\\'' ) | (enumLiteral_6= '\"REPEATABLE_READ\"' ) | (enumLiteral_7= '\\'REPEATABLE_READ\\'' ) | (enumLiteral_8= '\"SERIALIZABLE\"' ) | (enumLiteral_9= '\\'SERIALIZABLE\\'' ) )
             {
             // InternalSpringConfigDsl.g:12599:2: ( (enumLiteral_0= '\"DEFAULT\"' ) | (enumLiteral_1= '\\'DEFAULT\\'' ) | (enumLiteral_2= '\"READ_UNCOMMITTED\"' ) | (enumLiteral_3= '\\'READ_UNCOMMITTED\\'' ) | (enumLiteral_4= '\"READ_COMMITTED\"' ) | (enumLiteral_5= '\\'READ_COMMITTED\\'' ) | (enumLiteral_6= '\"REPEATABLE_READ\"' ) | (enumLiteral_7= '\\'REPEATABLE_READ\\'' ) | (enumLiteral_8= '\"SERIALIZABLE\"' ) | (enumLiteral_9= '\\'SERIALIZABLE\\'' ) )
-            int alt183=10;
+            int alt184=10;
             switch ( input.LA(1) ) {
             case 275:
                 {
-                alt183=1;
+                alt184=1;
                 }
                 break;
             case 276:
                 {
-                alt183=2;
+                alt184=2;
                 }
                 break;
             case 277:
                 {
-                alt183=3;
+                alt184=3;
                 }
                 break;
             case 278:
                 {
-                alt183=4;
+                alt184=4;
                 }
                 break;
             case 279:
                 {
-                alt183=5;
+                alt184=5;
                 }
                 break;
             case 280:
                 {
-                alt183=6;
+                alt184=6;
                 }
                 break;
             case 281:
                 {
-                alt183=7;
+                alt184=7;
                 }
                 break;
             case 282:
                 {
-                alt183=8;
+                alt184=8;
                 }
                 break;
             case 283:
                 {
-                alt183=9;
+                alt184=9;
                 }
                 break;
             case 284:
                 {
-                alt183=10;
+                alt184=10;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 183, 0, input);
+                    new NoViableAltException("", 184, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt183) {
+            switch (alt184) {
                 case 1 :
                     // InternalSpringConfigDsl.g:12600:3: (enumLiteral_0= '\"DEFAULT\"' )
                     {
@@ -34356,11 +34374,11 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
     // Delegated rules
 
 
-    protected DFA6 dfa6 = new DFA6(this);
-    protected DFA77 dfa77 = new DFA77(this);
-    protected DFA92 dfa92 = new DFA92(this);
-    protected DFA103 dfa103 = new DFA103(this);
-    protected DFA137 dfa137 = new DFA137(this);
+    protected DFA7 dfa7 = new DFA7(this);
+    protected DFA78 dfa78 = new DFA78(this);
+    protected DFA93 dfa93 = new DFA93(this);
+    protected DFA104 dfa104 = new DFA104(this);
+    protected DFA138 dfa138 = new DFA138(this);
     static final String dfa_1s = "\12\uffff";
     static final String dfa_2s = "\1\5\11\uffff";
     static final String dfa_3s = "\1\32\11\uffff";
@@ -34386,11 +34404,11 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
     static final short[] dfa_5 = DFA.unpackEncodedString(dfa_5s);
     static final short[][] dfa_6 = unpackEncodedStringArray(dfa_6s);
 
-    class DFA6 extends DFA {
+    class DFA7 extends DFA {
 
-        public DFA6(BaseRecognizer recognizer) {
+        public DFA7(BaseRecognizer recognizer) {
             this.recognizer = recognizer;
-            this.decisionNumber = 6;
+            this.decisionNumber = 7;
             this.eot = dfa_1;
             this.eof = dfa_1;
             this.min = dfa_2;
@@ -34407,37 +34425,37 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
         	int _s = s;
             switch ( s ) {
                     case 0 : 
-                        int LA6_0 = input.LA(1);
+                        int LA7_0 = input.LA(1);
 
                          
-                        int index6_0 = input.index();
+                        int index7_0 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (LA6_0==26) ) {s = 1;}
+                        if ( (LA7_0==26) ) {s = 1;}
 
-                        else if ( LA6_0 == 19 && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationAccess().getUnorderedGroup_1_1(), 0) ) {s = 2;}
+                        else if ( LA7_0 == 19 && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationAccess().getUnorderedGroup_1_1(), 0) ) {s = 2;}
 
-                        else if ( LA6_0 == 20 && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationAccess().getUnorderedGroup_1_1(), 1) ) {s = 3;}
+                        else if ( LA7_0 == 20 && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationAccess().getUnorderedGroup_1_1(), 1) ) {s = 3;}
 
-                        else if ( LA6_0 == 21 && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationAccess().getUnorderedGroup_1_1(), 2) ) {s = 4;}
+                        else if ( LA7_0 == 21 && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationAccess().getUnorderedGroup_1_1(), 2) ) {s = 4;}
 
-                        else if ( LA6_0 == 22 && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationAccess().getUnorderedGroup_1_1(), 3) ) {s = 5;}
+                        else if ( LA7_0 == 22 && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationAccess().getUnorderedGroup_1_1(), 3) ) {s = 5;}
 
-                        else if ( LA6_0 == 23 && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationAccess().getUnorderedGroup_1_1(), 4) ) {s = 6;}
+                        else if ( LA7_0 == 23 && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationAccess().getUnorderedGroup_1_1(), 4) ) {s = 6;}
 
-                        else if ( LA6_0 == 24 && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationAccess().getUnorderedGroup_1_1(), 5) ) {s = 7;}
+                        else if ( LA7_0 == 24 && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationAccess().getUnorderedGroup_1_1(), 5) ) {s = 7;}
 
-                        else if ( LA6_0 == 25 && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationAccess().getUnorderedGroup_1_1(), 6) ) {s = 8;}
+                        else if ( LA7_0 == 25 && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationAccess().getUnorderedGroup_1_1(), 6) ) {s = 8;}
 
-                        else if ( LA6_0 == RULE_ID && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationAccess().getUnorderedGroup_1_1(), 7) ) {s = 9;}
+                        else if ( LA7_0 == RULE_ID && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationAccess().getUnorderedGroup_1_1(), 7) ) {s = 9;}
 
                          
-                        input.seek(index6_0);
+                        input.seek(index7_0);
                         if ( s>=0 ) return s;
                         break;
             }
             NoViableAltException nvae =
-                new NoViableAltException(getDescription(), 6, _s, input);
+                new NoViableAltException(getDescription(), 7, _s, input);
             error(nvae);
             throw nvae;
         }
@@ -34474,11 +34492,11 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
     static final short[] dfa_11 = DFA.unpackEncodedString(dfa_11s);
     static final short[][] dfa_12 = unpackEncodedStringArray(dfa_12s);
 
-    class DFA77 extends DFA {
+    class DFA78 extends DFA {
 
-        public DFA77(BaseRecognizer recognizer) {
+        public DFA78(BaseRecognizer recognizer) {
             this.recognizer = recognizer;
-            this.decisionNumber = 77;
+            this.decisionNumber = 78;
             this.eot = dfa_7;
             this.eof = dfa_7;
             this.min = dfa_8;
@@ -34495,51 +34513,51 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
         	int _s = s;
             switch ( s ) {
                     case 0 : 
-                        int LA77_0 = input.LA(1);
+                        int LA78_0 = input.LA(1);
 
                          
-                        int index77_0 = input.index();
+                        int index78_0 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (LA77_0==26||LA77_0==31) ) {s = 1;}
+                        if ( (LA78_0==26||LA78_0==31) ) {s = 1;}
 
-                        else if ( LA77_0 == 68 && getUnorderedGroupHelper().canSelect(grammarAccess.getComponentAccess().getUnorderedGroup_2(), 0) ) {s = 2;}
+                        else if ( LA78_0 == 68 && getUnorderedGroupHelper().canSelect(grammarAccess.getComponentAccess().getUnorderedGroup_2(), 0) ) {s = 2;}
 
-                        else if ( LA77_0 == 33 && getUnorderedGroupHelper().canSelect(grammarAccess.getComponentAccess().getUnorderedGroup_2(), 1) ) {s = 3;}
+                        else if ( LA78_0 == 33 && getUnorderedGroupHelper().canSelect(grammarAccess.getComponentAccess().getUnorderedGroup_2(), 1) ) {s = 3;}
 
-                        else if ( LA77_0 >= 146 && LA77_0 <= 148 && getUnorderedGroupHelper().canSelect(grammarAccess.getComponentAccess().getUnorderedGroup_2(), 2) ) {s = 4;}
+                        else if ( LA78_0 >= 146 && LA78_0 <= 148 && getUnorderedGroupHelper().canSelect(grammarAccess.getComponentAccess().getUnorderedGroup_2(), 2) ) {s = 4;}
 
-                        else if ( LA77_0 == 164 && getUnorderedGroupHelper().canSelect(grammarAccess.getComponentAccess().getUnorderedGroup_2(), 3) ) {s = 5;}
+                        else if ( LA78_0 == 164 && getUnorderedGroupHelper().canSelect(grammarAccess.getComponentAccess().getUnorderedGroup_2(), 3) ) {s = 5;}
 
-                        else if ( LA77_0 == 166 && getUnorderedGroupHelper().canSelect(grammarAccess.getComponentAccess().getUnorderedGroup_2(), 4) ) {s = 6;}
+                        else if ( LA78_0 == 166 && getUnorderedGroupHelper().canSelect(grammarAccess.getComponentAccess().getUnorderedGroup_2(), 4) ) {s = 6;}
 
-                        else if ( LA77_0 == 135 && getUnorderedGroupHelper().canSelect(grammarAccess.getComponentAccess().getUnorderedGroup_2(), 5) ) {s = 7;}
+                        else if ( LA78_0 == 135 && getUnorderedGroupHelper().canSelect(grammarAccess.getComponentAccess().getUnorderedGroup_2(), 5) ) {s = 7;}
 
-                        else if ( LA77_0 == 136 && getUnorderedGroupHelper().canSelect(grammarAccess.getComponentAccess().getUnorderedGroup_2(), 6) ) {s = 8;}
+                        else if ( LA78_0 == 136 && getUnorderedGroupHelper().canSelect(grammarAccess.getComponentAccess().getUnorderedGroup_2(), 6) ) {s = 8;}
 
-                        else if ( LA77_0 == 137 && getUnorderedGroupHelper().canSelect(grammarAccess.getComponentAccess().getUnorderedGroup_2(), 7) ) {s = 9;}
+                        else if ( LA78_0 == 137 && getUnorderedGroupHelper().canSelect(grammarAccess.getComponentAccess().getUnorderedGroup_2(), 7) ) {s = 9;}
 
-                        else if ( LA77_0 == 138 && getUnorderedGroupHelper().canSelect(grammarAccess.getComponentAccess().getUnorderedGroup_2(), 8) ) {s = 10;}
+                        else if ( LA78_0 == 138 && getUnorderedGroupHelper().canSelect(grammarAccess.getComponentAccess().getUnorderedGroup_2(), 8) ) {s = 10;}
 
-                        else if ( LA77_0 == 139 && getUnorderedGroupHelper().canSelect(grammarAccess.getComponentAccess().getUnorderedGroup_2(), 9) ) {s = 11;}
+                        else if ( LA78_0 == 139 && getUnorderedGroupHelper().canSelect(grammarAccess.getComponentAccess().getUnorderedGroup_2(), 9) ) {s = 11;}
 
-                        else if ( LA77_0 == 140 && getUnorderedGroupHelper().canSelect(grammarAccess.getComponentAccess().getUnorderedGroup_2(), 10) ) {s = 12;}
+                        else if ( LA78_0 == 140 && getUnorderedGroupHelper().canSelect(grammarAccess.getComponentAccess().getUnorderedGroup_2(), 10) ) {s = 12;}
 
-                        else if ( LA77_0 == 141 && getUnorderedGroupHelper().canSelect(grammarAccess.getComponentAccess().getUnorderedGroup_2(), 11) ) {s = 13;}
+                        else if ( LA78_0 == 141 && getUnorderedGroupHelper().canSelect(grammarAccess.getComponentAccess().getUnorderedGroup_2(), 11) ) {s = 13;}
 
-                        else if ( LA77_0 == 142 && getUnorderedGroupHelper().canSelect(grammarAccess.getComponentAccess().getUnorderedGroup_2(), 12) ) {s = 14;}
+                        else if ( LA78_0 == 142 && getUnorderedGroupHelper().canSelect(grammarAccess.getComponentAccess().getUnorderedGroup_2(), 12) ) {s = 14;}
 
-                        else if ( LA77_0 == 143 && getUnorderedGroupHelper().canSelect(grammarAccess.getComponentAccess().getUnorderedGroup_2(), 13) ) {s = 15;}
+                        else if ( LA78_0 == 143 && getUnorderedGroupHelper().canSelect(grammarAccess.getComponentAccess().getUnorderedGroup_2(), 13) ) {s = 15;}
 
-                        else if ( LA77_0 == 144 && getUnorderedGroupHelper().canSelect(grammarAccess.getComponentAccess().getUnorderedGroup_2(), 14) ) {s = 16;}
+                        else if ( LA78_0 == 144 && getUnorderedGroupHelper().canSelect(grammarAccess.getComponentAccess().getUnorderedGroup_2(), 14) ) {s = 16;}
 
                          
-                        input.seek(index77_0);
+                        input.seek(index78_0);
                         if ( s>=0 ) return s;
                         break;
             }
             NoViableAltException nvae =
-                new NoViableAltException(getDescription(), 77, _s, input);
+                new NoViableAltException(getDescription(), 78, _s, input);
             error(nvae);
             throw nvae;
         }
@@ -34615,11 +34633,11 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
     static final short[] dfa_17 = DFA.unpackEncodedString(dfa_17s);
     static final short[][] dfa_18 = unpackEncodedStringArray(dfa_18s);
 
-    class DFA92 extends DFA {
+    class DFA93 extends DFA {
 
-        public DFA92(BaseRecognizer recognizer) {
+        public DFA93(BaseRecognizer recognizer) {
             this.recognizer = recognizer;
-            this.decisionNumber = 92;
+            this.decisionNumber = 93;
             this.eot = dfa_13;
             this.eof = dfa_13;
             this.min = dfa_14;
@@ -34725,11 +34743,11 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
     static final short[] dfa_23 = DFA.unpackEncodedString(dfa_23s);
     static final short[][] dfa_24 = unpackEncodedStringArray(dfa_24s);
 
-    class DFA103 extends DFA {
+    class DFA104 extends DFA {
 
-        public DFA103(BaseRecognizer recognizer) {
+        public DFA104(BaseRecognizer recognizer) {
             this.recognizer = recognizer;
-            this.decisionNumber = 103;
+            this.decisionNumber = 104;
             this.eot = dfa_19;
             this.eof = dfa_19;
             this.min = dfa_20;
@@ -34893,11 +34911,11 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
     static final short[] dfa_29 = DFA.unpackEncodedString(dfa_29s);
     static final short[][] dfa_30 = unpackEncodedStringArray(dfa_30s);
 
-    class DFA137 extends DFA {
+    class DFA138 extends DFA {
 
-        public DFA137(BaseRecognizer recognizer) {
+        public DFA138(BaseRecognizer recognizer) {
             this.recognizer = recognizer;
-            this.decisionNumber = 137;
+            this.decisionNumber = 138;
             this.eot = dfa_25;
             this.eof = dfa_25;
             this.min = dfa_26;
@@ -34921,7 +34939,7 @@ public class InternalSpringConfigDslParser extends AbstractInternalAntlrParser {
     public static final BitSet FOLLOW_7 = new BitSet(new long[]{0x0000000000024000L});
     public static final BitSet FOLLOW_8 = new BitSet(new long[]{0x0000000000018000L});
     public static final BitSet FOLLOW_9 = new BitSet(new long[]{0x0000000000020000L});
-    public static final BitSet FOLLOW_10 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_10 = new BitSet(new long[]{0x0000000000040002L});
     public static final BitSet FOLLOW_11 = new BitSet(new long[]{0x0000000007F80020L});
     public static final BitSet FOLLOW_12 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0xF0F8000000000000L,0x0000000000000001L});
     public static final BitSet FOLLOW_13 = new BitSet(new long[]{0x0000000000000010L,0x0000000000000000L,0x0000000000000000L,0x03FE000000000000L});
