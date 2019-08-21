@@ -22,7 +22,7 @@
     </parent>
 
     <modules>
-<!--         <module>fr.imt.ales.springDSL.tycho.update</module> -->
+        <module>fr.imt.ales.springDSL.tycho.update</module>
         <module>fr.imt.ales.springdsl.tycho.configuration</module>
     </modules>
 </project>
