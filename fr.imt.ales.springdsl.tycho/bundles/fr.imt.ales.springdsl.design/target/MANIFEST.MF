@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: fr.imt.ales.springdsl.design;singleton:=true
+Bundle-Name: %pluginName
+Bundle-Version: 1.0.0.201908211107
+Bundle-Localization: plugin
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.co
+ re.resources,org.eclipse.sirius,org.eclipse.sirius.common.acceleo.aql
+ ,fr.imt.ales.springdsl;bundle-version="1.0.0"
+Bundle-ManifestVersion: 2
+Bundle-Activator: spring.design.Activator
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-Vendor: %providerName
+

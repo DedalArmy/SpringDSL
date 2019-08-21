@@ -1,0 +1,816 @@
+grammar fr.imt.ales.springdsl.SpringDSL with org.eclipse.xtext.common.Terminals
+
+generate springDSL "http://www.imt.fr/ales/springdsl/SpringDSL"
+
+import "http://www.eclipse.org/emf/2002/Ecore" as ecore
+
+
+SpringProject returns SpringProject:
+	{SpringProject}
+	'<?xml''version''='STRING'encoding''='STRING ('standalone''='('yes'|'no'))?'?>'
+	 (configurations+=Configuration)*;
+
+
+AbstractKeyValue:
+	(AbstractArtefact|DataString)
+;
+
+/**Abstract Class of elements present in bean */
+AbstractArtefact returns AbstractArtefact:
+	Component |  AttributeTag  |IdRefTag| ReferenceTag  |Collection;
+
+/**Abstract Class of Collection  */
+Collection returns Collection:
+	Array|sList | sSet  | Map | Props;
+
+/**Abstract Class of Collection  */
+/*Util:
+	(UtilConstant|UtilPropertyPath|UtilProperties/* |UtilList|UtilMap|UtilSet)
+;*/
+
+/*<beans/> */
+Configuration returns Configuration:
+	{Configuration}
+	(
+	'<beans'  
+	
+	(('default-autowire='defaultAutowire=AutoWiredType)?
+	&('default-init-method='defaultInitMethod=ValidString)? //Method
+	&('default-autowire-candidates='defaultAutowireCandidates=ValidString)? //REGEX
+	&('default-destroy-method='defaultDestroyMethod=ValidString)? //Method
+	&('default-lazy-init='defaultLazyInit=DefaultableBoolean)? 
+	&('default-merge='defaultMerge=DefaultableBoolean)? //Default is false
+	&('profile='profile=ValidString)?
+	& (IdDashAndColon'='ValidString)* ) 
+	'>')
+	description=Description?
+	(components+=Component|alias+=Alias|imports+=Import
+		|contexts+=Context
+		|mvcs += MVC
+		|aspects+=Aspect
+		|utilConstants+=UtilConstant|utilLists+=UtilList|utilMaps+=UtilMap
+		|utilProperties+=UtilProperties|utilSets+=UtilSet|utilPropertiesPath+=UtilPropertyPath
+		|txAdvices+=TxAdvise|txJtaTransactionManager+=TxJtaTransactionManager
+		
+	)*
+	(ConfigurationComposite+=Configuration)*
+	('</beans>');
+
+MVC:
+	{MVC}
+	('<mvc' ':' 'annotation-driven' '/>')
+;
+
+
+
+/*<alias/> */
+Alias returns Alias:
+	{Alias}
+	'<alias' 'name=' origin=[Component|ValidString] 'alias=' alias=ValidString ('/>'|('>''</alias>'));
+
+/*<import/> */
+Import returns Import:
+	{Import}
+	'<import''resource='resource=ValidString('/>'|('>''</import>'))
+;
+
+Context:
+'<context:'ContextType 
+;
+
+ContextType returns Context:
+	(AnnotationConfig|ComponentScan|LoadTimeWeaver|MbeanExport|MbeanServer|PropertyHolder|SpringConfigured)
+;
+
+/** looks for annotations on beans in the same application context in which it is defined */
+AnnotationConfig:
+	{AnnotationConfig}
+	('annotation-config' (('/>')|('>''</context:annotation-config>')))
+;
+
+/** Spring can automatically detect stereotyped classes and register corresponding BeanDefinitions with the ApplicationContext 
+ * (implicitly enables the functionality of <context:annotation-config>)
+ *
+ * base-package - The comma/semicolon/space/tab/linefeed-separated list of packages to scan for annotated components.
+ * annotation-config - Indicates whether the implicit annotation post-processors should be enabled. Default is "true".
+ * name-generator - The fully-qualified class name of the BeanNameGenerator to be used for naming detected components.
+ * resource-pattern - Controls the class files eligible for component detection. "** /*.class"  
+ * scope-resolver - The fully-qualified class name of the ScopeMetadataResolver to 
+ * be used for resolving the scope of detected components.
+ * scoped-proxy  -Indicates whether proxies should be generated for detected 
+ components
+ * use-default-filters - Indicates whether automatic detection of classes annotated with @Component, @Repository, @Service, or 
+ @Controller should be enabled. Default is "true".
+ */
+ComponentScan:
+	{ComponentScan}
+	'component-scan' 
+	(('base-package='basePackage=ValidString)
+	&('annotation-config='annotationConfig=sBoolean)?
+	&('name-generator='nameGeneratorBean=[Component|ValidString])?
+	&('resource-pattern=' resourcePattern=ValidString)? 
+	&('scope-resolver='scopeResolver=[Component|ValidString])?
+	&('scoped-proxy='scopedProxy=EnumScopedProxy)?
+	&('use-default-filters='useDefaultFilters=sBoolean)?
+	) 
+	
+	
+	(('/>')|('>'(includeFilters+=IncludeFilter)*(excludeFilters+=ExcludeFilter)*'</context:component-scan>'))
+;
+
+
+IncludeFilter:
+	'<context:include-filter' 
+		(('type='type=EnumTypeFilter) 
+		&('expression='expression=ValidString)
+		)
+		(('/>')|('>''</context:include-filter>'))
+;
+
+ExcludeFilter:
+	'<context:exclude-filter'
+	 (('type='type=EnumTypeFilter) 
+		&('expression='expression=ValidString)
+		)
+		(('/>')|('>''</context:exclude-filter>'))
+;
+
+/** load-time weaving for Aspect class */
+LoadTimeWeaver:
+	{LoadTimeWeaver}
+	'load-time-weaver'  (('aspectj-weaving='aspectjWeaving=ValidString)? & ('weaver-class='weaverClass=ValidString)?) (('/>')|('>''</context:load-time-weaver>'))
+;
+
+
+MbeanExport:
+	{MbeanExport}
+	'mbean-export' (('default-domain='defaultDomain=ValidString)? & ('registration='registration=MbeanRegistrationEnum)? & ('server='server=[Component|ValidString])?) (('/>')|('>''</context:mbean-export>'))
+;
+
+
+
+MbeanServer:
+	{MbeanServer}
+	'mbean-server' (('agent-id='agentId=ValidString)? & ('id='name=ValidString)?) (('/>')|('>''</context:mbean-server>'))
+	
+;
+
+PropertyHolder :
+(PropertyPlaceholder|PropertyOverride);
+
+/** Placeholder for properties files */
+
+
+PropertyPlaceholder:
+	'property-placeholder'
+	(	propertyfile=PropertyFile ?
+		&('ignore-resource-not-found='ignoreResourceNotFound=sBoolean)? & ('ignore-unresolvable='ignoreUnresolvable=sBoolean)? &('local-override='localOverride=sBoolean)?
+		& ('order='order=ValidString)? &('properties-ref='propertiesRef=[Component|ValidString])?	
+		& ('system-properties-mode='systemPropertiesMode=ValidString )?//Depreciated since 3.1
+	)  (('/>')|('>''</context:property-placeholder>'))
+;
+
+/** Activates pushing of override values into bean properties */
+PropertyOverride:
+	'property-override' 
+	(propertyfile=PropertyFile  
+	&('ignore-resource-not-found='ignoreResourceNotFound=sBoolean)? & ('ignore-unresolvable='ignoreUnresolvable=sBoolean)? &('local-override='localOverride=sBoolean)?
+		& ('order='order=ValidString)? &('properties-ref='propertiesRef=[Component|ValidString])?	
+		)  (('/>')|('>''</context:property-override>'))
+;
+
+/*Signals the current application context to apply dependency injection to non-managed classes that are 
+ instantiated outside of the Spring bean factory (typically classes annotated with the @Configurable annotation). */
+SpringConfigured:
+	{SpringConfigured}
+	'spring-configured'  (('/>')|('>''</context:spring-configured>'))
+;
+
+/** Aspect main tags */
+Aspect returns Aspect:
+'<aop:'AspectType	
+;
+
+AspectType returns Aspect:
+	(AopAspectJAutoproxy|AopConfig)
+;
+
+/** To enable @AspectJ support with XML based configuration */
+AopAspectJAutoproxy:
+	{AopAspectJAutoproxy}
+	'aspectj-autoproxy' (('expose-proxy='exposeProxy=sBoolean) ? & ('proxy-target-class='proxyTrajetClass=sBoolean)?) (('/>')|('>'(aopincludes+=AopInclude)*'</aop:aspectj-autoproxy>'))
+;
+
+/** Include @AspectJ aspect  use with Spring AOP*/
+AopInclude:
+	'include' 'name='aopInclude=[Component|ValidString] (('/>')|('>''</aop:include>'))
+;
+
+AopConfig:
+	{AopConfig}(
+	'config' (('expose-proxy='exposeProxy=sBoolean) ? & ('proxy-target-class='proxyTrajetClass=sBoolean)?)
+	(('/>')
+	|('>'((aopPointcuts+=AopPointcut)*(aopAdvisors+=AopAdvisor)*(aspects+=AopAspect)*)'</aop:config>')
+	)
+	
+)
+;
+
+AopPointcut:
+	'<aop:pointcut' 
+	(('expression='expression=ValidString) &('id='name=ValidString))
+	(('/>')|('>''</aop:pointcut>'))
+	
+;
+/*  (pointcut|pointcut-ref)*/
+AopAdvisor:
+	'<aop:advisor' 
+	(('advice-ref='adviceRef=[TxAdvise|ValidString]) & ('id='name=ValidString)? & ('order='order=ValidString)? & ((pointcut=PointCutExpression)|('pointcut-ref='pointcutRef=[AopPointcut|ValidString]))) 
+	(('/>')|('>''</aop:advisor>'))
+;
+
+PointCutExpression returns AopPointcut:
+	'pointcut='expression=ValidString
+;
+
+/**(pointcut | declare-parents | before | after | after-returning | after-throwing | around)* */
+AopAspect:
+	'<aop:aspect' (('id='name=ValidString) & ('order='order=ValidString) & ('ref='backingBeanRef=[Component|ValidString])) '>' (aopPointcuts+=AopPointcut|declaredParents+=DeclareParents|advises+=Advise)* '</aop:aspect>' 
+;
+
+/* Introductions
+ * Allows this aspect to introduce additional interfaces that the 
+ advised object will transparently implement. */
+DeclareParents:
+	'<aop:declare-parents'
+	(
+		 ('types-matching='typeMatching=ValidString)
+		&(implementInterface=AopImplInterface)
+		&((defaultImplInterface=AopDefaultImplInterface)
+		|(delegateImplRef=AopDelegateImplRef))
+	)
+	(('/>')|('>''</aop:declare-parents>'))
+;
+
+
+/**The fully qualified name of the interface that will be introduced. */
+AopImplInterface returns Interface:
+	'implement-interface='name=ValidString
+;
+
+/*The fully qualified name of the interface that will be introduced. */
+AopDefaultImplInterface:
+	'default-impl='name=ValidString
+;
+
+/*A reference to the bean that will serve as the default implementation of the introduced 
+ interface. */
+AopDelegateImplRef:
+	'delegate-ref='ref=[Component|ValidString]
+;
+
+Advise:
+	(BeforeAdvise|AfterAdvise|AroundAdvise|AfterReturning|AfterThowing)
+;
+
+
+BeforeAdvise:
+	'<aop:before' ((('pointcut-ref='pointcutRef=[AopPointcut|ValidString])|('pointcut='PointcutExpression=ValidString)) & ('method='method=ValidString))
+	(('/>')|('>''</aop:before>'))
+;
+
+AfterAdvise:
+	'<aop:after' ((('pointcut-ref='pointcutRef=[AopPointcut|ValidString])|('pointcut='PointcutExpression=ValidString)) & ('method='method=ValidString))
+	(('/>')|('>''</aop:after>'))
+;
+
+AroundAdvise:
+	'<aop:around' ((('pointcut-ref='pointcutRef=[AopPointcut|ValidString])|('pointcut='PointcutExpression=ValidString)) & ('method='method=ValidString))
+	(('/>')|('>''</aop:around>'))
+;
+
+AfterReturning:
+	'<aop:after-returning' ((('pointcut-ref='pointcutRef=[AopPointcut|ValidString])|('pointcut='PointcutExpression=ValidString)) & ('method='method=ValidString) & ('returning='returningValue=ValidString))
+	(('/>')|('>''</aop:after-returning>'))
+;
+
+AfterThowing:
+	'<aop:after-throwing' ((('pointcut-ref='pointcutRef=[AopPointcut|ValidString])|('pointcut='PointcutExpression=ValidString)) & ('method='method=ValidString) & ('throwing='throwingValue=ValidString))
+	(('/>')|('>''</aop:after-throwing>'))
+;
+
+
+TxAdvise:
+	'<tx:advice' (('id='name=ValidString) &
+	('transaction-manager='transactionManager=ValidString)? //Default value="transactionManager"
+	)
+	'>'
+	(txAttribute=TxAttribute)?
+	'</tx:advice>'
+;
+
+TxAttribute:
+	{TxAttribute}
+	'<tx:attributes''>'
+	(txMethods+=TxMethod)+
+	'</tx:attributes>'
+	
+;
+
+TxMethod:
+	'<tx:method'
+	(('name='name=ValidString)
+	&('isolation='isolation=EnumIsolation)?
+	&('no-rollback-for='noRollBackFor=ValidString)?//ref Exeption
+	&('propagation='propagation=EnumIsolation)?
+	&('read-only='readOnly=sBoolean)?
+	&('rollback-for='rollbackFor=ValidString)? //ref Exeption
+	&('timeout='timeOut=ValidString)? //int default value:-1
+);
+
+TxJtaTransactionManager:
+	{TxJtaTransactionManager}
+'<tx:jta-transaction-manager'
+(('/>')|('>''</tx:jta-transaction-manager>'))
+
+;/*<bean/> */
+Component returns Component:
+	{Component}
+	'<bean' 
+	( ('id='name=ValidString)? & ('name='names+=ValidString)?
+	&   class= CreationMethod
+	&  (features+=PNamespace)*
+	&  (features+= CNamespace)* 
+ 	& ('abstract='abstract=sBoolean)? //bool
+	& ('autowire-candidate='autowireCandidate=DefaultableBoolean)? //enum
+	& ('autowire='autowire=DefaultableBoolean)? //enum
+	& ('depends-on='dependsOn=[Component|ValidString])? //ref a bean
+	& ('destroy-method='detroyMethod=ValidString)? //ref a method
+	& ('init-method='initMethod=ValidString)? //ref a method
+	& ('lazy-init='lazyInit=DefaultableBoolean)? //enum
+	& ('parent='parent=[Component|ValidString])? //ref a bean
+	& ('primary='primary=sBoolean)? //bool
+	& ('scope='scope=ValidString )?
+	)
+	(
+		('/>')
+		| ('>'
+		description=Description?
+		
+		(features+=Feature|lookupMethods+=LookupMethod|qualifiers+=Qualifier|meta+=MetaTag
+		|(aopScopedProxy=AopScopedProxy)|utilPropertiesPath+=UtilPropertyPath
+		)*
+	 	'</bean>')
+	)
+	;
+
+
+
+
+CreationMethod:
+ (('factory-method=' factoryMethod=ValidString)?  & class=( Class|Factory))	
+;
+
+/*If the bean is created by a factory */
+ClassOrFactory:
+(Class|Factory)
+;
+
+Factory:
+	('factory-bean=' factoryBean=[Component|ValidString]);
+
+Class returns Class:
+			 ('class='/*(path=Path '.' )? classname=ID */  classname=ValidString)
+	 ;
+
+
+/*Path of the class */
+/*Path returns ecore::EString:
+(ID ('.'ID)*)
+;
+*/
+
+AopScopedProxy:
+	{AopScopedProxy}
+ '<aop:scoped-proxy'  ('proxy-target-class='proxyTargetClass=ValidString)? (('/>')|('>''</aop:scoped-proxy>'))
+;
+
+
+Feature returns Feature:
+	(Property |ConstructorArg)
+;
+
+/*<property/> */
+Property returns Feature:
+	('<property' ((
+		(('name=' name=ValidString) & (artefact=(ReferenceAtt|AttributeAtt)) ) ('/>'|'>'(description=Description)?'</property>'))
+		| (('name=' name=ValidString)'>' (description=Description)? (artefact=AbstractArtefact|NullTag) '</property>')
+		)
+	)
+;
+
+/** If Attribute is a attribute of <property/>/<Constructor-arg/> */
+AttributeAtt returns Attribute:
+	{Attribute}
+	( ('value='value=ValidString)) 
+;
+
+/**Attribute create by a tag */
+AttributeTag returns Attribute:
+	({Attribute}
+	'<value'('type='type=ValidString)? (('>'value=QSTRING '</value>')|('/>')))
+	|(UtilConstant)
+;
+
+AttributSimple returns Attribute:
+	value=ValidString
+;
+AttributSimpleValue returns Attribute:
+	'value='value=ValidString
+;
+/** <Idref/> */
+IdRefTag returns Attribute:
+	{Attribute}
+	'<idref''bean='value=ValidString(('/>')|('>''</idref>'))
+;
+/** If Reference is a attribute of <property/>/<Constructor-arg/> */
+ReferenceAtt returns Reference:
+	{Reference}
+	'ref='ref=[Component|ValidString]
+;
+
+/**Reference create by a tag */
+ReferenceTag returns Reference:
+ {Reference}
+ '<ref''bean='ref=([AbstractArtefact|ValidString]) ('/>'|'>''</ref>') 	
+;
+
+
+ReferenceComponent returns Reference:
+	ref=[Component|ValidString]
+;
+
+/** <constructor-arg/>*/
+ConstructorArg returns Feature:
+	 '<constructor-arg' 
+	 ( ( (ConstructorArgAtt)
+	 (('>'(description=Description)?'</constructor-arg>')|('/>'))
+	 )
+	 |
+	 ({Feature}
+	 	 ( ('index='index=ValidString)?&("name="name=ValidString)?&("type="type=ValidString)?)'>'
+			(description=Description)?
+			(artefact=AbstractArtefact|NullTag)
+		'</constructor-arg>'
+		)
+	 )
+	 
+;
+
+/*If the parameter is a attribute */
+ConstructorArgAtt returns Feature:
+	 (  
+		('index='index=ValidString)?
+		& ("name="name=ValidString)?
+		 &  (artefact=AttributesCons)
+	)
+	;
+
+AttributesCons returns AbstractArtefact:
+		(
+		 ({Attribute}('value='value=ValidString & ('type='type=ValidString)?))
+		|({Reference}('ref='ref=[Component|ValidString] /* &('type='STRING)? */))
+		)
+		
+	
+;
+
+/*Attribute created in <constructor-arg/> */
+/*AttributeAttCons returns Attribute:
+	{Attribute}
+	( ( ('value='STRING)& ('type='type=STRING)?)) 
+;*/
+
+
+/*Attribute created in <constructor-arg/> */
+/*ReferenceAttCons returns Reference:
+	{Reference}
+	( ( ('ref='ref=[Component|STRING]) & ('type='STRING)?)) 
+;*/
+
+
+PNamespace returns Feature:
+'p:'name=ID (('-ref''='artefact=ReferenceComponent)|'='artefact=AttributSimple)
+;
+
+CNamespace returns Feature:
+'c:'name=ID (('-ref''='artefact=ReferenceComponent)|'='artefact=AttributSimple)
+	
+;
+
+
+LookupMethod:
+'<lookup-method' (('name='name=ValidString) & ('bean='ref=[Component|ValidString]))(('/>')|('>''</lookup-method>'))	
+;
+
+Qualifier:
+	'<qualifier'
+	 (('type='type=ValidString)&('value='value=ValidString)?)
+	(('/>')|('>'(qualifierAttributes+=QualifierAttribute)*'</qualifier>'))
+	
+;
+MetaTag returns Meta:
+	'<meta' 
+	(('key='key=ValidString)&('value='value=ValidString))
+	(('/>')|('>''</meta>'))
+	
+	
+;
+QualifierAttribute:
+	'<attribute'
+	(('key='key=ValidString)&('value='value=ValidString))
+	(('/>')|('>''</attribute>'))
+	
+;
+
+/* <array> */
+Array returns Array:
+	({Array})
+	('<array' (('value-type='valueType=ValidString)? &('merge='merge=DefaultableBoolean)?) '>'
+		(description=Description)?
+		(artefacts+=AbstractArtefact|NullTag)*
+	'</array>')
+;
+
+/*<list/> */
+sList returns sList:
+	({sList}
+	('<list' (('value-type='valueType=ValidString)? &('merge='merge=DefaultableBoolean)?) '>'
+		(description=Description)?
+		(artefacts+=AbstractArtefact|NullTag)*
+	'</list>'))|(UtilList)
+;
+
+/*<set/> */
+sSet returns sSet: 
+{sSet}
+	(('<set' (('value-type='valueType=ValidString)? &('merge='merge=DefaultableBoolean)?) '>'
+		(description=Description)?
+		(artefacts+=AbstractArtefact|NullTag)*
+	'</set>'))|UtilSet
+;
+
+/*<props/> */
+Props returns Props:
+	({Props}
+	('<props' (('value-type='valueType=ValidString)? &('merge='merge=DefaultableBoolean)?) '>'
+		(description=Description)?
+		(props+=Prop)*
+	'</props>'))|UtilProperties
+;
+
+/*<prop/> */
+Prop:
+	'<prop' 'key='key=ValidString'>'value=QSTRING'</prop>'
+;
+
+/*<map/> */
+Map:
+	{Map}
+	('<map' (('key-type='keyType=ValidString)?& ('merge='merge=DefaultableBoolean)? & ('value-type='valueType=ValidString)?) '>'
+		(description=Description)?
+	(entries+=MapEntry)*
+	'</map>')|UtilMap
+	
+;
+
+/*Entries for map  */
+MapEntry returns MapEntry:
+'<entry' 
+	( (MapEntryKey| MapEntryValue|MapEntryAtt)
+	  | (
+	 /*('value-type='valueType=ValidString)?*/ '>'
+	key=Key (value=AbstractArtefact|NullTag)
+	(description=Description)?
+	('</entry>')))
+
+
+;
+
+/*If the key is a attribute */
+MapEntryKey returns MapEntry:
+ (('value-type='valueType=ValidString)? &
+ (key=MapEntryKeyAtt))'>' 
+ (description=Description)?
+ value=AbstractArtefact
+('</entry>')
+;
+
+/*If the value is a attribute */
+MapEntryValue returns MapEntry:
+(('value-type='valueType=ValidString)?	&
+ (value=AttributSimpleValue|value=MapEntryValRef))'>'
+ key=Key
+ (description=Description)?
+ ('</entry>')
+;
+
+/*If the key and the value are attributes */
+MapEntryAtt returns MapEntry:
+ (('value-type='valueType=ValidString)? key=MapEntryKeyAtt & (value=AttributSimpleValue|(value=MapEntryValRef)))
+ (('/>')|('>'(description=Description)?'</entry>'))
+;
+
+/*<key/> */
+Key:
+	{Key}
+	'<key''>'(description=Description)?(key=AbstractArtefact|NullTag) '</key>'
+;
+
+/*if key is a attribute */
+MapEntryKeyAtt returns Key:
+	{Key} /*('key='key1=ValidString|keyref=MapEntrykeyRef )*/
+	('key='key=DataString|key=MapEntrykeyRef )
+;
+
+
+MapEntrykeyRef returns Reference:
+	('key-ref='ref=[Component|ValidString])
+;
+MapEntryValRef returns Reference:
+	('value-ref='ref=[Component|ValidString])
+;
+
+
+UtilConstant:
+{UtilConstant}
+'<util:constant' 
+( ('static-field='StaticField=STRING) 
+  &('id='name=ValidString)?
+)
+(('/>')|('>''</util:constant>'))
+;
+
+UtilPropertyPath:
+'<util:property-path' (('id='name=ValidString)& ('path='path=ValidString) )
+(('/>')|('>''</util:constant>'))
+;
+
+UtilProperties:
+	{UtilProperties}
+'<util:properties' 
+(
+	 (propertyfile=PropertyFileSimple)?
+	&('id='name=ValidString)?
+	&('ignore-resource-not-found='ignoreResourceNotFound=sBoolean)?
+	&('local-override='localOverride=sBoolean)?
+	&('scope='scope=ValidString)?
+	&('value-type='valueType=ValidString)?
+	(('/>')|('>'(props+=Prop)*'</util:properties>'))
+)
+;
+
+UtilList:
+	{UtilList}
+	'<util:list'
+	(('id='name=ValidString)?
+	&('list-class='listClass=ValidString)?
+	&('scope='scope=ValidString)?
+	&('value-type='valueType=ValidString)?
+	)
+	(('/>')|('>'(artefacts+=AbstractArtefact)*'</util:properties>'))
+;
+
+UtilMap:
+	
+	{UtilMap}
+	'<util:map' 
+(	('id='name=ValidString)?
+	&('key-type='keyType=ValidString)?
+	&('map-class='mapClass=ValidString)?
+	&('scope='scope=ValidString)?
+	&('value-type='valueType=ValidString)?
+
+)
+(('/>')|('>'(entries+=MapEntry)*'</util:map>'))
+;
+
+UtilSet:
+	{UtilSet}
+	'<util:set' 
+(	('id='name=ValidString)?
+	&('set-class='setClass=ValidString)?
+	&('scope='scope=ValidString)?
+	&('value-type='valueType=ValidString)?
+
+)
+(('/>')|('>'(artefacts+=AbstractArtefact)*'</util:set>'))
+;
+PropertyFileSimple returns PropertyFile:
+	('location='location=ValidString) 
+;
+PropertyFile:
+	(('location='location=ValidString)  & ('file-encoding='fileEncoding=ValidString)?)
+	;
+
+
+Description:
+	'<description>'QSTRING'</description>'
+;
+
+
+DataString :
+	s=ValidString
+;
+
+IdDashAndColon:
+	ID ( ('-' ID)|(':' ID)*)
+;
+
+IdWithDash:
+	ID ('-' ID)?;
+
+	
+QSTRING hidden(ML_COMMENT):
+     (ID|INT|WS|ValidString
+     	|','|'.'|';'|':'|'-'|'?'|'!'
+     	|'+'|'*'|'='|'°' |'>'
+     	|'/'|'|'|'\\'
+     	|'('|')'|'{'|'}'|'"'|"'"|'['|']'
+     	|'@'|'&'|'#'
+     )*;
+     
+NullTag:
+	'<null'('/>'|'>''</null>')
+;	
+ValidString:
+	(STRING|'"true"'|'"false"'|'"default"'|'"no"'|'"byName"'|'"byType"'|'"constructor"'|'"interfaces"'|'"targetClass"')
+;
+
+/**********ENUM */
+enum sBoolean:
+	FALSE='"false"'	 	|FALSE="'false'"
+	|TRUE='"true"'		|TRUE= "'true'"
+;
+enum DefaultableBoolean:
+	DEFAULT='"default"'	|DEFAULT="'default'"
+	|FALSE='"false"'	|FALSE="'false'"
+	|TRUE='"true"'		|TRUE= "'true'"
+;
+enum AutoWiredType :
+	DEFAULT='"default"'			|DEFAULT="'default'"
+	|NO='"no"'					|NO="'no'"
+	|BYNAME='"byName"'			|BYNAME= "'byName'"	
+	|BYTYPE= '"byType"'			|BYTYPE= "'byType'"
+	|CONSTRUCTOR='"constructor"'|CONSTRUCTOR="'constructor'"
+;
+enum  EnumScopedProxy:
+	NO='"no"'					|NO="'no'"
+	|INTERFACES='"interfaces"'	|INTERFACES="'interfaces'"
+	|TARGETCLASS='"targetClass"'|TARGETCLASS="'targetClass'"
+;
+enum  EnumTypeFilter:
+	ANNOTATION= '"annotation"'	|ANNOTATION="'annotation'"
+	|ASSIGNABLE='"assignable"'	|ASSIGNABLE="'assignable'"
+	|ASPECTJ= '"aspectj"'		|ASPECTJ= "'aspectj'"
+	|REGEX= '"regex"'			|REGEX= "'regex'"
+	|CUSTOM ='"custom"'			|CUSTOM ="'custom'"
+;
+
+enum MbeanRegistrationEnum:
+	FAILONEXISTING='"failOnExisting"'	|FAILONEXISTING="'failOnExisting'"
+	|IGNOREEXISTING='"ignoreExisting"'	|IGNOREEXISTING="'ignoreExisting'"
+	|REPLACEEXISTING='"replaceExisting"'|REPLACEEXISTING="'replaceExisting'"
+	;	
+enum EnumIsolation:
+	 DEFAULT='"DEFAULT"'					|DEFAULT="'DEFAULT'"
+	 |READ_UNCOMMITTED='"READ_UNCOMMITTED"'	|READ_UNCOMMITTED="'READ_UNCOMMITTED'" 
+	 |READ_COMMITTED ='"READ_COMMITTED"'	|READ_COMMITTED ="'READ_COMMITTED'"
+	 |REPEATABLE_READ ='"REPEATABLE_READ"'	|REPEATABLE_READ ="'REPEATABLE_READ'"
+	 |SERIALIZABLE='"SERIALIZABLE"'			|SERIALIZABLE="'SERIALIZABLE'"
+;
+
+enum PropagationEnum:
+	 REQUIRED='"REQUIRED"'				|REQUIRED="'REQUIRED'"
+	 |SUPPORTS='"SUPPORTS"'				|SUPPORTS="'SUPPORTS'"
+	 |MANDATORY='"MANDATORY"'			|MANDATORY="'MANDATORY'"
+	 |REQUIRES_NEW='"REQUIRES_NEW"'		|REQUIRES_NEW="'REQUIRES_NEW'"
+	 |NOT_SUPPORTED='"NOT_SUPPORTED"'	|NOT_SUPPORTED="'NOT_SUPPORTED'"
+	 |NEVER='"NEVER"'					|NEVER="'NEVER'"
+	 |NESTED='"NESTED"'					|NESTED="'NESTED'"
+;
+/***TERMINAL RULES */
+terminal ID  		: '^'?('a'..'z'|'A'..'Z'|'_') ('a'..'z'|'A'..'Z'|'_'|'0'..'9')*;
+terminal INT returns ecore::EInt: ('0'..'9')+;
+
+terminal STRING	: 
+			'"' ( '\\' . | !('\\'|'"') )* '"' |
+			"'" ( '\\' . | !('\\'|"'") )* "'"
+		; 
+
+terminal WS			: (' '|'\t'|'\r'|'\n')+;
+
+terminal ANY_OTHER: .;
+
+terminal ML_COMMENT:
+	'<!--'->'-->';

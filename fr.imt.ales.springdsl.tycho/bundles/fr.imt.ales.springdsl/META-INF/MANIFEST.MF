@@ -1,0 +1,31 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: fr.imt.ales.springdsl
+Bundle-ManifestVersion: 2
+Bundle-Name: fr.imt.ales.springdsl
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: fr.imt.ales.springdsl; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.xtext,
+ org.eclipse.xtext.xbase,
+ org.eclipse.equinox.common;bundle-version="3.5.0",
+ org.eclipse.emf.ecore,
+ org.eclipse.xtext.xbase.lib;bundle-version="2.14.0",
+ org.eclipse.xtext.util,
+ org.eclipse.emf.common,
+ org.eclipse.xtend.lib;bundle-version="2.14.0",
+ org.antlr.runtime;bundle-version="[3.2.0,3.2.1)"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: fr.imt.ales.springdsl.springDSL,
+ fr.imt.ales.springdsl.parser.antlr.internal,
+ fr.imt.ales.springdsl.services,
+ fr.imt.ales.springdsl.serializer,
+ fr.imt.ales.springdsl.parser.antlr,
+ fr.imt.ales.springdsl.generator,
+ fr.imt.ales.springdsl.springDSL.util,
+ fr.imt.ales.springdsl,
+ fr.imt.ales.springdsl.scoping,
+ fr.imt.ales.springdsl.springDSL.impl,
+ fr.imt.ales.springdsl.validation,
+ fr.imt.ales.springdsl.formatting2
+Import-Package: org.apache.log4j

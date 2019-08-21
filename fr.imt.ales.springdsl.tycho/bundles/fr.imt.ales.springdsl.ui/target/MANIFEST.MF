@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: fr.imt.ales.springdsl.ui
+Bundle-SymbolicName: fr.imt.ales.springdsl.ui; singleton:=true
+Require-Bundle: fr.imt.ales.springdsl,fr.imt.ales.springdsl.ide,org.ec
+ lipse.xtext.ui,org.eclipse.xtext.ui.shared,org.eclipse.xtext.ui.codet
+ emplates.ui,org.eclipse.ui.editors;bundle-version="3.5.0",org.eclipse
+ .ui.ide;bundle-version="3.5.0",org.eclipse.ui,org.eclipse.compare,org
+ .eclipse.xtext.builder,org.eclipse.xtext.xbase.lib;bundle-version="2.
+ 14.0",org.eclipse.xtend.lib;bundle-version="2.14.0";resolution:=optio
+ nal
+Bundle-ManifestVersion: 2
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-Vendor: My Company
+Import-Package: org.apache.log4j
+Export-Package: fr.imt.ales.springdsl.ui.contentassist,fr.imt.ales.spr
+ ingdsl.ui.quickfix,fr.imt.ales.springdsl.ui.internal
+Bundle-Name: fr.imt.ales.springdsl.ui
+Bundle-Version: 1.0.0.201908211107
+Bundle-Activator: fr.imt.ales.springdsl.ui.internal.SpringdslActivator
+
