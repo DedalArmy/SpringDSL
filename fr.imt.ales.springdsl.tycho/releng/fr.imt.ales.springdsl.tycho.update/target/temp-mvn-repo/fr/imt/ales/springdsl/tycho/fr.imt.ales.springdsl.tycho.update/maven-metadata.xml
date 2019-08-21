@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>fr.imt.ales.springdsl.tycho</groupId>
+  <artifactId>fr.imt.ales.springdsl.tycho.update</artifactId>
+  <versioning>
+    <versions>
+      <version>1.0.0-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20190821132304</lastUpdated>
+  </versioning>
+</metadata>

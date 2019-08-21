@@ -4,7 +4,7 @@ Bundle-SymbolicName: fr.imt.ales.springdsl.ide; singleton:=true
 Export-Package: fr.imt.ales.springdsl.ide.contentassist.antlr.internal
  ,fr.imt.ales.springdsl.ide.contentassist.antlr
 Bundle-Name: fr.imt.ales.springdsl.ide
-Bundle-Version: 1.0.0.201908211107
+Bundle-Version: 1.0.0.201908211322
 Require-Bundle: fr.imt.ales.springdsl,org.eclipse.xtext.ide,org.eclips
  e.xtext.xbase.ide,org.antlr.runtime;bundle-version="[3.2.0,3.2.1)"
 Bundle-ManifestVersion: 2

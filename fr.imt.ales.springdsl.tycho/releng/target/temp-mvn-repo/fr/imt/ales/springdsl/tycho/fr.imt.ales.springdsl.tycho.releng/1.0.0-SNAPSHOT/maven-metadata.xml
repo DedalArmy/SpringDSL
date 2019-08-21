@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>fr.imt.ales.springdsl.tycho</groupId>
+  <artifactId>fr.imt.ales.springdsl.tycho.releng</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20190821.132256</timestamp>
+      <buildNumber>2</buildNumber>
+    </snapshot>
+    <lastUpdated>20190821132256</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>1.0.0-20190821.132256-2</value>
+        <updated>20190821132256</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>

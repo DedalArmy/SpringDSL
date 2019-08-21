@@ -16,6 +16,6 @@ Import-Package: org.apache.log4j
 Export-Package: fr.imt.ales.springdsl.ui.contentassist,fr.imt.ales.spr
  ingdsl.ui.quickfix,fr.imt.ales.springdsl.ui.internal
 Bundle-Name: fr.imt.ales.springdsl.ui
-Bundle-Version: 1.0.0.201908211107
+Bundle-Version: 1.0.0.201908211322
 Bundle-Activator: fr.imt.ales.springdsl.ui.internal.SpringdslActivator
 
